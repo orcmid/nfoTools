@@ -1,0 +1,106 @@
+Adv10.txt 0.0.5                        UTF-8                    dh:2016-10-15
+
+                              ADVENTURE VERSION 1.0
+                              =====================
+
+                   THE ORIGINAL COLOSSAL CAVE TEXT ADVENTURE
+
+                  DEVELOPMENT AND SOURCE CODE VERSION CONTROL
+                  -------------------------------------------
+
+    This project is for development of a Standard C version of the
+    original Colossal Cave Adventure as a portable command-line
+    implementation.  Adv10 is the foundation of the Cavern project
+    for progressive development of enriched versions, from command-
+    line to 3D animated versions.
+       
+MANIFEST
+
+    Adv10.txt this manifest and job-jar file
+
+    src/
+        The Clean C source code for Adv10
+        
+    dev/
+        construction sets for building and testing Adv10 developer builds
+               
+    LICENSE.txt
+         The open-source software license that applies to this Adv10
+         work
+         
+    NOTICE.txt
+         Notices that apply to this Adv10 work in company with LICENSE.txt.
+         
+    .gitattributes
+         A declaration of file attributes for use in Git repositories of
+         the Adv10 work
+         
+    .gitignore
+         A declaration of artifacts to be ignored and excluded from Git
+         repositories, applying to working files that are not part of the
+         shared archive materials
+         
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+                       Copyright 2014 Dennis E. Hamilton
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+ 
+
+TODO
+  * Add deployment-oriented organization that will be used in releasing beta
+    and later versions of the Adv10 transposition.
+  * Confirm compile VS 2015 Community from the repro without fussing about
+    much.  Will structure later.
+  * Provide access to the web folios for Adv10 and the Cavern project.
+  * Add GitHub Readme when I am ready.
+  * Add further attribution information about derivation of this project's
+    code from advent.w, explaining the value of that for study and also
+    how this code relates to but is no substitute for advent.w.
+  * Produce a null implementation that basically provides a startup and exit,
+    and initial deployment structure.
+  * Report the opening, and the various notifications, to Don Knuth and Don
+    Woods for their review and confirmation that their reservations are
+    satisfied.
+  * Set up command-line options for the adv10 executable too.  At least the
+    unknown parameters, which is what "-?" will also always produce.
+  * Tuck the permission mails and other hard copy materials into a paper
+    file folder.
+  * Create a sequestered web-site folder for preserving copies of the source
+    materials that I am basing this project on.
+  * Deal with dependencies and the intermediate use of libraries under Adv10.
+  * Cover toolcraft and the intention of relying exclusively on freely-
+    available software tools and libraries.
+  * Explain the licensing approach and handling of open-source code and any
+    contributions to it.
+    
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+ 0.0.5 2016-10-15-12:49 Add dev/ folder for the developer build setup
+ 0.0.4 2016-10-06-14:01 Add Manifest and license notification
+       Clean up TODOs for items already handled.       
+ 0.0.3 2016-10-04-11:14 Revive on GitHub as orcmid/Adv10
+      Switching to semantic versioning along with revival of this project
+      on GitHub.  Touch up to reflect the new location.
+0.02 2014-02-28-12:41 Further TODO Items
+     I have received provisional approval from Don Knuth and Don Woods and
+     will be proceding on that basis when producing the null implementation
+     and more.
+0.01 2014-02-08-11:34 Add TODO Items
+     Reflect the VS Online tasks for this project and also the desired
+     deployment-oriented organization
+0.00 2014-02-07-20:07 Initial placeholder
+     The page is enough to confirm that check-ins and pushing to the
+     VS Online project repository is operational.
+
+                          ***** end of Adv10.txt *****

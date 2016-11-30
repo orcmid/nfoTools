@@ -1,0 +1,319 @@
+devBind.txt 0.1.6                    UTF-8                          2016-11-29
+---------1---------2---------3---------4---------5---------6---------7-------*
+
+    <https://github.com/orcmid/Adv10>/dev/VCbinder/devBind/devBind.txt>
+
+                             VCBIND.ZIP CONSTRUCTION
+                             =======================
+                             
+    The files and the VCbind.zip here are in-progress development versions. 
+    For the latest version considered stable for general use, check the
+    parent VCbinder/ folder for how VCbinder/devBind is used and the version
+    of VCbind.zip incorporated there.  For further information on VCbind,
+    it's development, latest downloads, and the relationship to (open-)source
+    construction sets, see <http://nfoWare.com/dev/2016/11/d161101.htm>.
+ 
+    The details of VCbind.zip and its usage are in the VCbind-x.y.z.txt file
+    for the particular version (e.g., VCbind-0.1.0.txt).  That file is part
+    of the VCbind.zip content.  It is useful to include the applicable
+    VCbind-x.y.z.txt alongside VCbind.zip so users of a construction set 
+    can (1) determine how to proceed before extracting VCbind.zip content 
+    itself, can (2) identify the version of VCbind to determine its current
+    status, and can verify that the VCbind.zip is of the same version.
+       
+    Extensive details are provided here and in VCbind.zip to support non-
+    expert testing and confirmation of VCbind operation.  Someone without the 
+    experience to have developed VCbind themselves should still be able to use
+    it to confirm its functioning and to make adaptations/variations as more 
+    is learned. 
+           
+    
+USING VCBIND.ZIP
+
+    The VCbind-x.y.z.txt file of a given VCbind.zip provides the instructions
+    for its usage in a construction set that employs VCbind.  
+
+    To obtain the VCbind currently recommended for general usage, consult
+    <http://nfoWare.com/dev/2016/11/d161101b.htm>. 
+    
+    
+DEPENDENCIES FOR VCBIND
+
+    Beside built-in Microsoft Windows utilities, VCbind depends only on 
+    freely-available versions of Visual Studio Software, whether Express or 
+    Community editions.  
+    
+    There is no reliance on the Visual Studio Integrated Development Environment
+    (IDE) itself, just the command-line compiler and development tools.
+    
+    Have a text editor that is suitable for viewing/editing plsintext, batch 
+    scripts, source codes, and compiler error logs.
+    
+    The same dependencies apply to development work on VCbind itself.
+    
+    Providing ways to make use of IDEs, even though building from the command
+    line are the subject of potential future VCbind or related releases.
+    
+    
+PREREQUISITE CAPABILITIES FOR VCBIND DEVELOPMENT WORK
+
+    If you are inexperienced with use of the Windows command shell, of the 
+    Visual C/C++ compiler, and of related command-line tools, familiarization
+    with operation of VCbind can be gained by using it as specified in an
+    existing construction set.  Practice with any construction set that
+    produces a simple command-line program from a stable source code release.
+    
+    The next level of skill might be going through the testing and confirma- 
+    tion of VCbind.zip as provided in its distributions.
+
+    Then inspect this devBind material.  Review and test the maintenance
+    procedure, identifying questions that need to be resolved.  Determine
+    capabilities to work on, if any.  
+      
+    Going deeper may involve expanding skills in several areas.  The 
+    following checklist can be used to assess where study and experience
+    may be needed.
+    
+     * Working with the source-code management system, if any, that this
+       source code folder originates at, currently the GitHub project at
+       <http://github.com/orcmid/Adv10>.
+    
+     * Performing console (cmd.exe) command-line sessions on Microsoft 
+       Windows  
+       
+     * Editing of text and batch (.bat) files in a manner that preserves
+       formatting and conventions for them
+    
+     * Experience with the built-in Compressed (zipped) Folder support of
+       Microsoft Windows.  Optional use of alternative compression software
+       in a manner that is compatible with the built-in provisions.
+    
+     * Demonstrating the testing and confirmation of VCbind.bat operation,
+       including all of the exception cases
+    
+     * Using the Microsoft cl.exe command-line compiler in demonstration of
+       successful VCbind accomplishment
+       
+     * Optionally creating shortcuts to batch files and customizing the
+       console session's properties
+  
+     * Further understanding and using the command-line environment of 
+       Windows and how the Visual C++ components are found and operated on
+       Windows
+    
+  
+DEVBIND EMHANCEMENT AND MAINTENANCE CODE-AND-TEST CYCLE
+
+  1. Have this source code folder in a PC location where you can edit all 
+     of its content.  If the folder is not named devBind\, adjust what 
+     follows below accordingly.  It is recommended that you have a clone
+     or fork of the origin repository in order to have source-code control
+     of your changes, whether or not for contribution back to the origin
+     project.
+     
+  2. In the devBind\ folder, follow the VCbind-x.y.z.txt instructions and
+     extract VCbind.zip to the subfolder VCbind\ (i.e., Windows 
+     folder location devBind\VCbind\).
+     
+     The following steps have been employed in the original progression
+     of devBind work.  There are many ways to accomplish the same result.
+     The key is to always know what files are the latest and not risk
+     using older versions by mistake.
+     
+  3. Edit the VCbind.bat and VCbind-x.y.z.txt files here in the devBind\ 
+     folder.  Copy modified VCbind.bat files to devBind\VCbind\ for testing 
+     and confirmation of test cases.  Confirm that the cl.exe compiler can be
+     operated and that successful compilations are produced.  The semantic
+     versioning identifier presented by VCbind.bat and in the naming of
+     VCbind-x.y.z.txt will depend on the purpose of your modifications.
+     See <http://semver.org/>.
+    
+  4. Wnen your work is completed or at an intermediate check-point, synchronize
+     VCbind.zip to have your changes.
+  
+     4.1 Update VCbind-x.y.z.txt and related documentation and testing material.
+  
+     4.2 Delete the devBind\VCbind.zip file.
+     
+     4.2 In the Windows File Explorer, creat a New Compressed (zipped) Folder
+         in devBind\.  Name it VCbind.zip.
+         
+     4.3 Drag the all of the VCbind.zip-intended devBind\ files into the 
+         new, empty VCbind.zip, including LICENSE.txt, NOTICE.txt, VCbind.bat,
+         and VCbind-x.y.z.txt.
+         
+  5. Adjust this devBind.txt to reflect any change to the manifest and 
+     anything else that needs to be changed to have current documentation.
+     
+  6. Check-in the modified/new materials under the source-code management
+     you are using.  Depending on the state of completion and project
+     requirements for thorough testing, contribute back to any project
+     your work is being contributed to.
+
+
+MANIFEST
+
+    NOTE: When there is development, maintenance, and testing underway 
+    in the origin devBind/ folder, the working versions of VCbind-x.y.z.txt,
+    VCbind.bat, VCbind.zip, and other devBind artifacts can be inconsistent
+    until a stable case is reached.
+
+    .gitignore
+        excluding any devBind/VCbind/ working folder from source-code
+        version control
+
+    devBind.txt
+        this manifest and procedures for developing a VCbind.zip
+        for use in source-code construction sets
+        
+    LICENSE.txt
+        Apache License Version 2.0 for inclusion in VCbind.zip
+         
+    NOTICE.txt
+        Notice file for inclusion in VCbind.zip
+         
+    VCbind-0.1.1.txt
+        manifest and description included in VCbind.zip and usable as a
+        preview of instructions for extraction and usage.  The 0.1.1+ styled  
+        versioning is for all working changes since 0.1.0 and pending choice 
+        to cut the next semantic version, whether 0.1.1, 0.2.0, or 1.0.0.
+         
+    VCbind.bat
+        script included in VCbind.zip that provides the binding operation
+        
+    VCbind.zip
+        under-development version of VCbind.zip archive for dropping into
+        Windows command-line construction sets.  
+
+---------1---------2---------3---------4---------5---------6---------7-------*
+
+                       Copyright 2016 Dennis E. Hamilton
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+TODO
+
+    In addition to these TODO items, the web-facing material on 
+    <http://nfoWare.com> has a Diary and Job Jar of VCbind items
+    at <http://nfoWare.com/dev/2016/11/d161101a.htm>.
+  
+ * Provide links for resolving the dependencies.
+   
+ * Provide links for the prerequisites.  Also to examples of where VCbind
+   is used in cases that are relatively easy to teeth on.
+   
+ * Confirm that the VS 2013 Build Tools also provide a C/C++ compiler.
+ 
+ * Test with Visual Studio C++ Express 2008.
+ 
+ * Link to an illustrated procedure for the extraction from VCbind.zip.
+ 
+ * Link to an illustrated procedure with regard to desired Windows desktop
+   options for performing developer and trouble-shooting work.
+   
+ * Link to an illustrated procedure for the easiest way to fire up VCbind.bat.
+ 
+ * Link to an illustrated procedure for firing up a command-shell session,
+   navigating to VCbind\ or other place, performing a VCbind.bat operation,
+   and use the resulting environment in the session.
+   
+ * Split VCbinder out of the Adv10 source-code tree for (quasi-)independent 
+   development.  This is worthy of an 0.1.1+ distribution, with new source
+   location.  When that is completed, the Adv10/dev/VCbinder can be branched
+   out after Adv10/dev/WinCon is updated to use that 0.1.1+ code.
+   
+ * Does a branch remain available even if it is merged back to master?
+ 
+ * For the nfoWare.com d161101c-dist, there is more to do in identifying where
+   the source code is maintained, more about toolcraft with Git, and also 
+   the use of Git command-line operations in addition to any GitHub reliance.
+   
+ * The VCbind-x.y.z.txt should point to the download folder, not the page 
+   for the version.  The idea is that the download folder is all about the
+   downloading, verifying the materials, and then maybe the smoke tests.
+   
+ * Fix the VCbind\ folder description in VCbind.txt section one to indicate
+   that restoration as stated impacts only the material from VCbind.zip and
+   not anything the user put there.
+   
+ * Decide whether information about use of the source is best at the release
+   page (e.g., d161101c) or the distribution description (e.g., d161101c-dist)
+   or perhaps divided between the two.
+   
+ * The source discussion should emphasize that this is Code in the Open, and
+   not an organized open-source project, despite the licensing.
+   
+ * It should be emphasized that if a terse failure case is unclear, 
+   VCbind should be performed directly without the terse "*" flag.
+   This should probably be in :USAGE and elsewhere.
+   
+---------1---------2---------3---------4---------5---------6---------7-------*
+
+ 0.1.7  2016-11-29-14:23 VCbind.bat adjusted to the 0.1.1+ scheme and
+        some touch-ups added for the next release.
+ 0.1.6  2016-11-29-14:05 Switchover from 0.1.x to 0.1.1 prep.
+ 0.1.5  2016-11-29-10:05 Cross-reference TODOs and d161101a.htm.  Add TODOs
+        including work item to consider using 0.1.1 instead of 0.1.x.
+ 0.1.4  2016-11-27-10:03 Condition VCbind-0.1.x.txt for in-progress refinements.
+        Also text and TODOs review/updates done.
+ 0.1.3  2016-11-26-15:31 Branch VCbind-0.1.0 tagged VCbind-0.1.0-rc with PBP
+        signing of the tag after setting the Global GIT Config appropriately.
+ 0.1.2  2016-11-26-10:17 Touch ups.  Expanded TODOs to reflect more integration
+        work in Git and on nfoWare for released branches, explorations of ways
+        to spin VCbind and VCbinder out of the Adv10 source tree.
+ 0.1.1  2016-11-25-09:15 Start stepping toward 0.2.0 with interim 0.1.1.
+ 0.0.25 2016-11-24-17:36 Digitally Sign 0.1.0 Artifacts
+        VCbind-0.1.0.txt is clearsigned and an external signature and SHA256
+        hash are produced for VCbind.zip.
+ 0.0.24 2016-11-24-14:51 Update TODOs, correct some text, freeze 0.1.0
+ 0.0.23 2016-11-22-16:34 Move most TODOs and narrative to nfoWare and
+        continue managing from <http://nfoWare.com/dev/2016/11/d161101a.htm>.
+ 0.0.22 2016-11-22-09:29 Cleanups around VCbind 0.1.0 and TODOs
+ 0.0.21 2016-11-20-14:06 Identify VCbind 0.1.0 target candidacy and switch
+        VCbind.txt naming to VCbind-0.1.0.txt.  Adjust text and TODOs.
+ 0.0.20 2016-11-16-15:04 Edit TODOs, add Usage to VCBind.bat
+ 0.0.19 2016-11-16-09:16 Add helpful information when a found toolset fails.
+        Use PROCESSOR_ARCHITECTURE to filter config parameter.  Refine TODOs.
+ 0.0.18 2016-11-15-14:37 Implement terse option; refine TODOs 
+ 0.0.17 2016-11-14-17:48 Included detection and binding for Visual Studio 
+        2008 through 2015.  Clean up TODOs that are now resolved.
+ 0.0.16 2016-11-13-09:55 Tie to nfoWare.com folio d161101, annotate further
+ 0.0.15 2016-11-08-10:57 VCbind.bat verification of CMDEXTVERSION and
+        location introduced.  More TODO thoughts.
+ 0.0.14 2016-11-08-08:57 Smooth the procedures, review and expand TODOs
+ 0.0.13 2016-11-05-10:38 Touch-ups. Transpose TODOs from VCbind.bat 0.0.4. 
+        Identify need for troubleshooting the maintenance/customization
+        procedure.  Use rulers as separators to aid plaintext margin-keeping.
+ 0.0.12 2016-11-04-10:58 More TODOs - determining when VC vars already set
+        and what to advise the user.
+ 0.0.11 2016-11-03-14:32 Completed sketch for developer use of devBind/
+ 0.0.10 2016-11-01-25:45 TODOs cleanup. 
+  0.0.9 2016-10-31-11:43 Complete some TODOs, tweak others.
+  0.0.8 2016-10-31-09:27 Consolidate TODOs here and start fleshing out
+        the VCbind.txt file.
+  0.0.7 2016-10-30-10:30 Capture VC-scraps and update TODOs, readying 
+        for confirmation and provisional use for Adv10 WinCon development.
+  0.0.6 2016-10-28-10:51 Touch-ups and expanded TODOs
+  0.0.5 2016-10-27-11:54 Setup for progressive improvement of VCbind.zip
+        versions.
+  0.0.4 2016-10-26-11:50 Adjust to new Adv10/dev/VCbinder/devBind/ location.
+  0.0.3 2016-10-26-11:07 Rename to devBind.txt for the devBind/ folder.
+  0.0.2 2016-10-25-13:56 Introduce Initial files
+        Expand the manifest and provide existing files for morphing into 
+        a polished VCbind.zip set.
+  0.0.1 2016-10-24-18:32 Add LICENSE.txt and NOTICE.txt in support of the
+        independent redistribution VCbind code in VCbind.zip.
+  0.0.0 2016-10-24-18:11 Initial Placeholder as part of VCbind/dev/ folder
+        setup.
+ 
+                        *** end of devBind.txt ***
