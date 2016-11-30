@@ -1,3 +1,8 @@
+NOTICE.txt 1.0.0                      UTF-8                       2016-11-30
+
+                                NFOTOOLS NOTICE 
+                                ===============
+
 This work is licensed to you under the Apache License, Version 2.0 (the
 "License"; you may not use this work except in compliance with the License.
 You may obtain a copy of the license at
@@ -10,18 +15,6 @@ WARRANTIES OR CONDITIONS OF ANY KIND, either expressed or implied.  See
 the License for the specific language governing permission and limitations
 under the License.
 
-                    - - - - - - - - - - - - - - - - -
-
-Portions of this software Copyright © 1998 by Don Woods and Don Knuth are 
-used by permission of the authors.  The sources are 
-
- * the 2010-01-26 version of Don Knuth's Literate Programming source code
-   file, advent.w.gz, obtained at
-   <http://www-cs-faculty.stanford.edu/~knuth/programs.html#advent>.  
- * applicable errata provided through November 2013 for Don Knuth's
-   "Selected Papers on Fun and Games,"
-   <http://www-cs-faculty.stanford.edu/~knuth/fg.html>.
-   
-                            *** end of NOTICE.txt ***
-
+  
+                       *** end of nfoTools NOTICE.txt ***
 
