@@ -1,7 +1,8 @@
-devBind.txt 0.1.6                    UTF-8                          2016-11-29
+devBind.txt 0.1.8                    UTF-8                          2016-11-30
 ---------1---------2---------3---------4---------5---------6---------7-------*
 
-    <https://github.com/orcmid/Adv10>/dev/VCbinder/devBind/devBind.txt>
+            <https://github.com/orcmid/nfoTools>
+                   /devKits/WinDev/VCbinder/devBind/devBind.txt>
 
                              VCBIND.ZIP CONSTRUCTION
                              =======================
@@ -76,7 +77,7 @@ PREREQUISITE CAPABILITIES FOR VCBIND DEVELOPMENT WORK
     
      * Working with the source-code management system, if any, that this
        source code folder originates at, currently the GitHub project at
-       <http://github.com/orcmid/Adv10>.
+       <http://github.com/orcmid/nfoTools>.
     
      * Performing console (cmd.exe) command-line sessions on Microsoft 
        Windows  
@@ -176,7 +177,7 @@ MANIFEST
         manifest and description included in VCbind.zip and usable as a
         preview of instructions for extraction and usage.  The 0.1.1+ styled  
         versioning is for all working changes since 0.1.0 and pending choice 
-        to cut the next semantic version, whether 0.1.1, 0.2.0, or 1.0.0.
+        choice of the next semantic version, whether 0.1.1, 0.2.0, or 1.0.0.
          
     VCbind.bat
         script included in VCbind.zip that provides the binding operation
@@ -226,12 +227,7 @@ TODO
  * Link to an illustrated procedure for firing up a command-shell session,
    navigating to VCbind\ or other place, performing a VCbind.bat operation,
    and use the resulting environment in the session.
-   
- * Split VCbinder out of the Adv10 source-code tree for (quasi-)independent 
-   development.  This is worthy of an 0.1.1+ distribution, with new source
-   location.  When that is completed, the Adv10/dev/VCbinder can be branched
-   out after Adv10/dev/WinCon is updated to use that 0.1.1+ code.
-   
+     
  * Does a branch remain available even if it is merged back to master?
  
  * For the nfoWare.com d161101c-dist, there is more to do in identifying where
@@ -259,6 +255,8 @@ TODO
    
 ---------1---------2---------3---------4---------5---------6---------7-------*
 
+ 0.1.8  2016-11-30-18:01 Transpose to nfoTools/devKits/WinDev/VCbinder/devBind
+        and continued development as a common component of construction sets.
  0.1.7  2016-11-29-14:23 VCbind.bat adjusted to the 0.1.1+ scheme and
         some touch-ups added for the next release.
  0.1.6  2016-11-29-14:05 Switchover from 0.1.x to 0.1.1 prep.

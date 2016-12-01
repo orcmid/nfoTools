@@ -1,6 +1,7 @@
-devBinder.txt 0.0.9                   UTF-8                      dh:2016-11-28
+devBinder.txt 0.0.11                   UTF-8                      dh:2016-11-30
 
-  <https://github.com/orcmid/Adv10>/dev/VCbinder/devBinder/devBinder.txt>
+          <https://github.com/orcmid/nfoTools>
+                 /devKits/WinDev/VCbinder/devBinder/devBinder.txt>
 
                             VCBINDER SOURCE CODE
                             ====================
@@ -71,11 +72,6 @@ MANIFEST
 TODO
 
  * Provide the construction procedure.
-   
- * Resolve whether that is the VCbinder.txt that is provided in the 
-   superior VCbinder/ folder.  It seems so, since the one is versioned and
-   the other is not.  VCbinder is just a staging place for the dist version,
-   so developing of the next one can happen asynchronously at devBinder/.  
   
  * Reflect: BINDING THE VC COMPILER
     The VCbind.bat here is used to check that VCbind.zip is here and that a
@@ -86,10 +82,11 @@ TODO
     a compiler setup.  VCbind.txt describes that package and its usage.
     
  * Speed this up just enought to expedite confirmation and provisional
-   use in the progressing of Adv10 WINCON development.
+   use.
     
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.11 2016-11-30-17:11 Transpose to nfoTools and touch up accordingly.
  0.0.10 2016-11-29-14:47 Add LICENSE and NOTICE.  These apply to this source
         in a distribution and to VCbinder.zip distributions
  0.0.9 2016-11-28-09:55 Complete setup for VCbinder 0.1.0 development, using
