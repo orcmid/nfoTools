@@ -1,4 +1,4 @@
-devKits.txt 0.0.1                     UTF-8                      dh:2016-11-30
+devKits.txt 0.0.2                     UTF-8                      dh:2016-11-30
 
             <https://github.com/orcmid/nfoTools>/devKits/devKits.txt>
 
@@ -41,6 +41,7 @@ MANIFEST
         Construction kits and helpers for producing programs for Microsoft
         Windows using Microsoft Windows developer tools.
         
+        
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
                        Copyright 2016 Dennis E. Hamilton
@@ -59,12 +60,13 @@ MANIFEST
 
 TODO
 
- * Expand WinDev to include additional transposed material.
+ * [TBD]
  
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-
- 0.0.1 2016-11-30-15:56  Introduce the WinDev kits as first part of the
+ 0.0.2 2016-11-30-16:20 WinDev expanded to include additional transposed 
+       below it.
+ 0.0.1 2016-11-30-15:56 Introduce the WinDev kits as first part of the
        devKits structure and editing into the devKits form.
  0.0.0 2016-11-30-09:05 Cloning of Adv10/dev/dev.txt for transformation
        to nfoTools/devKits/devKitx.txt

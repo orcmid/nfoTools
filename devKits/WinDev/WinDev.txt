@@ -1,6 +1,6 @@
-WinDev.txt 0.0.1                     UTF-8                      dh:2016-11-30
+WinDev.txt 0.0.2                     UTF-8                      dh:2016-11-**
 
-            <https://github.com/orcmid/nfoTools>/devKits/WinDev/WinDev.txt>
+        <https://github.com/orcmid/nfoTools>/devKits/WinDev/WinDev.txt>
 
                     WINDOWS CONSTRUCTION KITS AND HELPERS
                     =====================================
@@ -49,6 +49,7 @@ TODO
  
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.2 2016-11-**
  0.0.1 2016-11-30-16:12 Provide initial description and incorporate VCbinder\
        and WinConKit\ in the manifest.
  0.0.0 2016-11-30-15:56 Clone from devKits.txt 0.0.1 for morphing into the
