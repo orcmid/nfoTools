@@ -1,4 +1,4 @@
-WinDev.txt 0.0.2                     UTF-8                      dh:2016-11-**
+WinDev.txt 0.0.2                     UTF-8                       dh:2016-11-30
 
         <https://github.com/orcmid/nfoTools>/devKits/WinDev/WinDev.txt>
 
@@ -49,7 +49,8 @@ TODO
  
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
- 0.0.2 2016-11-**
+ 0.0.2 2016-11-30-20:47 Adjusted VCbinder/ and created initial WinConKit\
+       as subordinate folders.
  0.0.1 2016-11-30-16:12 Provide initial description and incorporate VCbinder\
        and WinConKit\ in the manifest.
  0.0.0 2016-11-30-15:56 Clone from devKits.txt 0.0.1 for morphing into the
