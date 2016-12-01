@@ -1,0 +1,57 @@
+WinDev.txt 0.0.1                     UTF-8                      dh:2016-11-30
+
+            <https://github.com/orcmid/nfoTools>/devKits/WinDev/WinDev.txt>
+
+                    WINDOWS CONSTRUCTION KITS AND HELPERS
+                    =====================================
+
+    The WinDev/ construction kits and helpers are for creation of construction
+    sets that build Windows programs using Microsoft developer tools on Windows.    
+     
+MANIFEST
+
+    WinDev.txt
+        This description file on organization of the archive and use of its
+        materials.
+        
+    VCbinder/
+        Kit for introduction of VCbind as a helper in construction sets
+        that produce Windows programs using the VC++ Build tools in a 
+        Windows command shell session.
+        
+    WinConKit/
+        Kit for construction sets that build C/C++ Windows Console applica-
+        tions using Windows command shell sessions.
+         
+        
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+                       Copyright 2016 Dennis E. Hamilton
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+TODO
+
+ * Adjust VCbinder/ for its new location
+ 
+ * Transform the seed material from Adv10/dev/WinCon as the initial 
+   skeleton for WinConKit/
+ 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+ 0.0.1 2016-11-30-16:12 Provide initial description and incorporate VCbinder\
+       and WinConKit\ in the manifest.
+ 0.0.0 2016-11-30-15:56 Clone from devKits.txt 0.0.1 for morphing into the
+       equivalent for WinDev.
+
+                         *** end of WinDev.txt ***        

@@ -1,9 +1,9 @@
-dev.txt 0.0.3                        UTF-8                    dh:2016-10-26
+devKits.txt 0.0.1                     UTF-8                      dh:2016-11-30
 
-               <https://github.com/orcmid/Adv10>/dev/dev.txt>
+            <https://github.com/orcmid/nfoTools>/devKits/devKits.txt>
 
-                      ADV10 DEVELOPER CONSTRUCTION SETS
-                      =================================
+                     DEVKITS CONSTRUCTION KITS AND HELPERS
+                     =====================================
 
     Developer construction sets are platform-specific structures for 
     compiling and exercising the Adv10 software.  
@@ -33,20 +33,13 @@ dev.txt 0.0.3                        UTF-8                    dh:2016-10-26
     
 MANIFEST
 
-    dev.txt
+    devKits.txt
         This description file on organization of the archive and use of its
         materials.
         
-    WinCon/
-        Construction set for Windows Console version of Adv10.  Construction
-        employs freely-available Microsoft development tools for construction
-        on the Microsoft Windows PC platform.
-        
-    VCbinder/ (provisional)
-        code for development of the redistributable VCbinder.zip
-        construction-set snippet.  This is provisional development as
-        a companion within Adv10 until a stable VCbinder.zip is
-        available as a separately-available construction-set element. 
+    WinDev/
+        Construction kits and helpers for producing programs for Microsoft
+        Windows using Microsoft Windows developer tools.
         
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -66,24 +59,14 @@ MANIFEST
 
 TODO
 
- * Work up the Visual C++ console compilation case, WinCon
+ * Expand WinDev to include additional transposed material.
  
- * Add something about finding how to build particular construction sets.
-   It can be appropriate pointers.
- 
- * Add something about developing/maintaining construction sets.
-   This can be by appropriate pointers.
- 
- * Get to the first level of clean compilation for an executable null 
-   implementation, and work a form of test-driven spiral development.
-   
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
- 0.0.3 2016-10-26-11:25 Move the provisional VCbinder/ development to
-       this level, for experimental use within WinCon/
- 0.0.2 2016-10-24-08:02 Light editing, motivation for Windows emphasis.
- 0.0.1 2016-10-22-11:12 Introduce the WinCon/ construction set.
-       The limitation to unbranded dev builds is also emphasized.
- 0.0.0 2016-10-15-13:12 Initial Placeholder as part of folder setup.
 
-                           *** end of dev.txt ***        
+ 0.0.1 2016-11-30-15:56  Introduce the WinDev kits as first part of the
+       devKits structure and editing into the devKits form.
+ 0.0.0 2016-11-30-09:05 Cloning of Adv10/dev/dev.txt for transformation
+       to nfoTools/devKits/devKitx.txt
+
+                         *** end of devKits.txt ***        
