@@ -1,7 +1,9 @@
-nfoTools.txt 0.0.1                    UTF-8                      dh:2016-11-30
+nfoTools.txt 0.0.2                    UTF-8                      dh:2016-12-02
 
                             nfoWare/nfoWorks nfoTools
                             =========================
+                            
+                      <https://github.com/orcmid/nfoTools>
 
             USEFUL TOOLS IN DEVELOPMENT OF NFOWARE/NFOWORKS PROJECTS
 
@@ -61,15 +63,18 @@ MANIFEST
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
  
 TODO
-  * Work down through devKits/ to the first components being transposed here.
-  * Add GitHub Readme.md when I ready.
+
+  * Add GitHub Readme.md when ready.
+  
   * Cover toolcraft and the intention of relying exclusively on freely-
     available software tools and libraries.
+    
   * Explain the licensing approach and handling of open-source code and any
     contributions to it.
     
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.2 2016-12-02-17:39 Complete Staging for the first devKits components.
  0.0.1 2016-11-30-13:45 Initial setup with devKits/ as the first area for
        introduction of reusable components.
  0.0.0 2016-11-30-09:11 Transposition of Adv10.txt 0.0.4 from the Adv10 project

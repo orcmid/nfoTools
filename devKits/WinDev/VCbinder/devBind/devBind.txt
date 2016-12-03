@@ -1,4 +1,4 @@
-devBind.txt 0.1.8                    UTF-8                          2016-11-30
+devBind.txt 0.1.9                    UTF-8                          2016-12-02
 ---------1---------2---------3---------4---------5---------6---------7-------*
 
             <https://github.com/orcmid/nfoTools>
@@ -9,13 +9,13 @@ devBind.txt 0.1.8                    UTF-8                          2016-11-30
                              
     The files and the VCbind.zip here are in-progress development versions. 
     For the latest version considered stable for general use, check the
-    parent VCbinder/ folder for how VCbinder/devBind is used and the version
+    sibling devBinder/ folder for how VCbinder is constructed and the version
     of VCbind.zip incorporated there.  For further information on VCbind,
-    it's development, latest downloads, and the relationship to (open-)source
+    it's development, latest downloads, and the relationship to source-code
     construction sets, see <http://nfoWare.com/dev/2016/11/d161101.htm>.
  
     The details of VCbind.zip and its usage are in the VCbind-x.y.z.txt file
-    for the particular version (e.g., VCbind-0.1.0.txt).  That file is part
+    for the particular version (e.g., VCbind-0.1.1.txt).  That file is part
     of the VCbind.zip content.  It is useful to include the applicable
     VCbind-x.y.z.txt alongside VCbind.zip so users of a construction set 
     can (1) determine how to proceed before extracting VCbind.zip content 
@@ -164,20 +164,19 @@ MANIFEST
         version control
 
     devBind.txt
-        this manifest and procedures for developing a VCbind.zip
-        for use in source-code construction sets
+        this manifest and procedures for developing a VCbind.zip as a helper
+        in source-code construction sets
         
     LICENSE.txt
-        Apache License Version 2.0 for inclusion in VCbind.zip
+        Apache License Version 2.0 
+           (part of this source and for inclusion in VCbind.zip)
          
     NOTICE.txt
-        Notice file for inclusion in VCbind.zip
+           (part of this source and for inclusion in VCbind.zip)
          
     VCbind-0.1.1.txt
         manifest and description included in VCbind.zip and usable as a
-        preview of instructions for extraction and usage.  The 0.1.1+ styled  
-        versioning is for all working changes since 0.1.0 and pending choice 
-        choice of the next semantic version, whether 0.1.1, 0.2.0, or 1.0.0.
+        preview of instructions for extraction and usage. 
          
     VCbind.bat
         script included in VCbind.zip that provides the binding operation
@@ -255,6 +254,7 @@ TODO
    
 ---------1---------2---------3---------4---------5---------6---------7-------*
 
+ 0.1.9  2016-12-02-17:34 Complete staging for VCbind 0.1.1 at nfoTools.
  0.1.8  2016-11-30-18:01 Transpose to nfoTools/devKits/WinDev/VCbinder/devBind
         and continued development as a common component of construction sets.
  0.1.7  2016-11-29-14:23 VCbind.bat adjusted to the 0.1.1+ scheme and
