@@ -1,4 +1,4 @@
-devBinder.txt 0.0.12                   UTF-8                      dh:2016-12-02
+devBinder.txt 0.0.13                   UTF-8                      dh:2016-12-03
 
            <https://github.com/orcmid/nfoTools>
                   /devKits/WinDev/VCbinder/devBinder/devBinder.txt>
@@ -6,20 +6,24 @@ devBinder.txt 0.0.12                   UTF-8                      dh:2016-12-02
                          VCBINDER PACKAGE CONSTRUCTION
                          =============================
 
-    This folder provides the files and the procedure for composing
-    a VCbinder distribution.
+    Folder devBinder/ provides the files and the procedure for composing
+    a VCbinder distribution.  This is where the composition and testing 
+    occur.  When a stable distribution-point is reached, the VCbinder*.txt
+    and VCbinder*.zip files are preserved at the VCbinder/ folder, allowing
+    work on the next version to occur in VCbinder/devBinder without causing
+    any disturbance.
 
 MANIFEST
 
     NOTE: When there is development, maintenance, and testing underway 
-    in the origin devBinder/ folder, the working versions of VCbinder-x.y.z.txt,
-    VCbinder-x.y.z.zip, VCbind.bat, VCbind.zip, and other devBinder artifacts 
-    can be inconsistent until a stable case is reached.
+    in the origin devBinder/ folder, the working versions of VCbinder-*.txt,
+    VCbinder-*.zip, VCenable.bat, VCbind.zip, VCbind-*.txt and other devBinder
+    artifacts can be inconsistent until a stable case is reached.
 
     .gitignore
-        preventing any VCbind/ and VCbinder-x.y.z/ working sub-folders from
+        preventing any VCbind/ and VCbinder-*/ working sub-folders from
         inclusion in devBinder source-code version control.  (part of this
-        source and part of VCbinder-x.y.z.zip)
+        source and part of VCbinder-*.zip)
         
     devBinder.txt
         This description and manifest for the devBinder/ folder
@@ -30,7 +34,7 @@ MANIFEST
          
     NOTICE.txt
         Notice file for inclusion in VCbinder.zip
-        (part of this source and part of VCbinder-x.y.z.zip)
+        (part of this source and part of VCbinder-*.zip)
         
     VCbinder-0.1.1.txt (part of VCbinder-0.1.1.zip)
         The manifest and procedure file that is incorporated in 
@@ -38,25 +42,28 @@ MANIFEST
         without having to download/open VCbinder-0.1.1.zip first.
         Note that VCbinder-0.1.1.txt/.zip are not added to construction
         sets.  It is selected extracts from VCbinder-0.1.1.zip that
-        usually are.
+        usually go into construction sets for Microsoft Windows programs.
                
-    VCbind.bat (part of VCbinder-0.1.1.zip) [***TBD***]
+    VCenable.bat (part of VCbinder-*.zip)
         Script that can be placed in a construction set to relay into the
-        VCbind\Vcbind.bat script after first checking that the VCbind script
-        is in place.  This naming might not be a good idea.
+        VCbind\Vcbind.bat script after first checking that VCbind\VCbind.bat
+        is in place.  This file is purposefully not versioned, so that it
+        can always be found from other construction set components without
+        need for version consistency.
         
     VCbind-0.1.1.txt (part of VCbinder-0.1.1.zip)
          copy of the same file from VCbind.zip so that it can be read before
          any VCbind.zip extraction, as may be desired.
          
     VCbind.zip (part of VCbinder-0.1.1.zip)
-         The VCbind 0.1.1 package procedure that is delivered in the 
-         current VCbinder.  Developed in sibling folder devBind/
+         The VCbind 0.1.1 package procedure delivered in the developing
+         VCbinder.  VCbind.zip versions are developed in sibling folder 
+         devBind/
          
     VCbinder-0.1.1.zip
           The under-development VCbinder artifact for integration of 
           VCbind elements into the source-code version-control of a 
-          construction set.  The latest stable artifact is at VCbinder\
+          construction set.
           
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -82,8 +89,7 @@ TODO
 
  * Provide the construction procedure.
   
- * Reflect: BINDING THE VC COMPILER
-   The VCbind.bat here is used to check that VCbind.zip is present and that
+ * The VCenable.bat here is used to check that VCbind.zip is present and that
    the extracted VCbind\VCbind.bat file is present for use.  If Vcbind.zip
    has not been extracted, the user will be instructed to extract it and
    retry.
@@ -92,12 +98,12 @@ TODO
     
  * Speed up this work just enought to expedite confirmation and provisional
    use.
-   
- * Include updating of the .gitignore as part of the staging for each new
-   VCbinder version. 
-    
+       
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.13 2016-12-03-12:20 Make the .gitignore independent of the VCbinder 
+        version.  Introduce VCenable.bat name for the relay script.  Clean
+        up nomenclature in the text and manifest.
  0.0.12 2016-12-02-17:25 Staging for VCbinder 0.1.1 derivation.
  0.0.11 2016-11-30-17:11 Transpose to nfoTools and touch up accordingly.
  0.0.10 2016-11-29-14:47 Add LICENSE and NOTICE.  These apply to this source
@@ -117,4 +123,4 @@ TODO
  0.0.1 2016-10-24-10:10 Rename to dev.txt under VCbinder/dev/ now.
  0.0.0 2016-10-24-09:35 Initial Placeholder as part of folder setup.
 
-                       *** end of devBinder.txt ***
+                        *** end of devBinder.txt ***

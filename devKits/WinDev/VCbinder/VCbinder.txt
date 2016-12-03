@@ -1,4 +1,4 @@
-VCbinder.txt 0.0.11                   UTF-8                        2016-12-02
+VCbinder.txt 0.0.12                   UTF-8                        2016-12-03
 
   <https://github.com/orcmid/nfoTools>/devKits/WinDev/VCbinder/VCbinder.txt
 
@@ -10,16 +10,15 @@ VCbinder.txt 0.0.11                   UTF-8                        2016-12-02
     Microsoft Windows written in C/C++.
     
     For more about the organization and use of VCbinder, consult the 
-    VCbinder-x.y.z.txt file and also the web page information at 
+    VCbinder-*.txt file and also the web page information at 
     <http://nfoWare.com/dev/2016/11/d161102b.htm>.
     
-    Files with names of form VCbinder-x.y.z.txt and VCbinder-x.y.z.zip 
-    in this directory are for the latest version considered stable for
+    Files with names of form VCbinder-*.txt and VCbinder-*.zip in
+    this directory are for the latest version considered stable for
     general use.
     
     The subdirectories devBind/ and devBinder/ are where versions of 
-    VCbind.zip and VCbinder kits for VCbind delivery to construction
-    sets are developed.
+    VCbind.zip and VCbinder kits are developed.
     
 
 MANIFEST
@@ -29,8 +28,8 @@ MANIFEST
         VCBinders
         
     devBinder/
-        The project materials for making a making a VCbinder-x.y.z.zip 
-        along with its VCbinder-x.y.z.txt description/manifest file.
+        The project materials for making a making a VCbinder-*.zip 
+        along with its VCbinder-*.txt description/manifest file.
         
     devBind/
          The project materials for development of the VCbind.zip 
@@ -66,7 +65,7 @@ TODO
  * Add prerequisites, with links to more on satisfying the prerequisites.
   
  * Companion material that should be redistributable at the level of 
-   VCbind.zip is provided along with VCbind.zip in VCbinder.zip. One thing
+   VCbind.zip is provided along with VCbind.zip in VCbinder-*.zip. One thing
    that must be added by the user is any .gitignore for VCbind/ or the
    equivalent, depending on the nature of the construction set code 
    that uses a VCbind.
@@ -75,9 +74,10 @@ TODO
 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.12 2016-12-03-12:27 Cleanup text and nomenclature in line with devBinder
  0.0.11 2016-12-02-16:36 Fixed the path to this file. Simplified the 
         description about having the stable distribution here for reference.
-        Other details are at nfoWare.com and the devBinder/devBind folders.
+        Other details are at nfoWare.com and the devBinder and devBind folders.
  0.0.10 2016-11-30-16:43 Adjust to transposition of VCbinder to nfoTools,
        cleaning up old TODOs as well.
  0.0.9 2016-10-30-10:40 Poised for Expedited Provisional Use
