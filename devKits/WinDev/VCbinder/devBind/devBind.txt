@@ -1,4 +1,4 @@
-devBind.txt 0.1.9                    UTF-8                          2016-12-02
+devBind.txt 0.1.10                    UTF-8                         2016-12-**
 ---------1---------2---------3---------4---------5---------6---------7-------*
 
             <https://github.com/orcmid/nfoTools>
@@ -14,13 +14,13 @@ devBind.txt 0.1.9                    UTF-8                          2016-12-02
     it's development, latest downloads, and the relationship to source-code
     construction sets, see <http://nfoWare.com/dev/2016/11/d161101.htm>.
  
-    The details of VCbind.zip and its usage are in the VCbind-x.y.z.txt file
+    The details of VCbind.zip and its usage are in the VCbind-*.txt file
     for the particular version (e.g., VCbind-0.1.1.txt).  That file is part
     of the VCbind.zip content.  It is useful to include the applicable
-    VCbind-x.y.z.txt alongside VCbind.zip so users of a construction set 
-    can (1) determine how to proceed before extracting VCbind.zip content 
-    itself, can (2) identify the version of VCbind to determine its current
-    status, and can verify that the VCbind.zip is of the same version.
+    VCbind-*.txt alongside VCbind.zip so users of a construction set 
+    (1) can determine how to proceed before extracting VCbind.zip content 
+    itself, (2) can identify the version of VCbind to determine its current
+    status, and (3) can verify that the VCbind.zip is of the same version.
        
     Extensive details are provided here and in VCbind.zip to support non-
     expert testing and confirmation of VCbind operation.  Someone without the 
@@ -31,7 +31,7 @@ devBind.txt 0.1.9                    UTF-8                          2016-12-02
     
 USING VCBIND.ZIP
 
-    The VCbind-x.y.z.txt file of a given VCbind.zip provides the instructions
+    The VCbind-*.txt file of a given VCbind.zip provides the instructions
     for its usage in a construction set that employs VCbind.  
 
     To obtain the VCbind currently recommended for general usage, consult
@@ -52,20 +52,21 @@ DEPENDENCIES FOR VCBIND
     
     The same dependencies apply to development work on VCbind itself.
     
-    Providing ways to make use of IDEs, even though building from the command
-    line are the subject of potential future VCbind or related releases.
+    Providing ways to make use of source-code editors and IDEs, even though 
+    building from the command line, are the subject of future VCbind or 
+    related materials.
     
     
 PREREQUISITE CAPABILITIES FOR VCBIND DEVELOPMENT WORK
 
     If you are inexperienced with use of the Windows command shell, of the 
-    Visual C/C++ compiler, and of related command-line tools, familiarization
-    with operation of VCbind can be gained by using it as specified in an
-    existing construction set.  Practice with any construction set that
-    produces a simple command-line program from a stable source code release.
+    Visual C/C++ compiler, and of related command-line tools, gain 
+    familiarization with operation of VCbind by using it in an existing
+    construction set.  Practice construction sets that produces simple 
+    command-line programs from stable source-code releases.
     
-    The next level of skill might be going through the testing and confirma- 
-    tion of VCbind.zip as provided in its distributions.
+    For greater skill, go through the testing and confirmation of VCbind.zip 
+    as provided in its distributions.
 
     Then inspect this devBind material.  Review and test the maintenance
     procedure, identifying questions that need to be resolved.  Determine
@@ -112,7 +113,7 @@ DEVBIND EMHANCEMENT AND MAINTENANCE CODE-AND-TEST CYCLE
      of your changes, whether or not for contribution back to the origin
      project.
      
-  2. In the devBind\ folder, follow the VCbind-x.y.z.txt instructions and
+  2. In the devBind\ folder, follow the VCbind-*.txt instructions and
      extract VCbind.zip to the subfolder VCbind\ (i.e., Windows 
      folder location devBind\VCbind\).
      
@@ -121,12 +122,13 @@ DEVBIND EMHANCEMENT AND MAINTENANCE CODE-AND-TEST CYCLE
      The key is to always know what files are the latest and not risk
      using older versions by mistake.
      
-  3. Edit the VCbind.bat and VCbind-x.y.z.txt files here in the devBind\ 
-     folder.  Copy modified VCbind.bat files to devBind\VCbind\ for testing 
+  3. Edit the VCbind.bat and VCbind-*.txt files here in the devBind\ 
+     folder.  Rename the VCbind-x.y.z.txt file to reflect the version being
+     worked on.  Copy modified VCbind.bat files to devBind\VCbind\ for testing 
      and confirmation of test cases.  Confirm that the cl.exe compiler can be
      operated and that successful compilations are produced.  The semantic
      versioning identifier presented by VCbind.bat and in the naming of
-     VCbind-x.y.z.txt will depend on the purpose of your modifications.
+     VCbind-*.txt will depend on the purpose of your modifications.
      See <http://semver.org/>.
     
   4. Wnen your work is completed or at an intermediate check-point, synchronize
@@ -155,7 +157,7 @@ DEVBIND EMHANCEMENT AND MAINTENANCE CODE-AND-TEST CYCLE
 MANIFEST
 
     NOTE: When there is development, maintenance, and testing underway 
-    in the origin devBind/ folder, the working versions of VCbind-x.y.z.txt,
+    in the origin devBind/ folder, the working versions of VCbind-*.txt,
     VCbind.bat, VCbind.zip, and other devBind artifacts can be inconsistent
     until a stable case is reached.
 
@@ -229,21 +231,21 @@ TODO
      
  * Does a branch remain available even if it is merged back to master?
  
- * For the nfoWare.com d161101c-dist, there is more to do in identifying where
-   the source code is maintained, more about toolcraft with Git, and also 
-   the use of Git command-line operations in addition to any GitHub reliance.
+ * For the nfoWare.com d161101*-dist folders, there is more to do in 
+   identifying where, more about toolcraft with Git, and also the use of
+   Git command-line operations in addition to any GitHub reliance.
    
- * The VCbind-x.y.z.txt should point to the download folder, not the page 
+ * The VCbind-*.txt should point to the download folder, not the page 
    for the version.  The idea is that the download folder is all about the
    downloading, verifying the materials, and then maybe the smoke tests.
    
- * Fix the VCbind\ folder description in VCbind.txt section one to indicate
+ * Fix the VCbind\ folder description in VCbind-*.txt section one to indicate
    that restoration as stated impacts only the material from VCbind.zip and
    not anything the user put there.
    
- * Decide whether information about use of the source is best at the release
-   page (e.g., d161101c) or the distribution description (e.g., d161101c-dist)
-   or perhaps divided between the two.
+ * Put  information about use of the source at the distribution description,
+   (e.g., d161101c-dist/) leaving the release page (e.g., d161101c.htm) to
+   focus on use of that VCbind, not on its download, testing, and maintenance.
    
  * The source discussion should emphasize that this is Code in the Open, and
    not an organized open-source project, despite the licensing.
@@ -254,6 +256,8 @@ TODO
    
 ---------1---------2---------3---------4---------5---------6---------7-------*
 
+ 0.1.10 2016-12-03-12:49 Touch-ups and clarification for some items in 
+        anticipation of VCbind 0.1.1. 
  0.1.9  2016-12-02-17:34 Complete staging for VCbind 0.1.1 at nfoTools.
  0.1.8  2016-11-30-18:01 Transpose to nfoTools/devKits/WinDev/VCbinder/devBind
         and continued development as a common component of construction sets.
@@ -314,4 +318,4 @@ TODO
   0.0.0 2016-10-24-18:11 Initial Placeholder as part of VCbind/dev/ folder
         setup.
  
-                        *** end of devBind.txt ***
+                          *** end of devBind.txt ***
