@@ -1,18 +1,18 @@
-WinConKit.txt 0.0.1                   UTF-8                         2016-11-30
+WinConKit.txt 0.0.2                   UTF-8                         2016-12-04
 
               <https://github.com/orcmid/nfoTools>
                      /devKits/WinDev/WinConKit/WinConKit.txt>
 
-                         WINDOWS CONSOLE CONSTRUCTION KIT
-                         ================================
+              NATIVE WINDOWS CONSOLE APPLICATION CONSTRUCTION KIT
+              ===================================================
 
     Windows Console Construction Sets are for C/C++ console applications
     running in the native Windows Command Shell.  The building of the
     program is accomplished using Microsoft command-line Development Tools.
     
-    The Construction Kit includes a number of components and customization
-    procedures for establishing a specific Construction Set for building,
-    testing, and deploying a console program.
+    WinCon Construction Kit includes a number of components and customization
+    procedures leading to a WinCon Construction Set for building, testing,
+    and deploying a console program.
     
 PREREQUISITES
 
@@ -25,7 +25,7 @@ DEPENDENCIES
    
 MANIFEST
 
-    .gitignore (from VCbinder)
+    .gitignore (applicable here and in a WinCon Construction Set)
         Ignoring folders that are created only for construction activity
         and not intended as part of the maintained source tree.  This
         prevents local customizations of working material from infecting
@@ -35,7 +35,7 @@ MANIFEST
         This description file on organization of the construction kit
         and use of its materials.
         
-    VCbind.bat (from VCbinder)
+    VCenable.bat (from VCbinder)
         script for performing a VCbind operation using the extracted 
         VCbind.zip; the extraction is confirmed and then the VCbind.bat
         in the extracted material is performed.
@@ -46,12 +46,7 @@ MANIFEST
         
     VCbind.zip (from VCbinder)
         package which provides the working VC binding script when extracted
-        to VCbind/ here.
-        
-    VCbinder.zip 
-        package from which the integration of VCbind material is made.
-        This is an external dependency that is carried here for independent
-        completeness.      
+        to VCbind/ here.  
        
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -70,15 +65,29 @@ MANIFEST
     limitations under the License.
 
 TODO
+
+ * Switch up to developing toward VCbind[er] 0.1.1 dependency.
+ 
+ * Tie this to examples of where the Kit is used/developed.  
+ 
+ * Does this require an indirect level?  That is, do we need a 
+   devWinConKit layer below here?  Then WInConKit/ is the deployment
+   level?  Reconcile with the working development of a WinConKit and
+   having a point of access/deployment.  This is redundant with the
+   nfoWare site's deployment, but that's no crime, just as for VCbinder
+   and VCbind.
+ 
+ * Tie to the WinConKit web presence and where distributions will be 
+   provided.
  
  * Work up the Visual C++ console compilation case.
  
- * VCbuild/ for doing it all using the command line.
+ * WinConBuild/ for doing it all using the command line.
  
  * Specify how the CL.exe command line parameters and options are 
    customized.
  
- * Add VCrun for running the result of a VCbuild (or VS/VC project?)
+ * Add WinConRun for running the result of a WinConBuild (or VS/VC project?)
  
  * Add VSproject/ for doing all of this with Visual Studio.
  
@@ -93,7 +102,7 @@ TODO
  * Add something about more information on constructing and verifying
    a build, and simply using the result to play the game.
  
- * Add anything about developing/maintaining the WinCon set.
+ * Add anything about developing/maintaining WinConKit.
    This can be by appropriate pointers.
    
  * It is not clear whether and how Micosoft Visual Studio Team Services
@@ -104,8 +113,24 @@ TODO
  * There may need to be more layering here because of how packaging of piece
    parts may need to be worked up (e.g., in additional Zip files).
    
+ * Work through this and have a statement somewhere about what has actually
+   been tested:
+        - Visual Studio Community 2015 with Update 3 (VS 14.0 C++ features)
+     - Visual Studio Express 2015 for Windows Desktop (VS 14.0 C++ features)
+     - Visual C++ Build Tools 2015 Update 3 (VS 14.0 C++ features)
+     - Visual Studio Express 2013 for Windows Desktop Update 5 
+       (VS 12.0 C++ features)
+     - Visual Studio 2012 Express for Windows Desktop (VS 11.0 C++ features)
+    Probably Obsolete and no longer available for download: 
+     - Visual Studio 2010 Express (VS 10.0 C++ features, via Studio 2010 SP1 ?)
+     - Visual Studio Express 2008 (VS 9.0 C++ Express features)
+     - Visual C++ Express 2005 (VS 8.0 C++ features)
+   
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.2 2016-12-04-12:40 Further Adjustments.  Import more notes from Adv10
+       that belong here instead of a derived (or prototype) construction set.
+       Identify VCenable.bat as the kickoff for the tool chain.
  0.0.1 2016-11-30-20:45 Initial customization for WinConKit.
  0.0.0 2016-11-30-16:43 Initial Placeholder from the WinCon.txt 0.0.8 file
        in the Adv10/dev/WinCon/ construction set.
