@@ -1,5 +1,5 @@
 @echo off
-rem VCbind.zip\VCbind.bat 0.1.3     UTF-8                           2016-12-05 
+rem VCbind.zip\VCbind.bat 0.1.4     UTF-8                           2016-12-** 
 rem -----1---------2---------3---------4---------5---------6---------7-------*
 
 rem                  SETTING VC++ COMMAND-SHELL ENVIRONMENT
@@ -18,25 +18,36 @@ rem Designate the distribution version
 SET VCverNum=0.2.0
 rem     0.1.1+ semantic versioning candidate
 rem     the least change past 0.1.0 is always the next candidate until
-rem     an actual distribution candidate is staged.
+rem     an actual distribution is chosen.
 
+rem SELECT EMBEDDED, TERSE, OR DEFAULT
+rem     %1 value "+" selects smooth non-stop operation for splicing output
+rem        into that of a calling script.
+rem     %2 might then be "*" and allow for that.
+SET VCterse=
+SET VCsplice=%1
+IF NOT "%1" == "+" GOTO :MAYBETERSE
+IF "%2" == "*" SET VCterse=^>NUL
+
+:MAYBETERSE
 rem SELECT TERSE OR VERBOSE
 rem     %1 value "*" selects terse operation
 rem     don't shift that %1 out until Command Extensions confirmed.
-SET VCterse=
+
 IF "%1" == "*" SET VCterse=^>NUL
 rem                used to dump verbose echoes
 
 rem ANNOUNCE THIS SCRIPT
 IF "%1" == "*" GOTO :WHISPER
-TITLE VC++ COMMAND-LINE BUILD ENVIRONMENT SETUP
+IF "%1" == "+" GOTO :WHISPER
+TITLE VC++ COMMAND-LINE ENVIRONMENT SETUP
 COLOR 71
 rem   Soft white background with blue text
 
 CLS
 ECHO:
 :WHISPER
-ECHO: [VCbind] %VCverNum% VC++ COMMAND-SHELL ENVIRONMENT SETUP
+ECHO: [VCbind] %VCverNum% VC++ COMMAND-LINE ENVIRONMENT SETUP
 IF NOT CMDEXTVERSION 2 GOTO :FAIL0
 ECHO:          %TIME% %DATE% on %USERNAME%'s %COMPUTERNAME%         %VCterse%
 ECHO:          %~f0                                                 
@@ -50,7 +61,7 @@ IF NOT EXIST "%~dp0VCbind.bat" GOTO :FAIL1
 
 rem DETERMINE PARAMETERS
 rem    See :USAGE for the VCbind API contract
-  
+IF "%1" == "+" SHIFT /1  
 IF "%1" == "?" GOTO :USAGE
 IF "%1" == "*" SHIFT /1
 
@@ -147,7 +158,7 @@ ECHO:          %VCINSTALLDIR% %VCterse%
 GOTO :SUCCESS
 
 :ALREADY
-rem CHECK IF THERE IS A CONFLICT WITH THE PREVIOUS BINDING
+rem CHECK FOR CONFLICT WITH PRIOR BINDING
 IF NOT "%VCasked%" == "%VCbound%" GOTO :FAIL2
 IF NOT "%VCaskedConfig%" == "%VCboundConfig%" GOTO :FAIL2
 
@@ -167,6 +178,7 @@ SET VCboundConfig=%VCaskedConfig%
 SET VCboundVer=%VisualStudioVersion%
 rem    accurate whether or not these are already set
 ECHO:  %VCterse%
+IF "%VCsplice%" == "+" EXIT /B 0
 IF "%VCterse%" == "" PAUSE
 EXIT /B 0
 
@@ -257,13 +269,10 @@ ECHO:   USAGE: VCbind [+] ?
 ECHO:          VCbind [+] [*] [config [toolset]]
 IF NOT "%1" == "?" GOTO :BAIL
 ECHO:   where
-ECHO:
 ECHO:           ? produces this usage information.
-ECHO:
-ECHO:           + for operating non-stop without any screen clearing
-ECHO:             and pausing of verbose output.  Useful when called 
-ECHO:             as a helper to another script.
-ECHO:
+ECHO:           + for operating non-stop without any screen clearings
+ECHO:             and pausings.  Good for providing output as a helper
+ECHO:             to a calling script.
 ECHO:           * selects terse output.  If operation fails, repeat
 ECHO:             the command line without this option for more details.
 ECHO:
@@ -292,6 +301,8 @@ ECHO:                  that the VC++ build tools correspond to.
 ECHO:
 ECHO:    Other VC* environment-variable names are used transiently.  They
 ECHO:    will be used without checking whether they are already defined.
+ECHO:
+IF "%VCsplice%" == "+" EXIT /B 0
 PAUSE
 EXIT /B 0
 
@@ -299,6 +310,7 @@ EXIT /B 0
 ECHO:
 IF NOT ERRORLEVEL 2 SET ERRORLEVEL=2
 IF NOT "%VCterse%" == "" EXIT /B %ERRORLEVEL%
+IF "%VCsplice%" == "+" EXIT /B %ERRORLEVEL%
 COLOR 74
 rem   Soft White background and Red text
 ECHO:
@@ -326,6 +338,7 @@ rem limitations under the License.
 
 rem -----1---------2---------3---------4---------5---------6---------7-------*
 
+rem 0.1.4  2016-12-05-13:32 Implement "+" option. Improve comments, :USAGE
 rem 0.1.3  2016-12-05-10:39 Switch to preparation as 0.2.0
 rem        The interface is being upgraded for correct working with VCenable
 rem        and calls as part of other toolchain operability checks.
