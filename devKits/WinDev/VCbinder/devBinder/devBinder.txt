@@ -1,4 +1,4 @@
-devBinder.txt 0.0.13                   UTF-8                      dh:2016-12-03
+devBinder.txt 0.0.14                   UTF-8                       2016-12-04
 
            <https://github.com/orcmid/nfoTools>
                   /devKits/WinDev/VCbinder/devBinder/devBinder.txt>
@@ -49,7 +49,7 @@ MANIFEST
         VCbind\Vcbind.bat script after first checking that VCbind\VCbind.bat
         is in place.  This file is purposefully not versioned, so that it
         can always be found from other construction set components without
-        need for version consistency.
+        need to name the exact version.
         
     VCbind-0.1.1.txt (part of VCbinder-0.1.1.zip)
          copy of the same file from VCbind.zip so that it can be read before
@@ -83,9 +83,9 @@ MANIFEST
 
 TODO
 
-    In addition to these TODO items, the web-facing material on 
-    <http://nfoWare.com> has a Diary and Job Jar of VCbinder items
-    at <http://nfoWare.com/dev/2016/11/d161102a.htm>.
+       In addition to these TODO items, the web-facing material on 
+       <http://nfoWare.com> has a Diary and Job Jar of VCbinder items
+       at <http://nfoWare.com/dev/2016/11/d161102a.htm>.
 
  * Provide the construction procedure.
   
@@ -94,6 +94,12 @@ TODO
    has not been extracted, the user will be instructed to extract it and
    retry.
    
+ * We need a way to have the VCbind messages from under VCenable not be too
+   confusing.  So VCenable will need to somehow present as if it is part of
+   VCbind.bat or somehow blending in.  This also impacts the handling of
+   displaying in a cleared screen or in a terse form.  It may take some
+   adjustment to VCbind.bat to have these play nicely together.
+   
  * Find a way to do the VCbind.zip extraction automatically, if simple enough.
     
  * Speed up this work just enought to expedite confirmation and provisional
@@ -101,6 +107,8 @@ TODO
        
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.14 2016-12-04-21:14 Add old VCenable.bat for customization to the
+        current VCbinder approach for 0.1.1.  Review TODOs.
  0.0.13 2016-12-03-12:20 Make the .gitignore independent of the VCbinder 
         version.  Introduce VCenable.bat name for the relay script.  Clean
         up nomenclature in the text and manifest.
