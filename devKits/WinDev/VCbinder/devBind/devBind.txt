@@ -1,4 +1,4 @@
-devBind.txt 0.1.10                    UTF-8                         2016-12-**
+devBind.txt 0.1.11                    UTF-8                         2016-12-**
 ---------1---------2---------3---------4---------5---------6---------7-------*
 
             <https://github.com/orcmid/nfoTools>
@@ -36,6 +36,11 @@ USING VCBIND.ZIP
 
     To obtain the VCbind currently recommended for general usage, consult
     <http://nfoWare.com/dev/2016/11/d161101b.htm>. 
+    
+    For additional material and a recommended approach for incorporating
+    VCBind into construction sets that make command-line use of the VC++
+    compiler and related Microsoft development tools, check into VCbinder,
+    <http://nfoWare.com/dev/2016/11/d161102.htm>.
     
     
 DEPENDENCIES FOR VCBIND
@@ -234,15 +239,7 @@ TODO
  * For the nfoWare.com d161101*-dist folders, there is more to do in 
    identifying where, more about toolcraft with Git, and also the use of
    Git command-line operations in addition to any GitHub reliance.
-   
- * The VCbind-*.txt should point to the download folder, not the page 
-   for the version.  The idea is that the download folder is all about the
-   downloading, verifying the materials, and then maybe the smoke tests.
-   
- * Fix the VCbind\ folder description in VCbind-*.txt section one to indicate
-   that restoration as stated impacts only the material from VCbind.zip and
-   not anything the user put there.
-   
+      
  * Put  information about use of the source at the distribution description,
    (e.g., d161101c-dist/) leaving the release page (e.g., d161101c.htm) to
    focus on use of that VCbind, not on its download, testing, and maintenance.
@@ -250,12 +247,10 @@ TODO
  * The source discussion should emphasize that this is Code in the Open, and
    not an organized open-source project, despite the licensing.
    
- * It should be emphasized that if a terse failure case is unclear, 
-   VCbind should be performed directly without the terse "*" flag.
-   This should probably be in :USAGE and elsewhere.
-   
 ---------1---------2---------3---------4---------5---------6---------7-------*
 
+ 0.1.11 2016-12-04-20:54 Correct the top-corner date, reflect some VCbind.bat
+        cleanups, and link to the nfoWorks VCbind and VCbinder materials.
  0.1.10 2016-12-03-12:49 Touch-ups and clarification for some items in 
         anticipation of VCbind 0.1.1. 
  0.1.9  2016-12-02-17:34 Complete staging for VCbind 0.1.1 at nfoTools.

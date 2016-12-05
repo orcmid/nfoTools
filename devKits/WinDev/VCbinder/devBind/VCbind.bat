@@ -1,5 +1,5 @@
 @echo off
-rem VCbind.zip\VCbind.bat 0.1.1     UTF-8                           2016-11-29 
+rem VCbind.zip\VCbind.bat 0.1.2     UTF-8                           2016-12-04 
 rem -----1---------2---------3---------4---------5---------6---------7-------*
 
 rem                  SETTING VC++ COMMAND-SHELL ENVIRONMENT
@@ -10,7 +10,7 @@ rem line use of the Visual C++ command-line compiler, cl.exe, and related
 rem build tools.
 
 rem Additional documentation of this procedure and its usage are found in the
-rem accompanying VCbind-0.1.0.txt file.  For further information, see
+rem accompanying VCbind-0.1.1.txt file.  For further information, see
 rem <http://nfoWare.com/dev/2016/11/d161101.htm> and check for the latest
 rem version at <http://nfoWare.com/dev/2016/11/d161101b.htm>.
 
@@ -142,7 +142,7 @@ CALL %1\vcvarsall.bat %VCaskedConfig%
 IF NOT DEFINED VCINSTALLDIR GOTO :FAIL5
 
 :WINNER
-ECHO:          Success: VC++ %VisualStudioVersion% %VCaskedConfig% config set.
+ECHO:          Success: VC++ %VisualStudioVersion% config %VCaskedConfig% set.
 ECHO:          %VCINSTALLDIR% %VCterse%
 GOTO :SUCCESS
 
@@ -165,7 +165,7 @@ GOTO :SUCCESS
 SET VCbound=%VCasked%
 SET VCboundConfig=%VCaskedConfig%
 SET VCboundVer=%VisualStudioVersion%
-rem    appropriate whether or not already set
+rem    accurate whether or not these are already set
 ECHO:  %VCterse%
 IF "%VCterse%" == "" PAUSE
 EXIT /B 0
@@ -198,15 +198,15 @@ GOTO :BAIL
 
 :FAIL4
 ECHO:          *** FAIL: VC ENVIRONMENT ALREADY SET BY OTHER MEANS ***  
-ECHO:          The environment is already set for compiling with a  %VCterse%
-ECHO:          VC++ compiler version %VisualStudioVersion%          %VCterse%
+ECHO:          The environment is already set for compiling with the%VCterse%
+ECHO:          VC++ compiler version for VS %VisualStudioVersion%   %VCterse%
 ECHO:          %VCINSTALLDIR% %VCterse%
 GOTO :NOMIXING
 
 :FAIL3
 ECHO:          *** FAIL: VCBIND ENVIRONMENT HAS BEEN ALTERED ***
-ECHO:          Binding to VC++ %VisualStudioVersion% is changed     %VCterse%
-ECHO:          from version %VCboundVer% set by VCbind.  Now at     %VCterse%
+ECHO:          Binding to the VC++ of VS %VCboundVer% by VCbind     %VCterse%
+ECHO:          is altered to VC++ of VS %VisualStudioVersion% at    %VCterse%
 ECHO:          %VCINSTALLDIR% %VCterse%
 ECHO:          Continuing this session may have unexpected results. %VCterse%
 GOTO :NOMIXING
@@ -259,7 +259,8 @@ IF NOT "%1" == "?" GOTO :BAIL
 ECHO:   where
 ECHO:           ? produces this usage information.
 ECHO:
-ECHO:           * selects terse output
+ECHO:           * selects terse output.  If terse output fails, repeat
+ECHO:             the command without this option to see more details.
 ECHO:
 ECHO:      config is one of the VC++ "platform" configuration types:
 ECHO:                      x86 for producing x86 code via the x86 compiler
@@ -320,6 +321,8 @@ rem limitations under the License.
 
 rem -----1---------2---------3---------4---------5---------6---------7-------*
 
+rem 0.1.2  2016-12-04-20:53 Adjust messages slightly and explain about using
+rem        non-terse if a problem comes up.
 rem 0.1.1  2016-11-29-14:33 Small changes to messages and remarks to include
 rem        in whatever the next distribution is.
 rem 0.1.0  2016-11-25-08:21 Set for stepping toward 0.1.1+ next-chosen semantic
