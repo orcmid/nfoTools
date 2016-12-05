@@ -1,4 +1,4 @@
-devBinder.txt 0.0.14                   UTF-8                       2016-12-04
+devBinder.txt 0.0.15                   UTF-8                       2016-12-05
 
            <https://github.com/orcmid/nfoTools>
                   /devKits/WinDev/VCbinder/devBinder/devBinder.txt>
@@ -30,40 +30,40 @@ MANIFEST
         
     LICENSE.txt
         Apache License Version 2.0
-        (part of this source and part of VCbinder-x.y.z.zip)
+        (part of this source and part of VCbinder-*.zip)
          
     NOTICE.txt
         Notice file for inclusion in VCbinder.zip
         (part of this source and part of VCbinder-*.zip)
         
-    VCbinder-0.1.1.txt (part of VCbinder-0.1.1.zip)
+    VCbinder-0.1.0.txt (part of VCbinder-0.1.0.zip)
         The manifest and procedure file that is incorporated in 
-        VCbinder-0.1.1.zip.  This provides information on the procedure
-        without having to download/open VCbinder-0.1.1.zip first.
-        Note that VCbinder-0.1.1.txt/.zip are not added to construction
-        sets.  It is selected extracts from VCbinder-0.1.1.zip that
+        VCbinder-0.1.0.zip.  This provides information on the procedure
+        without having to download/open VCbinder-0.1.0.zip first.
+        Note that VCbinder-0.1.0.txt/.zip are not added to construction
+        sets.  It is selected extracts from VCbinder-0.1.0.zip that
         usually go into construction sets for Microsoft Windows programs.
+        
+    VCbinder-0.1.0.zip
+          The under-development VCbinder artifact for integration of 
+          VCbind elements into the source-code version-control of a 
+          construction set.        
                
-    VCenable.bat (part of VCbinder-*.zip)
+    VCenable.bat (part of VCbinder-0.1.0.zip)
         Script that can be placed in a construction set to relay into the
         VCbind\Vcbind.bat script after first checking that VCbind\VCbind.bat
         is in place.  This file is purposefully not versioned, so that it
         can always be found from other construction set components without
         need to name the exact version.
         
-    VCbind-0.1.1.txt (part of VCbinder-0.1.1.zip)
+    VCbind-0.2.0.txt (part of VCbinder-0.1.0.zip)
          copy of the same file from VCbind.zip so that it can be read before
          any VCbind.zip extraction, as may be desired.
          
-    VCbind.zip (part of VCbinder-0.1.1.zip)
-         The VCbind 0.1.1 package procedure delivered in the developing
+    VCbind.zip (part of VCbinder-0.1.0.zip)
+         The VCbind 0.2.0 package procedure delivered in the developing
          VCbinder.  VCbind.zip versions are developed in sibling folder 
          devBind/
-         
-    VCbinder-0.1.1.zip
-          The under-development VCbinder artifact for integration of 
-          VCbind elements into the source-code version-control of a 
-          construction set.
           
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -94,11 +94,14 @@ TODO
    has not been extracted, the user will be instructed to extract it and
    retry.
    
- * We need a way to have the VCbind messages from under VCenable not be too
-   confusing.  So VCenable will need to somehow present as if it is part of
-   VCbind.bat or somehow blending in.  This also impacts the handling of
-   displaying in a cleared screen or in a terse form.  It may take some
-   adjustment to VCbind.bat to have these play nicely together.
+ * VCenable will honor the "+" option and will use it with VCbind.bat if
+   not already requested of VCenable.
+   
+ * VCenable ? option will provide information for VCenable and might still
+   fail because VCbind\ is not (properly) available.  Otherwise it passes
+   through.
+   
+ * VCenable * will work as expected, as will + * if present.
    
  * Find a way to do the VCbind.zip extraction automatically, if simple enough.
     
@@ -107,6 +110,8 @@ TODO
        
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.15 2016-12-05-15:08 Set up for VCbinder 0.1.0 and testing VCenable
+        with the VCbind 0.2.0 release-candidate code.
  0.0.14 2016-12-04-21:14 Add old VCenable.bat for customization to the
         current VCbinder approach for 0.1.1.  Review TODOs.
  0.0.13 2016-12-03-12:20 Make the .gitignore independent of the VCbinder 

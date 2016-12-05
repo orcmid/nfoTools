@@ -1,17 +1,16 @@
------BEGIN PGP SIGNED MESSAGE-----
-Hash: SHA256
+VCbind-0.2.0.txt 0.0.12               UTF-8                         2016-12-05
+ --------1---------2---------3---------4---------5---------6---------7-------*
 
-VCbind-0.1.0.txt 0.0.8                  UTF-8                       2016-11-24
 
               BINDINGS FOR VISUAL C/C++ COMMAND-LINE COMPILATION
               ==================================================
               
-         This 0.1.0 distribution of VCbind.zip is available on the web 
-         at <http://nfoWare.com/dev/2016/11/d161101c.txt>.  Consult 
+         This 0.2.0 distribution of VCbind.zip is available on the web 
+         at <http://nfoWare.com/dev/2016/11/d161101d.txt>.  Consult 
          that page for the latest status, links to useful related 
          material, and the most-recent version.  If there is concern 
          for the authenticity or correctness of a VCbind.zip, obtain full
-         replacement at <http://nfoWare.com/dev/2016/11/d161101c.txt>.
+         replacement at <http://nfoWare.com/dev/2016/11/d161101d-dist/>.
          
          CONTENT
             1. Overview
@@ -19,46 +18,47 @@ VCbind-0.1.0.txt 0.0.8                  UTF-8                       2016-11-24
             3. Extraction of VCbind.zip Content
             4. Using the VCbind\VCbind.bat Script
             5. Developer Use of VCBind
-            MANIFEST of VCbind.zip 0.1.0
+            MANIFEST of VCbind.zip 0.2.0
          
  1. OVERVIEW
 
     VCbind.zip delivers a Windows batch script for setting up a command-
     line environment.  The resulting environment enables compiling with the
     Microsoft Visual C/C++ command-line compiler, cl.exe, aud using related
-    Microsoft developer tools.
+    Microsoft developer tools.  The environment is set up and used by issuing
+    commands within a Microsoft Windows console session.
     
     VCbind.zip is found as a component of larger construction sets.  Check 
     for custom instructions that apply to extraction and usage of VCbind
     in a particular construction set.
     
-    Ordinarily, construction sets using VCbind version 0.1.0 have a copy 
-    of this file, VCbind-0.1.0.txt, alongside the VCbind.zip file.  Use
-    the version included in VCbind.zip if it is different.
+    Ordinarily, construction sets using VCbind version 0.2.0 have a copy 
+    of this file, VCbind-0.2.0.txt, alongside the VCbind.zip file.  Use
+    the version included in VCbind.zip if it is different than this one.
     
     Extract VCbind.zip at the location where it appears in a construction set.
     The result is a companion folder with the following structure.
     
                construction-set-location\
                   ...
-                  VCbind.zip    *location in the construction set
+                  VCbind.zip    *part of the construction set
                   VCbind\       *created by extraction
                      ...
-                     Vcbind-0.1.0.txt
+                     Vcbind-0.2.0.txt
                      VCbind.bat
                   ...
                   
     The VCbind\ folder is not part of the preserved construction set.  
-    Customize it freely and leave the construction-set code intact.  Recover
-    VCbind\ to its released construction-set form by re-extracting from 
-    VCbind.zip.  
+    Customizing the folder contents will leave the construction-set code 
+    intact.  Restore the VCbind 0.2.0 parts by re-extracting VCbind.zip
+    if needed.
     
     
  2. PREREQUISITES AND DEPENDENCIES
  
-    To use VCbind, you will need to use the Windows File Explorer, be able to
-    initiate Windows Batch files, and to navigate and operate with the Windows
-    Command Shell, cmd.exe.
+    To use VCbind, you will need to (1) use the Windows File Explorer, (2) 
+    initiate Windows Batch (.bat) files, and (3) operate command-line
+    sessions of the Windows Command Shell, cmd.exe.
  
     VCbind is designed to work with versions of Visual Studio that are free
     for personal use, from Visual Studio C++ Express 2008 to Visual Studio
@@ -84,90 +84,91 @@ VCbind-0.1.0.txt 0.0.8                  UTF-8                       2016-11-24
     the context menu that appears.
     
     In the "Extract Compressed (Zipped) Folders" Dialog that appears,
-    do not change the "Files will be extracted to this folder:" choice that
-    is offered automatically.  This is important in order for other components
-    of a construction set to find the VCbind content correctly.
+    do not change the default "Files will be extracted to this folder:" choice.
+    The automatic choice is important for other construction-set components 
+    finding the VCbind content correctly.
     
     Check the "Show extracted files when complete" entry.
     
     Click "Extract".
     
-    If a "Replace or Skip Files" dialog appears, click "Replace the files
-    in the destination" option.  This will impose the files from VCbind 0.1.0
+    If a "Replace or Skip Files" dialog appears, click option "Replace the 
+    files in the destination."  This will insert the files from VCbind 0.2.0
     without disturbing any non-VCbind files you may have added.
     
     There should now be a VCbind\ folder in the same folder as the VCbind.zip.
-    In that folder you will see that the the files listed in the Manifest at
-    the end of the VCbind-0.1.0.txt file are included.    
+    In that folder you will see that the the files listed in the Manifest
+    below are included.    
     
     
  4. USING THE VCBIND\VCBIND.BAT SCRIPT
 
     Confirm that everything is working by double-clicking on the VCbind.bat 
-    file in the folder VCbind.zip is extracted into.  There should be a simple
-    success report.  If there is a failure report, provide any remedy that is
-    indicated.
+    file in the VCbind\ folder.  There should be a simple success report.  If
+    there is a failure report, provide any remedy that is indicated.
     
-    To use VCbind as part of a construction set, start a Windows Command Shell
-    (cmd.exe) session.  Navigate to where you want to be using the VC compiler
-    and environment.  This can be in the VCbind\ folder that has the VCbind.bat
-    file, or it can be from some other folder where you will be working.
-    
-    To learn about VCbind options, use the command form
-     
-            VCbind.bat ?
-    
+    To use VCbind as part of a construction set, follow the construction-set 
+    instructions for operation of a Windows Command Shell (cmd.exe) session.  
+       
     The simplest use of VCbind within a console session is by plain command
     
             VCbind.bat
             
     providing a default environment using the latest-version of VC compiler
-    that is detected.
+    that is detected.  This will also check whether a successful VCbind has
+    already been achieved in the current session.
     
     On a successful report from VCbind.bat, confirm presence of the compiler
     with the command
     
              CL.exe
              
-    in the same session.  Use "CL.exe /?" for extensive information about 
-    compiler options.
+    in the same session.  
+    
+    To learn about other VCbind options, use the command form
      
+            VCbind.bat ?
+                 
     Detailed use of the VC compiler and other command-line development tools
     will depend on the nature of the construction set in which VCbind is 
     found.  Consult the further instructions that are provided.
     
+    The VCbind-established environment does not persist beyond the current
+    console session.  To have it in another session, employ VCbind.bat again
+    in the manner specified for the construction set being operated.
+       
     
  5. DEVELOPER USE OF VCBIND.ZIP
  
     Add VCbind.zip to personal construction sets for command-line operation
     with Visual C/C++ compilers, libraries, and tools environments.
  
-    Investigate <http://nfoWare.com/2016/11/d161102.htm> for VCbinder tips
-    on incorporation in yout own distributed construction sets.
+    Investigate <http://nfoWare.com/2016/11/d161102.htm> for VCbinder and 
+    other tips for incorporation in yout own construction sets.
     
-    The source-code for the VCbind 0.1.0 release is also available at the 
-    <http://nfoWare.com/2016/11/d161101c.htm> page.
+    The source-code for the VCbind 0.2.0 release is also available at the 
+    <http://nfoWare.com/2016/11/d161101d-dist> page.
     
-    The public source-code management system where VCbind 0.1.0 was developed
-    is <https://github.com/orcmid/Adv10> at dev/VCbinder/devBind/
+    The public source-code project where VCbind 0.2.0 was developed is
+    <https://github.com/orcmid/nfoTools> location devKits/WinDev/VCbinder/.
                     
 
-MANIFEST OF VCBIND.ZIP 0.1.0
+MANIFEST OF VCBIND.ZIP 0.2.0
 
-    LICENSE.txt
-        copy of the Apache Licnese Version 2.0 of January 2004
+    LICENSE.txt 11,527 byte 2016-10-04 copy
+        Apache Licnese Version 2.0 of January 2004
     
     NOTICE.txt 1.0.0 814 byte 2016-10-24 version
         applicable NOTICE for VCbind.zip and its content
         
-    VCbind-0.1.0.txt 0.0.8 9,670 byte 2016-11-24T17:28 clearsigned version
-        This description file on organization of the archive and use of its
-        materials.
+    VCbind-0.2.0.txt 0.0.* clear-signed version
+        This description file on organization of VCbind.zip and use of its
+        content.
 
-    VCbind.bat 0.1.0 0.18 15,044 byte 2015-11-24T11:11 version
-        Script that, when run, will locate Visual C++ settings and perform
-        an appropriate setup of the environment for operating with the latest
-        installed version of the Visual C++ compiler and accompanying tools.
+    VCbind.bat 0.2.0 0.*.* 15,044 byte 2015-11-24T11:11 version
+        Script that, when run, will locate Visual C++ and setup the
+        command-line environment for using CL.exe and other Microsoft
+        command-line development tools.
 
 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -185,9 +186,14 @@ MANIFEST OF VCBIND.ZIP 0.1.0
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
-
+    
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.12 2016-12-05-13:45 VCbind-0.2.0 Release Candidate Working Draft
+        Going to 0.2.0 based on feature additions in VCbind.bat.
+ 0.0.11 2016-12-04-13:55 VCbind-0.1.1 Working Draft for the 0.1.1 release.
+ 0.0.10 2016-11-27-10:43 Vcbind-0.1.* Adjustments for progressive refinement
+        until a new release is achieved.  Simple text adjustments also.
  0.0.9 2016-11-24-17:28 Clearsign this document.
  0.0.8 2016-11-24-14:42 Refine the text. Add Developer Use section.  Make
        0.1.0 release version.
@@ -205,16 +211,6 @@ MANIFEST OF VCBIND.ZIP 0.1.0
       Initiate structure for command-line compilations analogous to the VS2013
       Projects.
 
-                       *** end of VCbind-0.1.0.txt ***
+                       *** end of VCbind-0.1.1.txt ***
                        
------BEGIN PGP SIGNATURE-----
-Version: GnuPG v2
 
-iQEcBAEBCAAGBQJYN5OjAAoJEPluif/UVmKK+gIH/0bp75vR+BavM8dDOFVqwdoH
-WBF8dMtlyFDcDKLBVAzwtRUrujNvmTiFYXVNg9uJ1WDSqf+i/T62naJkPnQ3TQQY
-00xdlkMAWHoNP4ezSvV81wsnv3PlVFoHSoWSSrBfvw73imBYwcHeEL93LVU/KNw/
-+evtMDLHhqfS2DqlMaa09cNrKrbBmuBmVMJmhoC92tYKaaQlA5l9BTn0AoeROGIg
-UIYJvcLscKt9dIaHSVmr/GJkV45njDbAc9UdoG2eJWKn8K1pD+/6aTDLLf26aViC
-wOEmF3S9Gx1Y9u4wEdwXZ2NeadrzY4Ckjk7oEMNDGlBgDDQ79orLK74tEiZ7DIE=
-=NEjq
------END PGP SIGNATURE-----
