@@ -1,5 +1,5 @@
 @echo off
-rem VCbind.zip\VCbind.bat 0.1.2     UTF-8                           2016-12-04 
+rem VCbind.zip\VCbind.bat 0.1.3     UTF-8                           2016-12-05 
 rem -----1---------2---------3---------4---------5---------6---------7-------*
 
 rem                  SETTING VC++ COMMAND-SHELL ENVIRONMENT
@@ -10,12 +10,12 @@ rem line use of the Visual C++ command-line compiler, cl.exe, and related
 rem build tools.
 
 rem Additional documentation of this procedure and its usage are found in the
-rem accompanying VCbind-0.1.1.txt file.  For further information, see
+rem accompanying VCbind-0.2.0.txt file.  For further information, see
 rem <http://nfoWare.com/dev/2016/11/d161101.htm> and check for the latest
 rem version at <http://nfoWare.com/dev/2016/11/d161101b.htm>.
 
 rem Designate the distribution version 
-SET VCverNum=0.1.1
+SET VCverNum=0.2.0
 rem     0.1.1+ semantic versioning candidate
 rem     the least change past 0.1.0 is always the next candidate until
 rem     an actual distribution candidate is staged.
@@ -253,14 +253,19 @@ GOTO :BAIL
 :USAGE
 rem    PROVIDE USAGE INFORMATION
 ECHO:   %VCterse%
-ECHO:   USAGE: VCbind ?
-ECHO:          VCbind [*][config [toolset]]
+ECHO:   USAGE: VCbind [+] ?
+ECHO:          VCbind [+] [*] [config [toolset]]
 IF NOT "%1" == "?" GOTO :BAIL
 ECHO:   where
+ECHO:
 ECHO:           ? produces this usage information.
 ECHO:
-ECHO:           * selects terse output.  If terse output fails, repeat
-ECHO:             the command without this option to see more details.
+ECHO:           + for operating non-stop without any screen clearing
+ECHO:             and pausing of verbose output.  Useful when called 
+ECHO:             as a helper to another script.
+ECHO:
+ECHO:           * selects terse output.  If operation fails, repeat
+ECHO:             the command line without this option for more details.
 ECHO:
 ECHO:      config is one of the VC++ "platform" configuration types:
 ECHO:                      x86 for producing x86 code via the x86 compiler
@@ -321,6 +326,9 @@ rem limitations under the License.
 
 rem -----1---------2---------3---------4---------5---------6---------7-------*
 
+rem 0.1.3  2016-12-05-10:39 Switch to preparation as 0.2.0
+rem        The interface is being upgraded for correct working with VCenable
+rem        and calls as part of other toolchain operability checks.
 rem 0.1.2  2016-12-04-20:53 Adjust messages slightly and explain about using
 rem        non-terse if a problem comes up.
 rem 0.1.1  2016-11-29-14:33 Small changes to messages and remarks to include

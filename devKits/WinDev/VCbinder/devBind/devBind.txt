@@ -1,4 +1,4 @@
-devBind.txt 0.1.11                    UTF-8                         2016-12-**
+devBind.txt 0.1.12                    UTF-8                         2016-12-05
 ---------1---------2---------3---------4---------5---------6---------7-------*
 
             <https://github.com/orcmid/nfoTools>
@@ -174,14 +174,15 @@ MANIFEST
         this manifest and procedures for developing a VCbind.zip as a helper
         in source-code construction sets
         
-    LICENSE.txt
-        Apache License Version 2.0 
-           (part of this source and for inclusion in VCbind.zip)
+    LICENSE.txt 11,527 byte 2016-10-04 copy
+        Apache Licnese Version 2.0 of January 2004
+        (part of this source and for inclusion in VCbind.zip)
+    
+    NOTICE.txt 1.0.0 814 byte 2016-10-24 version
+        applicable NOTICE for VCbind.zip and its content    
+        (part of this source and for inclusion in VCbind.zip)
          
-    NOTICE.txt
-           (part of this source and for inclusion in VCbind.zip)
-         
-    VCbind-0.1.1.txt
+    VCbind-0.2.0.txt
         manifest and description included in VCbind.zip and usable as a
         preview of instructions for extraction and usage. 
          
@@ -247,8 +248,11 @@ TODO
  * The source discussion should emphasize that this is Code in the Open, and
    not an organized open-source project, despite the licensing.
    
----------1---------2---------3---------4---------5---------6---------7-------*
+ --------1---------2---------3---------4---------5---------6---------7-------*
 
+ 0.1.12 2016-12-05-10:10 Switch to VCbind 0.2.0 Preparation
+        The VCbind.bat interface is being extended to support calling from
+        VCbinder's VCenable and even deeper in tool-chain confirmations.
  0.1.11 2016-12-04-20:54 Correct the top-corner date, reflect some VCbind.bat
         cleanups, and link to the nfoWorks VCbind and VCbinder materials.
  0.1.10 2016-12-03-12:49 Touch-ups and clarification for some items in 
