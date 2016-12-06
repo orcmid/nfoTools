@@ -1,4 +1,4 @@
-devBinder.txt 0.0.15                   UTF-8                       2016-12-05
+devBinder.txt 0.0.16                   UTF-8                       2016-12-06
 
            <https://github.com/orcmid/nfoTools>
                   /devKits/WinDev/VCbinder/devBinder/devBinder.txt>
@@ -12,13 +12,17 @@ devBinder.txt 0.0.15                   UTF-8                       2016-12-05
     and VCbinder*.zip files are preserved at the VCbinder/ folder, allowing
     work on the next version to occur in VCbinder/devBinder without causing
     any disturbance.
+    
+    More information about VCbinder is available at <http://nfoWorks.com>.
+    See <http://nfoWorks.com/dev/2016/11/d161102.htm> for further details.
 
 MANIFEST
 
     NOTE: When there is development, maintenance, and testing underway 
     in the origin devBinder/ folder, the working versions of VCbinder-*.txt,
     VCbinder-*.zip, VCenable.bat, VCbind.zip, VCbind-*.txt and other devBinder
-    artifacts can be inconsistent until a stable case is reached.
+    artifacts can be inconsistent until a stable distribution candidate is 
+    reached.
 
     .gitignore
         preventing any VCbind/ and VCbinder-*/ working sub-folders from
@@ -41,15 +45,16 @@ MANIFEST
         VCbinder-0.1.0.zip.  This provides information on the procedure
         without having to download/open VCbinder-0.1.0.zip first.
         Note that VCbinder-0.1.0.txt/.zip are not added to construction
-        sets.  It is selected extracts from VCbinder-0.1.0.zip that
-        usually go into construction sets for Microsoft Windows programs.
+        sets.  Selected extracts from VCbinder-0.1.0.zip are inserted
+        into construction sets for Microsoft Windows programs.  The
+        construction-set materials will reflect that dependency.
         
     VCbinder-0.1.0.zip
           The under-development VCbinder artifact for integration of 
           VCbind elements into the source-code version-control of a 
           construction set.        
                
-    VCenable.bat (part of VCbinder-0.1.0.zip)
+    VCensure.bat (part of VCbinder-0.1.0.zip)
         Script that can be placed in a construction set to relay into the
         VCbind\Vcbind.bat script after first checking that VCbind\VCbind.bat
         is in place.  This file is purposefully not versioned, so that it
@@ -89,27 +94,54 @@ TODO
 
  * Provide the construction procedure.
   
- * The VCenable.bat here is used to check that VCbind.zip is present and that
+ * The VCensure.bat here is used to check that VCbind.zip is present and that
    the extracted VCbind\VCbind.bat file is present for use.  If Vcbind.zip
    has not been extracted, the user will be instructed to extract it and
    retry.
    
- * VCenable will honor the "+" option and will use it with VCbind.bat if
-   not already requested of VCenable.
+ * VCensure will honor the "+" option and will use it with VCbind.bat if
+   not already requested of VCensure.
    
- * VCenable ? option will provide information for VCenable and might still
+ * VCensure ? option will provide information for VCensure and might still
    fail because VCbind\ is not (properly) available.  Otherwise it passes
    through.
    
- * VCenable * will work as expected, as will + * if present.
+ * VCensure * will work as expected, as will + * if present.
    
  * Find a way to do the VCbind.zip extraction automatically, if simple enough.
     
  * Speed up this work just enought to expedite confirmation and provisional
    use.
+   
+ * There needs to be some useful content on how VCensure works on first-
+   succcess and then how it is used by tool-chain components simply to 
+   ensure there is one and only provide a default setup if there is not
+   already a successful setup.  This raises the coupling between VCensure
+   and VCbind somewhat.
+   
+ * Add the design point and 5Ps to this material.
+ 
+ * We are going to need release notes, known limitations, etc., not unlike
+   a small man-page creation.  So there might need to be a VCensure*.txt
+   file?
+   
+ * There should be links to supporting information in all error messages.
+ 
+ * Confirm that dots (e.g., up-foldering ".." occurences) work in absolute
+   file paths such as "%dp0\..\Vcensure.bat" from other unzipped construction-
+   set components, avoiding changes of working folders.
+   
+ * For the reporting of the location of the script being run, it is 
+   probably ideal to use the construction-set folder path and not go
+   deeper.  That should be sufficient and not so lengthy as %~f0.
+   
+ * Ensure that a VCbind 0.2.0 default call (no [config [toolset]] parameters)
+   will always report an existing setup and attempt a default setup only
+   if there is not any existing one.
        
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.16 2016-12-06-10:50 Switch VCenable to VCensure; TODOs maintenance.
  0.0.15 2016-12-05-15:08 Set up for VCbinder 0.1.0 and testing VCenable
         with the VCbind 0.2.0 release-candidate code.
  0.0.14 2016-12-04-21:14 Add old VCenable.bat for customization to the
