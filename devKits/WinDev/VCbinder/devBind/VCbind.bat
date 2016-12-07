@@ -1,9 +1,9 @@
 @echo off
-rem VCbind.zip\VCbind.bat 0.1.4     UTF-8                           2016-12-** 
+rem VCbind-0.2.0 VCbind.bat 0.1.5     UTF-8                         2016-12-06 
 rem -----1---------2---------3---------4---------5---------6---------7-------*
 
-rem                  SETTING VC++ COMMAND-SHELL ENVIRONMENT
-rem                  ======================================
+rem                  SETTING VC++ COMMAND-LINE ENVIRONMENT
+rem                  =====================================
 
 rem This procedure sets the Windows PC command-shell environment for command-
 rem line use of the Visual C++ command-line compiler, cl.exe, and related
@@ -14,11 +14,8 @@ rem accompanying VCbind-0.2.0.txt file.  For further information, see
 rem <http://nfoWare.com/dev/2016/11/d161101.htm> and check for the latest
 rem version at <http://nfoWare.com/dev/2016/11/d161101b.htm>.
 
-rem Designate the distribution version 
+rem Designate the (provisional) semantic-versioned distribution 
 SET VCverNum=0.2.0
-rem     0.1.1+ semantic versioning candidate
-rem     the least change past 0.1.0 is always the next candidate until
-rem     an actual distribution is chosen.
 
 rem SELECT EMBEDDED, TERSE, OR DEFAULT
 rem     %1 value "+" selects smooth non-stop operation for splicing output
@@ -32,7 +29,7 @@ IF "%2" == "*" SET VCterse=^>NUL
 :MAYBETERSE
 rem SELECT TERSE OR VERBOSE
 rem     %1 value "*" selects terse operation
-rem     don't shift that %1 out until Command Extensions confirmed.
+rem     don't shift anything out until Command Extensions confirmed.
 
 IF "%1" == "*" SET VCterse=^>NUL
 rem                used to dump verbose echoes
@@ -49,10 +46,12 @@ ECHO:
 :WHISPER
 ECHO: [VCbind] %VCverNum% VC++ COMMAND-LINE ENVIRONMENT SETUP
 IF NOT CMDEXTVERSION 2 GOTO :FAIL0
+IF "%VCsplice%" == "+" GOTO :LOCATE
 ECHO:          %TIME% %DATE% on %USERNAME%'s %COMPUTERNAME%         %VCterse%
-ECHO:          %~f0                                                 
+ECHO:          %~f0                                                 %VCterse%     
 rem            reporting full-path filename of this script
 
+:LOCATE
 rem VERIFY LOCATION OF THE SCRIPT WHERE VCBIND.ZIP IS FULLY EXTRACTED
 IF NOT EXIST "%~dp0LICENSE.txt" GOTO :FAIL1
 IF NOT EXIST "%~dp0NOTICE.txt" GOTO :FAIL1
@@ -66,14 +65,18 @@ IF "%1" == "?" GOTO :USAGE
 IF "%1" == "*" SHIFT /1
 
 SET VCaskedConfig=x86
-rem    make even the default explicit
+rem    the default if none other chosen
+IF DEFINED VCboundConfig SET VCaskedConfig=%VCboundConfig%
+rem    if previous binding, take that instead
 IF NOT "%1" == "" SET VCaskedConfig=%1
+rem    and explicit config parameter always wins
 
 SET VCasked=140
 rem    default absent any other provision
 IF DEFINED VCbound SET VCasked=%VCbound%
-rem    if previous binding, use that toolset by default
+rem    if previous binding, use as current default
 IF NOT "%2" == "" SET VCasked=%2
+rem    and again, explicit parameter always wins
 
 rem VERIFY CONFIG
 IF "%VCaskedConfig%" == "x86"  GOTO :CHECKCONFLICT
@@ -292,7 +295,7 @@ ECHO:                 100 for Visual Studio 2010 (10.0) flavors, and then
 ECHO:                  90 for Visual Studio 2008 (9.0) flavors
 ECHO:             140 is the default  
 ECHO:
-ECHO:   Three environment variables are set whenever VCbind succeeds.
+ECHO:   Four environment variables are set whenever VCbind succeeds.
 ECHO:
 ECHO:          VCbound identifes the common tools (e.g., 140) that were used
 ECHO:    VCboundConfig is the bound configuration type (e.g., x86)
@@ -338,6 +341,9 @@ rem limitations under the License.
 
 rem -----1---------2---------3---------4---------5---------6---------7-------*
 
+rem 0.1.5  2016-12-06-16:05 Improve terse heading lines.  Correct title line.
+rem        Make "+" adjustments and VCensure default adjustments as candidate
+rem        for VCbind 0.2.0 and VCbinder 0.1.0. 
 rem 0.1.4  2016-12-05-13:32 Implement "+" option. Improve comments, :USAGE
 rem 0.1.3  2016-12-05-10:39 Switch to preparation as 0.2.0
 rem        The interface is being upgraded for correct working with VCenable
