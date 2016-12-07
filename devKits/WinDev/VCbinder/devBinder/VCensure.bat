@@ -1,5 +1,5 @@
 @echo off
-rem VCensure.bat 0.0.2               UTF-8                       dh:2016-12-06
+rem VCensure.bat 0.0.3               UTF-8                       dh:2016-12-06
 rem -----1---------2---------3---------4---------5---------6---------7-------*
 
 rem              ENSURING VC++ COMMAND-LINE OPERATION ENABLED
@@ -33,17 +33,17 @@ rem
 SET VCtersed=
 SET VCensureSplice=%1
 IF NOT "%1" == "+" GOTO :MAYBETERSE
-IF "%2" == "*" SET VCtersed=*
+IF "%2" == "*" SET VCtersed=%2
 
 :MAYBETERSE
 rem SELECT TERSE OR VERBOSE
 rem     %1 value "*" here selects terse operation
 rem
-IF "%1" == "*" SET VCtersed=*
+IF "%1" == "*" SET VCtersed=%1
 rem                used to dump verbose echoes
 
 SET VCterse=
-IF "%VCtersed%" == "*" SET VCterse = ^>NUL
+IF DEFINED VCtersed SET VCterse=^>NUL
 
 rem ANNOUNCE THIS SCRIPT
 IF "%1" == "*" GOTO :WHISPER
@@ -58,9 +58,9 @@ ECHO:
 ECHO: [VCensure] %VCensureVer% ENSURE VC++ COMMAND-LINE ENVIRONMENT ENABLED
 IF NOT CMDEXTVERSION 2 GOTO :FAIL0
 IF "%VCensureSplice%" == "+" GOTO :LOCATE
-ECHO:          %TIME% %DATE% on %USERNAME%'s %COMPUTERNAME%         %VCterse%
-ECHO:          %~f0                                                 %VCterse%     
-rem            reporting full-path filename of this script
+ECHO:          %TIME% %DATE% on %USERNAME%'s %COMPUTERNAME%%VCterse%
+ECHO:          %~dp0%VCterse%     
+rem            reporting construction-set folder location
 
 :LOCATE
 rem REQUIRE SCRIPT STORED IN VCBINDER ARTIFACTS OF CONSTRUCTION SET (%~dp0)
@@ -77,10 +77,10 @@ rem CONFIRM EXTRACTION OF VCBIND.ZIP
 IF NOT EXIST "%~dp0VCbind\VCbind.bat" GOTO :FAIL2
 
 rem LET VCBIND DO THE REST
-CALL "%~dp0VCbind\VCbind.bat" + %*
+CALL "%~dp0VCbind\VCbind.bat" + %1 %2 %3
 rem    XXX: Always splicing VCbind and passing through the rest
 SET VCterse=
-IF "%VCtersed%" == "*" SET VCterse = ^>NUL
+IF DEFINED VCtersed SET VCterse=^>NUL
 rem    XXX: Not counting on %VCterse% preservation by VCBind.bat
 IF ERRORLEVEL 2 GOTO :FAIL3
 
@@ -98,7 +98,7 @@ GOTO :BAIL
 ECHO:          **** FAIL: VCBIND.ZIP NOT EXTRACTED WHERE EXPECTED ****
 ECHO:          Extract VCbind.zip to the sub-folder VCbind\ in the  %VCterse%
 ECHO:          construction set where VCensure.bat and VCbind.zip   %VCterse%
-ECHO:          located.                                             %VCterse%
+ECHO:          are located.                                         %VCterse%
 GOTO :NOJOY
 
 :FAIL1
@@ -126,10 +126,10 @@ GOTO :BAIL
 
 :USAGE
 rem    PROVIDE USAGE INFORMATION
-ECHO:   %VCterse%
 ECHO:   USAGE: VCensure [+] ?
 ECHO:          VCensure [+] [*] [config [toolset]]
 ECHO:          where the parameters are the same as for VCbind
+ECHO:          the exit conditins are the same as for VCbind
 IF EXIST "%~dp0VCbind\VCbind.bat" GOTO :BINDUSAGE
 ECHO:   VCensure requires VCbind.zip to be extracted first.
 GOTO :SUCCESS
@@ -137,7 +137,7 @@ GOTO :SUCCESS
 :BINDUSAGE
 CALL "%~dp0VCbind\VCbind.bat" + ?
 SET VCterse=
-IF "%VCtersed%" == "*" SET VCterse = ^>NUL
+IF DEFINED VCtersed SET VCterse=^>NUL
 rem    XXX: Not counting on %VCterse% preservation by VCBind.bat
 IF NOT ERRORLEVEL 2 GOTO :SUCCESS
 GOTO :BAIL
@@ -172,6 +172,7 @@ rem limitations under the License.
 
 rem -----1---------2---------3---------4---------5---------6---------7-------*
 
+rem 0.0.3 2016-12-06-20:26 Harmonize with VCbind 0.2.0 via joint testing
 rem 0.0.2 2016-12-06-16:03 Working candidate for VCbinder 0.1.0 
 rem 0.0.1 2016-12-06-10:22 Intermediate check-in for nfoTools/devKits/VCbinder 
 rem       0.1.0 customization after renaming to VCensure.bat.

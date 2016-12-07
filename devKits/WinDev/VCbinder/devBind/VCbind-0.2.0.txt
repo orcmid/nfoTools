@@ -1,4 +1,4 @@
-VCbind-0.2.0.txt 0.0.12               UTF-8                         2016-12-05
+VCbind-0.2.0.txt 0.0.13               UTF-8                         2016-12-06
  --------1---------2---------3---------4---------5---------6---------7-------*
 
 
@@ -24,13 +24,13 @@ VCbind-0.2.0.txt 0.0.12               UTF-8                         2016-12-05
 
     VCbind.zip delivers a Windows batch script for setting up a command-
     line environment.  The resulting environment enables compiling with the
-    Microsoft Visual C/C++ command-line compiler, cl.exe, aud using related
+    Microsoft Visual C/C++ command-line compiler, CL.exe, aud using related
     Microsoft developer tools.  The environment is set up and used by issuing
     commands within a Microsoft Windows console session.
     
     VCbind.zip is found as a component of larger construction sets.  Check 
     for custom instructions that apply to extraction and usage of VCbind
-    in a particular construction set.
+    in the particular construction set.
     
     Ordinarily, construction sets using VCbind version 0.2.0 have a copy 
     of this file, VCbind-0.2.0.txt, alongside the VCbind.zip file.  Use
@@ -51,7 +51,7 @@ VCbind-0.2.0.txt 0.0.12               UTF-8                         2016-12-05
     The VCbind\ folder is not part of the preserved construction set.  
     Customizing the folder contents will leave the construction-set code 
     intact.  Restore the VCbind 0.2.0 parts by re-extracting VCbind.zip
-    if needed.
+    at any time.
     
     
  2. PREREQUISITES AND DEPENDENCIES
@@ -115,7 +115,7 @@ VCbind-0.2.0.txt 0.0.12               UTF-8                         2016-12-05
             VCbind.bat
             
     providing a default environment using the latest-version of VC compiler
-    that is detected.  This will also check whether a successful VCbind has
+    that is detected.  This will first check whether a successful VCbind has
     already been achieved in the current session.
     
     On a successful report from VCbind.bat, confirm presence of the compiler
@@ -189,6 +189,7 @@ MANIFEST OF VCBIND.ZIP 0.2.0
     
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.13 2016-12-06-19:02 Final-touch ups for candidat 0.2.0 
  0.0.12 2016-12-05-13:45 VCbind-0.2.0 Release Candidate Working Draft
         Going to 0.2.0 based on feature additions in VCbind.bat.
  0.0.11 2016-12-04-13:55 VCbind-0.1.1 Working Draft for the 0.1.1 release.
@@ -211,6 +212,6 @@ MANIFEST OF VCBIND.ZIP 0.2.0
       Initiate structure for command-line compilations analogous to the VS2013
       Projects.
 
-                       *** end of VCbind-0.1.1.txt ***
+                       *** end of VCbind-0.2.0.txt ***
                        
 

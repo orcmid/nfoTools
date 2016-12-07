@@ -1,5 +1,5 @@
 @echo off
-rem VCbind-0.2.0 VCbind.bat 0.1.5     UTF-8                         2016-12-06 
+rem VCbind-0.2.0 VCbind.bat 0.1.6     UTF-8                         2016-12-06 
 rem -----1---------2---------3---------4---------5---------6---------7-------*
 
 rem                  SETTING VC++ COMMAND-LINE ENVIRONMENT
@@ -47,9 +47,9 @@ ECHO:
 ECHO: [VCbind] %VCverNum% VC++ COMMAND-LINE ENVIRONMENT SETUP
 IF NOT CMDEXTVERSION 2 GOTO :FAIL0
 IF "%VCsplice%" == "+" GOTO :LOCATE
-ECHO:          %TIME% %DATE% on %USERNAME%'s %COMPUTERNAME%         %VCterse%
-ECHO:          %~f0                                                 %VCterse%     
-rem            reporting full-path filename of this script
+ECHO:          %TIME% %DATE% on %USERNAME%'s %COMPUTERNAME%%VCterse%
+ECHO:          %~dp0%VCterse%     
+rem            reporting script directory location
 
 :LOCATE
 rem VERIFY LOCATION OF THE SCRIPT WHERE VCBIND.ZIP IS FULLY EXTRACTED
@@ -156,7 +156,7 @@ CALL %1\vcvarsall.bat %VCaskedConfig%
 IF NOT DEFINED VCINSTALLDIR GOTO :FAIL5
 
 :WINNER
-ECHO:          Success: VC++ %VisualStudioVersion% config %VCaskedConfig% set.
+ECHO:          SUCCESS: VC++ %VisualStudioVersion% config %VCaskedConfig% set.
 ECHO:          %VCINSTALLDIR% %VCterse%
 GOTO :SUCCESS
 
@@ -171,7 +171,7 @@ IF NOT "%VCboundVer%" == "%VisualStudioVersion%" GOTO :FAIL3
 rem TRUST PREVIOUS SETTINGS TO BE REUSABLE
 rem      Avoid multiple running of VC\ settings and duplicating the PATH and
 rem      other parameter settings.
-ECHO:          Using existing VC++ %VCboundVer% %VCboundConfig% config setup. 
+ECHO:          SUCCESS: Using existing VC++ %VCboundVer% %VCboundConfig% config.
 ECHO:          %VCINSTALLDIR% %VCterse%
 GOTO :SUCCESS
 
@@ -267,7 +267,6 @@ GOTO :BAIL
 
 :USAGE
 rem    PROVIDE USAGE INFORMATION
-ECHO:   %VCterse%
 ECHO:   USAGE: VCbind [+] ?
 ECHO:          VCbind [+] [*] [config [toolset]]
 IF NOT "%1" == "?" GOTO :BAIL
@@ -295,6 +294,10 @@ ECHO:                 100 for Visual Studio 2010 (10.0) flavors, and then
 ECHO:                  90 for Visual Studio 2008 (9.0) flavors
 ECHO:             140 is the default  
 ECHO:
+ECHO:   When a command-line environment has already been established by VCbind
+ECHO:   the established config and toolset settings become defaults in later
+ECHO:   requests in the same command shell session.
+ECHO:
 ECHO:   Four environment variables are set whenever VCbind succeeds.
 ECHO:
 ECHO:          VCbound identifes the common tools (e.g., 140) that were used
@@ -304,6 +307,9 @@ ECHO:                  that the VC++ build tools correspond to.
 ECHO:
 ECHO:    Other VC* environment-variable names are used transiently.  They
 ECHO:    will be used without checking whether they are already defined.
+ECHO:
+ECHO:    Exit code 0 is produced on all successful operations.  Exit codes 
+ECHO:    greater than 1 are produced for all failure cases.
 ECHO:
 IF "%VCsplice%" == "+" EXIT /B 0
 PAUSE
@@ -341,9 +347,11 @@ rem limitations under the License.
 
 rem -----1---------2---------3---------4---------5---------6---------7-------*
 
+rem 0.1.6  2016-12-06-20:29 Expanded :USAGE, light touch-ups, and alignment
+rem        with VCbinder 0.1.0 VCensure.bat in joint testing.
 rem 0.1.5  2016-12-06-16:05 Improve terse heading lines.  Correct title line.
 rem        Make "+" adjustments and VCensure default adjustments as candidate
-rem        for VCbind 0.2.0 and VCbinder 0.1.0. 
+rem        for VCbind 0.2.0 and VCbinder 0.1.0.  
 rem 0.1.4  2016-12-05-13:32 Implement "+" option. Improve comments, :USAGE
 rem 0.1.3  2016-12-05-10:39 Switch to preparation as 0.2.0
 rem        The interface is being upgraded for correct working with VCenable
