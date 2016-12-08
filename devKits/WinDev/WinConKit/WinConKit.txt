@@ -1,4 +1,4 @@
-WinConKit.txt 0.0.2                   UTF-8                         2016-12-04
+WinConKit.txt 0.0.3                   UTF-8                         2016-12-08
 
               <https://github.com/orcmid/nfoTools>
                      /devKits/WinDev/WinConKit/WinConKit.txt>
@@ -10,9 +10,18 @@ WinConKit.txt 0.0.2                   UTF-8                         2016-12-04
     running in the native Windows Command Shell.  The building of the
     program is accomplished using Microsoft command-line Development Tools.
     
-    WinCon Construction Kit includes a number of components and customization
+    WinCon Construction Kits include a number of components and customization
     procedures leading to a WinCon Construction Set for building, testing,
     and deploying a console program.
+    
+    This directory holds the latest stable version as a way of preserving
+    an intact version that others can depend on.  In-progress development
+    of other versions happens in subordinate folders.
+    
+    Previous older versions have identified Branch names for recovery from
+    the source-code repository.  Stable releases are also found at 
+    <http://nfoWare.com/dev/2016/11/d161103.htm>.
+    
     
 PREREQUISITES
 
@@ -66,21 +75,42 @@ MANIFEST
 
 TODO
 
- * Switch up to developing toward VCbind[er] 0.1.1 dependency.
- 
+ * Is it better to include VCbinder in this kit, rather than include the
+   bits?  The dependency needs to be clear if VCbinder is not directly here.
+   It becomes a case of dependency management to look at from an SE4E
+   perspective.  It figures in how provenance is maintained when someone
+   updates the VCbinder bits in a construction set that was originally form
+   a WinConKit.
+   
+ * WinConKit is going to be a parking place for stable versions.  This is
+   part of a practice on managing dependencies between stable (-dist)
+   versions and in-progress development versions.  
+   
+ * There should be no copies of dependent packages here until dependency
+   management is figured out better.
+
  * Tie this to examples of where the Kit is used/developed.  
  
- * Does this require an indirect level?  That is, do we need a 
-   devWinConKit layer below here?  Then WInConKit/ is the deployment
-   level?  Reconcile with the working development of a WinConKit and
-   having a point of access/deployment.  This is redundant with the
-   nfoWare site's deployment, but that's no crime, just as for VCbinder
-   and VCbind.
+ * We will use an indirect level.  WinConKit/ is for deployment staging
+   and fixing a branch.  This is redundant with the nfoWare site's deployment, 
+   and that's no crime, just as for VCbinder VCbind.
  
  * Tie to the WinConKit web presence and where distributions will be 
    provided.
  
  * Work up the Visual C++ console compilation case.
+ 
+ * For the scripts that are customized in the WinConKit components, the 
+   ideal case is to treat naming by parameter definition in the scripts,
+   with the bodies of the scripts kept stable.  The customization of 
+   material that is not location/name dependent, such as .opt files is
+   more straightforward.
+   
+ * An interesting case involves finding some sort of automated integration
+   for updating of a deployed construction set.  That may be too difficult
+   because of customizations.
+   
+ * The above question applies to constructing construction *kits* too.
  
  * WinConBuild/ for doing it all using the command line.
  
@@ -98,9 +128,6 @@ TODO
    the workspace.  
  
  * Evaluate whether the CLang front end is an useful alternative.
- 
- * Add something about more information on constructing and verifying
-   a build, and simply using the result to play the game.
  
  * Add anything about developing/maintaining WinConKit.
    This can be by appropriate pointers.
@@ -127,7 +154,8 @@ TODO
      - Visual C++ Express 2005 (VS 8.0 C++ features)
    
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
+ 0.0.3 2016-12-08-09:35 More notes on deployment issues and trickling up
+       to WinConKit/ from deeper working-development levels.
  0.0.2 2016-12-04-12:40 Further Adjustments.  Import more notes from Adv10
        that belong here instead of a derived (or prototype) construction set.
        Identify VCenable.bat as the kickoff for the tool chain.
