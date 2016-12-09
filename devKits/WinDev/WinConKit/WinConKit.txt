@@ -1,4 +1,4 @@
-WinConKit.txt 0.0.4                   UTF-8                         2016-12-09
+WinConKit.txt 0.0.5                   UTF-8                         2016-12-09
 
               <https://github.com/orcmid/nfoTools>
                      /devKits/WinDev/WinConKit/WinConKit.txt>
@@ -37,26 +37,26 @@ MANIFEST
     .gitignore (applicable here and in a WinCon Construction Set)
         Ignoring folders that are created only for construction activity
         and not intended as part of the maintained source tree.  This
-        prevents local customizations of working material from infecting
-        the shared public source-code tree.
-
+        folder is not intended for that, but if the WinConKit is
+        expanded for any reason, it will be kept out of the source tree.
+        
     WinConKit.txt
         This description file on organization of the construction kit
         and use of its materials.
         
-    VCenable.bat (TBD)
-        script for performing a VCbind operation using the extracted 
-        VCbind.zip; the extraction is confirmed and then the VCbind.bat
-        in the extracted material is performed.
+    devWinConKit/
+        folder where in-progress development, testing, and release packaging
+        happens in producing a stable distribution
+         
+    WinConKit-*.txt [TBD]
+        Manifest and description file from WinConKit-*.zip for review and
+        examination before extracting and appyling WinConKit-*.zip to
+        creation of a WinCon construction set.      
+    
+    WinConKit-*.zip [TBD]
+        The stable WinConKit package with components and templates for 
+        making a WinCon Construction Set.
         
-    VCbind-0.2.0.txt (TBD)
-        manifest and instructions from VCbind.zip available for review
-        before extracting VCbind.zip.
-        
-    VCbind.zip (TBD)
-        package which provides the working VC binding script when extracted
-        to VCbind/ here.  
-       
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
                        Copyright 2016 Dennis E. Hamilton
@@ -74,6 +74,12 @@ MANIFEST
     limitations under the License.
 
 TODO
+
+ * Create devWinConKit subfolder and change the TBD manifest here for a
+   stable WinConKit when I have it.
+   
+ * In devWinConKit start working with parameterization and cross-checking
+   by application to Adv10/dev/WinCon.  
 
  * Is it better to include VCbinder in this kit, rather than include the
    bits?  The dependency needs to be clear if VCbinder is not directly here.
@@ -173,6 +179,7 @@ TODO
  * We need to check the VSCode build, test, run, etc.  
    
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ 0.0.5 2015-12-09-13:03 Start adjustments for doing the work in devWinConKit
  0.0.4 2016-12-09-11:59 Include VC++ Express 2015 (8.0) support and add
        TODOs concerning Microsoft Visual Code, Git, and related matters
  0.0.3 2016-12-08-09:35 More notes on deployment issues and trickling up
