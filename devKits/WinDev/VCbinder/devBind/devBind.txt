@@ -1,4 +1,4 @@
-devBind.txt 0.1.12                    UTF-8                         2016-12-05
+devBind.txt 0.1.13                    UTF-8                         2016-12-09
 ---------1---------2---------3---------4---------5---------6---------7-------*
 
             <https://github.com/orcmid/nfoTools>
@@ -7,27 +7,27 @@ devBind.txt 0.1.12                    UTF-8                         2016-12-05
                              VCBIND.ZIP CONSTRUCTION
                              =======================
                              
+        NOTE: Extensive details are provided here and in VCbind.zip to 
+        support non-expert testing and confirmation of VCbind operation.  
+        Novices without the experience to have developed VCbind themselves 
+        should be able to use VCbind, to confirm its functioning and to 
+        make adaptations/variations as more is learned.                 
+                             
     The files and the VCbind.zip here are in-progress development versions. 
     For the latest version considered stable for general use, check the
     sibling devBinder/ folder for how VCbinder is constructed and the version
     of VCbind.zip incorporated there.  For further information on VCbind,
     it's development, latest downloads, and the relationship to source-code
-    construction sets, see <http://nfoWare.com/dev/2016/11/d161101.htm>.
+    construction sets, see <http://nfoWare.com/dev/2016/11/d161101b.htm>.
  
     The details of VCbind.zip and its usage are in the VCbind-*.txt file
     for the particular version (e.g., VCbind-0.1.1.txt).  That file is part
-    of the VCbind.zip content.  It is useful to include the applicable
-    VCbind-*.txt alongside VCbind.zip so users of a construction set 
-    (1) can determine how to proceed before extracting VCbind.zip content 
-    itself, (2) can identify the version of VCbind to determine its current
-    status, and (3) can verify that the VCbind.zip is of the same version.
-       
-    Extensive details are provided here and in VCbind.zip to support non-
-    expert testing and confirmation of VCbind operation.  Someone without the 
-    experience to have developed VCbind themselves should still be able to use
-    it to confirm its functioning and to make adaptations/variations as more 
-    is learned. 
-           
+    of the VCbind.zip content.  It is common for the file to also appear
+    alongside VCbind.zip in a construction set so that users (1) can determine
+    how to proceed before extracting VCbind.zip content itself, (2) can 
+    identify the version of VCbind to determine its current status, and 
+    (3) can verify that the VCbind.zip is of the same version.
+                  
     
 USING VCBIND.ZIP
 
@@ -53,7 +53,7 @@ DEPENDENCIES FOR VCBIND
     (IDE) itself, just the command-line compiler and development tools.
     
     Have a text editor that is suitable for viewing/editing plsintext, batch 
-    scripts, source codes, and compiler error logs.
+    scripts, source code, and compiler error logs.
     
     The same dependencies apply to development work on VCbind itself.
     
@@ -167,7 +167,7 @@ MANIFEST
     until a stable case is reached.
 
     .gitignore
-        excluding any devBind/VCbind/ working folder from source-code
+        excluding any devBind/VCbind/ working/test folder from source-code
         version control
 
     devBind.txt
@@ -220,8 +220,6 @@ TODO
  * Provide links for the prerequisites.  Also to examples of where VCbind
    is used in cases that are relatively easy to teeth on.
    
- * Confirm that the VS 2013 Build Tools also provide a C/C++ compiler.
- 
  * Test with Visual Studio C++ Express 2008.
  
  * Link to an illustrated procedure for the extraction from VCbind.zip.
@@ -238,18 +236,33 @@ TODO
  * Does a branch remain available even if it is merged back to master?
  
  * For the nfoWare.com d161101*-dist folders, there is more to do in 
-   identifying where, more about toolcraft with Git, and also the use of
+   identifying where to find supporting utilities (e.g., GPG and SHA256SUM), 
+   more about toolcraft with Git, and also more about [Tortoise]Git and use of
    Git command-line operations in addition to any GitHub reliance.
       
- * Put  information about use of the source at the distribution description,
+ * Put information about use of the source at the distribution description,
    (e.g., d161101c-dist/) leaving the release page (e.g., d161101c.htm) to
    focus on use of that VCbind, not on its download, testing, and maintenance.
    
  * The source discussion should emphasize that this is Code in the Open, and
    not an organized open-source project, despite the licensing.
    
+ * There should be a place on more about the error messages that arise and
+   what they mean?
+   
+ * Switch to thorough Semantic Versioning and accounting for pre-release
+   versions of artifacts.  
+   
+ * Make it clear that ARM is not supported, nor the Itaniums or whatever
+   they were.
+   
+ * We need caveats about Visual C++ 2005 and 2008 Express until we actually
+   confirm those.
+   
  --------1---------2---------3---------4---------5---------6---------7-------*
 
+ 0.1.13 2016-12-09-12:43 Editing, TODOs maintenance, and confirmation that
+        VC++ Express 2005 works
  0.1.12 2016-12-05-10:10 Switch to VCbind 0.2.0 Preparation
         The VCbind.bat interface is being extended to support calling from
         VCbinder's VCenable and even deeper in tool-chain confirmations.

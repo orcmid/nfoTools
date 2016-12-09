@@ -1,5 +1,5 @@
 @echo off
-rem VCbind-0.2.0 VCbind.bat 0.1.7     UTF-8                         2016-12-09 
+rem VCbind-0.2.0 VCbind.bat 0.1.8     UTF-8                         2016-12-09 
 rem -----1---------2---------3---------4---------5---------6---------7-------*
 
 rem                  SETTING VC++ COMMAND-LINE ENVIRONMENT
@@ -140,7 +140,9 @@ IF NOT ERRORLEVEL 9 EXIT /B %ERRORLEVEL%
 
 :TRY80
 IF NOT DEFINED VS80COMNTOOLS GOTO :FAIL6
-CALL :VCTRY "%VS80COMNTOOLS%..\..\VC" 90
+SET VisualStudioVersion=8.0
+rem    XXX: Visual C++ Express 2015 does not set it
+CALL :VCTRY "%VS80COMNTOOLS%..\..\VC" 80
 IF NOT ERRORLEVEL 9 EXIT /B %ERRORLEVEL%
 GOTO :FAIL6
 
@@ -209,7 +211,7 @@ GOTO :BAIL
 
 :FAIL5
 set VisualStudioVersion=
-rem     XXX: in case incorrectly guessed at :TRY140
+rem     XXX: in case incorrectly guessed at :TRY140 or :TRY80
 ECHO: [VCbind] *** FOUND TOOLSET %VCasked% CONFIG %VCaskedConfig% FAILS ***
 ECHO:          Check preceding message(s) for details.  A missing   %VCterse% 
 ECHO:          config might be unsupported or simply not installed. %VCterse%
@@ -354,6 +356,7 @@ rem limitations under the License.
 
 rem -----1---------2---------3---------4---------5---------6---------7-------*
 
+rem 0.1.8  2016-12-09-12:36 Correct VS 8.0 case to set %VisualStudioVersion%
 rem 0.1.7  2016-12-09-10:52 Add support for the VS 8.0 (080) toolset
 rem 0.1.6  2016-12-06-20:29 Expanded :USAGE, light touch-ups, and alignment
 rem        with VCbinder 0.1.0 VCensure.bat in joint testing.
