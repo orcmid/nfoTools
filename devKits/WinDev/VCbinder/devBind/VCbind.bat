@@ -1,5 +1,5 @@
 @echo off
-rem VCbind-0.2.0 VCbind.bat 0.1.6     UTF-8                         2016-12-06 
+rem VCbind-0.2.0 VCbind.bat 0.1.7     UTF-8                         2016-12-09 
 rem -----1---------2---------3---------4---------5---------6---------7-------*
 
 rem                  SETTING VC++ COMMAND-LINE ENVIRONMENT
@@ -97,7 +97,8 @@ IF "%VCasked%" == "140" GOTO :FINDTOOLSET
 IF "%VCasked%" == "120" GOTO :FINDTOOLSET
 IF "%VCasked%" == "110" GOTO :FINDTOOLSET
 IF "%VCasked%" == "100" GOTO :FINDTOOLSET
-IF NOT "%VCasked%" ==  "90" GOTO :FAIL7
+IF "%VCasked%" == "90" GOTO :FINDTOOLSET
+IF NOT "%VCasked%" ==  "80" GOTO :FAIL7
 
 :FINDTOOLSET
 rem FIND LATEST-AVAILABLE RELEASED TOOLSET
@@ -135,6 +136,11 @@ IF NOT ERRORLEVEL 9 EXIT /B %ERRORLEVEL%
 :TRY90
 IF NOT DEFINED VS90COMNTOOLS GOTO :FAIL6
 CALL :VCTRY "%VS90COMNTOOLS%..\..\VC" 90
+IF NOT ERRORLEVEL 9 EXIT /B %ERRORLEVEL%
+
+:TRY80
+IF NOT DEFINED VS80COMNTOOLS GOTO :FAIL6
+CALL :VCTRY "%VS80COMNTOOLS%..\..\VC" 90
 IF NOT ERRORLEVEL 9 EXIT /B %ERRORLEVEL%
 GOTO :FAIL6
 
@@ -292,6 +298,7 @@ ECHO:                 120 for Visual Studio 2013 (12.0) flavors, then
 ECHO:                 110 for Visual Studio 2012 (11.0) flavors, then
 ECHO:                 100 for Visual Studio 2010 (10.0) flavors, and then
 ECHO:                  90 for Visual Studio 2008 (9.0) flavors
+ECHO:                  80 for Visual Studio 2005 (8.0) flavors
 ECHO:             140 is the default  
 ECHO:
 ECHO:   When a command-line environment has already been established by VCbind
@@ -347,6 +354,7 @@ rem limitations under the License.
 
 rem -----1---------2---------3---------4---------5---------6---------7-------*
 
+rem 0.1.7  2016-12-09-10:52 Add support for the VS 8.0 (080) toolset
 rem 0.1.6  2016-12-06-20:29 Expanded :USAGE, light touch-ups, and alignment
 rem        with VCbinder 0.1.0 VCensure.bat in joint testing.
 rem 0.1.5  2016-12-06-16:05 Improve terse heading lines.  Correct title line.
