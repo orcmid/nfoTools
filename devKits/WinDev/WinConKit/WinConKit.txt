@@ -1,4 +1,4 @@
-WinConKit.txt 0.0.5                   UTF-8                         2016-12-09
+WinConKit.txt 0.0.7                   UTF-8                         2016-12-12
 
               <https://github.com/orcmid/nfoTools>
                      /devKits/WinDev/WinConKit/WinConKit.txt>
@@ -11,21 +11,42 @@ WinConKit.txt 0.0.5                   UTF-8                         2016-12-09
     program is accomplished using Microsoft command-line Development Tools.
     
     WinCon Construction Kits include a number of components and customization
-    procedures leading to a WinCon Construction Set for building, testing,
+    procedures for deriving a WinCon Construction Set for building, testing,
     and deploying a console program.
     
-    This directory holds the latest stable version in order to preserve it
-    intact without interference from ongoing development.  Testing and in-
-    progress work on future versions happen in subordinate folders.
+    This WinConKit directory holds the latest stable version, preserving it 
+    intact without interference from continuation work.  Testing and in-
+    progress work on future versions is in the devWinConKit subfolder.
     
-    Previous older versions have identified Branch names for recovery from
-    the source-code repository.  The set of stable releases is also available 
-    via <http://nfoWare.com/dev/2016/11/d161103c.htm>.
+    Additional information about WinConKit and its available stable releases
+    can be found at <http://nfoWare.com/dev/2016/11/d161103.htm>.
     
-    
-PREREQUISITES
+WINCON CONSTRUCTION-SET DESIGN POINT
 
-    [TBD]
+    [This is about the design poinit of the construction sets that WinConKit
+     is customizable for.]
+     
+    [It is not necessary to know how to create a WinCon construction set in
+     order to use one.  Using one is pretty-much like pushing a button once
+     any setup dependencies are resolved.]
+
+
+WINCON CONSTRUCTION-KIT DESIGN POINT
+
+    [This is about WinConKit itself and what it is oriented toward.  These
+     are not exactly orthogonal considerations yet here it is about the ease of
+     customization and confirmation of having a successful construction set.]
+     
+    [Maintenance and continuation work on WinConKit is yet a different matter.
+     That can be covered at devWinConKit.]
+    
+    
+PREREQUISITES FOR DERIVING A WINCONKIT-BASED CONSTRUCTION SET
+
+    [Include understanding a little about how batch parameters are defined
+     and used.  This is intended to be straightforward, in contrast with
+     the requirements at devWinConKit.]
+
     
 DEPENDENCIES
 
@@ -36,9 +57,13 @@ MANIFEST
 
     .gitignore (applicable here and in a WinCon Construction Set)
         Ignoring folders that are created only for construction activity
-        and not intended as part of the maintained source tree.  This
-        folder is not intended for that, but if the WinConKit is
+        and not intended as part of the maintained source tree.  Although
+        this folder is not intended for that, if the WinConKit is
         expanded for any reason, it will be kept out of the source tree.
+        
+    LICENSE.txt
+    
+    NOTICE.txt
         
     WinConKit.txt
         This description file on organization of the construction kit
@@ -75,111 +100,54 @@ MANIFEST
 
 TODO
 
- * Create devWinConKit subfolder and change the TBD manifest here for a
-   stable WinConKit when I have it.
-   
- * In devWinConKit start working with parameterization and cross-checking
-   by application to Adv10/dev/WinCon.  
-
- * Is it better to include VCbinder in this kit, rather than include the
-   bits?  The dependency needs to be clear if VCbinder is not directly here.
-   It becomes a case of dependency management to look at from an SE4E
-   perspective.  It figures in how provenance is maintained when someone
-   updates the VCbinder bits in a construction set that was originally form
-   a WinConKit.
-   
- * WinConKit is going to be a parking place for stable versions.  This is
-   part of a practice on managing dependencies between stable (-dist)
-   versions and in-progress development versions.  
-   
- * There should be no copies of dependent packages here until dependency
-   management is figured out better.
-
- * Tie this to examples of where the Kit is used/developed.  
- 
  * We will use an indirect level.  WinConKit/ is for deployment staging
    and fixing a branch.  This is redundant with the nfoWare site's deployment, 
-   and that's no crime, just as for VCbinder VCbind.
+   and that's no crime, just as for VCbinder and VCbind.
  
  * Tie to the WinConKit web presence and where distributions will be 
    provided.
- 
- * Work up the Visual C++ console compilation case.
- 
- * For the scripts that are customized in the WinConKit components, the 
-   ideal case is to treat naming by parameter definition in the scripts,
-   with the bodies of the scripts kept stable.  The customization of 
-   material that is not location/name dependent, such as .opt files is
-   more straightforward.
    
- * An interesting case involves finding some sort of automated integration
-   for updating of a deployed construction set.  That may be too difficult
-   because of customizations.
+ * Describe the design point for WinConKit including fully-native operation,
+   absolute minimum dependency on freely available Microsoft development tools,
+   ability for novices to successfully complete a build with minimum tacit
+   knowledge, ability to use from initial compilation through completion of
+   an under-development project, graceful learning curve in customizing
+   WinCon construction sets for new projects.  Also, fully-exposed details
+   of operation and confirmation of setup and getting clean-code compiles.
    
- * The above question applies to constructing construction *kits* too.
- 
- * WinConBuild/ for doing it all using the command line.
- 
- * Specify how the CL.exe command line parameters and options are 
-   customized.
- 
- * Add WinConRun for running the result of a WinConBuild (or VS/VC project?)
- 
- * Add VSproject/ for doing all of this with Visual Studio.
- 
- * Consider VScode for using Visual Code if we can get the workspace to
-   work the way we need.  It does not appear that Visual Code compiles will
-   work well with the code in a different place than where the build happens.
-   There is also a problem with the code being in a different location than
-   the workspace.  
- 
- * Evaluate whether the CLang front end is an useful alternative.
- 
- * Add anything about developing/maintaining WinConKit.
-   This can be by appropriate pointers.
+ * Links to Examples of customized WinCon construction sets need to be 
+   provided on d161103.  We will use Adv10/dev/WinCon for one from here.
    
- * According to VS Code information, Micosoft Visual Studio Team Services
-   online can be used to house free Git repositories for the users that we
-   have in mind.
+ * The lifecycle of a construction set needs to be considered somewhere.
+   There is a maintenance impact on the effect of switching to a later
+   WinConKit distribution on an existing WinCon construction set.  That
+   requires consideration.
    
- * There does need to be more information here around source code management,
-   including Git for projects having WinCon construction sets.  The use of
-   the online Microsoft Visual Studio Team Services and use of GitHub are both
-   prospects.
+ * More work is needed on versioning of the construction set versus the
+   version of WinConKit it is based on.  There must be a tidy way to
+   have that explicit.
    
- * Release Management and integration with Visual Studio Code are all
-   interesting cases.  <https://www.visualstudio.com/team-services/>.
+ * Some of what we say here seems to be also what should be expressed in
+   the WinConKit-*.txt file and other content in WinConKit-*.zip or 
+   linked therefrom.  Keep an eye on that.
    
- * There may need to be more layering here because of how packaging of piece
-   parts may need to be worked up (e.g., in additional Zip files).
+ * The first WinConKit releases are going to be devoted to single CL.exe
+   performances.  Having multiple build steps, use of makefiles, etc.,
+   will lead to more modularity in the WinConKit and how pieces are 
+   pulled together.  Need to anticipate that a little.  
    
- * Work through this and have a statement somewhere about what has actually
-   been tested:
-        - Visual Studio Community 2015 with Update 3 (VS 14.0 C++ features)
-     - Visual Studio Express 2015 for Windows Desktop (VS 14.0 C++ features)
-     - Visual C++ Build Tools 2015 Update 3 (VS 14.0 C++ features)
-     - Visual Studio Express 2013 for Windows Desktop Update 5 
-       (VS 12.0 C++ features)
-     - Visual Studio 2012 Express for Windows Desktop (VS 11.0 C++ features)
-    Probably Obsolete and no longer available for download, but supported: 
-     - Visual Studio 2010 Express (VS 10.0 C++ features, via Studio 2010 SP1 ?)
-     - Visual Studio Express 2008 (VS 9.0 C++ Express features)
-     - Visual C++ Express 2005 (VS 8.0 C++ features)
-     
- * We want a VSCode experience with WinCon also.  In this case, it is a way
-   to have a .gitignore VScode project folder extraction that can reach source
-   code that is under source-code control but is not in the project folder.
+ * The WinConKit folder is the source tree for releases.  Put appropriate
+   LICENSE.txt and NOTICE.txt files her for use as the root of a 
+   WinConKit-*-src.zip package.
    
- * We want the VScode extraction setup to be able run a build and deal with
-   compiler output.  
+ * Move VCbind-0.1.0.txt and VCbind.zip down to devWinConKit.  They will
+   be part of the kit and not discussed at this level.
    
- * We need to see if Clang formatting is something that we want to use, so
-   must test that case with VSCode also.
-   
- * We need to check the VSCode build, test, run, etc.  
    
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
- 0.0.5 2015-12-09-13:03 Start adjustments for doing the work in devWinConKit
+ 0.0.7 2016-12-12-10:43 Expanded TODOs and Design-Point considerations added.
+ 0.0.6 2016-12-11-13:17 Prime devWinConKit/ and Scrub TODOs
+ 0.0.5 2016-12-09-13:03 Start adjustments for doing the work in devWinConKit
  0.0.4 2016-12-09-11:59 Include VC++ Express 2015 (8.0) support and add
        TODOs concerning Microsoft Visual Code, Git, and related matters
  0.0.3 2016-12-08-09:35 More notes on deployment issues and trickling up

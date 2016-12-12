@@ -1,4 +1,4 @@
-devWinConKit.txt 0.0.0                UTF-8                         2016-12-11
+devWinConKit.txt 0.0.1                UTF-8                         2016-12-12
 
       <https://github.com/orcmid/nfoTools>
               /devKits/WinDev/WinConKit/devWinConKit/devWinConKit.txt>
@@ -17,7 +17,7 @@ devWinConKit.txt 0.0.0                UTF-8                         2016-12-11
    
     Previous older versions have identified Branch names for recovery from
     the source-code repository.  The set of stable releases is also available 
-    via <http://nfoWare.com/dev/2016/11/d161103c.htm> along with more 
+    via <http://nfoWare.com/dev/2016/11/d161103.htm> along with more 
     information on the use and customization of WinConKits.
     
 
@@ -26,21 +26,22 @@ devWinConKit.txt 0.0.0                UTF-8                         2016-12-11
 MANIFEST
 
     NOTES:
-      * Versions in the filenames, below, reflect the current under-
-        development version.
+      * Versions in the filenames, below, reflect the target of the
+        current in-progress development.
          
       * When there is development, maintenance, and testing underway 
         in the origin devWinConKit/ folder, the working versions of 
-        WinDevKit-*.txt and WinDevKit-*.zip and other devWinDevKit 
+        WinDevKit-*.txt, WinDevKit-*.zip and the other WinDevKit 
         artifacts can be inconsistent until a stable distribution 
         candidate is reached. 
 
     .gitignore (applicable here and in a WinCon Construction Kit)
         Ignoring folders that are created only for construction activity
-        and not intended as part of the maintained source tree.  This
-        folder is not intended for that; if the WinConKit-*.zip and
-        any of its component .zip files are expanded for any reason,
-        they will be kept out of the source tree.
+        and not intended to be under source-code management.  If the 
+        WinConKit-*.zip and any of its component .zip files are expanded 
+        here for testing and any other reasons, those working folders
+        will be kept out of the source tree just as they are in
+        a derived WinCon construction set.
         
     devWinConKit.txt
         This description file on organization of the construction kit
@@ -74,15 +75,31 @@ MANIFEST
 
 TODO
 
+       In addition to these TODO items, the web-facing material on 
+       <http://nfoWare.com> has a Diary and Job Jar of WinConKit items
+       at <http://nfoWare.com/dev/2016/11/d161103a.htm>.
+
+
  * Start WinConKit-0.1.0.txt
  
  * Get NOTICE and LICENSE files.
  
- * Get the VCbinder bits desired for WinConKit 0.1.0.  
+ * Get the VCbind[er] bits desired for WinConKit 0.1.0.  
  
- * Look into whether part of WinConKit is for the user to get the latest
-   VCbinder and apply that themselves?  Or have that be an option and
-   something to check out.
+ * Use a release VCbind[er] version in the final composition of the 
+   WinConKit 0.1.0 stable release.
+ 
+ * Consider how to handle, if ever, updating of just the VCbind[er] parts
+   of a WinCon Construction Set.  A WinConKit would be versioned if there
+   were such changes as part of a stable bundle.
+   
+ * It is desirable that a WinConKit extraction be usable directly as a
+   construction set for testing and other purposes.  It functions as
+   essentially a "Hello World" confirmation operation, producing a
+   a WinCon.exe that can be run.
+   
+ * Review WinConKit.txt for TODOs and other considerations that should be
+   reflected here as well.
    
  * Look into how an existing construction set can be updated from a later
    WinConKit.  How far can we get without requiring any additional 
@@ -178,6 +195,7 @@ TODO
    
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.1 2016-12-12-10:45 Flesh out structure of this level, expand TODOs
  0.0.0 2016-12-11-13:13 Prime devWinConKit.txt from WinConKit.txt 0.0.5 and
        begin population of devWinConKit/ for WinConKit-0.1.0.  Customize and
        expand the TODOs.
