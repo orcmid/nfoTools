@@ -1,4 +1,4 @@
-devBind.txt 0.1.13                    UTF-8                         2016-12-09
+devBind.txt 0.1.14                    UTF-8                         2016-12-**
 ---------1---------2---------3---------4---------5---------6---------7-------*
 
             <https://github.com/orcmid/nfoTools>
@@ -182,7 +182,7 @@ MANIFEST
         applicable NOTICE for VCbind.zip and its content    
         (part of this source and for inclusion in VCbind.zip)
          
-    VCbind-0.2.0.txt
+    VCbind-0.2.0.txt x.y.z ***** byte clear-signed 2016-**-** version
         manifest and description included in VCbind.zip and usable as a
         preview of instructions for extraction and usage. 
          
@@ -256,11 +256,11 @@ TODO
  * Make it clear that ARM is not supported, nor the Itaniums or whatever
    they were.
    
- * We need caveats about Visual C++ 2005 and 2008 Express until we actually
-   confirm those.
+ * We need caveats about Visual C++ 2008 Express until we confirm operation.
    
  --------1---------2---------3---------4---------5---------6---------7-------*
 
+ 0.1.14 2016-12-13-19:36 Scrub TODOs, Conduct some WinCon integration tests.
  0.1.13 2016-12-09-12:43 Editing, TODOs maintenance, and confirmation that
         VC++ Express 2005 works
  0.1.12 2016-12-05-10:10 Switch to VCbind 0.2.0 Preparation

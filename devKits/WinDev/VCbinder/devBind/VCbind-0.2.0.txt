@@ -1,4 +1,4 @@
-VCbind-0.2.0.txt 0.0.13               UTF-8                         2016-12-06
+VCbind-0.2.0.txt 0.0.14               UTF-8                         2016-12-13
  --------1---------2---------3---------4---------5---------6---------7-------*
 
 
@@ -61,7 +61,7 @@ VCbind-0.2.0.txt 0.0.13               UTF-8                         2016-12-06
     sessions of the Windows Command Shell, cmd.exe.
  
     VCbind is designed to work with versions of Visual Studio that are free
-    for personal use, from Visual Studio C++ Express 2008 to Visual Studio
+    for personal use, from Visual Studio C++ Express 2005 to Visual Studio
     C++ Express 2015.  
     
     Use the C/C++ desktop-development options of the free Visual Studio 2015 
@@ -189,6 +189,8 @@ MANIFEST OF VCBIND.ZIP 0.2.0
     
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.14 2016-12-13-19:37 Light editing, clarification about ARM, inclusion
+        of VC++ Express 2005 in the supported cases.
  0.0.13 2016-12-06-19:02 Final-touch ups for candidat 0.2.0 
  0.0.12 2016-12-05-13:45 VCbind-0.2.0 Release Candidate Working Draft
         Going to 0.2.0 based on feature additions in VCbind.bat.

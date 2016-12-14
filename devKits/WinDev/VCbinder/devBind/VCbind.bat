@@ -1,5 +1,5 @@
 @echo off
-rem VCbind-0.2.0 VCbind.bat 0.1.8     UTF-8                         2016-12-09 
+rem VCbind-0.2.0 VCbind.bat 0.1.9     UTF-8                         2016-12-13 
 rem -----1---------2---------3---------4---------5---------6---------7-------*
 
 rem                  SETTING VC++ COMMAND-LINE ENVIRONMENT
@@ -188,8 +188,8 @@ SET VCbound=%VCasked%
 SET VCboundConfig=%VCaskedConfig%
 SET VCboundVer=%VisualStudioVersion%
 rem    accurate whether or not these are already set
-ECHO:  %VCterse%
 IF "%VCsplice%" == "+" EXIT /B 0
+ECHO:  %VCterse%
 IF "%VCterse%" == "" PAUSE
 EXIT /B 0
 
@@ -325,7 +325,6 @@ PAUSE
 EXIT /B 0
 
 :BAIL
-ECHO:
 IF NOT ERRORLEVEL 2 SET ERRORLEVEL=2
 IF NOT "%VCterse%" == "" EXIT /B %ERRORLEVEL%
 IF "%VCsplice%" == "+" EXIT /B %ERRORLEVEL%
@@ -356,6 +355,8 @@ rem limitations under the License.
 
 rem -----1---------2---------3---------4---------5---------6---------7-------*
 
+rem 0.1.9  2016-12-13-19:33 Harmonize with WInConKit %WinCon%Build.bat and
+rem        VCensure.bat, avoiding extraneous success spacing when spliced.
 rem 0.1.8  2016-12-09-12:36 Correct VS 8.0 case to set %VisualStudioVersion%
 rem 0.1.7  2016-12-09-10:52 Add support for the VS 8.0 (080) toolset
 rem 0.1.6  2016-12-06-20:29 Expanded :USAGE, light touch-ups, and alignment
