@@ -1,5 +1,5 @@
 @echo off
-rem VCensure.bat 0.0.3               UTF-8                       dh:2016-12-06
+rem VCensure.bat 0.0.4               UTF-8                       dh:2016-12-13
 rem -----1---------2---------3---------4---------5---------6---------7-------*
 
 rem              ENSURING VC++ COMMAND-LINE OPERATION ENABLED
@@ -85,8 +85,8 @@ rem    XXX: Not counting on %VCterse% preservation by VCBind.bat
 IF ERRORLEVEL 2 GOTO :FAIL3
 
 :SUCCESS
-ECHO:  %VCterse%
 IF "%VCensureSplice%" == "+" EXIT /B 0
+ECHO:  %VCterse%
 IF "%VCterse%" == "" PAUSE
 EXIT /B 0
 
@@ -172,6 +172,8 @@ rem limitations under the License.
 
 rem -----1---------2---------3---------4---------5---------6---------7-------*
 
+rem 0.0.4 2016-12-13-19:48 Harmonize with WinConKit %WinCon%Built.bat
+rem       Avoid extraneous success spacing when spliced.
 rem 0.0.3 2016-12-06-20:26 Harmonize with VCbind 0.2.0 via joint testing
 rem 0.0.2 2016-12-06-16:03 Working candidate for VCbinder 0.1.0 
 rem 0.0.1 2016-12-06-10:22 Intermediate check-in for nfoTools/devKits/VCbinder 
