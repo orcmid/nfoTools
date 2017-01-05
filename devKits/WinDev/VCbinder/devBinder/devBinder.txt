@@ -1,4 +1,4 @@
-devBinder.txt 0.0.16                   UTF-8                       2016-12-06
+devBinder.txt 0.0.17                   UTF-8                       2017-01-05
 
            <https://github.com/orcmid/nfoTools>
                   /devKits/WinDev/VCbinder/devBinder/devBinder.txt>
@@ -32,11 +32,11 @@ MANIFEST
     devBinder.txt
         This description and manifest for the devBinder/ folder
         
-    LICENSE.txt
-        Apache License Version 2.0
+    LICENSE.txt 11,527 byte 2016-10-31 copy
+        Apache Licnese Version 2.0 of January 2004        
         (part of this source and part of VCbinder-*.zip)
          
-    NOTICE.txt
+    NOTICE.txt 1.00 809 byte 2016-11-29 VCbinder version
         Notice file for inclusion in VCbinder.zip
         (part of this source and part of VCbinder-*.zip)
         
@@ -57,11 +57,13 @@ MANIFEST
     VCensure.bat (part of VCbinder-0.1.0.zip)
         Script that can be placed in a construction set to relay into the
         VCbind\Vcbind.bat script after first checking that VCbind\VCbind.bat
-        is in place.  This file is purposefully not versioned, so that it
+        is in place.  The filename is purposefully unversioned so that it
         can always be found from other construction set components without
-        need to name the exact version.
+        need to name exact versions.
         
     VCbind-0.2.0.txt (part of VCbinder-0.1.0.zip)
+        manifest and description included in VCbind.zip and usable as a
+        preview of instructions for extraction and usage. 
          copy of the same file from VCbind.zip so that it can be read before
          any VCbind.zip extraction, as may be desired.
          
@@ -93,21 +95,7 @@ TODO
        at <http://nfoWare.com/dev/2016/11/d161102a.htm>.
 
  * Provide the construction procedure.
-  
- * The VCensure.bat here is used to check that VCbind.zip is present and that
-   the extracted VCbind\VCbind.bat file is present for use.  If Vcbind.zip
-   has not been extracted, the user will be instructed to extract it and
-   retry.
-   
- * VCensure will honor the "+" option and will use it with VCbind.bat if
-   not already requested of VCensure.
-   
- * VCensure ? option will provide information for VCensure and might still
-   fail because VCbind\ is not (properly) available.  Otherwise it passes
-   through.
-   
- * VCensure * will work as expected, as will + * if present.
-   
+       
  * Find a way to do the VCbind.zip extraction automatically, if simple enough.
     
  * Speed up this work just enought to expedite confirmation and provisional
@@ -127,20 +115,13 @@ TODO
    
  * There should be links to supporting information in all error messages.
  
- * Confirm that dots (e.g., up-foldering ".." occurences) work in absolute
-   file paths such as "%dp0\..\Vcensure.bat" from other unzipped construction-
-   set components, avoiding changes of working folders.
-   
- * For the reporting of the location of the script being run, it is 
-   probably ideal to use the construction-set folder path and not go
-   deeper.  That should be sufficient and not so lengthy as %~f0.
-   
- * Ensure that a VCbind 0.2.0 default call (no [config [toolset]] parameters)
-   will always report an existing setup and attempt a default setup only
-   if there is not any existing one.
-       
+ * Adjust VCensure.bat to provide for proper :USAGE chaining when spliced and
+   when not.
+ 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.17 2017-01-05-12:38 Scrub TODOs, adding :USAGE Chaining convention
+        for implementation of VCensure.bat.
  0.0.16 2016-12-06-10:50 Switch VCenable to VCensure; TODOs maintenance.
  0.0.15 2016-12-05-15:08 Set up for VCbinder 0.1.0 and testing VCenable
         with the VCbind 0.2.0 release-candidate code.

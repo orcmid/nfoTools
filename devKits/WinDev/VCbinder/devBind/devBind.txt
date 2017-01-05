@@ -1,4 +1,4 @@
-devBind.txt 0.1.14                    UTF-8                         2016-12-**
+devBind.txt 0.1.15                    UTF-8                         2017-01-05
 ---------1---------2---------3---------4---------5---------6---------7-------*
 
             <https://github.com/orcmid/nfoTools>
@@ -83,7 +83,8 @@ PREREQUISITE CAPABILITIES FOR VCBIND DEVELOPMENT WORK
     
      * Working with the source-code management system, if any, that this
        source code folder originates at, currently the GitHub project at
-       <http://github.com/orcmid/nfoTools>.
+       <http://github.com/orcmid/nfoTools>. Learn to clone and/or fork
+       this development.  Work on a branch as appropriate.
     
      * Performing console (cmd.exe) command-line sessions on Microsoft 
        Windows  
@@ -222,6 +223,11 @@ TODO
    
  * Test with Visual Studio C++ Express 2008.
  
+ * Adjust :USAGE of VCbind.bat to satisfy :USAGE chaining when spliced by
+   the caller.
+   
+ * Explain the [+] option better and use "splicing" in the description.
+ 
  * Link to an illustrated procedure for the extraction from VCbind.zip.
  
  * Link to an illustrated procedure with regard to desired Windows desktop
@@ -260,6 +266,7 @@ TODO
    
  --------1---------2---------3---------4---------5---------6---------7-------*
 
+ 0.1.15 2017-01-05-12:23 Add splicing TODOs for :USAGE chaining.
  0.1.14 2016-12-13-19:36 Scrub TODOs, Conduct some WinCon integration tests.
  0.1.13 2016-12-09-12:43 Editing, TODOs maintenance, and confirmation that
         VC++ Express 2005 works

@@ -1,4 +1,4 @@
-devWinConKit.txt 0.0.1                UTF-8                         2016-12-12
+devWinConKit.txt 0.0.2                UTF-8                         2017-01-05
 
       <https://github.com/orcmid/nfoTools>
               /devKits/WinDev/WinConKit/devWinConKit/devWinConKit.txt>
@@ -13,9 +13,9 @@ devWinConKit.txt 0.0.1                UTF-8                         2016-12-12
     When a stable distribution-point is reached, the WinConKit*.txt and
     WinConKit*.zip files are preserved at the WinConKit/ folder level, 
     allowing work on the next version to occur in WinConKit/devWinConKit/
-    without causing any disturbance.                 
+    without causing any disturbance to the latest stable version.                 
    
-    Previous older versions have identified Branch names for recovery from
+    All stable verwsions have identified Branch names for recovery from
     the source-code repository.  The set of stable releases is also available 
     via <http://nfoWare.com/dev/2016/11/d161103.htm> along with more 
     information on the use and customization of WinConKits.
@@ -79,7 +79,16 @@ TODO
        <http://nfoWare.com> has a Diary and Job Jar of WinConKit items
        at <http://nfoWare.com/dev/2016/11/d161103a.htm>.
 
-
+ * The lifecycle of a construction set needs to be considered somewhere.
+   There is a maintenance impact on the effect of switching to a later
+   WinConKit distribution on an existing WinCon construction set.  That
+   requires consideration.
+   
+ * More work is needed on versioning of the construction set versus the
+   version of WinConKit it is based on.  There must be a tidy way to
+   have that explicit.  That is not done here, but there should be
+   accomodation.       
+       
  * Start WinConKit-0.1.0.txt
  
  * Get NOTICE and LICENSE files.
@@ -88,6 +97,9 @@ TODO
  
  * Use a release VCbind[er] version in the final composition of the 
    WinConKit 0.1.0 stable release.
+   
+ * Because a VCbind[er] can revise faster than a WinConKit, an usable
+   provenance account for the one actually used must be sustained. 
  
  * Consider how to handle, if ever, updating of just the VCbind[er] parts
    of a WinCon Construction Set.  A WinConKit would be versioned if there
@@ -97,10 +109,7 @@ TODO
    construction set for testing and other purposes.  It functions as
    essentially a "Hello World" confirmation operation, producing a
    a WinCon.exe that can be run.
-   
- * Review WinConKit.txt for TODOs and other considerations that should be
-   reflected here as well.
-   
+     
  * Look into how an existing construction set can be updated from a later
    WinConKit.  How far can we get without requiring any additional 
    customization.  Could there be update packages?
@@ -189,12 +198,22 @@ TODO
    compiler output.  
    
  * We need to see if Clang formatting is something that we want to use, so
-   must test that case with VSCode also.
+   must test that case with VSCode also.  [Is this about compiler output
+   messages rather than source formatting?]
    
  * We need to check the VSCode build, test, run, etc.  
+
+ * Use <WinConKit> ... </WinConKit> remark bracketing for instructions that
+   are removed on customization.  Also suggested placeholders for addition
+   of construction-set-specific remarks.
+   
+ * Include a test source directly in the WinConKit so that WinConBuild.bat
+   and WinConRun.bat, etc., can be exercised "as is" before providing the
+   customization.
    
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.2 2017-01-05-12:54 Touch-ups and TODO updates
  0.0.1 2016-12-12-10:45 Flesh out structure of this level, expand TODOs
  0.0.0 2016-12-11-13:13 Prime devWinConKit.txt from WinConKit.txt 0.0.5 and
        begin population of devWinConKit/ for WinConKit-0.1.0.  Customize and

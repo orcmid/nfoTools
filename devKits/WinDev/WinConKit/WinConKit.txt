@@ -1,4 +1,4 @@
-WinConKit.txt 0.0.7                   UTF-8                         2016-12-12
+WinConKit.txt 0.0.8                   UTF-8                         2017-01-**
 
               <https://github.com/orcmid/nfoTools>
                      /devKits/WinDev/WinConKit/WinConKit.txt>
@@ -6,22 +6,24 @@ WinConKit.txt 0.0.7                   UTF-8                         2016-12-12
               NATIVE WINDOWS CONSOLE APPLICATION CONSTRUCTION KIT
               ===================================================
 
-    Windows Console Construction Sets are for C/C++ console applications
-    running in the native Windows Command Shell.  The building of the
-    program is accomplished using Microsoft command-line Development Tools.
+    Windows Console (WinCon) construction sets are for compiling C/C++ console
+    programs running in the native Windows Command Shell.  The building of the
+    programs is accomplished using Microsoft command-line Development Tools
+    and scripts of the construction set.
     
-    WinCon Construction Kits include a number of components and customization
-    procedures for deriving a WinCon Construction Set for building, testing,
-    and deploying a console program.
+    WinCon Construction Kits provide templates for making WinCon construction
+    sets for building, testing, and deploying specific native-Windows console 
+    programs.
     
-    This WinConKit directory holds the latest stable version, preserving it 
-    intact without interference from continuation work.  Testing and in-
-    progress work on future versions is in the devWinConKit subfolder.
+    This WinConKit directory holds the latest stable WinConKit version, 
+    preserving it intact without interference from continuation work.  Testing
+    and in-progress work on future versions is in the devWinConKit subfolder.
     
-    Additional information about WinConKit and its available stable releases
+    Additional information about WinConKits and available stable releases
     can be found at <http://nfoWare.com/dev/2016/11/d161103.htm>.
     
-WINCON CONSTRUCTION-SET DESIGN POINT
+
+WINCON CONSTRUCTION-KIT DESIGN POINT
 
     [This is about the design poinit of the construction sets that WinConKit
      is customizable for.]
@@ -30,15 +32,60 @@ WINCON CONSTRUCTION-SET DESIGN POINT
      order to use one.  Using one is pretty-much like pushing a button once
      any setup dependencies are resolved.]
 
+  * PURPOSE: Reliable creation of dependable, easy-to-use WinCon construction
+    sets.
+   
+  * PRINCIPLES
+  
+    o Prerequisites for customization from a WinConKit are the least needed
+      beyond the prerequisites for using the derived WinCon construction set.
+       
+    o Created construction sets are suitable for novices to build and run
+      the program the construction set is provided for.
+      
+    o Similarities among derived WinCon construction sets allow users and
+      developers to form familiarity and repeatable experience with the
+      many WinCon-style computer programs in nfoTools sub-projects and 
+      elsewhere.
+      
+    o Close-to-the-metal operation based on .bat scripts and command-
+      line usage is a stage for bootstrapping basic understanding of build 
+      processes and their engineering, an opportunity for learning and for
+      instruction.
+      
+    o The lifecycle and software-engineering considerations of construction  
+      sets is addressed.
 
-WINCON CONSTRUCTION-KIT DESIGN POINT
+  
+  * PRIORITIES:
+  
+  * PLAN
+  
+  * PEOPLE
 
     [This is about WinConKit itself and what it is oriented toward.  These
      are not exactly orthogonal considerations yet here it is about the ease of
      customization and confirmation of having a successful construction set.]
      
+    [Metrics would be handy in this context as well]
+     
     [Maintenance and continuation work on WinConKit is yet a different matter.
      That can be covered at devWinConKit.]
+     
+  * COUNTERPOINT: About advanced developers would use an advanced tool, even for
+    a simple WinCon case.  We avoid that because we want the use of advanced
+    tools to be motivated first and are after the least tooling and toolcraft
+    that gets the job done.  There is a small dilemma here, because having the
+    WinConKit be readily customizable involves needing great care in the 
+    customization effort.  The skills and care demanded for customization, 
+    testing, and trouble-shooting will be greater than simply using a WinCon 
+    construction set.  
+    
+  * OPPORTUNITY: It is not automatic that something like the later introduction
+    of Makefiles will eliminate WinConKit use and customization.  A natural
+    use of Makefiles may be with the same WinCon structure and Makefiles that
+    use the .bat files in procedure steps based on what propogation of 
+    detected changes requires.
     
     
 PREREQUISITES FOR DERIVING A WINCONKIT-BASED CONSTRUCTION SET
@@ -118,15 +165,6 @@ TODO
  * Links to Examples of customized WinCon construction sets need to be 
    provided on d161103.  We will use Adv10/dev/WinCon for one from here.
    
- * The lifecycle of a construction set needs to be considered somewhere.
-   There is a maintenance impact on the effect of switching to a later
-   WinConKit distribution on an existing WinCon construction set.  That
-   requires consideration.
-   
- * More work is needed on versioning of the construction set versus the
-   version of WinConKit it is based on.  There must be a tidy way to
-   have that explicit.
-   
  * Some of what we say here seems to be also what should be expressed in
    the WinConKit-*.txt file and other content in WinConKit-*.zip or 
    linked therefrom.  Keep an eye on that.
@@ -136,16 +174,11 @@ TODO
    will lead to more modularity in the WinConKit and how pieces are 
    pulled together.  Need to anticipate that a little.  
    
- * The WinConKit folder is the source tree for releases.  Put appropriate
-   LICENSE.txt and NOTICE.txt files her for use as the root of a 
-   WinConKit-*-src.zip package.
-   
- * Move VCbind-0.1.0.txt and VCbind.zip down to devWinConKit.  They will
-   be part of the kit and not discussed at this level.
-   
+
    
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
- 0.0.7 2016-12-12-10:43 Expanded TODOs and Design-Point considerations added.
+ 0.0.8 2017-01-**-**:** Word-smithing.
+ 0.0.7 2016-12-12-10:43 Expanded TODOs with Design-Point considerations added.
  0.0.6 2016-12-11-13:17 Prime devWinConKit/ and Scrub TODOs
  0.0.5 2016-12-09-13:03 Start adjustments for doing the work in devWinConKit
  0.0.4 2016-12-09-11:59 Include VC++ Express 2015 (8.0) support and add

@@ -1,4 +1,4 @@
-VCbinder.txt 0.0.12                   UTF-8                        2016-12-03
+VCbinder.txt 0.0.13                   UTF-8                        2017-01-05
 
   <https://github.com/orcmid/nfoTools>/devKits/WinDev/VCbinder/VCbinder.txt
 
@@ -59,6 +59,13 @@ MANIFEST
 TODO
 
  * Get VCbinder 0.1.1 here as soon as it is ready.
+ 
+ * The VCbind and VCbinder may evolve more rapidly than devKits that depend
+   on them.  Provide a clear traceable provenance account that works when
+   VCbinder is more current than dependencies that remain to older versions.
+   This may come down to the use of branches and the coordination on the
+   nfoWare site.  It should work if one or the other has gone missing or
+   obsolete.
 
  * It would be interesting to have a make process for making VCbinder.zip.
 
@@ -74,6 +81,8 @@ TODO
 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.13 2017-01-05-13:00 Update TODOs concerning provenance account that 
+        outlasts replaced versions here.
  0.0.12 2016-12-03-12:27 Cleanup text and nomenclature in line with devBinder
  0.0.11 2016-12-02-16:36 Fixed the path to this file. Simplified the 
         description about having the stable distribution here for reference.
