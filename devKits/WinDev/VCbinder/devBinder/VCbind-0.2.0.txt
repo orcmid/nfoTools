@@ -1,4 +1,4 @@
-VCbind-0.2.0.txt 0.0.13               UTF-8                         2016-12-06
+VCbind-0.2.0.txt 0.0.14               UTF-8                         2016-12-26
  --------1---------2---------3---------4---------5---------6---------7-------*
 
 
@@ -6,7 +6,7 @@ VCbind-0.2.0.txt 0.0.13               UTF-8                         2016-12-06
               ==================================================
               
          This 0.2.0 distribution of VCbind.zip is available on the web 
-         at <http://nfoWare.com/dev/2016/11/d161101d.txt>.  Consult 
+         at <http://nfoWare.com/dev/2016/11/d161101d.htm>.  Consult 
          that page for the latest status, links to useful related 
          material, and the most-recent version.  If there is concern 
          for the authenticity or correctness of a VCbind.zip, obtain full
@@ -24,13 +24,13 @@ VCbind-0.2.0.txt 0.0.13               UTF-8                         2016-12-06
 
     VCbind.zip delivers a Windows batch script for setting up a command-
     line environment.  The resulting environment enables compiling with the
-    Microsoft Visual C/C++ command-line compiler, CL.exe, aud using related
+    Microsoft Visual C/C++ command-line compiler, CL.exe, aud the related
     Microsoft developer tools.  The environment is set up and used by issuing
-    commands within a Microsoft Windows console session.
+    commands within a Microsoft Windows command shell session.
     
     VCbind.zip is found as a component of larger construction sets.  Check 
     for custom instructions that apply to extraction and usage of VCbind
-    in the particular construction set.
+    in the particular construction set that provides it.
     
     Ordinarily, construction sets using VCbind version 0.2.0 have a copy 
     of this file, VCbind-0.2.0.txt, alongside the VCbind.zip file.  Use
@@ -60,8 +60,8 @@ VCbind-0.2.0.txt 0.0.13               UTF-8                         2016-12-06
     initiate Windows Batch (.bat) files, and (3) operate command-line
     sessions of the Windows Command Shell, cmd.exe.
  
-    VCbind is designed to work with versions of Visual Studio that are free
-    for personal use, from Visual Studio C++ Express 2008 to Visual Studio
+    VCbind 0.2.0 is designed to work with versions of Visual Studio that are 
+    free for personal use, from Visual Studio C++ Express 2008 to Visual Studio
     C++ Express 2015.  
     
     Use the C/C++ desktop-development options of the free Visual Studio 2015 
@@ -97,7 +97,7 @@ VCbind-0.2.0.txt 0.0.13               UTF-8                         2016-12-06
     without disturbing any non-VCbind files you may have added.
     
     There should now be a VCbind\ folder in the same folder as the VCbind.zip.
-    In that folder you will see that the the files listed in the Manifest
+    In the VCbind\ folder you will see that the the files listed in the Manifest
     below are included.    
     
     
@@ -189,6 +189,7 @@ MANIFEST OF VCBIND.ZIP 0.2.0
     
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.14 2017-12-26-13:56 Correct d161101d link and make small touch-ups
  0.0.13 2016-12-06-19:02 Final-touch ups for candidat 0.2.0 
  0.0.12 2016-12-05-13:45 VCbind-0.2.0 Release Candidate Working Draft
         Going to 0.2.0 based on feature additions in VCbind.bat.
