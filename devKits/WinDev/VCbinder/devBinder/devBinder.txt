@@ -1,4 +1,4 @@
-devBinder.txt 0.0.17                   UTF-8                       2017-01-05
+devBinder.txt 0.0.18                   UTF-8                       2017-01-**
 
            <https://github.com/orcmid/nfoTools>
                   /devKits/WinDev/VCbinder/devBinder/devBinder.txt>
@@ -117,9 +117,24 @@ TODO
  
  * Adjust VCensure.bat to provide for proper :USAGE chaining when spliced and
    when not.
+   
+ * Get the :USAGE working properly in Adv10Build.bat.  
+ 
+ * Change :USAGE chaining from Adv10Run.bat through VCbind.bat so that
+   it can be provided progressively.  This is needed because outer 
+   scripts should not know precise details of inner parameters even though
+   the basic structure is understood.  Also, common outer parameters should
+   not be repeated.
+   
+ * The convention for :USAGE chaining is as follows.  If embedded ("+"),
+   do not repeat common information in the definitions.  Only describe
+   the parameters that are acted on uniquelly by a given script.  When
+   the next level is not available, just report the case that is defined
+   lower, whether embedded or not.
  
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.18 2017-01-**-**:** Implement :USAGE Chaining and its documentation.
  0.0.17 2017-01-05-12:38 Scrub TODOs, adding :USAGE Chaining convention
         for implementation of VCensure.bat.
  0.0.16 2016-12-06-10:50 Switch VCenable to VCensure; TODOs maintenance.

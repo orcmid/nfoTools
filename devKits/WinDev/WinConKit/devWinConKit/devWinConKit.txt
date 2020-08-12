@@ -1,4 +1,4 @@
-devWinConKit.txt 0.0.2                UTF-8                         2017-01-05
+devWinConKit.txt 0.0.3                UTF-8                         2017-01-**
 
       <https://github.com/orcmid/nfoTools>
               /devKits/WinDev/WinConKit/devWinConKit/devWinConKit.txt>
@@ -211,8 +211,29 @@ TODO
    and WinConRun.bat, etc., can be exercised "as is" before providing the
    customization.
    
+ * Get the :USAGE working properly in Adv10Build.bat.  
+ 
+ * Change :USAGE chaining from Adv10Run.bat through VCbind.bat so that
+   it can be provided progressively.  This is needed because outer 
+   scripts should not know precise details of inner parameters even though
+   the basic structure is understood.  Also, common outer parameters should
+   not be repeated.
+   
+ * The convention for :USAGE chaining is as follows.  If embedded ("+"),
+   do not repeat common information in the definitions.  Only describe
+   the parameters that are acted on uniquelly by a given script.  When
+   the next level is not available, just report the case that is defined
+   lower, whether embedded or not. 
+   
+ * Work with VSCode project to arrange sidecar Working folders that use
+   source files on cousin directory-tree branches.  We want VSCode to
+   work using the separation of src/, dev/, and the outside-of-git 
+   ephemeral content for building and testing unde a WinCon construction
+   set.
+   
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.3 2017-01-**-**:** TODOs.  Add :USAGE Chaining and its documentation.
  0.0.2 2017-01-05-12:54 Touch-ups and TODO updates
  0.0.1 2016-12-12-10:45 Flesh out structure of this level, expand TODOs
  0.0.0 2016-12-11-13:13 Prime devWinConKit.txt from WinConKit.txt 0.0.5 and

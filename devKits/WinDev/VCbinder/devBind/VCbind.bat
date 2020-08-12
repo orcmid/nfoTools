@@ -1,5 +1,5 @@
 @echo off
-rem VCbind-0.2.0 VCbind.bat 0.1.9     UTF-8                         2016-12-13 
+rem VCbind-0.2.0 VCbind.bat 0.1.9     UTF-8                        2016-12-13
 rem -----1---------2---------3---------4---------5---------6---------7-------*
 
 rem                  SETTING VC++ COMMAND-LINE ENVIRONMENT
@@ -14,7 +14,7 @@ rem accompanying VCbind-0.2.0.txt file.  For further information, see
 rem <http://nfoWare.com/dev/2016/11/d161101.htm> and check for the latest
 rem version at <http://nfoWare.com/dev/2016/11/d161101b.htm>.
 
-rem Designate the (provisional) semantic-versioned distribution 
+rem Designate the (provisional) semantic-versioned distribution
 SET VCverNum=0.2.0
 
 rem SELECT EMBEDDED, TERSE, OR DEFAULT
@@ -48,7 +48,7 @@ ECHO: [VCbind] %VCverNum% VC++ COMMAND-LINE ENVIRONMENT SETUP
 IF NOT CMDEXTVERSION 2 GOTO :FAIL0
 IF "%VCsplice%" == "+" GOTO :LOCATE
 ECHO:          %TIME% %DATE% on %USERNAME%'s %COMPUTERNAME%%VCterse%
-ECHO:          %~dp0%VCterse%     
+ECHO:          %~dp0%VCterse%
 rem            reporting script directory location
 
 :LOCATE
@@ -60,7 +60,7 @@ IF NOT EXIST "%~dp0VCbind.bat" GOTO :FAIL1
 
 rem DETERMINE PARAMETERS
 rem    See :USAGE for the VCbind API contract
-IF "%1" == "+" SHIFT /1  
+IF "%1" == "+" SHIFT /1
 IF "%1" == "?" GOTO :USAGE
 IF "%1" == "*" SHIFT /1
 
@@ -89,7 +89,7 @@ IF NOT "%VCaskedConfig%" == "amd64_x86" GOTO :FAIL7
 rem CHECK WHETHER VCBIND SETTINGS HAVE ALREADY BEEN MADE
 IF DEFINED VCbound GOTO :ALREADY
 
-rem CHECK WHETHER THERE HAS BEEN SOME OTHER BINDING ALREADY 
+rem CHECK WHETHER THERE HAS BEEN SOME OTHER BINDING ALREADY
 IF DEFINED VCINSTALLDIR GOTO :FAIL4
 
 rem VERIFY TOOLSET
@@ -102,7 +102,7 @@ IF NOT "%VCasked%" ==  "80" GOTO :FAIL7
 
 :FINDTOOLSET
 rem FIND LATEST-AVAILABLE RELEASED TOOLSET
-rem      starting from VCasked   
+rem      starting from VCasked
 
 SET VCtopTry=%VCasked%
 rem      so we can report where checking started
@@ -147,7 +147,7 @@ IF NOT ERRORLEVEL 9 EXIT /B %ERRORLEVEL%
 GOTO :FAIL6
 
 :VCTRY
-rem TRY ESTABLISHING A PARTICULAR VC++ VERSION 
+rem TRY ESTABLISHING A PARTICULAR VC++ VERSION
 rem       %1 is the quoted full path to the expected VC folder
 rem       %2 is the common tools version (e.g., 140 for VS 14.0, 2015)
 rem ERRORLEVEL 9 is returned if a VC\ setup is not present
@@ -204,7 +204,7 @@ GOTO :USAGE
 ECHO:          *** NO VC++ TOOLSET FOUND ***
 ECHO:          None of toolset %VCtopTry% or older are available.
 ECHO:          %VCterse%
-ECHO:          NO ENVIRONMENT CHANGES HAVE BEEN MADE                %VCterse%              
+ECHO:          NO ENVIRONMENT CHANGES HAVE BEEN MADE                %VCterse%
 ECHO:          See ^<http://nfoWare.com/dev/2016/11/d161101.htm^>   %VCterse%
 ECHO:          for suitable freely-available versions.              %VCterse%
 GOTO :BAIL
@@ -213,14 +213,14 @@ GOTO :BAIL
 set VisualStudioVersion=
 rem     XXX: in case incorrectly guessed at :TRY140 or :TRY80
 ECHO: [VCbind] *** FOUND TOOLSET %VCasked% CONFIG %VCaskedConfig% FAILS ***
-ECHO:          Check preceding message(s) for details.  A missing   %VCterse% 
+ECHO:          Check preceding message(s) for details.  A missing   %VCterse%
 ECHO:          config might be unsupported or simply not installed. %VCterse%
 ECHO:          %VCterse%
-ECHO:          NO ENVIRONMENT CHANGES HAVE BEEN MADE                %VCterse%         
+ECHO:          NO ENVIRONMENT CHANGES HAVE BEEN MADE                %VCterse%
 GOTO :BAIL
 
 :FAIL4
-ECHO:          *** FAIL: VC ENVIRONMENT ALREADY SET BY OTHER MEANS ***  
+ECHO:          *** FAIL: VC ENVIRONMENT ALREADY SET BY OTHER MEANS ***
 ECHO:          The environment is already set for compiling with the%VCterse%
 ECHO:          VC++ compiler version for VS %VisualStudioVersion%   %VCterse%
 ECHO:          %VCINSTALLDIR% %VCterse%
@@ -295,13 +295,13 @@ ECHO:             Toolset installations may vary which cases are supported.
 ECHO:             x86 is the default and always works for desktop toolsets.
 ECHO:
 ECHO:     toolset identifies which common tools to start checking from:
-ECHO:                 140 for Visual Studio 2015 (14.0) flavors, then 
+ECHO:                 140 for Visual Studio 2015 (14.0) flavors, then
 ECHO:                 120 for Visual Studio 2013 (12.0) flavors, then
 ECHO:                 110 for Visual Studio 2012 (11.0) flavors, then
 ECHO:                 100 for Visual Studio 2010 (10.0) flavors, and then
 ECHO:                  90 for Visual Studio 2008 (9.0) flavors
 ECHO:                  80 for Visual Studio 2005 (8.0) flavors
-ECHO:             140 is the default  
+ECHO:             140 is the default
 ECHO:
 ECHO:   When a command-line environment has already been established by VCbind
 ECHO:   the established config and toolset settings become defaults in later
@@ -317,7 +317,7 @@ ECHO:
 ECHO:    Other VC* environment-variable names are used transiently.  They
 ECHO:    will be used without checking whether they are already defined.
 ECHO:
-ECHO:    Exit code 0 is produced on all successful operations.  Exit codes 
+ECHO:    Exit code 0 is produced on all successful operations.  Exit codes
 ECHO:    greater than 1 are produced for all failure cases.
 ECHO:
 IF "%VCsplice%" == "+" EXIT /B 0
@@ -363,7 +363,7 @@ rem 0.1.6  2016-12-06-20:29 Expanded :USAGE, light touch-ups, and alignment
 rem        with VCbinder 0.1.0 VCensure.bat in joint testing.
 rem 0.1.5  2016-12-06-16:05 Improve terse heading lines.  Correct title line.
 rem        Make "+" adjustments and VCensure default adjustments as candidate
-rem        for VCbind 0.2.0 and VCbinder 0.1.0.  
+rem        for VCbind 0.2.0 and VCbinder 0.1.0.
 rem 0.1.4  2016-12-05-13:32 Implement "+" option. Improve comments, :USAGE
 rem 0.1.3  2016-12-05-10:39 Switch to preparation as 0.2.0
 rem        The interface is being upgraded for correct working with VCenable
@@ -385,8 +385,8 @@ rem        Designate for candidate VCbind.zip 0.1.0 with version number
 rem        in the VCbind-%VCverNum%.txt file.
 rem 0.0.13 2016-11-16-15:00 Implement "?" option for Usage Information plus
 rem        small cleanups
-rem 0.0.12 2016-11-16-09:03 Correct detection of failure in :VCTRY, tune 
-rem        error messages. 
+rem 0.0.12 2016-11-16-09:03 Correct detection of failure in :VCTRY, tune
+rem        error messages.
 rem 0.0.11 2016-11-15-17:21 Complete Parameter Filtering
 rem 0.0.10 2016-11-15-14:31 Introduce Terse operation;  smooth messages.
 rem 0.0.9 2016-11-15-11:03 Define parameters, choose "config" naming of
@@ -396,15 +396,15 @@ rem       installed.  Simplify message layout further.
 rem 0.0.7 2016-11-14-09:55 Smooth output of messages
 rem       The output messages are smoothed to be more condensed in
 rem       non-failure cases.  There is better clarity and terminology.
-rem 0.0.6 2016-11-13-11:52 Add Checks for All Conflict Cases     
+rem 0.0.6 2016-11-13-11:52 Add Checks for All Conflict Cases
 rem 0.0.5 2016-11-08-10:54 Rearrange comments and move TODOs to the
-rem       devBind.txt working file.  Check for acceptable CMDEXTVERSION 
+rem       devBind.txt working file.  Check for acceptable CMDEXTVERSION
 rem       and location (%dp0) where this script is located.
-rem 0.0.4 2016-10-27-11:43 Boilerplate in VCbinder/devBind folder 
+rem 0.0.4 2016-10-27-11:43 Boilerplate in VCbinder/devBind folder
 rem       for morphing into a more robust, automatic version that works
 rem       free-standing as part of a command-line construction set for
 rem       creating Microsoft Windows programs on Microsft Windows.
-rem       Scavenged from ShowDefs version 0.03. 
+rem       Scavenged from ShowDefs version 0.03.
 rem 0.03 2014-12-28-19:11 Get vcvarsall Handshake CALL working
 rem      Handshake set up and failure case managed.
 rem 0.02 2014-12-28-17:06 Correct vcvarsall Usage
