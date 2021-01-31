@@ -1,0 +1,58 @@
+docs.txt 0.0.0                       UTF-8                      dh:2021-01-31
+
+                            nfoWare/nfoWorks nfoTools
+                            =========================
+
+                <https://github.com/orcmid/nfoTools/docs/docs.txt>
+
+                   NFOTOOLS DOCUMENTATION SOURCE CODE FOLDER
+                   -----------------------------------------
+
+    Documentation of the nfoTools and of their use and customization is
+    provided here as the source of GitHub Pages that are automatically
+    published to ???? .
+
+MANIFEST
+
+    docs.txt
+        this manifest and job-jar file
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+                       Copyright 2021 Dennis E. Hamilton
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+TODO
+
+  * Explain how this folder is used to generate the GitHub pages, possibly
+    with additional folders that are about the scaffolding and construction
+    materials.
+
+  * Figure out what to do about Jekyll and its templates.
+
+  * Find another way if there can be one.  MathJax is not crucial here, but
+    other theming is desirable.
+
+  * Ensure that this scaffolding page, docs.txt, does not produce anything of
+    importance.
+
+  * Add the publication .io location.
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+ 0.0.0 2021-01-31T22:36Z Supply minimal boilerplate for the docs/ folder
+
+                          ***** end of docs.txt *****
