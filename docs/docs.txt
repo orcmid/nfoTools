@@ -1,16 +1,18 @@
-docs.txt 0.0.0                       UTF-8                      dh:2021-01-31
+docs.txt 0.0.1                       UTF-8                      dh:2021-01-31
 
                             nfoWare/nfoWorks nfoTools
                             =========================
 
-                <https://github.com/orcmid/nfoTools/docs/docs.txt>
+        <https://github.com/orcmid/nfoTools/blob/master/docs/docs.txt>
+                  <https://orcmid.github.io/nfoTools/docs.txt>
 
                    NFOTOOLS DOCUMENTATION SOURCE CODE FOLDER
                    -----------------------------------------
 
     Documentation of the nfoTools and of their use and customization is
     provided here as the source of GitHub Pages that are automatically
-    published to ???? .
+    published to <https://orcmid.github.io/nfoTools/>.  This scaffolding
+    page is also published there.
 
 MANIFEST
 
@@ -46,13 +48,9 @@ TODO
   * Find another way if there can be one.  MathJax is not crucial here, but
     other theming is desirable.
 
-  * Ensure that this scaffolding page, docs.txt, does not produce anything of
-    importance.
-
-  * Add the publication .io location.
-
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.1 2021-01-31T23:32Z Confirm repository and published pages locations
  0.0.0 2021-01-31T22:36Z Supply minimal boilerplate for the docs/ folder
 
                           ***** end of docs.txt *****
