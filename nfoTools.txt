@@ -1,8 +1,8 @@
-nfoTools.txt 0.0.2                    UTF-8                      dh:2016-12-02
+nfoTools.txt 0.0.3                    UTF-8                      dh:2021-01-31
 
                             nfoWare/nfoWorks nfoTools
                             =========================
-                            
+
                       <https://github.com/orcmid/nfoTools>
 
             USEFUL TOOLS IN DEVELOPMENT OF NFOWARE/NFOWORKS PROJECTS
@@ -14,36 +14,39 @@ nfoTools.txt 0.0.2                    UTF-8                      dh:2016-12-02
     tools are designed for in the composition of larger software projects
     for information-processing applications.  They can apply anywhere in
     the complete learning-and-improvement lifecycle of software projects.
-    
+
     While nfoTools are useful independently, they are chosen and developed
     in service of specific nfoWare.com and nfoWorks.org software efforts.
-         
+
 MANIFEST
 
-    nfoTools.txt 
+    nfoTools.txt
         this manifest and job-jar file
 
     devKits/
         providing components and kits that are useful in the construction
         stage of computer programs for utility and application purposes.
-                      
+
+    docs/
+        source of GitHub Pages documentation for nfoTools
+
     LICENSE.txt
-         The open-source software license that applies to the entire 
+         The open-source software license that applies to the entire
          nfoTools collection except where stated otherwise.
-         
+
     NOTICE.txt
          Notice that applies with respect to particular components of
          the nfoTools collection.
-         
+
     .gitattributes
          A declaration of file attributes for use in Git repositories of
          the nfoTools source code.
-         
+
     .gitignore
          A declaration of artifacts to be ignored and excluded from Git
          repositories, applying to working files that are not part of the
          managed archive materials
-         
+
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
                        Copyright 2016 Dennis E. Hamilton
@@ -59,21 +62,26 @@ MANIFEST
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
- 
+
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
- 
+
 TODO
 
   * Add GitHub Readme.md when ready.
-  
+
   * Cover toolcraft and the intention of relying exclusively on freely-
     available software tools and libraries.
-    
+
   * Explain the licensing approach and handling of open-source code and any
     contributions to it.
-    
+
+  * Add attribution boilerplates.
+
+  * Use correct permalinks into master/default branch.
+
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.3 2021-01-31T23:18Z Add docs/ manifest entry, manage TODOs
  0.0.2 2016-12-02-17:39 Complete Staging for the first devKits components.
  0.0.1 2016-11-30-13:45 Initial setup with devKits/ as the first area for
        introduction of reusable components.
