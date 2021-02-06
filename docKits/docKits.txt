@@ -1,0 +1,61 @@
+docKits.txt 0.0.0                    UTF-8                      dh:2021-02-06
+
+            <https://github.com/orcmid/nfoTools>/docKits/docKits.txt>
+
+                     DOCKITS CONSTRUCTION KITS AND HELPERS
+                     =====================================
+
+    Documentation in various forms is a common requirement for projects.
+    A docKit is a set of aids with regard to a particular type/form of
+    documentation.
+
+    This is not about document processing software, although there is a
+    connection.  nfoWorks, not nfoTools is more applicable to document
+    processing.  For example, the orcmid/DocInterop project is applicable
+    to that domain.
+
+    The main thrust for docKits will be components that can be instrumental
+    in documentation of projects and products developed on GitHub.  The kits
+    may be useful to developers and even moreso to those who author material
+    in support of user-facing open-source products.
+
+
+MANIFEST
+
+    docKits.txt
+        This description file on organization of the archive and use of its
+        materials.
+
+
+
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+                       Copyright 2021 Dennis E. Hamilton
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+TODO
+
+ * Add attribution statement
+
+ * Look at GitHub+Markdown authoring cases, including for nfoTools/docs and
+   also wikis.  This will be rather cross-cutting and organization needs to
+   emerge carefully.
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+ 0.0.0 2021-02-06T18:45Z placeholder for the docKits folder scaffolding.
+
+                         *** end of docKits.txt ***

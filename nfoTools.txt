@@ -1,9 +1,10 @@
-nfoTools.txt 0.0.3                    UTF-8                      dh:2021-01-31
+nfoTools.txt 0.0.4                    UTF-8                      dh:2021-02-06
 
                             nfoWare/nfoWorks nfoTools
                             =========================
 
                       <https://github.com/orcmid/nfoTools>
+          <https://github.com/orcmid/nfoTools/blob/master/nfoTools.txt>
 
             USEFUL TOOLS IN DEVELOPMENT OF NFOWARE/NFOWORKS PROJECTS
 
@@ -27,8 +28,14 @@ MANIFEST
         providing components and kits that are useful in the construction
         stage of computer programs for utility and application purposes.
 
+    docKits/
+        providing components and kits, including tutorials and other aids,
+        that are useful in the documentation for GitHub-housed software-
+        development projects conducted in the open
+
     docs/
-        source of GitHub Pages documentation for nfoTools
+        source of GitHub Pages documentation for nfoTools and accessible at
+        <https://orcmid.github.io/nfoTools/docs.txt>
 
     LICENSE.txt
          The open-source software license that applies to the entire
@@ -81,6 +88,7 @@ TODO
 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.4 2021-02-06T17:53Z Add docKits/ manifest entry, manage TODOs.
  0.0.3 2021-01-31T23:18Z Add docs/ manifest entry, manage TODOs
  0.0.2 2016-12-02-17:39 Complete Staging for the first devKits components.
  0.0.1 2016-11-30-13:45 Initial setup with devKits/ as the first area for
