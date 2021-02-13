@@ -1,77 +1,76 @@
-devBinder.txt 0.0.18                   UTF-8                       2017-01-**
+devBinder.txt 0.0.19                   UTF-8                       2021-02-13
 
-           <https://github.com/orcmid/nfoTools>
-                  /devKits/WinDev/VCbinder/devBinder/devBinder.txt>
+<https://github.com/orcmid/nfoTools/blob/master/devKits/WinDev/VCbinder/devBinder/devBinder.txt>
 
                          VCBINDER PACKAGE CONSTRUCTION
                          =============================
 
     Folder devBinder/ provides the files and the procedure for composing
-    a VCbinder distribution.  This is where the composition and testing 
+    a VCbinder distribution.  This is where the composition and testing
     occur.  When a stable distribution-point is reached, the VCbinder*.txt
     and VCbinder*.zip files are preserved at the VCbinder/ folder, allowing
     work on the next version to occur in VCbinder/devBinder without causing
     any disturbance.
-    
+
     More information about VCbinder is available at <http://nfoWorks.com>.
     See <http://nfoWorks.com/dev/2016/11/d161102.htm> for further details.
 
 MANIFEST
 
-    NOTE: When there is development, maintenance, and testing underway 
+    NOTE: When there is development, maintenance, and testing underway
     in the origin devBinder/ folder, the working versions of VCbinder-*.txt,
     VCbinder-*.zip, VCenable.bat, VCbind.zip, VCbind-*.txt and other devBinder
-    artifacts can be inconsistent until a stable distribution candidate is 
+    artifacts can be inconsistent until a stable distribution candidate is
     reached.
 
     .gitignore
         preventing any VCbind/ and VCbinder-*/ working sub-folders from
         inclusion in devBinder source-code version control.  (part of this
         source and part of VCbinder-*.zip)
-        
+
     devBinder.txt
         This description and manifest for the devBinder/ folder
-        
+
     LICENSE.txt 11,527 byte 2016-10-31 copy
-        Apache Licnese Version 2.0 of January 2004        
+        Apache Licnese Version 2.0 of January 2004
         (part of this source and part of VCbinder-*.zip)
-         
+
     NOTICE.txt 1.00 809 byte 2016-11-29 VCbinder version
         Notice file for inclusion in VCbinder.zip
         (part of this source and part of VCbinder-*.zip)
-        
+
     VCbinder-0.1.0.txt (part of VCbinder-0.1.0.zip)
-        The manifest and procedure file that is incorporated in 
+        The manifest and procedure file that is incorporated in
         VCbinder-0.1.0.zip.  This provides information on the procedure
         without having to download/open VCbinder-0.1.0.zip first.
         Note that VCbinder-0.1.0.txt/.zip are not added to construction
         sets.  Selected extracts from VCbinder-0.1.0.zip are inserted
         into construction sets for Microsoft Windows programs.  The
         construction-set materials will reflect that dependency.
-        
+
     VCbinder-0.1.0.zip
-          The under-development VCbinder artifact for integration of 
-          VCbind elements into the source-code version-control of a 
-          construction set.        
-               
+          The under-development VCbinder artifact for integration of
+          VCbind elements into the source-code version-control of a
+          construction set.
+
     VCensure.bat (part of VCbinder-0.1.0.zip)
         Script that can be placed in a construction set to relay into the
         VCbind\Vcbind.bat script after first checking that VCbind\VCbind.bat
         is in place.  The filename is purposefully unversioned so that it
         can always be found from other construction set components without
         need to name exact versions.
-        
+
     VCbind-0.2.0.txt (part of VCbinder-0.1.0.zip)
         manifest and description included in VCbind.zip and usable as a
-        preview of instructions for extraction and usage. 
+        preview of instructions for extraction and usage.
          copy of the same file from VCbind.zip so that it can be read before
          any VCbind.zip extraction, as may be desired.
-         
+
     VCbind.zip (part of VCbinder-0.1.0.zip)
          The VCbind 0.2.0 package procedure delivered in the developing
-         VCbinder.  VCbind.zip versions are developed in sibling folder 
+         VCbinder.  VCbind.zip versions are developed in sibling folder
          devBind/
-          
+
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
                        Copyright 2016 Dennis E. Hamilton
@@ -90,51 +89,52 @@ MANIFEST
 
 TODO
 
-       In addition to these TODO items, the web-facing material on 
+       In addition to these TODO items, the web-facing material on
        <http://nfoWare.com> has a Diary and Job Jar of VCbinder items
        at <http://nfoWare.com/dev/2016/11/d161102a.htm>.
 
  * Provide the construction procedure.
-       
+
  * Find a way to do the VCbind.zip extraction automatically, if simple enough.
-    
+
  * Speed up this work just enought to expedite confirmation and provisional
    use.
-   
+
  * There needs to be some useful content on how VCensure works on first-
-   succcess and then how it is used by tool-chain components simply to 
+   succcess and then how it is used by tool-chain components simply to
    ensure there is one and only provide a default setup if there is not
    already a successful setup.  This raises the coupling between VCensure
    and VCbind somewhat.
-   
+
  * Add the design point and 5Ps to this material.
- 
+
  * We are going to need release notes, known limitations, etc., not unlike
    a small man-page creation.  So there might need to be a VCensure*.txt
    file?
-   
+
  * There should be links to supporting information in all error messages.
- 
+
  * Adjust VCensure.bat to provide for proper :USAGE chaining when spliced and
    when not.
-   
- * Get the :USAGE working properly in Adv10Build.bat.  
- 
+
+ * Get the :USAGE working properly in Adv10Build.bat.
+
  * Change :USAGE chaining from Adv10Run.bat through VCbind.bat so that
-   it can be provided progressively.  This is needed because outer 
+   it can be provided progressively.  This is needed because outer
    scripts should not know precise details of inner parameters even though
    the basic structure is understood.  Also, common outer parameters should
    not be repeated.
-   
+
  * The convention for :USAGE chaining is as follows.  If embedded ("+"),
    do not repeat common information in the definitions.  Only describe
    the parameters that are acted on uniquelly by a given script.  When
    the next level is not available, just report the case that is defined
    lower, whether embedded or not.
- 
+
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
- 0.0.18 2017-01-**-**:** Implement :USAGE Chaining and its documentation.
+ 0.0.19 2021-02-13T23:34 Correct the page permalink, fix textflow
+ 0.0.18 2017-01-28-12:38 Implement :USAGE Chaining and its documentation.
  0.0.17 2017-01-05-12:38 Scrub TODOs, adding :USAGE Chaining convention
         for implementation of VCensure.bat.
  0.0.16 2016-12-06-10:50 Switch VCenable to VCensure; TODOs maintenance.
@@ -142,7 +142,7 @@ TODO
         with the VCbind 0.2.0 release-candidate code.
  0.0.14 2016-12-04-21:14 Add old VCenable.bat for customization to the
         current VCbinder approach for 0.1.1.  Review TODOs.
- 0.0.13 2016-12-03-12:20 Make the .gitignore independent of the VCbinder 
+ 0.0.13 2016-12-03-12:20 Make the .gitignore independent of the VCbinder
         version.  Introduce VCenable.bat name for the relay script.  Clean
         up nomenclature in the text and manifest.
  0.0.12 2016-12-02-17:25 Staging for VCbinder 0.1.1 derivation.

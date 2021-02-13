@@ -1,47 +1,47 @@
-devKits.txt 0.0.3                     UTF-8                      dh:2016-12-07
+devKits.txt 0.0.4                     UTF-8                      dh:2021-02-13
 
-            <https://github.com/orcmid/nfoTools>/devKits/devKits.txt>
+    <https://github.com/orcmid/nfoTools/blob/master/devKits/devKits.txt>
 
                      DEVKITS CONSTRUCTION KITS AND HELPERS
                      =====================================
 
-    Developer construction sets are platform-specific structures for 
-    compiling and exercising the Adv10 software.  
-    
+    Developer construction sets are platform-specific structures for
+    compiling and exercising the Adv10 software.
+
     In this approach, the code is always compilable and executable as
     we work through the 0.*.* semantic versions.  There should always be
     tests as well.  When there are version releases, the construction set
     will build the developer version of that release.
-    
-    It is intended that developer versions avoid branding of any kind.  
+
+    It is intended that developer versions avoid branding of any kind.
     That also means deployment does not include the essential steps
     for branding and delivery via app stores and other means for authenti-
-    cated end-user versions.  
-    
+    cated end-user versions.
+
     The purpose of this division is to avoid counterfeiting and creation of
     imposter versions of software intended for casual users.  Each provider
     of authenticated and verificable deployments must provide their own
     secure authentication along with any appropriate branding.
-    
+
     The main thrust is development on and for the Microsoft Windows platform.
     Other platforms and construction cases will be entertained. The primary
     effort for Windows is addressed to the largest international community
     of users and (potential) developers.  This is for practical purposes as
     well as a means of exploiting and demonstrating the rich support for
     high-functioning applications.
-    
-    
+
+
 MANIFEST
 
     devKits.txt
         This description file on organization of the archive and use of its
         materials.
-        
+
     WinDev/
         Construction kits and helpers for producing programs for Microsoft
         Windows using Microsoft Windows developer tools.
-        
-        
+
+
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
                        Copyright 2016 Dennis E. Hamilton
@@ -61,15 +61,16 @@ MANIFEST
 TODO
 
  * [TBD]
- 
+
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.4 2021-12-13T23:16Z Use correct permalink to this page.
  0.0.3 2016-12-07-12:46 Corrected two typos, closing @band GitHub issue #1
- 0.0.2 2016-11-30-16:20 WinDev expanded to include additional transposed 
+ 0.0.2 2016-11-30-16:20 WinDev expanded to include additional transposed
        material below it.
  0.0.1 2016-11-30-15:56 Introduce the WinDev kits as first part of the
        devKits structure and editing into the devKits form.
  0.0.0 2016-11-30-09:05 Cloning of Adv10/dev/dev.txt for transformation
        to nfoTools/devKits/devKitx.txt
 
-                         *** end of devKits.txt ***        
+                         *** end of devKits.txt ***
