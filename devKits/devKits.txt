@@ -1,4 +1,4 @@
-devKits.txt 0.0.4                     UTF-8                      dh:2021-02-13
+devKits.txt 0.0.5                     UTF-8                      dh:2021-05-25
 
     <https://github.com/orcmid/nfoTools/blob/master/devKits/devKits.txt>
 
@@ -60,10 +60,24 @@ MANIFEST
 
 TODO
 
- * [TBD]
+ * We need prerequisites, general ones -- GitHub, etc.
+
+ * We need prerequisites for building at a particular Dev level.
+
+ * We need links for tooling and for training, tutorials, etc.  Cybersmithing.
+
+ * Some of the safeguards can be part of development patterns and not featured
+   so strongly on this page.  Move more to what is interesting for users and
+   the curious.
+
+ * Make us of docs and maybe wiki here also, with help from docEng.
+
+ * The scaffolding/skeleton scheme used here is a thing also, but maybe not
+   to go overboard with it.
 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.5 2021-05-25T19:57Z Manage TODOs
  0.0.4 2021-12-13T23:16Z Use correct permalink to this page.
  0.0.3 2016-12-07-12:46 Corrected two typos, closing @band GitHub issue #1
  0.0.2 2016-11-30-16:20 WinDev expanded to include additional transposed
