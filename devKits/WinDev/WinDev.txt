@@ -1,4 +1,4 @@
-WinDev.txt 0.0.4                     UTF-8                       dh:2021-02-13
+WinDev.txt 0.0.5                     UTF-8                       dh:2021-05-25
 
   <https://github.com/orcmid/nfoTools/blob/master/devKits/WinDev/WinDev.txt>
 
@@ -7,7 +7,8 @@ WinDev.txt 0.0.4                     UTF-8                       dh:2021-02-13
 
     The WinDev/ construction kits and helpers are for creation of construction
     sets that build Windows programs using Microsoft developer tools on
-    Windows.
+    Windows.  There is focus on minimum tooling requirements, especially for
+    reproducing the builds of various tools and straightforward apps.
 
 MANIFEST
 
@@ -59,7 +60,7 @@ TODO
    might change to in a stable construction set.  I suppose the intriguing
    case is when one is building with a working version of a dependency in
    anticipation and testing for its eventual deployment.  The target of
-   the dependency changes in taht case. This somehow needs to be sheltered
+   the dependency changes in that case. This somehow needs to be sheltered
    away from how a deployed WinCon Construction Set is meant to work.  And
    also how and when it is updated for later/different versions of
    dependencies.  There needs to be more thought on how we differentiate this
@@ -67,8 +68,17 @@ TODO
    stable bits is valuable.  It is not the whole story.  PS: This is more of
    a devKIts discussion, but it will show up real quick here in WinDev.
 
+ * DISCOVERABILITY ISSUES. The deployment of Visual Studio and of Microsoft
+   Build Tools has changed in ways that defeat discovery of installed tools
+   by VCbind.  The appearance of settings that cue location of build tools is
+   no longer at the Windows session level.  To locate tools now, one must
+   rely on Windows 10 Start page entries that may be difficult to discover.
+   This means there must be some additional contortions by useres of the
+   WinDev kits for desktop and probably other development cases.
+
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.5 2o21-05-25T15.14Z Report the discoverability problem.  Touch ups.
  0.0.4 2021-02-13T23:21Z Use correct permalink for this page.  Smooth text.
  0.0.3 2016-12-08-09:36 Considerations about dependencies and also source
        bundling with -dist versions.
