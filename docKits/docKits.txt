@@ -1,6 +1,6 @@
-docKits.txt 0.0.0                    UTF-8                      dh:2021-02-06
+docKits.txt 0.0.1                    UTF-8                      dh:2021-05-25
 
-            <https://github.com/orcmid/nfoTools>/docKits/docKits.txt>
+    <https://github.com/orcmid/nfoTools/blob/master/docKits/docKits.txt>
 
                      DOCKITS CONSTRUCTION KITS AND HELPERS
                      =====================================
@@ -14,10 +14,15 @@ docKits.txt 0.0.0                    UTF-8                      dh:2021-02-06
     processing.  For example, the orcmid/DocInterop project is applicable
     to that domain.
 
-    The main thrust for docKits will be components that can be instrumental
-    in documentation of projects and products developed on GitHub.  The kits
-    may be useful to developers and even moreso to those who author material
-    in support of user-facing open-source products.
+    The docEng project is devoted Document Engineering and arrangements
+    developed there is applicable to documentation of nfoTools itself.
+    This may reduce the importance of docKits here, although support for
+    documentation about and derived from code may be relevant.
+
+    How and whether docKits are needed in support of literate programming
+    or other mixe cases remains open until there is an indentified case.
+    There may be usability and user-experience elements that apply here as
+    well.  Whether docKits is an appropriate umbrella remains to be seen.
 
 
 MANIFEST
@@ -49,13 +54,14 @@ TODO
 
  * Add attribution statement
 
- * Look at GitHub+Markdown authoring cases, including for nfoTools/docs and
-   also wikis.  This will be rather cross-cutting and organization needs to
-   emerge carefully.
+ * Tie to docEng more strongly when there is something to rely on there.
+
+ * Look at code-related documentation and maybe UX as well.
 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 
+ 0.0.1 2021-05-25T15:01Z fix permalink and consider reliance on docEng.
  0.0.0 2021-02-06T18:45Z placeholder for the docKits folder scaffolding.
 
                          *** end of docKits.txt ***
