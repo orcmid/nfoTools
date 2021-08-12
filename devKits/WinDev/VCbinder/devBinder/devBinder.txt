@@ -1,4 +1,4 @@
-devBinder.txt 0.0.19                   UTF-8                       2021-02-13
+devBinder.txt 0.0.20                   UTF-8                       2021-08-11
 
 <https://github.com/orcmid/nfoTools/blob/master/devKits/WinDev/VCbinder/devBinder/devBinder.txt>
 
@@ -131,8 +131,16 @@ TODO
    the next level is not available, just report the case that is defined
    lower, whether embedded or not.
 
+ * I think I am over-thinking all of this. Branches should be used for
+   developing new versions and then merging into the main.  At the same
+   time, I want to keep the historical versions somewhere that accounts
+   for the progression, provenance, and history.  And I don't want to
+   over-constrain the problem.  So there might be branches to appeal to
+   in the kits.  Umm, still over-thinking?
+
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.20 2021-08-11T16:26Z Adust work items, raise over-thinking question
  0.0.19 2021-02-13T23:34 Correct the page permalink, fix textflow
  0.0.18 2017-01-28-12:38 Implement :USAGE Chaining and its documentation.
  0.0.17 2017-01-05-12:38 Scrub TODOs, adding :USAGE Chaining convention
