@@ -1,4 +1,4 @@
-WinDev.txt 0.0.5                     UTF-8                       dh:2021-05-25
+WinDev.txt 0.0.6                     UTF-8                       dh:2021-08-11
 
   <https://github.com/orcmid/nfoTools/blob/master/devKits/WinDev/WinDev.txt>
 
@@ -18,12 +18,14 @@ MANIFEST
 
     VCbinder/
         Kit for introduction of VCbind as a helper in construction sets
-        that produce Windows programs using the VC++ Build tools in a
+        that produce Windows programs using Visual Studio Build Tools in a
         Windows command shell session.
 
     WinConKit/
         Kit for construction sets that build C/C++ Windows Console applica-
-        tions using Windows command shell sessions.
+        tions using Windows command shell sessions. These include projects
+        for command-line games and utilities as well as ones that provide
+        simple graphical operation.
 
 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -46,15 +48,23 @@ TODO
 
  * Adjust VCbinder/ for its new location
 
+ * Update VCbinder to reflect the reality of Visual Studio Build Tools
+   "discoverability" starting with VS 2017.
+
+ * Update the WinConKit case so that a simple handling of configuration
+   cases can work with a single workspace setup in Visual Studio Code.
+
  * Transform the seed material from Adv10/dev/WinCon as the initial
-   skeleton for WinConKit/
+   skeleton for WinConKit/ if that is still needed.  This should have been
+   down with a fork.
 
  * There is some dependency management to be addressed here.  In particular
    the stable versions (and the branches that preserve them) need to be
    clearly separated from the in-progress working versions.
 
  * The sources of a distribution should be in the same folder that has the
-   binaries of the same distributions.  Implement that in VCbinder.
+   binaries of the same distributions.  Implement that in VCbinder.  Remember
+   what this item is about.
 
  * We need to look into dependencies when one is developing and what they
    might change to in a stable construction set.  I suppose the intriguing
@@ -71,14 +81,30 @@ TODO
  * DISCOVERABILITY ISSUES. The deployment of Visual Studio and of Microsoft
    Build Tools has changed in ways that defeat discovery of installed tools
    by VCbind.  The appearance of settings that cue location of build tools is
-   no longer at the Windows session level.  To locate tools now, one must
-   rely on Windows 10 Start page entries that may be difficult to discover.
-   This means there must be some additional contortions by useres of the
-   WinDev kits for desktop and probably other development cases.
+   no longer at the command-line session level.  To locate tools now, users
+   must rely on Windows-installed Command Prompts and operate inside those
+   console-session initiations.  VCbind must be adusted to operate when any
+   of those prompts have been established.  This also requires approaches to
+   compilation from within developer tools such as Visual Studio Code and it
+   being initiated from within such a console session.
+
+ * COLLISION AVOIDANCE.  There are times when ephemeral materials and user-
+   customizations are to be made in the use of a cloned kit-employing project.
+   The areas where such materials are introduced are subject to .gitignore of
+   the cloned project when they are internal to the cloned materials. Users
+   must have a way to include those adaptations in git-managed projects of
+   their own without impacting the cloned kit-employing project.  Thisalso
+   means that the kit-employing project must have a clean way to deal with
+   breaking changes that impact existing customization.  This needs to be
+   handled in a manner that does not involve over-thinking the situation,
+   while relying on straightforward (maybe tedious) procedures.
+
 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
- 0.0.5 2o21-05-25T15.14Z Report the discoverability problem.  Touch ups.
+ 0.0.6 2021-08-11T15:48Z Adjust Discoverability, Add Collision Avoidance,
+       and manage TODOs.
+ 0.0.5 2021-05-25T15.14Z Report the discoverability problem.  Touch ups.
  0.0.4 2021-02-13T23:21Z Use correct permalink for this page.  Smooth text.
  0.0.3 2016-12-08-09:36 Considerations about dependencies and also source
        bundling with -dist versions.
