@@ -1,4 +1,4 @@
-devBind.txt 0.1.16                    UTF-8                         2017-02-11
+devBind.txt 0.1.18                    UTF-8                         2021-08-11
 ---------1---------2---------3---------4---------5---------6---------7-------*
 
 <https://github.com/orcmid/nfoTools/blob/master/devKits/WinDev/VCbinder/devBind/devBind.txt>
@@ -10,7 +10,7 @@ devBind.txt 0.1.16                    UTF-8                         2017-02-11
         support non-expert testing and confirmation of VCbind operation.
         Novices without the experience to have developed VCbind themselves
         should be able (1) to use VCbind, (2) to confirm its functioning,
-        and (3) to make adaptations/variations as more learned.
+        and (3) to make adaptations/variations as more is learned.
 
     The files and the VCbind.zip here are in-progress development versions.
     For the latest version considered stable for general use, check the
@@ -189,8 +189,9 @@ MANIFEST
 
     NOTE: When there is development, maintenance, and testing underway
     in the origin devBind/ folder, the working versions of VCbind-*.txt,
-    VCbind.bat, VCbind.zip, and other devBind artifacts can be inconsistent
-    until a stable case is reached.
+    VCbind.bat, VCbind.zip, and other devBind artifacts in *this* folder
+    can be inconsistent until a stable case is reached.  Normally, this
+    happens in a branch named for the new VCbind version.
 
     .gitignore
         excluding any devBind/VCbind/ working/test folder from source-code
@@ -301,8 +302,30 @@ TODO
  * Make it clear that ARM is not supported, nor the Itaniums or whatever
    they were.
 
+ * In :VCTRY of VCbind.bat, specify the dependency on %VCaskedConfig
+   as the parameter that is passed through to vcvarsall.bat.
+
+ * Make a dependency on 150 and 160 VC releases.  Look at 160 being the
+   default.  These don't have anything already in the settings and the user
+   needs to use the Visual Studio Command Prompts  We have to deal with the
+   those being detected in a way that has there be agreement.  We will treat
+   those usages of vdvarsall.bat as intended ans rely on them.  We will also
+   report them already being set.
+
+ * The setup procedures must be ones that will work with VSCode being setup
+   also.  We may need something about VSCode and work spaces that works for
+   building in these projects.  That will also be how these projects are
+   created and maintained.
+
+ * Move away from using nfoware.com and switch to the documentation project
+   for nfoTools.
+
+
  --------1---------2---------3---------4---------5---------6---------7-------*
 
+ 0.1.18 2021-08-11T18:06Z Manage work items in preparation to handling
+        Visual studio 2017 and 2019, use of VSCode, and using branches
+        to simplify all this nonsense.
  0.1.17 2021-02-13T23:31Z Add correct permalink, correct some textflow
  0.1.16 2017-02-11-12:23 Define :USAGE chaining and its documentation.
         Reflect confirmation that Visual C++ 2008 Express also works.
