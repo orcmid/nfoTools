@@ -1,4 +1,4 @@
-nfoTools.txt 0.0.4                    UTF-8                      dh:2021-02-06
+nfoTools.txt 0.0.5                    UTF-8                      dh:2021-08-18
 
                             nfoWare/nfoWorks nfoTools
                             =========================
@@ -12,9 +12,13 @@ nfoTools.txt 0.0.4                    UTF-8                      dh:2021-02-06
                      --------------------------------------
 
     nfoTools is a collection of utilities and software components.  The
-    tools are designed for in the composition of larger software projects
-    for information-processing applications.  They can apply anywhere in
-    the complete learning-and-improvement lifecycle of software projects.
+    tools are designed for use as utilities and support for  composition of
+    larger software projects for information-processing applications.  They
+    can apply anywhere in the complete learning-and-improvement lifecycle of
+    software projects.
+
+    Emphasis is on development of software for Microsoft Windows and using
+    Microsoft Windows desktop tools as instruments of such efforts.
 
     While nfoTools are useful independently, they are chosen and developed
     in service of specific nfoWare.com and nfoWorks.org software efforts.
@@ -35,28 +39,31 @@ MANIFEST
 
     docs/
         source of GitHub Pages documentation for nfoTools and accessible at
-        <https://orcmid.github.io/nfoTools/docs.txt>
+        <https://orcmid.github.io/nfoTools/>
 
     LICENSE.txt
-         The open-source software license that applies to the entire
-         nfoTools collection except where stated otherwise.
+        The open-source software license that applies to the entire
+        nfoTools collection except where stated otherwise.
 
     NOTICE.txt
-         Notice that applies with respect to particular components of
-         the nfoTools collection.
+        Notice that applies with respect to particular components of
+        the nfoTools collection and their external origina.
+
+    README.md
+        Introduction to the orcmid/nfoTools repository.
 
     .gitattributes
-         A declaration of file attributes for use in Git repositories of
-         the nfoTools source code.
+        A declaration of file attributes for use in Git repositories of
+        the nfoTools source code.
 
     .gitignore
-         A declaration of artifacts to be ignored and excluded from Git
-         repositories, applying to working files that are not part of the
-         managed archive materials
+        A declaration of artifacts to be ignored and excluded from Git
+        repositories, applying to working files that are not part of the
+        managed archive materials
 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-                       Copyright 2016 Dennis E. Hamilton
+                    Copyright 2016-2021 Dennis E. Hamilton
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -74,8 +81,6 @@ MANIFEST
 
 TODO
 
-  * Add GitHub Readme.md when ready.
-
   * Cover toolcraft and the intention of relying exclusively on freely-
     available software tools and libraries.
 
@@ -86,15 +91,25 @@ TODO
 
   * Use correct permalinks into master/default branch.
 
+  * Address beginner mind matters.  This needs either docs or wiki here.
+    I need a way to rely on this from other projects that beginners and
+    hobbyists may take an interest in.
+
+  * Address process and social matters too: GitHub and Discord, for example.
+
+  * Also address or recognize learning approaches and available guildance
+    as well: Udemy, Coursera, etc.
+
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.5 2021-08-18T20:48Z Add README.md and manage TODOs, touch-up text.
  0.0.4 2021-02-06T17:53Z Add docKits/ manifest entry, manage TODOs.
  0.0.3 2021-01-31T23:18Z Add docs/ manifest entry, manage TODOs
  0.0.2 2016-12-02-17:39 Complete Staging for the first devKits components.
  0.0.1 2016-11-30-13:45 Initial setup with devKits/ as the first area for
        introduction of reusable components.
- 0.0.0 2016-11-30-09:11 Transposition of Adv10.txt 0.0.4 from the Adv10 project
-       for use as boilerplate.
+ 0.0.0 2016-11-30-09:11 Transposition of Adv10.txt 0.0.4 from the Adv10
+       project for use as boilerplate.
 
 
-                        ***** end of nfoTools.txt *****
+                      ***** end of nfoTools.txt *****
