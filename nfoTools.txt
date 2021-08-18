@@ -1,4 +1,4 @@
-nfoTools.txt 0.0.5                    UTF-8                      dh:2021-08-18
+nfoTools.txt 0.0.6                    UTF-8                     dh:2021-08-18
 
                             nfoWare/nfoWorks nfoTools
                             =========================
@@ -28,6 +28,9 @@ MANIFEST
     nfoTools.txt
         this manifest and job-jar file
 
+    README.md
+        Introduction to the orcmid/nfoTools repository.
+
     devKits/
         providing components and kits that are useful in the construction
         stage of computer programs for utility and application purposes.
@@ -48,9 +51,6 @@ MANIFEST
     NOTICE.txt
         Notice that applies with respect to particular components of
         the nfoTools collection and their external origina.
-
-    README.md
-        Introduction to the orcmid/nfoTools repository.
 
     .gitattributes
         A declaration of file attributes for use in Git repositories of
@@ -100,8 +100,16 @@ TODO
   * Also address or recognize learning approaches and available guildance
     as well: Udemy, Coursera, etc.
 
+  * Mutate to precise construction structure compatible with usage of docs/.
+
+  * Add on-ramp rerequisites and summaries/tutorials on file explorer, adding
+    git and GitHub support, downloading and installing software, zip usage,
+    editing with Visual Studio Code, installing Visual Studio build tools,
+    console operation (cmd.exe), and creating C/C++ software projects.
+
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.6 2021-08-18T21:03Z Manage TODOs, emphasizing newbie on-ramps
  0.0.5 2021-08-18T20:48Z Add README.md and manage TODOs, touch-up text.
  0.0.4 2021-02-06T17:53Z Add docKits/ manifest entry, manage TODOs.
  0.0.3 2021-01-31T23:18Z Add docs/ manifest entry, manage TODOs
