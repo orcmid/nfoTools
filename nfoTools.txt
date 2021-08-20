@@ -1,4 +1,4 @@
-nfoTools.txt 0.0.6                    UTF-8                     dh:2021-08-18
+nfoTools.txt 0.0.7                    UTF-8                     dh:2021-08-20
 
                             nfoWare/nfoWorks nfoTools
                             =========================
@@ -8,20 +8,30 @@ nfoTools.txt 0.0.6                    UTF-8                     dh:2021-08-18
 
             USEFUL TOOLS IN DEVELOPMENT OF NFOWARE/NFOWORKS PROJECTS
 
-                     SOURCE CODE VERSION CONTROL REPOSITORY
-                     --------------------------------------
+                NFOTOOLS: SOURCE CODE VERSION CONTROL REPOSITORY
+                ------------------------------------------------
 
     nfoTools is a collection of utilities and software components.  The
-    tools are designed for use as utilities and support for  composition of
-    larger software projects for information-processing applications.  They
+    tools are designed for use in composition of larger software projects
+    for information-processing applications (and games of course).  nfoTools
     can apply anywhere in the complete learning-and-improvement lifecycle of
     software projects.
 
+    nfoTools includes a Toolcraft on-ramp that supports beginners who want
+    to understand more about programming and the tacit understanding of
+    experienced software developers.  Crawl first, then walk, then run.
+    Progressive discloser is used in a way that allows more-experienced
+    visitors to quickly skip over details they already know.  Review of the
+    basics may be useful though.
+
     Emphasis is on development of software for Microsoft Windows and using
-    Microsoft Windows desktop tools as instruments of such efforts.
+    Microsoft Windows desktop tools as instruments of such efforts.  Only
+    freely-available tools are required in addition to a Windows PC or laptop.
+    The working language is English. This is how the author is equipped.
 
     While nfoTools are useful independently, they are chosen and developed
-    in service of specific nfoWare.com and nfoWorks.org software efforts.
+    first in service of specific software efforts originally housed on
+    nfoWare.com, nfoWorks.org, and more-recent efforts now on GitHub.
 
 MANIFEST
 
@@ -50,7 +60,7 @@ MANIFEST
 
     NOTICE.txt
         Notice that applies with respect to particular components of
-        the nfoTools collection and their external origina.
+        the nfoTools collection and their external origins.
 
     .gitattributes
         A declaration of file attributes for use in Git repositories of
@@ -79,6 +89,13 @@ MANIFEST
 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ ATTRIBUTION
+
+   Hamilton, Dennis E. nfoTools: Source Code Version Control Repository.
+   nfoTools project text file nfoTools.txt version 0.0.7 dated 2021-08-20,
+   available on the Internet as a version of
+   <https://github.com/orcmid/nfoTools/blob/master/nfoTools.txt>
+
 TODO
 
   * Cover toolcraft and the intention of relying exclusively on freely-
@@ -89,11 +106,11 @@ TODO
 
   * Add attribution boilerplates.
 
-  * Use correct permalinks into master/default branch.
+  * Use correct permalinks into master/default/main branch.
 
-  * Address beginner mind matters.  This needs either docs or wiki here.
-    I need a way to rely on this from other projects that beginners and
-    hobbyists may take an interest in.
+  * Address beginner mind.  Cover in docs or wiki here.  I need a way to
+    rely on this from other projects that beginners and hobbyists may take
+    interest in.
 
   * Address process and social matters too: GitHub and Discord, for example.
 
@@ -107,8 +124,14 @@ TODO
     editing with Visual Studio Code, installing Visual Studio build tools,
     console operation (cmd.exe), and creating C/C++ software projects.
 
+  * Re-use the welder image from nfoWorks.org.
+
+  * Consider a folio structure similar to that of nfoWare & nfoWorks.  Explain
+    what those are/were.
+
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.7 2021-08-20T17:30Z Improved text, attribution, and TODOs
  0.0.6 2021-08-18T21:03Z Manage TODOs, emphasizing newbie on-ramps
  0.0.5 2021-08-18T20:48Z Add README.md and manage TODOs, touch-up text.
  0.0.4 2021-02-06T17:53Z Add docKits/ manifest entry, manage TODOs.
