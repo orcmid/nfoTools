@@ -1,0 +1,65 @@
+images.txt 0.0.0                     UTF-8                      dh:2021-08-29
+
+                            nfoWare/nfoWorks nfoTools
+                            =========================
+
+    <https://github.com/orcmid/nfoTools/blob/master/docs/images/images.txt>
+            <https://orcmid.github.io/nfoTools/images/images.txt>
+
+                NFOTOOLS DOCUMENTATION-AUTHORING COMMON IMAGES
+                ----------------------------------------------
+
+    This folder is for images that are used generally on the nfoTools
+    web site.  Images and screen captures on specific topics are carried
+    in the folios for those topics.
+
+    The nfoWorks are chosen as more suggestive of nfoTools (and nfoWare)
+    with the streaming-of-bits nfoWare image better reserved for docInterop.
+
+MANIFEST
+
+    images.txt
+        this manifest and job-jar file
+
+    hardhatarea.gif         large hard hat image useful for a full warning
+    hardhat-button.gif      tiny button-size image
+    hardhat-logo.gif        medium-small for in a folio title strip
+    hardhat-thumb.gif       correct size construction-structure footer link
+
+    nfoWorks-2014-06-02-1638-LogoLarge.png      large for welcome page
+    nfoWorks-2014-06-02-1702-LogoSmall.png      medium-small for title strip
+    nfoWorks-2014-06-02-1718-LogoThumb.png      thumbnail size
+
+
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+                       Copyright 2021 Dennis E. Hamilton
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+TODO
+
+ * Connect the LogoLarge to the docs/index.md
+
+ * Consider other interesting ones, such as the ODMdev one, undecorated.
+
+ * the nfoWare images are more suitable for docInterop.
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+ 0.0.0 2021-08-29T20:02Z Essential minimum images collection
+
+                      ***** end of images.txt *****
