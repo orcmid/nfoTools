@@ -1,4 +1,4 @@
-docs.txt 0.0.2                       UTF-8                      dh:2021-08-14
+docs.txt 0.0.3                       UTF-8                      dh:2021-08-29
 
                             nfoWare/nfoWorks nfoTools
                             =========================
@@ -20,9 +20,6 @@ docs.txt 0.0.2                       UTF-8                      dh:2021-08-14
     is mirrored in the site itself.  The pattern for such site construction
     is described under the Document Engineering Project (docEng), at
     <https://github.com/orcmid/docEng> (https://orcmid.github.io/docEng/)
-
-
-
 
 MANIFEST
 
@@ -82,8 +79,23 @@ TODO
 
   * Adjust this for its construction-structure front-porch role.
 
+  * Find the welder image
+
+  * Tuck away and re-use the "this page intentionally blank" image.
+
+  * Add LICENSE and NOTICES, also place copyright symbol, etc. Add an
+    explanation.
+
+  * Arrange link to the (this) construction structure.
+
+  * Find nfoTools structure to mimic in the organization here.
+
+  * Be prepared to take up the slack when nfoWare and nfoWorks are retired
+    as web sites.
+
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.3 2021-08-29T17:10Z Touch-up, manage TODOs
  0.0.2 2021-08-14T19:14Z Restate this construction-structure page to reflect
        that role, managing work items and simplifying the narrative.
  0.0.1 2021-01-31T23:32Z Confirm repository and published pages locations
