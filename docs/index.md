@@ -1,6 +1,8 @@
-<!-- index.md 0.0.3              UTF-8                      dh:2021-08-29 -->
+<!-- index.md 0.0.4              UTF-8                      dh:2021-08-29 -->
 
 # Welcome to nfoTools
+
+![welding bits](images/nfoWorks-2014-06-02-1638-LogoLarge.png)
 
 nfoTools is a collection of utilities and software components.  The
 tools are designed for use in composition of larger software projects
@@ -26,7 +28,8 @@ While nfoTools are useful independently, they are chosen and developed
 first in service of specific software efforts originally housed on
 nfoWare.com, nfoWorks.org, and more-recent efforts now on GitHub.
 
-<!--  0.0.3 2021-08-29T17:02Z put up an informative welcome
+<!--  0.0.4 2021-08-29T20:16Z add the bits-welding logo from nfoWorks
+      0.0.3 2021-08-29T17:02Z put up an informative welcome
       0.0.2 2021-02-07T18:03Z get the formatting I want
       0.0.1 2021-02-07T17:51Z touch up to accomodate for default formatting
       0.0.0 2021-02-07T17:44Z create placeholder home page for nfoTools
