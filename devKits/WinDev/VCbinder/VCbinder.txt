@@ -1,4 +1,5 @@
-VCbinder.txt 0.0.14                   UTF-8                        2021-02-13
+VCbinder.txt 0.0.15                   UTF-8                        2021-08-30
+----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 <https://github.com/orcmid/nfoTools/blob/master/devKits/WinDev/VCbinder/VCbinder.txt>
 
@@ -56,6 +57,8 @@ MANIFEST
     See the License for the specific language governing permissions and
     limitations under the License.
 
+----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
 TODO
 
  * Get VCbinder 0.1.1 here as soon as it is ready.
@@ -79,8 +82,9 @@ TODO
 
  * VCbinder.zip and VCbind.zip need to include maintenance instructions?
 
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.15 2021-08-30T19:08Z add rulers
  0.0.14 2021-02-13T23:25Z Use correct permalink for this page.
  0.0.13 2017-01-05-13:00 Update TODOs concerning provenance account that
         outlasts replaced versions here.

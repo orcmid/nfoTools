@@ -1,4 +1,5 @@
-devKits.txt 0.0.5                     UTF-8                      dh:2021-05-25
+devKits.txt 0.0.6                     UTF-8                      dh:2021-08-30
+----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
     <https://github.com/orcmid/nfoTools/blob/master/devKits/devKits.txt>
 
@@ -58,6 +59,8 @@ MANIFEST
     See the License for the specific language governing permissions and
     limitations under the License.
 
+----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
 TODO
 
  * We need prerequisites, general ones -- GitHub, etc.
@@ -77,6 +80,7 @@ TODO
 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.6 2021-08-30T19:05Z add rulers
  0.0.5 2021-05-25T19:57Z Manage TODOs
  0.0.4 2021-12-13T23:16Z Use correct permalink to this page.
  0.0.3 2016-12-07-12:46 Corrected two typos, closing @band GitHub issue #1

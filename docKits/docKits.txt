@@ -1,4 +1,5 @@
-docKits.txt 0.0.1                    UTF-8                      dh:2021-05-25
+docKits.txt 0.0.2                    UTF-8                      dh:2021-08-30
+----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
     <https://github.com/orcmid/nfoTools/blob/master/docKits/docKits.txt>
 
@@ -50,6 +51,8 @@ MANIFEST
     See the License for the specific language governing permissions and
     limitations under the License.
 
+----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
 TODO
 
  * Add attribution statement
@@ -61,6 +64,7 @@ TODO
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 
+ 0.0.2 2021-08-30T19:03Z add ruler
  0.0.1 2021-05-25T15:01Z fix permalink and consider reliance on docEng.
  0.0.0 2021-02-06T18:45Z placeholder for the docKits folder scaffolding.
 

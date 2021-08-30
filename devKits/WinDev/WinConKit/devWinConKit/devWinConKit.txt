@@ -1,4 +1,5 @@
-devWinConKit.txt 0.0.4                UTF-8                         2021-02-13
+devWinConKit.txt 0.0.5                UTF-8                         2021-08-30
+----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 <https://github.com/orcmid/nfoTools/blob/master/devKits/WinDev/WinConKit/devWinConKit/devWinConKit.txt>
 
@@ -56,7 +57,7 @@ MANIFEST
         In-progress WinConKit package with components and templates for
         making a WinCon Construction Set.
 
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                        Copyright 2016 Dennis E. Hamilton
 
@@ -71,6 +72,8 @@ MANIFEST
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
+
+----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 TODO
 
@@ -230,8 +233,9 @@ TODO
    ephemeral content for building and testing unde a WinCon construction
    set.
 
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.5 2021-08-30T19:21Z add rulers
  0.0.4 2021-02-13T23:47Z Use correct page permalink and smooth some textflow
  0.0.3 2017-02-10-08:56 TODOs.  Add :USAGE Chaining and its documentation.
  0.0.2 2017-01-05-12:54 Touch-ups and TODO updates
