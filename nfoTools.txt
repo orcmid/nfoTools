@@ -1,4 +1,4 @@
-nfoTools.txt 0.0.7                    UTF-8                     dh:2021-08-20
+nfoTools.txt 0.0.8                   UTF-8                     dh:2021-08-30
 
                             nfoWare/nfoWorks nfoTools
                             =========================
@@ -124,13 +124,19 @@ TODO
     editing with Visual Studio Code, installing Visual Studio build tools,
     console operation (cmd.exe), and creating C/C++ software projects.
 
-  * Re-use the welder image from nfoWorks.org.
-
   * Consider a folio structure similar to that of nfoWare & nfoWorks.  Explain
     what those are/were.
 
+  * The raysan5/raylib-game-template is inspiration for use on rayLab and
+    also nfoTools.  I need to find out if multiple templates are possible and
+    having that work with a variety of rayLab and nfoTools cases.
+
+  * I have been observing line-widths here, to keep text lines easily
+    printable, but I've dropped using ruler lines.  Put that back in.
+
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.8 2021-08-30T17:42Z Manage TODOs, looking into template possibility too
  0.0.7 2021-08-20T17:30Z Improved text, attribution, and TODOs
  0.0.6 2021-08-18T21:03Z Manage TODOs, emphasizing newbie on-ramps
  0.0.5 2021-08-18T20:48Z Add README.md and manage TODOs, touch-up text.
