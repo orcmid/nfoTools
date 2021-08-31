@@ -1,0 +1,87 @@
+skills.txt 0.0.0                   UTF-8                        dh:2021-08-31
+----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+
+                        nfoWare/nfoWorks nfoTools
+                        =========================
+
+    <https://github.com/orcmid/nfoTools/blob/master/docs/skills/skills.txt>
+        <https://orcmid.github.io/rayLab/tools/tools.txt>
+
+                     NFOTOOLS TACIT SKILLS NOTEBOOK
+                     ------------------------------
+
+    nfoTools docs/ collection of folios on tacit skills that software
+    developers rely upon, from reading, keyboarding to computer operation
+    that are implicitly relied upon in developing computational fluency
+    and reliable effort.  It is not exactly Computer Programming for
+    Everyone (CP4E), not even Software Engineering for Everyone (SE4E), but
+    underlying the competence presumed for users and the level that applies
+    among developers and producers of interesting software.
+
+    The companion treatment of tools rests on the presumption or acquisition
+    of various skills and awareness of their limitations.
+
+MANIFEST
+
+    skills.txt
+        this manifest and job-jar file
+
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+                       Copyright 2021 Dennis E. Hamilton
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+ ATTRIBUTION
+
+   Hamilton, Dennis E. nfoTools Tacit Skills Notebook.  nfoTools project text
+   file skills.txt version 0.0.0 dated 2021-08-31, available on the Internet
+   as a version of
+   <https://github.com/orcmid/nfoTools/blob/master/docs/skills/skills.txt>
+
+TODO
+
+ * Address the prerequisite and companion skills that go with becoming fluent
+   in the toolcraft featured in the nfoTools project.
+
+ * Start a skills introductory page placeholder.  Could use the intentionally
+   left blank, or the construction project symbol.  Just for funsies.
+
+ * Drawing and diagramming as a skill.
+
+ * The three R's as skills
+
+ * Keyboarding and the variety of keyboarding that goes with computer
+   fluency
+
+ * Details of Windows 10/11 that users need to grasp in order to be able to
+   lift the covers on software and programming
+
+ * Need something about trial-and-error and not taking irreversible actions.
+
+ * Need something about how we didn't learn things all at once and there needs
+   to be an useful and also-tantalizing journey for a fruitful experience.
+
+ * Need something on fear of failure and fear of ridicule, the ability to
+   work in the open and with the scrutiny/contribution of others
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+ 0.0.0 2021-08-31T15:47Z Placeholder for the introduction of skills materials
+
+
+                     ***** end of skills.txt *****
