@@ -1,4 +1,4 @@
-<!-- index.md 0.0.0                 UTF-8                          2021-09-02
+<!-- index.md 0.0.1                 UTF-8                          2021-09-02
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                           NFOTOOLS PROJECT NOTES
@@ -24,10 +24,11 @@ reported and addressed in the
 
 | **ID** | **Started** | **Status** | **Topic** |
 |   :-:   |   :-:   |  :-:   |  ---  |
-| _Nyymmnn_ | _date_ | _semver date_ | _Short topic_ |
+| [N210901](N210901) | 2021-09-02 | 0.0.1 2021-09-02 | Tacit Knowledge and the Beginner Mind |
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.1 2021-09-02T23:26Z Add N21901
      0.0.0 2021-09-02T21:40Z Placehoder Hardhat Image and empty Catalog
 
                *** end of notes/tools/index.md ***

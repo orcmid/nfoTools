@@ -1,4 +1,4 @@
-notes.txt 0.0.1                    UTF-8                        dh:2021-09-02
+notes.txt 0.0.2                    UTF-8                        dh:2021-09-02
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -19,10 +19,12 @@ notes.txt 0.0.1                    UTF-8                        dh:2021-09-02
 MANIFEST
 
     notes.txt
-        this manifest and job-jar file
+          this manifest and job-jar file
 
     index.md
-        the entrace and catalog for the notes materials
+          the entrace and catalog for the notes materials
+
+  N210901/ Tacit Knowledge and the Beginner Mind
 
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
@@ -62,6 +64,7 @@ TODO
 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.2 2021-09-02T23:28Z Add N210901
  0.0.1 2021-09-02T21:43Z Add placeholding index.md and manage TODOs
  0.0.0 2021-09-02T19:33Z Placeholder for the introduction of project note
        folios.
