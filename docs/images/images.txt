@@ -33,6 +33,9 @@ MANIFEST
     nfoWorks-2014-06-02-1702-LogoSmall.png      medium-small for title strip
     nfoWorks-2014-06-02-1718-LogoThumb.png      thumbnail size
 
+    B040801B2-policecar.gif       Used for nothing-to-see-here when I had to
+    B040801B3-policeofficer.gif   worry about blog crashes and firedrills
+
 
 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -66,10 +69,11 @@ TODO
 
  * the nfoWare images are more suitable for docInterop.
 
- * Get the fire-drill images that I set up at one time.
+ * the firedrill case should probably be a matter for docEng to consider.
 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.3 2021-09-02T19:41Z Add fire-drill and failure images
  0.0.2 2021-09-02T17:00Z Add attribution out of consistency, manage TODOs
  0.0.1 2021-08-30T19:00Z Add ruler
  0.0.0 2021-08-29T20:02Z Essential minimum images collection
