@@ -1,4 +1,4 @@
-nfoTools.txt 0.0.9                   UTF-8                     dh:2021-08-30
+nfoTools.txt 0.0.10                   UTF-8                     dh:2021-09-02
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                             nfoWare/nfoWorks nfoTools
@@ -93,25 +93,22 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. nfoTools: Source Code Version Control Repository.
-   nfoTools project text file nfoTools.txt version 0.0.7 dated 2021-08-20,
+   nfoTools project text file nfoTools.txt version 0.0.10 dated 2021-09-02,
    available on the Internet as a version of
    <https://github.com/orcmid/nfoTools/blob/master/nfoTools.txt>
 
 TODO
 
   * Cover toolcraft and the intention of relying exclusively on freely-
-    available software tools and libraries.
+    available software tools and libraries.  Provide in docs/tools/
 
   * Explain the licensing approach and handling of open-source code and any
     contributions to it.
 
-  * Add attribution boilerplates.
-
-  * Use correct permalinks into master/default/main branch.
-
   * Address beginner mind.  Cover in docs or wiki here.  I need a way to
     rely on this from other projects that beginners and hobbyists may take
-    interest in.
+    interest in.  This is a skill, along with arranging comfirmable
+    experiences.
 
   * Address process and social matters too: GitHub and Discord, for example.
 
@@ -132,11 +129,9 @@ TODO
     also nfoTools.  I need to find out if multiple templates are possible and
     having that work with a variety of rayLab and nfoTools cases.
 
-  * I have been observing line-widths here, to keep text lines easily
-    printable, but I've dropped using ruler lines.  Put that back in.
-
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.10 2021-09-02T19:31Z Manage TODOs
  0.0.9 2021-08-30T18:48Z Add explicit rulers (tacit understanding, duhh)
  0.0.8 2021-08-30T17:42Z Manage TODOs, looking into template possibility too
  0.0.7 2021-08-20T17:30Z Improved text, attribution, and TODOs
