@@ -1,4 +1,4 @@
-tools.txt 0.0.1                   UTF-8                        dh:2021-08-30
+tools.txt 0.0.2                  UTF-8                          dh:2021-09-02
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -6,7 +6,7 @@ tools.txt 0.0.1                   UTF-8                        dh:2021-08-30
                         =========================
 
     <https://github.com/orcmid/nfoTools/blob/master/docs/tools/tools.txt>
-        <https://orcmid.github.io/rayLab/tools/tools.txt>
+        <https://orcmid.github.io/nfoTools/tools/tools.txt>
 
                        NFOTOOLS TOOLCRAFT NOTEBOOK
                        ---------------------------
@@ -17,7 +17,10 @@ tools.txt 0.0.1                   UTF-8                        dh:2021-08-30
 MANIFEST
 
     tools.txt
-        this manifest and job-jar file
+          this manifest and job-jar file
+
+    index.md
+          front-page authoring for <https://orcmid.github.io/nfoTools/tools/>
 
 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -41,7 +44,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. nfoTools Toolcraft Notebook.  nfoTools project text
-   file tools.txt version 0.0.0 dated 2021-08-30, available on the Internet
+   file tools.txt version 0.0.2 dated 2021-09-02, available on the Internet
    as a version of
    <https://github.com/orcmid/nfoTools/blob/master/docs/tools/tools.txt>
 
@@ -50,11 +53,19 @@ TODO
  * Figure out the situation with Git for Windows being so beginner painful
    to install.
 
- 8 Emphasize on-ramps, prerequisites, and the worked cases on how to install
+ * Emphasize on-ramps, prerequisites, and the worked cases on how to install
    various tools and make use of them.
+
+ * Recommend VS Code or editor first, then GitHub for Windows, then
+   TortoiseGit and GitHub Desktop, then VIsual Studio Developer Tools or
+   Community Edition
+
+ * Finding the install location of VC and C/C++ Build tools will be
+   important
 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.2 2021-09-02T20:32Z Introduce index.md.  Manage TODOs.
  0.0.1 2021-08-30T19:01Z add ruler
  0.0.0 2021-08-30T04:27Z Placeholder for the introduction of toolcraft
        folios.
