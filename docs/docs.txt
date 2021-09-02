@@ -1,4 +1,4 @@
-docs.txt 0.0.6                       UTF-8                      dh:2021-08-31
+docs.txt 0.0.7                       UTF-8                      dh:2021-09-02
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                             nfoWare/nfoWorks nfoTools
@@ -30,6 +30,15 @@ MANIFEST
    index.md
         markdown form of the home page which becomes the default page
         <https://orcmid.github.io/nfoTools/index.html>
+
+    dev/
+        nfoTools Development Notebook, accounting for available components
+        and other artifacts developed under nfoTools, including devNotes
+        migrated from nfoWare/nfoWorks
+
+    notes/
+        general project notes using the same scheme employed for dev/,
+        skills/, and tools/, with some migrated from nfoWare/nfoWorks.
 
     skills/
         folios on skills that are tacit for software development and not
@@ -68,8 +77,8 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. nfoTools Documentation-Authoring Construction
-   Structure.  nfoTools project text file nfoTools.txt version 0.0.6 dated
-   2021-08-29, available on the Internet as a version of
+   Structure.  nfoTools project text file nfoTools.txt version 0.0.7 dated
+   2021-09-02, available on the Internet as a version of
    <https://github.com/orcmid/nfoTools/blob/master/docs/docs.txt>
 
 TODO
@@ -123,6 +132,7 @@ TODO
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.7 2021-09-02T19:29Z Addition of dev/ and notes/
  0.0.6 2021-08-31T16:50Z Anticipate skills/, manage TODOs
  0.0.5 2021-08-30T18:57Z Add rulers
  0.0.4 2021-08-30T03:56Z Anticipate tools/, add attribution, and manage TODOs.
