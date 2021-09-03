@@ -1,4 +1,4 @@
-<!-- index.md 0.1.3                 UTF-8                          2021-09-03
+<!-- index.md 0.1.4                 UTF-8                          2021-09-03
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                    VCBIND: VC/VC++ COMMAND-LINE SETUP SCRIPT
@@ -30,46 +30,46 @@ development tools.
   
 ## Principles
 
-. Only tools already available as part of Microsoft Windows Desktop PCs are
+* Only tools already available as part of Microsoft Windows Desktop PCs are
 needed, along with the simplest addition of freely-available development
 tools.
-. Simple use of Microsoft "batch commands" is all that's required, with any
+* Simple use of Microsoft "batch commands" is all that's required, with any
 parameters entirely optional.
-. For the few prerequisites, links to tutorials and examples are plentiful.
-. Error messages guide users in providing remedies and in finding additional
+* For the few prerequisites, links to tutorials and examples are plentiful.
+* Error messages guide users in providing remedies and in finding additional
 trouble-shooting details.
-. The software is "code in the open" that can be customized for local use and
+* The software is "code in the open" that can be customized for local use and
 adapted for additional construction sets, language localizations, and other
 custom purposes.
-. All use is in a separate working location initialized and customizable
+* All use is in a separate working location initialized and customizable
 without the the distributed version of VCbind.  The **`VCbind.zip`** version
 of the script and collateral material be restored to the working location
 as needed.
   
 ## Priorities
 
-. Operation with freely-available and free-to-use development tools.
-. Simple manual instructions for free-standing use and for incorporation
+* Operation with freely-available and free-to-use development tools.
+* Simple manual instructions for free-standing use and for incorporation
 in construction sets designed for novice usage.
-. Sufficient for incorporation in other more-elaborate construction sets.
+* Sufficient for incorporation in other more-elaborate construction sets.
 
 ## Plan
 
-. Develop VCbind on GitHub as part of the nfoTools project.
-. Provide pilot demonstration in selected projects
-. Roll-up stable-enough versions to VCbinder packagings
-. Confirm in prototype WinCon Construction Sets
-. Roll up VCbind and VCbinder into a WinCon Construction Kit that is reliable
+* Develop VCbind on GitHub as part of the nfoTools project.
+* Provide pilot demonstration in selected projects
+* Roll-up stable-enough versions to VCbinder packagings
+* Confirm in prototype WinCon Construction Sets
+* Roll up VCbind and VCbinder into a WinCon Construction Kit that is reliable
 as a source for additional construction sets and their updates.
 
 ## People
 
-. Initially, developers and interested parties who want to build releases
+* Initially, developers and interested parties who want to build releases
 from source that has WinCon construction sets.  Novices and students will be
 able to employ VCbind and the related construction sets.
-. Secondly, developers who want to apply the same techniques and components
+* Secondly, developers who want to apply the same techniques and components
 in construction sets of their own.
-. Finally, developers who take an interest in testing, improvement, and
+* Finally, developers who take an interest in testing, improvement, and
 documentation of VCbind and how to apply it.
 
 ## Available Materials
@@ -80,6 +80,7 @@ documentation of VCbind and how to apply it.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.1.4 2021-09-03T23:17Z Switch to unnumbered lists correctly
      0.1.3 2021-09-03T22:30Z Switch to unnumbered lists
      0.1.2 2021-09-03T22:11Z Try again
      0.1.1 2021-09-03T22:02Z Numbered-List Fixup
