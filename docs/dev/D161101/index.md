@@ -1,4 +1,4 @@
-<!-- index.md 0.1.1                 UTF-8                          2021-09-03
+<!-- index.md 0.1.2                 UTF-8                          2021-09-03
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                    VCBIND: VC/VC++ COMMAND-LINE SETUP SCRIPT
@@ -80,6 +80,7 @@ documentation of VCbind and how to apply it.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.1.2 2021-09-03T22:11Z Try again
      0.1.1 2021-09-03T22:02Z Numbered-List Fixup
      0.1.0 2021-09-03T21:33Z Transposition to nfoTools/dev/D161101/
      0.0.3 2017-12-26-12:08 Touch up and link to d161102/3
