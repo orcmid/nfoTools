@@ -1,4 +1,4 @@
-dev.txt 0.0.0                      UTF-8                        dh:2021-09-02
+dev.txt 0.0.1                      UTF-8                        dh:2021-09-03
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -11,15 +11,23 @@ dev.txt 0.0.0                      UTF-8                        dh:2021-09-02
                       NFOTOOLS DEVELOPMENT NOTEBOOK
                       -----------------------------
 
-    nfoTools docs/dev/ collection of folios on developments and preserved
-    releases, using chronological arrangements and version progressions.
-    Releases are kept permanently for downloads, and current status is always
-    prominent.
+    nfoTools docs/dev/ collection of folios on specific development efforts
+    and the preserved releases.  There's a chronological arrangement with
+    version progressions and a catalog.
+
+    These are all about building.  Because there is also material on GitHub
+    where the development is source-managed, there is a certain division
+    of labor.  There is capture of nfoWorks.org and nfoWare.com retroactive
+    items.  The organization of folders allows for the progressive
+    availability of versions.
 
 MANIFEST
 
-    dev.txt
-        this manifest and job-jar file
+         dev.txt
+             this manifest and job-jar file
+
+       index.md
+             the orcmid.github.io/nfoTools/dev/ entrance-page Markdown source
 
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
@@ -43,7 +51,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. nfoTools Development Notebook.  nfoTools project text
-   file dev.txt version 0.0.0 dated 2021-09-02, available on the Internet
+   file dev.txt version 0.0.1 dated 2021-09-03, available on the Internet
    as a version of
    <https://github.com/orcmid/nfoTools/blob/master/docs/dev/dev.txt>
 
@@ -54,11 +62,22 @@ TODO
  * Migrate materials here so that downloads can be obtained from here and
    information about and in them point to nfoTools instead of nfoware.com.
 
- * This will come with clean-up of devKits here.
+ * This will come with clean-up of devKits in the orcmid/nfoTools repositiory.
+
+ * Create index.md placeholder for subsequent expansion as some existing
+   dev notes are migrated from sites being deprecated.
+
+ * Bring VCbind d161101 here so that a new VCbind that update without changes
+   can reference D161101 here.  It is the poster-child for how to do the
+   progression of versions.
+
+ * Create a project on d151101 migration, having it be practice for a
+   W3C-style progression and its historical preservation.
 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.1 2021-09-03T19:17Z Introduce index.md, touch-up, manage TODOs
  0.0.0 2021-09-02T19:32Z Placeholder for the introduction of devNote
        folios.
 
-                     ***** end of notes.txt *****
+                  ***** end of docs/dev/dev.txt *****
