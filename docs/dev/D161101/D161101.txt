@@ -1,4 +1,4 @@
-D161101.txt 0.0.1                   UTF-8                        dh:2021-09-03
+D161101.txt 0.0.2                   UTF-8                        dh:2021-09-04
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -10,6 +10,28 @@ D161101.txt 0.0.1                   UTF-8                        dh:2021-09-03
 
                 VCBIND: VC/C++ COMMAND-LINE SETUP SCRIPT
                 -----------------------------------------
+
+VCbind consists of a Zip package that can be included in a software
+construction set to simplify command-line compiling of C/C++ language programs
+using Microsoft Windows developer tools.  VCbind is easily deployed
+within GitHub carried projects.
+  
+Approach
+
+* Operation with freely-available and free-to-use development tools.
+* Simple manual instructions for free-standing use and for incorporation
+  in construction sets designed for novice usage.
+* Sufficient for incorporation inside more-elaborate construction sets.
+
+Plan
+
+* Develop VCbind on GitHub as part of the nfoTools project.
+* Provide pilot demonstration in selected projects
+* Roll-up stable-enough versions to VCbinder packagings
+* Confirm in prototype WinCon Construction Sets
+* Roll up VCbind and VCbinder into a WinCon Construction Kit that is reliable
+  as a source for additional construction sets and their updates.
+
 
 MANIFEST
 
@@ -42,7 +64,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. VCbind: VC/C++ Commnad-Line Setup cript.  nfoTools
-   development text file D161101.txt version 0.0.1 dated 2021-09-03,
+   development text file D161101.txt version 0.0.2 dated 2021-09-04,
    available on the Internet as a version of
    <https://orcmid.github.io/nfoTools/dev/D161101/D161101.txt>
 
@@ -67,6 +89,8 @@ TODO
 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+  0.0.2 2021-09-04T05:26Z Refactor between d161101.txt and the index.md to
+        simplify each
   0.0.1 2021-09-03T21:40Z Clear-up, manage TODOs
   0.0.0 2021-09-03T20:43Z Placeholder for the introduction of folio d161101
 
