@@ -1,4 +1,4 @@
-docs.txt 0.0.8                       UTF-8                      dh:2021-09-03
+docs.txt 0.0.8                       UTF-8                      dh:2021-09-04
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                             nfoWare/nfoWorks nfoTools
@@ -138,7 +138,7 @@ TODO
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
- 0.0.8 2021-09-03T15:46Z More TODOs noodling
+ 0.0.8 2021-09-04T15:48Z More TODOs noodling
  0.0.7 2021-09-02T19:29Z Addition of dev/ and notes/
  0.0.6 2021-08-31T16:50Z Anticipate skills/, manage TODOs
  0.0.5 2021-08-30T18:57Z Add rulers
