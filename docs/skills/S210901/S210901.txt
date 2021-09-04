@@ -1,4 +1,4 @@
-S210901.txt 0.0.0                  UTF-8                        dh:2021-09-04
+S210901.txt 0.0.1                  UTF-8                        dh:2021-09-04
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -8,11 +8,14 @@ S210901.txt 0.0.0                  UTF-8                        dh:2021-09-04
 <https://github.com/orcmid/nfoTools/blob/master/docs/skills/S210901/S210901.txt>
       <https://orcmid.github.io/nfoTools/skills/S210901/S210901.txt>
 
-                  ESSAY: TACIT SKILLS AND THE BEGINNER MIND
-                  -----------------------------------------
+                         SKILLS INVENTORY NOTES
+                         ----------------------
 
-    nfoTools docs/ collection of folios on toolcraft relied upon in making
-    the efforts understandable and reusable
+    This folio is created as a catch-all for matters around skills that need
+    to be identified and possibly addressed.
+
+    The essay on Tacit Knowledge and the Beginner Mind will be continued
+    and preserved under nfoTools/docs/notes/
 
 MANIFEST
 
@@ -43,20 +46,22 @@ MANIFEST
 
  ATTRIBUTION
 
-   Hamilton, Dennis E. Essay: Tacit Knowledge and the Beginner Mind.  nfoTools
-   skills notebook file S210901.txt version 0.0.0 dated 2021-09-04, available
-   on the Internet as a version of
-   <https://orcmid.github.io/nfoTools/skills/S210901/S210901.txt>
+   Hamilton, Dennis E. Essay: Skills Inventory Notes.  nfoTools file
+   S210901.txt version 0.0.0 dated 2021-09-04, available on the Internet as a
+   version of <https://orcmid.github.io/nfoTools/skills/S210901/S210901.txt>
 
 TODO
 
- * Recover the skills text that I had set up previously and then abbreviated
-   as part of the introduction to the skills/ collection.
+ * Gather collection of skills and their specializations.  This is a catchall
+   that will be regularly re-aranged as individual notes can be referenced
+   instead.
 
- * Create a place-holder page while I do that.
+ * Create a place-holder page for starters.
 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.1 2021-09-04T17:34Z Repurpose for the inventory since N210901 is already
+       setup for the Essay on Tacit Knowledge/Skills and the Beginner Mind.
  0.0.0 2021-09-04T17:19Z Placeholder for the introduction of toolcraft
        folios.
 

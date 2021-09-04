@@ -1,4 +1,4 @@
-skills.txt 0.0.2                   UTF-8                        dh:2021-09-02
+skills.txt 0.0.3                   UTF-8                        dh:2021-09-04
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -19,10 +19,11 @@ skills.txt 0.0.2                   UTF-8                        dh:2021-09-02
     competence presumed for users and the level of expectation among
     developers and producers of interesting software.
 
-    The unspoken tacit understanding is a barrier to those who have no insight
-    and it is something that those who posess it don't even pause to notice
-    they did not always have; it must be made visible to be learned.  It
-    takes a beginner's mind to expose it.
+    Unspoken tacit knowledge is a barrier to neophytes and it is something
+    that those who posess it don't even pause to notice they did not always
+    have it themselves; it must be made visible to be learned.  It takes a
+    beginner's mind to expose it.  Being thrown into the deep end of the pool
+    as a way to learn to swim is not a great idea, especially for adults.
 
     The companion docs/tools/ rests on the presumption or acquisition
     of various skills and awareness of their limitations. Skills are the
@@ -32,9 +33,10 @@ MANIFEST
 
     skills.txt
         this manifest and job-jar file
-
     index.md
         Markdown of the entrance page to the skills notebook
+
+    S210901/ Skills Inventory Notes
 
 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -102,8 +104,18 @@ TODO
 
  * Create a connection to skills and tools from the entrance page.
 
+ * Add on-ramp rerequisites and summaries/tutorials on file explorer, adding
+   Git and GitHub support, downloading and installing software, zip usage,
+   editing with Visual Studio Code, installing Visual Studio build tools,
+   console operation (cmd.exe), and creating C/C++ software projects.
+
+ * Need a skills inventory page for what I have in mind with regard to what
+   becomes tacit more-or-less.  Some of this is about cases that are taken
+   farther under tools.
+
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.3 2021-09-04T17:35Z Expand and add a corrected S210901 for inventory
  0.0.2 2021-09-02T16:49Z Manage TODOs
  0.0.1 2021-09-01T21:34Z Add index.md and manage TODOs, touch-up the text
  0.0.0 2021-08-31T15:47Z Placeholder for the introduction of skills materials
