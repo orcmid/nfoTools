@@ -1,4 +1,4 @@
-tools.txt 0.0.4                  UTF-8                          dh:2021-09-05
+tools.txt 0.0.5                  UTF-8                          dh:2021-09-05
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -18,9 +18,11 @@ MANIFEST
 
     tools.txt
           this manifest and job-jar file
-
     index.md
           front-page authoring for <https://orcmid.github.io/nfoTools/tools/>
+
+  T060501/
+
 
 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -44,7 +46,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. nfoTools Toolcraft Notebook.  nfoTools project text
-   file tools.txt version 0.0.4 dated 2021-09-05, available on the Internet
+   file tools.txt version 0.0.5 dated 2021-09-05, available on the Internet
    as a version of
    <https://orcmid.github.io/nfoTools/tools/tools.txt>
 
@@ -69,6 +71,7 @@ TODO
 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.5 2021-09-05T17:34Z Introduce T060501
  0.0.4 2021-09-05T16:24Z Move basic keyboarding to S210902, Touch-up TODOs
  0.0.3 2021-09-05T15:54Z Keyboard stuff
  0.0.2 2021-09-02T20:32Z Introduce index.md.  Manage TODOs.
