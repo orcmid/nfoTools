@@ -1,4 +1,4 @@
-tools.txt 0.0.2                  UTF-8                          dh:2021-09-02
+tools.txt 0.0.3                  UTF-8                          dh:2021-09-05
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -44,9 +44,9 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. nfoTools Toolcraft Notebook.  nfoTools project text
-   file tools.txt version 0.0.2 dated 2021-09-02, available on the Internet
+   file tools.txt version 0.0.3 dated 2021-09-05, available on the Internet
    as a version of
-   <https://github.com/orcmid/nfoTools/blob/master/docs/tools/tools.txt>
+   <https://orcmid.github.io/nfoTools/tools/tools.txt>
 
 TODO
 
@@ -63,8 +63,19 @@ TODO
  * Finding the install location of VC and C/C++ Build tools will be
    important
 
+ * Use the ADM-3A image to illustrate keyboard evolution.
+   https://twitter.com/jschauma/status/1434265985138270210/photo/1
+   Also find a Dvorak keyboard, and some manual, then electric, keyboards.
+   These are all in English.  There needs to be more allowance for other
+   variations, "dead" keys, etc.  But first, there is keyboarding, then
+   keyboards.
+
+ * Oh wait, keyboarding is in skills. Duhh.  Not certain about when we get
+   farther into keyboards.  Maybe a little there, a little more here?
+
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.3 2021-09-05T15:54Z Keyboard stuff
  0.0.2 2021-09-02T20:32Z Introduce index.md.  Manage TODOs.
  0.0.1 2021-08-30T19:01Z add ruler
  0.0.0 2021-08-30T04:27Z Placeholder for the introduction of toolcraft

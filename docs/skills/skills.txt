@@ -1,4 +1,4 @@
-skills.txt 0.0.3                   UTF-8                        dh:2021-09-04
+skills.txt 0.0.4                   UTF-8                        dh:2021-09-05
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -60,9 +60,9 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. nfoTools Tacit-Skills Notebook.  nfoTools project text
-   file skills.txt version 0.0.1 dated 2021-09-01, available on the Internet
+   file skills.txt version 0.0.4 dated 2021-09-05, available on the Internet
    as a version of
-   <https://github.com/orcmid/nfoTools/blob/master/docs/skills/skills.txt>
+   <https://orcmid.github.io/nfoTools/skills/skills.txt>
 
 TODO
 
@@ -113,8 +113,23 @@ TODO
    becomes tacit more-or-less.  Some of this is about cases that are taken
    farther under tools.
 
+ * Use the ADM-3A image to illustrate keyboard evolution.
+   https://twitter.com/jschauma/status/1434265985138270210/photo/1
+   Also find a Dvorak keyboard, and some manual, then electric, keyboards.
+   These are all in English.  There needs to be more allowance for other
+   variations, "dead" keys, etc.  But first, there is keyboarding, then
+   keyboards.  A little here, about keyboarding and also tacit knowledge
+   of the essential kind, and a lot about why this doesn't change, how
+   far the "ASCII" keyboard has travelled.
+
+ * Start a folio on keyboarding and tuck the ADM-3A image I saw there.
+   Also need some historical things about keyboard technologies over time.
+   A keypunch photo would be handy.  Code differences, holes in cards and
+   paper tape, my oh my.
+
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.4 2021-09-05T15:51Z Touch-up, capture TODOs on keyboards
  0.0.3 2021-09-04T17:35Z Expand and add a corrected S210901 for inventory
  0.0.2 2021-09-02T16:49Z Manage TODOs
  0.0.1 2021-09-01T21:34Z Add index.md and manage TODOs, touch-up the text
