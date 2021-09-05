@@ -1,4 +1,4 @@
-<!-- index.md 0.0.2                 UTF-8                          2021-09-04
+<!-- index.md 0.0.3                 UTF-8                          2021-09-05
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                  N210901: TACIT KNOWLEDGE AND THE BEGINNER MIND
@@ -87,8 +87,8 @@ bring what I call my beginner mind to it.  I want to see how instruction is
 done in my field, and I want to see how learning is fostered thereby.  I
 look from the perspective of not knowing it already, although I am able to
 notice deficiencies and understand what is omitted because I am experienced.
-The trick is for me to let my beginner mind appraise the unsaid, relyin on my
-expertise to understand the missing connections of so many dots.
+The trick is for me to let my beginner mind appraise the unsaid, relying on my
+expertise to then understand the missing connections of the skimpy dots.
 
 It was startling, recently, to observe how much tacit knowledge was
 left unrecognized in some online courses in their introductions for beginners.
@@ -134,11 +134,12 @@ There is also opportunity to have some grasp over how the underlying
 technology is not wedded literally to what we perceive as its surface
 functionality.  This is an area of engineering success, right down to the
 electronic "bits" that can be appreciated and also can be mastered by some
-who are enthralled enough by it.  The Skills section may hint of these and
-indicate where to investigate further.
+who are enthralled enough by it.  The [skills section](../../skills) may hint
+of these and indicate where to investigate further.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.3 2021-09-05T17:22Z More touch-ups
      0.0.2 2021-09-04T20:11Z Touched up, with a sigh of relief that I had not
            lost the earlier draft, simply forgot where I put it.
      0.0.1 2021-09-02T23:19Z Strip from the docs/skills/ front page and bring
