@@ -1,4 +1,4 @@
-skills.txt 0.0.4                   UTF-8                        dh:2021-09-05
+skills.txt 0.0.5                   UTF-8                        dh:2021-09-05
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -60,7 +60,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. nfoTools Tacit-Skills Notebook.  nfoTools project text
-   file skills.txt version 0.0.4 dated 2021-09-05, available on the Internet
+   file skills.txt version 0.0.5 dated 2021-09-05, available on the Internet
    as a version of
    <https://orcmid.github.io/nfoTools/skills/skills.txt>
 
@@ -73,9 +73,6 @@ TODO
 
  * The three R's as skills
 
- * Keyboarding and the variety of keyboarding that goes with computer
-   fluency
-
  * Details of Windows 10/11 that users need to grasp in order to be able to
    lift the covers on software and programming
 
@@ -86,8 +83,6 @@ TODO
 
  * Need something on fear of failure and fear of ridicule, the ability to
    work in the open and with the scrutiny/contribution of others.
-
- * Make a separate essay on tacit knowledge and how we all have it.
 
  * Elevate confirmable experience also, particularly in how to gain
    assistance and conduct trouble-shooting.
@@ -113,22 +108,9 @@ TODO
    becomes tacit more-or-less.  Some of this is about cases that are taken
    farther under tools.
 
- * Use the ADM-3A image to illustrate keyboard evolution.
-   https://twitter.com/jschauma/status/1434265985138270210/photo/1
-   Also find a Dvorak keyboard, and some manual, then electric, keyboards.
-   These are all in English.  There needs to be more allowance for other
-   variations, "dead" keys, etc.  But first, there is keyboarding, then
-   keyboards.  A little here, about keyboarding and also tacit knowledge
-   of the essential kind, and a lot about why this doesn't change, how
-   far the "ASCII" keyboard has travelled.
-
- * Start a folio on keyboarding and tuck the ADM-3A image I saw there.
-   Also need some historical things about keyboard technologies over time.
-   A keypunch photo would be handy.  Code differences, holes in cards and
-   paper tape, my oh my.
-
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.5 2021-09-05T16:21Z Moved keyboarding TODOs to S210902.txt
  0.0.4 2021-09-05T15:51Z Touch-up, capture TODOs on keyboards
  0.0.3 2021-09-04T17:35Z Expand and add a corrected S210901 for inventory
  0.0.2 2021-09-02T16:49Z Manage TODOs
