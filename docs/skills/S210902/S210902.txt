@@ -1,29 +1,34 @@
-S210901.txt 0.0.2                  UTF-8                        dh:2021-09-05
+S210902.txt 0.0.0                  UTF-8                        dh:2021-09-05
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
                         nfoWare/nfoWorks nfoTools
                         =========================
 
-<https://github.com/orcmid/nfoTools/blob/master/docs/skills/S210901/S210901.txt>
-      <https://orcmid.github.io/nfoTools/skills/S210901/S210901.txt>
+<https://github.com/orcmid/nfoTools/blob/master/docs/skills/S210902/S210902.txt>
+      <https://orcmid.github.io/nfoTools/skills/S210902/S210902.txt>
 
-                         SKILLS INVENTORY NOTES
-                         ----------------------
+                         KEYBOARDS AND KEYBOARDING
+                         -------------------------
 
-    This folio is created as a catch-all for matters around skills that need
-    to be identified and possibly addressed.
+    This folio is about keyboarding as a prerequisite skill for developers
+    as well as knowledge workers, other typists.
 
-    The essay on Tacit Knowledge and the Beginner Mind will be continued
-    and preserved under nfoTools/docs/notes/
+    The connection with muscle memory and and tacit skills matters.  The
+    devotion of software developers to keyboards and rapid typing is a
+    particular characteristic fascination over keyboards.
+
+    There are also historical connections with the development of keyboards
+    and also, when connected to computes, with how keyboard actions are
+    delivered electronically and via computer operating systems.
 
 MANIFEST
 
-    S210901.txt
+    S210902.txt
           this manifest and job-jar file
 
-    index.md
-          authoring for <https://orcmid.github.io/nfoTools/skills/S210901/>
+    ADM3A-2021-09-05-0826-From@jschauma.jpg
+           image of an early display terminal keyboard (preserved here)
 
 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -46,24 +51,55 @@ MANIFEST
 
  ATTRIBUTION
 
-   Hamilton, Dennis E. Essay: Skills Inventory Notes.  nfoTools file
-   S210901.txt version 0.0.2 dated 2021-09-05, available on the Internet as a
-   version of <https://orcmid.github.io/nfoTools/skills/S210901/S210901.txt>
+   Hamilton, Dennis E. Essay: Keyboards and Keyboarding.  nfoTools file
+   S210902.txt version 0.0.0 dated 2021-09-05, available on the Internet as a
+   version of <https://orcmid.github.io/nfoTools/skills/S210902/S210902.txt>
 
 TODO
 
- * Gather collection of skills and their specializations.  This is a catchall
-   that will be regularly re-aranged as individual notes can be referenced
-   instead.
+ * Gather materials on keyboards and their usage, and learning keyboarding.
 
  * Create a place-holder page for starters.
 
+ * Address tacit knowledge and how "muscle memory" applies to becoming adept
+   with a keyboard.
+
+ * Find a keypunch keyboard.  Maybe IBM 026 and also a Remington Rand one.
+   There were also tiny round-holed arrangements for a short time.
+
+ * Find a teletype or Friden keyboard.  We then get from punched cards to
+   paper tape also.
+
+ * Selectrics and diablo got to a different level, and often had use as
+   terminals as well as dedicated word-processing functions, using floppies
+   or magnetic tape.
+
+ * Show variations of what are termed "ANSI" keyboards and also how that
+   relates to keyboards with characters and codes for non-English use.
+
+ * Keyboarding and the variety of keyboarding that goes with computer
+   fluency
+
+ * Use the ADM-3A image to illustrate keyboard evolution.
+   https://twitter.com/jschauma/status/1434265985138270210/photo/1
+   Also find a Dvorak keyboard, and some manual, then electric, keyboards.
+   These are all in English.  There needs to be more allowance for other
+   variations, "dead" keys, etc.  But first, there is keyboarding, then
+   keyboards.  A little here, about keyboarding and also tacit knowledge
+   of the essential kind, and a lot about why this doesn't change, how
+   far the "ASCII" keyboard has travelled.
+
+ * Typing courses and how to do it.  Especially hand placement.  Assumptions
+   about dexterity and how the hands work.
+
+ * Start a folio on keyboarding and tuck the ADM-3A image I saw there.
+   Also need some historical things about keyboard technologies over time.
+   A keypunch photo would be handy.  Code differences, holes in cards and
+   paper tape, my oh my.
+
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
- 0.0.2 2021-09-05T15:58Z Simple touch-ups
- 0.0.1 2021-09-04T17:34Z Repurpose for the inventory since N210901 is already
-       setup for the Essay on Tacit Knowledge/Skills and the Beginner Mind.
- 0.0.0 2021-09-04T17:19Z Placeholder for the introduction of toolcraft
-       folios.
+ 0.0.0 2021-09-05T17:14Z Placeholder for commencement of keyboarding and
+       keyboard skills.
 
-                     ***** end of S210901.txt *****
+                     ***** end of S210902.txt *****
