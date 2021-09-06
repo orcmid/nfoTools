@@ -1,4 +1,4 @@
-<!-- index.md 0.0.2                 UTF-8                          2021-09-05
+<!-- index.md 0.0.3                 UTF-8                          2021-09-06
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                      WINDOWS CMD COMMAND-LIHE OPERATION
@@ -37,6 +37,8 @@ gently-climbing on-ramp to assist those for whom the subject is unfamiliar.
 The goal is to achieve enough basic familiarity and practice so that users can
 confidently discover further detail and advanced applications on their own.
 
+----
+
 I invite discussion about these tools and the emphasized toolcraft in the
 [Discussion section](https://github.com/orcmid/nfoTools/discussions).
 Improvements and removal of defects in this particular documentation can be
@@ -47,11 +49,12 @@ reported and addressed in the
 
 | **ID** | **Started** | **Status** | **Topic** |
 |   :-:   |   :-:   |  :-:   |  ---  |
-| _Tyymmnn_ | _date_ | _semver date_ | _Short topic_ |
+| [T060501c](T060501c.html) | 2006-05-20 | 0.0.2 2021-09-06 | Resources |
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-     0.0.2 2021-09-07T00:06Z Initial Transposition of nfoWare.com t060501
+     0.0.3 2021-09-06T18:00Z Add Resources available material
+     0.0.2 2021-09-06T00:06Z Initial Transposition of nfoWare.com t060501
            Windows Console Session folio cover to nfoTools T060502
      0.0.1 2007-08-12T00:26Z Repaving Review on nfoWare toolNote t060502
      0.0.0 2006-05-20T20:54Z Create bootstrap placeholder to morph into the
