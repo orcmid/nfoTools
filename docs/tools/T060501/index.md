@@ -4,7 +4,7 @@
                      WINDOWS CMD COMMAND-LIHE OPERATION
      -->
 
-# ToolCraft: Windows CMD Command-Line Opration
+# ToolCraft: Windows CMD Command-Line Operation
 
 ![Hard Hat Area](../../images/hardhat-logo.gif)
 
@@ -53,6 +53,7 @@ reported and addressed in the
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.4 2021-09-06T19:10Z Touch-up
      0.0.3 2021-09-06T18:00Z Add Resources available material
      0.0.2 2021-09-06T00:06Z Initial Transposition of nfoWare.com t060501
            Windows Console Session folio cover to nfoTools T060502
