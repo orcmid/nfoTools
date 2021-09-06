@@ -1,4 +1,4 @@
-<!-- index.md 0.0.5                 UTF-8                          2021-09-06
+<!-- index.md 0.0.6                 UTF-8                          2021-09-06
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                      WINDOWS CMD COMMAND-LIHE OPERATION
@@ -13,6 +13,8 @@ and extensive revision is called for.***
 
 This article provides basic orientation for beginning developers and others
 who want to understand Microsoft Windows console sessions.
+
+![Command Prompt example](T060501-2021-09-06-1432-CommandPrompt.png)
 
 Th material is intended primarily for beginners and newcomers who may have
 little or no programming experience and who have had no prior exposure to
@@ -53,6 +55,7 @@ reported and addressed in the
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.6 2021-09-06T21:39Z Add Command Prompt window capture
      0.0.5 2021-09-06T19:49Z Keep up with T060501c
      0.0.4 2021-09-06T19:10Z Touch-up
      0.0.3 2021-09-06T18:00Z Add Resources available material

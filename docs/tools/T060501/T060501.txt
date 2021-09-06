@@ -1,4 +1,4 @@
-T060501.txt 0.0.1                  UTF-8                        dh:2021-09-06
+T060501.txt 0.0.2                  UTF-8                        dh:2021-09-06
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -21,6 +21,9 @@ MANIFEST
             this manifest and job-jar file
       index.md
             Introductory page for the articles in this folio
+    T060501-2021-09-06-1432-CommandPrompt.png
+
+   T060501c.md  Resources
 
 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -44,7 +47,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. Windows CMD Command-Line Operations.  nfoTools project
-   text file T060501.txt version 0.0.1 dated 2021-09-06, available on the
+   text file T060501.txt version 0.0.2 dated 2021-09-06, available on the
    Internet as a version of
    <https://orcmid.github.io/nfoTools/tools/T060501/T060501.txt>
 
@@ -62,10 +65,16 @@ TODO
 
  * There needs to be much better restatement for the nfoTools Toolcraft topic.
    Say less about intentions and say more about the structure and the
-   progressive disclosure.
+   progressive disclosure.  This belongs one level up though.
+
+ * We need better nomenclature between command-line, character mode, and
+   shell, maybe other terms.  We need to figure out the difference between
+   the shell (cmd) and its functions, and stick to it.  The struggle to
+   sort out Windows Terminal might help with that.
 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.2 2021-09-06T22:10Z Update manifest, manage TODOs, question nomenclature
  0.0.1 2021-09-06T00:10Z Transposition of the t060501 overview page
  0.0.0 2021-09-05T17:54Z Placeholder for the salvaging and refreshing of the
        nfoWare.com t060501 folio.
