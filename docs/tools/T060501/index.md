@@ -1,4 +1,4 @@
-<!-- index.md 0.0.3                 UTF-8                          2021-09-06
+<!-- index.md 0.0.5                 UTF-8                          2021-09-06
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                      WINDOWS CMD COMMAND-LIHE OPERATION
@@ -49,10 +49,11 @@ reported and addressed in the
 
 | **ID** | **Started** | **Status** | **Topic** |
 |   :-:   |   :-:   |  :-:   |  ---  |
-| [T060501c](T060501c.html) | 2006-05-20 | 0.0.2 2021-09-06 | Resources |
+| [T060501c](T060501c.html) | 2006-05-20 | 0.0.30 2021-09-06 | Resources |
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.5 2021-09-06T19:49Z Keep up with T060501c
      0.0.4 2021-09-06T19:10Z Touch-up
      0.0.3 2021-09-06T18:00Z Add Resources available material
      0.0.2 2021-09-06T00:06Z Initial Transposition of nfoWare.com t060501
