@@ -1,4 +1,4 @@
-N070801.txt 0.0.0                   UTF-8                        dh:2021-09-07
+N070801.txt 0.0.1                   UTF-8                        dh:2021-09-07
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -20,9 +20,11 @@ MANIFEST
 
   N070801.txt
           this manifest and job-jar file
-
     index.md
           the entrace and front page for this notes folio.
+
+ N070801a.md
+          transposition of the original diary & job-jar pending items
 
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
@@ -46,20 +48,17 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. N070801: The Craft of Toolcraft.  nfoTools file
-   file N070801.txt version 0.0.0 dated 2021-09-07, available on the Internet
+   file N070801.txt version 0.0.1 dated 2021-09-07, available on the Internet
    as a version of
    <https://orcmid.github.io/rayLab/notes/N070801/N070801.txt>
 
 TODO
 
- * Bring over the main index page.
-
- * Check for any companion pages needed.
-
  * Restate the article to be current and more-useful to readers.
 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.1 2021-09-07T23:53Z Transpose N070801a from T070801a
  0.0.0 2021-09-07T21:33Z Placeholder for the initial transposition.
 
 
