@@ -1,10 +1,10 @@
-<!-- index.md 0.0.6                 UTF-8                          2021-09-06
+<!-- index.md 0.0.7                 UTF-8                          2021-09-07
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-                     WINDOWS CMD COMMAND-LIHE OPERATION
+                    WINDOWS CMD COMMAND PROMPT OPERATION
      -->
 
-# ToolCraft: Windows CMD Command-Line Operation
+# ToolCraft: Windows CMD Command Prompt
 
 ![Hard Hat Area](../../images/hardhat-logo.gif)
 
@@ -12,32 +12,31 @@
 and extensive revision is called for.***
 
 This article provides basic orientation for beginning developers and others
-who want to understand Microsoft Windows console sessions.
+who want to understand the Microsoft Windows CMD Command Prompt operation.  It
+is an element of toolcraft in software development and information technology
+activities on Windows PCs.
 
 ![Command Prompt example](T060501-2021-09-06-1432-CommandPrompt.png)
 
-Th material is intended primarily for beginners and newcomers who may have
-little or no programming experience and who have had no prior exposure to
-console applications and their use in console sessions.  This is an aspect of
-Windows fluency that is important for software developers and for
-administrators of Microsoft Windows systems.
+There is progressive disclosure of increasing levels of detail.  Experienced
+readers may skip areas of familiarity; the material is suitable for future
+review and reference.
 
-The material is tutorial in nature.  Focus is on basic exercises and examples
-for self-guided development of their own fluency:
+The basics:
 
-* knowing what a console session is and recognize one on your computer
-* initiating and terminating console sessions
+* knowing what a Command Prompt session is and recognize one on your computer
+* initiating and terminating command-line operations
 * performing common command-line operations
 * operating applications in a console session
-* experimenting and exploring additional capabilities available in console
-sessions
-* finding resources and explanations for advanced use of console sessions
+* using batch scripts (`.bat` files) in repetitive tasks
+* experimenting and exploring additional capabilities available with Command
+Prompt
+* finding resources and explanations for advanced use of Command Prompt
 
 There is no intention to duplicate the extensive Microsoft and MSDN materials
-that are freely available on this topic. Instead, I want to create a
-gently-climbing on-ramp to assist those for whom the subject is unfamiliar.
-The goal is to achieve enough basic familiarity and practice so that users can
-confidently discover further detail and advanced applications on their own.
+that are freely available on this topic. The goal is to encourage enough basic
+familiarity and practice for confident discovery of further detail and depth.
+Sources of additional materials are identified.
 
 ----
 
@@ -55,6 +54,7 @@ reported and addressed in the
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.7 2021-09-07T01:59Z Rework, simplifying and smoothing the text
      0.0.6 2021-09-06T21:39Z Add Command Prompt window capture
      0.0.5 2021-09-06T19:49Z Keep up with T060501c
      0.0.4 2021-09-06T19:10Z Touch-up

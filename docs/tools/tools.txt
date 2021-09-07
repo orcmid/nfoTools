@@ -1,4 +1,4 @@
-tools.txt 0.0.5                  UTF-8                          dh:2021-09-05
+tools.txt 0.0.6                  UTF-8                          dh:2021-09-07
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -46,7 +46,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. nfoTools Toolcraft Notebook.  nfoTools project text
-   file tools.txt version 0.0.5 dated 2021-09-05, available on the Internet
+   file tools.txt version 0.0.6 dated 2021-09-07, available on the Internet
    as a version of
    <https://orcmid.github.io/nfoTools/tools/tools.txt>
 
@@ -69,8 +69,12 @@ TODO
    on the digital, computer-system side.  Maybe start on skills, then more
    here on toolcraft of it?
 
+ * For more on toolcraft, link to N070801 when the nfoWare T070801 is moved
+   there.
+
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.6 2021-09-07T03:25Z Touch up, let N070801 become the Craft of Toolcraft.
  0.0.5 2021-09-05T17:34Z Introduce T060501
  0.0.4 2021-09-05T16:24Z Move basic keyboarding to S210902, Touch-up TODOs
  0.0.3 2021-09-05T15:54Z Keyboard stuff
