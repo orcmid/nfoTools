@@ -1,0 +1,66 @@
+N070801.txt 0.0.0                   UTF-8                        dh:2021-09-07
+----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+
+                        nfoWare/nfoWorks nfoTools
+                        =========================
+
+<https://github.com/orcmid/nfoTools/blob/master/docs/notes/N070801/N070801.txt>
+      <https://orcmid.github.io/rayLab/notes/N070801/N070801.txt>
+
+                      N070801: THE CRAFT OF TOOLCRAFT
+                      -------------------------------
+
+    nfoTools docs/notes/N070801 is a transposition of nfoWare toolNote
+    T070801.  The transposition is rewritten to improve reliance on
+    beginner mind and also confirmable experience, even if not addressed
+    directly.
+
+MANIFEST
+
+  N070801.txt
+          this manifest and job-jar file
+
+    index.md
+          the entrace and front page for this notes folio.
+
+
+----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+                       Copyright 2021 Dennis E. Hamilton
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+ ATTRIBUTION
+
+   Hamilton, Dennis E. N070801: The Craft of Toolcraft.  nfoTools file
+   file N070801.txt version 0.0.0 dated 2021-09-07, available on the Internet
+   as a version of
+   <https://orcmid.github.io/rayLab/notes/N070801/N070801.txt>
+
+TODO
+
+ * Bring over the main index page.
+
+ * Check for any companion pages needed.
+
+ * Restate the article to be current and more-useful to readers.
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+ 0.0.0 2021-09-07T21:33Z Placeholder for the initial transposition.
+
+
+                     ***** end of N070801.txt *****
