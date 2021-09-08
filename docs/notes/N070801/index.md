@@ -1,7 +1,7 @@
-<!-- index.md 0.0.1                 UTF-8                          2021-09-07
+<!-- index.md 0.0.2                 UTF-8                          2021-09-08
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-                 N210901: THE CRAFT IN TOOLCRAFT
+                 N070801: THE CRAFT IN TOOLCRAFT
      -->
 
 # ***N070801:** The Craft in Toolcraft*
@@ -71,11 +71,12 @@ to make the process of knowledge work less visible just when we need it to be
 more so."
 
 Victoria and Albert Museum (web site).  What Is Craft?  Available at
-(http://www.vam.ac.uk/collections/contemporary/crafts/what_is_craft/>)
+[broken link](http://www.vam.ac.uk/collections/contemporary/crafts/what_is_craft/)
 Accessed 2007-08-29.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.2 2021-09-08T00:51Z Touch-up
      0.0.1 2021-09-07T22:08Z Clone and adapt nfoWare/tools/2007/08/T070801.htm
      0.0.0 2006-08-29T23:56 Bootstrap placeholder to morph into the
            necessary material
