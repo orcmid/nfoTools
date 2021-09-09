@@ -1,4 +1,4 @@
-T060501.txt 0.0.2                  UTF-8                        dh:2021-09-06
+T060501.txt 0.0.3                  UTF-8                        dh:2021-09-09
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -12,7 +12,7 @@ T060501.txt 0.0.2                  UTF-8                        dh:2021-09-06
                   -----------------------------------
 
     Use of command-line sessions and command script (.bat) files are captured
-    from nfoWare.com folio t060501 are revived here and developed farther
+    from nfoWare.com folio t060501, revived here, and developed farther
     in support of nfoTools effort.
 
 MANIFEST
@@ -47,7 +47,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. Windows CMD Command-Line Operations.  nfoTools project
-   text file T060501.txt version 0.0.2 dated 2021-09-06, available on the
+   text file T060501.txt version 0.0.3 dated 2021-09-09, available on the
    Internet as a version of
    <https://orcmid.github.io/nfoTools/tools/T060501/T060501.txt>
 
@@ -72,8 +72,23 @@ TODO
    the shell (cmd) and its functions, and stick to it.  The struggle to
    sort out Windows Terminal might help with that.
 
+ * Ponder #15 (https://github.com/orcmid/nfoTools/issues/15) and come to some
+   resolution about how this all works.  I think the business about conHost
+   and conPTY is irrelevant in the context of cmd.exe.  I need a way to
+   motivate that.  The historical detection of connected/remote device logins
+   and firing of a shell (command processor) in response is relevant.  It
+   might be helpful to motivate that.
+
+ * Review the additional T060501 nfoWare.com pages and see what else to
+   salvage.
+
+ * The resources information is practically archaic.  Move the historical
+   materials into that category and surface current information.  This might
+   include references to alternatives.
+
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.3 2021-09-09T18:39Z Manage TODOs on nomenclature and vintage materials
  0.0.2 2021-09-06T22:10Z Update manifest, manage TODOs, question nomenclature
  0.0.1 2021-09-06T00:10Z Transposition of the t060501 overview page
  0.0.0 2021-09-05T17:54Z Placeholder for the salvaging and refreshing of the
