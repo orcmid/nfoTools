@@ -1,4 +1,4 @@
-devWinConKit.txt 0.0.5                UTF-8                         2021-08-30
+devWinConKit.txt 0.0.6              UTF-8                         2021-09-10
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 <https://github.com/orcmid/nfoTools/blob/master/devKits/WinDev/WinConKit/devWinConKit/devWinConKit.txt>
@@ -19,9 +19,6 @@ devWinConKit.txt 0.0.5                UTF-8                         2021-08-30
     the source-code repository.  The set of stable releases is also available
     via <http://nfoWare.com/dev/2016/11/d161103.htm> along with more
     information on the use and customization of WinConKits.
-
-
-
 
 MANIFEST
 
@@ -74,6 +71,13 @@ MANIFEST
     limitations under the License.
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+ATTRIBUTION
+
+   Hamilton, Dennis E. WinCon Construction Kit Package Construction.
+   nfoTools file WinConKit.txt version 0.0.6 dated 2021-09-10,
+   available on the Internet as a version of
+   <https://github.com/orcmid/nfoTools/blob/master/devKits/WinDev/WinConKit/devWinConKit/devWinConKit.txt>
 
 TODO
 
@@ -233,8 +237,12 @@ TODO
    ephemeral content for building and testing unde a WinCon construction
    set.
 
+ * Move any dependencies on nfoWare.com to ones on orcmid.github.io/nfoTools
+   after providing the transposed targets.
+
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.6 2021-09-10T23:51Z Add attribution, manage TODOs
  0.0.5 2021-08-30T19:21Z add rulers
  0.0.4 2021-02-13T23:47Z Use correct page permalink and smooth some textflow
  0.0.3 2017-02-10-08:56 TODOs.  Add :USAGE Chaining and its documentation.

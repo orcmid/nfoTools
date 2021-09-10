@@ -1,4 +1,4 @@
-devBind.txt 0.1.18                    UTF-8                         2021-08-11
+devBind.txt 0.1.19                   UTF-8                         2021-09-10
 ---------1---------2---------3---------4---------5---------6---------7-------*
 
 <https://github.com/orcmid/nfoTools/blob/master/devKits/WinDev/VCbinder/devBind/devBind.txt>
@@ -133,6 +133,11 @@ devBind.txt 0.1.18                    UTF-8                         2021-08-11
        Windows and how the Visual C++ components are found and operated on
        Windows
 
+     * Make VCbind-0.2.1.txt with removal of dependencies on nfoWare.com
+       after the devnote is transposed to orcmid.github.io/nfoTools
+
+     * Fix dependencies in this devBind.txt at the same time.
+
 
  E. DEVBIND EMHANCEMENT AND MAINTENANCE CODE-AND-TEST CYCLE
 
@@ -236,6 +241,13 @@ MANIFEST
     See the License for the specific language governing permissions and
     limitations under the License.
 
+ATTRIBUTION
+
+   Hamilton, Dennis E. VCbind.zip Construction.
+   nfoTools file devBind.txt version 0.0.19 dated 2021-09-10,
+   available on the Internet as a version of
+   <https://github.com/orcmid/nfoTools/blob/master/devKits/WinDev/VCbinder/devBind/devBind.txt>
+
 TODO
 
     In addition to these TODO items, the web-facing material on
@@ -323,6 +335,7 @@ TODO
 
  --------1---------2---------3---------4---------5---------6---------7-------*
 
+ 0.1.19 2021-09-10T23:35Z Add attribution, manage TODOs
  0.1.18 2021-08-11T18:06Z Manage work items in preparation to handling
         Visual studio 2017 and 2019, use of VSCode, and using branches
         to simplify all this nonsense.
