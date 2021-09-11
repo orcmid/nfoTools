@@ -1,4 +1,4 @@
-D161101.txt 0.0.2                   UTF-8                        dh:2021-09-04
+D161101.txt 0.0.3                   UTF-8                        dh:2021-09-11
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -31,13 +31,15 @@ Plan
 * Confirm in prototype WinCon Construction Sets
 * Roll up VCbind and VCbinder into a WinCon Construction Kit that is reliable
   as a source for additional construction sets and their updates.
+* Include confirmation materials and approaches.
+* Provide exemplary applications.
+* Deal with levels of prerequisite and progressive disclosure
 
 
 MANIFEST
 
      D161101.txt
              this manifest and job-jar file
-
         index.md
               the original folio cover transposed to Markdown
 
@@ -64,7 +66,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. VCbind: VC/C++ Commnad-Line Setup cript.  nfoTools
-   development text file D161101.txt version 0.0.2 dated 2021-09-04,
+   development text file D161101.txt version 0.0.3 dated 2021-09-11,
    available on the Internet as a version of
    <https://orcmid.github.io/nfoTools/dev/D161101/D161101.txt>
 
@@ -79,16 +81,19 @@ TODO
 
  * This will come with clean-up of devKits in the orcmid/nfoTools repositiory.
 
- * Bring VCbind d161101 here so that a new VCbind that update without changes
-   can reference D161101 here.  It is the poster-child for how to do the
-   progression of versions.
+ * Bring VCbind d161101 here so that a new VCbind update with only
+   documentation changes will reference D161101 here.  This is the poster-
+   -child for how to do the progression of versions.
 
- * Dig into the d151101a Job Jar for more
+ * Dig into the d161101a Job Jar for more
 
- * Bring over additional pages beyond the folio cover
+ * Bring over *all* additional pages beyond the folio cover
+
+ * Get them over here raw, then smooth things out
 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+  0.0.3 2021-09-11T18:43Z Prepare for migration, manage TODOs, plans
   0.0.2 2021-09-04T05:26Z Refactor between d161101.txt and the index.md to
         simplify each
   0.0.1 2021-09-03T21:40Z Clear-up, manage TODOs
