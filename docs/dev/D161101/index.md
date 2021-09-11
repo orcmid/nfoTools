@@ -1,4 +1,4 @@
-<!-- index.md 0.1.5                 UTF-8                          2021-09-04
+<!-- index.md 0.1.6                 UTF-8                          2021-09-10
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                    VCBIND: VC/VC++ COMMAND-LINE SETUP SCRIPT
@@ -47,10 +47,11 @@ custom purposes.
 
 | **ID** | **Started** | **Status** | **Topic** |
 |   :-:   |   :-:   |  :-:   |  ---  |
-| _Dyymmnn link_ | _yyyy-mm-dd_ | _semver yyyy-mm-dd_ | _Topic Title_ |
+| [D161101a](D161101a) | 2016-11-12 | 0.0.1 2021-09-11 | Diary and Job Jar |
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.1.6 3032-09-11T21:24Z Add D161101a preservation step
      0.1.5 2021-09-04T05:21Z Simplify the description, moving other factors
            into D161101.txt.
      0.1.4 2021-09-03T23:17Z Switch to unnumbered lists correctly
