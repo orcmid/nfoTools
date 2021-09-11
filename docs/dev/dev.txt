@@ -1,4 +1,4 @@
-dev.txt 0.0.2                      UTF-8                        dh:2021-09-03
+dev.txt 0.0.3                      UTF-8                        dh:2021-09-11
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -27,10 +27,10 @@ MANIFEST
 
          dev.txt
              this manifest and job-jar file
-
        index.md
              the orcmid.github.io/nfoTools/dev/ entrance-page Markdown source
 
+     D161101/   VCbind: VC/C++ Command-Line Setup Script
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
@@ -53,7 +53,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. nfoTools Development Notebook.  nfoTools project text
-   file dev.txt version 0.0.2 dated 2021-09-03, available on the Internet
+   file dev.txt version 0.0.3 dated 2021-09-10, available on the Internet
    as a version of
    <https://github.com/orcmid/nfoTools/blob/master/docs/dev/dev.txt>
 
@@ -69,15 +69,14 @@ TODO
  * Create index.md placeholder for subsequent expansion as some existing
    dev notes are migrated from sites being deprecated.
 
- * Bring VCbind d161101 here so that a new VCbind that update without changes
-   can reference D161101 here.  It is the poster-child for how to do the
-   progression of versions.
-
  * Create a project on d151101 migration, having it be practice for a
    W3C-style progression and its historical preservation.
 
+ * Create a folio for the conCheck application and its operation.
+
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.3 2021-09-11T00:13Z Identify D161101, manage TODOs
  0.0.2 2021-09-03T20:32Z Correct permalinks, cleanup summary.
  0.0.1 2021-09-03T19:17Z Introduce index.md, touch-up, manage TODOs
  0.0.0 2021-09-02T19:32Z Placeholder for the introduction of devNote
