@@ -1,4 +1,4 @@
-D161101.txt 0.0.3                   UTF-8                        dh:2021-09-11
+D161101.txt 0.0.4                   UTF-8                        dh:2021-09-12
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -40,10 +40,13 @@ MANIFEST
 
      D161101.txt
              this manifest and job-jar file
-        index.md
-              the original folio cover transposed to Markdown
+       index.md
+             the original folio cover transposed to Markdown
+    D161101a.md
+             the original Diary & Job Jar items still open on 2021-09-11
 
-
+    D161101c/
+             Vcbind 0.1.0 Release (deprecated)
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
@@ -65,8 +68,8 @@ MANIFEST
 
  ATTRIBUTION
 
-   Hamilton, Dennis E. VCbind: VC/C++ Commnad-Line Setup cript.  nfoTools
-   development text file D161101.txt version 0.0.3 dated 2021-09-11,
+   Hamilton, Dennis E. VCbind: VC/C++ Commnad-Line Setup Script.  nfoTools
+   development text file D161101.txt version 0.0.4 dated 2021-09-12,
    available on the Internet as a version of
    <https://orcmid.github.io/nfoTools/dev/D161101/D161101.txt>
 
@@ -91,8 +94,22 @@ TODO
 
  * Get them over here raw, then smooth things out
 
+ * Bring VCbind 0.1.0 here with a single subfolder for the release artifacts,
+   including the signed materials.  There is simply the distro and how to use
+   it.  This is going to be deprecated because the material is hashed and
+   signed and it refers to locations on nfoWare.com that will be retired.
+
+ * Verify the hashes and signatures
+
+ * Creste skills and toolcraft on handling hashes and signatures
+
+ * Make more careful separation between using VCbind.zip when found in a
+   source distribution that one intends to construct versus incorporating
+   VCbind.zip in the source of a release of ones own.
+
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+  0.0.4 2021-09-12T02:29Z Prepare for introduction of D151101c/
   0.0.3 2021-09-11T18:43Z Prepare for migration, manage TODOs, plans
   0.0.2 2021-09-04T05:26Z Refactor between d161101.txt and the index.md to
         simplify each
