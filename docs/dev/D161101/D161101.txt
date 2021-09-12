@@ -1,4 +1,4 @@
-D161101.txt 0.0.4                   UTF-8                        dh:2021-09-12
+D161101.txt 0.0.5                   UTF-8                       dh:2021-09-12
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -69,7 +69,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. VCbind: VC/C++ Commnad-Line Setup Script.  nfoTools
-   development text file D161101.txt version 0.0.4 dated 2021-09-12,
+   development text file D161101.txt version 0.0.5 dated 2021-09-12,
    available on the Internet as a version of
    <https://orcmid.github.io/nfoTools/dev/D161101/D161101.txt>
 
@@ -90,8 +90,6 @@ TODO
 
  * Dig into the d161101a Job Jar for more
 
- * Bring over *all* additional pages beyond the folio cover
-
  * Get them over here raw, then smooth things out
 
  * Bring VCbind 0.1.0 here with a single subfolder for the release artifacts,
@@ -109,6 +107,7 @@ TODO
 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+  0.0.5 2021-09-12T15:48Z Touch up, manage TODOs
   0.0.4 2021-09-12T02:29Z Prepare for introduction of D151101c/
   0.0.3 2021-09-11T18:43Z Prepare for migration, manage TODOs, plans
   0.0.2 2021-09-04T05:26Z Refactor between d161101.txt and the index.md to
