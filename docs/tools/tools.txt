@@ -1,4 +1,4 @@
-tools.txt 0.0.6                  UTF-8                          dh:2021-09-07
+tools.txt 0.0.7                  UTF-8                          dh:2021-09-12
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -12,7 +12,9 @@ tools.txt 0.0.6                  UTF-8                          dh:2021-09-07
                        ---------------------------
 
     nfoTools docs/ collection of folios on toolcraft relied upon in making
-    the efforts understandable and reusable
+    the efforts understandable and reusable.  More on the nature of toolcraft
+    and its values/limitations are discussed at
+    <https://orcmid.github.io/nfoTools/notes/N070801/>.
 
 MANIFEST
 
@@ -21,7 +23,7 @@ MANIFEST
     index.md
           front-page authoring for <https://orcmid.github.io/nfoTools/tools/>
 
-  T060501/
+  T060501/      Windows CMD Command-Line Operation
 
 
 
@@ -46,7 +48,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. nfoTools Toolcraft Notebook.  nfoTools project text
-   file tools.txt version 0.0.6 dated 2021-09-07, available on the Internet
+   file tools.txt version 0.0.7 dated 2021-09-12, available on the Internet
    as a version of
    <https://orcmid.github.io/nfoTools/tools/tools.txt>
 
@@ -69,11 +71,13 @@ TODO
    on the digital, computer-system side.  Maybe start on skills, then more
    here on toolcraft of it?
 
- * For more on toolcraft, link to N070801 when the nfoWare T070801 is moved
-   there.
+ * Add tools entries for hashing (sha256check) and verifying digital
+   signatures, then how to create them.  Documentation should always cover
+   usage first, creation secondly, in progressive disclosure.
 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.7 2021-09-12T19:19Z Links to N070801, Manage TODOs
  0.0.6 2021-09-07T03:25Z Touch up, let N070801 become the Craft of Toolcraft.
  0.0.5 2021-09-05T17:34Z Introduce T060501
  0.0.4 2021-09-05T16:24Z Move basic keyboarding to S210902, Touch-up TODOs

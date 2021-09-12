@@ -1,4 +1,4 @@
-<!-- index.md 0.0.2                 UTF-8                          2021-09-07
+<!-- index.md 0.0.3                 UTF-8                          2021-09-12
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                        NFOTOOLS TOOLCRAFT NOTEBOOK
@@ -21,6 +21,9 @@ development, maintenance, and use of Microsoft Windows on desktop personal
 computers.  Prerequisite tools are either present in Microsoft Windows or
 they are freely-available to download and install.
 
+For background on toolcraft, its benefits and dangers, see
+[The Craft in Toolcraft](https://orcmid.github.io/nfoTools/notes/N070801/).
+
 ## Toolcraft Catalog
 
 | **ID** | **Started** | **Status** | **Topic** |
@@ -37,6 +40,7 @@ reported and addressed in the
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.3 2021-09-12T19:17Z Link to N070801
      0.0.2 2021-09-07T00:17Z Add introductory statement
      0.0.1 2021-09-06T19:11Z Catalog T060501
      0.0.0 2021-09-02T20:40Z Hardhat Image and empty Catalog
