@@ -47,12 +47,13 @@ custom purposes.
 
 | **ID** | **Started** | **Status** | **Topic** |
 |   :-:   |   :-:   |  :-:   |  ---  |
-| [D161101c](D161101c/) | 2016-11-25 | 0.0.3 2021-09-13 | VCbind 0.1.0 Release (Preservation) |
+| [D161101c](D161101c/) | 2016-11-25 | 0.0.4 2021-09-13 | VCbind 0.1.0 Release (Preservation) |
 |                       |            |                  |     |
 | [D161101a](D161101a.html) | 2016-11-12 | 0.0.1 2021-09-11 | Diary and Job Jar |
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.1.9 2021-09-13T18:21Z Update D151101c version
      0.1.8 2021-09-13T18:06Z Add D161101c and review how command-line is
            mentioned
      0.1.7 2021-09-11T21:30Z Correct link to D161101a
