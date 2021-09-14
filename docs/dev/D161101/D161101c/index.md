@@ -1,4 +1,4 @@
-<!-- index.md 0.0.5                 UTF-8                          2021-09-14
+<!-- index.md 0.0.6                 UTF-8                          2021-09-14
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                      VCBIND 0.1.0 RELEASE (PRESERVATION)
@@ -19,7 +19,9 @@ release.
 
 For more about this material and the [toolcraft](../../../tools/) dependencies
 on Zip, PGP, and SHA256, consult the [overview document](../) and descriptions
-of later supported releases.  The unpacked release is intended for
+of later supported releases.
+
+The unpacked `VCbind.zip` is intended for
 [Command Prompt](../../../tools/T060501/) setup of a command-line environment
 ready for use of Microsoft Windows native C/C++ development tools.
 
@@ -40,8 +42,8 @@ ready for use of Microsoft Windows native C/C++ development tools.
 ## VCbind 0.1.0 Preservation Integrity Confirmation
 
 Confirmation that the files have been preserved intact from their previous
-download location is accomplished using already-install gpg4Win software,
-including the Kleopatra tool.  Documented toolcraft is employed.
+download location is accomplished using already-installed gpg4Win software,
+including the Kleopatra tool. Details are [toolcraft](../../../tools/).
 
 Verification of the `VCbind.zip` digital signature in `VCbind.zip.asc` is
 by double-clicking on the `.asc` file.
@@ -52,7 +54,7 @@ Kleopatra is launched and the signature is reported as verified.
 
 ![VCbind.zip Signature verification](D161101c2-VCbind.zip.asc-Kleopatra.png)
 
-In the same manner, the VCbind-0.1.0-src.zip signature is verified.
+In the same manner, the `VCbind-0.1.0-src.zip` signature is verified.
 
 ![VCbind-0.1.0-src.zip Signature verification](D161101c3-VCbind-src.zip.asc-Kleopatra.png)
 
@@ -61,7 +63,7 @@ signature.  That is also verifiable using the Kleopatra tool.
 
 ![Kleopatra Verification Option](D161101c4-Kleopatra-VerifyOption.png)
 
-The VCbind-0.1.0.txt selection is made in response to Kleopatra.
+The `VCbind-0.1.0.txt` selection is made in response to Kleopatra.
 
 ![Kleopatra VCbind 0.1.0 selection](D161101c5-Kleopatra-Select-VCbind-0.1.0.txt.png)
 
@@ -85,6 +87,7 @@ be downloaded at [Apache Key for Orcmid](http://people.apache.org/keys/committer
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.6 2021-09-14T00:48Z Touch-ups
      0.0.5 2021-09-14T00:16Z Demonstrate verifications
      0.0.4 2021-09-13T11:18Z Touch-ups on intended usage
      0.0.3 2021-09-13T17:37Z Link to release files and account for deprecation
