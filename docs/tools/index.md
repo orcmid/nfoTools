@@ -1,4 +1,4 @@
-<!-- index.md 0.0.3                 UTF-8                          2021-09-12
+<!-- index.md 0.0.4                 UTF-8                          2021-09-15
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                        NFOTOOLS TOOLCRAFT NOTEBOOK
@@ -28,7 +28,7 @@ For background on toolcraft, its benefits and dangers, see
 
 | **ID** | **Started** | **Status** | **Topic** |
 |   :-:   |   :-:   |  :-:   |  ---  |
-| [T060501](T060501) | 2006-05-20 | 0.0.4 2021-09-06 | Windows CMD Command Prompt |
+| [T060501](T060501) | 2006-05-20 | 0.0.9 2021-09-15 | Windows CMD Command-Line Environment |
 
 ----
 
@@ -40,6 +40,7 @@ reported and addressed in the
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.4 2021-09-25T20:31Z Reflect T060501 0.0.9
      0.0.3 2021-09-12T19:17Z Link to N070801
      0.0.2 2021-09-07T00:17Z Add introductory statement
      0.0.1 2021-09-06T19:11Z Catalog T060501

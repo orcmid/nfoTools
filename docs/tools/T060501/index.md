@@ -1,4 +1,4 @@
-<!-- index.md 0.0.8                 UTF-8                          2021-09-15
+<!-- index.md 0.0.9                 UTF-8                          2021-09-15
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                     WINDOWS CMD COMMAND-LINE ENVIRONMENT
@@ -47,9 +47,12 @@ reported and addressed in the
 | **ID** | **Started** | **Status** | **Topic** |
 |   :-:   |   :-:   |  :-:   |  ---  |
 | [T060501c](T060501c.html) | 2006-05-20 | 0.0.31 2021-09-15 | Resources |
+|                           |            |                   |           |
+| [T060501a](T060501a.html) | 2006-05-21 | 0.0.3 2021-09-15 | Diary \& Job Jar |
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.9 2021-09-15T20:27Z Add T060501a 0.0.3
      0.0.8 2021-09-15T17:02Z Smoothed to use chosen command-line environment
            terminology.
      0.0.7 2021-09-07T01:59Z Rework, simplifying and smoothing the text
