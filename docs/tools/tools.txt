@@ -1,4 +1,4 @@
-tools.txt 0.0.7                  UTF-8                          dh:2021-09-12
+tools.txt 0.0.8                  UTF-8                          dh:2021-09-15
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -48,7 +48,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. nfoTools Toolcraft Notebook.  nfoTools project text
-   file tools.txt version 0.0.7 dated 2021-09-12, available on the Internet
+   file tools.txt version 0.0.8 dated 2021-09-15, available on the Internet
    as a version of
    <https://orcmid.github.io/nfoTools/tools/tools.txt>
 
@@ -75,8 +75,16 @@ TODO
    signatures, then how to create them.  Documentation should always cover
    usage first, creation secondly, in progressive disclosure.
 
+ * Setup and test for VS 2022 (17.0) but don't post anything until official
+   for building code eligible for distribution and production use.
+
+ * Deal with VS 2019 and VS 2017 installation and also detection.  Unclear
+   about 2015 and earlier any longer.  There is the need to be able to rebuild
+   and test and to patch that may require continued support of those releases.
+
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.8 2021-09-15T03:46Z Manage TODOs around versions of Visual Studio
  0.0.7 2021-09-12T19:19Z Links to N070801, Manage TODOs
  0.0.6 2021-09-07T03:25Z Touch up, let N070801 become the Craft of Toolcraft.
  0.0.5 2021-09-05T17:34Z Introduce T060501
