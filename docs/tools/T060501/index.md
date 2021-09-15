@@ -1,10 +1,10 @@
-<!-- index.md 0.0.7                 UTF-8                          2021-09-07
+<!-- index.md 0.0.8                 UTF-8                          2021-09-15
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-                    WINDOWS CMD COMMAND PROMPT OPERATION
+                    WINDOWS CMD COMMAND-LINE ENVIRONMENT
      -->
 
-# ToolCraft: Windows CMD Command Prompt
+# ToolCraft: Windows CMD Command-Line Environment
 
 ![Hard Hat Area](../../images/hardhat-logo.gif)
 
@@ -12,36 +12,32 @@
 and extensive revision is called for.***
 
 This article provides basic orientation for beginning developers and others
-who want to understand the Microsoft Windows CMD Command Prompt operation.  It
-is an element of toolcraft in software development and information technology
-activities on Windows PCs.
+who want to understand Microsoft Windows CMD Command Prompt operation and the
+command-line environment that it supports.  It is an element of toolcraft in
+software development and information technology activities on Windows PCs.
 
 ![Command Prompt example](T060501-2021-09-06-1432-CommandPrompt.png)
 
-There is progressive disclosure of increasing levels of detail.  Experienced
-readers may skip areas of familiarity; the material is suitable for future
-review and reference.
-
 The basics:
 
-* knowing what a Command Prompt session is and recognize one on your computer
+* knowing what the CMD command-line environment is and recognizing one on your
+computer
 * initiating and terminating command-line operations
 * performing common command-line operations
-* operating applications in a console session
+* operating applications in the provided console
 * using batch scripts (`.bat` files) in repetitive tasks
 * experimenting and exploring additional capabilities available with Command
 Prompt
 * finding resources and explanations for advanced use of Command Prompt
 
 There is no intention to duplicate the extensive Microsoft and MSDN materials
-that are freely available on this topic. The goal is to encourage enough basic
-familiarity and practice for confident discovery of further detail and depth.
-Sources of additional materials are identified.
+that are freely available on this topic. Sources of additional materials are
+identified.
 
 ----
 
-I invite discussion about these tools and the emphasized toolcraft in the
-[Discussion section](https://github.com/orcmid/nfoTools/discussions).
+Discussion about these tools and the emphasized toolcraft are invited in the
+nfoTools [Discussion section](https://github.com/orcmid/nfoTools/discussions).
 Improvements and removal of defects in this particular documentation can be
 reported and addressed in the
 [Issues section](https://github.com/orcmid/nfoTools/issues).
@@ -50,10 +46,12 @@ reported and addressed in the
 
 | **ID** | **Started** | **Status** | **Topic** |
 |   :-:   |   :-:   |  :-:   |  ---  |
-| [T060501c](T060501c.html) | 2006-05-20 | 0.0.30 2021-09-06 | Resources |
+| [T060501c](T060501c.html) | 2006-05-20 | 0.0.31 2021-09-15 | Resources |
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.8 2021-09-15T17:02Z Smoothed to use chosen command-line environment
+           terminology.
      0.0.7 2021-09-07T01:59Z Rework, simplifying and smoothing the text
      0.0.6 2021-09-06T21:39Z Add Command Prompt window capture
      0.0.5 2021-09-06T19:49Z Keep up with T060501c

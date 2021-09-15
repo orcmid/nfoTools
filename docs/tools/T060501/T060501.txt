@@ -1,4 +1,4 @@
-T060501.txt 0.0.3                  UTF-8                        dh:2021-09-09
+T060501.txt 0.0.4                  UTF-8                        dh:2021-09-15
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -8,8 +8,8 @@ T060501.txt 0.0.3                  UTF-8                        dh:2021-09-09
 <https://github.com/orcmid/nfoTools/blob/master/docs/tools/T060501/T060501.txt>
         <https://orcmid.github.io/nfoTools/tools/T060501/T060501.txt>
 
-                  WINDOWS CMD COMMAND-LINE OPERATIONS
-                  -----------------------------------
+                WINDOWS CMD COMMAND-LINE ENVIRONMENT
+                ------------------------------------
 
     Use of command-line sessions and command script (.bat) files are captured
     from nfoWare.com folio t060501, revived here, and developed farther
@@ -47,7 +47,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. Windows CMD Command-Line Operations.  nfoTools project
-   text file T060501.txt version 0.0.3 dated 2021-09-09, available on the
+   text file T060501.txt version 0.0.4 dated 2021-09-15, available on the
    Internet as a version of
    <https://orcmid.github.io/nfoTools/tools/T060501/T060501.txt>
 
@@ -86,8 +86,14 @@ TODO
    materials into that category and surface current information.  This might
    include references to alternatives.
 
+ * Rework to speak of the command-line environment separate from the means
+   of accessing it, and how the command shell fits in.  The environment case
+   matters with respect to how character-mode apps are launched in the same
+   environment and how the CMD serves as a shell.
+
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.4 2021-09-15T16:22Z Manage TODOs, start rework on nomenclature
  0.0.3 2021-09-09T18:39Z Manage TODOs on nomenclature and vintage materials
  0.0.2 2021-09-06T22:10Z Update manifest, manage TODOs, question nomenclature
  0.0.1 2021-09-06T00:10Z Transposition of the t060501 overview page
