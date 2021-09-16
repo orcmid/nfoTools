@@ -7,7 +7,7 @@
 
 # Selecting Command Prompt Operation
 
-| ***[T060501d](index.html)*** | [tools](../../)[>t060501](../)[>t060501d](.) | ***0.0.2 2021-09-16*** |
+| ***[T060501d](index.html)*** | [tools](../../)[>t060501](../)[>t060501d](.) | ***0.0.3 2021-09-16*** |
 | :--                |       ---          | --: |
 | ![nfotools](../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../../../images/hardhat-logo.gif) |
 
@@ -22,14 +22,14 @@ First, enter "CMD" in the task bar search entry.
 
 Command Prompt will be presented as the best match.
 
-![Command Prompt suggestion](T060501d7-W10CMDFound)
+![Command Prompt suggestion](T060501d7-W10CMDFound.png)
 
 Initiate a command-line environment and Command Prompt by pressing Enter
 on the keyboard or by clicking on the highlighted best match with a mouse.
 
 ![Command Prompt confirmation](../T060501-2021-09-06-1432-CommandPrompt.png)
 
-The "prompt" is the beginning of lines up to the ">", as with
+The "prompt" is the beginning of lines up to the ">", such as
 "`C:\Users\orcmi>`" above.  The automatic prompt identifies where the
 command-line operation is taking place.
 
@@ -44,7 +44,7 @@ Windows 11 also offers immediate access to CMD via search on the task bar.
 ![Windows 11 Command Prompt](T060501d5-W11SearchCommandPrompt.png)
 
 Some of the difference in presentation is from searching with "Command"
-instead of "CMD" in the search field.  There the same options for pinning
+instead of "CMD" in the search field.  There are the same options for pinning
 Command Prompt as on Windows 10.
 
 ----
@@ -58,9 +58,9 @@ a list of Windows features options, including Command Prompt.
 
 ![Windows 10 Context Pop-Up](T060501d9-W10CMDWinX.png)
 
-If there is an option for PowerShell instead of Command Prompt as shown, turn
-off the Windows Settings | Personalization | Taskbar option to Replace Command
-Prompt.
+If there is an option for PowerShell instead of the Command Prompt option
+shown, turn off the option to Replace Command
+Prompt in Windows Settings | Personalization | Taskbar.
 
 ![Turned-off Command Prompt replacement](T060501d10-W10CMDdefault.png)
 
@@ -69,8 +69,8 @@ key+X.
 
 ### The Windows 11 Start Context (Win+X)
 
-Windows 11 replaces Windows 10 options for Command Prompt and PowerShell with
-context options for Windows Terminal.
+Windows 11 replaces the Windows 10 options for Command Prompt and PowerShell
+with context options for Windows Terminal.
 
 ![Windows 11 Context Pop-Up](T060501d1-W11TerminalOption.png)
 
@@ -80,7 +80,7 @@ on Windows 10.
 
 ![Default Terminal with PowerShell](T060501d2-W11TerminalDefaultPS.png)
 
-Command Prompt remains available using the "Open a new tab" pull-down of the
+Command Prompt remains available using the "Open a new tab" pull-down of an
 open Terminal.
 
 ![Choosing Command Prompt in Terminal](T060501d3-W11TerminalSelectCMD.png)
@@ -104,6 +104,7 @@ reported and addressed in the
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.3 2021-09-16T22:48Z Proof-reading touchups
      0.0.2 2021-09-16T22:24Z Full Draft on Windows 10/11
      0.0.1 2021-09-16T17:49Z Trial Top-banner introduction
      0.0.0 2021-09-16T02:01Z Create placeholder to morph into the
