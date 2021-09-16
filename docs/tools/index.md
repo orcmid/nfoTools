@@ -1,4 +1,4 @@
-<!-- index.md 0.0.4                 UTF-8                          2021-09-15
+<!-- index.md 0.0.5                 UTF-8                          2021-09-16
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                        NFOTOOLS TOOLCRAFT NOTEBOOK
@@ -17,9 +17,9 @@ To explore, construct, and extend nfoTools, facility with some available tools
 is essential.  That's where Toolcraft comes in.
 
 For nfoTools, the primary toolcraft consists of specialized techniques for
-development, maintenance, and use of Microsoft Windows on desktop personal
-computers.  Prerequisite tools are either present in Microsoft Windows or
-they are freely-available to download and install.
+development, maintenance, and use of Microsoft Windows app;ications on and for
+desktop personal computers.  Prerequisite tools are either present in
+Microsoft Windows or they are freely-available to download and install.
 
 For background on toolcraft, its benefits and dangers, see
 [The Craft in Toolcraft](https://orcmid.github.io/nfoTools/notes/N070801/).
@@ -29,6 +29,8 @@ For background on toolcraft, its benefits and dangers, see
 | **ID** | **Started** | **Status** | **Topic** |
 |   :-:   |   :-:   |  :-:   |  ---  |
 | [T060501](T060501) | 2006-05-20 | 0.0.9 2021-09-15 | Windows CMD Command-Line Environment |
+|                    |            |                  |          |
+| [T000000](T000000.html) | 2005-12-25 | 0.0.2 2021-09-16 | Diary & Job Jar |
 
 ----
 
@@ -40,6 +42,7 @@ reported and addressed in the
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.5 2021-09-16T16:41Z Reflect T000000 0.0.2
      0.0.4 2021-09-25T20:31Z Reflect T060501 0.0.9
      0.0.3 2021-09-12T19:17Z Link to N070801
      0.0.2 2021-09-07T00:17Z Add introductory statement
