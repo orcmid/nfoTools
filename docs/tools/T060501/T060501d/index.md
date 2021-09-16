@@ -5,9 +5,9 @@
 
      -->
 
-# T060501d
+# Selecting Command Prompt Operation
 
-| ![nfotools](../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | ***Selecting Command Prompt Operation*** | 0.0.1 2021-09-16 |
+| T060501d | ![nfotools](../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | 0.0.1 2021-09-16 |
 | :--                |       ---          | --: |
 
 ![Hard Hat Area](../../../images/hardhat-logo.gif)
@@ -23,7 +23,7 @@ reported and addressed in the
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-     0.0.1 2021-09-16T17:17Z Trial Top-banner introduction
+     0.0.1 2021-09-16T17:27Z Trial Top-banner introduction
      0.0.0 2021-09-16T02:01Z Create placeholder to morph into the
            necessary material
 
