@@ -1,4 +1,4 @@
-T060501d.txt 0.0.1                  UTF-8                       dh:2021-09-16
+T060501d.txt 0.0.2                  UTF-8                       dh:2021-09-16
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -54,17 +54,15 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. Selecting Command Prompt Operation.  nfoTools project
-   text file T060501d.txt version 0.0.1 dated 2021-09-16, available on the
+   text file T060501d.txt version 0.0.2 dated 2021-09-16, available on the
    Internet as a version of
    <https://orcmid.github.io/nfoTools/tools/T060501/T060501d/T060501d.txt>
 
 TODO
 
- * Provide Information on Locating and initiating CMD Command Prompt
-   operation.
+ * CMD shortcuts treatment goes on a different page.
 
- * Determine whether having CMD where you want it and making shortcuts goes
-   here or on a separate folio page.
+ * Navigation matters. Lead into that.
 
  * There is also launching a batch script
 
@@ -73,10 +71,24 @@ TODO
  * This applies to all character-mode apps (verify that) so some of it this
    is a broader skill for Windows fluency
 
- * Experiment with top-bar table layout for banners and footers of pages.
+ * Link to the T060501 page for another image of CMD initiation.
+
+ * Provide mouse tracks to T060501 and tools.
+
+ * Can the user folder be renamed and still work automatically?  I want to
+   know this so I can have nicer screen captures of CMD navigations.
+
+ * Move some of these to T060501.txt where they are applicable even though
+   experimentation is at T060501d.
+
+ * Figure out how to work progressive disclosure in between T060501 and
+   T060501d and other related pages.
+
+ * Try mousetracks/bread crumbs on index.md
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.2 2021-09-15T22.27Z More TODOs
  0.0.1 2021-09-16T17:18Z Manage TODOs
  0.0.0 2021-09-16T00:10Z Placeholder for providing HOWTO on finding and
        tying-down CMD.EXE.
