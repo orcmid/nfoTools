@@ -1,15 +1,17 @@
-<!-- index.md 0.0.0                 UTF-8                          2021-09-16
+<!-- index.md 0.0.1                 UTF-8                          2021-09-16
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                       SELECTING COMMAND PROMPT OPERATION
 
      -->
 
-# T060501d: Selecting Command Prompt Operation
+# T060501d
 
-![Hard Hat Area](../../images/hardhat-logo.gif)
+| ![nfotools](../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | ***Selecting Command Prompt Operation*** | 0.0.1 2021-09-16 |
+| :--                |       ---          | --: |
 
-                             \[ PLACEHOLDER \]
+![Hard Hat Area](../../../images/hardhat-logo.gif)
+
 
 ----
 
@@ -21,6 +23,7 @@ reported and addressed in the
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.1 2021-09-16T17:17Z Trial Top-banner introduction
      0.0.0 2021-09-16T02:01Z Create placeholder to morph into the
            necessary material
 
