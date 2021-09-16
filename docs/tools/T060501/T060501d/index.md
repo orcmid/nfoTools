@@ -7,8 +7,9 @@
 
 # Selecting Command Prompt Operation
 
-| T060501d | ![nfotools](../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | 0.0.1 2021-09-16 |
+| ***T060501d*** |  | ***0.0.1 2021-09-16*** |
 | :--                |       ---          | --: |
+|  | ![nfotools](../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | |
 
 ![Hard Hat Area](../../../images/hardhat-logo.gif)
 
