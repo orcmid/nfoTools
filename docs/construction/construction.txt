@@ -1,4 +1,4 @@
-construction.txt 0.0.0               UTF-8                      dh:2021-09-08
+construction.txt 0.0.1               UTF-8                      dh:2021-09-17
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -48,7 +48,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. nfoTools Documentation Construction Material.  nfoTools
-   project file construction.txt version 0.0.0 dated 2021-09-08, available
+   project file construction.txt version 0.0.1 dated 2021-09-17, available
    on the Internet as a version of
    <https://github.com/orcmid/construction/construction.txt>
 
@@ -76,10 +76,17 @@ TODO
  * Create experiments for the various layout challenges using the folios
    here.
 
+ * Use the dev/ statement of Discussion ... on all other Markdown including
+   here.
 
+ * Use the T060501d heading bar setup on all markdown pages other than the
+   front porch.
+
+ * Populate a construction catalog, maybe looking to docEng for more.
 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+  0.0.1 2021-09-17T19:55Z Manage TODOs
   0.0.0 2021-09-08T19:57Z Placeholder for the introduction of Construction
        folios.  No recursion involved.
 
