@@ -1,4 +1,4 @@
-<!-- index.md 0.0.6              UTF-8                          dh:2021-09-17
+<!-- index.md 0.0.7              UTF-8                          dh:2021-09-17
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
      -->
 
@@ -10,7 +10,7 @@
 
 [nfoTools](https://github.com/orcmid/nfoTools) is a collection of utilities
 and software components.  nfoTools are
-created in the open on [orcmid GitHub](https://github.org/orcmid/).
+created in the open on [orcmid GitHub](https://github.com/orcmid/).
 
 nfoTools tools are designed for use in composition of larger software projects
 for information-processing applications (and games of course).  nfoTools
@@ -26,12 +26,11 @@ seek to understand more about programming and the tacit understanding that
 experienced software developers rely upon. There are guard rails for
 crawling first, then walk, then run as much as desired.
 
-Progressive discloser is used to assist more-experienced
-visitors to quickly skip through details they already know.  Review of the
-basics is always at hand when useful along with links to more advanced cases.
+Progressive discloser is used. Skip through details already known.  Review of
+the basics when useful along with following links to more advanced cases.
 
 Emphasis is on development of software for Microsoft Windows and using
-Microsoft Windows desktop tools as instruments of such efforts.  Only
+Microsoft Windows PC desktop tools as instruments of such efforts.  Only
 freely-available tools are required in addition to a Windows PC or laptop.
 The working language is English.
 
@@ -48,7 +47,16 @@ The nfoTools web is organized in topical sections.
 | | |
 | [construction](construction/) | nfoTools Web Construction Materials |
 
+I invite discussion about these tool in the
+[Discussion section](https://github.com/orcmid/nfoTools/discussions).
+Improvements and removal of defects in this particular documentation can be
+reported and addressed in the
+[Issues section](https://github.com/orcmid/nfoTools/issues).  There are also
+relevant [projects](https://github.com/orcmid/nfoTools/projects) from time to
+time.
+
 <!--
+      0.0.7 2021-09-17T19:41Z Smoothing, verifying links
       0.0.6 2021-09-17T18:34Z Add Banner, TOC, and smooth the material
       0.0.5 2021-08-30T18:59Z add ruler
       0.0.4 2021-08-29T20:16Z add the bits-welding logo from nfoWorks
