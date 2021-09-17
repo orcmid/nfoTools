@@ -1,36 +1,55 @@
-<!-- index.md 0.0.5              UTF-8                          dh:2021-08-30
+<!-- index.md 0.0.6              UTF-8                          dh:2021-09-17
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
      -->
 
 # Welcome to nfoTools
 
-![welding bits](images/nfoWorks-2014-06-02-1638-LogoLarge.png)
+| ***[nfoTools](index.html)*** | Work-in-Progress | ***0.0.6 2021-09-17*** |
+| :--                |       :-:          | --: |
+| | ![Welding nfoTools](https://orcmid.github.io/images/nfoWorks-2014-06-02-1638-LogoLarge.png) | |
 
-nfoTools is a collection of utilities and software components.  The
-tools are designed for use in composition of larger software projects
+[nfoTools](https://github.com/orcmid/nfoTools) is a collection of utilities
+and software components.  nfoTools are
+created in the open on [orcmid GitHub](https://github.org/orcmid/).
+
+nfoTools tools are designed for use in composition of larger software projects
 for information-processing applications (and games of course).  nfoTools
 can apply anywhere in the complete learning-and-improvement lifecycle of
 software projects.
 
-nfoTools includes a Toolcraft on-ramp that supports beginners who want
-to understand more about programming and the tacit understanding that
-experienced software developers have achieved.  Crawl first, then walk,
-then run.
+nfoTools are developed and demonstrated using small mini-projects that are
+carried out in the GitHub repository and also documented here at
+[nfoTools dev](dev/).
 
-Progressive discloser is used in a way that allows more-experienced
-visitors to quickly skip over details they already know.  Review of the
-basics is always at hand as needed.
+nfoTools includes a [Toolcraft](tools/) on-ramp that supports beginners who
+seek to understand more about programming and the tacit understanding that
+experienced software developers rely upon. There are guard rails for
+crawling first, then walk, then run as much as desired.
+
+Progressive discloser is used to assist more-experienced
+visitors to quickly skip through details they already know.  Review of the
+basics is always at hand when useful along with links to more advanced cases.
 
 Emphasis is on development of software for Microsoft Windows and using
 Microsoft Windows desktop tools as instruments of such efforts.  Only
 freely-available tools are required in addition to a Windows PC or laptop.
-The working language is English. This is how the author is equipped.
+The working language is English.
 
-While nfoTools are useful independently, they are chosen and developed
-first in service of specific software efforts originally housed on
-nfoWare.com, nfoWorks.org, and more-recent efforts now on GitHub.
+## nfoTools Table of Content
 
-<!--  0.0.5 2021-08-30T18:59Z add ruler
+The nfoTools web is organized in topical sections.
+
+| **Section** |  **General Topic** |
+|   :-:       |  ---               |
+| [dev](dev/) | nfoTools Development |
+| [notes](notes/) | Essays and Discussion on General Topics |
+| [skills](skills/) | Covering General IT Fluency applicable for nfoTools |
+| [tools](tools/) | Toolcraft Prerequisites for Using and Developing with nfoTools ||          |                  |
+| [construction](construction/) | nfoTools Web Construction Materials |
+
+<!--
+      0.0.6 2021-09-17T18:14Z Add Banner, TOC, and smooth the material
+      0.0.5 2021-08-30T18:59Z add ruler
       0.0.4 2021-08-29T20:16Z add the bits-welding logo from nfoWorks
       0.0.3 2021-08-29T17:02Z put up an informative welcome
       0.0.2 2021-02-07T18:03Z get the formatting I want
