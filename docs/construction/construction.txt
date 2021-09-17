@@ -76,9 +76,6 @@ TODO
  * Create experiments for the various layout challenges using the folios
    here.
 
- * Use the dev/ statement of Discussion ... on all other Markdown including
-   here.
-
  * Use the T060501d heading bar setup on all markdown pages other than the
    front porch.
 
@@ -86,6 +83,7 @@ TODO
 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+  0.0.2 2021-09-17T20:25Z Discussion invitations propogated
   0.0.1 2021-09-17T19:55Z Manage TODOs
   0.0.0 2021-09-08T19:57Z Placeholder for the introduction of Construction
        folios.  No recursion involved.

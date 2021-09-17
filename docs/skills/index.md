@@ -1,4 +1,4 @@
-<!-- index.md 0.0.0                 UTF-8                          2021-09-01
+<!-- index.md 0.0.1                 UTF-8                          2021-09-17
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                        NFOTOOLS TACIT-SKILLS NOTEBOOK
@@ -40,8 +40,19 @@ reported and addressed in the
 |   :-:   |   :-:   |  :-:   |  ---  |
 | _short-cut_ | _date_ | _semver date_ | _Short topic_ |
 
+----
+
+Discussion about nfoTools is welcome at the
+[Discussion section](https://github.com/orcmid/nfoTools/discussions).
+Improvements and removal of defects in this particular documentation can be
+reported and addressed in the
+[Issues section](https://github.com/orcmid/nfoTools/issues).  There are also
+relevant [projects](https://github.com/orcmid/nfoTools/projects) from time to
+time.
+
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.1 2021-09-17T20:14Z Add Discussion invitation
      0.0.0 2021-09-01T21:28Z Initial Introduction and empty Catalog
 
                *** end of docs/skills/index.md ***

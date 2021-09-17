@@ -1,4 +1,4 @@
-<!-- index.md 0.0.3                 UTF-8                          2021-09-05
+<!-- index.md 0.0.4                 UTF-8                          2021-09-17
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                  N210901: TACIT KNOWLEDGE AND THE BEGINNER MIND
@@ -139,6 +139,7 @@ of these and indicate where to investigate further.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.4 2021-09-17T20:12Z Add Discussion invitation
      0.0.3 2021-09-05T17:22Z More touch-ups
      0.0.2 2021-09-04T20:11Z Touched up, with a sigh of relief that I had not
            lost the earlier draft, simply forgot where I put it.

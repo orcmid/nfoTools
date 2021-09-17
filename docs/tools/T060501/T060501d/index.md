@@ -1,4 +1,4 @@
-<!-- index.md 0.0.2                 UTF-8                          2021-09-16
+<!-- index.md 0.0.3                 UTF-8                          2021-09-17
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                       SELECTING COMMAND PROMPT OPERATION
@@ -96,14 +96,17 @@ different locations and with other options.
 
 ----
 
-Discussion about these tools and the emphasized toolcraft are invited in the
-nfoTools [Discussion section](https://github.com/orcmid/nfoTools/discussions).
+Discussion about nfoTools is welcome at the
+[Discussion section](https://github.com/orcmid/nfoTools/discussions).
 Improvements and removal of defects in this particular documentation can be
 reported and addressed in the
-[Issues section](https://github.com/orcmid/nfoTools/issues).
+[Issues section](https://github.com/orcmid/nfoTools/issues).  There are also
+relevant [projects](https://github.com/orcmid/nfoTools/projects) from time to
+time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.4 2021-09-17T20:16Z Update Discussion invitation
      0.0.3 2021-09-16T22:48Z Proof-reading touchups
      0.0.2 2021-09-16T22:24Z Full Draft on Windows 10/11
      0.0.1 2021-09-16T17:49Z Trial Top-banner introduction

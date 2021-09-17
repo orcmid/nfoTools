@@ -1,4 +1,4 @@
-<!-- index.md 0.0.12                UTF-8                          2021-09-16
+<!-- index.md 0.0.13                UTF-8                          2021-09-17
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                     WINDOWS CMD COMMAND-LINE ENVIRONMENT
@@ -34,14 +34,6 @@ There is no intention to duplicate the extensive Microsoft and MSDN materials
 that are freely available on this topic. Sources of additional materials are
 identified.
 
-----
-
-Discussion about these tools and the emphasized toolcraft are invited in the
-nfoTools [Discussion section](https://github.com/orcmid/nfoTools/discussions).
-Improvements and removal of defects in this particular documentation can be
-reported and addressed in the
-[Issues section](https://github.com/orcmid/nfoTools/issues).
-
 ## Available Materials
 
 | **ID** | **Started** | **Status** | **Topic** |
@@ -51,8 +43,19 @@ reported and addressed in the
 |                           |            |                   |           |
 | [T060501a](T060501a.html) | 2006-05-21 | 0.0.3 2021-09-15 | Diary \& Job Jar |
 
+----
+
+Discussion about nfoTools is welcome at the
+[Discussion section](https://github.com/orcmid/nfoTools/discussions).
+Improvements and removal of defects in this particular documentation can be
+reported and addressed in the
+[Issues section](https://github.com/orcmid/nfoTools/issues).  There are also
+relevant [projects](https://github.com/orcmid/nfoTools/projects) from time to
+time.
+
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.13 2021-09-17T20:21Z Update Discussion invitation
      0.0.12 2021-09-16T22:50Z Reflect T060501d 0.0.3
      0.0.11 2021-09-16T22:29Z Reflect T060501d 0.0.2
      0.0.10 2021-09-16T02:08Z Add T060501d 0.0.0

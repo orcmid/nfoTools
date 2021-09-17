@@ -1,4 +1,4 @@
-<!-- index.md 0.0.2                 UTF-8                          2021-09-14
+<!-- index.md 0.0.3                 UTF-8                          2021-09-17
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                         NFOTOOLS DEVELOPMENT NOTES
@@ -12,7 +12,7 @@ nfoTools [dev notes](.) are provided in documentation support of individual
 development efforts within the GitHub nfoTools project.  These are about the
 construction of individual tools, their distribution, and demonstration.
 
-I invite discussion about these tool in the
+Discussion about nfoTools is welcome at the
 [Discussion section](https://github.com/orcmid/nfoTools/discussions).
 Improvements and removal of defects in this particular documentation can be
 reported and addressed in the
@@ -29,6 +29,7 @@ time.
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
+     0.0.3 2021-09-17T20:02Z Improve Discussion invitation
      0.0.2 2021-09-14T00:51Z D161101 0.1.11
      0.0.1 2021-09-03T21:48Z Catalog D161101
      0.0.0 2021-09-03T19:11Z Placehoder Hardhat Image and empty Catalog

@@ -1,4 +1,4 @@
-<!-- index.md 0.1.11                UTF-8                          2021-09-14
+<!-- index.md 0.1.12                UTF-8                          2021-09-17
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                    VCBIND: VC/VC++ COMMAND-LINE SETUP SCRIPT
@@ -51,8 +51,19 @@ custom purposes.
 |                       |            |                  |     |
 | [D161101a](D161101a.html) | 2016-11-12 | 0.0.1 2021-09-11 | Diary and Job Jar |
 
+----
+
+Discussion about nfoTools is welcome at the
+[Discussion section](https://github.com/orcmid/nfoTools/discussions).
+Improvements and removal of defects in this particular documentation can be
+reported and addressed in the
+[Issues section](https://github.com/orcmid/nfoTools/issues).  There are also
+relevant [projects](https://github.com/orcmid/nfoTools/projects) from time to
+time.
+
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.1.12 2021-09-17T20:08Z Add Discussion invitation
      0.1.11 2021-09-14T00:49Z D161101c 0.0.6
      0.1.10 2021-09-14T00:14Z D161101c 0.0.5
      0.1.9 2021-09-13T18:21Z Update D161101c version

@@ -1,4 +1,4 @@
-<!-- index.md 0.0.2                 UTF-8                          2021-09-08
+<!-- index.md 0.0.3                 UTF-8                          2021-09-17
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                  N070801: THE CRAFT IN TOOLCRAFT
@@ -74,8 +74,19 @@ Victoria and Albert Museum (web site).  What Is Craft?  Available at
 [broken link](http://www.vam.ac.uk/collections/contemporary/crafts/what_is_craft/)
 Accessed 2007-08-29.
 
+----
+
+Discussion about nfoTools is welcome at the
+[Discussion section](https://github.com/orcmid/nfoTools/discussions).
+Improvements and removal of defects in this particular documentation can be
+reported and addressed in the
+[Issues section](https://github.com/orcmid/nfoTools/issues).  There are also
+relevant [projects](https://github.com/orcmid/nfoTools/projects) from time to
+time.
+
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.3 2021-09-17T20:10Z Add Discussion invitation
      0.0.2 2021-09-08T00:51Z Touch-up
      0.0.1 2021-09-07T22:08Z Clone and adapt nfoWare/tools/2007/08/T070801.htm
      0.0.0 2006-08-29T23:56 Bootstrap placeholder to morph into the

@@ -1,4 +1,4 @@
-<!-- index.md 0.0.5                 UTF-8                          2021-09-16
+<!-- index.md 0.0.6                 UTF-8                          2021-09-17
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                        NFOTOOLS TOOLCRAFT NOTEBOOK
@@ -34,14 +34,17 @@ For background on toolcraft, its benefits and dangers, see
 
 ----
 
-I invite discussion about these tools and the emphasized toolcraft in the
-[nfoTools Discussion section](https://github.com/orcmid/nfoTools/discussions).
+Discussion about nfoTools is welcome at the
+[Discussion section](https://github.com/orcmid/nfoTools/discussions).
 Improvements and removal of defects in this particular documentation can be
 reported and addressed in the
-[nfoTools Issues section](https://github.com/orcmid/nfoTools/issues).
+[Issues section](https://github.com/orcmid/nfoTools/issues).  There are also
+relevant [projects](https://github.com/orcmid/nfoTools/projects) from time to
+time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.6 2021-09-17T20:23Z Update Discussion invitation
      0.0.5 2021-09-16T16:41Z Reflect T000000 0.0.2
      0.0.4 2021-09-25T20:31Z Reflect T060501 0.0.9
      0.0.3 2021-09-12T19:17Z Link to N070801

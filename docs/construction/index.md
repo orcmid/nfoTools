@@ -1,4 +1,4 @@
-<!-- index.md 0.0.0                 UTF-8                          2021-09-08
+<!-- index.md 0.0.1                 UTF-8                          2021-09-17
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                  NFOTOOLS DOCUMENTATION CONSTRUCTION MATERIAL
@@ -23,7 +23,7 @@ caffolding for the Construction Material itself.
 
 ----
 
-I invite discussion about the construction material and approach in the
+Discussion about nfoTools is welcome at the
 [Discussion section](https://github.com/orcmid/nfoTools/discussions).
 Improvements and removal of defects in this particular documentation can be
 reported and addressed in the
@@ -34,6 +34,7 @@ time.
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
+     0.0.1 2021-09-17T20:04Z Improved Discussion invitation
      0.0.0 2021-09-08T20:12Z Placeholder Hardhat Image and empty Catalog
 
                 *** end of docs/construction/index.md ***

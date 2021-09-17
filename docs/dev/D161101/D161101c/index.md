@@ -1,4 +1,4 @@
-<!-- index.md 0.0.6                 UTF-8                          2021-09-14
+<!-- index.md 0.0.7                 UTF-8                          2021-09-17
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                      VCBIND 0.1.0 RELEASE (PRESERVATION)
@@ -85,8 +85,19 @@ To replicate the signature verifications, obtain the signer's public key with
 fingerprint `04D0 4322 979B 84DE 1077  0334 F96E 89FF D456 628A`.  That can
 be downloaded at [Apache Key for Orcmid](http://people.apache.org/keys/committer/orcmid.asc).
 
+----
+
+Discussion about nfoTools is welcome at the
+[Discussion section](https://github.com/orcmid/nfoTools/discussions).
+Improvements and removal of defects in this particular documentation can be
+reported and addressed in the
+[Issues section](https://github.com/orcmid/nfoTools/issues).  There are also
+relevant [projects](https://github.com/orcmid/nfoTools/projects) from time to
+time.
+
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.7 2021-09-17T20:06Z Add Discussion invitation
      0.0.6 2021-09-14T00:48Z Touch-ups
      0.0.5 2021-09-14T00:16Z Demonstrate verifications
      0.0.4 2021-09-13T11:18Z Touch-ups on intended usage
