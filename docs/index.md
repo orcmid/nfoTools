@@ -6,7 +6,7 @@
 
 | ***[nfoTools](index.html)*** | Work-in-Progress | ***0.0.6 2021-09-17*** |
 | :--                |       :-:          | --: |
-| | ![Welding nfoTools](https://orcmid.github.io/images/nfoWorks-2014-06-02-1638-LogoLarge.png) | |
+| | ![Welding nfoTools](images/nfoWorks-2014-06-02-1638-LogoLarge.png) | |
 
 [nfoTools](https://github.com/orcmid/nfoTools) is a collection of utilities
 and software components.  nfoTools are
@@ -40,15 +40,16 @@ The working language is English.
 The nfoTools web is organized in topical sections.
 
 | **Section** |  **General Topic** |
-|   :-:       |  ---               |
+|   --:       |  ---               |
 | [dev](dev/) | nfoTools Development |
 | [notes](notes/) | Essays and Discussion on General Topics |
 | [skills](skills/) | Covering General IT Fluency applicable for nfoTools |
-| [tools](tools/) | Toolcraft Prerequisites for Using and Developing with nfoTools ||          |                  |
+| [tools](tools/) | Toolcraft Prerequisites for Using and Developing with nfoTools |
+| | |
 | [construction](construction/) | nfoTools Web Construction Materials |
 
 <!--
-      0.0.6 2021-09-17T18:14Z Add Banner, TOC, and smooth the material
+      0.0.6 2021-09-17T18:34Z Add Banner, TOC, and smooth the material
       0.0.5 2021-08-30T18:59Z add ruler
       0.0.4 2021-08-29T20:16Z add the bits-welding logo from nfoWorks
       0.0.3 2021-08-29T17:02Z put up an informative welcome
