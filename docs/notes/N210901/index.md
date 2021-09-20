@@ -1,4 +1,4 @@
-<!-- index.md 0.0.4                 UTF-8                          2021-09-17
+<!-- index.md 0.0.5                 UTF-8                          2021-09-20
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                  N210901: TACIT KNOWLEDGE AND THE BEGINNER MIND
@@ -86,7 +86,7 @@ When I see courses or projects that are invitations to beginners, I tend to
 bring what I call my beginner mind to it.  I want to see how instruction is
 done in my field, and I want to see how learning is fostered thereby.  I
 look from the perspective of not knowing it already, although I am able to
-notice deficiencies and understand what is omitted because I am experienced.
+notice deficiencies and understand what is omitted because I _am_ experienced.
 The trick is for me to let my beginner mind appraise the unsaid, relying on my
 expertise to then understand the missing connections of the skimpy dots.
 
@@ -98,47 +98,43 @@ more lately.
 
 I want any project of mine to provide a meaningful on-ramp for engagement of
 curious novices.  The [skills section](../../skills) of ***nfoTools***
-documentation is devoted to unconcealing of tacit knowledge, making the
-tacitly-overlooked prerequisites explicit.
+documentation is devoted to unconcealing of tacit knowledge involved in
+fluency with computers generally, making the tacitly-overlooked prerequisites
+for use of a PC explicit.  Specific, narrower toolcraft needed to engage with
+nfoTools at a technical level is addressed in the
+[tools section](../../tools).
 
-I cannot cover all of the cases with anything in depth.  I propose to identify
-the various skills that software developers master and articulate the tacit
-understanding enough that it can be pursued further by the curious and
-patient.
-
-I desire that other experts and near-experts consider how they can capture
-their own tacit understandings and add some hospitality for eager newcomers.
+Experts and near-experts might consider from these efforts how they can
+capture their own tacit understandings and add some hospitality for eager
+newcomers.
 
 ## The Opportunity of Broadening Context
 
-There is a new kind of opportunity here.  There is much usually-invisible
-technology underneath the computer interactions we have.  There are
-alternative cases that we tend to be ignorant about.  In seeing what is
-tacit for us, perhaps we can then embrace the variety that is otherwise
-invisible as well and serve others better.  There are also contexts that
-we tend to ignore.
+Tacit understanding undermines our awareness of alternative and different
+arrangements that are also worthy of attention.  Seeing what is tacit for us,
+becoming self-conscious about it, provides an opening for identification and
+distinction of cases that remain invisible otherwise.
 
 There are many examples of this situation, from assuming that everyone is
-comfortable with English, to knowledge that our favorite ASCII-inspired
-keyboards are not universal and some viewers of software displays may be
-color-blind or vulnerable to seizures.  There are also the biases about
-the nature, capabilities and interests of others being the same as ours.
+comfortable with English, to recognizing that our favorite ASCII-inspired
+keyboards are not universal and there are more devices and character codings
+than the ones we see individually in common use.  Recognize from there how
+to introduce greater adaptivity in what we produce and how we present it.
 
-At some point in the development of software
-fluency, there comes the opportunity to understand that not everyone is in
-the same situation and there is a much broader context for the application
-of computers, development of software for them, and the development of skills
-and tools that are applicable.
-
-There is also opportunity to have some grasp over how the underlying
+There is also opportunity to gain some mastery over how the underlying
 technology is not wedded literally to what we perceive as its surface
 functionality.  This is an area of engineering success, right down to the
-electronic "bits" that can be appreciated and also can be mastered by some
-who are enthralled enough by it.  The [skills section](../../skills) may hint
-of these and indicate where to investigate further.
+electronic "bits," that can be appreciated and also conquered by those
+enthralled enough about it.
+
+In such ways, distinction of tacitness provides an opportunity to discern even
+greater reach in approaches to our work.
+
+                                    -- Dennis Hamilton, 2021-09-20
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.5 2021-09-29T21:46Z Rework the text, make the opportunity sharper?
      0.0.4 2021-09-17T20:12Z Add Discussion invitation
      0.0.3 2021-09-05T17:22Z More touch-ups
      0.0.2 2021-09-04T20:11Z Touched up, with a sigh of relief that I had not
