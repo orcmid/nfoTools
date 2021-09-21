@@ -1,10 +1,10 @@
-<!-- index.md 0.0.7              UTF-8                          dh:2021-09-17
+<!-- index.md 0.0.8              UTF-8                          dh:2021-09-21
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
      -->
 
 # Welcome to nfoTools
 
-| ***[nfoTools](index.html)*** | Work-in-Progress | ***0.0.6 2021-09-17*** |
+| ***[nfoTools](index.html)*** | Work-in-Progress | ***0.0.8 2021-09-21*** |
 | :--                |       :-:          | --: |
 | | ![Welding nfoTools](images/nfoWorks-2014-06-02-1638-LogoLarge.png) | |
 
@@ -19,7 +19,8 @@ software projects.
 
 nfoTools are developed and demonstrated using small mini-projects that are
 carried out in the GitHub repository and also documented here at
-[nfoTools dev](dev/).
+[nfoTools dev](dev/).  [Games](games) are employed for many developments and
+the play of games and gaming has an exalted place here.
 
 nfoTools includes a [Toolcraft](tools/) on-ramp that supports beginners who
 seek to understand more about programming and the tacit understanding that
@@ -41,6 +42,7 @@ The nfoTools web is organized in topical sections.
 | **Section** |  **General Topic** |
 |   --:       |  ---               |
 | [dev](dev/) | nfoTools Development |
+| [games](games) | Games and gaming, a major theme |
 | [notes](notes/) | Essays and Discussion on General Topics |
 | [skills](skills/) | Covering General IT Fluency applicable for nfoTools |
 | [tools](tools/) | Toolcraft Prerequisites for Using and Developing with nfoTools |
@@ -56,6 +58,7 @@ relevant [projects](https://github.com/orcmid/nfoTools/projects) from time to
 time.
 
 <!--
+      0.0.8 2021-09-21T16:51Z Welcoming games
       0.0.7 2021-09-17T19:41Z Smoothing, verifying links
       0.0.6 2021-09-17T18:34Z Add Banner, TOC, and smooth the material
       0.0.5 2021-08-30T18:59Z add ruler

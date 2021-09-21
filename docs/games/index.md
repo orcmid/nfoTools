@@ -16,14 +16,15 @@ This section is here because looking for games should be rewarded right up
 front.
 
 Truth be told, games are an important feature of recreational- and
-indy-programming.
+indy-programming.  The simplicity is a feature for sharpening of programming
+skills and creeping up on Software Engineering for Everyone (SE4E).
 
 
 ## Catalog
 
 | **ID** | **Started** | **Status** | **Topic** |
 |   :-:   |   :-:   |  :-:   |  ---  |
-| Gyymmnn | soon } 0.0.0 then | Whatever rocks games |
+| Gyymmnn | soon | 0.0.? then | Whatever rocks games |
 
 Discussion about nfoTools is welcome at the
 [Discussion section](https://github.com/orcmid/nfoTools/discussions).
@@ -35,6 +36,7 @@ time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.1 2021-09-21T16:43Z Touch-ups
      0.0.0 2021-09-21T15:55Z Placehoder Chess King, Hardhat Images and empty
            Catalog
 

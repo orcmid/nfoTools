@@ -1,4 +1,4 @@
-images.txt 0.0.2                     UTF-8                      dh:2021-09-02
+images.txt 0.0.4                     UTF-8                      dh:2021-09-21
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                             nfoWare/nfoWorks nfoTools
@@ -36,7 +36,8 @@ MANIFEST
     B040801B2-policecar.gif       Used for nothing-to-see-here when I had to
     B040801B3-policeofficer.gif   worry about blog crashes and firedrills
 
-
+    F56xx02-ChessPlayerDrawing.vsdx     preserved source
+    F56xx02=ChessPlayer-logo.png        the ChessKing player of games
 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -59,7 +60,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. nfoTools Documentation-Authoring Common Images.
-   nfoTools project text file images.txt version 0.0.2 dated 2021-09-02,
+   nfoTools project text file images.txt version 0.0.4 dated 2021-09-21,
    available on the Internet as a version of
    <https://github.com/orcmid/nfoTools/blob/master/docs/images/images.txt>
 
@@ -73,6 +74,7 @@ TODO
 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.4 2021-09-21T17:00Z Add ChessKing for games
  0.0.3 2021-09-02T19:41Z Add fire-drill and failure images
  0.0.2 2021-09-02T17:00Z Add attribution out of consistency, manage TODOs
  0.0.1 2021-08-30T19:00Z Add ruler
