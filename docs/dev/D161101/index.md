@@ -1,10 +1,14 @@
-<!-- index.md 0.1.12                UTF-8                          2021-09-17
+<!-- index.md 0.1.13                UTF-8                          2021-09-20
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                    VCBIND: VC/VC++ COMMAND-LINE SETUP SCRIPT
      -->
 
 # ***VCbind** VC/VC++ Command-Line Setup Script*
+
+| ***[D161101](index.html)*** | [dev]()../)[>D161101](.) | ***0.1.14 2021-09-20*** |
+| :--                |       :-:          | --: |
+| ![nfotools](../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../../images/hardhat-logo.gif) |
 
 ***VCbind*** consists of a Zip package that can be included in a software
 construction set to simplify command-line compiling of C/C++ language programs
@@ -47,9 +51,9 @@ custom purposes.
 
 | **ID** | **Started** | **Status** | **Topic** |
 |   :-:   |   :-:   |  :-:   |  ---  |
-| [D161101c](D161101c/) | 2016-11-25 | 0.0.6 2021-09-14 | VCbind 0.1.0 Release (Preservation) |
+| [D161101c](D161101c/) | 2016-11-25 | 0.0.7 2021-09-20 | VCbind 0.1.0 Release (Preservation) |
 |                       |            |                  |     |
-| [D161101a](D161101a.html) | 2016-11-12 | 0.0.1 2021-09-11 | Diary and Job Jar |
+| [D161101a](D161101a.html) | 2016-11-12 | 0.0.2 2021-09-20 | Diary and Job Jar |
 
 ----
 
@@ -63,6 +67,7 @@ time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.1.13 2021-09-17T22:45Z Add top banner, reflect D161101c, D161101a
      0.1.12 2021-09-17T20:08Z Add Discussion invitation
      0.1.11 2021-09-14T00:49Z D161101c 0.0.6
      0.1.10 2021-09-14T00:14Z D161101c 0.0.5

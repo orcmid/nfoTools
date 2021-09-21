@@ -1,10 +1,14 @@
-<!-- index.md 0.0.1                 UTF-8                          2021-09-17
+<!-- index.md 0.0.2                 UTF-8                          2021-09-20
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                        NFOTOOLS TACIT-SKILLS NOTEBOOK
      -->
 
 # ***nfoTools** Tacit-Skills Notebook*
+
+| ***[skills](.)*** | [skills](.) | ***0.0.2 2021-09-20*** |
+| :--                |       :-:          | --: |
+| ![nfotools](../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../images/hardhat-logo.gif) |
 
 This topic is for identification of the various skills that software
 developers master before those skills become tacit abilities and invisible
@@ -27,13 +31,6 @@ There's no escaping skill prerequisites.  Understanding what they are
 may be helpful for preparation and development by the curious and patient.
 Some can be practiced and exercised along with making software.
 
-I invite discussion about all such skills, their development, and available
-resources in the GitHub nfoTools project
-[Discussion section](https://github.com/orcmid/nfoTools/discussions).
-Improvements and removal of defects in this particular documentation can be
-reported and addressed in the
-[Issues section](https://github.com/orcmid/nfoTools/issues).
-
 ## Catalog
 
 | **ID** | **Started** | **Status** | **Topic** |
@@ -52,6 +49,7 @@ time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.2 2021-09-20T23:37 Add top banner, cleanup
      0.0.1 2021-09-17T20:14Z Add Discussion invitation
      0.0.0 2021-09-01T21:28Z Initial Introduction and empty Catalog
 

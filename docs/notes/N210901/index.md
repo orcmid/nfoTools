@@ -1,10 +1,14 @@
-<!-- index.md 0.0.5                 UTF-8                          2021-09-20
+<!-- index.md 0.0.6                 UTF-8                          2021-09-20
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                  N210901: TACIT KNOWLEDGE AND THE BEGINNER MIND
      -->
 
 # ***N210901:** Essay: Tacit Knowledge and the Beginner Mind*
+
+| ***[N210901](.)*** | [notes](../)[>N210901](.) | ***0.0.6 2021-09-20*** |
+| :--                |       :-:          | --: |
+| ![nfotools](../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../../images/hardhat-logo.gif) |
 
 ## Skills: The Importance of What We Know and Forgot We Learned It
 
@@ -132,9 +136,20 @@ greater reach in approaches to our work.
 
                                     -- Dennis Hamilton, 2021-09-20
 
+----
+
+Discussion about nfoTools is welcome at the
+[Discussion section](https://github.com/orcmid/nfoTools/discussions).
+Improvements and removal of defects in this particular documentation can be
+reported and addressed in the
+[Issues section](https://github.com/orcmid/nfoTools/issues).  There are also
+relevant [projects](https://github.com/orcmid/nfoTools/projects) from time to
+time.
+
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-     0.0.5 2021-09-29T21:46Z Rework the text, make the opportunity sharper?
+     0.0.6 2021-09-20T23:27Z Add top banner and Discussion footer
+     0.0.5 2021-09-20T21:46Z Rework the text, make the opportunity sharper?
      0.0.4 2021-09-17T20:12Z Add Discussion invitation
      0.0.3 2021-09-05T17:22Z More touch-ups
      0.0.2 2021-09-04T20:11Z Touched up, with a sigh of relief that I had not

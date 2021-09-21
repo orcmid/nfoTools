@@ -1,10 +1,14 @@
-<!-- index.md 0.0.7                 UTF-8                          2021-09-17
+<!-- index.md 0.0.8                 UTF-8                          2021-09-20
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                      VCBIND 0.1.0 RELEASE (PRESERVATION)
      -->
 
 # ***VCbind** 0.1.0 Release (Preservation)*
+
+| ***[D161101c](index.html)*** | [dev](../../)[>D161101](../)[>D161101c](.) | ***0.0.7 2021-09-20*** |
+| :--                |       :-:          | --: |
+| ![nfotools](../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../../../images/hardhat-logo.gif) |
 
 VCbind 0.1.0 was released on 2016-11-25 at
 [nfoWare d161101c](https://nfoware.com/dev/2016/11/d161101c.htm).  That
@@ -97,6 +101,7 @@ time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.8 2021-09-20T22:34Z Add Top Banner
      0.0.7 2021-09-17T20:06Z Add Discussion invitation
      0.0.6 2021-09-14T00:48Z Touch-ups
      0.0.5 2021-09-14T00:16Z Demonstrate verifications
