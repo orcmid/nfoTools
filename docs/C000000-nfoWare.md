@@ -1,4 +1,4 @@
-<!-- C000000-nfoWare.md 0.0.3       UTF-8                          2021-09-22
+<!-- C000000-nfoWare.md 0.0.4      UTF-8                          2021-09-22
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                     NFOWARE CONSTRUCTION ZONE (SALVAGE)
@@ -37,8 +37,8 @@ deleted as part of Git change commits.
 | | 2013-11-04 | trust/ Complete repaving of the construction structure, consult Toolcraft for boilerplate |
 | | 2013-11-04 | toolcraft/ Complete repaving of the construction structure and manage content development and repaving there, consult Toolcraft for boilerplate |
 | | 2013-11-04 | text/ Complete repaving of the construction structure, consult Toolcraft for boilerplate |
-| | 2013-11-04	projects/ Complete repaving of the construction structure and manage content development and repaving there, consult Toolcraft for boilerplate |
-| | 2013-11-04	meaning/ Complete repaving of the construction structure, consult Toolcraft for boilerplate |
+| | 2013-11-04 | projects/ Complete repaving of the construction structure and manage content development and repaving there, consult Toolcraft for boilerplate |
+| | 2013-11-04 | meaning/ Complete repaving of the construction structure, consult Toolcraft for boilerplate |
 | | 2013-11-04 | images/ Complete repaving of the construction structure, consult Toolcraft for boilerplate |
 | | 2013-11-04 | glossary/ Complete repaving of the construction structure, consult Toolcraft for boilerplate |
 | | 2013-11-04 | dev/ Complete repaving of the construction structure and manage content development and any repaving there, consult Toolcraft for boilerplate |
@@ -71,7 +71,7 @@ deleted as part of Git change commits.
 | | 2004-01-08 | I will be referring to Readings and Bibliographies in Orcmid's Lair and elsewhere.  I need to have those pages retrofit to the current nfoCentrale construction styles and practices as being exhibited and updated here. |
 | | 2004-01-08 | I have a simple basis for Notes here.  Retrofit this to the Notes on Miser-theory where this came from. |
 | | 2004-01-07 | I am writing this here because it is the page I am looking at.  I guess I could have used my notebook, but here I am.  There are topics such as Web and CD-ROM that fit into the electronic publishing that dmWare is.  More to list somewhere. |
-| | 2004-01-07	Will we take on OHS here?  How do we keep this straight separate from Situating XML and also getting into higher levels, such as Situating Documents (which I am willing to do as part of Situating Data just to be ornery).  This can fit into the spiral plan (oh, wow) and it does raise some questions about complete cuts of the dmWare CD as a companion to print versions and as an orderable unit from the web site. |
+| | 2004-01-07 | Will we take on OHS here?  How do we keep this straight separate from Situating XML and also getting into higher levels, such as Situating Documents (which I am willing to do as part of Situating Data just to be ornery).  This can fit into the spiral plan (oh, wow) and it does raise some questions about complete cuts of the dmWare CD as a companion to print versions and as an orderable unit from the web site. |
 | | 2004-01-07 | Use the Manning eBook I have to walk myself through the familiarization with .NET and the basic concepts |
 | | 2004-01-07 | Install .NET SDK on Compagno in preparation for being able to develop .NET elements for nfoWare. \[dh:2012-12-31 I am not certain that I want to do this.  There are interoperability and platform-portability considerations, but I am not at all clear when those arise and how they will be dealt with.  There is also JavaScript to consider now, and the JavaScript use of native libraries too.  In any case, Compagno is the wrong place.\] |
 | | 2004-01-02 | Since I will be doing open source, how about creating a license that I can name and create a SourceForge project for nfoWare. \[dh:2012-12-31 There will be Apache ALv2 and the development of tools will probably be under nfoWorks.\]\[dh:2016-11-02 ALv2 is the license of choice and GitHub is now the preferred location for projects, unless I choose to use Git.  It appears that I can have multiple Git repositories under a single SourceForge project.  That might be useful.\] |
@@ -92,6 +92,7 @@ time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.4 2021-09-22T22:42Z Fence corrections
      0.0.3 2021-09-22T20:35Z Fence the table entries
      0.0.2 2021-09-22T03:48Z Raw Capture for Triage as Job Jar & Diary for
            nfoWare/docs
