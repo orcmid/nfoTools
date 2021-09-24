@@ -1,4 +1,4 @@
-devBinder.txt 0.0.22                   UTF-8                       2021-09-10
+devBinder.txt 0.0.23                   UTF-8                       2021-09-24
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 <https://github.com/orcmid/nfoTools/blob/master/devKits/WinDev/VCbinder/devBinder/devBinder.txt>
@@ -151,8 +151,16 @@ TODO
  * Transpose all nfoWare.org connections to nfoTools, including any new
    dev/ notes.
 
+ * Bring d161102a over here along with d161102 to docs/dev.
+
+ * Clarify where CMD should be located before running VCensure and VCbind.
+   It also must be clear what the context is for executing cl.exe.  Where
+   would it normally be.  Need a picture.
+
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.23 2021-09-24T16:58Z Review TODOs and prepare to replace nfoWare
+        dependencies
  0.0.22 2021-09-10T23:40Z Add attribution, manage TODOs
  0.0.21 2021-08-30T19:15Z add rulers
  0.0.20 2021-08-11T16:26Z Adust work items, raise over-thinking question
