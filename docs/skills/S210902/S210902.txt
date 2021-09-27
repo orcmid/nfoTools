@@ -1,4 +1,4 @@
-S210902.txt 0.0.0                  UTF-8                        dh:2021-09-05
+S210902.txt 0.0.1                  UTF-8                        dh:2021-09-27
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -52,7 +52,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. Essay: Keyboards and Keyboarding.  nfoTools file
-   S210902.txt version 0.0.0 dated 2021-09-05, available on the Internet as a
+   S210902.txt version 0.0.1 dated 2021-09-27, available on the Internet as a
    version of <https://orcmid.github.io/nfoTools/skills/S210902/S210902.txt>
 
 TODO
@@ -92,13 +92,25 @@ TODO
  * Typing courses and how to do it.  Especially hand placement.  Assumptions
    about dexterity and how the hands work.
 
- * Start a folio on keyboarding and tuck the ADM-3A image I saw there.
-   Also need some historical things about keyboard technologies over time.
+ * I need some historical things about keyboard technologies over time.
    A keypunch photo would be handy.  Code differences, holes in cards and
    paper tape, my oh my.
 
+ * Figure out a good way to spiral and provide progressive disclosure.  Part
+   of it is to allow the minimum understanding and some provisions for
+   learning/practice.  The section on learning to type and about expected
+   proficiency.  should be near the top, with historical and variational
+   material linked separately.
+
+ * Remember to acknowledge the pictue of the ADM3A sources.
+
+ * Figure out when ASCII had lower case.  From the beginning?
+
+ * When we get into codes, the ISO 646-1973 descriptions are informative.
+
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.1 2021-09-27T18:35Z Manage TODOs, smoothing a little
  0.0.0 2021-09-05T17:14Z Placeholder for commencement of keyboarding and
        keyboard skills.
 

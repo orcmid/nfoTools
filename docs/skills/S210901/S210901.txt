@@ -1,4 +1,4 @@
-S210901.txt 0.0.2                  UTF-8                        dh:2021-09-05
+S210901.txt 0.0.3                  UTF-8                        dh:2021-09-27
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -22,7 +22,7 @@ MANIFEST
     S210901.txt
           this manifest and job-jar file
 
-    index.md
+    index.md (TBD)
           authoring for <https://orcmid.github.io/nfoTools/skills/S210901/>
 
 
@@ -47,7 +47,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. Essay: Skills Inventory Notes.  nfoTools file
-   S210901.txt version 0.0.2 dated 2021-09-05, available on the Internet as a
+   S210901.txt version 0.0.3 dated 2021-09-27, available on the Internet as a
    version of <https://orcmid.github.io/nfoTools/skills/S210901/S210901.txt>
 
 TODO
@@ -60,6 +60,7 @@ TODO
 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.3 2021-09-27T18:16Z Cleanups, still placeholder
  0.0.2 2021-09-05T15:58Z Simple touch-ups
  0.0.1 2021-09-04T17:34Z Repurpose for the inventory since N210901 is already
        setup for the Essay on Tacit Knowledge/Skills and the Beginner Mind.

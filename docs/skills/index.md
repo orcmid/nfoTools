@@ -1,12 +1,12 @@
-<!-- index.md 0.0.2                 UTF-8                          2021-09-20
+<!-- index.md 0.0.3                 UTF-8                          2021-09-27
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-                       NFOTOOLS TACIT-SKILLS NOTEBOOK
+                           NFOTOOLS SKILLS NOTEBOOK
      -->
 
-# ***nfoTools** Tacit-Skills Notebook*
+# ***nfoTools** Skills Notebook*
 
-| ***[skills](.)*** | [skills](.) | ***0.0.2 2021-09-20*** |
+| ***[skills](.)*** | [skills](.) | ***0.0.3 2021-09-27*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../images/hardhat-logo.gif) |
 
@@ -22,20 +22,23 @@ applied automatically without thought.  Sometimes we call it muscle memory.
 It is ready-to-hand, always available, and effortless.
 
 This section of ***nfoTools*** documentation is devoted to
-unconcealing tacit knowledge among software developers, making its
-prerequisite occurrence explicit and understood.
+unconcealing tacit knowledge with respect to ordinary computer-usage skills
+and a bit more technology understanding required for software developers.
+Many skills support multiple purposes, just as reading and writing do.
 
 ## The Skills Inventory
 
 There's no escaping skill prerequisites.  Understanding what they are
 may be helpful for preparation and development by the curious and patient.
-Some can be practiced and exercised along with making software.
+Some skils can be practiced and exercised along with learning how to program
+and advancing to software engineering capabilities.
 
 ## Catalog
 
 | **ID** | **Started** | **Status** | **Topic** |
 |   :-:   |   :-:   |  :-:   |  ---  |
-| _short-cut_ | _date_ | _semver date_ | _Short topic_ |
+| [S210901](S210901/S210901.txt) | 2021-09-04 | placeholder | Skills Inventory Notes |
+| [S210902](S210902/S210902.txt) | 2021-09-05 | placeholder | Keyboards and Keyboarding |
 
 ----
 
@@ -49,9 +52,11 @@ time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-     0.0.2 2021-09-20T23:37 Add top banner, cleanup
+     0.0.3 2021-09-27T18:33Z Wordsmithing and identification of S210901 and
+           S210902
+     0.0.2 2021-09-20T23:37Z Add top banner, cleanup
      0.0.1 2021-09-17T20:14Z Add Discussion invitation
      0.0.0 2021-09-01T21:28Z Initial Introduction and empty Catalog
 
-               *** end of docs/skills/index.md ***
+                   *** end of docs/skills/index.md ***
      -->
