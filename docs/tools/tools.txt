@@ -1,4 +1,4 @@
-tools.txt 0.0.9                  UTF-8                          dh:2021-09-15
+tools.txt 0.0.10                 UTF-8                          dh:2021-09-28
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -22,6 +22,7 @@ MANIFEST
           this manifest and job-jar file
     index.md
           front-page authoring for <https://orcmid.github.io/nfoTools/tools/>
+  T000000/      nfoWare Tool Notes Diary and Job Jar (preservation capture)
 
   T060501/      Windows CMD Command-Line Environment
 
@@ -48,7 +49,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. nfoTools Toolcraft Notebook.  nfoTools project text
-   file tools.txt version 0.0.9 dated 2021-09-15, available on the Internet
+   file tools.txt version 0.0.10 dated 2021-09-28, available on the Internet
    as a version of
    <https://orcmid.github.io/nfoTools/tools/tools.txt>
 
@@ -91,9 +92,30 @@ TODO
 
  * Contrast with GUI environments with respect to similarities and differences
 
+ * We need toolcraft for the VC Build Tools, especially cl.exe and the
+   way options work.  This may extend to other tools in that family.  Check
+   the prompts for the other tools.
+
+ * Triage T060101 C/C++ Programming Resources
+
+ * Triage T060301 Computer Arithmetic Gotchas
+
+ * Triage T060302 Using VC++ 2005 Express Edition
+
+ * Triage T170201 Construction Sets
+
+ * Triage T170301 WinCon Construction Sets
+
+ * The Construction Kits might be something other than Toolcraft.  Think
+   it over.
+
+ * Look into what must be figured out around CL.exe that shows up in the
+   rayLab rawCL script development.
+
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
- 0.0.9 2021-09-15T16:17Z Resolve approach to command-line environments.
+ 0.0.10 2021-09-28T14:46Z Expanded TODOs including triage from nfoWare
+ 0.0.9 2021-09-15T16:17Z Resolve nomenclature around ommand-line environments.
  0.0.8 2021-09-15T03:46Z Manage TODOs around versions of Visual Studio
  0.0.7 2021-09-12T19:19Z Links to N070801, Manage TODOs
  0.0.6 2021-09-07T03:25Z Touch up, let N070801 become the Craft of Toolcraft.
