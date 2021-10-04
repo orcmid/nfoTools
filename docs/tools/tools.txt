@@ -1,4 +1,4 @@
-tools.txt 0.0.10                 UTF-8                          dh:2021-09-28
+tools.txt 0.0.11                 UTF-8                          dh:2021-10-04
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -49,7 +49,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. nfoTools Toolcraft Notebook.  nfoTools project text
-   file tools.txt version 0.0.10 dated 2021-09-28, available on the Internet
+   file tools.txt version 0.0.11 dated 2021-10-04, available on the Internet
    as a version of
    <https://orcmid.github.io/nfoTools/tools/tools.txt>
 
@@ -112,8 +112,13 @@ TODO
  * Look into what must be figured out around CL.exe that shows up in the
    rayLab rawCL script development.
 
+ * Make a folder on Visual Studio Build Tools and other ways to install them.
+   Then include how to use the developer links and also customize those
+   shortcuts for nfoTools-related projects.
+
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.11 2021-10-04T19:47Z Manage TODOs, anticipating VS Build Tools toolcraft
  0.0.10 2021-09-28T14:46Z Expanded TODOs including triage from nfoWare
  0.0.9 2021-09-15T16:17Z Resolve nomenclature around ommand-line environments.
  0.0.8 2021-09-15T03:46Z Manage TODOs around versions of Visual Studio
