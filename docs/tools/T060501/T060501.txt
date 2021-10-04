@@ -94,8 +94,15 @@ TODO
    matters with respect to how character-mode apps are launched in the same
    environment and how Command Prompt serves as a shell.
 
+ * Add page on navigating with the Console Prompt, including the tab-
+   completion provision.
+
+ * Add page on creating shortcuts anywhere, and how to customize the one that
+   Windows supplies
+
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.6 2021-10-04T19:43Z Manage TODOs
  0.0.5 2021-09-20T16:47Z Manage TODOs, provide for the remainder of nfoWare
        T060501, and clean nomenclature a little.
  0.0.4 2021-09-15T16:22Z Manage TODOs, start rework on nomenclature
