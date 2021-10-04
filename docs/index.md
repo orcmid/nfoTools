@@ -1,4 +1,4 @@
-<!-- index.md 0.0.8              UTF-8                          dh:2021-09-21
+<!-- index.md 0.0.9              UTF-8                          dh:2021-10-04
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
      -->
 
@@ -45,7 +45,7 @@ The nfoTools web is organized in topical sections.
 | [games](games) | Games and gaming, a major theme |
 | [notes](notes/) | Essays and Discussion on General Topics |
 | [skills](skills/) | Covering General IT Fluency applicable for nfoTools |
-| [tools](tools/) | Toolcraft Prerequisites for Using and Developing with nfoTools |
+| [tools](tools/) | Toolcraft for Using and Developing with nfoTools |
 | | |
 | [construction](construction/) | nfoTools Web Construction Materials |
 
@@ -58,6 +58,7 @@ relevant [projects](https://github.com/orcmid/nfoTools/projects) from time to
 time.
 
 <!--
+      0.0.9 2021-10-04T19:17Z Make Toolcraft not specific to prerequisites
       0.0.8 2021-09-21T16:51Z Welcoming games
       0.0.7 2021-09-17T19:41Z Smoothing, verifying links
       0.0.6 2021-09-17T18:34Z Add Banner, TOC, and smooth the material
