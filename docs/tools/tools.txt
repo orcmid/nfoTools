@@ -1,4 +1,4 @@
-tools.txt 0.0.11                 UTF-8                          dh:2021-10-04
+tools.txt 0.0.12                 UTF-8                          dh:2021-10-13
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -49,7 +49,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. nfoTools Toolcraft Notebook.  nfoTools project text
-   file tools.txt version 0.0.11 dated 2021-10-04, available on the Internet
+   file tools.txt version 0.0.12 dated 2021-10-13, available on the Internet
    as a version of
    <https://orcmid.github.io/nfoTools/tools/tools.txt>
 
@@ -116,8 +116,22 @@ TODO
    Then include how to use the developer links and also customize those
    shortcuts for nfoTools-related projects.
 
+ * Watch FC_CPP and ensure that supporting materials are appearing here on
+   nfoTools/docs.
+
+ * "Coding standards" and following the standards of of a project being
+   contributed to are important.
+
+ * There are two cases.  Explaining what practices are being observed, and
+   how they are meant to be useful.  There is a lot of that here on nfoTools
+   itself, and also in nfoTools/docs.  Some is docEng.  Some is craft.
+
+ * There is also explanation of project conventions and ensuring that any
+   issues, discussions, and pull requests conform to the project standards.
+
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.12 2021-10-13T14:41Z Manage TODOs, add attention to conventions/standards
  0.0.11 2021-10-04T19:47Z Manage TODOs, anticipating VS Build Tools toolcraft
  0.0.10 2021-09-28T14:46Z Expanded TODOs including triage from nfoWare
  0.0.9 2021-09-15T16:17Z Resolve nomenclature around ommand-line environments.
