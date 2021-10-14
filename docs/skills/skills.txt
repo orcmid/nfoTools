@@ -1,17 +1,17 @@
-skills.txt 0.0.6                   UTF-8                        dh:2021-09-27
+skills.txt 0.0.7                    UTF-8                       dh:2021-10-14
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
                         nfoWare/nfoWorks nfoTools
                         =========================
 
-    <https://github.com/orcmid/nfoTools/blob/master/docs/skills/skills.txt>
-        <https://orcmid.github.io/rayLab/tools/tools.txt>
+   <https://github.com/orcmid/nfoTools/blob/master/docs/skills/skills.txt>
+            <https://orcmid.github.io/rayLab/tools/tools.txt>
 
                         NFOTOOLS SKILLS NOTEBOOK
                        --------------------------
 
-    nfoTools docs/skills/ collection of folios on tacit skills that software
+    nfoTools docs/skills/ collection of folios on (tacit) skills that software
     developers rely upon, from reading, keyboarding, and computer operations
     that are part of computational fluency and reliable effort.  It is
     not exactly Computer Programming for Everyone (CP4E), not even Software
@@ -25,9 +25,18 @@ skills.txt 0.0.6                   UTF-8                        dh:2021-09-27
     beginner's mind to expose it.  Being thrown into the deep end of the pool
     as a way to learn to swim is not a great idea, especially for adults.
 
-    The companion docs/tools/ rests on the presumption or acquisition
+    The companion docs/tools/ articles rest on presumption or acquisition
     of various skills and awareness of their limitations. Skills are the
     prerequisites/companions for mastery of the tools.
+
+    There are also skills related to cultural and social technologies, such
+    as times and dates, calendars and locations, that are tacit and lead to
+    intrinsic biases.  Then there is the matter of language and the overall
+    encouragement of conceptual models that are embedded, or not,
+    in technological efforts.  There may need to be identification of those
+    assumptions, especially ones about language, location, and the past,
+    present, and future.  These sources of friction need to be identified
+    whether addressed or not.
 
 MANIFEST
 
@@ -61,7 +70,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. nfoTools Tacit-Skills Notebook.  nfoTools project text
-   file skills.txt version 0.0.6 dated 2021-0927, available on the Internet
+   file skills.txt version 0.0.7 dated 2021-10-14, available on the Internet
    as a version of
    <https://orcmid.github.io/nfoTools/skills/skills.txt>
 
@@ -114,8 +123,37 @@ TODO
 
  * Is an S000000 needed?
 
+ * I was lying awake around 2021-10-14T13:00Z thinking about dates and
+   calendars and the difficulties of dates in the past, and especially times
+   in the relatively-recent past influenced by Daylight Savings time,
+   something that messes up my older Outlook calendar pages depending on
+   whether it is DST now or not, versus then.  Here is one treatment of the
+   topic, <https://www.hcidata.info/cgi-bin/calendar.cgi>.  There is a
+   problem with running calendars (and times) backwards, before times when
+   a particular system went into effect.  This is rather overlooked in
+   <https://exceluser.com/1057/how-to-work-with-dates-before-1900-in-excel/>.
+   There is a name for running a date system back before the time it was
+   introduced (in a given location!).  They are termed proleptic dates.  Here
+   is a good article <https://en.wikipedia.org/wiki/Gregorian_calendar> with
+   a terrific sidebar on different calendar systems.
+
+ * Although unlikely to matter here, it occured to me that there is a problem
+   with time-travel in any direction considering that the positions of the
+   Earth and points on the surface of the Earth will have changed.  We then
+   get into problems of coordinate systems and the (relative!) motions of
+   planets and the solar system itself.  I can understand why this is not
+   dealt with in science fiction and dramatizations of time travel.  And of
+   course, fixed points on the Earth's surface are not all that fixed given
+   significant time intervals.
+
+ * Awareness of location systems and also time systems in astronomical terms
+   are also significant as we talk about visiting more places away from the
+   Earth's surface.  I wonder how that works for the International Space
+   Station, and also on Mars now for rovers and later for human visitors.
+
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.7 2021-10-14T15:21Z Musings on dates and times
  0.0.6 2021-09-27T18:38Z Manage TODOs, expand manifest, smoothing
  0.0.5 2021-09-05T16:21Z Moved keyboarding TODOs to S210902.txt
  0.0.4 2021-09-05T15:51Z Touch-up, capture TODOs on keyboards
