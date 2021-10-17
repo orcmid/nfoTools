@@ -1,4 +1,4 @@
-nfoTools.txt 0.0.10                   UTF-8                     dh:2021-09-02
+nfoTools.txt 0.0.11                   UTF-8                     dh:2021-10-17
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                             nfoWare/nfoWorks nfoTools
@@ -129,8 +129,21 @@ TODO
     also nfoTools.  I need to find out if multiple templates are possible and
     having that work with a variety of rayLab and nfoTools cases.
 
+  * I am conflicted on the folio structures which I am perpetuating in docs/
+    and without corresponding code-side folders.  I think that I could use
+    accession naming, but I am leary of it, even though it has served me so
+    well.
+
+  * It looks like showdefs is a devkits project if not a dev/ one. It also
+    looks like some games should be moved to games.  I'm unclear on the
+    AddBib utility.  It's maybe not docEng, and I don't know where that goes
+    exactly.  It is like a Unix utility, though I don't necessarily want that
+    as a category.  Meanwhile, I want to see if I can recover the older
+    history of showdefs.
+
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.11 2021-10-17T20:37Z Handwringing about ShowDefs and such
  0.0.10 2021-09-02T19:31Z Manage TODOs
  0.0.9 2021-08-30T18:48Z Add explicit rulers (tacit understanding, duhh)
  0.0.8 2021-08-30T17:42Z Manage TODOs, looking into template possibility too
