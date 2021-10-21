@@ -1,4 +1,4 @@
-T060501.txt 0.0.5                 UTF-8                        dh:2021-09-20
+T060501.txt 0.0.7                 UTF-8                        dh:2021-10-21
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -50,7 +50,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. Windows CMD Command-Line Operations.  nfoTools project
-   text file T060501.txt version 0.0.5 dated 2021-09-20, available on the
+   text file T060501.txt version 0.0.6 dated 2021-09-21, available on the
    Internet as a version of
    <https://orcmid.github.io/nfoTools/tools/T060501/T060501.txt>
 
@@ -100,8 +100,24 @@ TODO
  * Add page on creating shortcuts anywhere, and how to customize the one that
    Windows supplies
 
+ * There need to be demonstrations/exercises on customization of shortcuts
+   and use of a variety of features
+   ** the buffer size versus display size
+   ** the choice of colors
+   ** the use of history
+   ** scrolling in the buffer
+   ** making (customized) shortcuts.
+
+ * performing an initial batch script
+ * setting an initial location
+
+ * I think customization of a developer command prompt and initiation of VS
+   code within the environment needs to be in a place where VS Build Tools
+   are also installed and operated.  There should be cross-linking for these.
+
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.7 2021-10-21T15:15Z More TODOs on VS Code and VS Build connections
  0.0.6 2021-10-04T19:43Z Manage TODOs
  0.0.5 2021-09-20T16:47Z Manage TODOs, provide for the remainder of nfoWare
        T060501, and clean nomenclature a little.
