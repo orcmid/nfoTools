@@ -1,4 +1,4 @@
-T211001.txt 0.0.0                 UTF-8                          dh:2021-10-18
+T211001.txt 0.0.1                 UTF-8                          dh:2021-10-23
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -17,9 +17,14 @@ T211001.txt 0.0.0                 UTF-8                          dh:2021-10-18
 
 MANIFEST
 
-    T211001.txt
-            this manifest and job-jar file
+    T211001.txt  this manifest and job-jar file
 
+      index.md   front porch published as orcmid.github.io/nfoTools/T21001/
+
+   T211001c/     VS Code Installation
+
+     VSCode-2021-10-20-0950-WebPreview.png
+           parking place for VSCode Web material until have a place for it
 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -42,7 +47,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. T211001: Visual Studio Code.  nfoTools project text
-   file T211001.txt version 0.0.0 dated 2021-10-18, available on the Internet
+   file T211001.txt version 0.0.1 dated 2021-10-23, available on the Internet
    as a version of
    <https://orcmid.github.io/nfoTools/tools/T211001/T211001.txt>
 
@@ -52,15 +57,26 @@ TODO
    TortoiseGit and GitHub Desktop, then VIsual Studio Developer Tools or
    Community Edition
 
+ * I am uncertain about the sequence.  VS Code will depend on Visual Studio
+   Developer Tools for operation of the C/C++ intellisense.
+
+ * I am also uncertain about Git and GitHub.  I can't determine or don't
+   remember how VS Code deals with Git if it is not already installed.
+
  * Finding the install location of VC and C/C++ Build tools will be
    important
 
  * Need to establish how far one can get with Visual Studio Code on the Web.
+   I need some development about that.  I think it is very tied to having a
+   GitHub project.  I need to see how that aspect works.
+
+ * Treat how Visual Studio Web works with local arrangements.
+
+ * Consider how it works with GitHub projects.
+
+ * Wondering how VS Code Web building, etc., work.
 
  * Deal with operation as part of Developer Command Prompt
-
- * Setup and test for VS 2022 (17.0) but don't post anything until official
-   for building code eligible for distribution and production use.
 
  * Deal with VS 2019 and VS 2017 installation and also detection.  Unclear
    about 2015 and earlier any longer.  There is the need to be able to rebuild
@@ -79,8 +95,14 @@ TODO
  * Park VS Code on the Web screen captures here until have a better place for
    them.
 
+ * I am anxious about the level of detail and how this can be in the way of
+   those who want to work quickly and get into action.  I must get the
+   progressive disclosure to also foster skip-aheads and potential future
+   review of details.
+
   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.1 2021-10-23T19:00Z Bring current, expand TODOs
  0.0.0 2021-10-18T18:20Z Placeholder made from tools.txt as boiler plate.
 
                      ***** end of T21001.txt *****
