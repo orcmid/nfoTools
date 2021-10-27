@@ -1,4 +1,4 @@
-tools.txt 0.0.13                 UTF-8                          dh:2021-10-22
+tools.txt 0.0.14                 UTF-8                          dh:2021-10-27
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -24,9 +24,10 @@ MANIFEST
           front-page authoring for <https://orcmid.github.io/nfoTools/tools/>
   T000000/      nfoWare Tool Notes Diary and Job Jar (preservation capture)
 
-  T060501/      Windows CMD Command-Line Environment
-
+  T211002/      Visual Studio Build Tools
   T211001/      Visual Studio Code
+
+  T060501/      Windows CMD Command-Line Environment
 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -49,7 +50,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. nfoTools Toolcraft Notebook.  nfoTools project text
-   file tools.txt version 0.0.13 dated 2021-10-22, available on the Internet
+   file tools.txt version 0.0.14 dated 2021-10-27, available on the Internet
    as a version of
    <https://orcmid.github.io/nfoTools/tools/tools.txt>
 
@@ -136,6 +137,7 @@ TODO
 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.14 2021-10-27T20:06Z Manage TODOs, add T211002 on VS Build Tools
  0.0.13 2021-10-22T17:07Z Manage TODOs around VS Code and interdependent tools
  0.0.12 2021-10-13T14:41Z Manage TODOs, add attention to conventions/standards
  0.0.11 2021-10-04T19:47Z Manage TODOs, anticipating VS Build Tools toolcraft

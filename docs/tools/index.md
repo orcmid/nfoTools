@@ -1,4 +1,4 @@
-<!-- index.md 0.0.8                 UTF-8                          2021-10-23
+<!-- index.md 0.0.9                 UTF-8                          2021-10-27
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                        NFOTOOLS TOOLCRAFT NOTEBOOK
@@ -28,8 +28,11 @@ For background on toolcraft, its benefits and dangers, see
 
 | **ID** | **Started** | **Status** | **Topic** |
 |   :-:   |   :-:   |  :-:   |  ---  |
+| [T211002](T211002) | 2021-10-27 | 0.0.1 2021-10-23 | VS Build Tools |
+| [T211001](T211001) | 2021-10-20 | 0.0.1 2021-10-23 | Visual Studio Code for Windows |
+|                    |            |                  |          |
 | [T060501](T060501) | 2006-05-20 | 0.0.9 2021-09-15 | Windows CMD Command-Line Environment |
-| [T211001](T211001) | 2021-10-20 | 0.0.1 2021-10-23   | Visual Studio Code for Windows |
+
 |                    |            |                  |          |
 | [T000000](T000000.html) | 2005-12-25 | 0.0.2 2021-09-16 | Diary & Job Jar |
 
@@ -45,6 +48,7 @@ time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.9 2021-1-27T21:59Z Reflect T211002 0.0.0
      0.0.8 2021-10-23T19:15Z Touchups
      0.0.7 2021-10-20T21:01Z Anticipate T211001
      0.0.6 2021-09-17T20:23Z Update Discussion invitation
