@@ -1,4 +1,4 @@
-<!-- index.md 0.0.0                 UTF-8                          2021-10-27
+<!-- index.md 0.0.1                 UTF-8                          2021-10-30
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                       VISUAL STUDIO BUILD TOOLS
@@ -6,7 +6,7 @@
 
 # ToolCraft: Visual Studio Build Tools
 
-| ***[T211002](.)*** | [tools](../)[>t211002](.) | ***0.0.0 2021-10-27*** |
+| ***[T211002](.)*** | [tools](../)[>t211002](.) | ***0.0.1 2021-10-30*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../../images/hardhat-logo.gif) |
 
@@ -18,7 +18,7 @@ the Web.
 
 | **ID** | **Started** | **Status** | **Topic** |
 |   :-:   |   :-:   |  :-:   |  :--  |
-| [T211002c](T211002c/) | 2021-10-27 | placeholder | VS Build Tools Installation |
+| [T211002c](T211002c/) | 2021-10-27 | 0.0.1 placeholder | VS Build Tools Installation |
 
 ----
 
@@ -32,6 +32,7 @@ time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.1 2021-10-30T15:56Z Touch up dates
      0.0.0 2021-10-27T20:18Z Clone from T211001/index.md for boilerplate
 
                *** end of docs/tools/T211002/index.md ***
