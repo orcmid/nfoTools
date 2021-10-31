@@ -1,4 +1,4 @@
-T211002.txt 0.0.1                   UTF-8                       dh:2021-10-27
+T211002.txt 0.0.1                   UTF-8                       dh:2021-10-31
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -11,9 +11,32 @@ T211002.txt 0.0.1                   UTF-8                       dh:2021-10-27
                     T211002: VISUAL STUDIO BUILD TOOLS
                     ----------------------------------
 
-    nfoTools docs/tools folio on Visual Studio Build Tools, featuring VS2019
-    for now.
+    Installing VS Build Tools is sufficient for beginner/novice use
+    in learning how to do C/C++ program development within a command-line
+    environment. VS Build Tools are freely available for download and
+    installation from <https://visualstudio.microsoft.com>.  Details are at
+    T21002c here.
 
+    Using VS Build Tools in command-line environments is comparable to how
+    C/C++ programs are developed and compiled on other platforms, especially
+    Linux and other Unix-inspired operating systems.  The similarities are
+    strong enough so that books and examples of C/C++ that feature command-
+    line build tools can be applied after adjusting for minor differences
+    in terminology.  The particular model originated in the 1950s, predating
+    Unix and C Language.
+
+    The VS Build tools are also incorporated in Visual Studio Community
+    Editions and professional levels of Visual Studio.  The integrated
+    development environment (IDE) of those editions rely on the same build
+    tools "under the covers" for C/C++ projects.  The direct use made in
+    nfoTools projects serves as a foundation for what is happening in projects
+    using such advanced tools.
+
+    Visual Studio Code is recommended for use with the VS Build Tools along
+    with a Command Prompt command-line environment.  Features of VS Code that
+    provide more-integrated operation will provide supplementary streamlining
+    only after the command-line foundation is fully established.  Details are
+    in T211001 here.
 
 MANIFEST
 
@@ -44,7 +67,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. T211002: Visual Build Tools.  nfoTools project text
-   file T211002.txt version 0.0.0 dated 2021-10-27, available on the Internet
+   file T211002.txt version 0.0.1 dated 2021-10-31, available on the Internet
    as a version of
    <https://orcmid.github.io/nfoTools/tools/T211002/T211002.txt>
 
@@ -73,13 +96,18 @@ TODO
  * Watch FC_CPP and ensure that supporting materials are appearing here on
    nfoTools/docs.
 
-  * I am anxious about the level of detail and how this can be in the way of
+ * I am anxious about the level of detail and how this can be in the way of
    those who want to work quickly and get into action.  I must get the
    progressive disclosure to also foster skip-aheads and potential future
    review of details.
 
+ * Create a case for the edit-compile connection with Developer Command Prompt
+   within this folio, for the demonstration of intellisense.  FC_CPP might
+   be supported with this also, but it should be done here.
+
   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.1 2021-10-31T18:04Z Word-smithing
  0.0.0 2021-10-27T20:05Z Placeholder made from T21001.txt as boiler plate.
 
                      ***** end of T21002.txt *****

@@ -1,18 +1,28 @@
-T211002c.txt 0.0.0                  UTF-8                       dh:2021-10-27
+T211002c.txt 0.0.1                  UTF-8                       dh:2021-10-31
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
                         nfoWare/nfoWorks nfoTools
                         =========================
 
-<https://github.com/orcmid/nfoTools/blob/master/docs/tools/T211001/T211001.txt>
-      <https://orcmid.github.io/nfoTools/tools/T211001/T211001.txt>
+   <https://orcmid.github.io/nfoTools/tools/T211002/T211002c/T211002c.txt>
 
-                   T211002c: VS BUILD TOOLS INSTALLATION
-                   -------------------------------------
+                  T211002c: VS BUILD TOOLS INSTALLATION
+                  -------------------------------------
 
-    nfoTools docs/tools.T211002 sub-folio on VS Build Tools.
+    Choosing Tools for Visual Studio <https://visualstudio.microsoft.com>
+    leads to download and installation of a Visual Studio Installer, the
+    utility for selective downloading of components and libraries that will be
+    usable from the build tools command-line environment.
 
+    Visual Studio Installer remains available for obtaining updates and
+    making any desired adjustment to the  configuration of installed
+    components.
+
+    A starter configuration is demonstrated here.  It is sufficient for use
+    in all nfoTools-based C/C++ projects.  Fundamental command-line
+    development activity is featured, providing a solid foundation for
+    advanced use later on.
 
 MANIFEST
 
@@ -44,14 +54,15 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. T211002c: VS Build Tools Installation.  nfoTools
-   project text file T211002c.txt version 0.0.0 dated 2021-10-27, available on
+   project text file T211002c.txt version 0.0.1 dated 2021-10-31, available on
    the Internet as a version of
    <https://orcmid.github.io/nfoTools/tools/T211001/T211001c/T211001c.txt>
 
 TODO
 
  * Use the screen captures under Centrale/crea/VS2019. Do not include VS2022
-   until final release.
+   until final release on 2021-11-08, then do side-by-side if there is any
+   noticeable difference.
 
  * Show the Initial Install
 
@@ -59,8 +70,9 @@ TODO
    Point out that the installation can be updated by running the downloaded
    installer again in the future.
 
-  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.1 2021-10-31T18:06Z Word-smithing
  0.0.0 2021-10-27T20:30Z Placeholder made from T21001c.txt as boiler plate.
 
                      ***** end of T21002c.txt *****
