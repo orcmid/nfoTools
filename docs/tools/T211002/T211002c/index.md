@@ -17,7 +17,7 @@
 The current (VS 2022) Build Tools download is found at
 [visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2022](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2022)
 
--- *Not finding it?*  [Try step-by-step.](T211002c1)
+  . *Not finding it?*  [Try step-by-step.](T211002c1)
 
 Terms of use are covered on installation of the download.  If there is any
 concern, the free Visual Studio 2022 Community Edition is an alternative.
@@ -36,7 +36,7 @@ the license terms here.
 ![Visual Studio Installer](VSBuildTools-2021-11-08-0822-Install.png)
 
 When the Installer offers a panel of workload choices, choose "Desktop
-Development with C++" (shown beow).  The checked Installation details were
+Development with C++" (shown below).  The checked Installation details are
 offered by default.  Those are enough for starters.
 
 ![Basic Workload Installer Selection](VSBuildTools-2021-11-08-0826-Installer.png)
@@ -60,7 +60,7 @@ time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-     0.0.2 2021-11-12T04:16Z Cycling through progressive edit confirmations
+     0.0.2 2021-11-12T04:27Z Cycling through progressive edit confirmations
      0.0.1 2021-10-30T15:54Z Repair dates
      0.0.0 2021-10-27T21:52Z Clone from tools/T211001c/index.md for
            boilerplate
