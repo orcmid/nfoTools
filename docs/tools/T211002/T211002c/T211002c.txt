@@ -1,4 +1,4 @@
-T211002c.txt 0.0.1                  UTF-8                       dh:2021-10-31
+T211002c.txt 0.0.2                  UTF-8                       dh:2021-11-12
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -54,24 +54,19 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. T211002c: VS Build Tools Installation.  nfoTools
-   project text file T211002c.txt version 0.0.1 dated 2021-10-31, available on
+   project text file T211002c.txt version 0.0.2 dated 2021-11-12, available on
    the Internet as a version of
    <https://orcmid.github.io/nfoTools/tools/T211001/T211001c/T211001c.txt>
 
 TODO
 
- * Use the screen captures under Centrale/crea/VS2019. Do not include VS2022
-   until final release on 2021-11-08, then do side-by-side if there is any
-   noticeable difference.
+ * Add confirmation of the install using a Command Prompt.
 
- * Show the Initial Install
-
- * Show some of the configuration features but only do the C/C++ elements.
-   Point out that the installation can be updated by running the downloaded
-   installer again in the future.
+ * Mastering the developer command prompt will be the next subfolio.
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.2 2021-11-12T21:15Z Manage TODOs, reflecting progress
  0.0.1 2021-10-31T18:06Z Word-smithing
  0.0.0 2021-10-27T20:30Z Placeholder made from T21001c.txt as boiler plate.
 
