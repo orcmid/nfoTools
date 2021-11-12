@@ -1,4 +1,4 @@
-tools.txt 0.0.15                 UTF-8                          dh:2021-11-12
+tools.txt 0.0.16                 UTF-8                          dh:2021-11-12
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -22,14 +22,14 @@ MANIFEST
     index.md
           front-page authoring for <https://orcmid.github.io/nfoTools/tools/>
 
-  T211102/      C/C++ Programming
-  T211101/      raylib Library for Graphical apps
-  T211002/      Visual Studio Build Tools
-  T211001/      Visual Studio Code
+  T211102/ C/C++ Programming
+  T211101/ raylib Library for Graphical apps
+  T211002/ Visual Studio Build Tools
+  T211001/ Visual Studio Code
 
-  T060501/      Windows CMD Command-Line Environment
+  T060501/ Windows CMD Command-Line Environment
 
-  T000000/      nfoWare Tool Notes Diary and Job Jar (preservation capture)
+  T000000/ nfoWare Tool Notes Diary and Job Jar (preservation capture)
 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -52,7 +52,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. nfoTools Toolcraft Notebook.  nfoTools project text
-   file tools.txt version 0.0.15 dated 2021-11-11, available on the Internet
+   file tools.txt version 0.0.16 dated 2021-11-12, available on the Internet
    as a version of
    <https://orcmid.github.io/nfoTools/tools/tools.txt>
 
@@ -120,10 +120,6 @@ TODO
  * Look into what must be figured out around CL.exe that shows up in the
    rayLab rawCL script development.
 
- * Make a folder on Visual Studio Build Tools and other ways to install them.
-   Then include how to use the developer links and also customize those
-   shortcuts for nfoTools-related projects.
-
  * Watch FC_CPP and ensure that supporting materials are appearing here on
    nfoTools/docs.
 
@@ -137,9 +133,17 @@ TODO
  * There is also explanation of project conventions and ensuring that any
    issues, discussions, and pull requests conform to the project standards.
 
+ * The material difference between C and C++ library/external linking needs
+   to be made clear.  First, the difference, and how it is revealed in
+   headers and source codes.  And how there are even more cases, such as
+   the entry-exit conventions in calling that are not quite orthogonal.
+   This is partly a Build Tools conversation, and also one about C/C++
+   programming.  Reflect that everywhere it matters.
+
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
- 0.0.14 2021-11-12T00:18Z Anticipate T211101 and T211102
+ 0.0.16 2021-11-12T18:06Z Rhapsodizing TODOs
+ 0.0.15 2021-11-12T00:18Z Anticipate T211101 and T211102
  0.0.14 2021-10-27T20:06Z Manage TODOs, add T211002 on VS Build Tools
  0.0.13 2021-10-22T17:07Z Manage TODOs around VS Code and interdependent tools
  0.0.12 2021-10-13T14:41Z Manage TODOs, add attention to conventions/standards
