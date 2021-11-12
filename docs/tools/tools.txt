@@ -1,4 +1,4 @@
-tools.txt 0.0.14                 UTF-8                          dh:2021-10-27
+tools.txt 0.0.15                 UTF-8                          dh:2021-11-12
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -11,9 +11,8 @@ tools.txt 0.0.14                 UTF-8                          dh:2021-10-27
                        NFOTOOLS TOOLCRAFT NOTEBOOK
                        ---------------------------
 
-    nfoTools docs/ collection of folios on toolcraft relied upon in making
-    the efforts understandable and reusable.  More on the nature of toolcraft
-    and its values/limitations are discussed at
+    nfoTools docs/tools/ is for documenting understandable and reusable use
+    of featured tools.  More on the nature of toolcraft is provided at
     <https://orcmid.github.io/nfoTools/notes/N070801/>.
 
 MANIFEST
@@ -22,12 +21,15 @@ MANIFEST
           this manifest and job-jar file
     index.md
           front-page authoring for <https://orcmid.github.io/nfoTools/tools/>
-  T000000/      nfoWare Tool Notes Diary and Job Jar (preservation capture)
 
+  T211102/      C/C++ Programming
+  T211101/      raylib Library for Graphical apps
   T211002/      Visual Studio Build Tools
   T211001/      Visual Studio Code
 
   T060501/      Windows CMD Command-Line Environment
+
+  T000000/      nfoWare Tool Notes Diary and Job Jar (preservation capture)
 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -50,7 +52,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. nfoTools Toolcraft Notebook.  nfoTools project text
-   file tools.txt version 0.0.14 dated 2021-10-27, available on the Internet
+   file tools.txt version 0.0.15 dated 2021-11-11, available on the Internet
    as a version of
    <https://orcmid.github.io/nfoTools/tools/tools.txt>
 
@@ -137,6 +139,7 @@ TODO
 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.14 2021-11-12T00:18Z Anticipate T211101 and T211102
  0.0.14 2021-10-27T20:06Z Manage TODOs, add T211002 on VS Build Tools
  0.0.13 2021-10-22T17:07Z Manage TODOs around VS Code and interdependent tools
  0.0.12 2021-10-13T14:41Z Manage TODOs, add attention to conventions/standards

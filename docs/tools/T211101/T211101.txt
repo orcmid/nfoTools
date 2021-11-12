@@ -1,0 +1,97 @@
+T211002.txt 0.0.1                   UTF-8                       dh:2021-11-12
+----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+
+                        nfoWare/nfoWorks nfoTools
+                        =========================
+
+<https://github.com/orcmid/nfoTools/blob/master/docs/tools/T211101/T211101txt>
+      <https://orcmid.github.io/nfoTools/tools/T211101/T211101.txt>
+
+                    T211101: RAYLIB GRAPHICAL LIBRARY
+                    ---------------------------------
+
+    Raylib is a library of Clean C code that can be used to develop simple
+    graphical programs, including videogames, <https://raylib.com>.
+
+    For nfoTools, initial focus is on employment of raylib in programs
+    constructed using command-line environments for Microsoft Visual Studio
+    Build Tools. Those tools are freely available and easy to install.  See
+    <https://orcmid.github.io/nfoTools/tools/T211002/>.
+
+    Microsoft Visual Studio Code is recommended for editing code as part of
+    projects that use raylab.  A VS Code setup is used in examples here.
+   See <https://orcmid.github.io/nfoTools/tools/T211001/>.
+
+
+MANIFEST
+
+    T211101.txt  this manifest and job-jar file
+      index.md   front porch published as orcmid.github.io/nfoTools/T211101/
+
+   T211101c/     raylib Resources
+   T211101d/     Windows Setup for Native raylib Apps
+   T211101e/     Exploring and Exercising raylib Graphics
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+                       Copyright 2021 Dennis E. Hamilton
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+ ATTRIBUTION
+
+   Hamilton, Dennis E. T211101: raylib Graphical Library.  nfoTools project
+   text file T211101.txt version 0.0.0 dated 2021-11-12, available on the
+   Internet as a version of
+   <https://orcmid.github.io/nfoTools/tools/T211101/T211101.txt>
+
+TODO
+
+ * Do Progressive Disclosure, starting with install
+
+ * Demonstrate using the VS Developer Command Prompts as a way of establishing
+   the Build Tools environment.
+
+ * Illustrate launching of VS Code in the Build Tools command-line
+   environment.
+
+ * Demonstrate the edit, save, compile, test, rinse-repeat
+
+ * Deal with operation as part of Developer Command Prompt - We show this
+   as a particular case for the VCrayApp demonstrations.
+
+ * There will be a time when we integrate building and execution into the
+   VS Code workspace.  Maybe ?!
+
+ * Watch FC_CPP and ensure that supporting materials are appearing here on
+   nfoTools/docs.
+
+ * I am anxious about the level of detail and how this can be in the way of
+   those who want to work quickly and get into action.  I must get the
+   progressive disclosure to also foster skip-aheads and potential future
+   review of details.
+
+ * Create a case for the edit-compile connection with Developer Command Prompt
+   within this folio, for the demonstration of intellisense.  FC_CPP might
+   affirm this also, but it should be done here.  In this case,
+   some redundancy may help with the progressive disclosure, even if the same
+   images are reused.
+
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+ 0.0.0 2021-11-12T00:22Z Placeholder and anticipation of T211101 unfolding
+
+                     ***** end of T21101.txt *****
