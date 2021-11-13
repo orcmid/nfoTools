@@ -1,0 +1,32 @@
+# .gitignore 0.0.16                 UTF-8                       dh:2021-11-13
+#---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+#
+#                        NFOTOOLS VCRAYAPP PROJECT
+#                        =========================
+#
+#            .GITIGNORE FOR KEEPING RAYLIB OUT OF THE REPOSITORY
+#
+## ELIMINATE INCORPORATED RAYLIB ARTIFACTS
+## These are to be kept pristine with any changes restricted to separate
+## clones that support the raysan5/raylib project. For Source Code (zip) files
+## downloaded from <https://github.com/raysan5/raylib/releases>, some magic
+## is required to have the unzipped folder at the correct level and named
+## "raylib/".
+
+## NOTE: The raylib Zip that is downloaded and used is not ignored.
+## Including it in the project provides for confirmation of the dependency
+## and restoration of that raylib/ copy if needed in a future replication of
+## this project.
+
+raylib/
+raylib-*/
+
+
+
+#---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+# 0.0.16 2021-11-13T00:33Z Stripped down from 0.0.15 at orcmid/FC_CPP.
+# 0.00 2014-12-03-16:11 Initial .gitignore from GitHub
+#      As part of creation of the repositiory, the GitHub provision for
+#      ignoring Visual Studio build artifacts was created automatically.
+
+#                    *** end of .gitignore ***
