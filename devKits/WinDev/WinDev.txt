@@ -1,10 +1,10 @@
-WinDev.txt 0.0.8                     UTF-8                       dh:2021-09-10
+WinDev.txt 0.0.9                     UTF-8                       dh:2021-09-12
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
   <https://github.com/orcmid/nfoTools/blob/master/devKits/WinDev/WinDev.txt>
 
-                    WINDOWS CONSTRUCTION KITS AND HELPERS
-                    =====================================
+                 WINDEV: TEMPLATES, KITS, AND HELPERS ON WINDOWS
+                 ===============================================
 
     The WinDev/ construction kits and helpers are for creation of construction
     sets that build Windows programs using Microsoft developer tools on
@@ -21,6 +21,10 @@ MANIFEST
         Kit for introduction of VCbind as a helper in construction sets
         that produce Windows programs using Visual Studio Build Tools in a
         Windows command shell session.
+
+    VCrayApp/
+        Template for building Windows applications using the raylib library
+        for graphical applications.
 
     WinConKit/
         Kit for construction sets that build C/C++ Windows Console applica-
@@ -49,9 +53,9 @@ MANIFEST
 
  ATTRIBUTION
 
-   Hamilton, Dennis E. Windows Construction Kits and Helpers.
-   nfoTools file WinDev.txt version 0.0.8 dated 2021-09-10,
-   available on the Internet as a version of
+   Hamilton, Dennis E. Templates, Kits, and Helpers on Windows. nfoTools file
+   WinDev.txt version 0.0.9 dated 2021-09-10, available on the Internet as a
+   version of
    <https://github.com/orcmid/nfoTools/blob/master/devKits/WinDev/WinDev.txt>
 
 TODO
@@ -81,12 +85,12 @@ TODO
    case is when one is building with a working version of a dependency in
    anticipation and testing for its eventual deployment.  The target of
    the dependency changes in that case. This somehow needs to be sheltered
-   away from how a deployed WinCon Construction Set is meant to work.  And
+   away from how a deployed WinDev Construction Set is meant to work.  And
    also how and when it is updated for later/different versions of
    dependencies.  There needs to be more thought on how we differentiate this
    as an SE4E consideration.  The use of canned .zip components for the
    stable bits is valuable.  It is not the whole story.  PS: This is more of
-   a devKIts discussion, but it will show up real quick here in WinDev.
+   a devKits discussion, but it will show up real quick here in WinDev.
 
  * DISCOVERABILITY ISSUES. The deployment of Visual Studio and of Microsoft
    Build Tools has changed in ways that defeat discovery of installed tools
@@ -109,9 +113,31 @@ TODO
    handled in a manner that does not involve over-thinking the situation,
    while relying on straightforward (maybe tedious) procedures.
 
+ * DISTINGUISH CLONE CONTANIMATION.  When a kit-using project is cloned, it
+   must not be contanimated by the configuration choices made in use of the
+   clone.  Local customizations must be kept local since they should not
+   push to the origin.  I need to be clear about this and also have a good
+   diagram of the model.  There also needs to be a good model for a deep-dive
+   into how VC and Visual Studio Build tools operate.  This is not unlike
+   what happens with MingW GCC, etc.  The question is how to get this placed
+   properly for progressive disclosure.
+
+ * UPDATE CONSIDERATION.  When an user introduces an updated Kit, there need
+   to be clean ways to migrate the existing reliance on an earlier version
+   or even working without a kit.  Must find ways not to trample on existing
+   user work while also providing a confirmable migration experience.
+
+ * Work on retirement of VCbind 0.2.0.  There needs to be a VCbind 1.0.0 that
+   fits with the current VS Build Tools reality and dependence on command-line
+   environments being set up.  Blend with VCrayApp. See docs/dev/ too.
+
+ * There's a pattern to WinDev (maybe devkit level) that might deserve being
+   accounted for, probably under dev/ and not tools/.  Yes, definitely.
+
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.9 2021-11-12T18:20Z TODO musings plus adding VCrayApp as a Kit/Template
  0.0.8 2021-09-10T21:44Z add attribution
  0.0.7 2021-08-30T19:06Z add rulers
  0.0.6 2021-08-11T15:48Z Adjust Discoverability, Add Collision Avoidance,

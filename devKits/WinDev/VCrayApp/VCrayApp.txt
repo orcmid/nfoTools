@@ -1,0 +1,75 @@
+VCrayApp.txt 0.0.0                  UTF-8                         2021-11-13
+----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+                       DEVELOPING THE VCRAYAPP TEMPLATE
+                       ================================
+
+                           <web link eventually>
+                        <maybe repository link too>
+
+                       RAYLIB APP DEVELOPMENT PROJECT
+                       ------------------------------
+
+    This is a place-holder as part of moving VCrayApp here for further
+    development.
+
+MANIFEST
+
+    VCrayApp.txt
+        This manifest and job jar for the nfoTools WinDev VCrayApp
+        development project
+
+    raylib-3.7.0.zip
+        The raylib 3.7.0 release zip used in confirming operation of
+        VCrayApp.
+    raylib\
+        The Zipped raylib-3.7.0\ folder extracted to here and renamed
+        raylib\ for consistent reference from a VCrayApp-organized
+        project (excluded from Git, extract from the .zip in any clone)
+
+    dev\
+        Developer version of the VCrayApp setup used to develop and confirm
+        a version of VCrayApp structure before packaging in a release Zip.
+        This is always work-in-progress.
+
+
+----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+                       Copyright 2021 Dennis E. Hamilton
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+ ATTRIBUTION
+
+   Hamilton, Dennis E. Axe Raylib App Development Project. nfoTools Project
+   text file VCrayApp.txt 0.0.0 dated 2021-11-09, available on the
+   Internet as a version of
+   <https://github.com/orcmid/*something*>
+
+TODO
+
+ * Create dev.txt
+
+ * Populate the subfolders as they are intended to appear when zipped in the
+   release being worked on.
+
+ * Bring over a .gitignore to keep the raylib/ instance off of Git.
+
+----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+ 0.0.0 2021-11-13T00:15Z Initial placeholder
+
+
+                        ***** end of VCrayApp.txt *****
