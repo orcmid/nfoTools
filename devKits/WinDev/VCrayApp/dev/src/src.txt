@@ -1,4 +1,4 @@
-sr.txt 0.0.0                       UTF-8                       dh:2021-11-11
+VCrayAp 0.0.0 src.txt 0.0.1          UTF-8                     dh:2021-11-13
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                      RAYAPP APPLICATION-BUILD TEMPLATE
@@ -9,28 +9,33 @@ sr.txt 0.0.0                       UTF-8                       dh:2021-11-11
                            RECOMMENDED SRC FOLDER
                            ----------------------
 
-    The use of a src/ subfolder is recommended for projects based on a
-    VCrayApp.zip template.  Typically there will be at least one *.c file
-    and possible *.h files that share definitions among them.
+    The src/ subfolder is provided as a subfolder of the expanded and renamed
+    VCrayApp-0.0.0.zip.  It is standard practice no matter how many source
+    files there are for the project.
+
+    Typically, there will be at least one *.c file and possible *.h files.
+
+    The use of this src/ subfolder for VCrayApp-format projects is described
+    at <***nfoTools location TBD***>.
 
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
-
 
 TODO
 
- * Review the tutorial information on using VCrayApp.zip provided at **TBD**
+ * Review the tutorial information on using VCrayApp-0.0.0.zip provided at
+   <***nfoTools location TBD***>
 
- * First confirm the rayApp setup by performing a successful rayApp.bat
-   operation, satisfying all of the setup conditions that are reported.
+ * First, confirm the rayApp setup by performing a successful rayConfirm.exe
+   compilation, making any corrections that are required.
 
- * To then work with the project source files created here, customize
-   rayApp.bat line 21 to be "SET SRC=src\*.c"
-
+ * Then switch to your project by changing the two SET commands as specified
+   in the beginning of rayApp.bat.
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
+ 0.0.1 2021-11-13T22:21Z The final format, needing only the tutorial URLs
  0.0.0 2021-11-11T20:54Z Recommendation and filler for a Zip subdirectory
 
 
