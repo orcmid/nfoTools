@@ -1,4 +1,4 @@
-<!-- index.md 0.0.3                 UTF-8                          2021-11-12
+<!-- index.md 0.0.4                 UTF-8                          2021-11-13
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                       VS BUILD TOOLS INSTALLATION
@@ -71,7 +71,7 @@ command-line environments.
 Click on "x64 Native Tools Command..." to initiate a Build Tools command-line
 environment.
 
-![x64 Environment]{VSBuildTools-2021-11-12-1453-x64NativeEnvironment.png}
+![x64 Environment](VSBuildTools-2021-11-12-1453-x64NativeEnvironment.png)
 
 At the prompt `>` type "cl.exe" (shown), and depress "Enter."
 
@@ -95,6 +95,7 @@ time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.4 2021-11-13T00:42Z Fix broken image entry
      0.0.3 2021-11-12T23:13Z Completed first draft
      0.0.2 2021-11-12T04:27Z Cycling through progressive edit confirmations
      0.0.1 2021-10-30T15:54Z Repair dates
