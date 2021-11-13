@@ -1,0 +1,89 @@
+dev.txt 0.0.0                       UTF-8                         2021-11-13
+----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+                       AN NFOTOOLS COMING ATTRACTION
+                       =============================
+
+                           <web link eventually>
+                        <maybe repository link too>
+
+              RAYLIB APP BUILD WITH VS DEVELOPER COMMAND PROMPT
+              -------------------------------------------------
+
+SYNOPSIS
+
+    [TBD]
+
+MANIFEST
+
+    dev.txt
+        this manifest and job jar
+
+    VCrayApp-0.0.0.txt
+        placeholder for the VCrayApp.zip identifier, synopsis, and manifest
+
+    rayApp.bat
+        Under development batch file for compiling Native VC code
+        using the rayApp cache/ and app/ setup
+
+    .vscode
+        VS Code folder information for any folder the VCrayApp.zip template
+        is extracted into
+
+    app\
+        the folder in which compiled executables and recourses are
+        brought into
+
+    cache\
+        folder for rayApp-required assets and the caching of raylib
+        modules for linking into the project .exe
+
+    src\
+        the recommended location for source-code of a project based on the
+        VCrayApp template.
+
+----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+                       Copyright 2021 Dennis E. Hamilton
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+ ATTRIBUTION
+
+   Hamilton, Dennis E. Axe Game with Native VC Builds. FC_CPP Project
+   text file S2-Axe.txt version 0.0.0 dated 2021-11-09, available on the
+   Internet as a version of
+   <https://github.com/orcmid/*something*>
+
+TODO
+
+ * Provide VCrayApp-connected VCrayApp.txt
+
+ * Describe the .vscode settings in an appropriate place
+
+ * PLace app/app.txt in VCrayApp context
+
+ * Place cache/cache.txxt in VCrayApp context
+
+ * Place src/src.txt in VCrayApp context
+
+ * Work toward VCrayApp 1.0.0, assuming we don't need any intermediate 0.0
+
+----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+ 0.0.0 2021-10-13T03:26Z Placeholder draft
+
+
+                          ***** end of dev.txt *****

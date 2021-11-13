@@ -1,0 +1,106 @@
+cache.txt 0.0.8                     UTF-8                       dh:2021-11-11
+----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+                     RAYAPP APPLICATION-BUILD TEMPLATE
+                     =================================
+
+   <https://github.com/orcmid/nfoTools/blob/main/*somewhere*/cache/cache.txt>
+
+            PROTOTYPING OF RAYLIB USAGE IN NATIVE WINDOWS APPS
+
+                         RAYAPP RAYLIB CACHE FOLDER
+                         --------------------------
+
+    The cache/ folder contains rayApp build files, a setup confirmation
+    program, and compiled files of the raylib library.  The compiled files
+    do not need to be recompiled unless there is a change to the setup.
+
+    When the cache has been populated with the compiled raylib code, new
+    compiles will avoid the time it takes to compile that code again.
+
+    For more information, see ******* TBD *******.
+
+MANIFEST
+
+    cache.txt
+        this manifest and job-jar file
+    .gitignore
+        excluding the compilation intermediates and supporting files from
+        any git commits
+
+    rayConfirm.c
+        part of the raylib setup, used to confirm and demonstrate building
+        of a raylib application using VS Build Tools and VS Code.  Once
+        confirmed, rayAppBuild.bat can be adjusted to compile the user's
+        raylib project files instead.
+
+    raylibCode.opt
+        Option file identifying the raylib modules to be cached.  This file
+        depends on raylib\ being in a predictable location relative to the
+        location of cache\.  raylib\src\rglfw.c must be the last one compiled.
+
+    raylibVars.opt
+        Preprocessor definitions for the compilation of raylib modules.
+
+    rayLinking.opt
+        Parameters for linking the compiled raylib app into an executable
+
+    VCoptions.opt
+        C Language compilation options for Visual C/C++ native compiler cl.exe
+        These options are the same between cache\ and app\ compiles.  This
+        file also depends on raylib\ being in the same predictable relative
+        location as raylibCode.opt.
+
+    *.obj
+        Microsoft compiled C Language *.obj modules from compilation of the
+        raylib files identified in raylibCode.opt.  If rglfw.obj is not
+        present, the cache is considered to be incomplete or empty and all
+        files specified in raylibCode.opt will be compiled.
+
+----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+                       Copyright 2021 Dennis E. Hamilton
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+ ATTRIBUTION
+
+   Hamilton, Dennis E. rayApp raylib Cache Folder.  FC_CPP project
+   text file cache.txt version 0.0.8 dated 2021-11-11, available on the
+   Internet as a version of
+   <https://github.com/orcmid/FC_CPP/blob/main/S2-Axe/cache/cache.txt>
+
+TODO
+
+  * Replace this when a Zip-extracted setup provides this folder and the
+    additional configuration files.
+
+  * When packaged and extracted via a VCrayApp,zip, rename as an nfoTools
+    product and make the result more-seriously under .gitignore
+
+----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+ 0.0.8 2021-11-11T19:39Z More refactoring with all *.opt in cache\
+ 0.0.7 2021-11-09T02:47Z Complete refactoring pending nfoTools VCrayApp.zip
+ 0.0.6 2021-11-08T00:11Z Refactored initial content and options/confirmation
+       files preparatory to streamlining and bundling into a Zipped setup
+ 0.0.5 2021-10-20T20:16Z Convert for S2-Axe/cache
+ 0.0.4 2021-10-18T22:36Z Convert for S2-Axe/wrk/
+ 0.0.3 2021-09-29T18:13Z Reflect rawVC/ change amid still over-thinking
+ 0.0.2 2021-09-28T15:07Z Rename from tmp.txt to wrk.txt and over-thinking
+ 0.0.1 2021-09-28T14:28Z Noodling in TODOs
+ 0.0.0 2021-09-27T23:13Z placeholder for native-build intermediate materials
+
+                         ***** end of cache.txt *****

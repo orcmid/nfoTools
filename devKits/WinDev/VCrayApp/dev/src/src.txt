@@ -1,0 +1,37 @@
+sr.txt 0.0.0                       UTF-8                       dh:2021-11-11
+----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+                     RAYAPP APPLICATION-BUILD TEMPLATE
+                     =================================
+
+            VCRAYAPP.ZIP TEMPLATE FOR RAYLIB NATIVE WINDOWS APPS
+
+                           RECOMMENDED SRC FOLDER
+                           ----------------------
+
+    The use of a src/ subfolder is recommended for projects based on a
+    VCrayApp.zip template.  Typically there will be at least one *.c file
+    and possible *.h files that share definitions among them.
+
+
+----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+
+TODO
+
+ * Review the tutorial information on using VCrayApp.zip provided at **TBD**
+
+ * First confirm the rayApp setup by performing a successful rayApp.bat
+   operation, satisfying all of the setup conditions that are reported.
+
+ * To then work with the project source files created here, customize
+   rayApp.bat line 21 to be "SET SRC=src\*.c"
+
+
+----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+
+ 0.0.0 2021-11-11T20:54Z Recommendation and filler for a Zip subdirectory
+
+
+                          ***** end of src.txt *****
