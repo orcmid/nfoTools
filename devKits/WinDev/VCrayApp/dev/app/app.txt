@@ -1,22 +1,23 @@
-app.txt 0.0.7                       UTF-8                       dh:2021-11-11
+VCrayApp 0.0.0 app.txt 0.0.8        UTF-8                       dh:2021-11-14
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-                    COMPILED RAYAPP APPLICATION FOLDER
-                    ==================================
+                    RAYAPP APPLICATION-BUILD TEMPLATE
+                     =================================
 
-             RAYAPP.ZIP TEMPLATE FOR RAYLIB NATIVE WINDOWS APPS
+            VCRAYAPP.ZIP TEMPLATE FOR RAYLIB NATIVE WINDOWS APPS
 
                          RAYAPP XCOPY/MSIX APP FOLDER
                          ----------------------------
 
-    The app/ folder is a standard subfolder for a command-line build in the
-    parent folder.  app/ receives the compiled .exe and any accompanying
-    files/folders that are required to be adjacent to the executable program.
+    app/ is the standard VCrayApp subfolder for a command-line build of a
+    raylib project's executable program.  app/ receives the compiled .exe and
+    any accompanying files/folders that must be adjacent to the executable.
 
-    The folder is amenable to XCopy deployment and potential use in creating
-    an MSIX distributable.  The app/ folder content is amenable to delivery in
-    a Zip file as well, generally after removing some scaffolding.  Addition
-    of a README and other user-supporting materials would be handy.
+    The app/ folder content is amenable to delivery in a Zip file after some
+    tidying.  Addition of a README and other user-supporting materials is
+    useful.
+
+    Further details are at <**Location to be provided**>
 
 MANIFEST
 
@@ -29,7 +30,7 @@ MANIFEST
 
     resources/
         here when provided as a neighbor of the compiled .exe file and
-        included in the app package (deliverable)
+        included in the app package (a typical raylib deliverable)
 
     *.exe
         here as the compiled product (deliverable)
@@ -37,6 +38,8 @@ MANIFEST
     *.obj
         files that are only transient here and not part of the app package
         (not deliverable, usually remaining only if a compile fails)
+
+    other materials are provided as the project requires.
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
@@ -58,21 +61,13 @@ MANIFEST
 
  ATTRIBUTION
 
-   Hamilton, Dennis E. rayApp XCopy/MSIX App Folder.  rayApp.zip template
-   app.txt version 0.0.7 dated 2021-11-11, available on the Internet as a
-   version of <to-be-filled-in>
-
-TODO
-
-  * Add a NOTICE.txt that acknowledges development and construction.
-
-  * That means need a LICENSE.txt file too.
-
-  * Any further morphing depends on the final refactoring for inclusion in
-    any VCrayApp.zip
+   Hamilton, Dennis E. rayApp XCopy/MSIX App Folder.  VCrayApp.zip template
+   file app.txt version 0.0.8 dated 2021-11-14, available on the Internet as a
+   version of <to-be-filled-in>.
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.8 2021-11-14T00:29Z Moved to draft for VCrayApp 0.0.0.
  0.0.7 2021-11-11T18:37Z Partial staging for promotion to nfoTools deliverable
  0.0.6 2021-11-09T03:00Z Complete all refactoring apart from relocation into
        a VCrayApp.zip on nfoTools
