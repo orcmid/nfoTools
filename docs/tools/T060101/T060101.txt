@@ -1,4 +1,4 @@
-T211002.txt 0.0.0                   UTF-8                       dh:2021-11-16
+T060101.txt 0.0.1                   UTF-8                       dh:2021-11-16
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -11,17 +11,7 @@ T211002.txt 0.0.0                   UTF-8                       dh:2021-11-16
                        T060101: C/C++ PROGRAMMING
                        --------------------------
 
-    Raylib is a library of Clean C code that can be used to develop simple
-    graphical programs, including videogames, <https://raylib.com>.
-
-    For nfoTools, initial focus is on employment of raylib in programs
-    constructed using command-line environments for Microsoft Visual Studio
-    Build Tools. Those tools are freely available and easy to install.  See
-    <https://orcmid.github.io/nfoTools/tools/T211002/>.
-
-    Microsoft Visual Studio Code is recommended for editing code as part of
-    projects that use raylab.  A VS Code setup is used in examples here.
-   See <https://orcmid.github.io/nfoTools/tools/T211001/>.
+[TB]
 
 
 MANIFEST
@@ -30,6 +20,7 @@ MANIFEST
       index.md   front porch published as orcmid.github.io/nfoTools/T060101/
 
    T060101a.md   Legacy nfoWare Diary & Job Jar for triage
+   T060101b.md   Legacy resources/catalog page for triage
 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -52,26 +43,25 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. T060101: C/C++ Programming.  nfoTools project text
-   file T060101.txt version 0.0.0 dated 2021-11-15, available on the
+   file T060101.txt version 0.0.1 dated 2021-11-16, available on the
    Internet as a version of
    <https://orcmid.github.io/nfoTools/tools/T060101/T060101.txt>
 
 TODO
 
- * Set up index.md as a standard nfoWare/docs/ folio
-
-  * Capture T060101a.htm for the legacy work items to triage.
+ * Capture T060101a.htm for the legacy work items to triage.
 
  * Demonstrate the edit, save, compile, test, rinse-repeat
 
- * Deal with operation as part of Developer Command Prompt - We show this
-   as a particular case for the raylib and other templates.
+ * Deal with operation as part of Developer Command Prompt
 
  * Watch FC_CPP and ensure that supporting materials are appearing here on
-   nfoTools/docs.
+   nfoTools/docs.  Also related to the new devkits here and also the intro to
+   raylib usage.
 
   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.1 2021-11-16T16:31Z Still boilerplate customization, TODOs
  0.0.0 2021-11-16T03:00Z Placeholder for addressing C/C++ lore and useful
        resources.
 

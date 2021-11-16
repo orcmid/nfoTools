@@ -1,4 +1,4 @@
-tools.txt 0.0.16                 UTF-8                          dh:2021-11-12
+tools.txt 0.0.17                 UTF-8                          dh:2021-11-16
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -22,12 +22,12 @@ MANIFEST
     index.md
           front-page authoring for <https://orcmid.github.io/nfoTools/tools/>
 
-  T211102/ C/C++ Programming
   T211101/ raylib Library for Graphical apps
   T211002/ Visual Studio Build Tools
   T211001/ Visual Studio Code
 
   T060501/ Windows CMD Command-Line Environment
+  T060101 C/C++ Programming
 
   T000000/ nfoWare Tool Notes Diary and Job Jar (preservation capture)
 
@@ -104,8 +104,6 @@ TODO
    way options work.  This may extend to other tools in that family.  Check
    the prompts for the other tools.
 
- * Triage T060101 C/C++ Programming Resources
-
  * Triage T060301 Computer Arithmetic Gotchas
 
  * Triage T060302 Using VC++ 2005 Express Edition
@@ -142,6 +140,7 @@ TODO
 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.17 2021-11-16T16:28Z Continue Triage from nfoWare, TODOs
  0.0.16 2021-11-12T18:06Z Rhapsodizing TODOs
  0.0.15 2021-11-12T00:18Z Anticipate T211101 and T211102
  0.0.14 2021-10-27T20:06Z Manage TODOs, add T211002 on VS Build Tools
