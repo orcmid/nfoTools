@@ -41,7 +41,7 @@ on this topic.  Recommended materials and language references are identified.
 |   :-:   |   :-:   |  :-:   |  ---  |
 | [T060101b](T060101b.html) | 2006-05-20 | 0.0.30 2007-08-13 | Legacy Resources |
 |                           |            |                   |           |
-| [T060101a](T060101a.html) | 2005-09-08 | 0.0.20 2007-08-13 | Legacy Diary \& Job Jar |
+| [T060101a](T060101a.html) | 2005-09-08 | 0.1.0 2021-11-16 | Legacy Diary \& Job Jar |
 
 ----
 
@@ -55,7 +55,7 @@ time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-     0.1.0 2021-11-16T16:20Z Transposition to nfoTools as placeholder and
+     0.1.0 2021-11-16T17:17Z Transposition to nfoTools as placeholder and
            boilerplate
      0.0.20 2007-09-13T22:42Z Final nfoWare Toolcraft version
      0.0.0 2005-09-08T19:09Z bootstrap placeholder and boilerplate on nfoWare
