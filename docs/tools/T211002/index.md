@@ -23,13 +23,9 @@ projects are obtained by checking a single box.
 
 ![VS Installer Workflow Setup](T211002c/VSBuildTools-2021-11-08-0826-Installer.png)
 
-
-
 The traditional C Language first-program compilation and demonstration using
 modern Microsoft development tools in a command-line environment:
 ![Hello World](T211002-HelloWorld.png)
-
-
 
 Visual Studio Code is recommended for use with the VS Build Tools along
 with a [Command Prompt](..\T060501) command-line environment.  Features of
@@ -37,7 +33,7 @@ with a [Command Prompt](..\T060501) command-line environment.  Features of
  streamlining only after the command-line foundation is fully established.
  Details are in [T211001](..\T211001) here.
 
-## Technical Background
+## More Background
 
 The VS Build tools are also incorporated in Visual Studio Community
 Editions and professional levels of Visual Studio.  The integrated
@@ -81,7 +77,7 @@ time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-     0.0.3 2021-11-19T20:18Z Repair and touch-up
+     0.0.3 2021-11-19T21:41Z Repair and touch-up
      0.0.2 2021-11-19T18:08Z Full Draft text
      0.0.1 2021-10-30T15:56Z Touch up dates
      0.0.0 2021-10-27T20:18Z Clone from T211001/index.md for boilerplate
