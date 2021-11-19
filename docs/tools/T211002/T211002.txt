@@ -1,4 +1,4 @@
-T211002.txt 0.0.2                   UTF-8                       dh:2021-11-12
+T211002.txt 0.0.3                   UTF-8                       dh:2021-11-19
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -43,6 +43,7 @@ MANIFEST
     T211002.txt  this manifest and job-jar file
 
       index.md   front porch published as orcmid.github.io/nfoTools/T21002/
+     T21102-HelloWorld.png example of command-line CL confirmation
 
    T211002c/     VS Build Tools Installation
 
@@ -67,7 +68,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. T211002: Visual Build Tools.  nfoTools project text
-   file T211002.txt version 0.0.2 dated 2021-11-12, available on the Internet
+   file T211002.txt version 0.0.3 dated 2021-11-19, available on the Internet
    as a version of
    <https://orcmid.github.io/nfoTools/tools/T211002/T211002.txt>
 
@@ -82,9 +83,6 @@ TODO
    environment.
 
  * Demonstrate the edit, save, compile, test, rinse-repeat
-
- * Finding the install location of VC and C/C++ Build tools will be
-   important
 
  * Deal with operation as part of Developer Command Prompt - Exactly where
    should this go.  The whole edit-save-compile-review-test-rinse-repeat
@@ -115,8 +113,11 @@ TODO
    is maintained.  (I seriously miss the VSS ability to share common resources
    across projects.  The Git case doesn't seem quite right.)
 
+ * Simplify the text here now that index.htm has most of it.
+
   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.3 2021-11-19T18:14Z Reflect completion of full-draft index.md
  0.0.2 2021-11-12T17:54Z TODO Musings
  0.0.1 2021-10-31T18:04Z Word-smithing
  0.0.0 2021-10-27T20:05Z Placeholder made from T21001.txt as boiler plate.
