@@ -1,4 +1,4 @@
-<!-- index.md 0.0.4                 UTF-8                          2021-11-13
+<!-- index.md 0.0.5                 UTF-8                          2021-11-19
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                       VS BUILD TOOLS INSTALLATION
@@ -6,9 +6,9 @@
 
 # ToolCraft: VS Build Tools Installation
 
-| ***[T211002c](index.html)*** | [tools](../../)[>T211002](../)[>T211002c](.) | ***0.0.1 2021-10-30*** |
+| ***[T211002c](index.html)*** | [tools](../../)[>T211002](../)[>T211002c](.) | ***0.0.5 2021-11-19*** |
 | :--                |       ---          | --: |
-| ![nfotools](../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../../../images/hardhat-logo.gif) |
+| ![nfotools](../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | VS Build Tools | ![Hard Hat Area](../../../images/hardhat-logo.gif) |
 
 ## Downloading Build Tools for Visual Studio
 
@@ -52,12 +52,14 @@ Those are enough for starters.
 
 > *What are the final steps?* [Details](T211002c1)
 
-![Installer Cleanup](VSBuildTools-2021-11-08-0843-InstallerCleanup.png)
+![Installer Cleanup](VSBuildTools-2021-11-19-1222-InstallerCompletion.png)
 
 When the Installer completes setup of VS 2022 Build Tools, the available
-installs are listed, and "Visual Studio Build Tools 2022 Current" is
+installs are listed, and "Visual Studio Build Tools 2022" is
 included.  The illustrated case also demonstrates a setup with VS2019 Build
-Tools also present and a VS 2022 Preview being removed.
+Tools also present and a VS 2022 Preview being removed.  The Installer can
+be used for multiple Visual Studio flavors.  It is where configurations can
+be changed and updates selected for installation.
 
 ## Confirming Installation Success
 
@@ -83,6 +85,12 @@ session.
 
 Installation of the Build Tools is complete.  Now to put the tools to work.
 
+## Next Steps
+
+* Customize your Developer Command Prompt for easy operation
+* Incorporate Visual Studio Code in your development process
+* Find some C/C++ Projects and Tutorials to pursue
+
 ----
 
 Discussion about nfoTools is welcome at the
@@ -95,6 +103,7 @@ time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.5 2021-11-19T20:40Z Better Installer image, touch-ups
      0.0.4 2021-11-13T00:42Z Fix broken image entry
      0.0.3 2021-11-12T23:13Z Completed first draft
      0.0.2 2021-11-12T04:27Z Cycling through progressive edit confirmations
