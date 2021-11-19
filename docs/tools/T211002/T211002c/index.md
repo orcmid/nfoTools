@@ -22,7 +22,7 @@ The current (VS 2022) Build Tools download is available at
 Terms of use are covered on installation of the download.  The installed build
 tools simply have to be used with a provided Command Prompt.  If there is any
 concern about that, the free Visual Studio 2022 Community Edition is an
-alternative that has build tools used the same way for starters.
+alternative that has build tools used the same way.
 
 ## Running the Downloaded Installer
 
@@ -57,9 +57,8 @@ Those are enough for starters.
 When the Installer completes setup of VS 2022 Build Tools, the available
 installs are listed, and "Visual Studio Build Tools 2022" is
 included.  The illustrated case also demonstrates a setup with VS2019 Build
-Tools also present and a VS 2022 Preview being removed.  The Installer can
-be used for multiple Visual Studio flavors.  It is where configurations can
-be changed and updates selected for installation.
+Tools also present.  The one Installer can be used for multiple Visual Studio
+flavors.
 
 ## Confirming Installation Success
 
@@ -103,7 +102,7 @@ time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-     0.0.5 2021-11-19T20:40Z Better Installer image, touch-ups
+     0.0.5 2021-11-19T23:43Z Better Installer image, touch-ups
      0.0.4 2021-11-13T00:42Z Fix broken image entry
      0.0.3 2021-11-12T23:13Z Completed first draft
      0.0.2 2021-11-12T04:27Z Cycling through progressive edit confirmations

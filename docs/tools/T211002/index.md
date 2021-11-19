@@ -20,10 +20,10 @@ installation from <https://visualstudio.microsoft.com>.  Details are at
 
 The setup of VS Build Tools is accompanied by an included Visual Studio
 Installer.  The VS Installer can be used for updates and addition of
-tools for additional project types (workflows).  Tools sufficient for C/C++
+tools for additional project types (workloads).  Tools sufficient for C/C++
 projects are obtained by checking a single box.
 
-![VS Installer Workflow Setup](T211002c/VSBuildTools-2021-11-08-0826-Installer.png)
+![VS Installer Workload Setup](T211002c/VSBuildTools-2021-11-08-0826-Installer.png)
 
 ## The Famous "Your First" Commmand-Line Program
 
@@ -87,7 +87,7 @@ time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-     0.0.3 2021-11-19T22:54Z Repair and touch-up
+     0.0.3 2021-11-19T23:44Z Repair and touch-up
      0.0.2 2021-11-19T18:08Z Full Draft text
      0.0.1 2021-10-30T15:56Z Touch up dates
      0.0.0 2021-10-27T20:18Z Clone from T211001/index.md for boilerplate
