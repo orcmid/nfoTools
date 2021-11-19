@@ -16,6 +16,8 @@ environment. VS Build Tools are freely available for download and
 installation from <https://visualstudio.microsoft.com>.  Details are at
 [T21002c](T211002c) here.
 
+## Visual Studio Installer
+
 The setup of VS Build Tools is accompanied by an included Visual Studio
 Installer.  The VS Installer can be used for updates and addition of
 tools for additional project types (workflows).  Tools sufficient for C/C++
@@ -23,9 +25,17 @@ projects are obtained by checking a single box.
 
 ![VS Installer Workflow Setup](T211002c/VSBuildTools-2021-11-08-0826-Installer.png)
 
-The traditional C Language first-program compilation and demonstration using
-modern Microsoft development tools in a command-line environment:
+## The Famous "Your First" Commmand-Line Program
+
+The traditional
+([1978](../T060101/T060101b.html#kernighan-brian-w-ritchie-dennis-m-1988-the-c-programming-language))
+C Language first-program demonstration is essentially
+unchanged using the command-line environment of modern (2021) Visual Studio
+Build Tools.
+
 ![Hello World](T211002-HelloWorld.png)
+
+## Next Steps
 
 Visual Studio Code is recommended for use with the VS Build Tools along
 with a [Command Prompt](..\T060501) command-line environment.  Features of
@@ -77,7 +87,7 @@ time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-     0.0.3 2021-11-19T21:41Z Repair and touch-up
+     0.0.3 2021-11-19T22:54Z Repair and touch-up
      0.0.2 2021-11-19T18:08Z Full Draft text
      0.0.1 2021-10-30T15:56Z Touch up dates
      0.0.0 2021-10-27T20:18Z Clone from T211001/index.md for boilerplate
