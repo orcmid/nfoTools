@@ -6,7 +6,7 @@
 
 # ToolCraft: Visual Studio Build Tools
 
-| ***[T211002](.)*** | [tools](../)[>T211002](.) | ***0.0.3 2021-11-19*** |
+| ***[T211002](.)*** | [tools](../)[>T211002](.) | ***0.0.4 2021-11-20*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Visual Studio Build Tools | ![Hard Hat Area](../../images/hardhat-logo.gif) |
 
@@ -91,7 +91,7 @@ time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-     0.0.4 2021-11-20T00:58Z Close to complete
+     0.0.4 2021-11-20T01:03Z Close to complete
      0.0.3 2021-11-19T23:44Z Repair and touch-up
      0.0.2 2021-11-19T18:08Z Full Draft text
      0.0.1 2021-10-30T15:56Z Touch up dates
