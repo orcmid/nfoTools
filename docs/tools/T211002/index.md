@@ -1,4 +1,4 @@
-<!-- index.md 0.0.3                 UTF-8                          2021-11-19
+<!-- index.md 0.0.4                 UTF-8                          2021-11-20
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                       VISUAL STUDIO BUILD TOOLS
@@ -25,7 +25,9 @@ projects are obtained by checking a single box.
 
 ![VS Installer Workload Setup](T211002c/VSBuildTools-2021-11-08-0826-Installer.png)
 
-## The Famous "Your First" Commmand-Line Program
+> *HOW TO:* [Setting this up](T211002c)
+
+## The Famous "Your First Program"
 
 The traditional
 ([1978](../T060101/T060101b.html#kernighan-brian-w-ritchie-dennis-m-1988-the-c-programming-language))
@@ -34,6 +36,8 @@ unchanged using the command-line environment of modern (2021) Visual Studio
 Build Tools.
 
 ![Hello World](T211002-HelloWorld.png)
+
+> *HOW TO:* Getting to "Hello World"
 
 ## Next Steps
 
@@ -87,6 +91,7 @@ time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.4 2021-11-20T00:58Z Close to complete
      0.0.3 2021-11-19T23:44Z Repair and touch-up
      0.0.2 2021-11-19T18:08Z Full Draft text
      0.0.1 2021-10-30T15:56Z Touch up dates
