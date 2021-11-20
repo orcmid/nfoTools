@@ -1,5 +1,5 @@
 @echo off
-rem VCrayApp 0.0.0 rayApp.bat 0.0.8 UTF-8                         2021-11-11
+rem VCrayApp 0.0.0 rayApp.bat 0.0.9 UTF-8                         2021-11-20
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 rem                  BUILDING RAYLIB APP WITH VC/C++ TOOLS
@@ -32,6 +32,10 @@ rem accompanying VCrayApp-%VCrayApp%.txt file.  For further information, see
 rem <place-to-be-announced> and check for the latest
 rem version at <the-related-place-to-be-announced>.
 
+rem Remeber where rayApp.bat is called *from*, so it can be restored on exit
+rem including after errors.
+SET VCfrom=%CD%
+
 rem SELECT EMBEDDED, TERSE, OR DEFAULT
 rem     %1 value "+" selects smooth non-stop operation for splicing output
 rem        into that of a calling script.
@@ -63,9 +67,22 @@ WHERE cl.exe >nul 2>nul
 IF ERRORLEVEL 1 goto FAIL3
 ECHO: [rayApp] %VCrayApp% BUILDING RAYLIB APP WITH VC/C++ TOOLS
 
-IF "%VCsplice%" == "+" GOTO :LOCATE
+IF "%VCsplice%" == "+" GOTO :PARMCHECK
 ECHO:          %TIME% %DATE% on %USERNAME%'s %COMPUTERNAME%         %VCterse%
 ECHO:          rayApp.bat at %~dp0                                  %VCterse%
+
+:PARMCHECK
+rem DETERMINE PARAMETERS
+rem    Do this before checking Location so that "?" can work regardless
+rem    See :USAGE for the rayApp.bat API contract
+IF "%1" == "+" SHIFT /1
+IF "%1" == "?" GOTO :USAGE
+IF "%1" == "*" SHIFT /1
+IF "%1" == "-c" ( SET VCclean=1
+                  SHIFT /1 )
+IF "%1" == "-r" ( SET VCrun=1
+                  SHIFT /1 )
+IF NOT "%1" == "" GOTO FAIL 2
 
 :LOCATE
 rem VERIFY LOCATION OF THE SCRIPT WHERE VCRayApp.zip IS FULLY EXTRACTED
@@ -82,24 +99,11 @@ IF NOT EXIST "%~dp0rayApp.bat" GOTO :FAIL1
 
 IF NOT EXIST "%~dp0..\raylib\src\raylib.h" GOTO :FAIL6
 
-rem DETERMINE PARAMETERS
-rem    See :USAGE for the rayApp.bat API contract
-IF "%1" == "+" SHIFT /1
-IF "%1" == "?" GOTO :USAGE
-IF "%1" == "*" SHIFT /1
-IF "%1" == "-c" ( SET VCclean=1
-                  SHIFT /1 )
-IF "%1" == "-r" ( SET VCrun=1
-                  SHIFT /1 )
-IF NOT "%1" == "" GOTO FAIL 2
-
-
 rem COMPILE INTO THE CACHE IF NEEDED
 IF NOT "%VCclean%" == "1" GOTO :CACHECHECK
 DEL %~dp0cache\rglfw.obj
 
 :CACHECHECK
-SET VCfrom=%CD%
 IF EXIST %~dp0cache\rglfw.obj GOTO :APPBUILD
 DEL %~dp0cache\*.obj > nul 2>nul
 
@@ -216,15 +220,18 @@ EXIT /B 0
 :BAIL
 ECHO:
 IF NOT ERRORLEVEL 2 SET ERRORLEVEL=2
+CD %VCfrom%                                                          %VCterse%
+rem always leave with the one that brung us
+ENDLOCAL
 IF NOT "%VCterse%" == "" EXIT /B %ERRORLEVEL%
 IF "%VCsplice%" == "+" EXIT /B %ERRORLEVEL%
 ECHO:
-ENDLOCAL
 PAUSE
 EXIT /B %ERRORLEVEL%
 
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 rem
+rem 0.0.9 2021-11-20T19:42Z Adjust error checks and preserving original %CD%
 rem 0.0.8 2021-11-11T20:13Z Checking for expected presence of raylib/
 rem 0.0.7 2021-11-11T17:52Z Moving all *.opt files to cache/
 rem 0.0.6 2021-11-10T03:30Z Confirmed and touched-up ready for nfoTools
