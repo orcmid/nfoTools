@@ -82,7 +82,7 @@ IF "%1" == "-c" ( SET VCclean=1
                   SHIFT /1 )
 IF "%1" == "-r" ( SET VCrun=1
                   SHIFT /1 )
-IF NOT "%1" == "" GOTO FAIL 2
+IF NOT "%1" == "" GOTO FAIL2
 
 :LOCATE
 rem VERIFY LOCATION OF THE SCRIPT WHERE VCRayApp.zip IS FULLY EXTRACTED
@@ -222,16 +222,16 @@ ECHO:
 IF NOT ERRORLEVEL 2 SET ERRORLEVEL=2
 CD %VCfrom%                                                          %VCterse%
 rem always leave with the one that brung us
-ENDLOCAL
 IF NOT "%VCterse%" == "" EXIT /B %ERRORLEVEL%
 IF "%VCsplice%" == "+" EXIT /B %ERRORLEVEL%
 ECHO:
+ENDLOCAL
 PAUSE
 EXIT /B %ERRORLEVEL%
 
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 rem
-rem 0.0.9 2021-11-20T19:42Z Adjust error checks and preserving original %CD%
+rem 0.0.9 2021-11-20T20:59Z Adjust error checks and preserving original %CD%
 rem 0.0.8 2021-11-11T20:13Z Checking for expected presence of raylib/
 rem 0.0.7 2021-11-11T17:52Z Moving all *.opt files to cache/
 rem 0.0.6 2021-11-10T03:30Z Confirmed and touched-up ready for nfoTools
