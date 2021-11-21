@@ -79,7 +79,7 @@ predating Unix, MS-DOS, C Language, and Windows PCs.
 
 | **ID** | **Started** | **Status** | **Topic** |
 |   --:   |   :-:   |  :-:   |  :--  |
-| [T211002c](T211002c/) | 2021-10-27 | 0.0.5 2021-11-21 | VS Build Tools Installation |
+| [T211002c](T211002c/) | 2021-10-27 | 0.0.6 2021-11-21 | VS Build Tools Installation |
 
 ## Related Material
 
@@ -101,7 +101,7 @@ time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-     0.0.5 2021-1l-21T18:02Z User Friendlier, Complete First Draft
+     0.0.5 2021-1l-21T21:13Z User Friendlier, Complete First Draft
      0.0.4 2021-11-20T01:03Z Close to complete
      0.0.3 2021-11-19T23:44Z Repair and touch-up
      0.0.2 2021-11-19T18:08Z Full Draft text

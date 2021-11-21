@@ -32,14 +32,14 @@ When the download completes, run (open) the program. (Microsoft Edge example.)
 This initiates installation of a Visual Studio Installer that takes over
 downloading of the build tools.
 
-> ***How was this point reached?*** [More details](T211002c1)
+> ***How was this point reached?*** [More details](T211002c1#downloading-the-visual-studio-installer)
 
 ![Visual Studio Installer](VSBuildTools-2021-11-08-0822-Install.png)
 
 The Visual Studio Installer is announced.  This is where the Microsoft
 Software License Terms can be reviewed.
 
-> ***When does this happen?*** [More details](T211002c1)
+> ***When does this happen?*** [More details](T211002c1#downloading-the-visual-studio-installer)
 
 On continuation, the VS Installer
 will indicate options for Build Tool features to be installed.
@@ -65,7 +65,7 @@ under letter "V" will show the Visual Studio Installer.  Expanding the Visual
 Studio 2022 folder reveals the available Command Prompts for operating with
 the Native Tools in command-line environments.
 
-![Windows 10 All Programs "V"](VSBuildTools-2021-11-12-1438-x64NativeCommand.png)
+![Windows 10 All Programs Letter V](VSBuildTools-2021-11-12-1438-x64NativeCommand.png)
 
 Click on "x64 Native Tools Command..." to initiate a Build Tools command-line
 environment.
@@ -102,7 +102,7 @@ time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-     0.0.6 2021-11-21T17:24Z Smoothing the text
+     0.0.6 2021-11-21T21:39Z Smoothing the text
      0.0.5 2021-11-19T23:43Z Better Installer image, touch-ups
      0.0.4 2021-11-13T00:42Z Fix broken image entry
      0.0.3 2021-11-12T23:13Z Completed first draft

@@ -1,4 +1,4 @@
-<!-- index.md 0.0.11                UTF-8                          2021-11-16
+<!-- index.md 0.0.12                UTF-8                          2021-11-21
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                        NFOTOOLS TOOLCRAFT NOTEBOOK
@@ -6,15 +6,18 @@
 
 # ***nfoTools** Toolcraft Notebook*
 
-![Hard Hat Area](../images/hardhat-logo.gif)
+| ***[tools](.)*** | [nfoTools](../)[>tools](.) | ***0.0.12 2021-11-21*** |
+| :--                |       :-:          | --: |
+| ![nfotools](../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Visual Studio Build Tools | ![Hard Hat Area](../../images/hardhat-logo.gif) |
 
 For deeper, practical understanding of nfoTools topics, it is important to
 work with a personal computer and rely on some available software tools.
 
 General [PC usage skills](../skills) are important.
 
-To explore, construct, and extend nfoTools, facility with some available tools
-is essential.  That's where Toolcraft comes in.
+To explore, construct, and extend nfoTools and undertake your own software
+devlopment projects, facility with some important tools is essential.  That's
+where Toolcraft comes in.
 
 For nfoTools, the primary toolcraft consists of specialized techniques for
 development, maintenance, and use of Microsoft Windows applications on and for
@@ -26,15 +29,17 @@ For background on toolcraft, its benefits and dangers, see
 
 ## Toolcraft Catalog
 
+***Everything is work-in-progress at this stage of development in the open.***
+
 | **ID** | **Started** | **Status** | **Topic** |
 |   :-:   |   :-:   |  :-:   |  ---  |
-| [T211002](T211002) | 2021-10-27 | 0.0.1 2021-10-30 | VS Build Tools |
+| [T211002](T211002) | 2021-10-27 | 0.0.5 2021-11-21 | VS Build Tools |
 | [T211001](T211001) | 2021-10-20 | 0.0.1 2021-10-23 | Visual Studio Code for Windows |
 |                    |            |                  |          |
-| [T060501](T060501) | 2006-05-20 | 0.0.9 2021-09-15 | Windows CMD Command-Line Environment |
-| [T060101](T060101) | 2006-09-08 | 0.1.0 2021-11-16 | C/C++ Programming |
+| [T060501](T060501) | 2006-05-20 | 0.0.14 2021-09-20 | Windows CMD Command-Line Environment |
+| [T060101](T060101) | 2006-09-08 | 0.1.1 2021-11-16 | C/C++ Programming |
 |                    |            |                  |          |
-| [T000000](T000000.html) | 2005-12-25 | 0.0.2 2021-09-16 | Diary & Job Jar |
+| [T000000](T000000.html) | 2005-12-25 | 0.0.4 2021-11-21 | Diary & Job Jar |
 
 ----
 
@@ -48,6 +53,7 @@ time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.12 2021-11-21T21:10Z Tidying up, including folio-style header
      0.0.11 2021-11-16T19:08Z T060101
      0.0.10 2021-10-30T16:01Z Touch up dates
      0.0.9 2021-10-27T21:59Z Reflect T211002 0.0.0

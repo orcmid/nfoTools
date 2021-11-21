@@ -1,10 +1,10 @@
-<!-- index.md 0.0.9              UTF-8                          dh:2021-10-04
+<!-- index.md 0.0.10                UTF-8                       dh:2021-10-21
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
      -->
 
 # Welcome to nfoTools
 
-| ***[nfoTools](index.html)*** | Work-in-Progress | ***0.0.8 2021-09-21*** |
+| ***[nfoTools](index.html)*** | ***Work-in-Progress*** | ***0.0.10 2021-10-21*** |
 | :--                |       :-:          | --: |
 | | ![Welding nfoTools](images/nfoWorks-2014-06-02-1638-LogoLarge.png) | |
 
@@ -19,16 +19,18 @@ software projects.
 
 nfoTools are developed and demonstrated using small mini-projects that are
 carried out in the GitHub repository and also documented here at
-[nfoTools dev](dev/).  [Games](games) are employed for many developments and
+[nfoTools dev](dev/).
+
+[Games](games) are employed for many developments and
 the play of games and gaming has an exalted place here.
 
 nfoTools includes a [Toolcraft](tools/) on-ramp that supports beginners who
 seek to understand more about programming and the tacit understanding that
 experienced software developers rely upon. There are guard rails for
-crawling first, then walk, then run as much as desired.
+crawling first, then walking, then running and leaping all you want.
 
 Progressive discloser is used. Skip through details already known.  Review of
-the basics when useful along with following links to more advanced cases.
+the basics when useful.  Following links to more advanced cases.
 
 Emphasis is on development of software for Microsoft Windows and using
 Microsoft Windows PC desktop tools as instruments of such efforts.  Only
@@ -49,7 +51,9 @@ The nfoTools web is organized in topical sections.
 | | |
 | [construction](construction/) | nfoTools Web Construction Materials |
 
-I invite discussion about these tool in the
+----
+
+I invite discussion about nfoTools topics in the
 [Discussion section](https://github.com/orcmid/nfoTools/discussions).
 Improvements and removal of defects in this particular documentation can be
 reported and addressed in the
@@ -58,6 +62,7 @@ relevant [projects](https://github.com/orcmid/nfoTools/projects) from time to
 time.
 
 <!--
+      0.0.10 2021-11-21T20:52Z Tidying up
       0.0.9 2021-10-04T19:17Z Make Toolcraft not specific to prerequisites
       0.0.8 2021-09-21T16:51Z Welcoming games
       0.0.7 2021-09-17T19:41Z Smoothing, verifying links
