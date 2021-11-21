@@ -1,4 +1,4 @@
-T211002c.txt 0.0.2                  UTF-8                       dh:2021-11-12
+T211002c.txt 0.0.3                  UTF-8                       dh:2021-11-21
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -26,12 +26,16 @@ T211002c.txt 0.0.2                  UTF-8                       dh:2021-11-12
 
 MANIFEST
 
-    T211002c.txt
-             this manifest and job-jar file
+        T211002c.txt
+                 this manifest and job-jar file
 
-       index.md
-             the default page for this sub-folio
+           index.md
+                 the default page for this sub-folio
 
+       T211002c1.md
+                 the expanded step-by-step detailed download and setup
+        VS2022-*.png screen captures that illustrate the download and
+  VSBuildTools-*.png    and setup process
 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -60,12 +64,13 @@ MANIFEST
 
 TODO
 
- * Add confirmation of the install using a Command Prompt.
-
  * Mastering the developer command prompt will be the next subfolio.
+
+ * Making directories and organizing simple code projects will be next.
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.3 2021-11-21T17:33Z Advance the Manifest and TODOs
  0.0.2 2021-11-12T21:15Z Manage TODOs, reflecting progress
  0.0.1 2021-10-31T18:06Z Word-smithing
  0.0.0 2021-10-27T20:30Z Placeholder made from T21001c.txt as boiler plate.
