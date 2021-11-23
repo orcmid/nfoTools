@@ -1,4 +1,4 @@
-<!-- index.md 0.0.12                UTF-8                          2021-11-21
+<!-- index.md 0.0.13                UTF-8                          2021-11-21
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                        NFOTOOLS TOOLCRAFT NOTEBOOK
@@ -6,33 +6,37 @@
 
 # ***nfoTools** Toolcraft Notebook*
 
-| ***[tools](.)*** | [nfoTools](../)[>tools](.) | ***0.0.12 2021-11-21*** |
+| ***[tools](.)*** | [nfoTools](../)[>tools](.) | ***0.0.13 2021-11-23*** |
 | :--                |       :-:          | --: |
-| ![nfotools](../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Visual Studio Build Tools | ![Hard Hat Area](../../images/hardhat-logo.gif) |
+| ![nfotools](../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Visual Studio Build Tools | ![Hard Hat Area](../images/hardhat-logo.gif) |
 
-For deeper, practical understanding of nfoTools topics, it is important to
-work with a personal computer and rely on some available software tools.
+For deeper, practical understanding of software development, it is important
+to work with a personal computer and rely on some available software tools.
 
-General [PC usage skills](../skills) are important.
+This section of ***nfoTools*** provides on-ramps and guard rails, introducing
+some fundamental toolcraft that works on and for Microsoft Windows
+PCs.  Programming starts in Clean Standard C, evolving to combinations
+with C++.
 
-To explore, construct, and extend nfoTools and undertake your own software
-devlopment projects, facility with some important tools is essential.  That's
-where Toolcraft comes in.
+General [PC usage skills](../skills) are important prerequisites.
 
-For nfoTools, the primary toolcraft consists of specialized techniques for
-development, maintenance, and use of Microsoft Windows applications on and for
-desktop personal computers.  Prerequisite tools are either present in
-Microsoft Windows or they are freely-available to download and install.
+Prerequisite developer tools are either already present in
+Microsoft Windows or are freely-available to download and install.  Using Git
+and [GitHub](https://github.com) for backing-up your work and accessing the
+work of others is an important option as open-source working is introduced.
 
-For background on toolcraft, its benefits and dangers, see
+For background on toolcraft, see
 [The Craft in Toolcraft](https://orcmid.github.io/nfoTools/notes/N070801/).
 
 ## Toolcraft Catalog
 
-***Everything is work-in-progress at this stage of development in the open.***
+***Everything is work-in-progress at this stage of nfoTools development in the
+open.***
 
 | **ID** | **Started** | **Status** | **Topic** |
 |   :-:   |   :-:   |  :-:   |  ---  |
+| [T211102](T211102/T211102.txt) | 2021-11-23 | 0.0.0 placeholder | Git and GitHub |
+| [T211101](T211101/T211101.txt) | 2021-11-12 | 0.0.1 placeholder | raylib Graphical Library |
 | [T211002](T211002) | 2021-10-27 | 0.0.5 2021-11-21 | VS Build Tools |
 | [T211001](T211001) | 2021-10-20 | 0.0.1 2021-10-23 | Visual Studio Code for Windows |
 |                    |            |                  |          |
@@ -53,6 +57,7 @@ time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.13 2021-11-23T16:37Z More wordsmithing, T211101/T211102 hinting
      0.0.12 2021-11-21T21:10Z Tidying up, including folio-style header
      0.0.11 2021-11-16T19:08Z T060101
      0.0.10 2021-10-30T16:01Z Touch up dates

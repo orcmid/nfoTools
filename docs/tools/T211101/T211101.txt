@@ -1,4 +1,4 @@
-T211002.txt 0.0.1                   UTF-8                       dh:2021-11-**
+T211001.txt 0.0.1                   UTF-8                       dh:2021-11-23
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -54,7 +54,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. T211101: raylib Graphical Library.  nfoTools project
-   text file T211101.txt version 0.0.0 dated 2021-11-12, available on the
+   text file T211101.txt version 0.0.1 dated 2021-11-23, available on the
    Internet as a version of
    <https://orcmid.github.io/nfoTools/tools/T211101/T211101.txt>
 
@@ -92,6 +92,7 @@ TODO
 
   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.1 2021-11-23T16:33Z Touch-ups
  0.0.0 2021-11-12T00:22Z Placeholder and anticipation of T211101 unfolding
 
                      ***** end of T21101.txt *****
