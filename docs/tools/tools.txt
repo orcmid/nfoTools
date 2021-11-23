@@ -1,4 +1,4 @@
-tools.txt 0.0.17                 UTF-8                          dh:2021-11-16
+tools.txt 0.0.18                 UTF-8                          dh:2021-11-23
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -22,6 +22,7 @@ MANIFEST
     index.md
           front-page authoring for <https://orcmid.github.io/nfoTools/tools/>
 
+  T211102/ Git and GitHub
   T211101/ raylib Library for Graphical apps
   T211002/ Visual Studio Build Tools
   T211001/ Visual Studio Code
@@ -52,7 +53,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. nfoTools Toolcraft Notebook.  nfoTools project text
-   file tools.txt version 0.0.16 dated 2021-11-12, available on the Internet
+   file tools.txt version 0.0.18 dated 2021-11-23, available on the Internet
    as a version of
    <https://orcmid.github.io/nfoTools/tools/tools.txt>
 
@@ -66,7 +67,7 @@ TODO
 
  * Recommend VS Code or editor first, then GitHub for Windows, then
    TortoiseGit and GitHub Desktop, then VIsual Studio Developer Tools or
-   Community Edition
+   Community Edition -- RETHINK AND CONFIRM A GOOD SEQUENCE
 
  * Need Visual Studio Developer Tools first for Developer Command Prompt
    and launching of code by command prompt
@@ -76,16 +77,11 @@ TODO
 
  * Not certain about when we get farther into keyboards as tools, especially
    on the digital, computer-system side.  Maybe start on skills, then more
-   here on toolcraft of it?
+   here on toolcraft of it?  Yup.
 
  * Add tools entries for hashing (sha256check) and verifying digital
    signatures, then how to create them.  Documentation should always cover
    usage first, creation secondly, in progressive disclosure.
-
- * Setup and test for VS 2022 (17.0) but don't post anything until official
-   for building code eligible for distribution and production use.  Comment
-   about insider/preview usage and using only for verification and preparation
-   rather than release builds.  Dress rehearsals only :).
 
  * Deal with VS 2019 and VS 2017 installation and also detection.  Unclear
    about 2015 and earlier any longer.  There is the need to be able to rebuild
@@ -97,6 +93,8 @@ TODO
    terminal/console model can be spoken of separately, in a combination of
    notes and specific toolcrafts, including developing-for, not just
    developing-in.  Create projects for this.
+
+ * Need to distinguish Terminal and Console, both in usage and when developing
 
  * Contrast with GUI environments with respect to similarities and differences
 
@@ -116,13 +114,13 @@ TODO
    it over.
 
  * Look into what must be figured out around CL.exe that shows up in the
-   rayLab rawCL script development.
+   rayLab rawCL script development (now VCrayApp)
 
  * Watch FC_CPP and ensure that supporting materials are appearing here on
    nfoTools/docs.
 
  * "Coding standards" and following the standards of of a project being
-   contributed to are important.
+   contributed to are important.  Do the { ...} case.
 
  * There are two cases.  Explaining what practices are being observed, and
    how they are meant to be useful.  There is a lot of that here on nfoTools
@@ -140,6 +138,7 @@ TODO
 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.18 2021-11-23T16:29Z Anticipate T211102 again, manage TODOs
  0.0.17 2021-11-16T16:28Z Continue Triage from nfoWare, TODOs
  0.0.16 2021-11-12T18:06Z Rhapsodizing TODOs
  0.0.15 2021-11-12T00:18Z Anticipate T211101 and T211102

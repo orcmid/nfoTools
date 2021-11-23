@@ -1,0 +1,84 @@
+T211002.txt 0.0.0                   UTF-8                       dh:2021-11-23
+----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+
+                        nfoWare/nfoWorks nfoTools
+                        =========================
+
+<https://github.com/orcmid/nfoTools/blob/master/docs/tools/T211102/T211102.txt>
+      <https://orcmid.github.io/nfoTools/tools/T211102/T211102.txt>
+
+                       T211102: GIT AND GITHUB
+                       -----------------------
+
+This topic introduces Git, GitHub, and Tortoise Git.  These support
+programming projects on Windows PCs as part of backing up your own work,
+using projects of others, and working with teams.
+
+These tools are also useful for keeping up-to-date with with open-source
+projects such as raylib and also nfoTools.  There's a rich supply of efforts
+to rely on and also take part in.
+
+MANIFEST
+
+    T211102.txt  this manifest and job-jar file
+
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+                       Copyright 2021 Dennis E. Hamilton
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+ ATTRIBUTION
+
+   Hamilton, Dennis E. T211102: Git and GitHub.  nfoTools project text file
+   T211102.txt version 0.0.0 dated 2021-11-23, available on the
+   Internet as a version of
+   <https://orcmid.github.io/nfoTools/tools/T211102/T211102.txt>
+
+TODO
+
+ * Do Progressive Disclosure
+
+ * Install Git4Windows first.  This has become painful with too many mystery
+   option choices.  Smooth that out.
+
+ * Need to reconcile the interaction with VS Code and Git.  It looks like
+   Git can be later.
+
+ * GitHub account and use of the GitHub Desktop can then be started up.
+   Take it easy on first exploring Git, following projects, and seeing the
+   different cases of Issues, Discussion, Wikis, Projects, and what repos
+   look like.  This should be selective.
+
+ * Creating a GitHub project and repository for personal work, whether private
+   or public is next.
+
+ * Tortoise Git is recommended for its tagging of file explorer entries with
+   their Git status is invaluable.  This goes with the skilss on File explorer
+   usage on Windows and also in conjunction with operation in a command-line
+   environment.
+
+ * Tortoise Git seems to now require Git to be installed already.  I don't
+   think the GitHub Desktop for PC installs Git either.  Must check that out
+   and confirm a good sequence for where this fits well in setting up other
+   tools.
+
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+ 0.0.0 2021-11-23T16:21Z Placeholder and anticipation of T211102 unfolding
+
+                     ***** end of T21102.txt *****
