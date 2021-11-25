@@ -1,4 +1,4 @@
-<!-- index.md 0.0.13                UTF-8                          2021-11-21
+<!-- index.md 0.0.14                UTF-8                          2021-11-**
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                        NFOTOOLS TOOLCRAFT NOTEBOOK
@@ -8,7 +8,7 @@
 
 | ***[tools](.)*** | [nfoTools](../)[>tools](.) | ***0.0.13 2021-11-23*** |
 | :--                |       :-:          | --: |
-| ![nfotools](../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Visual Studio Build Tools | ![Hard Hat Area](../images/hardhat-logo.gif) |
+| ![nfotools](../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | nfoTools Toolcraft Notebook | ![Hard Hat Area](../images/hardhat-logo.gif) |
 
 For deeper, practical understanding of software development, it is important
 to work with a personal computer and rely on some available software tools.

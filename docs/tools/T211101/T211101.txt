@@ -1,4 +1,4 @@
-T211001.txt 0.0.1                   UTF-8                       dh:2021-11-23
+T211101.txt 0.0.2                   UTF-8                       dh:2021-11-**
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -20,7 +20,7 @@ T211001.txt 0.0.1                   UTF-8                       dh:2021-11-23
     <https://orcmid.github.io/nfoTools/tools/T211002/>.
 
     Microsoft Visual Studio Code is recommended for editing code as part of
-    projects that use raylab.  A VS Code setup is used in examples here.
+    projects that use raylib.  A VS Code setup is used in examples here.
    See <https://orcmid.github.io/nfoTools/tools/T211001/>.
 
 
@@ -29,9 +29,9 @@ MANIFEST
     T211101.txt  this manifest and job-jar file
       index.md   front porch published as orcmid.github.io/nfoTools/T211101/
 
-   T211101c/     raylib Resources
-   T211101d/     Windows Templates for Native raylib Apps
-   T211101e/     Exploring and Exercising raylib Graphics
+   T211101b/     raylib Resources
+   T211101c/     Windows Templates for Native raylib Apps
+   T211101d/     Exploring and Exercising raylib Graphics
 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 

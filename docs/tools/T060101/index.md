@@ -1,4 +1,4 @@
-<!-- index.md 0.1.1                UTF-8                          2021-11-16
+<!-- index.md 0.1.2                UTF-8                          2021-11-25
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                          T060101: C/C++ PROGRAMMING
@@ -6,9 +6,9 @@
 
 # ToolCraft: C/C++ Programming
 
-| ***[T060101](.)*** | [tools](../)[>t060101](.) | ***0.1.1 2021-11-16*** |
+| ***[T060101](.)*** | [tools](../)[>t060101](.) | ***0.1.2 2021-11-25*** |
 | :--                |       :-:          | --: |
-| ![nfotools](../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../../images/hardhat-logo.gif) |
+| ![nfotools](../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | C/C++ Programming | ![Hard Hat Area](../../images/hardhat-logo.gif) |
 
 >> ***Ed.Note: This material is dated.  Extensive revision is called for.***
 
@@ -36,6 +36,7 @@ on this topic.  Recommended materials and language references are identified.
 
 | **ID** | **Started** | **Status** | **Topic** |
 |   :-:   |   :-:   |  :-:   |  ---  |
+| [T060101c](T060101c/) | 2021-11-25 | 0.0.0 placeholder | Getting to "Hello" |
 | [T060101b](T060101b.html) | 2006-05-20 | 0.1.1 2021-11-16 | C/C++ Resources |
 |                           |            |                   |           |
 | [T060101a](T060101a.html) | 2005-09-08 | 0.1.1 2021-11-16 | Legacy Diary \& Job Jar |
@@ -52,6 +53,7 @@ time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.1.2 2021-11-25T00:27Z T060101c
      0.1.1 2021-11-16T19:40Z Touch-ups
      0.1.0 2021-11-16T17:17Z Transposition to nfoTools as placeholder and
            boilerplate

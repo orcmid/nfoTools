@@ -1,4 +1,4 @@
-T211002.txt 0.0.0                   UTF-8                       dh:2021-11-23
+T211002.txt 0.0.1                   UTF-8                       dh:2021-11-**
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -76,6 +76,26 @@ TODO
    think the GitHub Desktop for PC installs Git either.  Must check that out
    and confirm a good sequence for where this fits well in setting up other
    tools.
+
+ * There a Git and Open-Source Learning Series offered by Microsoft.
+   <https://t.co/TvQaOXQU9N>
+   That's an unbelievable URL one step past t.co.  Scary.  Not certain what I
+   signed-up for.  This looks good though.  Must find a way to recommend this
+     o Learning Git by exploring open-source repositories
+     o Exploring a Git repository using Visual Studio
+     o Contributing to an open-source project
+     o Add your existing code to Git and GitHub
+     o Next steps
+   This is very well done.  I don't know how much can be pealed out from under
+   Visual Studio and accomplished with Visual Studio Code or even completely
+   separately.
+     o There are some good links in the Welcome email.  They all feature VS
+       and I'm uncertain how that might factor out.
+     o I see by the second week, that this is all done from inside Visual
+       Studio, finding and looking into GitHub and also cloning from GitHub
+       directly under Visual Studio.  There are even more links.  The
+       treatment seems oriented to UWP and C# also.
+    I will point this out.
 
   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 

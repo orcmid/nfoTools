@@ -1,4 +1,4 @@
-T060101.txt 0.0.2                   UTF-8                       dh:2021-11-17
+T060101.txt 0.0.3                   UTF-8                       dh:2021-11-24
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -21,6 +21,7 @@ MANIFEST
 
    T060101a.md   nfoWare t060101a Diary & Job Jar (legacy)
    T060101b.md   Resources
+   T060101c/     Getting to "Hello"
 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -43,7 +44,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. T060101: C/C++ Programming.  nfoTools project text
-   file T060101.txt version 0.0.2 dated 2021-11-17, available on the
+   file T060101.txt version 0.0.3 dated 2021-11-24, available on the
    Internet as a version of
    <https://orcmid.github.io/nfoTools/tools/T060101/T060101.txt>
 
@@ -64,10 +65,15 @@ TODO
   * We need a tie-in to development lifecycle.  This may end up drawing on
     Git and GitHub too.
 
-  * T060101b: Put books and tutorials first, differentiating between C and C++
+  * T060101b: Review and Update with current materials, including more on-line
+    and also MOOCs of various kinds
+
+  * T060101c: Getting to Hello will be a folio on setting up and the forever
+    first program, also its take-apart.
 
   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.3 2021-11-24T23:24Z T060101c and Manage TODOs
  0.0.2 2021-11-17T18:44Z Managing TODOs, Manifest
  0.0.1 2021-11-16T16:31Z Still boilerplate customization, TODOs
  0.0.0 2021-11-16T03:00Z Placeholder for addressing C/C++ lore and useful
