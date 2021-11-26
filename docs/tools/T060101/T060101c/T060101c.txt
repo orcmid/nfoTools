@@ -1,4 +1,4 @@
-T060101c.txt 0.0.0                  UTF-8                       dh:2021-11-24
+T060101c.txt 0.0.1                  UTF-8                       dh:2021-11-26
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -19,6 +19,8 @@ MANIFEST
     T060101c.txt  this manifest and job-jar file
        index.md   front porch published as
                   orcmid.github.io/nfoTools/T060101/T060101c/
+           *.png  screen captures for the three way to get to the same
+                  hello.c "hello"
 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -41,7 +43,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. T060101c: Getting to "Hello."  nfoTools project text
-   file T060101c.txt version 0.0.0 dated 2021-11-24, available on the
+   file T060101c.txt version 0.0.1 dated 2021-11-26, available on the
    Internet as a version of
    <https://orcmid.github.io/nfoTools/tools/T060101/T060101c/T060101c.txt>
 
@@ -49,31 +51,30 @@ TODO
 
  * Describe the initial steps and a little about why but mostly what.
 
- * We will take the original K&R hello.c first, assuming it still passes
-   muster.  Then we will go through the deconstruction and reconstruction
-   to show key features of an evolved hello.c and also and the dance through
-   notions that underly that particular approach.
+ * We will take the original K&R hello.c first.  It passes with no complaints
+   from modern tools.  We will go through the construction that reaches the
+   "hello, world" achievement.
+
+ * The next page will do the deconstruction/reconstruction and identify
+   matters of form and substance with regard to the hello.c code.
 
  * Although I had favored puts, fputs is a better choice to deal with the use
    of '/n' explicitly.
 
- * We need to setup a place to have the hello project.
-
- * We will do the first one in notepad.  Then it will be morphed into the
-   one that has the style I prefer, starting from a deconstruction of main.
-
- * I will also change my command prompt to one that I prefer, and we will be
-   seeing the code in Visual Studio Code with what that provides.
+ * Changes of command prompt and shortcuts will not be done until hello.c is
+   all unfolded and we are ready for bigger things.
 
  * We will summarize what is important.  We can also take apart the CL.exe
    compilation at some point, with headers, preprocessor, creation of *.obj,
-   selection of libraries, and linking to make the *.exe.
+   selection of libraries, and linking to make the *.exe.  This might be best
+   at Build Tools though.
 
  * There will be placeholders, sketches in other tool folders to support this
    back and forth.
 
   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.1 2021-11-26T04:17Z Update manifest, reflect latest thoughts in TODO
  0.0.0 2021-11-25T00:07Z Placeholder for taking apart "Hello, world."
 
                      ***** end of T060101c.txt *****
