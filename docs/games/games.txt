@@ -1,4 +1,4 @@
-games.txt 0.0.1                    UTF-8                        dh:2021-09-21
+games.txt 0.0.2                    UTF-8                        dh:2022-02-12
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -48,8 +48,8 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. nfoTools Project Games.  nfoTools file docs/games.txt
-   version 0.0.1 dated 2021-09-21, available on the Internet as a version of
-   <https://github.com/orcmid/nfoTools/blob/master/docs/games/games.txt>
+   version 0.0.2 dated 2022-02-12, available on the Internet as a version of
+   <https://orcmid.github.io/nfoTools/games/games.txt>
 
 TODO
 
@@ -59,10 +59,25 @@ TODO
  * What about other recreational computing?  Then it is like fun or fun &
    games.  Think it over.
 
-  * Inventory existing games material for potential treatment here.
+ * Inventory existing games material for potential treatment here.
+
+ * Need to distinguish games and gaming and gamedev?
+
+ * Scrounge my OneNote collection on gaming and adventuring
+
+ * Tie into Azure Gaming including the Cognitive Services Reference
+   Architecture,
+   <https://docs.microsoft.com/en-us/gaming/azure/reference-architectures/cognitive>
+
+ * Also the 5 key properties of a good game.  These will all influence the
+   progression of Adv10.
+
+ * So I am definitely crossed up about this being for games and also gamedev?
+   Follow my own advice and move gaming items to nfoTools/docs/dev.
 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.2 2022-02-12T16:13Z Manage TODOs, park some gaming TODOs here for now.
  0.0.1 2021-09-21T16:46Z Touch-up, manage TODOs
  0.0.0 2021-09-21T14:57Z Placeholder for development of the games section
 
