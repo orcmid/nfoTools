@@ -1,4 +1,4 @@
-skills.txt 0.0.7                    UTF-8                       dh:2021-10-14
+skills.txt 0.0.8                    UTF-8                       dh:2022-02-14
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -51,7 +51,7 @@ MANIFEST
 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-                       Copyright 2021 Dennis E. Hamilton
+                    Copyright 2021-2022 Dennis E. Hamilton
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -69,12 +69,30 @@ MANIFEST
 
  ATTRIBUTION
 
-   Hamilton, Dennis E. nfoTools Tacit-Skills Notebook.  nfoTools project text
-   file skills.txt version 0.0.7 dated 2021-10-14, available on the Internet
-   as a version of
-   <https://orcmid.github.io/nfoTools/skills/skills.txt>
+   Hamilton, Dennis E. nfoTools Skills Notebook.  nfoTools project text file
+   skills.txt version 0.0.8 dated 2022-02-14, available on the Internet as a
+   version of <https://orcmid.github.io/nfoTools/skills/skills.txt>
 
 TODO
+
+ * Add "related-material" to notes on tacit knowledge and anything on gaining
+   skills and confidence under other sections of nfoTools.
+
+ * With regard to pre-requisites, we need to identify what they are and also
+   provide a means to mastery of them. There is also something about UX
+   guidance.
+
+ * De-emphasize tacit knowledge and focus on skills pre-requisites and their
+   satisfaction.  Add "on being a beginner."  Standard beginner mistakes.
+   Introduce Confirmable Experience.
+
+ * On Confirmable experience, and on providing mechanisms for encouraging it
+   with novices.  Identify ways for beginners to report their difficulties,
+   distinguish between requesting assistance and reporting a defect.  Also,
+   discussions versus "Issues" and gleaning UX problems out of reported
+   issues.
+
+ * The home page should also help with this and maybe "About" too.
 
  * Address the prerequisite and companion skills that go with becoming fluent
    in the toolcraft featured in the nfoTools project.
@@ -153,6 +171,7 @@ TODO
 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.8 2022-02-14T18:01Z Expand on serving novices
  0.0.7 2021-10-14T15:21Z Musings on dates and times
  0.0.6 2021-09-27T18:38Z Manage TODOs, expand manifest, smoothing
  0.0.5 2021-09-05T16:21Z Moved keyboarding TODOs to S210902.txt
