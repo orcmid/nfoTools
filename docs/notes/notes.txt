@@ -1,4 +1,4 @@
-notes.txt 0.0.5                    UTF-8                        dh:2022-02-14
+notes.txt 0.0.6                    UTF-8                        dh:2022-02-15
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -29,6 +29,7 @@ MANIFEST
 
   N070801/ The Craft of Toolcraft
   N210901/ Tacit Knowledge and the Beginner Mind
+  N220201/ Beginner Mind FAILS
 
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
@@ -52,7 +53,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. nfoTools Project Notes.  nfoTools file docs/notes.txt
-   version 0.0.5 dated 2022-02-14, available on the Internet as a version of
+   version 0.0.6 dated 2022-02-16, available on the Internet as a version of
    <https://orcmid.github.io/nfoTools/notes/notes.txt>
 
 TODO
@@ -96,8 +97,14 @@ TODO
    o n270201 SemFix is a tool-level thing, and a practice.  Need to split out
      a Patterns and/or Practices thingie?
 
+ * Use N220201 For identifying my own Beginner Mind fails, having way too many
+   tacit understandings that don't even stand out for me.
+
+ * Account for N220201 as related material for N210901 and maybe N070801 too.
+
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.6 2022-02-16T00:03Z Review and anticipate N220201
  0.0.5 2022-02-14T18:24Z Cleanup around categories here
  0.0.4 2021-09-18T22:19Z Manage TODOs on transposing nfoWare/tools folios
  0.0.3 2021-09-07T15:54Z Add N070801 and correct the URLs for this page
