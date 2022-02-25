@@ -1,4 +1,4 @@
-N220201.txt 0.0.0                   UTF-8                       dh:2022-02-16
+N220201.txt 0.0.1                   UTF-8                       dh:2022-02-25
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -8,8 +8,16 @@ N220201.txt 0.0.0                   UTF-8                       dh:2022-02-16
 <https://github.com/orcmid/nfoTools/blob/master/docs/notes/N220201/N220201.txt>
        <https://orcmid.github.io/nfoTools/notes/N220201/N220201.txt>
 
-                      N220201: BEGINNER MIND FAILS
-                      ----------------------------
+                     N220201: BEGINNER MIND FAILURES
+                     -------------------------------
+
+    I was stunned to find how much I had failed to bring a beginner mind to
+    some of my tools introductions intended for beginners and novices.  This
+    folio is a cataloguing of those and remediations for them.
+
+    My commitment is to provide on-ramps and guard rails and I need to bring
+    execution on that to the forefront.  The progression is irregular.  At
+    the same time, I am making and using nfoTools for my own purposes.
 
 MANIFEST
 
@@ -40,9 +48,9 @@ MANIFEST
 
  ATTRIBUTION
 
-   Hamilton, Dennis E. Tacit Knowledge and the Beginner Mind.  nfoTools file
-   N220201.txt version 0.0.0 dated 2022-02-16 available on the Internet as a
-   version of <https://orcmid.github.io/nfoTOols/notes/N220201/N220201.txt>
+   Hamilton, Dennis E. Beginner Mind Failures.  nfoTools file N220201.txt
+   version 0.0.1 dated 2022-02-25 available on the Internet as a version of
+   <https://orcmid.github.io/nfoTOols/notes/N220201/N220201.txt>
 
 TODO
 
@@ -50,8 +58,12 @@ TODO
 
  * See if there is more that could be here about cultivating a beginner mind.
 
+ * Complete the 4 "Not my" pages, their illustrations, and setup for more
+   treatment under skills.
+
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.1 2022-02-25T18:12Z Fill in placeholding with initial TODOs, synopsis
  0.0.0 2022-02-16T00:42Z Placeholder for the initial content and future
        editing.
 
