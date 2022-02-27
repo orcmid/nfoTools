@@ -1,0 +1,78 @@
+N220201a.txt 0.0.0                   UTF-8                      dh:2022-02-27
+----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+
+                        nfoWare/nfoWorks nfoTools
+                        =========================
+
+<https://github.com/orcmid/nfoTools/blob/master/docs/notes/N220201/N220201a.txt>
+      <https://orcmid.github.io/nfoTools/notes/N220201/N220201a.txt>
+
+                       N220201a: NOT YOUR DESKTOP
+                      ---------------------------
+
+    I was stunned to find how much I had failed to bring a beginner mind to
+    some of my tools introductions intended for beginners and novices.  This
+    folio is a cataloguing of those and remediations for them.
+
+    My commitment is to provide on-ramps and guard rails and I need to bring
+    execution on that to the forefront.  The progression is irregular.  At
+    the same time, I am making and using nfoTools for my own purposes.
+
+MANIFEST
+
+   N220201a.txt
+            this "Not Your Desktop" folio page job jar and manifest
+
+   Tacit-2021-11-26-1135-TacitDesktop.png
+            My desktop on that particular date, showing my use of screen
+            margins as a way to work on documents in the middle wtih the
+            desktop not far out of reach
+
+
+----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+                   Copyright 2022 Dennis E. Hamilton
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+ ATTRIBUTION
+
+   Hamilton, Dennis E. Not Your Desktop.  nfoTools file N220201a.txt
+   version 0.0.0 dated 2022-02-27 available on the Internet as a version of
+   <https://orcmid.github.io/nfoTOols/notes/N220201/N220201a.txt>
+
+TODO
+
+ * Flex N220201a.md off of N220201/index.md and connect from index.md
+
+ * Demonstrate my desktop and consider alternatives - create an account just
+   for this and use the default desktop, if there is one.
+
+ * Consider alternative desktops also, that is one that can be switched
+   between.
+
+ * Explain the motivation for the arrangement.
+
+ * Find a Xerox workstation screen shot that shows some of what the
+   inspiration was.
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+ 0.0.0 2022-02-27T23:30Z Placeholder for the initial content and future
+       editing.
+
+                    ***** end of N220201a.txt *****

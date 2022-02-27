@@ -1,4 +1,4 @@
-N220201.txt 0.0.1                   UTF-8                       dh:2022-02-25
+N220201.txt 0.0.2                   UTF-8                       dh:2022-02-27
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -25,7 +25,10 @@ MANIFEST
             this manifest and job-jar file
 
       index.md
-            the main page
+            the main page, front porch to N220201
+
+   N220201a.txt
+            the "Not Your Desktop" folio page job jar and manifest
 
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
@@ -49,7 +52,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. Beginner Mind Failures.  nfoTools file N220201.txt
-   version 0.0.1 dated 2022-02-25 available on the Internet as a version of
+   version 0.0.2 dated 2022-02-27 available on the Internet as a version of
    <https://orcmid.github.io/nfoTOols/notes/N220201/N220201.txt>
 
 TODO
@@ -61,8 +64,18 @@ TODO
  * Complete the 4 "Not my" pages, their illustrations, and setup for more
    treatment under skills.
 
+ * Add "Not my text editor"
+
+ * Add "Not your language" and deal with all of the ESL cases, Google
+   Translator games, and seeing what other apps do for localization
+   (e.g., Windows desktop menus, shortcuts, and notifications, ditto for
+   Edge and Office)
+
+ * Add not my terminal/shell or script too.
+
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.2 2022-02-27T23:31Z Flex in N220201a and manage TODOs
  0.0.1 2022-02-25T18:12Z Fill in placeholding with initial TODOs, synopsis
  0.0.0 2022-02-16T00:42Z Placeholder for the initial content and future
        editing.
