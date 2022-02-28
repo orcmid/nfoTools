@@ -1,4 +1,4 @@
-N220201a.txt 0.0.0                   UTF-8                      dh:2022-02-27
+N220201a.txt 0.0.1                   UTF-8                      dh:2022-02-28
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -56,8 +56,6 @@ MANIFEST
 
 TODO
 
- * Flex N220201a.md off of N220201/index.md and connect from index.md
-
  * Demonstrate my desktop and consider alternatives - create an account just
    for this and use the default desktop, if there is one.
 
@@ -69,9 +67,13 @@ TODO
  * Find a Xerox workstation screen shot that shows some of what the
    inspiration was.
 
+ * Indicating how to do effective screen captures is a skill to go along with
+   confirmable experiences and also mastering the PC (but should really focus
+   on Windows 11 for that to have any enduring value)
+
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-
+ 0.0.1 2022-02-28T18:13Z Manage TODOs
  0.0.0 2022-02-27T23:30Z Placeholder for the initial content and future
        editing.
 

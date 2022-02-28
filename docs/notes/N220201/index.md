@@ -1,4 +1,4 @@
-<!-- index.md 0.0.0                 UTF-8                          2022-02-25
+<!-- index.md 0.0.1                 UTF-8                          2022-02-28
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                      N220201: BEGINNER MIND FAILURES
@@ -52,7 +52,7 @@ the work-in-progress here.
 
 | **ID** | **Started** | **Status** | **Topic** |
 |   :-:   |   :-:   |  :-:   |  ---  |
-| [N220201a](.) | 2022-02-25 | 0.0.0 TBD | Not Your Desktop |
+| [N220201a](N220201a.md) | 2022-02-28 | 0.0.0 draft | Not Your Desktop |
 | [N220201b](.) | 2022-02-25 | 0.0.0 TBD | Not Your Start Menu |
 | [N220201c](.) | 2022-02-25 | 0.0.0 TBD | Not Your All Programs |
 | [N220201d](.) | 2022-02-25 | 0.0.0 TBD | Not Your File Explorer |
@@ -69,6 +69,7 @@ time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.1 2022-02-28T18:15Z Connect N220201a
      0.0.0 2022-02-25T18:08Z Clone and adapt N210901 index.md
 
                *** end of docs/notes/N220201/index.md ***
