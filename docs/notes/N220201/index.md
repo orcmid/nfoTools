@@ -6,7 +6,7 @@
 
 # ***N220201:** Beginner Mind Failures*
 
-| ***[N220201](.)*** | [notes](../)[>N220201](.) | ***0.0.0 2021-02-25*** |
+| ***[N220201](.)*** | [notes](../)[>N220201](.) | ***0.0.1 2021-02-28*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../../images/hardhat-logo.gif) |
 

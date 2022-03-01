@@ -1,4 +1,4 @@
-notes.txt 0.0.6                    UTF-8                        dh:2022-02-15
+notes.txt 0.0.7                    UTF-8                        dh:2022-03-01
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -29,7 +29,7 @@ MANIFEST
 
   N070801/ The Craft of Toolcraft
   N210901/ Tacit Knowledge and the Beginner Mind
-  N220201/ Beginner Mind FAILS
+  N220201/ Beginner Mind Failures
 
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
@@ -53,7 +53,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. nfoTools Project Notes.  nfoTools file docs/notes.txt
-   version 0.0.6 dated 2022-02-16, available on the Internet as a version of
+   version 0.0.7 dated 2022-03-01, available on the Internet as a version of
    <https://orcmid.github.io/nfoTools/notes/notes.txt>
 
 TODO
@@ -104,6 +104,7 @@ TODO
 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.7 2022-03-01T02:28Z Manage TODOs, Connect N220201
  0.0.6 2022-02-16T00:03Z Review and anticipate N220201
  0.0.5 2022-02-14T18:24Z Cleanup around categories here
  0.0.4 2021-09-18T22:19Z Manage TODOs on transposing nfoWare/tools folios
