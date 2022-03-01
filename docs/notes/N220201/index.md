@@ -1,4 +1,4 @@
-<!-- index.md 0.0.1                 UTF-8                          2022-02-28
+<!-- index.md 0.0.2                 UTF-8                          2022-03-01
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                      N220201: BEGINNER MIND FAILURES
@@ -11,7 +11,7 @@
 | ![nfotools](../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../../images/hardhat-logo.gif) |
 
 I was stunned to find how much I had failed to bring a
-[beginner mind](../N210903/) to [tools](../../tools/) introductions
+[beginner mind](../N210901/) to [tools](../../tools/) narratives
 intended for beginners and novices.  This folio is a cataloguing of those
 failings and remediations for them.
 
@@ -23,20 +23,27 @@ software-development purposes.
 ## The Beginner Mind Perspective
 
 My beginner mind puts me in the place of someone
-who is seeing what I present for the first time; it is unfamiliar to that
-mind.  In that way, I can assess how much I am putting in the way and must
-simplify, along with cues and links to deeper understanding.  These may also
-be helpful to those who have expertise but might not have noticed some aspect
-before.  In particular, the beginner mind will unconceal tacit understanding
-that a newcomer will not have.
+who is seeing a presentation for the first time; it is unfamiliar to that
+mind.  In that way, I can assess how much is missing or in the way and must
+be remedied, along with cues and links to deeper understanding.  Such repairs
+can also be helpful to those who have expertise but might not have noticed
+some aspect before.  In particular, the beginner mind will unconceal tacit
+understanding that a newcomer will not have.
 
 The beginner mind is also valuable in attempting and reporting confirmable
 experiences.
 
-I also use beginner mind in auditing courses and materials that I am
-interested in
+I use beginner mind in auditing courses and materials that I am interested in
 recommending to others.  In some cases, I will find a presentation too
 problematic to recommend without some caveats by way of hazard warnings.
+
+## My Own Failures
+
+Although I play "beginner mind" is assessing materials of others, I have been
+negligent in providing that attitude to materials I am providing.  I really
+on unsaid assumptions that are latent in my choice of examples and screen
+captures.  This set of notes is intended to recognize and remedy those
+oversights.
 
 ## Combination with Progressive Disclosure
 
@@ -52,7 +59,7 @@ the work-in-progress here.
 
 | **ID** | **Started** | **Status** | **Topic** |
 |   :-:   |   :-:   |  :-:   |  ---  |
-| [N220201a](N220201a.md) | 2022-02-28 | 0.0.0 draft | Not Your Desktop |
+| [N220201a](N220201a.md) | 2022-02-28 | 0.0.1 2022-03-01 | Not Your Desktop |
 | [N220201b](.) | 2022-02-25 | 0.0.0 TBD | Not Your Start Menu |
 | [N220201c](.) | 2022-02-25 | 0.0.0 TBD | Not Your All Programs |
 | [N220201d](.) | 2022-02-25 | 0.0.0 TBD | Not Your File Explorer |
@@ -69,6 +76,7 @@ time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.2 2022-03-01T18:06Z Corrections and Smoothing
      0.0.1 2022-02-28T18:15Z Connect N220201a
      0.0.0 2022-02-25T18:08Z Clone and adapt N210901 index.md
 

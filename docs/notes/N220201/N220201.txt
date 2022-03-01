@@ -1,4 +1,4 @@
-N220201.txt 0.0.2                   UTF-8                       dh:2022-02-27
+N220201.txt 0.0.3                   UTF-8                       dh:2022-03-01
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -52,14 +52,10 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. Beginner Mind Failures.  nfoTools file N220201.txt
-   version 0.0.2 dated 2022-02-27 available on the Internet as a version of
+   version 0.0.3 dated 2022-03-01 available on the Internet as a version of
    <https://orcmid.github.io/nfoTOols/notes/N220201/N220201.txt>
 
 TODO
-
- * Create as a folio cover of my various fails and how to overcome them.
-
- * See if there is more that could be here about cultivating a beginner mind.
 
  * Complete the 4 "Not my" pages, their illustrations, and setup for more
    treatment under skills.
@@ -73,8 +69,16 @@ TODO
 
  * Add not my terminal/shell or script too.
 
+ * There are also date-times, calendars, and also character codes and their
+   character sets, the reliance on Unicode, ISO date-time notations, etc.
+   These all fall under skills.
+
+ * How do I know when it is time to stop unfurling this stuff.  I suppose it
+   is when sufficient external references are applicable.
+
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.3 2022-03-01T16:39Z Manage TODOs
  0.0.2 2022-02-27T23:31Z Flex in N220201a and manage TODOs
  0.0.1 2022-02-25T18:12Z Fill in placeholding with initial TODOs, synopsis
  0.0.0 2022-02-16T00:42Z Placeholder for the initial content and future
