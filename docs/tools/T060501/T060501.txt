@@ -1,4 +1,4 @@
-T060501.txt 0.0.7                 UTF-8                        dh:2021-10-21
+T060501.txt 0.0.8                 UTF-8                        dh:2022-03-02
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -31,7 +31,7 @@ MANIFEST
    T060501a.md  Diary & Job Jar (preservation)
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-              Copyright 2006-2007, 2021 Dennis E. Hamilton
+              Copyright 2006-2007, 2021-2022 Dennis E. Hamilton
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -50,7 +50,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. Windows CMD Command-Line Operations.  nfoTools project
-   text file T060501.txt version 0.0.6 dated 2021-09-21, available on the
+   text file T060501.txt version 0.0.8 dated 2022-03-02, available on the
    Internet as a version of
    <https://orcmid.github.io/nfoTools/tools/T060501/T060501.txt>
 
@@ -115,8 +115,24 @@ TODO
    code within the environment needs to be in a place where VS Build Tools
    are also installed and operated.  There should be cross-linking for these.
 
+ * Command Line operation and the use of scripts needs to be pointed out at
+   least.  This is sort of a skill, but also ToolCraft.
+
+ * The Jeroen Janssens seminar https://lu.ma/cli and also his book and course
+   on "Embrace the Command Line"
+   <https://maven.com/data-science-workshops/embrace-the-command-line> are
+   of potential interest.  <https://datascienceatthecommandline.com/>.  The
+   book uses bash and does not rely on either CMD or PowerShell.  So it will
+   not work in the way that I want.  I should try GitBash to see if that is
+   useful at all.
+
+ * There is another command-line, batch script on-line book.  I need to find
+   that.
+
+
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.8 2022-03-02T16:29Z More TODOs on Bash and resources on batch commands
  0.0.7 2021-10-21T15:15Z More TODOs on VS Code and VS Build connections
  0.0.6 2021-10-04T19:43Z Manage TODOs
  0.0.5 2021-09-20T16:47Z Manage TODOs, provide for the remainder of nfoWare
