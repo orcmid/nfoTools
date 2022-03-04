@@ -1,4 +1,4 @@
-N220201a.txt 0.0.2                   UTF-8                      dh:2022-03-01
+N220201a.txt 0.0.3                   UTF-8                      dh:2022-03-04
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -28,6 +28,7 @@ MANIFEST
             My desktop on that particular date, showing my use of screen
             margins as a way to work on documents in the middle wtih the
             desktop not far out of reach
+   edit-2022-03-04-1222-Scritto.png
    F22xy006-2022-02-27-1941-Xerox6085Bruchure.jpg
    F22xy007-2022-02-27-1945-Xerox8010.jpg
 
@@ -53,7 +54,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. Not Your Desktop.  nfoTools file N220201a.txt
-   version 0.0.0 dated 2022-02-27 available on the Internet as a version of
+   version 0.0.3 dated 2022-03-04 available on the Internet as a version of
    <https://orcmid.github.io/nfoTOols/notes/N220201/N220201a.txt>
 
 TODO
@@ -64,14 +65,28 @@ TODO
  * Consider alternative desktops also, that is one that can be switched
    between.
 
- * Explain the motivation for the arrangement.
-
  * Indicating how to do effective screen captures is a skill to go along with
    confirmable experiences and also mastering the PC (but should really focus
    on Windows 11 for that to have any enduring value)
 
+ * Incorporate references on screen capturing as a skill, and on confirmable
+   experience.
+
+ * Illustrate the problem of captures that lose context and learning to
+   remedy that.
+
+ * See if edit.com is still around and can be used for a CUA example.
+   No it can't.  It is an MS-DOS application and there is no longer any way
+   to run the edit.com file on Windows 10 and later. (There is a way, but not
+   directly.  I might be able to run it on Windows XP though :)
+
+ * There's an edit-like editor that is recommended by a programming-language
+   text.  Maybe I can find that one and see if that is of any value here or
+   in a treatment on text editors.
+
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.3 2022-03-04T21:40Z Manage TODOs, touch-ups
  0.0.2 2022-03-01T18:03Z Add Xerox workstations, smooth and extend text
  0.0.1 2022-02-28T18:13Z Manage TODOs
  0.0.0 2022-02-27T23:30Z Placeholder for the initial content and future

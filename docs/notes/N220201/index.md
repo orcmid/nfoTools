@@ -1,4 +1,4 @@
-<!-- index.md 0.0.2                 UTF-8                          2022-03-01
+<!-- index.md 0.0.3                 UTF-8                          2022-03-04
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                      N220201: BEGINNER MIND FAILURES
@@ -6,7 +6,7 @@
 
 # ***N220201:** Beginner Mind Failures*
 
-| ***[N220201](.)*** | [notes](../)[>N220201](.) | ***0.0.1 2021-02-28*** |
+| ***[N220201](.)*** | [notes](../)[>N220201](.) | ***0.0.3 2021-03-02*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../../images/hardhat-logo.gif) |
 
@@ -25,17 +25,18 @@ software-development purposes.
 My beginner mind puts me in the place of someone
 who is seeing a presentation for the first time; it is unfamiliar to that
 mind.  In that way, I can assess how much is missing or in the way and must
-be remedied, along with cues and links to deeper understanding.  Such repairs
+be remedied, along with cues and links to deeper understanding.  In
+particular, the beginner mind will unconceal tacit
+understanding that a newcomer will not have.  Such repairs
 can also be helpful to those who have expertise but might not have noticed
-some aspect before.  In particular, the beginner mind will unconceal tacit
-understanding that a newcomer will not have.
-
-The beginner mind is also valuable in attempting and reporting confirmable
-experiences.
+some aspect before.
 
 I use beginner mind in auditing courses and materials that I am interested in
 recommending to others.  In some cases, I will find a presentation too
 problematic to recommend without some caveats by way of hazard warnings.
+
+The beginner mind is also valuable in attempting and reporting confirmable
+experiences.
 
 ## My Own Failures
 
@@ -53,13 +54,13 @@ as they find useful.  This is also intended to support those novices who
 return to review a topic more deeply.
 
 This requires smooth balance and will probably require many adjustments of
-the work-in-progress here.
+the work-in-progress [nfoTools](https://orcmid.github.io/nfoTools) materials.
 
 ## Mea Culpa
 
 | **ID** | **Started** | **Status** | **Topic** |
 |   :-:   |   :-:   |  :-:   |  ---  |
-| [N220201a](N220201a.md) | 2022-02-28 | 0.0.1 2022-03-01 | Not Your Desktop |
+| [N220201a](N220201a.md) | 2022-02-28 | 0.0.2 2022-03-04 | Not Your Desktop |
 | [N220201b](.) | 2022-02-25 | 0.0.0 TBD | Not Your Start Menu |
 | [N220201c](.) | 2022-02-25 | 0.0.0 TBD | Not Your All Programs |
 | [N220201d](.) | 2022-02-25 | 0.0.0 TBD | Not Your File Explorer |
@@ -76,6 +77,7 @@ time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.3 2022-03-04T21:48Z Touch-ups
      0.0.2 2022-03-01T18:06Z Corrections and Smoothing
      0.0.1 2022-02-28T18:15Z Connect N220201a
      0.0.0 2022-02-25T18:08Z Clone and adapt N210901 index.md
