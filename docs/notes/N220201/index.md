@@ -1,4 +1,4 @@
-<!-- index.md 0.0.3                 UTF-8                          2022-03-04
+<!-- index.md 0.0.4                 UTF-8                          2022-03-05
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                      N220201: BEGINNER MIND FAILURES
@@ -6,7 +6,7 @@
 
 # ***N220201:** Beginner Mind Failures*
 
-| ***[N220201](.)*** | [notes](../)[>N220201](.) | ***0.0.3 2021-03-02*** |
+| ***[N220201](.)*** | [notes](../)[>N220201](.) | ***0.0.4 2021-03-05*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../../images/hardhat-logo.gif) |
 
@@ -36,12 +36,14 @@ recommending to others.  In some cases, I will find a presentation too
 problematic to recommend without some caveats by way of hazard warnings.
 
 The beginner mind is also valuable in attempting and reporting confirmable
-experiences.
+experiences.  It is also valuable in assessing every issue or complaint as
+a contribution to eliciting the actual difficulty and improving a product and
+its support.
 
 ## My Own Failures
 
 Although I play "beginner mind" is assessing materials of others, I have been
-negligent in providing that attitude to materials I am providing.  I really
+negligent in providing that attitude to materials I am providing.  I rely
 on unsaid assumptions that are latent in my choice of examples and screen
 captures.  This set of notes is intended to recognize and remedy those
 oversights.
@@ -60,7 +62,7 @@ the work-in-progress [nfoTools](https://orcmid.github.io/nfoTools) materials.
 
 | **ID** | **Started** | **Status** | **Topic** |
 |   :-:   |   :-:   |  :-:   |  ---  |
-| [N220201a](N220201a.md) | 2022-02-28 | 0.0.2 2022-03-04 | Not Your Desktop |
+| [N220201a](N220201a.md) | 2022-02-28 | 0.0.3 2022-03-05 | Not Your Desktop |
 | [N220201b](.) | 2022-02-25 | 0.0.0 TBD | Not Your Start Menu |
 | [N220201c](.) | 2022-02-25 | 0.0.0 TBD | Not Your All Programs |
 | [N220201d](.) | 2022-02-25 | 0.0.0 TBD | Not Your File Explorer |
@@ -77,6 +79,7 @@ time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.4 2022-03-05T18:03Z Touch-ups
      0.0.3 2022-03-04T21:48Z Touch-ups
      0.0.2 2022-03-01T18:06Z Corrections and Smoothing
      0.0.1 2022-02-28T18:15Z Connect N220201a
