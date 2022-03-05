@@ -1,4 +1,4 @@
-N070801.txt 0.0.1                   UTF-8                        dh:2021-09-07
+N070801.txt 0.0.2                   UTF-8                       dh:2022-03-05
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -29,7 +29,7 @@ MANIFEST
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-                       Copyright 2021 Dennis E. Hamilton
+                  Copyright 2021-2022 Dennis E. Hamilton
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -48,16 +48,32 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. N070801: The Craft of Toolcraft.  nfoTools file
-   file N070801.txt version 0.0.1 dated 2021-09-07, available on the Internet
+   file N070801.txt version 0.0.2 dated 2022-03-04, available on the Internet
    as a version of
-   <https://orcmid.github.io/rayLab/notes/N070801/N070801.txt>
+   <https://orcmid.github.io/nfoTools/notes/N070801/N070801.txt>
 
 TODO
 
  * Restate the article to be current and more-useful to readers.
 
+ * Replace mentions of nfoWorks with "software-development" or nfoTools in
+   a way is not redundant.
+
+ * Add folio content and link N070801a Diary and Job Jar (historical)
+
+ * Tie to Beginner mind topic(s)
+
+ * Find a substitute for the "What is Craft?" topic.
+
+ * See if anything about "craft work" is also valuable to reference, and
+   craftsmanship for that matter.
+
+ * Fix the version block to link to the correct image locations.  Borrow
+   from any other folio under Notes.  Apply to N070801a also.
+
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.2 2022-03-05T16:32Z Touch-ups and manage TODOs
  0.0.1 2021-09-07T23:53Z Transpose N070801a from T070801a
  0.0.0 2021-09-07T21:33Z Placeholder for the initial transposition.
 
