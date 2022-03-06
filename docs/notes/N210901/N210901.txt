@@ -1,4 +1,4 @@
-N210901.txt 0.0.3                   UTF-8                       dh:2022-02-16
+N210901.txt 0.0.4                   UTF-8                       dh:2022-03-06
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -41,18 +41,17 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. Tacit Knowledge and the Beginner Mind.  nfoTools
-   file N210901.txt version 0.0.3 dated 2022-02-16 available on the Internet
+   file N210901.txt version 0.0.4 dated 2022-03-06 available on the Internet
    as a version of
    <https://orcmid.github.io/nfoTOols/notes/N20901/N20901.txt>
 
 TODO
 
- * Tie into N220201 on Beginner Mind FAILS when it is available.
-
  * See if there is more that could be here about cultivating a beginner mind.
 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.4 2022-03-06T16:14Z Manage TODOs
  0.0.3 2022-02-16T00:11Z Adjust for separate N220201 Beginner Mind FAILS
  0.0.2 2022-02-11T23:11Z Manage TODOs, prepare to tell on myself
  0.0.1 2021-09-20T21:49Z Complete TODOs

@@ -1,4 +1,4 @@
-N220201a.txt 0.0.3                   UTF-8                      dh:2022-03-04
+N220201a.txt 0.0.4                   UTF-8                      dh:2022-03-06
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -54,7 +54,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. Not Your Desktop.  nfoTools file N220201a.txt
-   version 0.0.3 dated 2022-03-04 available on the Internet as a version of
+   version 0.0.4 dated 2022-03-06 available on the Internet as a version of
    <https://orcmid.github.io/nfoTOols/notes/N220201/N220201a.txt>
 
 TODO
@@ -75,17 +75,25 @@ TODO
  * Illustrate the problem of captures that lose context and learning to
    remedy that.
 
- * See if edit.com is still around and can be used for a CUA example.
-   No it can't.  It is an MS-DOS application and there is no longer any way
-   to run the edit.com file on Windows 10 and later. (There is a way, but not
-   directly.  I might be able to run it on Windows XP though :)
-
  * There's an edit-like editor that is recommended by a programming-language
    text.  Maybe I can find that one and see if that is of any value here or
-   in a treatment on text editors.
+   in a treatment on text editors.  It's gedit and it is now quite a bit more
+   elaborate than edit.com.  I will forego this and rely on notepad in early
+   introduction to text editing.
+
+ * Add N210901 Tacit Knowledge and the Beginner Mind to the related material
+
+ * I am having great difficulty propogating version numbers and dates among
+   the levels of folios.  I did not do that in my past use of folios, and I
+   need to curtail this somehow.  It was easier before and I have to figure
+   out how/why that was.
+
+ * Links on the Xerox workstations would also be handy.  I might even refer to
+   "Fumbling the Future."
 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.4 2022-03-06T16:01Z More TODOs, touch-ups
  0.0.3 2022-03-04T21:40Z Manage TODOs, touch-ups
  0.0.2 2022-03-01T18:03Z Add Xerox workstations, smooth and extend text
  0.0.1 2022-02-28T18:13Z Manage TODOs
