@@ -1,4 +1,4 @@
-tools.txt 0.0.18                 UTF-8                          dh:2021-11-23
+tools.txt 0.0.19                   UTF-8                       dh:2022-03-15
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -34,7 +34,7 @@ MANIFEST
 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-                       Copyright 2021 Dennis E. Hamilton
+                    Copyright 2021-2022 Dennis E. Hamilton
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -53,7 +53,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. nfoTools Toolcraft Notebook.  nfoTools project text
-   file tools.txt version 0.0.18 dated 2021-11-23, available on the Internet
+   file tools.txt version 0.0.19 dated 2022-03-15, available on the Internet
    as a version of
    <https://orcmid.github.io/nfoTools/tools/tools.txt>
 
@@ -136,8 +136,14 @@ TODO
    This is partly a Build Tools conversation, and also one about C/C++
    programming.  Reflect that everywhere it matters.
 
+ * An useful reference on the C-like languages and variability.  Hopefully
+   with good links
+   <https://www.codecademy.com/resources/blog/c-vs-cplusplus-vs-csharp-vs-objective-c/>
+
+
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.19 2022-03-15T14:51Z Manage TODOs
  0.0.18 2021-11-23T16:29Z Anticipate T211102 again, manage TODOs
  0.0.17 2021-11-16T16:28Z Continue Triage from nfoWare, TODOs
  0.0.16 2021-11-12T18:06Z Rhapsodizing TODOs
