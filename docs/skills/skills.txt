@@ -1,4 +1,4 @@
-skills.txt 0.0.10                   UTF-8                       dh:2022-03-08
+skills.txt 0.0.11                   UTF-8                       dh:2022-03-15
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -70,7 +70,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. nfoTools Skills Notebook.  nfoTools project text file
-   skills.txt version 0.0.10 dated 2022-03-08, available on the Internet as a
+   skills.txt version 0.0.11 dated 2022-03-15, available on the Internet as a
    version of <https://orcmid.github.io/nfoTools/skills/skills.txt>
 
 TODO
@@ -137,6 +137,10 @@ TODO
    becomes tacit more-or-less.  Some of this is about cases that are taken
    farther under tools.
 
+ * Make a project about compiling situations where tacit skills need to be
+   exposed and explained to newcomers.  Will feed the skills inventory page.
+   That should be a folio.
+
  * Drawing and also pen-and-ink are also great cases of skills and also
    toolcraft.
 
@@ -193,8 +197,15 @@ TODO
    can get on their own.  This is a marker for all of that. I need to address
    it somehow, probably in more than one place.
 
+ * There is an useful blog post on learning to work on an open-source  project
+   that applies here, more with respect to other projects and user-facing
+   projects like adv10.  This is definitely a skill-building topic, along with
+   using GitHub, IDEs, etc.
+   <https://mitchellh.com/writing/contributing-to-complex-projects>.
+
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.11 2022-03-15T14:44Z Manage TODOs, emphasize skills inventory.
  0.0.10 2022-03-08T16:18Z Manage TODOs
  0.0.9 2022-02-28T17:26Z Manage TODOs
  0.0.8 2022-02-14T18:01Z Expand on serving novices
