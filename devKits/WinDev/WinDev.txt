@@ -1,4 +1,4 @@
-WinDev.txt 0.0.13                     UTF-8                     dh:2021-11-17
+WinDev.txt 0.0.14                     UTF-8                     dh:2022-03-30
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
   <https://github.com/orcmid/nfoTools/blob/master/devKits/WinDev/WinDev.txt>
@@ -160,7 +160,6 @@ TODO
    mmm, I think I have the idea.  No, Nest is better.  I have talked my way
    around to VCrayNest.
 
-
  * The current VCrayNest model using VCrayApp template (included in the dist)
    Tends to have each fledgling with its own cache. Yes, that is the idea.
 
@@ -176,9 +175,23 @@ TODO
  * We're also looking at a development lifecycle case.  Need to take the
    VCrayNest scenarios and tutorials all the way to producing a distribution.
 
+ * Add showDefs to WinDev as a tool for development and also testing.  Even
+   though it might work on other platforms, I don't intend to support it
+   with compilers other than VC in Visual Studio Build Tools.
+
+ * We must not forget numerical analysis and ways to exercise that.  It might
+   be at a different level than WinDev but maybe not, since we want to focus
+   on the quality of Wintel libraries and computation.  Need to think about
+   generalizing.  It will show up under docs/ skills as well as tools.
+
+ * The need for numerical analysis with regard to graphics programming is also
+   of interest.
+
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.14 2022-03-30T17:04Z Manage TODOs, adding showDefs to winDev and
+        considering numerical analysis methods and tools
  0.0.13 2021-11-17T18:32Z Still rhapsodizing
  0.0.12 2021-11-17T00:57Z Settle on VCrayNest, manage TODOs
  0.0.11 2021-11-15T19:11Z Manage TODOs regarding VCrayMumbling
