@@ -1,4 +1,4 @@
-notes.txt 0.0.7                    UTF-8                        dh:2022-03-01
+notes.txt 0.0.8                    UTF-8                        dh:2022-04-01
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -53,7 +53,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. nfoTools Project Notes.  nfoTools file docs/notes.txt
-   version 0.0.7 dated 2022-03-01, available on the Internet as a version of
+   version 0.0.8 dated 2022-04-01, available on the Internet as a version of
    <https://orcmid.github.io/nfoTools/notes/notes.txt>
 
 TODO
@@ -102,8 +102,15 @@ TODO
 
  * Account for N220201 as related material for N210901 and maybe N070801 too.
 
+ * Build a table on the ACM Turing Award recipients and the areas of their
+   contributions.  Also find a way to link to or rely on information about the
+   recipients and especially their work.  This could be under Astraendo, but
+   I like the idea of it being here for the attention of novices and
+   developers early in their careers.
+
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.8 2022-04-01T18:28Z Manage TODOs, Connect Turing Awards
  0.0.7 2022-03-01T02:28Z Manage TODOs, Connect N220201
  0.0.6 2022-02-16T00:03Z Review and anticipate N220201
  0.0.5 2022-02-14T18:24Z Cleanup around categories here
