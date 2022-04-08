@@ -1,4 +1,4 @@
-skills.txt 0.0.11                   UTF-8                       dh:2022-03-15
+skills.txt 0.0.12                   UTF-8                       dh:2022-04-08
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -70,7 +70,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. nfoTools Skills Notebook.  nfoTools project text file
-   skills.txt version 0.0.11 dated 2022-03-15, available on the Internet as a
+   skills.txt version 0.0.12 dated 2022-04-08, available on the Internet as a
    version of <https://orcmid.github.io/nfoTools/skills/skills.txt>
 
 TODO
@@ -188,6 +188,9 @@ TODO
    are different and it takes skills to know the difference and to provide
    sufficient information and a way to supply more as requested.
 
+ * The idea of confirmable experience is relevant, both in regard to
+   explanation and also replication/confirmation of reports.
+
  * I don't know where all the ways to have text editors, and to create text
    editing, belongs.  In one sense, a note would be good for coverage.  The
    same goes for command-line processors (i.e., shells) and differences
@@ -203,8 +206,18 @@ TODO
    using GitHub, IDEs, etc.
    <https://mitchellh.com/writing/contributing-to-complex-projects>.
 
+ * Internet access and search are skills, both for locating developer tools
+   and information, but also generally.
+
+ * The care, feeding, and update of PCs, and the treatment of security is
+   a skills with assorted tools.
+
+ * Password management, authenticators, multi-factor as intended, and other
+   matters can be regarded as skills with regard to safe computing.
+
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.12 2022-04-08T16:28Z Manage TODOs, more skills to address
  0.0.11 2022-03-15T14:44Z Manage TODOs, emphasize skills inventory.
  0.0.10 2022-03-08T16:18Z Manage TODOs
  0.0.9 2022-02-28T17:26Z Manage TODOs
