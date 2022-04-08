@@ -1,4 +1,4 @@
-tools.txt 0.0.19                   UTF-8                       dh:2022-03-15
+tools.txt 0.0.20                   UTF-8                       dh:2022-04-08
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -53,7 +53,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. nfoTools Toolcraft Notebook.  nfoTools project text
-   file tools.txt version 0.0.19 dated 2022-03-15, available on the Internet
+   file tools.txt version 0.0.20 dated 2022-04-08, available on the Internet
    as a version of
    <https://orcmid.github.io/nfoTools/tools/tools.txt>
 
@@ -100,7 +100,12 @@ TODO
 
  * We need toolcraft for the VC Build Tools, especially cl.exe and the
    way options work.  This may extend to other tools in that family.  Check
-   the prompts for the other tools.
+   the prompts for the other tools.  Also, this impinges on things like the
+   options and and use of *.opt files in VCbind, VCrapApp, etc.
+
+ * We need to introduce Windows Terminal and how to deal with cmd.exe as the
+   default or an initialized case in Windows Terminal.  It looks like we need
+   folio progressions for some of these.
 
  * Triage T060301 Computer Arithmetic Gotchas
 
@@ -111,7 +116,10 @@ TODO
  * Triage T170301 WinCon Construction Sets
 
  * The Construction Kits might be something other than Toolcraft.  Think
-   it over.
+   it over.  This looks like there are the /dev presences at the individual
+   technical level, but maybe tools on accomplishing project with the devkits.
+   I can imagine that for the treatment of VC++ and also cases of library use
+   such as raylib.
 
  * Look into what must be figured out around CL.exe that shows up in the
    rayLab rawCL script development (now VCrayApp)
@@ -143,6 +151,7 @@ TODO
 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.20 2022-04-08T22:52Z Manage TODOs, muse on dev vs. tools for devkits
  0.0.19 2022-03-15T14:51Z Manage TODOs
  0.0.18 2021-11-23T16:29Z Anticipate T211102 again, manage TODOs
  0.0.17 2021-11-16T16:28Z Continue Triage from nfoWare, TODOs
