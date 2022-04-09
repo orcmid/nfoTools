@@ -1,4 +1,4 @@
-tools.txt 0.0.20                   UTF-8                       dh:2022-04-08
+tools.txt 0.0.21                   UTF-8                       dh:2022-04-09
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -53,7 +53,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. nfoTools Toolcraft Notebook.  nfoTools project text
-   file tools.txt version 0.0.20 dated 2022-04-08, available on the Internet
+   file tools.txt version 0.0.21 dated 2022-04-09, available on the Internet
    as a version of
    <https://orcmid.github.io/nfoTools/tools/tools.txt>
 
@@ -121,8 +121,22 @@ TODO
    I can imagine that for the treatment of VC++ and also cases of library use
    such as raylib.
 
+ * Add a level on devKit Construction Sets at the WinDev level, since
+   there are now more flavors.  This is a generic case about what these are
+   and how they are to be handled when encountered.  Also, what one can
+   expect to see in the accompanying text file, and what to check. Other
+   languages might be indicated as well.  This needs to be anticipated.
+
+ * There needs to be a structure for how one determines a later version is
+   available and whether it should be used in the place of one found in a
+   project, what to do about git handling, etc., separate from customization
+   in the incorporating project.  There is toolcraft around all of this with
+   respect to nfoTools.  How that interacts with provisions of other projects
+   is a separate matter.
+
  * Look into what must be figured out around CL.exe that shows up in the
-   rayLab rawCL script development (now VCrayApp)
+   rayLab rawCL script development (now VCrayApp).  This has to do with
+   the option files and how they work.
 
  * Watch FC_CPP and ensure that supporting materials are appearing here on
    nfoTools/docs.
@@ -151,6 +165,8 @@ TODO
 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.21 2022-04-09T15:06Z Manage TODOs, consider WinDev level Construction
+        Set devkits explanation here
  0.0.20 2022-04-08T22:52Z Manage TODOs, muse on dev vs. tools for devkits
  0.0.19 2022-03-15T14:51Z Manage TODOs
  0.0.18 2021-11-23T16:29Z Anticipate T211102 again, manage TODOs
