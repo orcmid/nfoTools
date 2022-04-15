@@ -1,4 +1,4 @@
-tools.txt 0.0.21                   UTF-8                       dh:2022-04-09
+tools.txt 0.0.22                   UTF-8                       dh:2022-04-15
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -53,7 +53,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. nfoTools Toolcraft Notebook.  nfoTools project text
-   file tools.txt version 0.0.21 dated 2022-04-09, available on the Internet
+   file tools.txt version 0.0.22 dated 2022-04-15, available on the Internet
    as a version of
    <https://orcmid.github.io/nfoTools/tools/tools.txt>
 
@@ -162,9 +162,21 @@ TODO
    with good links
    <https://www.codecademy.com/resources/blog/c-vs-cplusplus-vs-csharp-vs-objective-c/>
 
+ * There needs to be consideration of tools like Blender, if only for a
+   high-level look and links to available materials.
+
+ * Tools for UI and UX will also be relevant, more than just raygui.  That
+   will take some rationalization of levels of abstraction and where tools
+   fit into development processes (primarily on Windows for Windows).
+
+ * Explore Figma as a prospective too provided that it is available free.
+   <https://www.codecademy.com/resources/blog/learn-how-to-use-figma-in-our-intro-to-ui-and-ux-design/>.
+   Figma has free accounts and is web-based.  The last might not be what we
+   have in mind for a good tool.
 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.22 2022-04-15T15:35Z Add notes about UI and UX tool coverage
  0.0.21 2022-04-09T15:06Z Manage TODOs, consider WinDev level Construction
         Set devkits explanation here
  0.0.20 2022-04-08T22:52Z Manage TODOs, muse on dev vs. tools for devkits
