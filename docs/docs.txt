@@ -1,4 +1,4 @@
-docs.txt 0.0.12                     UTF-8                      dh:2022-03-30
+docs.txt 0.0.13                     UTF-8                      dh:2022-04-15
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                             nfoWare/nfoWorks nfoTools
@@ -87,8 +87,8 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. nfoTools Documentation-Authoring Construction
-   Structure.  nfoTools project text file nfoTools.txt version 0.0.11 dated
-   2021-09-22, available on the Internet as a version of
+   Structure.  nfoTools project text file nfoTools.txt version 0.0.12 dated
+   2021-04-15, available on the Internet as a version of
    <https://github.com/orcmid/nfoTools/blob/master/docs/docs.txt>
 
 TODO
@@ -154,8 +154,16 @@ TODO
     and such.  The contributions and historical position of Turing Award
     recipients needs to be acknowledge around here also.
 
+  * There needs to be something similar around audion and also around music
+    production and use of Digital Audio Workstations (DAWs).  Just like
+    numerical analysis.  Also education topics with respect to this area.
+
+  * Education and Learning are skills and might have some skills and devNotes.
+
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+
+ 0.0.13 2022-04-15T03:42Z TODOs on audio, music, DAWS and learning/education
  0.0.12 2022-03-30T17:13Z Manage TODOs, expect docEng assistance and
         consider numerical analysis and Turing Award influences be covered.
  0.0.11 2021-09-22T03:52Z Add C000000-nfoWare.md Salvaged Job Jar & Diary
