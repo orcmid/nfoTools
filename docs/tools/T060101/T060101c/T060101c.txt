@@ -1,4 +1,4 @@
-T060101c.txt 0.0.1                  UTF-8                       dh:2021-11-26
+T060101c.txt 0.0.2                  UTF-8                       dh:2022-04-15
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -43,7 +43,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. T060101c: Getting to "Hello."  nfoTools project text
-   file T060101c.txt version 0.0.1 dated 2021-11-26, available on the
+   file T060101c.txt version 0.0.2 dated 2022-04-15, available on the
    Internet as a version of
    <https://orcmid.github.io/nfoTools/tools/T060101/T060101c/T060101c.txt>
 
@@ -72,8 +72,16 @@ TODO
  * There will be placeholders, sketches in other tool folders to support this
    back and forth.
 
+ * After getting to Hello, there should be indication of directions to take
+   in expanding ones understanding and flexible operation.
+    - cmd.exe for as long as it is supplied in Windows
+    - Visual Studio Code for text editing and additional development support
+    - More about Visual Studio Build Tools and how employed (e.g., in
+      construction sets)
+
   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.2 2022-04-15T16:41Z TODO on how the reader can branch out here
  0.0.1 2021-11-26T04:17Z Update manifest, reflect latest thoughts in TODO
  0.0.0 2021-11-25T00:07Z Placeholder for taking apart "Hello, world."
 
