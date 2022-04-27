@@ -1,4 +1,4 @@
-T211001.txt 0.0.1                 UTF-8                          dh:2021-10-23
+T211001.txt 0.0.2                   UTF-8                      dh:2022-04-27
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -55,7 +55,11 @@ TODO
 
  * Recommend VS Code or editor first, then GitHub for Windows, then
    TortoiseGit and GitHub Desktop, then VIsual Studio Developer Tools or
-   Community Edition
+   Community Edition.  I don't think this is the correct sequence.  I need
+   to tie it into spiraling and projects here that always build.  This means
+   I can recommend teething exercises that work.  The raylib ones matter as
+   is something like building Adv10, although that will depend on the state
+   of Adv10 at the time.  I need to fix its build process now (2022-04-27).
 
  * I am uncertain about the sequence.  VS Code will depend on Visual Studio
    Developer Tools for operation of the C/C++ intellisense.
@@ -64,7 +68,9 @@ TODO
    remember how VS Code deals with Git if it is not already installed.
 
  * Finding the install location of VC and C/C++ Build tools will be
-   important
+   important.  The use of a developer command prompt is now essential to
+   having VS Code to provide intellisense along with resolution of #include
+   requirements.  This has to be unravelled.
 
  * Need to establish how far one can get with Visual Studio Code on the Web.
    I need some development about that.  I think it is very tied to having a
@@ -100,8 +106,13 @@ TODO
    progressive disclosure to also foster skip-aheads and potential future
    review of details.
 
+ * Placeholder: on Compiler Explorer Execution and Static Analysis Support for
+   MSVC.   https://godbolt.org/
+   https://devblogs.microsoft.com/cppblog/execution-and-static-analysis-support-for-msvc-on-compiler-explorer/
+
   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.2 2022-04-27T16:43Z Manage TODOs, muse on Git and GitHub
  0.0.1 2021-10-23T19:00Z Bring current, expand TODOs
  0.0.0 2021-10-18T18:20Z Placeholder made from tools.txt as boiler plate.
 
