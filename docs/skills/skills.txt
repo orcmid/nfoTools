@@ -1,4 +1,4 @@
-skills.txt 0.0.12                   UTF-8                       dh:2022-04-08
+skills.txt 0.0.13                   UTF-8                       dh:2022-04-29
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -70,7 +70,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. nfoTools Skills Notebook.  nfoTools project text file
-   skills.txt version 0.0.12 dated 2022-04-08, available on the Internet as a
+   skills.txt version 0.0.13 dated 2022-04-29, available on the Internet as a
    version of <https://orcmid.github.io/nfoTools/skills/skills.txt>
 
 TODO
@@ -215,8 +215,28 @@ TODO
  * Password management, authenticators, multi-factor as intended, and other
    matters can be regarded as skills with regard to safe computing.
 
+ * The preceding gets to TROST and Trust, and how systems are made dependable,
+   how breakdowns are handled, etc.
+
+ * We can think of logic, mathematics, and science as skill areas and this
+   bears out in endeavors such as the Miser Project.  So the handling of
+   logical expressions and equational approaches needs to be considered from
+   a skill approach and also with notes on what has it be important and why
+   it is powerful to apply it.  There must also be appreciation for empirical
+   methods and heuristics, such as the mechanisms around data sets and
+   inference systems, including machine learning.  The challenge is to
+   account for all this and not deep end, yet provide avenues for interested
+   visitors.
+
+ * Reflect some of this in notes, and maybe in Miser better.
+
+ * The notion of refutability arrises in the claims of empirical models of
+   computational entities, primitive or emergent, and that aspect makes
+   computer science both a science and an engineering discipline.
+
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.13 2022-04-29T15:58Z More TODOs, considering logic, math, CS, and science
  0.0.12 2022-04-08T16:28Z Manage TODOs, more skills to address
  0.0.11 2022-03-15T14:44Z Manage TODOs, emphasize skills inventory.
  0.0.10 2022-03-08T16:18Z Manage TODOs

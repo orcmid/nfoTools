@@ -1,4 +1,4 @@
-T211002.txt 0.0.1                   UTF-8                       dh:2021-11-**
+T211002.txt 0.0.2                   UTF-8                       dh:2022-04-**
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -96,6 +96,15 @@ TODO
        directly under Visual Studio.  There are even more links.  The
        treatment seems oriented to UWP and C# also.
     I will point this out.
+
+ * There is a Git course on Udemy via the gamdev.tv folk.  It is mentioned
+   in the 3rd-person combat course.  It would be good to link to that and
+   also mention GitLab which is used in some gamedev.tv courses for accessing
+   the instructor-provided resources and the revision history that matches the
+   lesson modifications.
+
+ * Need to see if GitLab connecction works with VS Code as easily as the
+   GitHub connection.  It should not matter - the connection is in Git.
 
   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
