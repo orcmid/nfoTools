@@ -1,31 +1,38 @@
-VCrayApp.txt 0.0.1                  UTF-8                      dh:2021-11-15
+VCrayApp.txt 0.0.2                  UTF-8                      dh:2022-05-29
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-                       DEVELOPING THE VCRAYAPP TEMPLATE
-                       ================================
+                      RAYLIB APP DEVELOPMENT PROJECT
+                      ==============================
 
 <https://github.com/orcmid/nfoTools/blob/master/devKits/WinDev/VCrayApp/VCrayApp.txt>
 
-                       RAYLIB APP DEVELOPMENT PROJECT
-                       ------------------------------
+                 DEVELOPING THE VCRAYAPP CONSTRUCTION KIT
+                 ----------------------------------------
 
-    This is the area for development of the materials that go into a VCrayApp
-    release Zip.
+    VCrayApp is a construction set for building raylib applications on Windows
+    using Microsoft C/C++ tools and producing Microsoft Windows graphical
+    software, especially games.
+
+    VCrayApp is delivered in a .zip file that can be extracted, customized,
+    and used. Pre-customized VCrayApp kits can also be enclosed in the body
+    of raylib-using software projects and delivered in the repositories of
+    those projects.
 
     dev\ and its content mimics the recommended installation of a VCrayApp
     extraction, with raylib installed as a peer folder.  The VCrayApp 0.0.0
     organization and rayApp.bat depend on that.
 
-    VCrayApp.bat is based on the raylib\projects\scripts\build-windows.bat
+    VCrayApp is a cousin of the VCbuild construction kit, and modeled on
+    that.  It also borrows from the raylib\projects\scripts\build-windows.bat
     script and relies on a comparable structure with cache\ and \app folders.
     The verification of VCrayApp-0.0.0 is by usage in confirming all of the
     raylib\templates\ and raylib\examples.  This is accomplished in the GitHub
-    orcmid/rayLab project.
+    orcmid/rayLab project using the raylib release in the raylib\ folder here.
 
 MANIFEST
 
     VCrayApp.txt
-        This manifest and job jar for the nfoTools WinDev VCrayApp template
+        This manifest and job jar for the VCrayApp construction-kit
         development project
 
     .gitignore
@@ -41,13 +48,13 @@ MANIFEST
 
     dev\
         Developer setup for the VCrayApp materials under current development.
-        a version of VCrayApp structure before packaging in a release Zip.
+        A version of VCrayApp structure before packaging in a release Zip.
         This is always work-in-progress.  Releases are in docs\dev\ folders.
 
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-                       Copyright 2021 Dennis E. Hamilton
+                     Copyright 2021-2022 Dennis E. Hamilton
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -65,8 +72,8 @@ MANIFEST
 
  ATTRIBUTION
 
-   Hamilton, Dennis E. Axe Raylib App Development Project. nfoTools Project
-   text file VCrayApp.txt 0.0.1 dated 2021-11-15, available on the Internet
+   Hamilton, Dennis E. Raylib App Construction-Kit Project. nfoTools Project
+   text file VCrayApp.txt 0.0.2 dated 2022-05-29, available on the Internet
    as a version of
    <https://github.com/orcmid/nfoTools/blob/master/devKits/WinDev/VCrayApp/VCrayApp.txt>
 
@@ -75,12 +82,19 @@ TODO
  * Derive a VCrayApp-0.0.0.zip and employ it in orcmid/RayLab to confirm the
    templates and examples.
 
- * Create docs/dev/ folio(s) on VCrayApp and link from BCrayApp-0.0.0 content.
+ * Create docs/dev/ folio(s) on VCrayApp and link from VCrayApp-0.0.0 content.
+
+ * In VCrayApp.bat, have places for error messages to link to that provide
+   more information on resolving a particular failure.
 
  * Resolve use of docs/dev connections back and forth on raylib at docs/tools.
 
+ * Do a beta availability and distribution once there is a docs/dev folder
+   for feedback and information.
+
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.2 2022-05-29T21:52Z Refine and manage TODOs
  0.0.1 2021-11-15T00:52Z Upgrading toward production achievement.
  0.0.0 2021-11-13T00:15Z Initial placeholder
 
