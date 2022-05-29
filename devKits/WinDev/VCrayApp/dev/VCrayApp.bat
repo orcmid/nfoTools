@@ -1,5 +1,5 @@
 @echo off
-rem VCrayApp 0.0.0 rayApp.bat 0.0.9 UTF-8                         2021-11-20
+rem VCrayApp 0.0.0 VCrayApp.bat 0.0.10 UTF-8                       2022-05-29
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 rem                  BUILDING RAYLIB APP WITH VC/C++ TOOLS
@@ -8,12 +8,12 @@ rem                  =====================================
 rem This code depends on the presence of cache\, app\, and ..\raylib\.  It
 rem must be operated from within a VS Command Prompt command-line environment.
 rem Use the script without modification until installation and operation is
-rem confirmed.  Then alter the GAME_EXE and SRC vars for the raylib project.
+rem confirmed.  Then alter the GAME_EXE and SRC vars for the specific project.
 
 SETLOCAL ENABLEEXTENSIONS
 IF ERRORLEVEL 1 GOTO :FAIL0
 
-rem rayConfirm.c is compiled as a simple example to confirm the setup.
+rem cache\rayConfirm.c is compiled as a simple example to confirm the setup.
 rem After successful confirmation, substitute your app's .exe name here ...
 SET GAME_EXE=rayConfirm.exe
 
@@ -65,11 +65,11 @@ rem CONFIRM COMMAND-LINE ENVIRONMENT
 IF "%VSCMD_VER%" == "" GOTO FAIL3
 WHERE cl.exe >nul 2>nul
 IF ERRORLEVEL 1 goto FAIL3
-ECHO: [rayApp] %VCrayApp% BUILDING RAYLIB APP WITH VC/C++ TOOLS
+ECHO: [VCrayApp] %VCrayApp% BUILDING RAYLIB APP WITH VC/C++ TOOLS
 
 IF "%VCsplice%" == "+" GOTO :PARMCHECK
 ECHO:          %TIME% %DATE% on %USERNAME%'s %COMPUTERNAME%         %VCterse%
-ECHO:          rayApp.bat at %~dp0                                  %VCterse%
+ECHO:          VCrayApp.bat at %~dp0                                %VCterse%
 
 :PARMCHECK
 rem DETERMINE PARAMETERS
@@ -95,7 +95,7 @@ IF NOT EXIST "%~dp0cache\rayLinking.opt" GOTO :FAIL1
 IF NOT EXIST "%~dp0cache\VCoptions.opt" GOTO :FAIL1
 IF NOT EXIST "%~dp0app\app.txt" GOTO :FAIL1
 IF NOT EXIST "%~dp0VCrayApp-%VCrayApp%.txt" GOTO :FAIL1
-IF NOT EXIST "%~dp0rayApp.bat" GOTO :FAIL1
+IF NOT EXIST "%~dp0VCrayApp.bat" GOTO :FAIL1
 
 IF NOT EXIST "%~dp0..\raylib\src\raylib.h" GOTO :FAIL6
 
@@ -110,7 +110,7 @@ DEL %~dp0cache\*.obj > nul 2>nul
 CD %~dp0cache
 CL %VChush% /w /c @VCoptions.opt @raylibVars.opt @raylibCode.opt %VCterse%
 IF ERRORLEVEL 2 GOTO :FAIL4
-ECHO: [rayApp] FRESH CACHE OF RAYLIB *.OBJ FILES COMPILED
+ECHO: [VCrayApp] FRESH CACHE OF RAYLIB *.OBJ FILES COMPILED
 ECHO: %VCterse%
 
 :APPBUILD
@@ -131,7 +131,7 @@ IF ERRORLEVEL 2 goto :FAIL5
 ECHO: %VCterse%
 DEL *.obj >nul 2>nul
 
-ECHO: [rayApp] RAYLIB APP %GAME_EXE% COMPILED TO APP FOLDER
+ECHO: [VCrayApp] RAYLIB APP %GAME_EXE% COMPILED TO APP FOLDER
 ECHO: %VCterse%
 
 CD %VCfrom%
@@ -144,66 +144,65 @@ IF "%VCsplice%" == "+" EXIT /B 0
 EXIT /B 0
 
 :FAIL6
-ECHO: [rayApp] **** FAIL: RAYLIB NOT FOUND WHERE EXPECTED ****
-ECHO:          expected at "%~dp0..\raylib\"                        %VCterse%
-ECHO:          NO ACTIONS HAVE BEEN PERFORMED                       %VCterse%
+ECHO: [VCrayApp] **** FAIL: RAYLIB NOT FOUND WHERE EXPECTED ****
+ECHO:            expected at "%~dp0..\raylib\"                      %VCterse%
+ECHO:            NO ACTIONS HAVE BEEN PERFORMED                     %VCterse%
 GOTO :BAIL
 
 :FAIL5
-ECHO: [rayApp] ****FAIL: COMPILING %GAME_EXE% FAILED ****
-ECHO:          Review the errors reported for the compilation, make  %VCterse%
-ECHO:          repairs and reattempt.                                %VCterse%
-ECHO:          RESULTS ARE UNPREDICTABLE                             %VCterse%
+ECHO: [VCrayApp] ****FAIL: COMPILING %GAME_EXE% FAILED ****
+ECHO:            Review the errors reported for the compilation.    %VCterse%
+ECHO:            Make repairs and reattempt.                        %VCterse%
+ECHO:            RESULTS ARE UNPREDICTABLE                          %VCterse%
 GOTO :BAIL
 
 :FAIL4
-ECHO: [rayApp] ****FAIL: COMPILING CACHE OF RAYLIB FILES FAILED ****
-ECHO:          Review the errors reported for the compilation, make  %VCterse%
-ECHO:          repairs and reattempt.                                %VCterse%
-ECHO:          RESULTS ARE UNPREDICTABLE                             %VCterse%
+ECHO: [VCrayApp] ****FAIL: COMPILING CACHE OF RAYLIB FILES FAILED ****
+ECHO:            Review the errors reported for the compilation.    %VCterse%
+ECHO:            Make repairs and reattempt.                        %VCterse%
+ECHO:            RESULTS ARE UNPREDICTABLE                          %VCterse%
 GOTO :BAIL
 
 :FAIL3
-ECHO: [rayApp] **** FAIL: NO VS NATIVE COMMAND-LINE ENVIRONMENT ****
-ECHO:          rayApp.bat requires the command-line environment for %VCterse%
-ECHO:          VS Native Build Tools to be already established.     %VCterse%
-ECHO:          See ^<some nfoTools support information^>.           %VCterse%
-ECHO:          NO ACTIONS HAVE BEEN PERFORMED                       %VCterse%
+ECHO: [VCrayApp] **** FAIL: NO VS NATIVE COMMAND-LINE ENVIRONMENT ****
+ECHO:            VCrayApp.bat requires the command-line environment %VCterse%
+ECHO:            for VS Native Build Tools to be established.       %VCterse%
+ECHO:            See ^<some nfoTools support information^>.         %VCterse%
+ECHO:            NO ACTIONS HAVE BEEN PERFORMED                     %VCterse%
 GOTO :BAIL
 
 :FAIL2
-ECHO: [rayApp] **** FAIL: UNSUPPORTED RAYAPP.BAT PARAMETERS ****
-ECHO:          Invalid Here: %*
-ECHO:          %VCterse%
-ECHO:          NO ACTIONS HAVE BEEN PERFORMED                       %VCterse%
+ECHO: [VCrayApp] **** FAIL: UNSUPPORTED RAYAPP.BAT PARAMETERS ****
+ECHO:            Invalid Here: %*
+ECHO:            %VCterse%
+ECHO:            NO ACTIONS HAVE BEEN PERFORMED                     %VCterse%
 GOTO :USAGE
 
 :FAIL1
-ECHO: [rayApp] **** FAIL: INCORRECT VSrayApp FILES CONFIGURATION ****
-ECHO:          rayApp.bat must be in the folder that VCrayApp.zip   %VCterse%
-ECHO:          is extracted into, along with the cache\ and app\    %VCterse%
-ECHO:          subfolders.  The extracted folders and files are not %VCterse%
-ECHO:          supported if separated. See                          %VCterse%
-ECHO:          ^<some nfoTools support information^>.               %VCterse%
-ECHO:          NO ACTIONS HAVE BEEN PERFORMED                       %VCterse%
+ECHO: [VCrayApp] **** FAIL: INCORRECT VSrayApp FILES CONFIGURATION ****
+ECHO:            VCrayApp.bat must be in a folder that VCrayApp.zip %VCterse%
+ECHO:            is extracted into, along with the cache\ and app\  %VCterse%
+ECHO:            subfolders.  See                                   %VCterse%
+ECHO:            ^<some nfoTools support information^>.             %VCterse%
+ECHO:            NO ACTIONS HAVE BEEN PERFORMED                     %VCterse%
 GOTO :BAIL
 
 :FAIL0
-ECHO: [rayApp] **** FAIL: COMMAND SHELL EXTENSIONS REQUIRED ****
-ECHO:          rayApp.bat requires CMDEXTVERSION 2 or greater.       %VCterse%
-ECHO:          This is available everywhere rayApp.bat is usable.    %VCterse%
-ECHO:          %VCterse%
-ECHO:          NO ACTIONS HAVE BEEN PERFORMED                        %VCterse%
+ECHO: [VCrayApp] **** FAIL: COMMAND SHELL EXTENSIONS REQUIRED ****
+ECHO:            VCrayApp.bat requires CMDEXTVERSION 2 or greater.  %VCterse%
+ECHO:            This is available wherever VCrayApp.bat is usable. %VCterse%
+ECHO:            %VCterse%
+ECHO:            NO ACTIONS HAVE BEEN PERFORMED                     %VCterse%
 GOTO :BAIL
 
 :USAGE
 rem    PROVIDE USAGE INFORMATION
-ECHO:   USAGE: rayApp [+] ?
-ECHO:          rayApp [+] [*] [-c] [-r]
+ECHO:   USAGE: VCrayApp [+] ?
+ECHO:          VCrayApp [+] [*] [-c] [-r]
 IF NOT "%1" == "?" GOTO :BAIL
 ECHO:   where  ? produces this usage information.
 ECHO:          + for operating non-stop without any screen clearing
-ECHO:            and pausing.  Good for use called as a helper
+ECHO:            and pausing.  Good for use called as a helper.
 ECHO:          * selects terse output.  If operation fails, repeat
 ECHO:            without this option for more details.
 ECHO:         -c for a complete rebuild of any cache
@@ -220,7 +219,7 @@ EXIT /B 0
 :BAIL
 ECHO:
 IF NOT ERRORLEVEL 2 SET ERRORLEVEL=2
-CD %VCfrom%                                                          %VCterse%
+CD %VCfrom%                                                         %VCterse%
 rem always leave with the one that brung us
 IF NOT "%VCterse%" == "" EXIT /B %ERRORLEVEL%
 IF "%VCsplice%" == "+" EXIT /B %ERRORLEVEL%
@@ -231,6 +230,7 @@ EXIT /B %ERRORLEVEL%
 
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 rem
+rem 0.0.10 2022-05-29T21:29Z Switch to VCrayApp name and review, tidy up.
 rem 0.0.9 2021-11-20T20:59Z Adjust error checks and preserving original %CD%
 rem 0.0.8 2021-11-11T20:13Z Checking for expected presence of raylib/
 rem 0.0.7 2021-11-11T17:52Z Moving all *.opt files to cache/
