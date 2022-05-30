@@ -1,4 +1,4 @@
-T211002.txt 0.0.2                   UTF-8                       dh:2022-04-**
+T211002.txt 0.0.2                   UTF-8                       dh:2022-05-30
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -19,6 +19,9 @@ These tools are also useful for keeping up-to-date with with open-source
 projects such as raylib and also nfoTools.  There's a rich supply of efforts
 to rely on and also take part in.
 
+Emphasis is on use of the Windows GitHub client as well as some of the
+special provisions of Tortoise Git.
+
 MANIFEST
 
     T211102.txt  this manifest and job-jar file
@@ -26,7 +29,7 @@ MANIFEST
 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-                       Copyright 2021 Dennis E. Hamilton
+                Copyright 2021-2022 Dennis E. Hamilton
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -45,9 +48,8 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. T211102: Git and GitHub.  nfoTools project text file
-   T211102.txt version 0.0.0 dated 2021-11-23, available on the
-   Internet as a version of
-   <https://orcmid.github.io/nfoTools/tools/T211102/T211102.txt>
+   T211102.txt version 0.0.2 dated 2022-05-30, available on the Internet as a
+   version of <https://orcmid.github.io/nfoTools/tools/T211102/T211102.txt>
 
 TODO
 
@@ -106,8 +108,26 @@ TODO
  * Need to see if GitLab connecction works with VS Code as easily as the
    GitHub connection.  It should not matter - the connection is in Git.
 
+ * Class Central has this great summary of courses on Git and GitHub.
+   <https://www.classcentral.com/report/best-git-github-courses/>.
+
+ * Emphasis on GitHub here is with regard to solo use and reliance on the
+   projects of others.  Beside nfoTools for that purpose, :), I mean the
+   kinds of simple collaboration and use of all the tools except for actions
+   and CI/CD work.  I can mention or cite some of that as advanced usage and
+   indicate that it becomes more about collaboration and operating in concert
+   with the project (or in-world team) overlords.
+
+ * Setting up .gitattributes and .gitignore and using some simple practices
+   for blending/depending is also a matter here.
+
+ * Possible tie-in to SE4E in regard to community practices, accountability.
+
   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.2 2022-05-30T16:00Z Manage TODOs, include more on references and having
+       progressive disclosures.
+ 0.0.1 2022-04-28T22:21Z Manage TODOs
  0.0.0 2021-11-23T16:21Z Placeholder and anticipation of T211102 unfolding
 
                      ***** end of T21102.txt *****
