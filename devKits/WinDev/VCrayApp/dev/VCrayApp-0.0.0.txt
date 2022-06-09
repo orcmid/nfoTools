@@ -1,21 +1,184 @@
-VCrayApp-0.0.0.txt                  UTF-8                         2021-11-09
+VCrayApp-0.0.0.txt 0.0.1            UTF-8                         2022-06-09
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-                       AN NFOTOOLS COMING ATTRACTION
-                       =============================
+                      NFOTOOLS DEVKIT FOR RAYLIB APPS
+                      ===============================
 
                            <web link eventually>
                         <maybe repository link too>
 
-              RAYLIB APP BUILD WITH VS DEVELOPER COMMAND PROMPT
-              -------------------------------------------------
+           BUILDING RAYLIB APPS WITH VS DEVELOPER COMMAND PROMPT
+           -----------------------------------------------------
 
-THIS IS A DUMMY FILE FOR USE IN TESTING THE PROVISIONAL RayApp.bat CODE
-THE TITLE AND EVERYTHING ELSE IS BOGUS FOR NOW.
+[EDITOR NOTE - THE FOLLOWING TEXT IS BOILERPLATE FROM A DIFFERENT DEVKIT.
+ IT WILL BE MORPHED INTO A FORM FOR alpha release of VCrayApp-0.0.0.]
+
+         The VCrayApp-0.0.0 distribution is available on the web
+         at <http://nfoWare.com/dev/2016/11/d161101c.txt>.  Consult
+         that page for the latest status, links to useful related
+         material, and the most-recent version.  If there is concern
+         for the authenticity or correctness of a VCbind.zip, obtain full
+         replacement at <http://nfoWare.com/dev/2016/11/d161101c.txt>.
+
+         CONTENT
+            1. Overview
+            2. Prerequisites and Dependencies
+            3. Extraction of VCbind.zip Content
+            4. Using the VCbind\VCbind.bat Script
+            5. Developer Use of VCBind
+            MANIFEST of VCbind.zip 0.1.0
+
+ 1. OVERVIEW
+
+    VCbind.zip delivers a Windows batch script for setting up a command-
+    line environment.  The resulting environment enables compiling with the
+    Microsoft Visual C/C++ command-line compiler, cl.exe, aud using related
+    Microsoft developer tools.
+
+    VCbind.zip is found as a component of larger construction sets.  Check
+    for custom instructions that apply to extraction and usage of VCbind
+    in a particular construction set.
+
+    Ordinarily, construction sets using VCbind version 0.1.0 have a copy
+    of this file, VCbind-0.1.0.txt, alongside the VCbind.zip file.  Use
+    the version included in VCbind.zip if it is different.
+
+    Extract VCbind.zip at the location where it appears in a construction set.
+    The result is a companion folder with the following structure.
+
+               construction-set-location\
+                  ...
+                  VCbind.zip    *location in the construction set
+                  VCbind\       *created by extraction
+                     ...
+                     Vcbind-0.1.0.txt
+                     VCbind.bat
+                  ...
+
+    The VCbind\ folder is not part of the preserved construction set.
+    Customize it freely and leave the construction-set code intact.  Recover
+    VCbind\ to its released construction-set form by re-extracting from
+    VCbind.zip.
+
+
+ 2. PREREQUISITES AND DEPENDENCIES
+
+    To use VCbind, you will need to use the Windows File Explorer, be able to
+    initiate Windows Batch files, and to navigate and operate with the Windows
+    Command Shell, cmd.exe.
+
+    VCbind is designed to work with versions of Visual Studio that are free
+    for personal use, from Visual Studio C++ Express 2008 to Visual Studio
+    C++ Express 2015.
+
+    Use the C/C++ desktop-development options of the free Visual Studio 2015
+    Community Edition for open-source work with the Visual Studio Integrated
+    Development Environment (IDE).  If you only want Microsoft command-line
+    developer tools without the Visual Studio IDE, use the Visual Studio
+    2015 or 2013 Build Tools downloads instead.
+
+    It is assumed that Microsoft Windows 7 Professional or later are used.
+    Thorough VCbind testing is with Microsoft Windows 10 Pro latest versions
+    starting with Anniversary Edition version 1607.
+
+
+ 3. EXTRACTION OF VCBIND.ZIP CONTENT
+
+    In the Windows File Explorer, locate the copy of VCbind.zip that you
+    intend to use.
+
+    Right click on the entry for VCbind.zip and click "Extract all ..." in
+    the context menu that appears.
+
+    In the "Extract Compressed (Zipped) Folders" Dialog that appears,
+    do not change the "Files will be extracted to this folder:" choice that
+    is offered automatically.  This is important in order for other components
+    of a construction set to find the VCbind content correctly.
+
+    Check the "Show extracted files when complete" entry.
+
+    Click "Extract".
+
+    If a "Replace or Skip Files" dialog appears, click "Replace the files
+    in the destination" option.  This will impose the files from VCbind 0.1.0
+    without disturbing any non-VCbind files you may have added.
+
+    There should now be a VCbind\ folder in the same folder as the VCbind.zip.
+    In that folder you will see that the the files listed in the Manifest at
+    the end of the VCbind-0.1.0.txt file are included.
+
+
+ 4. USING THE VCBIND\VCBIND.BAT SCRIPT
+
+    Confirm that everything is working by double-clicking on the VCbind.bat
+    file in the folder VCbind.zip is extracted into.  There should be a simple
+    success report.  If there is a failure report, provide any remedy that is
+    indicated.
+
+    To use VCbind as part of a construction set, start a Windows Command Shell
+    (cmd.exe) session.  Navigate to where you want to be using the VC compiler
+    and environment.  This can be in the VCbind\ folder that has the VCbind.bat
+    file, or it can be from some other folder where you will be working.
+
+    To learn about VCbind options, use the command form
+
+            VCbind.bat ?
+
+    The simplest use of VCbind within a console session is by plain command
+
+            VCbind.bat
+
+    providing a default environment using the latest-version of VC compiler
+    that is detected.
+
+    On a successful report from VCbind.bat, confirm presence of the compiler
+    with the command
+
+             CL.exe
+
+    in the same session.  Use "CL.exe /?" for extensive information about
+    compiler options.
+
+    Detailed use of the VC compiler and other command-line development tools
+    will depend on the nature of the construction set in which VCbind is
+    found.  Consult the further instructions that are provided.
+
+
+ 5. DEVELOPER USE OF VCBIND.ZIP
+
+    Add VCbind.zip to personal construction sets for command-line operation
+    with Visual C/C++ compilers, libraries, and tools environments.
+
+    Investigate <http://nfoWare.com/2016/11/d161102.htm> for VCbinder tips
+    on incorporation in yout own distributed construction sets.
+
+    The source-code for the VCbind 0.1.0 release is also available at the
+    <http://nfoWare.com/2016/11/d161101c.htm> page.
+
+    The public source-code management system where VCbind 0.1.0 was developed
+    is <https://github.com/orcmid/Adv10> at dev/VCbinder/devBind/
+
+
+MANIFEST OF VCBIND.ZIP 0.1.0
+
+    LICENSE.txt
+        copy of the Apache Licnese Version 2.0 of January 2004
+
+    NOTICE.txt 1.0.0 814 byte 2016-10-24 version
+        applicable NOTICE for VCbind.zip and its content
+
+    VCbind-0.1.0.txt 0.0.8 9,670 byte 2016-11-24T17:28 clearsigned version
+        This description file on organization of the archive and use of its
+        materials.
+
+    VCbind.bat 0.1.0 0.18 15,044 byte 2015-11-24T11:11 version
+        Script that, when run, will locate Visual C++ settings and perform
+        an appropriate setup of the environment for operating with the latest
+        installed version of the Visual C++ compiler and accompanying tools.
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-                       Copyright 2021 Dennis E. Hamilton
+                    Copyright 2021-2022 Dennis E. Hamilton
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -33,21 +196,23 @@ THE TITLE AND EVERYTHING ELSE IS BOGUS FOR NOW.
 
  ATTRIBUTION
 
-   Hamilton, Dennis E. Axe Game with Native VC Builds. FC_CPP Project
-   text file S2-Axe.txt version 0.0.0 dated 2021-11-09, available on the
-   Internet as a version of
-   <https://github.com/orcmid/*something*>
+   Hamilton, Dennis E. Building raylib Apps with VS Developer Command Prompt.
+   nfoTools file VCrayApp-0.0.0.txt version 0.0.2 available on the internet
+   as a version of <https://github.com/orcmid/*something*>
 
 TODO
 
- * Figure this out over on nfoTools
+ * Figure this out over on nfoTools dev/ and stage to a docs/dev/D211101 folio
 
  * It must be meaningfull readable as part of unzipping and renaming a
    initialization of a raylib-using project.
 
+ * Crib from VCbind-0.2.0.txt on which VCrayApp.bat is loosely based.
+
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.1 2022-06-07T22:27Z Include boilerplate from VCbind-0.1.0
  0.0.0 2021-10-09T00:46Z Placeholder draft
 
 
-                       ***** end of VCrayApp-0.0.0.txt *****
+                    ***** end of VCrayApp-0.0.0.txt *****
