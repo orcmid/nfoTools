@@ -1,4 +1,4 @@
-D211101.txt 0.0.0                   UTF-8                       dh:2022-05-30
+D211101.txt 0.0.1                   UTF-8                         2022-06-10
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -8,8 +8,8 @@ D211101.txt 0.0.0                   UTF-8                       dh:2022-05-30
 <https://github.com/orcmid/nfoTools/blob/master/docs/dev/D211101/D211101.txt>
         <https://orcmid.github.io/nfoTools/dev/D211101/D211101.txt>
 
-           VCRAYAPP: VC/C++ COMMAND-LINE RAYLIB APP BUILD KIT
-           --------------------------------------------------
+             VCRAYAPP: VC/C++ COMMAND-LINE RAYLIB APP DEVKIT
+             -----------------------------------------------
 
 VCrayApp consists of a Zip package that can be included in a software
 construction set to simplify command-line compiling of C/C++ language programs
@@ -33,7 +33,6 @@ PLAN
 * Develop VCrayApp on GitHub as part of the nfoTools project.
 * Provide pilot demonstration in confirmation of raylib examples
 * Release alpha and beta versions for confirmation and early-adopter trial
-* Confirm in prototype WinCon Construction Sets
 * Include confirmation materials and approaches.
 * Deal with levels of prerequisite and progressive disclosure
 * Address life-cycle issues with respect to VCrayApp and interdependency with
@@ -42,8 +41,11 @@ PLAN
 
 MANIFEST
 
-     D211101.txt
-             this manifest and job-jar file
+     D211101.txt    this manifest and job-jar file
+       index.md     the web-version front page to this D211101 folio.
+
+    D211101c/       VCrayApp 0.0.0 (alpha)
+
 
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
@@ -95,7 +97,8 @@ TODO
 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.1 2022-06-10T00:47Z Anticipate D211101c and manage TODOs
  0.0.0 2022-05-30T17:35Z Placeholder morphed from D161101.txt 0.0.5 and
        adjusted for getting started on making VCrayApp available.
 
-          ***** end of docs/dev/D211101/D211101.txt *****
+              ***** end of D211101.txt *****
