@@ -1,33 +1,32 @@
-<!-- index.md 0.0.0                 UTF-8                          2022-06-10
+<!-- index.md 0.0.1                 UTF-8                          2022-06-10
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                VCRAYAPP: VC/C++ COMMAND-LINE RAYLIB APP DEVKIT
      -->
 
-# ***VCrayApp** VC/C++ Command-Line ralib App DevKit*
+# ***VCrayApp** VC/C++ Command-Line raylib App DevKit*
 
-| ***[D211101](index.html)*** | [dev]()../)[>D211101](.) | ***0.0.0 2022-06-10*** |
+| ***[D211101](index.html)*** | [dev]()../)[>D211101](.) | ***0.0.1 2022-06-10*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../../images/hardhat-logo.gif) |
 
-VCrayApp consists of a Zip package that can be included in a software
-development project to simplify command-line compiling of C/C++ language
-programs for Microsoft Windows that use the raysan5/raylib library for
-graphical applications.  VCrayApp is easily deployed within GitHub-carried
-projects.  It is delivered in a form that can be confirmed for correct
-operation before customization as part of a specific project.
+VCrayApp is a Zip package for a folder to be used in creating a Microsoft
+Windows program using the `raysan5/raylib` library for graphical applications.
+VCrayApp is easily incorporated in  GitHub-carried projects.  The initial
+VCrayApp setup includes confirmation of correct operation that can then be
+confidently customized for a new project.
 
 ## Principles
 
 * Operation with freely-available and free-to-use development tools.
 * Simple manual instructions for free-standing use and for incorporation
-  in projects designed for novice usage.
+  in projects designed for novice and advanced usage.
 * Sufficient for incorporation inside more-elaborate construction sets.
 * Designed for confirmation of operation and confident employment.
 * Safe for novice developers and others keen to develop games and graphical
-  applications on Windows for Windows using freely-available tools.
+  applications on native Windows.
 
-## PLAN
+## Plan
 
 * Develop VCrayApp on GitHub as part of the nfoTools project.
 * Provide pilot demonstration in confirmation of raylib examples
@@ -38,8 +37,6 @@ operation before customization as part of a specific project.
   raylib releases
 * Address usage with raylib work-in-progress for raylib contributors
 
-
-
 ## Available Materials
 
 | **ID** | **Started** | **Status** | **Topic** |
@@ -47,6 +44,12 @@ operation before customization as part of a specific project.
 | [D211101c](D211101c/) | 2022-06-09 | placeholder | VCrayApp 0.0.0 (alpha) |
 |                       |            |                  |     |
 
+## Development
+
+Development within the GitHub
+[orcmid/nfoTools](https://github.com/orcmid/nfoTools) project is at the
+[devKits/WinDev/VCrayApp](https://github.com/orcmid/nfoTools/tree/master/devKits/WinDev/VCrayApp)
+main branch.
 
 ----
 
@@ -60,6 +63,7 @@ time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.1 2022-06-10T02:28Z Touch-ups and confirmation of material
      0.0.0 2022-06-10T00:16Z Placeholder for initial development of a complete
            folio
 
