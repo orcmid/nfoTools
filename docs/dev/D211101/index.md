@@ -6,7 +6,7 @@
 
 # ***VCrayApp** VC/C++ Command-Line raylib App DevKit*
 
-| ***[D211101](index.html)*** | [dev]()../)[>D211101](.) | ***0.0.1 2022-06-10*** |
+| ***[D211101](index.html)*** | [dev](../)[>D211101](.) | ***0.0.2 2022-06-10*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../../images/hardhat-logo.gif) |
 
@@ -63,6 +63,7 @@ time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.2 2022-06-10T02:38Z Correct mouse track
      0.0.1 2022-06-10T02:28Z Touch-ups and confirmation of material
      0.0.0 2022-06-10T00:16Z Placeholder for initial development of a complete
            folio
