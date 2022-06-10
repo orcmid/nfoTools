@@ -1,4 +1,4 @@
-VCrayApp.txt 0.0.2                  UTF-8                      dh:2022-05-29
+VCrayApp.txt 0.0.3                  UTF-8                      dh:2022-05-**
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                       RAYLIB APP DEVELOPMENT PROJECT
@@ -20,7 +20,7 @@ VCrayApp.txt 0.0.2                  UTF-8                      dh:2022-05-29
 
     dev\ and its content mimics the recommended installation of a VCrayApp
     extraction, with raylib installed as a peer folder.  The VCrayApp 0.0.0
-    organization and rayApp.bat depend on that.
+    organization and VCrayApp.bat depend on that organization.
 
     VCrayApp is a cousin of the VCbuild construction kit, and modeled on
     that.  It also borrows from the raylib\projects\scripts\build-windows.bat
@@ -44,12 +44,12 @@ MANIFEST
     raylib\
         The Zipped raylib-3.7.0\ folder extracted to here and renamed
         raylib\ for consistent reference from a VCrayApp-organized
-        project (excluded from Git, extract from the .zip in any clone)
+        project (excluded from Git, extract from the release.zip in any clone)
 
     dev\
         Developer setup for the VCrayApp materials under current development.
         A version of VCrayApp structure before packaging in a release Zip.
-        This is always work-in-progress.  Releases are in docs\dev\ folders.
+        This is always work-in-progress.  Releases are in docs/dev/ folders.
 
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
@@ -82,6 +82,40 @@ TODO
  * Derive a VCrayApp-0.0.0.zip and employ it in orcmid/RayLab to confirm the
    templates and examples.
 
+ * This project was started using raylib-3.7.0 for the testing.  There are
+   breaking changes in raylib-4.0.0 and that or a later release will be used
+   only after the raylib-3.7.0 examples are all worked.  Then there will be
+   replication with a later release (and only release builds).
+
+ * An important feature of using a devKit is a way of updating either the kit
+   *and/or* the update of dependencies which are employed from a kit, raylib
+   included.
+
+ * In general, the use of an in-progress dependency project is not covered
+   for building applications that depend on such a project.  That does not
+   mean feedback and fixes cannot be submitted to the project.  But there
+   needs to be separation and avoidance of too much dependency on work-in-
+   progress and the prospect of deprecations, alterations, and regressions.
+   This does mean that careful work-arounds are required when there is any
+   difficulty with a stable release. And one should not depend on new/changed
+   features until they appear in a stable release, and a release schedule
+   should never depend on a dependency achieving release. There are enough
+   hazards that are under ones own control.
+
+ * I intend to make VCrayApp-0.0.x available as an alpha release, inviting
+   exploration and employment by interested users of raylib.  This means I
+   need to update the text files and also have something on docs/dev for the
+   alpha release.
+
+ * The beta release, VCrayApp-1.0.0 should also address the replacement of
+   one release by another and all the support there is for such changes.
+   Saving ones customizations, having the customizations already on the users
+   source control, etc.  This should be feature complete and post-beta changes
+   should not have breaking changes, though bug fixes are always a prospect.
+
+ * These aspects of trustworthy production need to be accounted for.  There
+   should also be some integration with respect to confirmable experience.
+
  * Create docs/dev/ folio(s) on VCrayApp and link from VCrayApp-0.0.0 content.
 
  * In VCrayApp.bat, have places for error messages to link to that provide
@@ -89,8 +123,8 @@ TODO
 
  * Resolve use of docs/dev connections back and forth on raylib at docs/tools.
 
- * Do a beta availability and distribution once there is a docs/dev folder
-   for feedback and information.
+ * Do alpha/beta availability and distribution once there is a docs/dev folder
+   for downloading, usage information, and gathering feedback.
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
