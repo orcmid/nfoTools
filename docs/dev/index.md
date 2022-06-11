@@ -1,17 +1,17 @@
-<!-- index.md 0.0.5                 UTF-8                          2022-06-10
+<!-- index.md 0.0.6                 UTF-8                         2022-06-11
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                         NFOTOOLS DEVELOPMENT NOTES
      -->
 
-# ***nfoTools** Development Notes*
+# ***nfoTools** [Development Notes](.)*
 
-| ***[dev](.)*** | [dev](.)| ***0.0.5 2022-06-10*** |
+| ***[nfoTools](../)*** | [dev](.)| ***[index.html](index.html) 0.0.6 2022-06-11*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../images/hardhat-logo.gif) |
 
 
-nfoTools [dev notes](.) are provided in documentation support of individual
+nfoTools [dev notes](.) provide documentation support for individual
 development efforts within the GitHub nfoTools project.  These are about the
 construction of individual tools, their distribution, and demonstration.
 
@@ -35,6 +35,7 @@ time.
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
+     0.0.6 2022-06-11T20:06Z Provisional Title Bar update
      0.0.5 2022-06-10T00:54Z Add D211101
      0.0.4 2021-09-20T23:05Z Add top banner, reflect D161101
      0.0.3 2021-09-17T20:02Z Improve Discussion invitation
