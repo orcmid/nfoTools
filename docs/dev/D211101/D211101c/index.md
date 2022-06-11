@@ -1,12 +1,12 @@
-<!-- index.md 0.0.1                 UTF-8                          2022-06-10
+<!-- index.md 0.0.2                 UTF-8                          2022-06-11
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                      VCRAYLIB 0.0.0 RELEASE (ALPHA)
      -->
 
-# ***VCrayLib** 0.0.0 Release (alpha)*
+# ***VCrayLib** [0.0.0 Release (alpha)](.)*
 
-| ***[D211101c](index.html)*** | [dev](../../)[>D211101](../)[>D211101c](.) | ***0.0.0 2021-06-10*** |
+| ***[nfoTools](../../../)*** | [dev](../../)[>D211101](../)[>D211101c](.) | ***0.0.1 2022-06-11*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../../../images/hardhat-logo.gif) |
 
@@ -26,6 +26,7 @@ time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.2 2022-06-11T21:17Z Bring top banner up to standard
      0.0.1 2022-06-10T02:32Z Remove commented out boilerplate for now
      0.0.0 2022-06-10T00:41Z Create Initial Placeholder
 

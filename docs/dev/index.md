@@ -19,8 +19,8 @@ construction of individual tools, their distribution, and demonstration.
 
 | **ID** | **Started** | **Status** | **Topic** |
 |   :-:   |   :-:   |  :-:   |  ---  |
-| [D211101](D211101) | 2021-09-11 | 0.0.0  2022-06-10 | VCrayApp: VC/C++ Command-Line raylib App DevKit |
-| [D161101](D161101) | 2016-11-12 | 0.1.13 2021-09-20 | VCbind: VC/C++ Command-Line Setup Script|
+| [D211101](D211101) | 2021-09-11 | 0.0.3  2022-06-11 | VCrayApp: VC/C++ Command-Line raylib App DevKit |
+| [D161101](D161101) | 2016-11-12 | 0.1.14 2021-06-11 | VCbind: VC/C++ Command-Line Setup Script|
 
 ----
 
@@ -34,8 +34,7 @@ time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-
-     0.0.6 2022-06-11T20:06Z Provisional Title Bar update
+     0.0.6 2022-06-11T21:26Z Title Bar update
      0.0.5 2022-06-10T00:54Z Add D211101
      0.0.4 2021-09-20T23:05Z Add top banner, reflect D161101
      0.0.3 2021-09-17T20:02Z Improve Discussion invitation

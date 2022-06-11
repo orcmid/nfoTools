@@ -1,36 +1,38 @@
-<!-- index.md 0.1.13                UTF-8                          2021-09-20
+<!-- index.md 0.1.14                UTF-8                          2022-06-11
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                    VCBIND: VC/VC++ COMMAND-LINE SETUP SCRIPT
      -->
 
-# ***VCbind** VC/VC++ Command-Line Setup Script*
+# ***VCbind** [VC/VC++ Command-Line Setup Script](.)*
 
-| ***[D161101](index.html)*** | [dev]()../)[>D161101](.) | ***0.1.14 2021-09-20*** |
+| ***[nfoTools](../../)*** | [dev](../)[>D161101](.) | ***[index.html](index.html) 0.1.14 2022-06-11*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../../images/hardhat-logo.gif) |
 
 ***VCbind*** consists of a Zip package that can be included in a software
 construction set to simplify command-line compiling of C/C++ language programs
-using Microsoft Windows developer tools.  ***VCbind*** is easily deployed
-within GitHub carried projects.
+using Microsoft Windows developer tools.  ***VCbind*** expansions are
+easily deployed within GitHub-hosted projects such as orcmid/nfoTools and
+related projects.
 
 ## Intended Usage
 
-When code containing **`VCbind.zip`** is found in a software construction set,
-extract the contents of the Zip package into a folder.  Rely on the script
-and other materials in the folder to establish the command-line environment
-for use of Microsoft Build Tools.  The extracted **`VCbind.bat`** file sets up
-the command-line environment for use of the Microsoft command-line compiler,
- **`cl.exe`**, and other development tools.
+When code containing a **`VCbind.zip`** is found in a software construction
+set, extract the contents of the Zip package into a folder.  Rely on the
+script and other materials in the folder to establish the command-line
+environment for use of Microsoft Build Tools.  The extracted **`VCbind.bat`**
+file sets up the command-line environment for use of the Microsoft VC/C++
+command-line compiler, **`cl.exe`**, and other development tools.
 
-When construction sets have their own procedures for their overall operation,
-those instructions are relied upon for how and when ***VCbind*** is used.
+When projects, including other construction sets, incorporate a **VCbind**
+component into their operation, the instructions provided with those
+inclusions should be relied upon for how and when ***VCbind*** is used.
 
 ## Purpose
 
 Provide a redistributable script that automatically locates and sets up a
-command-line environment for operations of the installed Windows C/C++
+command-line environment for operations with the installed Windows VC/C++
 development tools.
   
 ## Principles
@@ -51,9 +53,9 @@ custom purposes.
 
 | **ID** | **Started** | **Status** | **Topic** |
 |   :-:   |   :-:   |  :-:   |  ---  |
-| [D161101c](D161101c/) | 2016-11-25 | 0.0.7 2021-09-20 | VCbind 0.1.0 Release (Preservation) |
+| [D161101c](D161101c/) | 2016-11-25 | 0.0.9 2022-06-11 | VCbind 0.1.0 Release (Preservation) |
 |                       |            |                  |     |
-| [D161101a](D161101a.html) | 2016-11-12 | 0.0.2 2021-09-20 | Diary and Job Jar |
+| [D161101a](D161101a.html) | 2016-11-12 | 0.0.3 2022-06-11 | Diary and Job Jar |
 
 ----
 
@@ -67,6 +69,8 @@ time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.1.14 2022-06-11T21:11Z Redo top banner, touch-up text, reflect updates
+            to subordinate components.
      0.1.13 2021-09-17T22:45Z Add top banner, reflect D161101c, D161101a
      0.1.12 2021-09-17T20:08Z Add Discussion invitation
      0.1.11 2021-09-14T00:49Z D161101c 0.0.6

@@ -1,12 +1,12 @@
-<!-- index.md 0.0.8                 UTF-8                          2021-09-20
+<!-- index.md 0.0.9                 UTF-8                          2022-06-11
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                      VCBIND 0.1.0 RELEASE (PRESERVATION)
      -->
 
-# ***VCbind** 0.1.0 Release (Preservation)*
+# ***VCbind** [0.1.0 Release (Preservation)](.)*
 
-| ***[D161101c](index.html)*** | [dev](../../)[>D161101](../)[>D161101c](.) | ***0.0.7 2021-09-20*** |
+| ***[nfoTools](../../../)*** | [dev](../../)[>D161101](../)[>D161101c](.) | ***index.html 0.0.9 2022-06-11*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../../../images/hardhat-logo.gif) |
 
@@ -18,8 +18,7 @@ This release is deprecated. It contains signed materials that refer to
 locations at `nfoware.com` instead of here at Github Project
 `orcmid/nfoTools`.
 
-Improved documentation will be provided with the superseding VCbind 0.1.1
-release.
+Improved documentation will be provided with a superseding VCbind release.
 
 For more about this material and the [toolcraft](../../../tools/) dependencies
 on Zip, PGP, and SHA256, consult the [overview document](../) and descriptions
@@ -77,7 +76,7 @@ copy.
 ![VCbind-0.1.0.txt Verification](D161101c6-Kleopatra-Verification.png)
 
 Although the signatures provide the strongest verification for the integrity
-of the downloaded files to their D161101c location, there are also SHA256
+of the files downloaded to these D161101c location, there are also SHA256
 hashes that can be confirmed.  These verify that the files have not been
 altered since the hashes were derived.  This can be done on Windows using
 Command Prompt operations.  The hashes are derived for visual comparison with
@@ -101,6 +100,7 @@ time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.9 2022-06-11T21:10Z Adjust Top Banner to correct standard, touch-ups
      0.0.8 2021-09-20T22:34Z Add Top Banner
      0.0.7 2021-09-17T20:06Z Add Discussion invitation
      0.0.6 2021-09-14T00:48Z Touch-ups

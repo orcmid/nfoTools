@@ -1,4 +1,4 @@
-D161101.txt 0.0.5                   UTF-8                       dh:2021-09-12
+D161101.txt 0.0.6                   UTF-8                         2022-06-11
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -50,7 +50,7 @@ MANIFEST
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-                       Copyright 2021 Dennis E. Hamilton
+                    Copyright 2021-2022 Dennis E. Hamilton
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -69,17 +69,18 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. VCbind: VC/C++ Commnad-Line Setup Script.  nfoTools
-   development text file D161101.txt version 0.0.5 dated 2021-09-12,
+   development text file D161101.txt version 0.0.6 dated 2022-06-11,
    available on the Internet as a version of
    <https://orcmid.github.io/nfoTools/dev/D161101/D161101.txt>
 
 TODO
 
- * Introduce Banner and Footer as appropriate
+ * Introduce Banner and Footer as appropriate.  Upgrade to be more consistent
+   with the desired technique.  Repair the index.md link glitches.
 
  * Get ClustrMap working for nfoTools?
 
- * Migrate materials here so that downloads can be obtained from here and
+ * Migrate materials so that downloads can be obtained from here and
    information about and in them point to nfoTools instead of nfoware.com.
 
  * This will come with clean-up of devKits in the orcmid/nfoTools repositiory.
@@ -105,8 +106,16 @@ TODO
    source distribution that one intends to construct versus incorporating
    VCbind.zip in the source of a release of ones own.
 
+ * Determine whether the original VCbind should simply be deprecated without
+   changes, and make a new version that addresses the current Visual Studio
+   location reality.  As much as I have to grit my teeth to do that.
+
+ * This will likely create a dependency on VS Code and I pray this is not
+   a rathole trip with no cheese at the end.
+
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+  0.0.6 2022-06-11T20:18Z Touch up, manage TODOs
   0.0.5 2021-09-12T15:48Z Touch up, manage TODOs
   0.0.4 2021-09-12T02:29Z Prepare for introduction of D151101c/
   0.0.3 2021-09-11T18:43Z Prepare for migration, manage TODOs, plans
