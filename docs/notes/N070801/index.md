@@ -1,14 +1,14 @@
-<!-- index.md 0.0.4                 UTF-8                          2021-09-20
+<!-- index.md 0.0.5                 UTF-8                          2022-06-12
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-                 N070801: THE CRAFT IN TOOLCRAFT
+                     N070801: THE CRAFT IN TOOLCRAFT
      -->
 
-# ***N070801:** The Craft in Toolcraft*
+# ***N070801:** [The Craft in Toolcraft](.)*
 
-| ***[N070801](.)*** | [notes](../)[>N070801](./) | ***0.0.3 2021-09-16*** |
+| ***[nfoTools](../../)*** | [notes](../)[>N070801](.) | [index.html](index.html) ***0.0.5 2021-06-12*** |
 | :--                |       :-:          | --: |
-| ![nfotools](../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../../../images/hardhat-logo.gif) |
+| ![nfotools](../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../../images/hardhat-logo.gif) |
 
 ## 1. Overview
 
@@ -45,7 +45,7 @@ of the common principles, practices, and fundamental concepts of
 information processing.
 
 It doesn't seem possible to eliminate toolcraft.  Instead, here are tutorials
-and documentation that supports initial experience and self-guided exploration
+and documentation that support initial experience and self-guided exploration
 of some popular toolcraft.  In seeing the principles behind a few toolcrafts,
 you may find it easier to recognize and teach yourself other ones.  Here are
 the main topics identified so far.  You'll quickly notice that nfoWare has
@@ -90,6 +90,7 @@ time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.5 2022-06-12T23:54Z Repair top banner
      0.0.4 2021-09-20T23:14Z Add top banner
      0.0.3 2021-09-17T20:10Z Add Discussion invitation
      0.0.2 2021-09-08T00:51Z Touch-up
