@@ -1,4 +1,4 @@
-<!-- index.md 0.0.7                 UTF-8                         2022-06-12
+<!-- index.md 0.0.8                 UTF-8                         2022-06-15
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                         NFOTOOLS DEVELOPMENT NOTES
@@ -19,8 +19,9 @@ construction of individual tools, their distribution, and demonstration.
 
 | **ID** | **Started** | **Status** | **Topic** |
 |   :-:   |   :-:   |  :-:   |  ---  |
-| [D161101](D161101) | 2016-11-12 | 0.1.14 2021-06-11 | VCbind: VC/C++ Command-Line Setup Script|
 | [D211101](D211101) | 2021-09-11 | 0.0.3  2022-06-11 | VCrayApp: VC/C++ Command-Line raylib App DevKit |
+| [D161101](D161101) | 2016-11-12 | 0.1.14 2021-06-11 | VCbind: VC/C++ Command-Line Setup Script|
+
 
 
 ----
@@ -35,6 +36,7 @@ time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.8 2022-06-16T03:28Z Go back to reverse chronological like the others
      0.0.7 2022-06-12T23:33Z Put the catalog in chronological order
      0.0.6 2022-06-11T21:26Z Title Bar update
      0.0.5 2022-06-10T00:54Z Add D211101
