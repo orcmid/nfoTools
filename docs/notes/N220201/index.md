@@ -1,12 +1,12 @@
-<!-- index.md 0.0.5                 UTF-8                          2022-03-06
+<!-- index.md 0.0.6                 UTF-8                          2022-06-15
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                      N220201: BEGINNER MIND FAILURES
      -->
 
-# ***N220201:** Beginner Mind Failures*
+# ***N220201:** [Beginner Mind Failures](.)*
 
-| ***[N220201](.)*** | [notes](../)[>N220201](.) | ***0.0.5 2021-03-06*** |
+| ***[nfoTools](../../)*** | [notes](../)[>N220201](.) | ***[index.html](index.html) 0.0.6 2022-06-15*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../../images/hardhat-logo.gif) |
 
@@ -62,7 +62,7 @@ the work-in-progress [nfoTools](https://orcmid.github.io/nfoTools) materials.
 
 | **ID** | **Started** | **Status** | **Topic** |
 |   :-:   |   :-:   |  :-:   |  ---  |
-| [N220201a](N220201a.md) | 2022-02-28 | 0.0.4 2022-03-06 | Not Your Desktop |
+| [N220201a](N220201a.md) | 2022-02-28 | 0.0.6 2022-06-15 | Not Your Desktop |
 | [N220201b](.) | 2022-02-25 | 0.0.0 TBD | Not Your Start Menu |
 | [N220201c](.) | 2022-02-25 | 0.0.0 TBD | Not Your All Programs |
 | [N220201d](.) | 2022-02-25 | 0.0.0 TBD | Not Your File Explorer |
@@ -78,7 +78,7 @@ relevant [projects](https://github.com/orcmid/nfoTools/projects) from time to
 time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
-
+     0.0.6 2022-06-15T20:07Z Change header strip, small touch-ups
      0.0.5 2022-03-06T18:34Z Touch-ups
      0.0.4 2022-03-05T18:03Z Touch-ups
      0.0.3 2022-03-04T21:48Z Touch-ups

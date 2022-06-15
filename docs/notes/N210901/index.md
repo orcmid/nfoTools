@@ -1,12 +1,12 @@
-<!-- index.md 0.0.7                 UTF-8                          2022-03-06
+<!-- index.md 0.0.8                 UTF-8                          2022-06-15
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                  N210901: TACIT KNOWLEDGE AND THE BEGINNER MIND
      -->
 
-# ***N210901:** Essay: Tacit Knowledge and the Beginner Mind*
+# ***N210901:** [Essay: Tacit Knowledge and the Beginner Mind](.)*
 
-| ***[N210901](.)*** | [notes](../)[>N210901](.) | ***0.0.7 2022-03-06*** |
+| ***[nfoTools](../../)*** | [notes](../)[>N210901](.) | ***[index.html](index.html) 0.0.8 2022-06-15*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../../images/hardhat-logo.gif) |
 
@@ -97,8 +97,8 @@ expertise to then understand the missing connections of the skimpy dots.
 It was startling, recently, to observe how much tacit knowledge was
 left unrecognized in some online courses in their introductions for beginners.
 In bringing my beginner mind to appraisal of those courses, I realized how
-many of _my_ tacit understandings were at play.  I have been noticing even
-more lately.
+many of _my_ tacit understandings were at play.  I have been noticing [even
+more lately](../N220201).
 
 I want any project of mine to provide a meaningful on-ramp for engagement of
 curious novices.  The [skills section](../../skills) of ***nfoTools***
@@ -138,7 +138,7 @@ greater reach in approaches to our work.
 
 | **ID** | **Started** | **Status** | **Topic** |
 |   :-:   |   :-:   |  :-:   |  ---  |
-| [N220201](.) | 2022-02-25 | current | Beginner Mind Failures |
+| [N220201](../N220201) | 2022-02-25 | current | Beginner Mind Failures |
 
 ----
 
@@ -152,6 +152,7 @@ time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.8 2022-06-15T19:41Z Fix top banner and correct a link
      0.0.7 2022-03-06T16:13Z Link to N220201
      0.0.6 2021-09-20T23:27Z Add top banner and Discussion footer
      0.0.5 2021-09-20T21:46Z Rework the text, make the opportunity sharper?
