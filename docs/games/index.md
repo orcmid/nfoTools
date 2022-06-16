@@ -1,12 +1,12 @@
-<!-- index.md 0.0.0                 UTF-8                          2021-09-21
+<!-- index.md 0.0.2                 UTF-8                          2022-06-16
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                           NFOTOOLS GAMES NOTES
      -->
 
-# ***nfoTools** Games*
+# ***nfoTools** [Games](.)*
 
-| ***[games](.)*** | [nfoTools](../)[>games](.) | ***0.0.0 2021-09-21*** |
+| ***[nfoTools](../)*** | [games](.) | [index.html](index.html) ***0.0.2 2022-06-16*** |
 | :--                |       :-:          | --: |
 | ![games](../images/F56xx02-ChessPlayer-logo.png) | Work-in-Progress | ![Hard Hat Area](../images/hardhat-logo.gif) |
 
@@ -36,6 +36,7 @@ time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.2 2022-06-16T22:48Z Use standard header banner strip
      0.0.1 2021-09-21T16:43Z Touch-ups
      0.0.0 2021-09-21T15:55Z Placehoder Chess King, Hardhat Images and empty
            Catalog
