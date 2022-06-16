@@ -1,4 +1,4 @@
-skills.txt 0.0.13                   UTF-8                       dh:2022-04-29
+skills.txt 0.0.14                   UTF-8                         2022-06-16
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -70,7 +70,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. nfoTools Skills Notebook.  nfoTools project text file
-   skills.txt version 0.0.13 dated 2022-04-29, available on the Internet as a
+   skills.txt version 0.0.14 dated 2022-06-16, available on the Internet as a
    version of <https://orcmid.github.io/nfoTools/skills/skills.txt>
 
 TODO
@@ -234,8 +234,17 @@ TODO
    computational entities, primitive or emergent, and that aspect makes
    computer science both a science and an engineering discipline.
 
+ * Consider CP4E and SE4E and how that fits as skill development.
+
+ * Identify adult learning resources and making use of them.  Also consider
+   how to tie in learning practices and also some other matters such as
+   attention management, flow, will power, and dependability.
+
+ * Establish the more-correct folio header strip here.
+
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.14 2022-06-16T22:43ZZ More TODOs, Establish folio header strip
  0.0.13 2022-04-29T15:58Z More TODOs, considering logic, math, CS, and science
  0.0.12 2022-04-08T16:28Z Manage TODOs, more skills to address
  0.0.11 2022-03-15T14:44Z Manage TODOs, emphasize skills inventory.
