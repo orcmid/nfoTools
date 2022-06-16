@@ -1,12 +1,12 @@
-<!-- index.md 0.0.2                 UTF-8                          2021-09-17
+<!-- index.md 0.0.3                 UTF-8                          2022-06-16
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                  NFOTOOLS DOCUMENTATION CONSTRUCTION MATERIAL
      -->
 
-# ***nfoTools** Documentation Construction Material*
+# ***nfoTools** [Documentation Construction Material](.)*
 
-| ***[construction](index.html)*** | [[nfoTools](../)[>construction](.) | ***0.0.2 2021-09-20*** |
+| ***[nfoTools](../)*** | [construction](.) | ***[index.html](index.html) 0.0.3 2022-06-16*** |
 | :--                |       :--:         | --: |
 | ![nfotools](../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../images/hardhat-logo.gif) |
 
@@ -36,6 +36,7 @@ time.
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
+     0.0.3 2022-06-16T22:54Z Use improved header strip
      0.0.2 2021-09-20T22:23Z Use current header strip
      0.0.1 2021-09-17T20:04Z Improved Discussion invitation
      0.0.0 2021-09-08T20:12Z Placeholder Hardhat Image and empty Catalog
