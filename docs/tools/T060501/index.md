@@ -1,12 +1,12 @@
-<!-- index.md 0.0.14                UTF-8                          2021-09-20
+<!-- index.md 0.0.15                UTF-8                          2022-06-19
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                     WINDOWS CMD COMMAND-LINE ENVIRONMENT
      -->
 
-# ToolCraft: Windows CMD Command-Line Environment
+# T060501: [Windows CMD Command-Line Environment](.)
 
-| ***[T060501](.)*** | [tools](../)[>t060501](.) | ***0.0.14 2021-09-20*** |
+| ***[nfoTools](../../)*** | [tools](../)[>t060501](.) | ***[index.html](index.html) 0.0.15 2022-06-19*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../../images/hardhat-logo.gif) |
 
@@ -40,10 +40,11 @@ identified.
 
 | **ID** | **Started** | **Status** | **Topic** |
 |   :-:   |   :-:   |  :-:   |  ---  |
-| [T060501d](T060501d/)     | 2021-09-15 | 0.0.5 2021-09-20 | Selecting Command Prompt Operation |
-| [T060501c](T060501c.html) | 2006-05-20 | 0.0.33 2021-09-20 | Resources |
+| [T060501e](T060501e/)     | 2006-05-29 | 0.0.3 2022-06-19 | Windows Built-In Help (Historical) |
+| [T060501d](T060501d/)     | 2021-09-15 | 0.0.6 2022-06-19 | Selecting Command Prompt Operation |
+| [T060501c](T060501c.html) | 2006-05-20 | 0.0.34 2021-06-19 | Resources |
 |                           |            |                   |           |
-| [T060501a](T060501a.html) | 2006-05-21 | 0.0.4 2021-09-20 | Diary \& Job Jar |
+| [T060501a](T060501a.html) | 2006-05-21 | 0.0.5 2022-06-19 | Diary \& Job Jar |
 
 ----
 
@@ -57,6 +58,7 @@ time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.15 2022-06-19T15:26Z Correct top banner strips throughout the folio
      0.0.14 2021-09-20T23:59Z Top banners
      0.0.13 2021-09-17T20:21Z Update Discussion invitation
      0.0.12 2021-09-16T22:50Z Reflect T060501d 0.0.3

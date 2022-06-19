@@ -1,13 +1,13 @@
-<!-- index.md 0.0.2                 UTF-8                          2021-09-20
+<!-- index.md 0.0.3                 UTF-8                          2022-06-29
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                     WINDOWS BUILT-IN HELP (HISTORICAL)
 
      -->
 
-# Windows Built-In Help (Historical)
+# T060501e: [Windows Built-In Help (Historical)](.)
 
-| ***[T060501e](index.html)*** | [tools](../../)[>t060501](../)[>t060501e](.) | ***0.0.2 2021-09-20*** |
+| ***[nfoTools](../../../)*** | [tools](../../)[>t060501](../)[>t060501e](.) | [index.html](index.html) ***0.0.3 2022-06-29*** |
 | :--                |       ---          | --: |
 | ![nfotools](../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../../../images/hardhat-logo.gif) |
 
@@ -74,7 +74,7 @@ time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-
+     0.0.3 2022-06-29T01:47Z Use corrected top header strip
      0.0.2 2021-09-20T17:39Z Rough Draft Transposed to nfoTools
      0.0.1 2007-08-12T01:47Z Repaving Review (nfoWare)
      0.0.0 2006-05-29T00:25Z Create Initial Placeholder (nfoWare)

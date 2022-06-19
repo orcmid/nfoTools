@@ -1,12 +1,12 @@
-<!-- index.md 0.0.14                UTF-8                          2021-11-**
+<!-- index.md 0.0.14                UTF-8                          2022-06-19
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                        NFOTOOLS TOOLCRAFT NOTEBOOK
      -->
 
-# ***nfoTools** Toolcraft Notebook*
+# ***nfoTools** [Toolcraft Notebook](.)*
 
-| ***[tools](.)*** | [nfoTools](../)[>tools](.) | ***0.0.13 2021-11-23*** |
+| ***[nfoTools](../)*** | [tools](.) | ***[index.html](index.html) 0.0.14 2022-06-19*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | nfoTools Toolcraft Notebook | ![Hard Hat Area](../images/hardhat-logo.gif) |
 
@@ -40,10 +40,10 @@ open.***
 | [T211002](T211002) | 2021-10-27 | 0.0.5 2021-11-21 | VS Build Tools |
 | [T211001](T211001) | 2021-10-20 | 0.0.1 2021-10-23 | Visual Studio Code for Windows |
 |                    |            |                  |          |
-| [T060501](T060501) | 2006-05-20 | 0.0.14 2021-09-20 | Windows CMD Command-Line Environment |
-| [T060101](T060101) | 2006-09-08 | 0.1.1 2021-11-16 | C/C++ Programming |
+| [T060501](T060501) | 2006-05-20 | 0.0.15 2022-06-19 | Windows CMD Command-Line Environment |
+| [T060101](T060101) | 2006-09-08 | 0.1.3 2022-06-16 | C/C++ Programming |
 |                    |            |                  |          |
-| [T000000](T000000.html) | 2005-12-25 | 0.0.4 2021-11-21 | Diary & Job Jar |
+| [T000000](T000000.html) | 2005-12-25 | 0.0.5 2022-06-19 | Diary & Job Jar |
 
 ----
 
@@ -57,6 +57,7 @@ time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.14 2022-06-19T15:30Z Correct T060501 heading strips with touch-ups
      0.0.13 2021-11-23T16:37Z More wordsmithing, T211101/T211102 hinting
      0.0.12 2021-11-21T21:10Z Tidying up, including folio-style header
      0.0.11 2021-11-16T19:08Z T060101
