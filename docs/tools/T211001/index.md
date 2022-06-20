@@ -1,12 +1,12 @@
-<!-- index.md 0.0.1                 UTF-8                          2021-10-23
+<!-- index.md 0.0.2                 UTF-8                          2022-06-19
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                       VISUAL STUDIO CODE FOR WINDOWS
      -->
 
-# ToolCraft: Visual Studio Code for Windows
+# T211001: [Visual Studio Code for Windows](.)
 
-| ***[T211001](.)*** | [tools](../)[>t211001](.) | ***0.0.1 2021-10-23*** |
+| ***[nfoTools](../../)*** | [tools](../)[>t211001](.) | ***[index.html](index.html) 0.0.2 2022-06-19*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../../images/hardhat-logo.gif) |
 
@@ -32,6 +32,7 @@ time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.2 2022-06-19T23:55Z Use preferred top header strip
      0.0.1 2021-10-23T19:23Z Introduce T211001c
      0.0.0 2021-10-20T21:00Z Clone from tools/index.md for boilerplate
 

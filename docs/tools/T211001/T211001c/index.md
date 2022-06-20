@@ -1,12 +1,12 @@
-<!-- index.md 0.0.0                 UTF-8                          2021-10-23
+<!-- index.md 0.0.1                 UTF-8                          2022-06-19
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                       VSCODE WINDOWS INSTALLATION
      -->
 
-# ToolCraft: VSCode Windows Installation
+# T211001c: [VSCode Windows Installation](.)
 
-| ***[T211001c](index.html)*** | [tools](../../)[>T211001](../)[>T211001c](.) | ***0.0.0 2021-10-23*** |
+| ***[nfoTools](../../../)*** | [tools](../../)[>T211001](../)[>T211001c](.) | ***[index.html](index.html) 0.0.1 2022-06-19*** |
 | :--                |       ---          | --: |
 | ![nfotools](../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../../../images/hardhat-logo.gif) |
 
@@ -24,6 +24,7 @@ time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.1 2022-06-19T23:49Z Employ correct top header strip
      0.0.0 2021-10-20T21:33Z Clone from tools/T211001/index.md for boilerplate
 
             *** end of docs/tools/T211001/T211001c/index.md ***
