@@ -1,12 +1,12 @@
-<!-- index.md 0.0.6                 UTF-8                          2021-11-26
+<!-- index.md 0.0.7                 UTF-8                          2022-06-20
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                       VISUAL STUDIO BUILD TOOLS
      -->
 
-# ToolCraft: Visual Studio Build Tools
+# T211002: [Visual Studio Build Tools](.)
 
-| ***[T211002](.)*** | [tools](../)[>T211002](.) | ***0.0.6 2021-11-21*** |
+| ***[nfoTools](../../)*** | [tools](../)[>T211002](.) | ***[index.html](index.html)0.0.7 2022-06-20*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Visual Studio Build Tools | ![Hard Hat Area](../../images/hardhat-logo.gif) |
 
@@ -52,9 +52,9 @@ Build Tools.
 ## Next Steps
 
 Visual Studio Code is recommended as a companion to VS Build Tools along
-with a [Command Prompt](..\T060501) command-line environment.  VS Code integrated operations provide streamline the command-line foundation.
+with a [Command Prompt](../T060501) command-line environment.  VS Code integrated operations provide streamline the command-line foundation.
 
- Details are in [T211001](..\T211001).
+ Details are in [T211001](../T211001).
 
 ## More Background
 
@@ -77,7 +77,7 @@ predating Unix, MS-DOS, C Language, and Windows PCs.
 
 | **ID** | **Started** | **Status** | **Topic** |
 |   --:   |   :-:   |  :-:   |  :--  |
-| [T211002c](T211002c/) | 2021-10-27 | 0.0.6 2021-11-21 | VS Build Tools Installation |
+| [T211002c](T211002c/) | 2021-10-27 | 0.0.7 2022-06-20 | VS Build Tools Installation |
 
 ## Related Material
 
@@ -99,6 +99,7 @@ time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.7 2022-06-20T00:29Z Cleanup top header strip, touch-up
      0.0.6 2021-11-26T03:47Z Lining up for Getting to "Hello."
      0.0.5 2021-1l-21T21:13Z User Friendlier, Complete First Draft
      0.0.4 2021-11-20T01:03Z Close to complete

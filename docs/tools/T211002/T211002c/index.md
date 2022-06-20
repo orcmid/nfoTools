@@ -1,12 +1,12 @@
-<!-- index.md 0.0.6                 UTF-8                          2021-11-21
+<!-- index.md 0.0.7                 UTF-8                          2022-06-20
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                       VS BUILD TOOLS INSTALLATION
      -->
 
-# ToolCraft: VS Build Tools Installation
+# T211002c: [VS Build Tools Installation](.)
 
-| ***[T211002c](index.html)*** | [tools](../../)[>T211002](../)[>T211002c](.) | ***0.0.6 2021-11-21*** |
+| ***[nfoTools](../../../)*** | [tools](../../)[>T211002](../)[>T211002c](.) | ***[index.html](index.html) 0.0.7 2022-06-20*** |
 | :--                |       ---          | --: |
 | ![nfotools](../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Visual Studio Build Tools | ![Hard Hat Area](../../../images/hardhat-logo.gif) |
 
@@ -17,7 +17,7 @@
 The current (VS 2022) Build Tools download is available at
 [visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2022](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2022)
 
-> ***Not finding it?***  [Try step-by-step.](T211002c1)
+> ***Not finding it?***  [Try step-by-step.](T211002c1.html)
 
 Terms of use are covered on installation of the download.  The installed build
 tools simply have to be used with a provided Command Prompt.  If there is
@@ -102,6 +102,7 @@ time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.7 2022-06-20T00:15Z Switch to preferred page-top header strip
      0.0.6 2021-11-21T21:39Z Smoothing the text
      0.0.5 2021-11-19T23:43Z Better Installer image, touch-ups
      0.0.4 2021-11-13T00:42Z Fix broken image entry
