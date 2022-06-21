@@ -1,5 +1,5 @@
 @echo off
-rem VCrayApp 0.0.0 VCrayApp.bat 0.0.10 UTF-8                       2022-05-29
+rem VCrayApp 0.0.0 VCrayApp.bat 0.0.11 UTF-8                       2022-06-21
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 rem                  BUILDING RAYLIB APP WITH VC/C++ TOOLS
@@ -74,10 +74,12 @@ ECHO:          VCrayApp.bat at %~dp0                                %VCterse%
 :PARMCHECK
 rem DETERMINE PARAMETERS
 rem    Do this before checking Location so that "?" can work regardless
-rem    See :USAGE for the rayApp.bat API contract
+rem    See :USAGE for the VCrayApp.bat API contract
 IF "%1" == "+" SHIFT /1
 IF "%1" == "?" GOTO :USAGE
 IF "%1" == "*" SHIFT /1
+SET VCclean=0
+SET VCrun=0
 IF "%1" == "-c" ( SET VCclean=1
                   SHIFT /1 )
 IF "%1" == "-r" ( SET VCrun=1
@@ -106,6 +108,7 @@ DEL %~dp0cache\rglfw.obj
 :CACHECHECK
 IF EXIST %~dp0cache\rglfw.obj GOTO :APPBUILD
 DEL %~dp0cache\*.obj > nul 2>nul
+rem using presence of the last-built raylib .obj to determine full cache
 
 CD %~dp0cache
 CL %VChush% /w /c @VCoptions.opt @raylibVars.opt @raylibCode.opt %VCterse%
@@ -142,6 +145,7 @@ IF NOT "%VCrun%" == "1" GOTO :SUCCESS
 ENDLOCAL
 IF "%VCsplice%" == "+" EXIT /B 0
 EXIT /B 0
+rem XXX Something odd here.  Did I remove PAUSE by mistake? XXX
 
 :FAIL6
 ECHO: [VCrayApp] **** FAIL: RAYLIB NOT FOUND WHERE EXPECTED ****
@@ -172,14 +176,14 @@ ECHO:            NO ACTIONS HAVE BEEN PERFORMED                     %VCterse%
 GOTO :BAIL
 
 :FAIL2
-ECHO: [VCrayApp] **** FAIL: UNSUPPORTED RAYAPP.BAT PARAMETERS ****
+ECHO: [VCrayApp] **** FAIL: UNSUPPORTED VCRAYAPP.BAT PARAMETERS ****
 ECHO:            Invalid Here: %*
 ECHO:            %VCterse%
 ECHO:            NO ACTIONS HAVE BEEN PERFORMED                     %VCterse%
 GOTO :USAGE
 
 :FAIL1
-ECHO: [VCrayApp] **** FAIL: INCORRECT VSrayApp FILES CONFIGURATION ****
+ECHO: [VCrayApp] **** FAIL: INCORRECT VCrayApp FILES CONFIGURATION ****
 ECHO:            VCrayApp.bat must be in a folder that VCrayApp.zip %VCterse%
 ECHO:            is extracted into, along with the cache\ and app\  %VCterse%
 ECHO:            subfolders.  See                                   %VCterse%
@@ -230,6 +234,7 @@ EXIT /B %ERRORLEVEL%
 
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 rem
+rem 0.0.11 2022-06-21T14:38Z Catch some missed name changes + some touch-ups
 rem 0.0.10 2022-05-29T21:29Z Switch to VCrayApp name and review, tidy up.
 rem 0.0.9 2021-11-20T20:59Z Adjust error checks and preserving original %CD%
 rem 0.0.8 2021-11-11T20:13Z Checking for expected presence of raylib/
