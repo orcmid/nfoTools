@@ -1,4 +1,4 @@
-tools.txt 0.0.23                   UTF-8                       dh:2022-06-19
+tools.txt 0.0.24                   UTF-8                       dh:2022-06-21
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -176,8 +176,14 @@ TODO
 
  * Update the folio-page heading strip to follow the original model better.
 
+ * <https://www.gamedev.tv/courses/extra/lectures/12335656> is a great lecture
+   on how to learn a game engine.  The same applies to how to learn how to
+   use Build Tools before letting Visual Studio do it for you with the
+   scripts it creates.
+
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.35 2022-06-21T16:52Z Capture Ben from Gamedev.tv on how to learn
  0.0.23 2022-06-19T15:36Z Manage TODOs, track header construction
  0.0.22 2022-04-15T15:35Z Add notes about UI and UX tool coverage
  0.0.21 2022-04-09T15:06Z Manage TODOs, consider WinDev level Construction
