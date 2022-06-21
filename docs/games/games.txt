@@ -1,4 +1,4 @@
-games.txt 0.0.2                    UTF-8                        dh:2022-02-12
+games.txt 0.0.3                    UTF-8                        dh:2022-06-21
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -75,8 +75,16 @@ TODO
  * So I am definitely crossed up about this being for games and also gamedev?
    Follow my own advice and move gaming items to nfoTools/docs/dev.
 
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ * For beginners through advanced, gamedev.tv is a great resource.  Feature
+   these two:
+   <https://www.gamedev.tv/courses/extra/lectures/20006195>
+   and <https://www.gamedev.tv/courses/extra/lectures/12335656>.
+   The second, on learning an engine is appropriate to learning C/C++ and
+   learning how to work builds before, if interested, having Visual Studio
+   do that for you.
 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ 0.0.3 2022-06-21T16:47Z Manage TODOs, add some gamedev.tv links
  0.0.2 2022-02-12T16:13Z Manage TODOs, park some gaming TODOs here for now.
  0.0.1 2021-09-21T16:46Z Touch-up, manage TODOs
  0.0.0 2021-09-21T14:57Z Placeholder for development of the games section
