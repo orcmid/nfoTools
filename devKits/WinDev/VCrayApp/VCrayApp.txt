@@ -1,4 +1,4 @@
-VCrayApp.txt 0.0.3                  UTF-8                      dh:2022-05-**
+VCrayApp.txt 0.0.3                  UTF-8                      dh:2022-06-30
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                       RAYLIB APP DEVELOPMENT PROJECT
@@ -73,7 +73,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. Raylib App Construction-Kit Project. nfoTools Project
-   text file VCrayApp.txt 0.0.2 dated 2022-05-29, available on the Internet
+   text file VCrayApp.txt 0.0.3 dated 2022-06-30, available on the Internet
    as a version of
    <https://github.com/orcmid/nfoTools/blob/master/devKits/WinDev/VCrayApp/VCrayApp.txt>
 
@@ -126,8 +126,12 @@ TODO
  * Do alpha/beta availability and distribution once there is a docs/dev folder
    for downloading, usage information, and gathering feedback.
 
+ * There needs to be a checklist on the production of a new VCrayApp release,
+   including all of the packaging, collateral materials, and and test/reviews.
+
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.3 2022-06-30T22:19Z TODO on checklist requirements
  0.0.2 2022-05-29T21:52Z Refine and manage TODOs
  0.0.1 2021-11-15T00:52Z Upgrading toward production achievement.
  0.0.0 2021-11-13T00:15Z Initial placeholder
