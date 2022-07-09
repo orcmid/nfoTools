@@ -26,7 +26,7 @@ VCrayApp-0.0.0 .vscode.txt 0.0.2    UTF-8                         2022-07-09
 USAGE WITH VS CODE
 
     When a VCrayApp project is accessed via Visual Studio Code, the Windows
-    folder that contains this .vscode folder can be set as the workspace.
+    folder that contains this .vscode folder can be used as the workspace.
     VS Code will then rely on configuration properties and variables of the
     Developer Command Prompt to integrate the project with raylib and with
     the Windows SDK libraries.
@@ -58,7 +58,7 @@ MANIFEST
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-0.0.2 2022-07-09T19:01Z Touch-up, complete TODO
+0.0.2 2022-07-09T19:10Z Touch-up, complete TODO
 0.0.1 2022-07-09T17:34Z Provide initial draft of content
 0.0.0 2022-07-08T17:48Z Creation of placeholder for further explanation.
 
