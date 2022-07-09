@@ -1,4 +1,4 @@
-T060101.txt 0.0.3                   UTF-8                       dh:2021-11-24
+T060101.txt 0.0.4                   UTF-8                       dh:2022-07-**
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -71,8 +71,18 @@ TODO
   * T060101c: Getting to Hello will be a folio on setting up and the forever
     first program, also its take-apart.
 
+  * T060101b: Add
+    <https://www.classcentral.com/report/best-free-c-programming-courses/>
+
+  * T060101c: Also, for C++,
+    <https://www.classcentral.com/report/best-free-courses-to-learn-c/>
+
+  * For a CS background, after or before getting feet wet with C Language,
+    <https://www.classcentral.com/report/cs50-free-certificate/>.
+
   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.4 2022-07-**
  0.0.3 2021-11-24T23:24Z T060101c and Manage TODOs
  0.0.2 2021-11-17T18:44Z Managing TODOs, Manifest
  0.0.1 2021-11-16T16:31Z Still boilerplate customization, TODOs

@@ -1,4 +1,4 @@
-games.txt 0.0.3                    UTF-8                        dh:2022-06-21
+games.txt 0.0.4                    UTF-8                        dh:2022-07-**
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -48,7 +48,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. nfoTools Project Games.  nfoTools file docs/games.txt
-   version 0.0.2 dated 2022-02-12, available on the Internet as a version of
+   version 0.0.4 dated 2022-06-**, available on the Internet as a version of
    <https://orcmid.github.io/nfoTools/games/games.txt>
 
 TODO
@@ -83,7 +83,20 @@ TODO
    learning how to work builds before, if interested, having Visual Studio
    do that for you.
 
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ * https://blog.gamedev.tv/a-story-about-having-two-kids-a-full-time-job-and-no-game-development-experience-selling-a-game-around-the-world-in-14-months-during-a-pandemic/
+   This is useful to the extent the trials and tribulations are important, as
+   is the particular vision.  Might need some related ones.
+
+ * The basic idea of games as simple development projects for honing ones
+   skills.  Link to raylib usage as well as simple Command-prompt text-based
+   games.
+
+ * There is this Open CoureWare from MIT
+   <https://www.ocw-openmatters.org/2015/12/11/getting-serious-about-video-games/>
+   on this course,
+   <https://ocw.mit.edu/courses/cms-611j-creating-video-games-fall-2014/>.
+
+----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
  0.0.3 2022-06-21T16:47Z Manage TODOs, add some gamedev.tv links
  0.0.2 2022-02-12T16:13Z Manage TODOs, park some gaming TODOs here for now.
  0.0.1 2021-09-21T16:46Z Touch-up, manage TODOs

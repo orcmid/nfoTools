@@ -1,4 +1,4 @@
-tools.txt 0.0.24                   UTF-8                       dh:2022-06-21
+tools.txt 0.0.25                   UTF-8                       dh:2022-07-**
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -181,9 +181,17 @@ TODO
    use Build Tools before letting Visual Studio do it for you with the
    scripts it creates.
 
+ * On IDEs, there is an interesting survey article.  The choices are not
+   detailed very well,  though it is interesting that Visual Studio is listed
+   first <https://www.techrepublic.com/article/best-ide-software/>.
+
+ * We need to explain a little about IDEs and the bigger issue (with VS) on
+   how there is a particular model for builds, debug versus release, and
+   composing solutions/projects and how configurations are handled.
+
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
- 0.0.35 2022-06-21T16:52Z Capture Ben from Gamedev.tv on how to learn
+ 0.0.24 2022-06-21T16:52Z Capture Ben from Gamedev.tv on how to learn
  0.0.23 2022-06-19T15:36Z Manage TODOs, track header construction
  0.0.22 2022-04-15T15:35Z Add notes about UI and UX tool coverage
  0.0.21 2022-04-09T15:06Z Manage TODOs, consider WinDev level Construction

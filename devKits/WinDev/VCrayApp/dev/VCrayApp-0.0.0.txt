@@ -1,4 +1,4 @@
-VCrayApp-0.0.0.txt 0.0.1            UTF-8                         2022-06-09
+VCrayApp-0.0.0.txt 0.0.2            UTF-8                         2022-07-**
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                       NFOTOOLS DEVKIT FOR RAYLIB APPS
@@ -10,79 +10,146 @@ VCrayApp-0.0.0.txt 0.0.1            UTF-8                         2022-06-09
            BUILDING RAYLIB APPS WITH VS DEVELOPER COMMAND PROMPT
            -----------------------------------------------------
 
-[EDITOR NOTE - THE FOLLOWING TEXT IS BOILERPLATE FROM A DIFFERENT DEVKIT.
- IT WILL BE MORPHED INTO A FORM FOR alpha release of VCrayApp-0.0.0.]
+  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+  *                                                                     *
+  *                              CAUTION                                *
+  *                              *******                                *
+  *                                                                     *
+  *    This is an alpha release of VCrayApp.  There is incomplete       *
+  *    information.  Alpha is intended for review and testing of the    *
+  *    functionality.  It requires more self-reliance than expected     *
+  *    of novice developers.  The purpose is gathering feedback from    *
+  *    trial use.  There will be beta releases followed by stable       *
+  *    releases.  There may be breaking changes in that progression.    *
+  *    Be cautious.  Be careful.  Here be dragons.                      *
+  *                                                                     *
+  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 
-         The VCrayApp-0.0.0 distribution is available on the web
-         at <http://nfoWare.com/dev/2016/11/d161101c.txt>.  Consult
-         that page for the latest status, links to useful related
-         material, and the most-recent version.  If there is concern
-         for the authenticity or correctness of a VCbind.zip, obtain full
-         replacement at <http://nfoWare.com/dev/2016/11/d161101c.txt>.
+    The VCrayApp-0.0.0 distribution is available on the web at
+    <https://orcmid.github.io/nfoTools/dev/D211101/D211101c>.  Consult
+    that page for the latest status, links to useful related material,
+    and the most-recent version.  If there is concern for the authenticity
+    or correctness of any VCrayApp distribution, obtain a full replacement
+    at <https://orcmid.github.io/nfoTools/dev/D211101>.
 
          CONTENT
             1. Overview
             2. Prerequisites and Dependencies
-            3. Extraction of VCbind.zip Content
-            4. Using the VCbind\VCbind.bat Script
-            5. Developer Use of VCBind
-            MANIFEST of VCbind.zip 0.1.0
+            3. Initial Setup
+            3. Extraction and renaming of VCrayApp-0.0.0.zip Content
+            4. Confirming the VCrayApp Setup and Operation
+            5. Customization of VCrayApp for Your Project
+            6. Using the VCrayApp Supplied in Projects of Others
+            7. Incorporating VCrayApp in YOur Own Distribution
+
+         MANIFEST of VCrayApp-0.0.0.zip
 
  1. OVERVIEW
 
-    VCbind.zip delivers a Windows batch script for setting up a command-
-    line environment.  The resulting environment enables compiling with the
-    Microsoft Visual C/C++ command-line compiler, cl.exe, aud using related
-    Microsoft developer tools.
+    VCrayApp-0.0.0.zip delivers a Windows folder and batch script for setting
+    up development of Windows native graphical applications. The raylib of
+    Ramon Santiago is used <https://www.raylib.com/>.  VCrayApp is useful for
+    development of self-contained computer games and similar applications.
 
-    VCbind.zip is found as a component of larger construction sets.  Check
-    for custom instructions that apply to extraction and usage of VCbind
-    in a particular construction set.
+    VCrayApp provides compilation of raylib apps using the Microsoft Visual
+    C/C++ command-line compiler, CL.exe, along with other freely-available
+    developer tools, including others from Microsoft.
 
-    Ordinarily, construction sets using VCbind version 0.1.0 have a copy
-    of this file, VCbind-0.1.0.txt, alongside the VCbind.zip file.  Use
-    the version included in VCbind.zip if it is different.
+    If VCrayApp is found incorporated in a larger project, check for any
+    custom instructions that apply to specific usage in that project.
 
-    Extract VCbind.zip at the location where it appears in a construction set.
-    The result is a companion folder with the following structure.
+    The expected setup of VCrayApp is with the following folder structure:
 
-               construction-set-location\
-                  ...
-                  VCbind.zip    *location in the construction set
-                  VCbind\       *created by extraction
-                     ...
-                     Vcbind-0.1.0.txt
-                     VCbind.bat
-                  ...
+        your-development-files-location\
+         |- raylib\                 // folder where raylib source is extracted
+         :  ...
+         |- VCrayApp-0.0.0.zip      // at the same level, same drive
+         |- your-extracted-VCrayApp-0.0.0-folder-renamed\
+             |- .vscode\            // suggested .vscode settings
+             |- app\                // folder where you App is compiled to
+             |- cache\              // folder for working files and VCrayApp
+             |                      // materials
+             |- src\                // optional default location for your
+             |                      // source files
+             |- VCrayApp.bat        // the batch script for compiling your app
+             |- VCrayApp-0.0.0.txt  // this file
 
-    The VCbind\ folder is not part of the preserved construction set.
-    Customize it freely and leave the construction-set code intact.  Recover
-    VCbind\ to its released construction-set form by re-extracting from
-    VCbind.zip.
+    There are explanatory materials and other files in the four sub-folders.
+
+    The VCrayApp.bat file is initially set to compile a sample program that
+    is incorporated in the cache\ folder.  After installation and operation
+    is confirmed, VCrayApp.bat must be modified to specify the name for your
+    application and the location of your source files.  No other modifications
+    are required.
+
+    Performing command "VCrayApp ?" will provide usage information.
+
+       USAGE: VCrayApp [+] ?
+              VCrayApp [+] [*] [-c] [-r]
+       where  ? produces this usage information.
+              + for operating non-stop without any screen clearing
+                and pausing.  Good for use called as a helper.
+              * selects terse output.  If operation fails, repeat
+                without this option for more details.
+             -c for a complete rebuild of any cache
+             -r for running the app on successful build
+
+        Exit code 0 is produced on all successful operations.
+        Exit codes greater than 1 are produced for any failure.
+
+    A successful compile will provide an executable in the app\ subfolder
+    for operation along with whatever assets have been placed there.  It is
+    possible to deploy a successfully-built application from app\.
 
 
  2. PREREQUISITES AND DEPENDENCIES
 
-    To use VCbind, you will need to use the Windows File Explorer, be able to
-    initiate Windows Batch files, and to navigate and operate with the Windows
-    Command Shell, cmd.exe.
-
-    VCbind is designed to work with versions of Visual Studio that are free
-    for personal use, from Visual Studio C++ Express 2008 to Visual Studio
-    C++ Express 2015.
-
-    Use the C/C++ desktop-development options of the free Visual Studio 2015
-    Community Edition for open-source work with the Visual Studio Integrated
-    Development Environment (IDE).  If you only want Microsoft command-line
-    developer tools without the Visual Studio IDE, use the Visual Studio
-    2015 or 2013 Build Tools downloads instead.
-
     It is assumed that Microsoft Windows 7 Professional or later are used.
-    Thorough VCbind testing is with Microsoft Windows 10 Pro latest versions
-    starting with Anniversary Edition version 1607.
+    Thorough VCrayApp testing is with Microsoft Windows 10 latest versions.
+
+    Development with VCrayApp and illustration of usage involves the following
+    tools:
+
+     * Windows File Explorer
+     * Windows Built-in Zip-Folder Tool
+     * Visual Studio Native Build Tools
+     * Developer Command Prompt
+     * VC/C++ Command Line Compiler, CL.exe
+     * Visual Studio Code for editing of source code, other files, and
+       confirmation of library integration
+     * Git4Win implementation for source-code control
+     * TortoiseGit for File Explorer integration of Git
+     * GitHub Windows Client for public access to development projects
+     * GPG4Win for creation and verification of digital signatures
+
+    The first five are essential.  The remainder are recommended.  No nfoTools
+    support is provided for use of alternatives.  For further details on
+    dependencies, see <pending-location>.
+
+    To use VCrayApp, you will need to use the Windows File Explorer, to
+    navigate and operate with the Windows Command Shell, cmd.exe, and to
+    operate with Windows Batch (.bat) script files.
+
+    VCrayApp is designed to work with versions of Visual Studio that are free
+    for personal use, including the Visual Studio Build Tools (recommended)
+    and the Visual Studio Community editions.  Additional levels of Visual
+    Studio can also be used, all via there Native Tools Command Prompt.  No
+    use is made of Visual Studio projects, solutions, and the conventional
+    separation of debug and release builds.  With nfoTools, emphasis is on
+    testing and confirmation of what is shipped: only release-build stages.
+
+[ED. NOTE.  MATERIAL BELOW HERE IS BOILERPLATE THAT IS NOT YET CUSTOMIZED.]
+***************************************************************************
+
+ 3. INITIAL SETUP
 
 
- 3. EXTRACTION OF VCBIND.ZIP CONTENT
+
+ 3. EXTRACTION AND RENAMING OF VCrayApp-0.0.0.zip CONTENT
+
+
+
+    After downloading VCrayApp-0.0.zip,
 
     In the Windows File Explorer, locate the copy of VCbind.zip that you
     intend to use.

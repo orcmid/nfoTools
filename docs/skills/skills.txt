@@ -1,4 +1,4 @@
-skills.txt 0.0.14                   UTF-8                         2022-06-16
+skills.txt 0.0.15                   UTF-8                         2022-07-**
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -142,7 +142,9 @@ TODO
    That should be a folio.
 
  * Drawing and also pen-and-ink are also great cases of skills and also
-   toolcraft.
+   toolcraft.  Recommend <https://www.gamedev.tv/p/complete-drawing> and
+   maybe on Udemy?  Also point out that discounts become available.  Should
+   wait for one of those.
 
  * Is an S000000 needed?
 
