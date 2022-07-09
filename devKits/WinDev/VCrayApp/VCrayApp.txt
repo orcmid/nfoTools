@@ -1,4 +1,4 @@
-VCrayApp.txt 0.0.3                  UTF-8                      dh:2022-06-30
+VCrayApp.txt 0.0.4                  UTF-8                      dh:2022-07-09
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                       RAYLIB APP DEVELOPMENT PROJECT
@@ -38,6 +38,10 @@ MANIFEST
     .gitignore
         Keeping raylib\ here out of the winDev\VCrayApp repository
 
+    VCrayApp-release.txt
+        Checklist of activities in the development and staging of a VCrayApp
+        release.
+
     raylib-3.7.0.zip
         The raylib 3.7.0 release zip used in confirming operation of
         VCrayApp at this time.
@@ -73,7 +77,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. Raylib App Construction-Kit Project. nfoTools Project
-   text file VCrayApp.txt 0.0.3 dated 2022-06-30, available on the Internet
+   text file VCrayApp.txt 0.0.4 dated 2022-07-09, available on the Internet
    as a version of
    <https://github.com/orcmid/nfoTools/blob/master/devKits/WinDev/VCrayApp/VCrayApp.txt>
 
@@ -107,7 +111,7 @@ TODO
    need to update the text files and also have something on docs/dev for the
    alpha release.
 
- * The beta release, VCrayApp-1.0.0 should also address the replacement of
+ * The beta release, VCrayApp-0.1.0 should also address the replacement of
    one release by another and all the support there is for such changes.
    Saving ones customizations, having the customizations already on the users
    source control, etc.  This should be feature complete and post-beta changes
@@ -129,8 +133,11 @@ TODO
  * There needs to be a checklist on the production of a new VCrayApp release,
    including all of the packaging, collateral materials, and and test/reviews.
 
+ * Use project structure for developing/working the checklist.
+
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.4 2022-07-09T16:23Z Manage TODOs, introduce VCrayApp-release.txt
  0.0.3 2022-06-30T22:19Z TODO on checklist requirements
  0.0.2 2022-05-29T21:52Z Refine and manage TODOs
  0.0.1 2021-11-15T00:52Z Upgrading toward production achievement.
