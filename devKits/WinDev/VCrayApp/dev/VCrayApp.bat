@@ -1,5 +1,5 @@
 @echo off
-rem VCrayApp 0.0.0 VCrayApp.bat 0.0.11 UTF-8                       2022-06-21
+rem VCrayApp 0.0.0 VCrayApp.bat 0.0.12 UTF-8                       2022-07-10
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 rem                  BUILDING RAYLIB APP WITH VC/C++ TOOLS
@@ -96,6 +96,7 @@ IF NOT EXIST "%~dp0cache\raylibVars.opt" GOTO :FAIL1
 IF NOT EXIST "%~dp0cache\rayLinking.opt" GOTO :FAIL1
 IF NOT EXIST "%~dp0cache\VCoptions.opt" GOTO :FAIL1
 IF NOT EXIST "%~dp0app\app.txt" GOTO :FAIL1
+IF NOT EXIST "%~dp0src\src.txt" GOTO :FAIL1
 IF NOT EXIST "%~dp0VCrayApp-%VCrayApp%.txt" GOTO :FAIL1
 IF NOT EXIST "%~dp0VCrayApp.bat" GOTO :FAIL1
 
@@ -234,6 +235,7 @@ EXIT /B %ERRORLEVEL%
 
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 rem
+rem 0.0.12 2022-07-10T21:34Z Require src\src.txt to be present
 rem 0.0.11 2022-06-21T14:38Z Catch some missed name changes + some touch-ups
 rem 0.0.10 2022-05-29T21:29Z Switch to VCrayApp name and review, tidy up.
 rem 0.0.9 2021-11-20T20:59Z Adjust error checks and preserving original %CD%
