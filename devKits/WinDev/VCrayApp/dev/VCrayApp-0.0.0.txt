@@ -36,11 +36,11 @@ VCrayApp-0.0.0.txt 0.0.2            UTF-8                         2022-07-**
             1. Overview
             2. Prerequisites and Dependencies
             3. Initial Setup
-            3. Extraction and renaming of VCrayApp-0.0.0.zip Content
-            4. Confirming the VCrayApp Setup and Operation
-            5. Customization of VCrayApp for Your Project
-            6. Using the VCrayApp Supplied in Projects of Others
-            7. Incorporating VCrayApp in YOur Own Distribution
+            4. Extraction and renaming of VCrayApp-0.0.0.zip Content
+            5. Confirming the VCrayApp Setup and Operation
+            6. Customization of VCrayApp for Your Project
+            7. Using the VCrayApp Supplied in Projects of Others
+            8. Incorporating VCrayApp in YOur Own Distribution
 
          MANIFEST of VCrayApp-0.0.0.zip
 
@@ -229,7 +229,7 @@ VCrayApp-0.0.0.txt 0.0.2            UTF-8                         2022-07-**
 MANIFEST OF VCBIND.ZIP 0.1.0
 
     LICENSE.txt
-        copy of the Apache Licnese Version 2.0 of January 2004
+        copy of the Apache License Version 2.0 of January 2004
 
     NOTICE.txt 1.0.0 814 byte 2016-10-24 version
         applicable NOTICE for VCbind.zip and its content

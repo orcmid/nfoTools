@@ -14,6 +14,12 @@ VCrayApp-release.txt 0.0.0          UTF-8                      dh:2022-07-09
 
     CONTENT [TBD]
 
+    * .vscode\
+        o Updated to version of VCrayApp
+        o Confirm proper use with VS Code "code ." initiation from Prompt
+        o Confirm description of workspace/folder use in accessing the user's
+          project and experiencing the benefits
+
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
@@ -72,6 +78,10 @@ TODO
 
  * Do alpha/beta availability and distribution once there is a docs/dev folder
    for downloading, usage information, and gathering feedback.
+
+ * .vscode/.vscode.txt needs further details including what happens with
+   user *.h files in the src/ folder.  Intellisense will work for all of
+   the subfolders, that needs to be explained.
 
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
