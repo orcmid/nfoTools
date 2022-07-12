@@ -1,4 +1,4 @@
-VCrayApp-release.txt 0.0.0          UTF-8                      dh:2022-07-09
+VCrayApp-release.txt 0.0.1          UTF-8                      dh:2022-07-**
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                       RAYLIB APP DEVELOPMENT PROJECT
@@ -15,10 +15,30 @@ VCrayApp-release.txt 0.0.0          UTF-8                      dh:2022-07-09
     CONTENT [TBD]
 
     * .vscode\
-        o Updated to version of VCrayApp
+        o Update to version of VCrayApp
         o Confirm proper use with VS Code "code ." initiation from Prompt
+            + identify version(s) of VS Code that are applicable
         o Confirm description of workspace/folder use in accessing the user's
           project and experiencing the benefits
+        o Verify correct operation in conjunction with VS 2022 Build Tools
+          and raylib 3.7.0 source-code installation.
+        o Provide link to more explanation of VS Code workspace setup and
+          the limited use of the c_cpp_properties.json
+
+    * src\src.txt
+        o Update to version of VCrayApp
+        o Indicate value of using src\
+        o Provide more links to usage as part of VCrayApp and the benefits
+          of using with Developer Command Prompts and VS Code.
+
+    * app\app.txt
+        o Update to version of VCrayApp
+        o Indicate purpose of app\
+        o Explain Xcopy/Zip deployment
+        o Explain setting up for command-line/shortcut execution
+        o Link to additional information on Zip deployment
+        o Link to additional information on MSIX deployment
+        o Address single-use versus multiple-use installation
 
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
@@ -82,6 +102,11 @@ TODO
  * .vscode/.vscode.txt needs further details including what happens with
    user *.h files in the src/ folder.  Intellisense will work for all of
    the subfolders, that needs to be explained.
+
+ * Provide a checklist for projects built and deployed using VCrayApp.
+
+ * Distinguish local, used-by-developer usage and standalone deployments
+   for simple usage and then more-elaborate distribution.
 
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
