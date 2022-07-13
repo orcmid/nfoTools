@@ -1,4 +1,4 @@
-VCrayApp-0.0.0.txt 0.0.2            UTF-8                         2022-07-**
+VCrayApp-0.0.0.txt 0.0.2            UTF-8                         2022-07-13
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                       NFOTOOLS DEVKIT FOR RAYLIB APPS
@@ -23,6 +23,19 @@ VCrayApp-0.0.0.txt 0.0.2            UTF-8                         2022-07-**
   *    releases.  There may be breaking changes in that progression.    *
   *    Be cautious.  Be careful.  Here be dragons.                      *
   *                                                                     *
+  *                             IMPORTANT                               *
+  *                             *********                               *
+  *                                                                     *
+  *    No VCrayApp support is provided for development using anything   *
+  *    but the C languages and the Microsoft VC C/C++ compiler and      *
+  *    related developer tools on a Windows PC, desktop or laptop.      *                                                          *
+  *                                                                     *                                                                     *
+  *    Ramon Santiago's raylib software is written in a clean-form of   *
+  *    the C Language.  Use of the raylib code, include files, and the  *
+  *    API interfaces requires confidence in the use of the C or C++    *
+  *    languages with such libraries. VCrayApp is intended to be used   *
+  *    directly only for programs written in the C Language.            *
+  *                                                                     *
   * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 
     The VCrayApp-0.0.0 distribution is available on the web at
@@ -38,9 +51,10 @@ VCrayApp-0.0.0.txt 0.0.2            UTF-8                         2022-07-**
             3. Initial Setup
             4. Extraction and renaming of VCrayApp-0.0.0.zip Content
             5. Confirming the VCrayApp Setup and Operation
-            6. Customization of VCrayApp for Your Project
-            7. Using the VCrayApp Supplied in Projects of Others
-            8. Incorporating VCrayApp in YOur Own Distribution
+            6. Using VCrayApp for Your Project
+            7. Customization of VCrayApp for Your Project
+            8. Using the VCrayApp Supplied in Projects of Others
+            9. Incorporating VCrayApp in YOur Own Distribution
 
          MANIFEST of VCrayApp-0.0.0.zip
 
@@ -49,7 +63,7 @@ VCrayApp-0.0.0.txt 0.0.2            UTF-8                         2022-07-**
     VCrayApp-0.0.0.zip delivers a Windows folder and batch script for setting
     up development of Windows native graphical applications. The raylib of
     Ramon Santiago is used <https://www.raylib.com/>.  VCrayApp is useful for
-    development of self-contained computer games and similar applications.
+    developing self-contained computer games and similar applications.
 
     VCrayApp provides compilation of raylib apps using the Microsoft Visual
     C/C++ command-line compiler, CL.exe, along with other freely-available
@@ -97,12 +111,20 @@ VCrayApp-0.0.0.txt 0.0.2            UTF-8                         2022-07-**
         Exit code 0 is produced on all successful operations.
         Exit codes greater than 1 are produced for any failure.
 
+    Without any of the optional parameters, a VCrayApp command will provide
+    a verbose compilation that builds the cache only if needed.
+
     A successful compile will provide an executable in the app\ subfolder
     for operation along with whatever assets have been placed there.  It is
     possible to deploy a successfully-built application from app\.
 
 
  2. PREREQUISITES AND DEPENDENCIES
+
+    Successful use of VCrayApp depends on there being confidence use of the
+    C Language for creation of clean programs involving source files, include
+    files, and the interfaces of standard libraries as well as the special-
+    purpose raylib libraries.
 
     It is assumed that Microsoft Windows 7 Professional or later are used.
     Thorough VCrayApp testing is with Microsoft Windows 10 latest versions.
@@ -143,9 +165,10 @@ VCrayApp-0.0.0.txt 0.0.2            UTF-8                         2022-07-**
 
  3. INITIAL SETUP
 
+    Include confirmation of the setup without raylib, using a hello-world
+    operation.
 
-
- 3. EXTRACTION AND RENAMING OF VCrayApp-0.0.0.zip CONTENT
+ 4. EXTRACTION AND RENAMING OF VCrayApp-0.0.0.zip CONTENT
 
 
 
@@ -175,7 +198,7 @@ VCrayApp-0.0.0.txt 0.0.2            UTF-8                         2022-07-**
     the end of the VCbind-0.1.0.txt file are included.
 
 
- 4. USING THE VCBIND\VCBIND.BAT SCRIPT
+ 5. CONFIRMING THE VCrayApp SETUP AND OPERATION
 
     Confirm that everything is working by double-clicking on the VCbind.bat
     file in the folder VCbind.zip is extracted into.  There should be a simple
@@ -211,7 +234,7 @@ VCrayApp-0.0.0.txt 0.0.2            UTF-8                         2022-07-**
     found.  Consult the further instructions that are provided.
 
 
- 5. DEVELOPER USE OF VCBIND.ZIP
+ 6. USING VCrayApp FOR YOUR PROJECT
 
     Add VCbind.zip to personal construction sets for command-line operation
     with Visual C/C++ compilers, libraries, and tools environments.
@@ -226,7 +249,14 @@ VCrayApp-0.0.0.txt 0.0.2            UTF-8                         2022-07-**
     is <https://github.com/orcmid/Adv10> at dev/VCbinder/devBind/
 
 
-MANIFEST OF VCBIND.ZIP 0.1.0
+
+7. CUSTOMIZATION OF VCrayApp FOR YOUR PROJECT
+
+8. USING THE VCrayApp SUPPLIED IN PROJECTS OF OTHERS
+
+9. INCORPORATING VCrayApp IN YOUR OWN DISTRIBUTION
+
+MANIFEST OF VCrayApp-0.0.0.zip
 
     LICENSE.txt
         copy of the Apache License Version 2.0 of January 2004
@@ -264,8 +294,8 @@ MANIFEST OF VCBIND.ZIP 0.1.0
  ATTRIBUTION
 
    Hamilton, Dennis E. Building raylib Apps with VS Developer Command Prompt.
-   nfoTools file VCrayApp-0.0.0.txt version 0.0.2 available on the internet
-   as a version of <https://github.com/orcmid/*something*>
+   nfoTools file VCrayApp-0.0.0.txt version 0.0.2 dated 2022-07-13 available
+   on the internet as a version of <https://github.com/orcmid/*something*>
 
 TODO
 
@@ -278,6 +308,7 @@ TODO
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.2 2022-07-13T17:24Z Draft Editing of Expanded Boilerplate.
  0.0.1 2022-06-07T22:27Z Include boilerplate from VCbind-0.1.0
  0.0.0 2021-10-09T00:46Z Placeholder draft
 
