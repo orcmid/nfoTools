@@ -1,4 +1,4 @@
-VCrayApp.txt 0.0.4                  UTF-8                      dh:2022-07-09
+VCrayApp.txt 0.0.5                  UTF-8                      dh:2022-07-13
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                       RAYLIB APP DEVELOPMENT PROJECT
@@ -77,7 +77,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. Raylib App Construction-Kit Project. nfoTools Project
-   text file VCrayApp.txt 0.0.4 dated 2022-07-09, available on the Internet
+   text file VCrayApp.txt 0.0.5 dated 2022-07-13, available on the Internet
    as a version of
    <https://github.com/orcmid/nfoTools/blob/master/devKits/WinDev/VCrayApp/VCrayApp.txt>
 
@@ -135,8 +135,23 @@ TODO
 
  * Use project structure for developing/working the checklist.
 
+ * Introduce a NOTICE.txt that explains what is covered under the Apache
+   License applied to VCrayApp files and that it does not extend to the
+   user-provided source files and user-provided content of the app\ folder.
+   Modifications of the VCrayApp files are subject to the copyright terms,
+   although these are not over-restrictive.  In particular, there is no
+   requirement of reciprocity or prohibition of commercial or other use.
+
+ * It is not possible to provide VCrayApp as the basis for learning C/C++
+   programming.  This must be emphasized in some manner.  We do want on-ramps
+   and guard rails, but the basics of C Language programming need to be
+   developed elsewhere.  There is also quite a bit to understand about the
+   thread on which the app runs and how the cycle works with regard to the
+   presentation and interaction with the display and input devices.
+
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.5 2022-07-13T15:41Z TODOs on NOTICE.txt and C/C++ programming not taught.
  0.0.4 2022-07-09T16:23Z Manage TODOs, introduce VCrayApp-release.txt
  0.0.3 2022-06-30T22:19Z TODO on checklist requirements
  0.0.2 2022-05-29T21:52Z Refine and manage TODOs
