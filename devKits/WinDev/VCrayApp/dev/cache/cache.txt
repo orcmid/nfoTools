@@ -1,4 +1,4 @@
-VCrayApp 0.0.0 cache.txt 0.0.13     UTF-8                         2022-07-13
+VCrayApp 0.0.0 cache.txt 0.0.14     UTF-8                         2022-07-15
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -23,7 +23,17 @@ VCrayApp 0.0.0 cache.txt 0.0.13     UTF-8                         2022-07-13
   *    If VCrayApp is re-extracted or is updated and extracted, this      *
   *    file and all other files of the manifest will be replaced. If      *
   *    any *.opt files have been altered, they should first be renamed    *
-  *    for review and adjustment of the restored/updated versions.        *                                          *
+  *    for protection against being over-wrottine.  Then use those for    *
+  *    review and adjustment of the restored/updated versions.            *
+  *                                                                       *
+  *                            ** IMPORTANT **                            *
+  *                            ***************                            *
+  *                                                                       *
+  *    THESE CACHE\ FILES REQUIRE THE RAYLIB 3.7.0 RELEASE SOURCE CODE    *
+  *    ***************************************************************    *
+  *                                                                       *
+  *    Breaking changes introduced in RAYLIB 4.0.0 and subsequent         *
+  *    development are not accomodated in VCrayApp 0.0.0.                 *
   *                                                                       *
   * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 
@@ -61,15 +71,15 @@ MANIFEST
     rayConfirm.c
         sample program used to confirm the setup and building of a raylib
         application with VS Build Tools.  Once setup is confirmed,
-        VCrayApp.bat can be modified to compile the user's raylib project src\
-        files by modifying.  See the instructions at the beginning of
-        VCrayApp.bat.
+        VCrayApp.bat can be modified to compile the user's rayApp project src\
+        files.  See the instructions at the beginning of VCrayApp.bat.
 
     raylibCode.opt
-        Option file identifying the raylib modules to be cached.  This file
-        depends on raylib\ being at a fixed location relative to cache.
-        raylib\src\rglfw.c must be the last one successfully compiled.  It's
-        presence is checked to confirm that a complete cache is available.
+        Option file identifying the raylib ***3.7.0*** source modules to be
+        compiled and their *.obj files cached.  This file depends on raylib\
+        being at a fixed location relative to cache\. raylib\src\rglfw.c must
+        be the last one successfully compiled.  It's presence is checked to
+        confirm that a complete cache is available.
 
     raylibVars.opt
         Preprocessor definitions for the compilation of the raylib modules.
@@ -85,7 +95,7 @@ MANIFEST
         location as relied on in raylibCode.opt.
 
     *.obj
-        Microsoft compiled C Language *.obj modules from compilation of the
+        VC/C++ compiled C Language *.obj modules from compilation of the
         raylib files identified in raylibCode.opt.
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
@@ -109,13 +119,14 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. VCrayApp raylib Cache Folder.  VCrayApp 0.0.0 text file
-   cache.txt version 0.0.13 dated 2022-07-13, available on the Internet as a
+   cache.txt version 0.0.14 dated 2022-07-15, available on the Internet as a
    version of
     <https://github.com/orcmid/nfoTools/blob/master/devKits/WinDev/VCrayApp/dev/cache/cache.txt>.
 
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.14 2022-07-15T22:31Z Emphasize raylib 3.7.0 dependency, touch-ups
  0.0.13 2022-07-13T18:28Z More touch-ups
  0.0.12 2022-07-12T15:11Z Touch-ups
  0.0.11 2022-07-12T03:56Z Bring to full-draft alpha-release level
@@ -125,11 +136,6 @@ MANIFEST
  0.0.7 2021-11-09T02:47Z Complete refactoring pending nfoTools VCrayApp.zip
  0.0.6 2021-11-08T00:11Z Refactored initial content and options/confirmation
        files preparatory to streamlining and bundling into a Zipped setup
- 0.0.5 2021-10-20T20:16Z Convert for S2-Axe/cache
- 0.0.4 2021-10-18T22:36Z Convert for S2-Axe/wrk/
- 0.0.3 2021-09-29T18:13Z Reflect rawVC/ change amid still over-thinking
- 0.0.2 2021-09-28T15:07Z Rename from tmp.txt to wrk.txt and over-thinking
- 0.0.1 2021-09-28T14:28Z Noodling in TODOs
  0.0.0 2021-09-27T23:13Z placeholder for native-build intermediate materials
 
                          ***** end of cache.txt *****
