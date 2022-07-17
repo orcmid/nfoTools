@@ -1,4 +1,4 @@
-VCrayApp-release.txt 0.0.1          UTF-8                      dh:2022-07-**
+VCrayApp-release.txt 0.0.1          UTF-8                      dh:2022-07-17
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                       RAYLIB APP DEVELOPMENT PROJECT
@@ -24,12 +24,14 @@ VCrayApp-release.txt 0.0.1          UTF-8                      dh:2022-07-**
           and raylib 3.7.0 source-code installation.
         o Provide link to more explanation of VS Code workspace setup and
           the limited use of the c_cpp_properties.json
+        o Provide orcmid.github.io/nfoTools location for the attribution
 
     * src\src.txt
         o Update to version of VCrayApp
         o Indicate value of using src\
         o Provide more links to usage as part of VCrayApp and the benefits
           of using with Developer Command Prompts and VS Code.
+        o Provide orcmid.github.io/nfoTools location for the attribution
 
     * app\app.txt
         o Update to version of VCrayApp
@@ -39,6 +41,36 @@ VCrayApp-release.txt 0.0.1          UTF-8                      dh:2022-07-**
         o Link to additional information on Zip deployment
         o Link to additional information on MSIX deployment
         o Address single-use versus multiple-use installation
+        o Provide orcmid.github.io/nfoTools location for the attribution
+
+    * cache\
+        o Update cache.txt to version of VCrayApp
+        o Indicate purpose of cache\
+        o Link to information on the compilation option files
+        o Link to explanation of the compilation steps
+        o Provide orcmid.github.io/nfoTools location for the attribution
+
+    * VCrayApp.bat
+        o Set the semantic version variable, VCrayApp
+        o Provide the <place-to-be-announced> as the location for VCrayApp
+          dev location
+        o Provide the <related-place-to-be-announced> as the location for
+          the latest VCrayApp download, etc.
+        o Determine PAUSE default for non-"+" compiles on success
+        o For FAIL6 provide a better indication of the location of raylib/src
+        o For FAIL6 provide a link to the requirement to check and also
+          consider the case where the location of raylib has been changed
+        o For FAIL5 provide information on how to check for compilation
+          errors and determine the nature of the failure
+        o For FAIL5 find a way to provoke this case to demonstrate it
+        o For FAIL4 do similar things - collect typical errors such as
+          misspellings and incompatibility with a raylib version
+        o For FAIL3 provide a link to <some nfoTools support information>
+          specifically on being under a developer Command Prompt session.
+        o For FAIL1 provide <other nfoTools support information. on the
+          correct unpacking and preservation of VCrayApp in a folder.
+
+
 
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
@@ -62,7 +94,7 @@ VCrayApp-release.txt 0.0.1          UTF-8                      dh:2022-07-**
  ATTRIBUTION
 
    Hamilton, Dennis E. VCrayApp Release Development and Deployment. nfoTools
-   Project text file VCrayApp-release.txt 0.0.0 dated 2022-07-09, available on
+   Project text file VCrayApp-release.txt 0.0.2 dated 2022-07-17, available on
    the Internet as a version of
    <https://github.com/orcmid/nfoTools/blob/master/devKits/WinDev/VCrayApp/VCrayApp-release.txt>
 
@@ -108,9 +140,16 @@ TODO
  * Distinguish local, used-by-developer usage and standalone deployments
    for simple usage and then more-elaborate distribution.
 
+ * Include the procedure for signing the various materials, especially the
+   VCrayApp-v.m.n.zip and the text files.
+
+ * Customization instructions must specify some things about what to do with
+   signed materials.
+
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.1 2022-07-17T18:46Z Intermediate check-in
  0.0.0 2022-07-09T16:22Z Initial placeholder cloned from VCrayApp.txt 0.0.4
 
 
