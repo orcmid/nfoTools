@@ -1,5 +1,5 @@
 @echo off
-rem VCrayApp 0.0.0 VCrayApp.bat 0.0.12 UTF-8                       2022-07-10
+rem VCrayApp 0.0.0 VCrayApp.bat 0.0.13 UTF-8                       2022-08-14
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 rem                  BUILDING RAYLIB APP WITH VC/C++ TOOLS
@@ -135,11 +135,12 @@ IF ERRORLEVEL 2 goto :FAIL5
 ECHO: %VCterse%
 DEL *.obj >nul 2>nul
 
-ECHO: [VCrayApp] RAYLIB APP %GAME_EXE% COMPILED TO APP FOLDER
+ECHO: [VCrayApp] RAYLIB-USING %GAME_EXE% COMPILED TO %dp0app
 ECHO: %VCterse%
 
 CD %VCfrom%
 IF NOT "%VCrun%" == "1" GOTO :SUCCESS
+ECHO: [VCrayApp] Launching App.  Exit App to Continue Command Session
 "%~dp0app\%GAME_EXE%"
 
 :SUCCESS
@@ -186,9 +187,9 @@ GOTO :USAGE
 :FAIL1
 ECHO: [VCrayApp] **** FAIL: INCORRECT VCrayApp FILES CONFIGURATION ****
 ECHO:            VCrayApp.bat must be in a folder that VCrayApp.zip %VCterse%
-ECHO:            is extracted into, along with the cache\ and app\  %VCterse%
-ECHO:            subfolders.  See                                   %VCterse%
-ECHO:            ^<some nfoTools support information^>.             %VCterse%
+ECHO:            is extracted into, along with the cache\ app\ and  %VCterse%
+ECHO:            src\ subfolders.  See                              %VCterse%
+ECHO:            ^<other nfoTools support information^>.            %VCterse%
 ECHO:            NO ACTIONS HAVE BEEN PERFORMED                     %VCterse%
 GOTO :BAIL
 
@@ -235,6 +236,7 @@ EXIT /B %ERRORLEVEL%
 
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 rem
+rem 0.0.13 2022-08-14T20:03Z Improve some message
 rem 0.0.12 2022-07-10T21:34Z Require src\src.txt to be present
 rem 0.0.11 2022-06-21T14:38Z Catch some missed name changes + some touch-ups
 rem 0.0.10 2022-05-29T21:29Z Switch to VCrayApp name and review, tidy up.
