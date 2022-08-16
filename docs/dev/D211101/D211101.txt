@@ -1,4 +1,4 @@
-D211101.txt 0.0.1                   UTF-8                         2022-06-10
+D211101.txt 0.0.2                   UTF-8                         2022-08-16
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -11,11 +11,10 @@ D211101.txt 0.0.1                   UTF-8                         2022-06-10
              VCRAYAPP: VC/C++ COMMAND-LINE RAYLIB APP DEVKIT
              -----------------------------------------------
 
-VCrayApp consists of a Zip package that can be included in a software
-construction set to simplify command-line compiling of C/C++ language programs
-using Microsoft Windows developer tools and the raysan5/raylib library for
-graphical applications.  VCrayApp is easily deployed within GitHub-carried
-projects.  It is delivered in a form that can be confirmed for correct
+VCrayApp consists of a Zip package for a software construction set to simplify
+command-line compiling of C/C++ language programs using Microsoft Windows
+developer tools and the raysan5/raylib library for graphical applications.
+VCrayApp  is delivered in a form that can be confirmed for correct
 operation before customization as part of a specific project.
   
 PRINCIPLES
@@ -69,7 +68,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. VCrayApp: VC/C++ Commnad-Line raylib App Build Kit.
-   nfoTools development text file D211101.txt version 0.0.0 dated 2022-05-30,
+   nfoTools development text file D211101.txt version 0.0.2 dated 2022-08-16,
    available on the Internet as a version of
    <https://orcmid.github.io/nfoTools/dev/D211101/D211101.txt>
 
@@ -93,10 +92,11 @@ TODO
  * Distinguish between using a VCrayApp kit found in a distribution one is
    using versus incorporation in a distribution one is producing.  There
    is also the middle case, inserting a VCrayApp kit in a project one wants
-   to work on a clone of.
+   to work on (a clone of).
 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.2 2022-08-16T21:40Z touch-ups
  0.0.1 2022-06-10T00:47Z Anticipate D211101c and manage TODOs
  0.0.0 2022-05-30T17:35Z Placeholder morphed from D161101.txt 0.0.5 and
        adjusted for getting started on making VCrayApp available.
