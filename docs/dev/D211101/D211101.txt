@@ -17,31 +17,11 @@ developer tools and the raysan5/raylib library for graphical applications.
 VCrayApp  is delivered in a form that can be confirmed for correct
 operation before customization as part of a specific project.
   
-PRINCIPLES
-
-* Operation with freely-available and free-to-use development tools.
-* Simple manual instructions for free-standing use and for incorporation
-  in construction sets designed for novice usage.
-* Sufficient for incorporation inside more-elaborate construction sets.
-* Designed for confirmation of operation and confident employment.
-* Safe for novice developers and others keen to develop games and graphical
-  applications on Windows for Windows using freely-available tools.
-
-PLAN
-
-* Develop VCrayApp on GitHub as part of the nfoTools project.
-* Provide pilot demonstration in confirmation of raylib examples
-* Release alpha and beta versions for confirmation and early-adopter trial
-* Include confirmation materials and approaches.
-* Deal with levels of prerequisite and progressive disclosure
-* Address life-cycle issues with respect to VCrayApp and interdependency with
-  raylib releases
-* Address usage with raylib work-in-progress for raylib contributors
-
 MANIFEST
 
      D211101.txt    this manifest and job-jar file
-       index.md     the web-version front page to this D211101 folio.
+
+       index.md     the web front page to this D211101 folio.
 
     D211101c/       VCrayApp 0.0.0 (alpha)
 
@@ -67,7 +47,7 @@ MANIFEST
 
  ATTRIBUTION
 
-   Hamilton, Dennis E. VCrayApp: VC/C++ Commnad-Line raylib App Build Kit.
+   Hamilton, Dennis E. VCrayApp: VC/C++ Command-Line raylib App devKit.
    nfoTools development text file D211101.txt version 0.0.2 dated 2022-08-16,
    available on the Internet as a version of
    <https://orcmid.github.io/nfoTools/dev/D211101/D211101.txt>
@@ -75,9 +55,7 @@ MANIFEST
 TODO
 
  * Migrate materials here so that downloads can be obtained from here and
-   information about and in them point to nfoTools.
-
- * This will come with clean-up in the orcmid/nfoTools/devKits repository.
+   nfoTools locations can be pointed to for further information.
 
  * Dig into devKits/WinDev/VCrayApp for more material and explanations here.
 
@@ -96,7 +74,7 @@ TODO
 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
- 0.0.2 2022-08-16T21:40Z touch-ups
+ 0.0.2 2022-08-16T22:39Z touch-ups and simplification
  0.0.1 2022-06-10T00:47Z Anticipate D211101c and manage TODOs
  0.0.0 2022-05-30T17:35Z Placeholder morphed from D161101.txt 0.0.5 and
        adjusted for getting started on making VCrayApp available.
