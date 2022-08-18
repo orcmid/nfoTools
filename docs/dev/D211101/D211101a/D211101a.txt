@@ -1,0 +1,61 @@
+D211101a.txt 0.0.0                  UTF-8                         2022-08-18
+----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+
+                        nfoWare/nfoWorks nfoTools
+                        =========================
+
+<https://github.com/orcmid/nfoTools/blob/master/docs/dev/D211101/D211101.txt>
+    <https://orcmid.github.io/nfoTools/dev/D211101/D211101a/D211101a.txt>
+
+                        D211101a: VCRAYAPP SETUP
+                        ------------------------
+
+SYNOPSIS [TBD]
+
+MANIFEST
+
+    D211101a.txt This synopsis and manifest file
+
+       index.md  The setup for VCrayApp
+
+
+----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+                      Copyright 2022 Dennis E. Hamilton
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+ ATTRIBUTION
+
+   Hamilton, Dennis E. D211101a: VCrayApp Setup.  nfoTools development
+   documentation text file D211101a.txt version 0.0.0 dated 2022-08-18,
+   available on the Internet as a version of
+   <https://orcmid.github.io/nfoTools/dev/D211101/D211101a/D211101a.txt>
+
+TODO
+
+ * Bring the illustrated setup description here as enough for the alpha test.
+
+ * Provide details for alpha usage by a careful novice or better
+
+ * Create a placeholder index.htm
+
+----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+ 0.0.0 2022-08-18T17:51Z Placeholder morphed from D211101c.txt 0.0.2 and
+       adjusted for VCrayApp Setup as part of alpha availability.
+
+                    ***** end of  D211101a.txt *****

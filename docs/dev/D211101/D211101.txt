@@ -1,4 +1,4 @@
-D211101.txt 0.0.2                   UTF-8                         2022-08-16
+D211101.txt 0.0.3                   UTF-8                         2022-08-18
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -22,7 +22,8 @@ MANIFEST
      D211101.txt    this manifest and job-jar file
 
        index.md     the web front page to this D211101 folio.
-
+    D211101a/       VCrayApp Setup
+    D211101b/       VCrayApp Operation
     D211101c/       VCrayApp 0.0.0 (alpha)
 
 
@@ -72,8 +73,15 @@ TODO
    is also the middle case, inserting a VCrayApp kit in a project one wants
    to work on (a clone of).
 
+ * Add D211101a/ for VCrayApp Setup
+
+ * Add D211101b/ for VCrayApp Operation
+
+ * Ensure that the index.html pages are in the title blocks too
+
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.3 2022-08-18T18:07Z expand for Setup and Operation
  0.0.2 2022-08-16T22:39Z touch-ups and simplification
  0.0.1 2022-06-10T00:47Z Anticipate D211101c and manage TODOs
  0.0.0 2022-05-30T17:35Z Placeholder morphed from D161101.txt 0.0.5 and
