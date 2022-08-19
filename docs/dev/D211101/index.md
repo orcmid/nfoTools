@@ -1,4 +1,4 @@
-<!-- index.md 0.0.5                 UTF-8                          2022-08-18
+<!-- index.md 0.0.6                 UTF-8                          2022-08-19
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                VCRAYAPP: VC/C++ COMMAND-LINE RAYLIB APP DEVKIT
@@ -6,12 +6,12 @@
 
 # [VCrayApp: VC/C++ Command-Line raylib App DevKit](.)
 
-| ***[nfoTools](../../)*** | [dev](../)[>D211101](.) | ***[index.html](index.html) 0.0.5 2022-08-18*** |
+| ***[nfoTools](../../)*** | [dev](../)[>D211101](.) | ***[index.html](index.html) 0.0.6 2022-08-19*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../../images/hardhat-logo.gif) |
 
-VCrayApp is a Zip package for a folder to be used in creating a Microsoft
-Windows program using the
+VCrayApp is a folder organization to be used in creating Microsoft
+Windows programs using the
 [`raysan5/raylib`](https://www.raylib.com/) library for graphical
 applications.
 
@@ -29,8 +29,8 @@ custom instructions that apply to specific usage in that project.
 
 ### 1.1 Project Files Organization
 
-The expected setup for a VCrayApp of your own is with the following folder
-structure:
+The expected setup for a VCrayApp-organized project of your own is with the
+following folder structure:
 
 ```text
     your-development-files-location\
@@ -48,12 +48,13 @@ structure:
          |- VCrayApp-semver.txt // manifest and readme for the semver version
 ```
 
-Semantic versioning is used.  E.g., the Alpha release has semver 0.0.0
-and is packaged as `VCrayApp-0.0.0.zip`.  There are explanatory materials and
-other files in the extracted VCrayApp version and its four subfolders.
+[Semantic versioning](https://semver.org/) is used.  E.g., the Alpha release
+has semver 0.0.0 and is packaged in `VCrayApp-0.0.0.zip`.  There are
+explanatory materials and other files in the extracted VCrayApp version and
+its four subfolders.
 
 It is recommended that  `src\` be for your own source code and `app\' be for
-any resources that the compiled program will to access.  Compilation of code
+any resources that the compiled program will access.  Compilation of code
 examples, other projects, and related tutorials will employ that arrangement.
 
 ### 1.2 VCrayApp.bat
@@ -67,8 +68,8 @@ confirmed, `VCrayApp.bat` must be modified to specify the name for your
 application and the location of your source files.  No other modifications
 are required.  The initial lines of `VCrayApp.bat` explain the modifications.
 
-Performing command "`VCrayApp ?`" from a developer command prompt will
-provide usage information.
+Performing command "`VCrayApp ?`" from a developer command prompt focused on
+your project folder will provide usage information.
 
 ```text
    _______________________________________________________________
@@ -97,7 +98,7 @@ possible to deploy a successfully-built application from `app\`.
 ## 2. Prerequisites and Dependencies
 
 For novice developers, the creation of raylib applications can be carried out
-by compiling the many available `raylib\examples'` and finding additional
+by compiling the many available `raylib\examples` and finding additional
 explanations for the minimum prerequisites.  For self-study, other resources
 should be used to develop familiarity and confidence in the tools to be
 mastered.
@@ -105,8 +106,8 @@ mastered.
 ***SUCCESSFUL USE OF VCrayAPP REQUIRES CONFIDENT USE OF C LANGUAGE AND A
 C/C++ LANGUAGE COMPILER*** for creation of clean programs involving source
 files, include files, and the interfaces (APIs) of standard libraries as well
-as the special-purpose raylib libraries.  For more on C Language programming,
-see [T060101: C/C++ Programming](https://orcmid.github.io/nfoTools/tools/T060101/).
+as the special-purpose raylib libraries.  For more on C Language see
+[T060101: C/C++ Programming](https://orcmid.github.io/nfoTools/tools/T060101/).
 
 It is assumed that Microsoft Windows 7 Professional or later are used.
 Thorough VCrayApp testing is with Microsoft Windows 10 latest versions.
@@ -119,18 +120,18 @@ tools along with confident use of C Language:
 * [Visual Studio Native Build Tools](https://orcmid.github.io/nfoTools/tools/T211002/)
 * [Developer Command Prompt](https://orcmid.github.io/nfoTools/tools/T060501/)
 * VC/C++ Command Line Compiler, CL.exe
-* raylib *source* code *release* downloaded and unzipped
+* raylib *source* code *release* downloaded, unzipped, and renamed `raylib\`
+* a text editor for editing of project files (Visual Studio Code recommended)
 
 ----
 
-* Visual Studio Code for editing of source code, other files, and
-  confirmation of library integration
-* Git4Win implementation for source-code control
+* Git4Win implementation for source-code control and backup
 * TortoiseGit for File Explorer integration of Git
-* GitHub Windows Client for public access to development projects
+* GitHub Windows Client for public access to your and other development
+  projects
 * GPG4Win for creation and verification of digital signatures
 
-The first six are essential.  The remainder are recommended.  For further
+The first seven are essential.  The remainder are recommended.  For further
 details on dependencies, see
 [VCrayApp Setup](d211101a/) and [VCrayApp Operation](d211101b/).
 
@@ -148,7 +149,7 @@ and final.
 | **ID** | **Started** | **Status** | **Topic** |
 |   :-:   |   :-:   |  :-:   |  ---  |
 | [D211101a](D211101a/) | 2022-08-18 | placeholder | VCrayApp Setup |
-| [D211101b](D211101b/) | 2022-08-18 | placeholder } VCrayApp Operation |
+| [D211101b](D211101b/) | 2022-08-18 | placeholder | VCrayApp Operation |
 | [D211101c](D211101c/) | 2022-06-09 | placeholder | VCrayApp 0.0.0 (alpha) |
 |                       |            |                  |     |
 
@@ -192,6 +193,7 @@ time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.6 2022-08-19T21:46Z Corrections and touch-ups
      0.0.5 2022-08-18T20:16Z Touch-up, and Available Materials and other links
      0.0.4 2022-08-16T22:44Z Add Introductory Materials
      0.0.3 2022-06-11T21:25Z Introduce Standard Top banner
