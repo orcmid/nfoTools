@@ -1,5 +1,5 @@
 @echo off
-rem VCrayApp 0.0.0 VCrayApp.bat 0.0.13 UTF-8                       2022-08-14
+rem VCrayApp 0.0.0 VCrayApp.bat 0.0.14 UTF-8                       2022-08-20
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 rem                  BUILDING RAYLIB APP WITH VC/C++ TOOLS
@@ -135,7 +135,7 @@ IF ERRORLEVEL 2 goto :FAIL5
 ECHO: %VCterse%
 DEL *.obj >nul 2>nul
 
-ECHO: [VCrayApp] RAYLIB-USING %GAME_EXE% COMPILED TO %dp0app
+ECHO: [VCrayApp] RAYLIB-USING %GAME_EXE% COMPILED TO %~dp0app
 ECHO: %VCterse%
 
 CD %VCfrom%
@@ -236,6 +236,7 @@ EXIT /B %ERRORLEVEL%
 
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 rem
+rem 0.0.14 2022-08-20T21:21Z Correct compilation to app\ message.
 rem 0.0.13 2022-08-14T20:03Z Improve some message
 rem 0.0.12 2022-07-10T21:34Z Require src\src.txt to be present
 rem 0.0.11 2022-06-21T14:38Z Catch some missed name changes + some touch-ups
