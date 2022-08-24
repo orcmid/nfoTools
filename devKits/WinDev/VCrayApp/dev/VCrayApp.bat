@@ -1,12 +1,12 @@
 @echo off
-rem VCrayApp 0.0.0 VCrayApp.bat 0.0.14 UTF-8                       2022-08-20
+rem VCrayApp 0.0.0 VCrayApp.bat 0.0.15 UTF-8                       2022-08-24
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 rem                  BUILDING RAYLIB APP WITH VC/C++ TOOLS
 rem                  =====================================
 
-rem This code depends on the presence of cache\, app\, and ..\raylib\.  It
-rem must be operated from within a VS Command Prompt command-line environment.
+rem This code depends on the presence of cache\, app\, src\ and ..\raylib\.
+rem It must be operated within a VS Command Prompt command-line environment.
 rem Use the script without modification until installation and operation is
 rem confirmed.  Then alter the GAME_EXE and SRC vars for the specific project.
 
@@ -29,8 +29,8 @@ SET VCrayApp=0.0.0
 
 rem Additional documentation of this procedure and its usage are found in the
 rem accompanying VCrayApp-%VCrayApp%.txt file.  For further information, see
-rem <place-to-be-announced> and check for the latest
-rem version at <the-related-place-to-be-announced>.
+rem ^<https:\\orcmid.github.org\nfoTools\D211101^> and check for the latest
+rem version at ^<https:\\orcmid.github.org\nfoTools\D211101\D211101c^>.
 
 rem Remeber where rayApp.bat is called *from*, so it can be restored on exit
 rem including after errors.
@@ -126,12 +126,12 @@ SET SUBSYS=/SUBSYSTEM:WINDOWS /ENTRY:mainCRTStartup
 
 rem Compiling the %SRC%
 CL %VChush% /W3 /c @%~dp0cache\VCoptions.opt %~dp0%SRC%          %VCterse%
-IF ERRORLEVEL 2 goto :FAIL5
+IF ERRORLEVEL 2 GOTO :FAIL5
 ECHO: %VCterse%
 
 rem Linking it all to %GAME_EXE%
 CL %VChush% %OUT% @%~dp0cache\rayLinking.opt /link /LTCG %SUBSYS% %VCterse%
-IF ERRORLEVEL 2 goto :FAIL5
+IF ERRORLEVEL 2 GOTO :FAIL5
 ECHO: %VCterse%
 DEL *.obj >nul 2>nul
 
@@ -146,8 +146,10 @@ ECHO: [VCrayApp] Launching App.  Exit App to Continue Command Session
 :SUCCESS
 ENDLOCAL
 IF "%VCsplice%" == "+" EXIT /B 0
+ECHO:  %VCterse%
+IF NOT "%VCrun%" == "1" PAUSE
 EXIT /B 0
-rem XXX Something odd here.  Did I remove PAUSE by mistake? XXX
+
 
 :FAIL6
 ECHO: [VCrayApp] **** FAIL: RAYLIB NOT FOUND WHERE EXPECTED ****
@@ -236,6 +238,25 @@ EXIT /B %ERRORLEVEL%
 
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 rem
+rem                 Copyright 2021-2022 Dennis E. Hamilton
+rem
+rem Licensed under the Apache License, Version 2.0 (the "License");
+rem you may not use this file except in compliance with the License.
+rem You may obtain a copy of the License at
+rem
+rem     http://www.apache.org/licenses/LICENSE-2.0
+rem
+rem Unless required by applicable law or agreed to in writing, software
+rem distributed under the License is distributed on an "AS IS" BASIS,
+rem WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+rem See the License for the specific language governing permissions and
+rem limitations under the License.
+rem
+rem For additional information, see the accompanying NOTICE.txt file.
+rem
+rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+rem
+rem 0.0.25 2022-08-24T23:22Z Add Copyright, touch-ups
 rem 0.0.14 2022-08-20T21:21Z Correct compilation to app\ message.
 rem 0.0.13 2022-08-14T20:03Z Improve some message
 rem 0.0.12 2022-07-10T21:34Z Require src\src.txt to be present
