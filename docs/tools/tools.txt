@@ -107,6 +107,9 @@ TODO
    default or an initialized case in Windows Terminal.  It looks like we need
    folio progressions for some of these.
 
+ * An article on employing Windows Terminal as of 2022-10-18,
+   <https://www.computerworld.com/article/3676596/how-to-manage-and-customize-windows-terminal.html>
+
  * Triage T060301 Computer Arithmetic Gotchas
 
  * Triage T060302 Using VC++ 2005 Express Edition

@@ -1,4 +1,4 @@
-T060101.txt 0.0.4                   UTF-8                       dh:2022-07-**
+T060101.txt 0.0.4                   UTF-8                       dh:2022-09-**
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -79,6 +79,43 @@ TODO
 
   * For a CS background, after or before getting feet wet with C Language,
     <https://www.classcentral.com/report/cs50-free-certificate/>.
+
+  * Need more on alternative foundations, possibly in Notes and Skills.
+    Also, general education with regard to programming.  Then why learn the
+    tradition-embedded compile, link/library, execute model and its situation
+    in a software-development life-cycle.
+
+  * Courses of potential interest:
+    Introduction to Software Engineering from IBM
+    <https://www.classcentral.com/course/introduction-to-software-engineering-104338>
+
+  * Coverage of the C, C++, C#, Objective-C language relationships
+    <https://www.codecademy.com/resources/blog/c-vs-cplusplus-vs-csharp-vs-objective-c/>
+
+  * Microsoft has reorganized their on-line documentation and learning
+    materials.  Getting started with C++ and C is at
+    <https://learn.microsoft.com/en-us/cpp/?view=msvc-170> and I recommend
+
+  * I recommend "Use the command-line tools" to Compile C code,
+    <https://learn.microsoft.com/en-us/cpp/build/walkthrough-compile-a-c-program-on-the-command-line>
+
+  * Also the Use C++ and C in Visual Studio Code.  This might be referenced
+    here and addressed more in the Visual Studio Code materials.  There needs
+    to be more emphasis on the use for C and also maybe some more gentle work
+    up to the VS Code integration with Intellisence, etc.
+    <https://code.visualstudio.com/docs/cpp/config-msvc>.
+
+  * With respect to why learn C, it is possible to recommend the Microsoft
+    Python Learning path, with the advantage that Visual Studio Code is
+    employed.  This is a very different (and also quirky) programming language
+    and beginners need to appreciate that at some point.  It is not in the
+    C Language "tradition" as are C++, Java, C#, and other languages (but not
+    JavaScript and some others).
+    <https://learn.microsoft.com/en-us/training/paths/beginner-python/>/
+
+  * Class Central has a great compilation on C Language programming with
+    guides to the various courses.
+    <https://www.classcentral.com/subject/c-programming>.
 
   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 

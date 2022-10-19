@@ -1,4 +1,4 @@
-VCrayApp 0.0.0 cache.txt 0.0.14     UTF-8                         2022-07-15
+VCrayApp 0.0.0 cache.txt 0.0.15     UTF-8                         2022-07-19
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -29,11 +29,18 @@ VCrayApp 0.0.0 cache.txt 0.0.14     UTF-8                         2022-07-15
   *                            ** IMPORTANT **                            *
   *                            ***************                            *
   *                                                                       *
-  *    THESE CACHE\ FILES REQUIRE THE RAYLIB 3.7.0 RELEASE SOURCE CODE    *
-  *    ***************************************************************    *
+  *         THESE CACHE\ FILES DEPEND ON RAYLIB 4.0.0 RELEASE CODE        *
+  *         ******************************************************        *                                                                     *
+  *          THERE IS ALSO PROVISION FOR THE RAYLIB 3.7.0 RELEASE         *
   *                                                                       *
-  *    Breaking changes introduced in RAYLIB 4.0.0 and subsequent         *
-  *    development are not accomodated in VCrayApp 0.0.0.                 *
+  *                            **  WARNING  **                            *
+  *                            ***************                            *
+  *                                                                       *
+  *    RAYLIB-4.2.0 CANNOT BE USED WITH VCRAYAPP because of a defect in   *
+  *    the external/miniaudio.h file depended upon by raudio.c.  The bug  *
+  *    prevents VCrayApp compiling with any version of Microsoft VC/C++.  *
+  *    When there is a repaired raylib-4.x.0 release, support will be     *
+  *    incorporated in VCrayApp.                                          *
   *                                                                       *
   * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 
@@ -75,14 +82,23 @@ MANIFEST
         files.  See the instructions at the beginning of VCrayApp.bat.
 
     raylibCode.opt
-        Option file identifying the raylib ***3.7.0*** source modules to be
+        Option file identifying the raylib ***4.0.0*** source modules to be
         compiled and their *.obj files cached.  This file depends on raylib\
         being at a fixed location relative to cache\. raylib\src\rglfw.c must
         be the last one successfully compiled.  It's presence is checked to
         confirm that a complete cache is available.
 
+    raylibCode.3.7.0.opt
+        Option file to be copied to raylibCode.opt when using raylib 3.7.0.
+
+    raylibCode.4.0.0.opt
+        Option file to be copied to raylibCode.opt when using raylib 4.0.0,
+        the default.
+        ***NOTE*** VCrayApp cannot be used to build later raylib 4.x.0 apps
+        until an error in raylib/src/external/miniaudio.h is repaired.
+
     raylibVars.opt
-        Preprocessor definitions for the compilation of the raylib modules.
+        Preprocessor definitions for the compilation of the raylib modules
 
     rayLinking.opt
         Parameters for linking the compiled raylib app and the cache of
@@ -94,7 +110,7 @@ MANIFEST
         file also depends on raylib\ being in the same predictable relative
         location as relied on in raylibCode.opt.
 
-    *.obj
+    *.obj (after compilation of cached raylib components)
         VC/C++ compiled C Language *.obj modules from compilation of the
         raylib files identified in raylibCode.opt.
 
@@ -119,13 +135,15 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. VCrayApp raylib Cache Folder.  VCrayApp 0.0.0 text file
-   cache.txt version 0.0.14 dated 2022-07-15, available on the Internet as a
+   cache.txt version 0.0.15 dated 2022-10-19, available on the Internet as a
    version of
     <https://github.com/orcmid/nfoTools/blob/master/devKits/WinDev/VCrayApp/dev/cache/cache.txt>.
 
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.15 2022-10-19T21:14Z Introduce 4.0.0/3.7.0 raylibCode.opt alternatives,
+        identifying 4.2.0 incompatibility with Microsoft VC/C++ compilers.
  0.0.14 2022-07-15T22:31Z Emphasize raylib 3.7.0 dependency, touch-ups
  0.0.13 2022-07-13T18:28Z More touch-ups
  0.0.12 2022-07-12T15:11Z Touch-ups

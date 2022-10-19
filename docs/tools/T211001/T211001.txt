@@ -110,6 +110,14 @@ TODO
    MSVC.   https://godbolt.org/
    https://devblogs.microsoft.com/cppblog/execution-and-static-analysis-support-for-msvc-on-compiler-explorer/
 
+ * There may be license issues that someone might have to deal with.  It
+   appears that the open-source use does require the same license as for the
+   community editions.  ALso,
+   <https://devblogs.microsoft.com/cppblog/updates-to-visual-studio-build-tools-license-for-c-and-cpp-open-source-projects/>
+
+ * A new link on the Build Tools:
+   <https://visualstudio.microsoft.com/visual-cpp-build-tools/>.
+
   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
  0.0.2 2022-04-27T16:43Z Manage TODOs, muse on Git and GitHub

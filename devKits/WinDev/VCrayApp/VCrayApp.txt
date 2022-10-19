@@ -1,4 +1,4 @@
-VCrayApp.txt 0.0.5                  UTF-8                      dh:2022-07-13
+VCrayApp.txt 0.0.6                  UTF-8                      dh:2022-10-19
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                       RAYLIB APP DEVELOPMENT PROJECT
@@ -45,8 +45,13 @@ MANIFEST
     raylib-3.7.0.zip
         The raylib 3.7.0 release zip used in confirming operation of
         VCrayApp at this time.
+
+    raylib-4.0.0.zip
+        The raylib 4.0.0 release zip used in confirming operation with the
+        latest version that works with Microsoft VC/C++.
+
     raylib\
-        The Zipped raylib-3.7.0\ folder extracted to here and renamed
+        The Zipped raylib-x.x.0\ folder extracted to here and renamed
         raylib\ for consistent reference from a VCrayApp-organized
         project (excluded from Git, extract from the release.zip in any clone)
 
@@ -86,10 +91,14 @@ TODO
  * Derive a VCrayApp-0.0.0.zip and employ it in orcmid/RayLab to confirm the
    templates and examples.
 
- * This project was started using raylib-3.7.0 for the testing.  There are
-   breaking changes in raylib-4.0.0 and that or a later release will be used
-   only after the raylib-3.7.0 examples are all worked.  Then there will be
-   replication with a later release (and only release builds).
+ * This project was started using raylib-3.7.0 for the testing.  It is now
+   important to distribute in a form that works with raylib-4.0.0 for
+   newbies.
+
+ * IMPORTANT NOTE: raylib-4.2.0 uses a version of external/miniaudio.h that
+   WILL NOT COMPILE WITH VC/C++.  Until that is remedied in miniaudio.h and
+   a subsequent release of raylib-4.x, raylib source cannot be used for
+   VCrayApp-constructed raylib applications.
 
  * An important feature of using a devKit is a way of updating either the kit
    *and/or* the update of dependencies which are employed from a kit, raylib
@@ -151,6 +160,8 @@ TODO
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.6 2022-10-20T20:46Z Add raylib-4.0.0.zip and account for limitations
+       because of an external/miniaudio.h that fails to compile with VC/C++.
  0.0.5 2022-07-13T15:41Z TODOs on NOTICE.txt and C/C++ programming not taught.
  0.0.4 2022-07-09T16:23Z Manage TODOs, introduce VCrayApp-release.txt
  0.0.3 2022-06-30T22:19Z TODO on checklist requirements

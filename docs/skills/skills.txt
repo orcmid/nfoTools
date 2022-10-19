@@ -14,29 +14,27 @@ skills.txt 0.0.15                   UTF-8                         2022-07-**
     nfoTools docs/skills/ collection of folios on (tacit) skills that software
     developers rely upon, from reading, keyboarding, and computer operations
     that are part of computational fluency and reliable effort.  It is
-    not exactly Computer Programming for Everyone (CP4E), not even Software
-    Engineering for Everyone (SE4E), but tacit knowledge underies the
+    not exactly Computer Programming for Everyone (CP4E), especially not
+    Software Engineering for Everyone (SE4E), but tacit knowledge underies the
     competence presumed for users and the level of expectation among
     developers and producers of interesting software.
 
-    Unspoken tacit knowledge is a barrier to neophytes and it is something
-    that those who posess it don't even pause to notice they did not always
-    have it themselves; it must be made visible to be learned.  It takes a
-    beginner's mind to expose it.  Being thrown into the deep end of the pool
-    as a way to learn to swim is not a great idea, especially for adults.
+    Skills notes are intended to support making explicit the variety of skills
+    on which the on-ramps and guard rails for approaching software development
+    depend.
 
-    The companion docs/tools/ articles rest on presumption or acquisition
+     The companion docs/tools/ articles rest on presumption or acquisition
     of various skills and awareness of their limitations. Skills are the
     prerequisites/companions for mastery of the tools.
 
     There are also skills related to cultural and social technologies, such
-    as times and dates, calendars and locations, that are tacit and lead to
-    intrinsic biases.  Then there is the matter of language and the overall
-    encouragement of conceptual models that are embedded, or not,
+    as times and dates, calendars and locations, that need to be moved from
+    tacit to explicit and also to reveal intrinsic biases in handling of
+    related features in software.  Then there is the matter of language and
+    the overall encouragement of conceptual models that are embedded, or not,
     in technological efforts.  There may need to be identification of those
     assumptions, especially ones about language, location, and the past,
-    present, and future.  These sources of friction need to be identified
-    whether addressed or not.
+    present, and future.
 
 MANIFEST
 
@@ -243,6 +241,12 @@ TODO
    attention management, flow, will power, and dependability.
 
  * Establish the more-correct folio header strip here.
+
+ * Math and Logic need to be topics also.
+   <https://www.codecademy.com/resources/blog/how-much-math-do-you-need-to-know-to-be-a-software-engineer/>
+
+ * Accessibility will be a significant issue.  We need to figure that out and
+   the skill of not using oneself as the model user.
 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
