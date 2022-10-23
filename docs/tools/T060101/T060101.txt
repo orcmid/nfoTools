@@ -1,4 +1,4 @@
-T060101.txt 0.0.4                   UTF-8                       dh:2022-09-**
+T060101.txt 0.0.5                   UTF-8                       dh:2022-10-23
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -44,7 +44,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. T060101: C/C++ Programming.  nfoTools project text
-   file T060101.txt version 0.0.3 dated 2021-11-24, available on the
+   file T060101.txt version 0.0.5 dated 2022-10-23, available on the
    Internet as a version of
    <https://orcmid.github.io/nfoTools/tools/T060101/T060101.txt>
 
@@ -117,9 +117,13 @@ TODO
     guides to the various courses.
     <https://www.classcentral.com/subject/c-programming>.
 
+  * An useful perspective, though not great as a generalization.
+    <https://twitter.com/Carnage4Life/status/1584190561787219968/photo/1>
+
   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
- 0.0.4 2022-07-**
+ 0.0.5 2022-10-23T17:24Z Manage TODOs
+ 0.0.4 2022-10-03T16:16Z Garbled TODO management
  0.0.3 2021-11-24T23:24Z T060101c and Manage TODOs
  0.0.2 2021-11-17T18:44Z Managing TODOs, Manifest
  0.0.1 2021-11-16T16:31Z Still boilerplate customization, TODOs
