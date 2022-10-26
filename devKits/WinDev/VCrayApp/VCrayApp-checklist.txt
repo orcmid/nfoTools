@@ -1,4 +1,4 @@
-VCrayApp-checklist.txt 0.0.2        UTF-8                         2022-08-16
+VCrayApp-checklist.txt 0.0.3        UTF-8                         2022-10-**
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                       RAYLIB APP DEVELOPMENT PROJECT
@@ -49,6 +49,12 @@ VCrayApp-checklist.txt 0.0.2        UTF-8                         2022-08-16
         o Link to information on the compilation option files
         o Link to explanation of the compilation steps
         o Provide orcmid.github.io/nfoTools location for the attribution
+        o Ensure that the cache components work with the version of raylib
+          being used
+
+    * cache\rayConfirm.c
+        o Adjust version-specific information
+        o Adjust VCrayApp package identification
 
     * VCrayApp.bat
         o Set the semantic version variable, VCrayApp
@@ -70,7 +76,14 @@ VCrayApp-checklist.txt 0.0.2        UTF-8                         2022-08-16
         o For FAIL1 provide <other nfoTools support information. on the
           correct unpacking and preservation of VCrayApp in a folder.
 
+    * VCrayApp-semver.txt
+        o Ensure place-holder under D211101x subfolder.
 
+    * Signatures and hash checks.
+        o Have a dev procedure for the methodology and how it is done.
+        o This could be in docs/dev/ but maybe something n dev also?
+        o Find what I had for this with VCbind and how I demonstrated stuff,
+          where I provided information on it.
 
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*

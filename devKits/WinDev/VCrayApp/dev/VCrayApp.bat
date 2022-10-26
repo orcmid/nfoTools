@@ -1,5 +1,5 @@
 @echo off
-rem VCrayApp 0.0.0 VCrayApp.bat 0.0.15 UTF-8                       2022-08-24
+rem VCrayApp 0.0.0 VCrayApp.bat 0.0.17 UTF-8                       2022-10-26
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 rem                  BUILDING RAYLIB APP WITH VC/C++ TOOLS
@@ -32,8 +32,8 @@ rem accompanying VCrayApp-%VCrayApp%.txt file.  For further information, see
 rem ^<https:\\orcmid.github.org\nfoTools\D211101^> and check for the latest
 rem version at ^<https:\\orcmid.github.org\nfoTools\D211101\D211101c^>.
 
-rem Remeber where rayApp.bat is called *from*, so it can be restored on exit
-rem including after errors.
+rem Remebering where rayApp.bat is called *from*, so it can be restored on
+rem exit including after errors.
 SET VCfrom=%CD%
 
 rem SELECT EMBEDDED, TERSE, OR DEFAULT
@@ -135,7 +135,7 @@ IF ERRORLEVEL 2 GOTO :FAIL5
 ECHO: %VCterse%
 DEL *.obj >nul 2>nul
 
-ECHO: [VCrayApp] RAYLIB-USING %GAME_EXE% COMPILED TO %~dp0app
+ECHO: [VCrayApp] PROGRAM %GAME_EXE% COMPILED TO %~dp0app
 ECHO: %VCterse%
 
 CD %VCfrom%
@@ -152,23 +152,23 @@ EXIT /B 0
 
 
 :FAIL6
-ECHO: [VCrayApp] **** FAIL: RAYLIB NOT FOUND WHERE EXPECTED ****
+ECHO: [VCrayApp] **** FAILURE: RAYLIB NOT FOUND WHERE EXPECTED ****
 ECHO:            expected at "%~dp0..\raylib\"                      %VCterse%
 ECHO:            NO ACTIONS HAVE BEEN PERFORMED                     %VCterse%
 GOTO :BAIL
 
 :FAIL5
-ECHO: [VCrayApp] ****FAIL: COMPILING %GAME_EXE% FAILED ****
+ECHO: [VCrayApp] ****COMPILING %GAME_EXE% FAILED ****
 ECHO:            Review the errors reported for the compilation.    %VCterse%
 ECHO:            Make repairs and reattempt.                        %VCterse%
 ECHO:            RESULTS ARE UNPREDICTABLE                          %VCterse%
 GOTO :BAIL
 
 :FAIL4
-ECHO: [VCrayApp] ****FAIL: COMPILING CACHE OF RAYLIB FILES FAILED ****
+ECHO: [VCrayApp] **** COMPILING CACHE OF RAYLIB FILES FAILED ****
 ECHO:            Review the errors reported for the compilation.    %VCterse%
 ECHO:            Make repairs and reattempt.                        %VCterse%
-ECHO:            RESULTS ARE UNPREDICTABLE                          %VCterse%
+ECHO:            RESULTS ARE UNPREDICTABLE.  REBUILD CACHE.         %VCterse%
 GOTO :BAIL
 
 :FAIL3
@@ -256,7 +256,9 @@ rem For additional information, see the accompanying NOTICE.txt file.
 rem
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 rem
-rem 0.0.25 2022-08-24T23:22Z Add Copyright, touch-ups
+rem 0.0.17 2022-10-26T16:38Z More message cleanups
+rem 0.0.16 2022-10-17T18:35Z Cleanup compilation failure and success messages
+rem 0.0.15 2022-08-24T23:22Z Add Copyright, touch-ups
 rem 0.0.14 2022-08-20T21:21Z Correct compilation to app\ message.
 rem 0.0.13 2022-08-14T20:03Z Improve some message
 rem 0.0.12 2022-07-10T21:34Z Require src\src.txt to be present
