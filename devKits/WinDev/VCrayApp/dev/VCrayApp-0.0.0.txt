@@ -1,4 +1,4 @@
-VCrayApp-0.0.0.txt 0.0.3            UTF-8                         2022-08-24
+VCrayApp-0.0.0.txt 0.0.4            UTF-8                         2022-10-26
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                       NFOTOOLS DEVKIT FOR RAYLIB APPS
@@ -27,33 +27,35 @@ VCrayApp-0.0.0.txt 0.0.3            UTF-8                         2022-08-24
   *                             *********                               *
   *                                                                     *
   *    No VCrayApp support is provided for development using anything   *
-  *    but the C language  and the Microsoft VC C/C++ compiler and      *
-  *    related developer tools on a Windows PC, desktop or laptop.      *
+  *    but the C language and the Microsoft VC C/C++ compiler and       *
+  *    related developer tools on a Windows desktop PC, laptop or       *
+  *    Microsoft Surface.                                               *
   *                                                                     *
-  *    VCRAYAPP 0.0.0 IS BEING TESTED WITH THE RAYLIB 3.7.0 SOURCE      *
-  *    CODE.  THERE ARE POSSIBLE DIFFICULTIES WITH RAYLIB 4.0.0 BECAUSE *
-  *    OF BREAKING CHANGES IN THAT RELEASE AND SUBSEQUENT ACTIVITY.     *
-  *    CONFIRMATION WITH 4.0.0 AND LATER RELEASES IS FUTURE WORK.       *
+  *    VCRAYAPP 0.0.0 IS BEING TESTED WITH THE RAYLIB 4.0.0 SOURCE      *
+  *    CODE.  RAYLIB 4.2.0 CANNOT BE USED BECAUSE OF A VC/C++           *
+  *    INCOMPATIBILITY.  VCRAYAPP 0.0.0 CAN ALSO BE USED WITH 3.7.0.    *
+  *    CONFIRMATION WITH LATER RAYLIB RELEASES IS FUTURE WORK.          *
   *                                                                     *                                                                     *
   *    Ramon Santiago's raylib software is written in a clean-form of   *
-  *    the C Language.  Use of the raylib code, include files, and the  *
-  *    API interfaces requires confidence in the use of the C or C++    *
-  *    languages with such libraries. VCrayApp is intended to be used   *
-  *    directly only for programs written in the C Language.            *
+  *    the C Language (C11 standard).  Use of the raylib code, include  *
+  *    files, and the API interfaces requires confidence in the use of  *
+  *    the C or C++ languages with such libraries. VCrayApp is intended *
+  *    to be used directly only for programs written in the C Language. *
   *                                                                     *
   * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 
     The VCrayApp-0.0.0 distribution is available on the web at
-    <https://orcmid.github.io/nfoTools/dev/D211101/D211101c>.  Consult
+    <https://orcmid.github.io/nfoTools/dev/D211101/D211101d>.  Consult
     that page for the latest status, links to useful related material,
-    and the most-recent version.  If there is concern for the authenticity
+    and any more-recent version.  If there is concern for the authenticity
     or correctness of any VCrayApp distribution, obtain a full replacement
     via <https://orcmid.github.io/nfoTools/dev/D211101>.
 
     VCrayApp is designed to work with versions of Visual Studio that are free
-    for personal use, including the Visual Studio Build Tools (recommended)
-    and the Visual Studio Community editions.  Additional levels of Visual
-    Studio can also be used, all via their Native Tools Command Prompt.
+    for personal/open-source use, including the Visual Studio Build Tools
+    (recommended) and the Visual Studio Community editions.  Additional levels
+    of licensed Visual Studio can also be used, all via their Native Tools
+    Command Prompt.
 
  PREREQUISITES AND DEPENDENCIES
 
@@ -65,7 +67,7 @@ VCrayApp-0.0.0.txt 0.0.3            UTF-8                         2022-08-24
      * Visual Studio Native Build Tools
      * Developer Command Prompt
      * Microsoft VC/C++ Command Line Compiler, CL.exe
-     * raylib *source* code *release* downloaded and installed
+     * raylib *source* code *release* 4.0.0 (or 3.7.0) downloaded and unzipped
      * A text-editor for work on source code, other files, all in plain text
        (Visual Studio Code recommended for its C/C++ and Microsoft support)
      + Git4Win implementation for source-code control
@@ -91,8 +93,8 @@ DOWNLOADS AND SETUP
 
     raylib\ must be setup before VCrayApp can be used.
 
-    Download VCrayApp from <https://orcmid.github.io/dev/D211101/D211101c>.
-    If a later version is available, obtain that version.
+    Download VCrayApp from <https://orcmid.github.io/dev/D211101/D211101d>.
+    If a later version is available, consider using that version instead.
 
     It is useful to download VCrayApp-0.0.0.zip to a location that you can
     use as a source of copies for one or more VCrayApp projects.
@@ -115,7 +117,7 @@ DOWNLOADS AND SETUP
 
     There should now be a VCrayApp-0.0.0\ folder in the same folder as the
     Zip file you extracted.  Rename that folder to the name you want for this
-    VCrayApp project.
+    VCrayApp project of yours.  This is your project folder.
 
 
  CONFIRMING THE VCrayApp SETUP AND OPERATION
@@ -145,7 +147,7 @@ DOWNLOADS AND SETUP
 
 MANIFEST OF VCrayApp-0.0.0.zip
 
-    NOTICE.txt 1.0.0 814 byte 2016-10-24 version
+    NOTICE.txt 1.0.0 1,944 byte 2022-08-25T00:09Z version
         applicable NOTICE for VCrayApp-0.0.0.zip and its content
 
     VCrayApp-0.0.0.txt 0.0.8 9,670 byte 2016-11-24T17:28 clearsigned version
@@ -156,6 +158,37 @@ MANIFEST OF VCrayApp-0.0.0.zip
         Script that, when run, will confirm VC/C++ command-prompt settings
         and perform compilation of a raylib cache\ and project source codes,
         to deliver a compiled result in app\.
+
+    .vscode\         provided for use of Visual Studio Code with the project
+        .vscode.txt  synopsis and manifest for the .vscode folder
+        c_cpp_properties.json
+
+    app\
+        .gitignore   used to suppress compiled binaries from source control
+        app.txt      synopsis and manifest for the app\ folder
+
+    cache\
+        .gitignore   used to suppress intermediate files from source control
+        cache.txt    synopsis and manifest for the cache\ folder
+        rayConfirm.c sample program used to confirm successful operation
+        raylibCode.3.7.0.opt
+                     options file for compiling raylib-3.7.0 components
+        raylibCode.4.0.0.opt
+                     options file for compiling raylib-4.0.0 components
+        raylibCode.opt
+                     options file that is used (raylib-4.0.0 default)
+        raylibVars.opt
+                     additional parameters used in compiling the cache
+        rayLinking.opt
+                     options file for linking to make the .exe file
+        VCoptions.opt
+                     options file for both cache\ and project code compilation
+
+    src\
+        src.txt     synopsis and manifest for the src\ folder
+
+    The supplied text files provide further descriptions and explanations
+    for usage and customization of each folder.
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
@@ -185,6 +218,7 @@ MANIFEST OF VCrayApp-0.0.0.zip
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.4 2022-10-26T17:34Z Near-final draft before signing
  0.0.3 2022-08-24T17:28Z Provisional draft for Alpha release
  0.0.2 2022-07-13T17:24Z Draft Editing of Expanded Boilerplate.
  0.0.1 2022-06-07T22:27Z Include boilerplate from VCbind-0.1.0
