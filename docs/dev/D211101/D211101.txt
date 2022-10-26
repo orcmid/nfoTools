@@ -1,4 +1,4 @@
-D211101.txt 0.0.3                   UTF-8                         2022-08-18
+D211101.txt 0.0.4                   UTF-8                         2022-10-26
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -24,7 +24,9 @@ MANIFEST
        index.md     the web front page to this D211101 folio.
     D211101a/       VCrayApp Setup
     D211101b/       VCrayApp Operation
-    D211101c/       VCrayApp 0.0.0 (alpha)
+    D211101c/       VCrayApp Latest
+
+    D211101d/       VCrayApp 0.0.0 (alpha)
 
 
 
@@ -49,7 +51,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. VCrayApp: VC/C++ Command-Line raylib App devKit.
-   nfoTools development text file D211101.txt version 0.0.2 dated 2022-08-16,
+   nfoTools development text file D211101.txt version 0.0.4 dated 2022-10-26,
    available on the Internet as a version of
    <https://orcmid.github.io/nfoTools/dev/D211101/D211101.txt>
 
@@ -79,8 +81,13 @@ TODO
 
  * Ensure that the index.html pages are in the title blocks too
 
+ * Use D211101c/ for the latest release
+
+ * Use D211101d/ for the alpha 0.0.0 release
+
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.4 2022-10-26T17:37Z Adjust for the desired version progression technique
  0.0.3 2022-08-18T18:07Z expand for Setup and Operation
  0.0.2 2022-08-16T22:39Z touch-ups and simplification
  0.0.1 2022-06-10T00:47Z Anticipate D211101c and manage TODOs
