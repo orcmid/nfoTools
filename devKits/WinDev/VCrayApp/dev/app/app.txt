@@ -1,4 +1,4 @@
-VCrayApp 0.0.0 app.txt 0.0.9        UTF-8                          2021-07-11
+VCrayApp 0.0.0 app.txt 0.0.10       UTF-8                          2022-10-30
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                       VCRAYAPP APPLICATION-BUILD DEVKIT
@@ -19,10 +19,10 @@ VCrayApp 0.0.0 app.txt 0.0.9        UTF-8                          2021-07-11
   *                                                                       *
   *    app\ folder content is amenable to delivery in a Zip file after    *
   *    copying to a separate location, removal of extraneous material     *
-  *    (such as this file) and addition of supporting content needed      *
-  *    for the deployed result.                                           *
+  *    (such as this file) there, and addition of supporting content      *
+  *    needed for the deployed result.                                    *
   *                                                                       *
-  *    The installed folder can also be employed for derived materials    *
+  *    The deployed folder can also be employed for derived materials     *
   *    of the running application including user information and saved    *
   *    history/state.  It is recommended that there be a means for the    *
   *    confirmation of correct installation and also accepting updates.   *
@@ -32,7 +32,7 @@ VCrayApp 0.0.0 app.txt 0.0.9        UTF-8                          2021-07-11
   *                                                                       *
   *    If VCrayApp is re-extracted or is updated and extracted, this      *
   *    file and the .gitignore will be restored/replaced.  Any other      *
-  *    files already in this folder folder will be untouched.             *                                          *
+  *    files already in this folder will be untouched.                    *                                          *
   *                                                                       *
   * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 
@@ -40,12 +40,12 @@ VCrayApp 0.0.0 app.txt 0.0.9        UTF-8                          2021-07-11
 MANIFEST
 
     app.txt
-        this synopsis and manifest (not deliverable, customizable)
+        this synopsis and manifest (customizable, not usually deployed)
 
     .gitignore
         excluding some VCrayApp app\ and compilation results from
         any Git so that modifications here are entirely local.
-        (not deliverable, possibly customized or removed)
+        (possibly customized or removed, not usually deployed with the app)
 
     resources/
         here when provided as a neighbor of the compiled .exe file and
@@ -56,9 +56,9 @@ MANIFEST
 
     *.obj
         files that are only transient here and not part of the app package
-        (not deliverable, usually remaining only if a compile fails)
+        (not to be deployed, usually remaining only if a compile fails)
 
-    other materials are provided as the project requires.
+    other materials are provided as an individual project requires.
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
@@ -81,12 +81,14 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. VCrayApp XCOPY/MSIX App Folder.  File app.txt version
-   0.0.9 dated 2022-07-11 available on the Internet as a version of
+   0.0.10 dated 2022-10-30 available on the Internet as a version of
    <https://github.com/orcmid/nfoTools/blob/master/devKits/WinDev/VCrayApp/dev/app/app.txt>.
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
+ 0.0.10 2022-10-30T16:24Z Touch-ups to clarify development use versus
+        what is not intended to be included in the deployed app
  0.0.9 2022-07-11T20:26Z Updated to be alpha release draft
  0.0.8 2021-11-14T00:29Z Moved to draft for VCrayApp 0.0.0.
  0.0.7 2021-11-11T18:37Z Partial staging for promotion to nfoTools deliverable
