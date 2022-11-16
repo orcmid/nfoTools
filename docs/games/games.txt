@@ -1,4 +1,4 @@
-games.txt 0.0.4                    UTF-8                        dh:2022-07-**
+games.txt 0.0.4                    UTF-8                        dh:2022-11-16
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -48,7 +48,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. nfoTools Project Games.  nfoTools file docs/games.txt
-   version 0.0.4 dated 2022-06-**, available on the Internet as a version of
+   version 0.0.4 dated 2022-11-16, available on the Internet as a version of
    <https://orcmid.github.io/nfoTools/games/games.txt>
 
 TODO
@@ -96,7 +96,27 @@ TODO
    on this course,
    <https://ocw.mit.edu/courses/cms-611j-creating-video-games-fall-2014/>.
 
+ * Game Project Management Tools,
+   <https://pinglestudio.com/blog/co-development/best-game-project-management-tools-for-game-developers>
+   apparently gigantic URLs because they can
+
+ * Codecademy has an Introduction to Game Development that may be an useful
+   overview.  I haven't checked out the 4 hour course.
+   <https://www.codecademy.com/learn/introduction-to-game-development>.
+
+ * Codecademy also discusses choice of programming languages for game
+   development.  I think C before C++ also works in this context.  There
+   might need to be a cross-link on Learning C.
+   <https://www.codecademy.com/resources/blog/programming-languages-for-game-development/>
+
+ * This is an interesting account of how one person found their way into the
+   gaming industry.  It promotes the Codecademy Introduction.  The money quote
+   about the players not being the same as the designers is buried pretty
+   deep.
+   <https://www.codecademy.com/resources/blog/cool-coding-job-game-designer-kerbal-space-program/>
+
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+ 0.0.4 2022-11-16T17:33Z Manage TODOs, more links and musings
  0.0.3 2022-06-21T16:47Z Manage TODOs, add some gamedev.tv links
  0.0.2 2022-02-12T16:13Z Manage TODOs, park some gaming TODOs here for now.
  0.0.1 2021-09-21T16:46Z Touch-up, manage TODOs
