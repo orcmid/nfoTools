@@ -1,4 +1,4 @@
-T060101.txt 0.0.5                   UTF-8                       dh:2022-10-23
+T060101.txt 0.0.6                   UTF-8                       dh:2022-11-16
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -44,7 +44,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. T060101: C/C++ Programming.  nfoTools project text
-   file T060101.txt version 0.0.5 dated 2022-10-23, available on the
+   file T060101.txt version 0.0.6 dated 2022-11-16, available on the
    Internet as a version of
    <https://orcmid.github.io/nfoTools/tools/T060101/T060101.txt>
 
@@ -79,6 +79,12 @@ TODO
 
   * For a CS background, after or before getting feet wet with C Language,
     <https://www.classcentral.com/report/cs50-free-certificate/>.
+
+  * Also, for game development, an area that is featured in nfoTools,
+    <https://www.codecademy.com/resources/blog/programming-languages-for-game-development/>
+    and tie in the ways that C is not a subset of C++ and how C code is
+    used in C++ applications.  Header differences, linking differences, and
+    the use of namespaces, generics, and interfaces/objects/classes.
 
   * Need more on alternative foundations, possibly in Notes and Skills.
     Also, general education with regard to programming.  Then why learn the
@@ -120,8 +126,16 @@ TODO
   * An useful perspective, though not great as a generalization.
     <https://twitter.com/Carnage4Life/status/1584190561787219968/photo/1>
 
+  * <https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines> is valuable
+    for C++ and sometimes for C.  It does not get at the difference between
+    what the code is versus what it is for.  It does help with connection
+    to what the code realizes an interpretation/representation of, though
+    comments are still required.  This also came up on ResearchGate with
+    respect to mechanized proofs and their checking.
+
   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.6 2022-11-16T17:39Z Manage TODOs, Musings
  0.0.5 2022-10-23T17:24Z Manage TODOs
  0.0.4 2022-10-03T16:16Z Garbled TODO management
  0.0.3 2021-11-24T23:24Z T060101c and Manage TODOs
