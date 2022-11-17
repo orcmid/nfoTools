@@ -1,4 +1,4 @@
-tools.txt 0.0.25                   UTF-8                       dh:2022-07-**
+tools.txt 0.0.25                   UTF-8                       dh:2022-11-17
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -53,7 +53,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. nfoTools Toolcraft Notebook.  nfoTools project text
-   file tools.txt version 0.0.23 dated 2022-06-19, available on the Internet
+   file tools.txt version 0.0.25 dated 2022-11-17, available on the Internet
    as a version of
    <https://orcmid.github.io/nfoTools/tools/tools.txt>
 
@@ -192,8 +192,23 @@ TODO
    how there is a particular model for builds, debug versus release, and
    composing solutions/projects and how configurations are handled.
 
+ * It is relevant to speak about operating systems and also the degree to
+   which there is a file/terminal-oriented system underlying many GUIs, often
+   exposed through a terminal or other shell access.  I don't quite know how
+   to parse this.  It is more than a skill because we are talking about
+   deeper knowledge required for development purposes.  But there is also a
+   skill requirement.
+
+ * One factor has to do with understanding where an users's "stuff" is, how
+   to find it, how to make more, and how to interact with programs that are
+   designed to facilitate that.
+
+ * Then there are VMs (and containers, I suppose) and all that involves, with
+   the Windows Subsystem for Linux (WSL) an important case.
+
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.25 2022-11-17T23:37Z Manage TODOs, musings
  0.0.24 2022-06-21T16:52Z Capture Ben from Gamedev.tv on how to learn
  0.0.23 2022-06-19T15:36Z Manage TODOs, track header construction
  0.0.22 2022-04-15T15:35Z Add notes about UI and UX tool coverage
