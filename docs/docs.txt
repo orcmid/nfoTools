@@ -1,4 +1,4 @@
-docs.txt 0.0.14                     UTF-8                      dh:2022-06-11
+docs.txt 0.0.15                     UTF-8                      dh:2022-11-**
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                             nfoWare/nfoWorks nfoTools
@@ -168,6 +168,13 @@ TODO
     the page (folder) being viewed.  Also, show that this is from an
     index.html.  There needs to be some project identification of this effort.
     I also need for this to be harmonious for other GitHub/orcmid projects.
+
+  * Add an audio topic for digital audio operation and such.  There might
+    need to be one on graphics also, in this respect.
+
+  * We need something on the 3-y's: interoperability (i14y), accessibility
+    (a11y), and internationalization (i18n).  Well, i18n is not a y but that's
+    computation/software for you.
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 

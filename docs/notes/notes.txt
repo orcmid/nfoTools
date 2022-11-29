@@ -1,4 +1,4 @@
-notes.txt 0.0.9                    UTF-8                        dh:2022-06-12
+notes.txt 0.0.10                   UTF-8                        dh:2022-11-29
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -53,7 +53,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. nfoTools Project Notes.  nfoTools file docs/notes.txt
-   version 0.0.9 dated 2022-06-12 available on the Internet as a version of
+   version 0.0.10 dated 2022-11-29 available on the Internet as a version of
    <https://orcmid.github.io/nfoTools/notes/notes.txt>
 
 TODO
@@ -112,8 +112,15 @@ TODO
  * Change the folio-page header top bars to match the standard form exhibited
    on docs/dev/ now.
 
+ * Bring over topics on what language and what kind of software development
+   here.  Contrast with approaches here.   Sounds like two notes.  Then they
+   can be usefully referenced from more focused tools and dev notes.  See
+   T060101.txt
+
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.10 2022-11-29T17:11Z Marker for two notes on areas of development and
+        choice of tools, and one on the path featured here.
  0.0.9 2022-06-12T23:30Z Manage TODOs, Initiate top header revision
  0.0.8 2022-04-01T18:28Z Manage TODOs, Connect Turing Awards
  0.0.7 2022-03-01T02:28Z Manage TODOs, Connect N220201
