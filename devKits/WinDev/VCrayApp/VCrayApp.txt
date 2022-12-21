@@ -1,4 +1,4 @@
-VCrayApp.txt 0.0.6                  UTF-8                      dh:2022-10-19
+VCrayApp.txt 0.0.7                  UTF-8                      dh:2022-12-21
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                       RAYLIB APP DEVELOPMENT PROJECT
@@ -38,7 +38,7 @@ MANIFEST
     .gitignore
         Keeping raylib\ here out of the winDev\VCrayApp repository
 
-    VCrayApp-release.txt
+    VCrayApp-checklist.txt
         Checklist of activities in the development and staging of a VCrayApp
         release.
 
@@ -82,7 +82,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. Raylib App Construction-Kit Project. nfoTools Project
-   text file VCrayApp.txt 0.0.5 dated 2022-07-13, available on the Internet
+   text file VCrayApp.txt 0.0.7 dated 2022-12-21, available on the Internet
    as a version of
    <https://github.com/orcmid/nfoTools/blob/master/devKits/WinDev/VCrayApp/VCrayApp.txt>
 
@@ -158,8 +158,13 @@ TODO
    thread on which the app runs and how the cycle works with regard to the
    presentation and interaction with the display and input devices.
 
+ * Fold the VCrayApp model back to an update of VCbuild that uses a similar
+   structure for for src, cache, and app in generic construction projects of
+   single executables.
+
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.7 2022-12-21T19:26Z Manifest correction, manage TODOs
  0.0.6 2022-10-20T20:46Z Add raylib-4.0.0.zip and account for limitations
        because of an external/miniaudio.h that fails to compile with VC/C++.
  0.0.5 2022-07-13T15:41Z TODOs on NOTICE.txt and C/C++ programming not taught.
