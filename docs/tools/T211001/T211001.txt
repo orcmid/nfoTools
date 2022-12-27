@@ -1,4 +1,4 @@
-T211001.txt 0.0.2                   UTF-8                      dh:2022-04-27
+T211001.txt 0.0.3                   UTF-8                      dh:2022-12-27
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -26,9 +26,9 @@ MANIFEST
      VSCode-2021-10-20-0950-WebPreview.png
            parking place for VSCode Web material until have a place for it
 
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-                       Copyright 2021 Dennis E. Hamilton
+                Copyright 2021-2022 Dennis E. Hamilton
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -47,7 +47,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. T211001: Visual Studio Code.  nfoTools project text
-   file T211001.txt version 0.0.1 dated 2021-10-23, available on the Internet
+   file T211001.txt version 0.0.3 dated 2021-12-27, available on the Internet
    as a version of
    <https://orcmid.github.io/nfoTools/tools/T211001/T211001.txt>
 
@@ -118,10 +118,14 @@ TODO
  * A new link on the Build Tools:
    <https://visualstudio.microsoft.com/visual-cpp-build-tools/>.
 
-  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ * Useful to point out that VS Code works with WSL and Linux build chains.
+   <https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-vscode>
 
+----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+ 0.0.3 2022-12-27T17:38Z Tidy up.  TODOs need to be reviewed.
  0.0.2 2022-04-27T16:43Z Manage TODOs, muse on Git and GitHub
  0.0.1 2021-10-23T19:00Z Bring current, expand TODOs
  0.0.0 2021-10-18T18:20Z Placeholder made from tools.txt as boiler plate.
 
-                     ***** end of T21001.txt *****
+                     ***** end of T211001.txt *****
