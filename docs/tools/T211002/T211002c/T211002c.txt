@@ -1,4 +1,4 @@
-T211002c.txt 0.0.4                  UTF-8                       dh:2022-06-20
+T211002c.txt 0.0.5                  UTF-8                       dh:2022-12-27
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -58,7 +58,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. T211002c: VS Build Tools Installation.  nfoTools
-   project text file T211002c.txt version 0.0.4 dated 2022-06-20, available on
+   project text file T211002c.txt version 0.0.5 dated 2022-12-27, available on
    the Internet as a version of
    <https://orcmid.github.io/nfoTools/tools/T211002/T211002c/T211002c.txt>
 
@@ -71,8 +71,20 @@ TODO
  * Getting VS2022 Build Tools Updates is also important, along with getting
    versions beyond VS2022.
 
+ * It is now more difficult to find VS Build Tools on the Microsoft Site.
+   <https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2022>
+   It is necessary to search for that.  The above permalink is provided at the
+   destination.  This changes things.  I need to figure out how to keep pace
+   with the disappearance of this on the developer and VS pages.
+
+ * Oops, false alarm.  I provide the above link already.  However I need to
+   review the detailed alternative to ensure that things still work and that
+   I have a means to introduce an update when things are changed out from
+   under this approach.
+
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.5 2022-12-27t17:42Z Reflect the hiding of Build Tools to act on.
  0.0.4 2022-06-20T00:22Z Introduce life-cycle concerns - updates and beyond
  0.0.3 2021-11-21T17:33Z Advance the Manifest and TODOs
  0.0.2 2021-11-12T21:15Z Manage TODOs, reflecting progress
