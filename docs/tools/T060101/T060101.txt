@@ -1,4 +1,4 @@
-T060101.txt 0.0.7                   UTF-8                       dh:2022-11-29
+T060101.txt 0.0.8                   UTF-8                       dh:2022-12-28
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -44,7 +44,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. T060101: C/C++ Programming.  nfoTools project text
-   file T060101.txt version 0.0.7 dated 2022-11-29, available on the
+   file T060101.txt version 0.0.8 dated 2022-12-28, available on the
    Internet as a version of
    <https://orcmid.github.io/nfoTools/tools/T060101/T060101.txt>
 
@@ -144,8 +144,15 @@ TODO
     And, indeed, I have thrived in front-end web page work and use of the
     web for writing and documentation.  THIS SHOULD BE COVERED IN A NOTES.
 
+  * Cite <https://en.wikibooks.org/wiki/Portability_and_the_C_Language>,
+    Jaeschke, Rex.  Portability and the C Language, ed.2. Wikibooks edition
+    (January 2022)available on the Internet with editing history at
+    <https://en.wikibooks.org/w/index.php?title=Portability_and_the_C_Language&action=history>.
+
+
   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.8 2022-12-28T05:07Z Add Rex Jaeschke citation to add to the list.
  0.0.7 2022-11-29T17:06Z Musing on the Codecademy career exploration quiz.
  0.0.6 2022-11-16T17:39Z Manage TODOs, Musings
  0.0.5 2022-10-23T17:24Z Manage TODOs
