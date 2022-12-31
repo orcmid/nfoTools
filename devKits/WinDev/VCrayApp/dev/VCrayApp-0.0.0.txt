@@ -1,4 +1,4 @@
-VCrayApp-0.0.0.txt 0.0.4            UTF-8                         2022-10-26
+VCrayApp-0.0.0.txt 0.0.5            UTF-8                         2022-12-31
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                       NFOTOOLS DEVKIT FOR RAYLIB APPS
@@ -75,9 +75,9 @@ VCrayApp-0.0.0.txt 0.0.4            UTF-8                         2022-10-26
      + GitHub Windows Client for public access to development projects
      + GPG4Win for creation and verification of digital signatures
 
-    The first seven are essential.  The remainder are recommended.  They are
+    The first seven are essential.  The remainder are recommended; those are
     not required to get started.  For more information on dependencies, see
-    <https://orcmid.github.io/dev/D211101>.
+    <https://orcmid.github.io/nfoTools/dev/D211101>.
 
 DOWNLOADS AND SETUP
 
@@ -88,18 +88,19 @@ DOWNLOADS AND SETUP
     If you have not already done so, choose where on your computer you want
     to have the raylib source code and your own adjacent projects.  See
     <https://orcmid.github.io/nfoTools/tools/T211101/> and also the setup
-    arrangement described at <https://orcmid.github.io/dev/D211101> and
-    <https://orcmid.github.io/dev/D211101/D211101a>.
+    arrangement described at <https://orcmid.github.io/nfoTools/dev/D211101>
+    and <https://orcmid.github.io/nfoTools/dev/D211101/D211101a>.
 
     raylib\ must be setup before VCrayApp can be used.
 
-    Download VCrayApp from <https://orcmid.github.io/dev/D211101/D211101d>.
+    Download VCrayApp from
+    <https://orcmid.github.io/nfoTools/dev/D211101/D211101d>.
     If a later version is available, consider using that version instead.
 
     It is useful to download VCrayApp-0.0.0.zip to a location that you can
     use as a source of copies for one or more VCrayApp projects.
 
- EXTRACTION AND RENAMING OF VCrayApp-0.0.0.zip CONTENT
+EXTRACTION AND RENAMING OF VCrayApp-0.0.0.zip CONTENT
 
     After downloading VCrayApp-0.0.0.zip to a place where you want to keep
     it, make a copy to a place where you want to use it.
@@ -115,9 +116,9 @@ DOWNLOADS AND SETUP
 
     Click "Extract".
 
-    There should now be a VCrayApp-0.0.0\ folder in the same folder as the
-    Zip file you extracted.  Rename that folder to the name you want for this
-    VCrayApp project of yours.  This is your project folder.
+    There should now be a VCrayApp-0.0.0\ sub-folder in the same folder as the
+    Zip file you extracted.  Rename that sub-folder to the name you want for
+    this VCrayApp project of yours.  This is your project folder.
 
 
  CONFIRMING THE VCrayApp SETUP AND OPERATION
@@ -134,15 +135,15 @@ DOWNLOADS AND SETUP
 
         VCrayApp -r
 
-    To compile raylib components to the cache\ folder, compile a sample
+    This will compile raylib components to the cache\ folder, compile a sample
     program to the app\ folder, and then operate that program.
 
     If there are any failure messages, correct for them until this command
-    succeeds.  See <https://orcmid.github.io/dev/D211101> for additional
-    information.
+    succeeds.  See <https://orcmid.github.io/nfoTools/dev/D211101> for
+    additional information.
 
     Use your text editor to modify VCrayApp.bat for your own project instead
-    of the sample.  Only two changes are required, as specified in the file.
+    of the sample.  Only two changes are required, as specified in that file.
 
 
 MANIFEST OF VCrayApp-0.0.0.zip
@@ -159,9 +160,9 @@ MANIFEST OF VCrayApp-0.0.0.zip
         and perform compilation of a raylib cache\ and project source codes,
         to deliver a compiled result in app\.
 
-    .vscode\         provided for use of Visual Studio Code with the project
-        .vscode.txt  synopsis and manifest for the .vscode folder
-        c_cpp_properties.json
+    .vscode\                      provided for use of Visual Studio Code with
+        .vscode.txt                  a .txt project synopsis and manifest for
+        c_cpp_properties.json        the .vscode folder
 
     app\
         .gitignore   used to suppress compiled binaries from source control
@@ -185,7 +186,7 @@ MANIFEST OF VCrayApp-0.0.0.zip
                      options file for both cache\ and project code compilation
 
     src\
-        src.txt     synopsis and manifest for the src\ folder
+        src.txt      synopsis and manifest for the src\ folder
 
     The supplied text files provide further descriptions and explanations
     for usage and customization of each folder.
@@ -211,13 +212,14 @@ MANIFEST OF VCrayApp-0.0.0.zip
  ATTRIBUTION
 
    Hamilton, Dennis E. Building raylib Apps with VS Developer Command Prompt.
-   nfoTools file VCrayApp-0.0.0.txt version 0.0.3 dated 2022-08-24 available
+   nfoTools file VCrayApp-0.0.0.txt version 0.0.5 dated 2022-23-31 available
    on the internet as a version of
    <https://orcmid.github.io/dev/D211101/D211101c/VCrayApp-0.0.0.txt>
 
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.5 2022-12-31T20:12Z Review and Touch-ups
  0.0.4 2022-10-26T17:34Z Near-final draft before signing
  0.0.3 2022-08-24T17:28Z Provisional draft for Alpha release
  0.0.2 2022-07-13T17:24Z Draft Editing of Expanded Boilerplate.
