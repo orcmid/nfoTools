@@ -1,4 +1,4 @@
-dev.txt 0.0.3                       UTF-8                         2022-10-19
+dev.txt 0.0.4                       UTF-8                         2022-12-31
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                        AN NFOTOOLS COMING ATTRACTION
@@ -16,7 +16,7 @@ SYNOPSIS
 
     Frozen versions for a release of any kind (alpha, beta, etc.) appear at
     the VCrayApp level and also in a web location for direct download and
-    employment.  See <https://orcmid.github.io/dev/D211101> for these.
+    employment.  See <https://orcmid.github.io/nfoTools/dev/D211101>.
 
 MANIFEST
 
@@ -72,31 +72,25 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. raylib App Build with VS Developer Command Prompt.
-   nfoTools text file version 0.0.3 dated 2022-10-18, available on the
+   nfoTools text file version 0.0.4 dated 2022-12-31, available on the
    Internet as a version of
    <https://github.com/orcmid/nfoTools/blob/master/devKits/WinDev/VCrayApp/dev/dev.txt>
 
 TODO
 
- * Work toward VCrayApp 1.0.0, assuming we don't need any intermediate 0.0.x
+ * Work toward VCrayApp 1.0.0 after 0.0.x alphas and 0.1.x betas
 
- * Correct the attribution
-
- * Add links to more and better information in the rayConfirm.c file
+ * Add links to more and better information in the rayConfirm.c file.
+   Replace place-holder <...> items with valid links.
 
  * Prepare an alpha release for early testing.  Establish prerequisites.
 
  * Remember how to setup all the digital signatures and provide that.
 
- * Fix the lines 30-33 remarks that refer to nfoTools for more information.
-   The links are incorrect.
-
- * Explain the change in cache/raylibCode.opt to provide a 3.7.0.opt version
-   and a 4.0.0.opt version that does not have the miniaudio.h bug.
-
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.4 2022-12-31T20:43Z Manage TODOs, update remarks
  0.0.3 2022-10-19T20:48Z Manage TODOs, reflect 4.0.0 inclusion
  0.0.2 2022-08-25T00:11Z Manage TODOs, touch-ups
  0.0.1 2022-06-09T16:54Z Touch-up with VCrayApp details

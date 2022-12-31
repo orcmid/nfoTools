@@ -1,5 +1,5 @@
 @echo off
-rem VCrayApp 0.0.0 VCrayApp.bat 0.0.17 UTF-8                       2022-10-26
+rem VCrayApp 0.0.0 VCrayApp.bat 0.0.18 UTF-8                       2022-12-31
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 rem                  BUILDING RAYLIB APP WITH VC/C++ TOOLS
@@ -29,11 +29,11 @@ SET VCrayApp=0.0.0
 
 rem Additional documentation of this procedure and its usage are found in the
 rem accompanying VCrayApp-%VCrayApp%.txt file.  For further information, see
-rem ^<https:\\orcmid.github.org\nfoTools\D211101^> and check for the latest
-rem version at ^<https:\\orcmid.github.org\nfoTools\D211101\D211101c^>.
+rem ^<https://orcmid.github.io/nfoTools/dev/D211101^> and check for the latest
+rem version at ^<https://orcmid.github.io/nfoTools/dev/D211101/D211101c^>.
 
-rem Remebering where rayApp.bat is called *from*, so it can be restored on
-rem exit including after errors.
+rem Remembering where rayApp.bat is called *from*, so it can be restored on
+rem exit, including after errors.
 SET VCfrom=%CD%
 
 rem SELECT EMBEDDED, TERSE, OR DEFAULT
@@ -109,7 +109,8 @@ DEL %~dp0cache\rglfw.obj
 :CACHECHECK
 IF EXIST %~dp0cache\rglfw.obj GOTO :APPBUILD
 DEL %~dp0cache\*.obj > nul 2>nul
-rem using presence of the last-built raylib .obj to determine full cache
+rem Using presence of the last-built raylib .obj to determine full cache.
+rem *IMPORTANT* Keep consistent with %~dp0cache\raylibCode.opt
 
 CD %~dp0cache
 CL %VChush% /w /c @VCoptions.opt @raylibVars.opt @raylibCode.opt %VCterse%
@@ -256,6 +257,7 @@ rem For additional information, see the accompanying NOTICE.txt file.
 rem
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 rem
+rem 0.0.18 2022-12-31T20:39Z Review and touch-up
 rem 0.0.17 2022-10-26T16:38Z More message cleanups
 rem 0.0.16 2022-10-17T18:35Z Cleanup compilation failure and success messages
 rem 0.0.15 2022-08-24T23:22Z Add Copyright, touch-ups
@@ -274,3 +276,4 @@ rem 0.0.3 2021-11-08T22:05Z Start blending VCbind on-ramp and guard rails
 rem 0.0.2 2021-11-07T23:43Z Rename and continue prototyping.
 rem 0.0.1 2021-11-05T21:39Z Trial Simplification for nfoTools + FC_CPP
 rem 0.0.0 2021-04-26T00:01Z 3.7.0 raylib/projects/scripts/build_windows.bat
+rem                      *** end of VCrayApp.bat ***
