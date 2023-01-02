@@ -1,4 +1,4 @@
-NOTICE.txt 1.0.1                      UTF-8                      2023-01-02
+NOTICE.txt 1.0.2                      UTF-8                      2023-01-02
 
                                  VCrayApp NOTICE
                                 =================
@@ -33,7 +33,8 @@ INFORMAL SUMMARY
     You can use and redistribute releases of VCrayApp without limitation.
     If you modify and/or incorporate VCrayApp in a distribution of your own,
     you should provide attribution to the origin of VCrayApp and also assert
-    that the locatable original form is available under the Apache License.
+    that the locatable original form is available under the Apache License
+    at <https://orcmid.github.io/nfoTools/dev/D211101d>.
 
     You can provide a different license of your own choosing.  That does not
     alter the copyright and license over the original portions that do not
