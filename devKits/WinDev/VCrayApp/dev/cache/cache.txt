@@ -1,4 +1,4 @@
-VCrayApp 0.0.0 cache.txt 0.0.17     UTF-8                         2023-01-02
+VCrayApp 0.0.0 cache.txt 0.0.18     UTF-8                         2023-01-02
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -21,7 +21,7 @@ VCrayApp 0.0.0 cache.txt 0.0.17     UTF-8                         2023-01-02
   *    without taking the time to compile them every time.                *
   *                                                                       *
   *    If VCrayApp is re-extracted or is updated and extracted, this      *
-  *    file and all other files of the manifest will be replaced. If      *
+  *    file and all other files of the new manifest will be replaced. If  *
   *    any *.opt files have been altered, they should first be renamed    *
   *    for protection against being over-written.  Then use those for     *
   *    review and adjustment of the restored/updated versions.            *
@@ -60,9 +60,9 @@ VCrayApp 0.0.0 cache.txt 0.0.17     UTF-8                         2023-01-02
     relative location of a raylib/ source-code folder.  These must be altered
     together for any change to relative location (including use of an absolute
     location).  The use of relative addresses also requires that VCrayApp be
-    installed on the same drive as raylib release code.
+    installed on the same drive as the raylib\ release code.
 
-    For more information, see ******* TBD *******.
+    For more information, see <https://orcmid.github.io/nfoTools/dev/D211101>.
 
 MANIFEST
 
@@ -135,13 +135,14 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. VCrayApp raylib Cache Folder.  VCrayApp 0.0.0 text file
-   cache.txt version 0.0.17 dated 2023-01-02, available on the Internet as a
+   cache.txt version 0.0.18 dated 2023-01-02, available on the Internet as a
    version of
     <https://github.com/orcmid/nfoTools/blob/master/devKits/WinDev/VCrayApp/dev/cache/cache.txt>.
 
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.18 2023-01-02T22:29Z Add link to the docs/dev/D211101/ material
  0.0.17 2023-01-02T17:47Z Touch up explanations
  0.0.16 2022-10-23T19:14Z Add /fp:precise to VCoptions for predictable graphic
         computations
