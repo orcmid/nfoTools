@@ -1,4 +1,4 @@
-D211101.txt 0.0.4                   UTF-8                         2022-10-26
+D211101.txt 0.0.5                   UTF-8                         2023-01-02
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -14,9 +14,9 @@ D211101.txt 0.0.4                   UTF-8                         2022-10-26
 VCrayApp consists of a Zip package for a software construction set to simplify
 command-line compiling of C/C++ language programs using Microsoft Windows
 developer tools and the raysan5/raylib library for graphical applications.
-VCrayApp  is delivered in a form that can be confirmed for correct
+VCrayApp is delivered in a form that can be confirmed for correct
 operation before customization as part of a specific project.
-  
+
 MANIFEST
 
      D211101.txt    this manifest and job-jar file
@@ -32,7 +32,7 @@ MANIFEST
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-                      Copyright 2022 Dennis E. Hamilton
+                    Copyright 2022-2023 Dennis E. Hamilton
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -51,7 +51,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. VCrayApp: VC/C++ Command-Line raylib App devKit.
-   nfoTools development text file D211101.txt version 0.0.4 dated 2022-10-26,
+   nfoTools development text file D211101.txt version 0.0.5 dated 2023-01-02,
    available on the Internet as a version of
    <https://orcmid.github.io/nfoTools/dev/D211101/D211101.txt>
 
@@ -85,8 +85,9 @@ TODO
 
  * Use D211101d/ for the alpha 0.0.0 release
 
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.5 2023-01-02T18:58Z Review and TODO Touch-ups
  0.0.4 2022-10-26T17:37Z Adjust for the desired version progression technique
  0.0.3 2022-08-18T18:07Z expand for Setup and Operation
  0.0.2 2022-08-16T22:39Z touch-ups and simplification
@@ -94,4 +95,4 @@ TODO
  0.0.0 2022-05-30T17:35Z Placeholder morphed from D161101.txt 0.0.5 and
        adjusted for getting started on making VCrayApp available.
 
-              ***** end of D211101.txt *****
+                       ***** end of D211101.txt *****

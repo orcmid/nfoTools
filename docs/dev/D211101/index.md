@@ -1,4 +1,4 @@
-<!-- index.md 0.0.6                 UTF-8                          2022-08-19
+<!-- index.md 0.0.7                 UTF-8                          2023-01-02
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                VCRAYAPP: VC/C++ COMMAND-LINE RAYLIB APP DEVKIT
@@ -6,17 +6,17 @@
 
 # [VCrayApp: VC/C++ Command-Line raylib App DevKit](.)
 
-| ***[nfoTools](../../)*** | [dev](../)[>D211101](.) | ***[index.html](index.html) 0.0.6 2022-08-19*** |
+| ***[nfoTools](../../)*** | [dev](../)[>D211101](.) | ***[index.html](index.html) 0.0.7 2023-01-02*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../../images/hardhat-logo.gif) |
 
-VCrayApp is a folder organization to be used in creating Microsoft
-Windows programs using the
+VCrayApp is a project-folder organization that is useful for creating
+Microsoft Windows programs using the
 [`raysan5/raylib`](https://www.raylib.com/) library for graphical
 applications.
 
-Initial VCrayApp setup includes confirmation of correct operation that
-can then be confidently customized for a new project.
+Initial VCrayApp project-folder setup includes confirmation of correct
+operation that can then be confidently customized for a new project.
 
 ## 1. Overview
 
@@ -34,39 +34,48 @@ following folder structure:
 
 ```text
     your-development-files-location\
-     |- raylib\                 // folder where raylib *source* is
-     :  ...                     // extracted
-     |- VCrayApp-semver.zip     // at the same level, same drive
-     |- your-extracted-VCrayApp-semver-folder-renamed\
+     |- raylib\                 // folder where raylib release *source* is
+     :  ...                     //    extracted
+     |- VCrayApp-*semver*.zip   // at the same level, same drive as raylib\
+     |- YOUR-PROJECT-FOLDER\    // extracted-VCrayApp-*semver*-folder-renamed
          |- .vscode\            // suggested .vscode settings
          |- app\                // folder where you App is compiled to
-         |- cache\              // folder for working files and VCrayApp
-         |                      // materials
-         |- src\                // optional default location for your
-         |                      // source files
+         |- cache\              // folder for cached working files and
+         |                      //    VCrayApp materials
+         |- src\                // recommended location for your
+         |                      //    source-code files
          |- VCrayApp.bat        // the batch script for compiling your app
-         |- VCrayApp-semver.txt // manifest and readme for the semver version
+         |- VCrayApp-*semver*.txt
+                                // *semver* version synopsis and manifest
 ```
 
 [Semantic versioning](https://semver.org/) is used.  E.g., the Alpha release
-has semver 0.0.0 and is packaged in `VCrayApp-0.0.0.zip`.  There are
+has *semver* 0.0.0 and is packaged in `VCrayApp-0.0.0.zip`.  There are
 explanatory materials and other files in the extracted VCrayApp version and
 its four subfolders.
 
-It is recommended that  `src\` be for your own source code and `app\' be for
-any resources that the compiled program will access.  Compilation of code
-examples, other projects, and related tutorials will employ that arrangement.
+It is recommended that  `src\` be for your own source code and `app\` include
+any resources that will be distributed with and accessed by the compiled
+`.exe`.
+
+Code examples, other projects, and related tutorials will further demonstrate
+the VCrayApp arrangement.
+
+Details of this organization and structure of the individual
+subfolders is provided in [D211101a: VCrayApp Setup](D211101a).
 
 ### 1.2 VCrayApp.bat
 
-Builds of a VCrayApp project's code are by performing `VCrayApp.bat` from
-a developer command prompt.
+Builds of your VCrayApp project's code are by performing `VCrayApp.bat` from
+a developer command prompt.  The `.bat` script will report progress through
+build stages and also provide diagnostic messages concerning any failures
+that occur in the `.bat` operation.
 
 `VCrayApp.bat` is initially set to compile a sample program that
 is provided in the `cache\` folder.  After installation and operation is
-confirmed, `VCrayApp.bat` must be modified to specify the name for your
+confirmed, `VCrayApp.bat` **must be modified** to specify the name for your
 application and the location of your source files.  No other modifications
-are required.  The initial lines of `VCrayApp.bat` explain the modifications.
+are required.  The initial lines of `VCrayApp.bat` direct the modifications.
 
 Performing command "`VCrayApp ?`" from a developer command prompt focused on
 your project folder will provide usage information.
@@ -89,11 +98,16 @@ your project folder will provide usage information.
 ```
 
 Without any parameters, `VCrayApp.bat` will provide a verbose
-compilation of the app after building the cache if needed.
+compilation of the app after building any needed cache.  This is recommended
+to develop a sense of the stages and their details until predictable
+operation is confirmed.
 
 A successful compile will provide an executable in the `app\` subfolder
 for operation along with whatever assets have been placed there.  It is
 possible to deploy a successfully-built application from `app\`.
+
+Further details of VCrayApp operation are provided in
+[D211101b: VCrayApp Operation](D211101b).
 
 ## 2. Prerequisites and Dependencies
 
@@ -119,7 +133,7 @@ tools along with confident use of C Language:
 * Windows Built-in Zip-Folder Tool
 * [Visual Studio Native Build Tools](https://orcmid.github.io/nfoTools/tools/T211002/)
 * [Developer Command Prompt](https://orcmid.github.io/nfoTools/tools/T060501/)
-* VC/C++ Command Line Compiler, CL.exe
+* VC/C++ Command Line Compiler, `CL.exe`
 * raylib *source* code *release* downloaded, unzipped, and renamed `raylib\`
 * a text editor for editing of project files (Visual Studio Code recommended)
 
@@ -141,8 +155,7 @@ and the Visual Studio Community editions.  Additional levels of Visual
 Studio can also be used, all via their Native Tools Command Prompt.  No
 use is made of Visual Studio projects, solutions, and the conventional
 separation of debug and release builds.  With nfoTools, emphasis is on
-testing and confirmation of what is shipped: release-builds under-development
-and final.
+testing and confirmation with the same program that is provided to users.
 
 ## 4. Available Materials
 
@@ -193,6 +206,7 @@ time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.7 2023-01-02T18:56Z Smoothing of text, more-consistent terminology
      0.0.6 2022-08-19T21:46Z Corrections and touch-ups
      0.0.5 2022-08-18T20:16Z Touch-up, and Available Materials and other links
      0.0.4 2022-08-16T22:44Z Add Introductory Materials
