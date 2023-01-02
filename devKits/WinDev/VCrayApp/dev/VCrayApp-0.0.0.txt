@@ -1,4 +1,4 @@
-VCrayApp-0.0.0.txt 0.0.5            UTF-8                         2022-12-31
+VCrayApp-0.0.0.txt 0.0.6            UTF-8                         2023-01-02
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                       NFOTOOLS DEVKIT FOR RAYLIB APPS
@@ -76,7 +76,9 @@ VCrayApp-0.0.0.txt 0.0.5            UTF-8                         2022-12-31
      + GPG4Win for creation and verification of digital signatures
 
     The first seven are essential.  The remainder are recommended; those are
-    not required to get started.  For more information on dependencies, see
+    not required for starting up.  There are alternatives.  The specific ones
+    happen to be those relied upon in the development of nfoTools projects.
+    For more information on dependencies, see
     <https://orcmid.github.io/nfoTools/dev/D211101>.
 
 DOWNLOADS AND SETUP
@@ -148,14 +150,14 @@ EXTRACTION AND RENAMING OF VCrayApp-0.0.0.zip CONTENT
 
 MANIFEST OF VCrayApp-0.0.0.zip
 
-    NOTICE.txt 1.0.0 1,944 byte 2022-08-25T00:09Z version
+    NOTICE.txt 1.0.2 2,056 byte 2023-01-02T22:09Z version
         applicable NOTICE for VCrayApp-0.0.0.zip and its content
 
     VCrayApp-0.0.0.txt 0.0.8 9,670 byte 2016-11-24T17:28 clearsigned version
         This description file on organization of the archive and use of its
         materials.
 
-    VCrayApp.bat 0.0.0 0.18 15,044 byte 2015-11-24T11:11 version
+    VCrayApp.bat 0.0.18 10,901 byte 2022-12-31T20:30Z version
         Script that, when run, will confirm VC/C++ command-prompt settings
         and perform compilation of a raylib cache\ and project source codes,
         to deliver a compiled result in app\.
@@ -212,13 +214,14 @@ MANIFEST OF VCrayApp-0.0.0.zip
  ATTRIBUTION
 
    Hamilton, Dennis E. Building raylib Apps with VS Developer Command Prompt.
-   nfoTools file VCrayApp-0.0.0.txt version 0.0.5 dated 2022-23-31 available
+   nfoTools file VCrayApp-0.0.0.txt version 0.0.6 dated 2023-01-02 available
    on the internet as a version of
    <https://orcmid.github.io/dev/D211101/D211101c/VCrayApp-0.0.0.txt>
 
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.6 2023-01-02T22:36Z Updating manifested time stamps
  0.0.5 2022-12-31T20:12Z Review and Touch-ups
  0.0.4 2022-10-26T17:34Z Near-final draft before signing
  0.0.3 2022-08-24T17:28Z Provisional draft for Alpha release
