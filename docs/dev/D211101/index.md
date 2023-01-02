@@ -6,7 +6,7 @@
 
 # [VCrayApp: VC/C++ Command-Line raylib App DevKit](.)
 
-| ***[nfoTools](../../)*** | [dev](../)[>D211101](.) | ***[index.html](index.html) 0.0.7 2023-01-02*** |
+| ***[nfoTools](../../)*** | [dev](../)[>D211101](.) | ***[index.html](index.html) 0.0.8 2023-01-02*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../../images/hardhat-logo.gif) |
 
@@ -163,8 +163,9 @@ testing and confirmation with the same program that is provided to users.
 |   :-:   |   :-:   |  :-:   |  ---  |
 | [D211101a](D211101a/) | 2022-08-18 | placeholder | VCrayApp Setup |
 | [D211101b](D211101b/) | 2022-08-18 | placeholder | VCrayApp Operation |
-| [D211101c](D211101c/) | 2022-06-09 | placeholder | VCrayApp 0.0.0 (alpha) |
+| [D211101c](D211101c/) | 2022-08-21 | placeholder | VCrayApp latest |
 |                       |            |                  |     |
+| [D211101d](D211101d/) | 2022-10-26 | placeholder | VCrayApp 0.0.0 (alpha)
 
 ## 5. Development
 
@@ -206,6 +207,7 @@ time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.8 2023-01-02T22:04Z Adjust Available Materials
      0.0.7 2023-01-02T18:56Z Smoothing of text, more-consistent terminology
      0.0.6 2022-08-19T21:46Z Corrections and touch-ups
      0.0.5 2022-08-18T20:16Z Touch-up, and Available Materials and other links

@@ -1,4 +1,4 @@
-D211101.txt 0.0.5                   UTF-8                         2023-01-02
+D211101.txt 0.0.6                   UTF-8                         2023-01-02
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -75,18 +75,12 @@ TODO
    is also the middle case, inserting a VCrayApp kit in a project one wants
    to work on (a clone of).
 
- * Add D211101a/ for VCrayApp Setup
-
- * Add D211101b/ for VCrayApp Operation
-
  * Ensure that the index.html pages are in the title blocks too
 
- * Use D211101c/ for the latest release
-
- * Use D211101d/ for the alpha 0.0.0 release
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.6 2023-01-02T22:07Z Manage TODOs, Alignment of D211101.txt and index.md
  0.0.5 2023-01-02T18:58Z Review and TODO Touch-ups
  0.0.4 2022-10-26T17:37Z Adjust for the desired version progression technique
  0.0.3 2022-08-18T18:07Z expand for Setup and Operation
