@@ -1,4 +1,4 @@
-VCrayApp-checklist.txt 0.0.3        UTF-8                         2022-10-**
+VCrayApp-checklist.txt 0.0.3        UTF-8                         2023-01-07
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                       RAYLIB APP DEVELOPMENT PROJECT
@@ -6,8 +6,8 @@ VCrayApp-checklist.txt 0.0.3        UTF-8                         2022-10-**
 
 <https://github.com/orcmid/nfoTools/blob/master/devKits/WinDev/VCrayApp/VCrayApp-checklist.txt>
 
-               VCRAYAPP RELEASE DEVELOPMENT AND DEPLOYMENT
-               -------------------------------------------
+          VCRAYAPP RELEASE DEVELOPMENT AND DEPLOYMENT CHECKLIST
+          -----------------------------------------------------
 
     This note provides a checklist for the development and deployment of
     a VCrayApp devKit release.
@@ -79,16 +79,39 @@ VCrayApp-checklist.txt 0.0.3        UTF-8                         2022-10-**
     * VCrayApp-semver.txt
         o Ensure place-holder under D211101x subfolder.
 
-    * Signatures and hash checks.
-        o Have a dev procedure for the methodology and how it is done.
-        o This could be in docs/dev/ but maybe something n dev also?
-        o Find what I had for this with VCbind and how I demonstrated stuff,
-          where I provided information on it.
+DEPLOYMENT
+
+    * Use the VCBind model
+    * For the manifest, do gpg --clear-sign --armor VCrayApp-*semver*.txt
+      To produce VCrayApp-*semver*.txt.asc.  Get this to correctly describe
+      itself as the *.txt file.  Then delete the *.txt file and rename the
+      *.txt.asc file to *.txt.  This should be checked in.
+    * Make the VCrayApp-*semver*.zip of everything but the dev.txt file.
+      Copy the two VCrayApp-*semver* files to the VCrayApp level.  Delete
+      the *.zip in the dev/ folder.
+    * Create the gpg --detach-sign --armor VCrayApp-*semver*.zip and that
+      will make VCrayApp-*semver*.zip.asc as the detached signature.
+    *** TODO: The download for this needs to describe how to check the
+      verify the signature, the clearsigned VCrayApp-*semver*.txt.
+    * Create the SHA256 Hash of the VCrayApp-*semver*.zip for usage also.
+      This can be done running certUtil -hashfile (file) SHA256 >(file).SHA256
+
+    * The signature check works with gpg --verify naming either the .txt
+      version or the .asc detached signature.
+
+    * The hash can be checked by comparison, which is not much fun.  There
+      seems to be no check utility and that's just too bad.  THIS SHOULD BE
+      AN NFOTOOLS PROJECT.
+
+    * Ensure that GIT and the site treat .asc and .sha256 as text/plain. That
+      is the default.  We need to figure out if clear-sign armor files check
+      properly whichever way line ends are encoded: CR/LF or just one or the
+      other.  XXX: THIS MAY BE A FRAGILE DEAL.
 
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-                     Copyright 2022 Dennis E. Hamilton
+                   Copyright 2022-2023 Dennis E. Hamilton
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -106,21 +129,12 @@ VCrayApp-checklist.txt 0.0.3        UTF-8                         2022-10-**
 
  ATTRIBUTION
 
-   Hamilton, Dennis E. VCrayApp Release Development and Deployment. nfoTools
-   Project text file VCrayApp-checklist.txt 0.0.2 dated 2022-08-6, available on
-   the Internet as a version of
+   Hamilton, Dennis E. VCrayApp Release Development and Deployment Checklist.
+   nfoTools Project text file VCrayApp-checklist.txt 0.0.2 dated 2022-08-6,
+   available on the Internet as a version of
    <https://github.com/orcmid/nfoTools/blob/master/devKits/WinDev/VCrayApp/VCrayApp-release.txt>
 
 TODO
-
- * Use development of VCrayApp-0.0.0 alpha release for development of the
-   initial checklist.
-
- * Decide whether to stick with raylib 3.7.0 or go to raylib 4.0.0.  Maybe
-   save 4.0.0 for the beta release.
-
- * Include statement on the use of raylib source-code releases, not any other
-   form.
 
  * I intend to make VCrayApp-0.0.x available as an alpha release, inviting
    exploration and employment by interested users of raylib.  This means I
@@ -162,6 +176,7 @@ TODO
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.3 2023-01-09T23:22Z Update and manage TODOs
  0.0.2 2022-08-16T15:54Z Rename VCrayApp-checklist.txt
  0.0.1 2022-07-17T18:46Z Intermediate check-in
  0.0.0 2022-07-09T16:22Z Initial placeholder cloned from VCrayApp.txt 0.0.4
