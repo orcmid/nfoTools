@@ -1,4 +1,4 @@
-T211001.txt 0.0.3                   UTF-8                      dh:2022-12-27
+T211001.txt 0.0.4                   UTF-8                         2023-01-07
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -28,7 +28,7 @@ MANIFEST
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-                Copyright 2021-2022 Dennis E. Hamilton
+                Copyright 2021-2023 Dennis E. Hamilton
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -47,7 +47,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. T211001: Visual Studio Code.  nfoTools project text
-   file T211001.txt version 0.0.3 dated 2021-12-27, available on the Internet
+   file T211001.txt version 0.0.4 dated 2023-01-07, available on the Internet
    as a version of
    <https://orcmid.github.io/nfoTools/tools/T211001/T211001.txt>
 
@@ -117,12 +117,18 @@ TODO
 
  * A new link on the Build Tools:
    <https://visualstudio.microsoft.com/visual-cpp-build-tools/>.
+   I should link to T211002 though.
 
  * Useful to point out that VS Code works with WSL and Linux build chains.
    <https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-vscode>
 
+ * VS Code is no longer showing me where lines have been deleted, inserted,
+   or changed until they get checked into GitHub.  Those useful annotations
+   are missing and I don't know what setting restores them, if any.
+
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.4 2023-01-07T18:35Z Manage TODOs, identify change-marking glitch.
  0.0.3 2022-12-27T17:38Z Tidy up.  TODOs need to be reviewed.
  0.0.2 2022-04-27T16:43Z Manage TODOs, muse on Git and GitHub
  0.0.1 2021-10-23T19:00Z Bring current, expand TODOs
