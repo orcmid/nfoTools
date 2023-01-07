@@ -1,5 +1,8 @@
-VCrayApp-0.0.0.txt 0.0.6            UTF-8                         2023-01-02
-----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+VCrayApp-0.0.0.txt 0.0.7            UTF-8                         2023-01-07
+- ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                       NFOTOOLS DEVKIT FOR RAYLIB APPS
                       ===============================
@@ -153,7 +156,7 @@ MANIFEST OF VCrayApp-0.0.0.zip
     NOTICE.txt 1.0.2 2,056 byte 2023-01-02T22:09Z version
         applicable NOTICE for VCrayApp-0.0.0.zip and its content
 
-    VCrayApp-0.0.0.txt 0.0.8 9,670 byte 2016-11-24T17:28 clearsigned version
+    VCrayApp-0.0.0.txt 0.0.7 11,862 byte 2023-01-07T20:49 clearsigned version
         This description file on organization of the archive and use of its
         materials.
 
@@ -193,9 +196,9 @@ MANIFEST OF VCrayApp-0.0.0.zip
     The supplied text files provide further descriptions and explanations
     for usage and customization of each folder.
 
-----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+- ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-                    Copyright 2021-2022 Dennis E. Hamilton
+                    Copyright 2021-2023 Dennis E. Hamilton
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -209,18 +212,19 @@ MANIFEST OF VCrayApp-0.0.0.zip
     See the License for the specific language governing permissions and
     limitations under the License.
 
-----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+- ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
  ATTRIBUTION
 
    Hamilton, Dennis E. Building raylib Apps with VS Developer Command Prompt.
-   nfoTools file VCrayApp-0.0.0.txt version 0.0.6 dated 2023-01-02 available
+   nfoTools file VCrayApp-0.0.0.txt version 0.0.7 dated 2023-01-07 available
    on the internet as a version of
    <https://orcmid.github.io/dev/D211101/D211101c/VCrayApp-0.0.0.txt>
 
 
-----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+- ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.7 2023-01-07T20:44Z Clearsigned version
  0.0.6 2023-01-02T22:36Z Updating manifested time stamps
  0.0.5 2022-12-31T20:12Z Review and Touch-ups
  0.0.4 2022-10-26T17:34Z Near-final draft before signing
@@ -231,3 +235,14 @@ MANIFEST OF VCrayApp-0.0.0.zip
 
 
                     ***** end of VCrayApp-0.0.0.txt *****
+-----BEGIN PGP SIGNATURE-----
+
+iQFGBAEBCAAwFiEEBNBDIpebhN4QdwM0+W6J/9RWYooFAmO52tQSHG9yY21pZEBh
+cGFjaGUub3JnAAoJEPluif/UVmKKtW4H/jCpyZKIiZ9N++UiTeOHPEbFfyPQZUkU
+Y2hAvWrxahx1OZlNabrO9hioDzuBwcf7boRcXmwdAaT6Ownkf+2nxc39Wex3JdDe
+cqLkgKS9HMNvXAYML0BA2baGOv109Kw12t9VreAx/k0rL6EVmvCNJGj/+A7h8K6h
+ofahN85h9gfXMBrVzgDPgfMWGNeLFwu8celeJg4jazK21/T4OkTg6FZPZdGD6lNZ
+ssqOdV1RO7mZu6Pj1rJnw48hvryI0ZFoFWm6uJjZnlK7Hv5gIpHF/QnIEEqwyTsU
+JooGU41ENTj2VrYxvn+99K69OF8Id0Ofx5WfWqmsb7W2oYlOGxvZMZc=
+=ixB8
+-----END PGP SIGNATURE-----
