@@ -1,4 +1,4 @@
-VCrayApp.txt 0.0.7                  UTF-8                      dh:2022-12-21
+VCrayApp.txt 0.0.8                  UTF-8                         2023-01-08
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                       RAYLIB APP DEVELOPMENT PROJECT
@@ -19,15 +19,20 @@ VCrayApp.txt 0.0.7                  UTF-8                      dh:2022-12-21
     those projects.
 
     dev\ and its content mimics the recommended installation of a VCrayApp
-    extraction, with raylib installed as a peer folder.  The VCrayApp 0.0.0
-    organization and VCrayApp.bat depend on that organization.
+    extraction, with raylib installed as a peer folder.  The VCrayApp
+    organization and VCrayApp.bat script depend on such relative proximity.
+
+    VCrayApp releases are subject to semantic versioning.  The three-numeral
+    *semver* starts with 0.0.0 for the initial alpha release and progresses
+    from that value, basically major.minor.patch levels.
 
     VCrayApp is a cousin of the VCbuild construction kit, and modeled on
     that.  It also borrows from the raylib\projects\scripts\build-windows.bat
     script and relies on a comparable structure with cache\ and \app folders.
-    The verification of VCrayApp-0.0.0 is by usage in confirming all of the
+    The verification of VCrayApp-*semver* is by usage in confirming all of the
     raylib\templates\ and raylib\examples.  This is accomplished in the GitHub
-    orcmid/rayLab project using the raylib release in the raylib\ folder here.
+    orcmid/rayLab project using the same raylib releases as used in the
+    raylib\ folder here.
 
 MANIFEST
 
@@ -36,30 +41,65 @@ MANIFEST
         development project
 
     .gitignore
-        Keeping raylib\ here out of the winDev\VCrayApp repository
+        Keeping raylib\ and VCrayapp\ here out of the winDev\VCrayApp
+        repository
 
     VCrayApp-checklist.txt
         Checklist of activities in the development and staging of a VCrayApp
         release.
 
+    dev\
+        Developer foder for the VCrayApp materials under current development.
+        A version of VCrayApp structure before packaging in a release Zip.
+        This is always work-in-progress.  This code is not intended for use
+        by other than developers contributing to VCrayApp itself.
+
     raylib-3.7.0.zip
-        The raylib 3.7.0 release zip used in confirming operation of
-        VCrayApp at this time.
+        The raylib 3.7.0 release zip used in original confirmation of
+        VCrayApp-0.0.0 at this time.
 
     raylib-4.0.0.zip
-        The raylib 4.0.0 release zip used in confirming operation with the
-        latest version that works with Microsoft VC/C++.
+        The raylib 4.0.0 release zip used for confirming VCrayApp operation
+        with the latest raylib version that works with Microsoft VC/C++.
+        (See VCrayApp-0.0.0.txt for particulars)
 
     raylib\
         The Zipped raylib-x.x.0\ folder extracted to here and renamed
-        raylib\ for consistent reference from a VCrayApp-organized
-        project (excluded from Git, extract from the release.zip in any clone)
+        raylib\ for consistent reference from a VCrayApp-organized project
+        (excluded from Git, extracted from the raylib release .zip under test.
+        This is at the same level as dev\ and any VCrayApp\ opened here for
+        confirmation of a VCrayApp-*semver*.zip release candidate.
 
-    dev\
-        Developer setup for the VCrayApp materials under current development.
-        A version of VCrayApp structure before packaging in a release Zip.
-        This is always work-in-progress.  Releases are in docs/dev/ folders.
+    VCrayApp\
+        Produced by unzipping VCrayApp-*semver*.zip here and renaming it to
+        VCrayApp.  This folder is also excluded from Git.  It is created for
+        confirmation of any VCrayApp release candidate and located at the
+        same level as raylib\ for that purpose.
 
+    VCrayApp-0.0.0 Release candidate
+        The following comprise the release candidate for VCrayApp-0.0.0.  The
+        confimred candidate will be preserved and distributed via
+        <https://orcmid.githug.io/nfoTools/dev/D211101/> .  General practice
+        is to download all four of the files into the same folder.
+
+    VCrayApp-0.0.0.txt
+        Synopsis, summaries, and manifest for the VCrayApp-0.0.0 alpha
+        release candidate.  The file is clear-signed and the same as the one
+        included in VCrayApp-0.0.0.zip.  Download and review of this file
+        is useful before deciding to download the additional files.
+
+    VCrayApp-0.0.0.zip
+        Package of the VCrayApp-0.0.0 release candidate with contents as
+        described by VCrayApp-0.0.0.txt (and also included therein).
+
+    VCrayApp-0.0.0.zip.asc
+        Detached digital signature of VCrayApp-0.0.0.zip.  Verification of
+        this signature confirms the source and the integrity of the .zip.
+
+    VCrayApp-0.0.0.zip.sha256
+        SHA 256 cryptographic hash of file VCrayApp-0.0.0.zip.  Verification
+        of *this* hash value is evidence that the downloaded .zip (or .sha256)
+        have not been altered in the downloading/redistribution and usage.
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
@@ -82,7 +122,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. Raylib App Construction-Kit Project. nfoTools Project
-   text file VCrayApp.txt 0.0.7 dated 2022-12-21, available on the Internet
+   text file VCrayApp.txt 0.0.8 dated 2023-01-08, available on the Internet
    as a version of
    <https://github.com/orcmid/nfoTools/blob/master/devKits/WinDev/VCrayApp/VCrayApp.txt>
 
@@ -100,12 +140,8 @@ TODO
    a subsequent release of raylib-4.x, raylib source cannot be used for
    VCrayApp-constructed raylib applications.
 
- * An important feature of using a devKit is a way of updating either the kit
-   *and/or* the update of dependencies which are employed from a kit, raylib
-   included.
-
- * In general, the use of an in-progress dependency project is not covered
-   for building applications that depend on such a project.  That does not
+ * In general, the use of an in-progress raylib version is not covered
+   for building applications that depend on raylib.  That does not
    mean feedback and fixes cannot be submitted to the project.  But there
    needs to be separation and avoidance of too much dependency on work-in-
    progress and the prospect of deprecations, alterations, and regressions.
@@ -115,7 +151,7 @@ TODO
    should never depend on a dependency achieving release. There are enough
    hazards that are under ones own control.
 
- * I intend to make VCrayApp-0.0.x available as an alpha release, inviting
+ * I intend to make VCrayApp-0.0.0 available as an alpha release, inviting
    exploration and employment by interested users of raylib.  This means I
    need to update the text files and also have something on docs/dev for the
    alpha release.
@@ -139,17 +175,7 @@ TODO
  * Do alpha/beta availability and distribution once there is a docs/dev folder
    for downloading, usage information, and gathering feedback.
 
- * There needs to be a checklist on the production of a new VCrayApp release,
-   including all of the packaging, collateral materials, and and test/reviews.
-
  * Use project structure for developing/working the checklist.
-
- * Introduce a NOTICE.txt that explains what is covered under the Apache
-   License applied to VCrayApp files and that it does not extend to the
-   user-provided source files and user-provided content of the app\ folder.
-   Modifications of the VCrayApp files are subject to the copyright terms,
-   although these are not over-restrictive.  In particular, there is no
-   requirement of reciprocity or prohibition of commercial or other use.
 
  * It is not possible to provide VCrayApp as the basis for learning C/C++
    programming.  This must be emphasized in some manner.  We do want on-ramps
@@ -164,6 +190,8 @@ TODO
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.8 2023-01-08T21:06Z Reflect VCrayApp-0.0.0 release candidacy and manage
+       TODOs.
  0.0.7 2022-12-21T19:26Z Manifest correction, manage TODOs
  0.0.6 2022-10-20T20:46Z Add raylib-4.0.0.zip and account for limitations
        because of an external/miniaudio.h that fails to compile with VC/C++.
