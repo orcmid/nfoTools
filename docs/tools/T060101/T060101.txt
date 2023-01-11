@@ -1,4 +1,4 @@
-T060101.txt 0.0.8                   UTF-8                       dh:2022-12-28
+T060101.txt 0.0.9                   UTF-8                       dh:2023-01-??
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -25,7 +25,7 @@ MANIFEST
 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-                       Copyright 2021 Dennis E. Hamilton
+                     Copyright 2021-2023 Dennis E. Hamilton
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -44,7 +44,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. T060101: C/C++ Programming.  nfoTools project text
-   file T060101.txt version 0.0.8 dated 2022-12-28, available on the
+   file T060101.txt version 0.0.9 dated 2023-01-??, available on the
    Internet as a version of
    <https://orcmid.github.io/nfoTools/tools/T060101/T060101.txt>
 
@@ -148,6 +148,10 @@ TODO
     Jaeschke, Rex.  Portability and the C Language, ed.2. Wikibooks edition
     (January 2022)available on the Internet with editing history at
     <https://en.wikibooks.org/w/index.php?title=Portability_and_the_C_Language&action=history>.
+    This should be the GOTO case in terms of currency.
+
+  * For C++ that is undifferentiated from C, there are Codecademy selections,
+    <https://www.codecademy.com/resources/blog/c-plus-plus-books/>.
 
 
   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
