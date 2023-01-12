@@ -1,4 +1,4 @@
-<!-- index.md 0.0.0                 UTF-8                          2022-08-16
+<!-- index.md 0.0.1                 UTF-8                          2023-01-12
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                                 VCRAYLIB SETUP
@@ -6,7 +6,7 @@
 
 # ***VCrayLib** [Setup](.)*
 
-| ***[nfoTools](../../../)*** | [dev](../../)[>D211101](../)[>D211101a](.) | ***0.0.0 2022-08-18*** |
+| ***[nfoTools](../../../)*** | [dev](../../)[>D211101](../)[>D211101a](.) |[index.html](index.html) ***0.0.1 2023-01-12*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../../../images/hardhat-logo.gif) |
 
@@ -26,7 +26,8 @@ time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.1 2023-01-12T03:08Z Clean up format and file location
      0.0.0 2022-08-18T18:02Z Create Initial Placeholder
 
-                       *** end D161101a/index.md ***
+                       *** end D211101a/index.md ***
      -->
