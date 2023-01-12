@@ -7,21 +7,17 @@
 # ***VCrayLib** [0.0.0 Release (alpha)](.)*
 
 | ***[nfoTools](../../../)*** | [dev](../../)[>D211101](../)[>D211101c](.) |
-***0.0.3 2023-01-11*** |
+[index.html](index.html) ***0.0.4 2023-01-12*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../../../images/hardhat-logo.gif) |
 |              |                     |           |
 | This Version | VCrayLib 0.0.0 alpha release | [here](.) |
 |              |                              |           |
 | **Downloads:** |                            |           |
-|   | **VCrayLib 0.0.0 Description and Manifest** |
-[VCrayLib-0.0.0.txt](VCrayLib-0.0.0.txt) |
-|   | **VCrayLib 0.0.0 Zip Package** |
-[VCrayLib-0.0.0.zip](VCrayLib-0.0.0.zip) |
-|   | **VCrayLib 0.0.0 Digital Signature** |
-[VCrayLib-0.0.0.zip.asc](VCrayLib-0.0.0.zip.asc) |
-|   | **VCrayLib 0.0.0 Digital Hash Value** |
-[VCrayLib-0.0.0.zip.sha256](VCrayLib-0.0.0.zip.sha256) |
+|   | **VCrayLib 0.0.0 Description and Manifest** | [VCrayLib-0.0.0.txt](VCrayLib-0.0.0.txt) |
+|   | **VCrayLib 0.0.0 Zip Package** | [VCrayLib-0.0.0.zip](VCrayLib-0.0.0.zip) |
+|   | **VCrayLib 0.0.0 Digital Signature** | [VCrayLib-0.0.0.zip.asc](VCrayLib-0.0.0.zip.asc) |
+|   | **VCrayLib 0.0.0 Digital Hash Value** | [VCrayLib-0.0.0.zip.sha256](VCrayLib-0.0.0.zip.sha256) |
 
 This is an alpha release.  It is provided early in the development of VCrayLib
 in order to obtain confirmation and feedback prior to creation of a beta
@@ -29,9 +25,9 @@ release for broader provisional usage.
 
 To determine whether VCrayApp 0.0.0 is useful without difficulty for you,
 please read the file [VCrayApp-0.0.0.txt](VCrayApp-0.0.0.txt).  Also consult
-the folder cover page [VCrayApp: VC/C++ Command-Line raylib App DevKit](..)
-and current information on [VCrayApp Setup](../D211101a) and
-[VCrayApp Operation](../D211101b).  During the alpha-release cycle, these
+the current main page [VCrayApp: VC/C++ Command-Line raylib App DevKit](..),
+information on [VCrayApp Setup](../D211101a), and information on
+[VCrayApp Operation](../D211101b).  During the alpha-beta-release cycle, these
 materials will be works in progress.
 
 Feedback and requests concerning this alpha release should be addressed to the
@@ -54,6 +50,7 @@ time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.4 2023-01-12T05:32Z Clean up formatting, wordsmith a little
      0.0.3 2023-01-12T01:44Z Create provisional release notification
      0.0.2 2022-06-11T21:17Z Bring top banner up to standard
      0.0.1 2022-06-10T02:32Z Remove commented out boilerplate for now

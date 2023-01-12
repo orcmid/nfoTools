@@ -1,4 +1,4 @@
-D211101d.txt 0.0.5                  UTF-8                         2023-01-12
+D211101d.txt 0.0.6                  UTF-8                         2023-01-12
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -59,7 +59,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. D211101d: VCrayApp 0.0.0 (alpha).  nfoTools development
-   documentation text file D211101d.txt version 0.0.5 dated 2023-01-12,
+   documentation text file D211101d.txt version 0.0.6 dated 2023-01-12,
    available on the Internet as a version of
    <https://orcmid.github.io/nfoTools/dev/D211101/D211101d/D211101d.txt>
 
@@ -77,8 +77,17 @@ TODO
    maintenance in D211101d and then copying back over D211101c.  I am going
    to use D211101d just in case there is a solution for this.
 
+ * Add index.html to the location banner
+
+ * Adust the tabulation for correct line-ups
+
+ * Review all wordings
+
+ * Download all files and confirm content, signatures, and hashes
+
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.6 2023-01-12T05:22Z Manage adjustments and verification of the page
  0.0.5 2023-01-12T01:49Z Manage TODOs and line up with providing the release
  0.0.4 2023-01-08T22:54Z Establish as D211101d (not D21101c) and add the
        alpha release VCrayApp-0.0.0 artifacts
