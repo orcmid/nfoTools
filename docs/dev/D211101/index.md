@@ -1,4 +1,4 @@
-<!-- index.md 0.0.9                 UTF-8                          2023-01-12
+<!-- index.md 0.0.10                UTF-8                          2023-01-12
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                VCRAYAPP: VC/C++ COMMAND-LINE RAYLIB APP DEVKIT
@@ -6,7 +6,7 @@
 
 # [VCrayApp: VC/C++ Command-Line raylib App DevKit](.)
 
-| ***[nfoTools](../../)*** | [dev](../)[>D211101](.) | ***[index.html](index.html) 0.0.9 2023-01-12*** |
+| ***[nfoTools](../../)*** | [dev](../)[>D211101](.) | ***[index.html](index.html) 0.0.10 2023-01-12*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../../images/hardhat-logo.gif) |
 
@@ -147,9 +147,10 @@ tools along with confident use of C Language:
   projects
 * GPG4Win for creation and verification of digital signatures
 
-The first seven are essential.  The remainder are recommended.  For further
-details on dependencies, see
-[VCrayApp Setup](d211101a/) and [VCrayApp Operation](d211101b/).
+The first seven are essential.  The remainder or equivalents are recommended.
+For further details on dependencies, see
+[VCrayApp Setup](D211101a/) and [VCrayApp Operation](D211101b/).  Additional
+usage of VCrayApp is covered with [VCrayApp Testing/Development](D211101c).
 
 VCrayApp is designed to work with versions of Visual Studio that are free
 for personal use, including the Visual Studio Build Tools (recommended)
@@ -165,9 +166,9 @@ testing and confirmation with the same program that is provided to users.
 |   :-:   |   :-:   |  :-:   |  ---  |
 | [D211101a](D211101a/) | 2022-08-18 | placeholder | VCrayApp Setup |
 | [D211101b](D211101b/) | 2022-08-18 | placeholder | VCrayApp Operation |
-| [D211101c](D211101c/) | 2022-08-21 | placeholder | VCrayApp latest |
+| [D211101c](D211101c/) | 2022-08-21 | placeholder | VCrayApp Testing/Development |
 |                       |            |                  |     |
-| [D211101d](D211101d/) | 2022-10-26 | 0.0.4 2023-01-12 | VCrayApp 0.0.0 (alpha)
+| [D211101d](D211101d/) | 2022-10-26 | 0.0.5 2023-01-12 | VCrayApp 0.0.0 (alpha)
 
 ## 5. Development
 
@@ -209,6 +210,7 @@ time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.10 2023-01-12T17:19Z Redefine D211101c, small touch-up
      0.0.9 2023-01-12T05:17Z Update D211101d status, add NOTICE.txt to map
      0.0.8 2023-01-02T22:04Z Adjust Available Materials
      0.0.7 2023-01-02T18:56Z Smoothing of text, more-consistent terminology
