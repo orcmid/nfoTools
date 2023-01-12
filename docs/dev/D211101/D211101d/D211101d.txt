@@ -1,4 +1,4 @@
-D211101d.txt 0.0.4                  UTF-8                         2023-01-08
+D211101d.txt 0.0.5                  UTF-8                         2023-01-12
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -59,16 +59,11 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. D211101d: VCrayApp 0.0.0 (alpha).  nfoTools development
-   documentation text file D211101d.txt version 0.0.4 dated 2023-01-08,
+   documentation text file D211101d.txt version 0.0.5 dated 2023-01-12,
    available on the Internet as a version of
    <https://orcmid.github.io/nfoTools/dev/D211101/D211101d/D211101d.txt>
 
 TODO
-
- * Get the alpha release over here raw and provide Internet browsable
-   information and linked materials.
-
- * Provide details for alpha usage by a careful novice or better
 
  * Anticipate connection to a beta following this alpha, with improved detail
    and linked materials with progressive disclosure of prerequisite-details
@@ -84,6 +79,7 @@ TODO
 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.5 2023-01-12T01:49Z Manage TODOs and line up with providing the release
  0.0.4 2023-01-08T22:54Z Establish as D211101d (not D21101c) and add the
        alpha release VCrayApp-0.0.0 artifacts
  0.0.3 2022-08-21T18:39Z Account for VCrayApp-0.0.0.txt placeholder
@@ -92,4 +88,4 @@ TODO
  0.0.0 2022-06-10T00:44Z Placeholder morphed from D211101.txt 0.0.1 and
        adjusted for getting started on making a VCrayApp alpha available.
 
-              ***** end of  D211101c.txt *****
+              ***** end of  D211101d.txt *****
