@@ -1,25 +1,25 @@
-<!-- index.md 0.0.3                 UTF-8                          2023-01-12
+<!-- index.md 0.0.5                 UTF-8                          2023-01-12
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-                     VCRAYLIB 0.0.0 RELEASE (ALPHA)
+                     VCRAYAPP 0.0.0 RELEASE (ALPHA)
      -->
 
 # ***VCrayLib** [0.0.0 Release (alpha)](.)*
 
 | ***[nfoTools](../../../)*** | [dev](../../)[>D211101](../)[>D211101c](.) |
-[index.html](index.html) ***0.0.4 2023-01-12*** |
+[index.html](index.html) ***0.0.5 2023-01-12*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../../../images/hardhat-logo.gif) |
 |              |                     |           |
 | This Version | VCrayLib 0.0.0 alpha release | [here](.) |
 |              |                              |           |
 | **Downloads:** |                            |           |
-|   | **VCrayLib 0.0.0 Description and Manifest** | [VCrayLib-0.0.0.txt](VCrayLib-0.0.0.txt) |
-|   | **VCrayLib 0.0.0 Zip Package** | [VCrayLib-0.0.0.zip](VCrayLib-0.0.0.zip) |
-|   | **VCrayLib 0.0.0 Digital Signature** | [VCrayLib-0.0.0.zip.asc](VCrayLib-0.0.0.zip.asc) |
-|   | **VCrayLib 0.0.0 Digital Hash Value** | [VCrayLib-0.0.0.zip.sha256](VCrayLib-0.0.0.zip.sha256) |
+|   | **VCrayLib 0.0.0 Description and Manifest** | [VCrayApp-0.0.0.txt](VCrayApp-0.0.0.txt) |
+|   | **VCrayLib 0.0.0 Zip Package** | [VCrayApp-0.0.0.zip](VCrayApp-0.0.0.zip) |
+|   | **VCrayLib 0.0.0 Digital Signature** | [VCrayApp-0.0.0.zip.asc](VCrayApp-0.0.0.zip.asc) |
+|   | **VCrayLib 0.0.0 Digital Hash Value** | [VCrayApp-0.0.0.zip.sha256](VCrayApp-0.0.0.zip.sha256) |
 
-This is an alpha release.  It is provided early in the development of VCrayLib
+This is an alpha release.  It is provided early in the development of VCrayApp
 in order to obtain confirmation and feedback prior to creation of a beta
 release for broader provisional usage.
 
@@ -50,6 +50,7 @@ time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.5 2023-01-12T17:09Z Correct links and names of the downloads
      0.0.4 2023-01-12T05:32Z Clean up formatting, wordsmith a little
      0.0.3 2023-01-12T01:44Z Create provisional release notification
      0.0.2 2022-06-11T21:17Z Bring top banner up to standard

@@ -71,11 +71,8 @@ TODO
 
  * Add release progression to the top banner once there is more here.
 
- * I don't think that using D211101c for "latest" is useful because we do not
-   seem to have access to redirects on GitHub Pages.  I need to think this
-   over.  Copying this back to d211101c is a bad idea because it requires
-   maintenance in D211101d and then copying back over D211101c.  I am going
-   to use D211101d just in case there is a solution for this.
+* D211101c will no longer be latest and repurposed for testing and development
+  and maybe about error messages.
 
  * Add index.html to the location banner
 
@@ -85,8 +82,11 @@ TODO
 
  * Download all files and confirm content, signatures, and hashes
 
+ * Repair incorrect links to the downloadable files.
+
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.7 2023-01-12T17:06Z Manage TODOs, repair incorrect index.md links
  0.0.6 2023-01-12T05:22Z Manage adjustments and verification of the page
  0.0.5 2023-01-12T01:49Z Manage TODOs and line up with providing the release
  0.0.4 2023-01-08T22:54Z Establish as D211101d (not D21101c) and add the
