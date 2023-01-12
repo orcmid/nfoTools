@@ -1,4 +1,4 @@
-<!-- index.md 0.0.7                 UTF-8                          2023-01-02
+<!-- index.md 0.0.9                 UTF-8                          2023-01-12
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                VCRAYAPP: VC/C++ COMMAND-LINE RAYLIB APP DEVKIT
@@ -6,7 +6,7 @@
 
 # [VCrayApp: VC/C++ Command-Line raylib App DevKit](.)
 
-| ***[nfoTools](../../)*** | [dev](../)[>D211101](.) | ***[index.html](index.html) 0.0.8 2023-01-02*** |
+| ***[nfoTools](../../)*** | [dev](../)[>D211101](.) | ***[index.html](index.html) 0.0.9 2023-01-12*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../../images/hardhat-logo.gif) |
 
@@ -44,6 +44,8 @@ following folder structure:
          |                      //    VCrayApp materials
          |- src\                // recommended location for your
          |                      //    source-code files
+         |- NOTICE.txt          // licensing and origin of only the content
+         |                         provided with VCrayApp-*semver*.zip itself
          |- VCrayApp.bat        // the batch script for compiling your app
          |- VCrayApp-*semver*.txt
                                 // *semver* version synopsis and manifest
@@ -165,7 +167,7 @@ testing and confirmation with the same program that is provided to users.
 | [D211101b](D211101b/) | 2022-08-18 | placeholder | VCrayApp Operation |
 | [D211101c](D211101c/) | 2022-08-21 | placeholder | VCrayApp latest |
 |                       |            |                  |     |
-| [D211101d](D211101d/) | 2022-10-26 | placeholder | VCrayApp 0.0.0 (alpha)
+| [D211101d](D211101d/) | 2022-10-26 | 0.0.4 2023-01-12 | VCrayApp 0.0.0 (alpha)
 
 ## 5. Development
 
@@ -207,6 +209,7 @@ time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.9 2023-01-12T05:17Z Update D211101d status, add NOTICE.txt to map
      0.0.8 2023-01-02T22:04Z Adjust Available Materials
      0.0.7 2023-01-02T18:56Z Smoothing of text, more-consistent terminology
      0.0.6 2022-08-19T21:46Z Corrections and touch-ups
