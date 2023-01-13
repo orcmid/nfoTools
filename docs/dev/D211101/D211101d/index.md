@@ -1,4 +1,4 @@
-<!-- index.md 0.0.5                 UTF-8                          2023-01-12
+<!-- index.md 0.0.6                 UTF-8                          2023-01-13
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                      VCRAYAPP 0.0.0 RELEASE (ALPHA)
@@ -6,8 +6,7 @@
 
 # ***VCrayLib** [0.0.0 Release (alpha)](.)*
 
-| ***[nfoTools](../../../)*** | [dev](../../)[>D211101](../)[>D211101c](.) |
-[index.html](index.html) ***0.0.5 2023-01-12*** |
+| ***[nfoTools](../../../)*** | [dev](../../)[>D211101](../)[>D211101c](.) | [index.html](index.html) ***0.0.6 2023-01-13*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../../../images/hardhat-logo.gif) |
 |              |                     |           |
@@ -50,6 +49,7 @@ time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.6 2023-01-13T01:31Z Repair header strip layout
      0.0.5 2023-01-12T17:09Z Correct links and names of the downloads
      0.0.4 2023-01-12T05:32Z Clean up formatting, wordsmith a little
      0.0.3 2023-01-12T01:44Z Create provisional release notification
