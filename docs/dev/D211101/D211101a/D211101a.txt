@@ -1,4 +1,4 @@
-D211101a.txt 0.0.1                  UTF-8                         2023-01-12
+D211101a.txt 0.0.2                  UTF-8                         2023-01-**
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -22,7 +22,7 @@ MANIFEST
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-                      Copyright 2022 Dennis E. Hamilton
+                    Copyright 2022-2023 Dennis E. Hamilton
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -41,7 +41,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. D211101a: VCrayApp Setup.  nfoTools development
-   documentation text file D211101a.txt version 0.0.0 dated 2022-08-18,
+   documentation text file D211101a.txt version 0.0.2 dated 2022-01-**,
    available on the Internet as a version of
    <https://orcmid.github.io/nfoTools/dev/D211101/D211101a/D211101a.txt>
 
@@ -55,8 +55,21 @@ TODO
 
  * Correct location in the index.md file.
 
+ * Screen capture the downloads, using VCrayApp 0.0.0 (from D211101d).
+
+ * Demonstrate install of a raylib source and having VS Build Tools to run.
+
+ * Demonstrate the verifications of VCrayApp-0.0.0.txt and VCrayApp-0.0.0.zip
+
+ * Demonstrate the unzipping of VCrayApp with raylib\ nearby on the same drive
+
+ * Demonstrate the initial confirmation of the setup
+
+ * Error messages, or some Error messages may be treated here?
+
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.2 2023-01-**
  0.0.1 2023-01-12T03:10Z Adjustment TODOs
  0.0.0 2022-08-18T17:51Z Placeholder morphed from D211101c.txt 0.0.2 and
        adjusted for VCrayApp Setup as part of alpha availability.

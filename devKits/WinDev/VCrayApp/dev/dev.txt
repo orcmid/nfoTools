@@ -1,10 +1,9 @@
-dev.txt 0.0.5                       UTF-8                         2023-01-14
+dev.txt 0.0.6                       UTF-8                         2023-01-14
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                        AN NFOTOOLS COMING ATTRACTION
                        =============================
 
-                      <web link for release location>
 <https://github.com/orcmid/nfoTools/blob/master/devKits/WinDev/VCrayApp/dev/dev.txt>
 
               RAYLIB APP BUILD WITH VS DEVELOPER COMMAND PROMPT
@@ -99,9 +98,19 @@ TODO
    will be untouched there.  That needs to be mentioned on the checklist and
    also VCrayApp.txt.
 
+ * There should probably be a good use of branching to handle the different
+   cases.  Don't want to branch all of nfoTools though.
+
+ * In app.txt there are 3 place-holders for fill-in by the time of 0.1.0
+   release.  Beta must be a release candidate with 1.0.0 after any fixes
+   and responses to problems and suggestions.
+
+ * In .vscode.txt there is a link place-holder.  This should be dealt with
+   by the time of VCrayApp 0.1.0 release.
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.6 2023-01-14T21:34Z More TODOs on 0.1.0 preparation
  0.0.5 2023-01-14T17:53Z Manage TODOs, prepare for VCrayApp 0.1.0 development
  0.0.4 2022-12-31T20:43Z Manage TODOs, update remarks
  0.0.3 2022-10-19T20:48Z Manage TODOs, reflect 4.0.0 inclusion

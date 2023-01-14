@@ -1,4 +1,4 @@
-VCrayApp-0.0.0 .vscode.txt 0.0.2    UTF-8                         2022-07-09
+VCrayApp-0.1.0 .vscode.txt 0.0.3    UTF-8                         2023-01-14
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
   * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
@@ -13,13 +13,13 @@ VCrayApp-0.0.0 .vscode.txt 0.0.2    UTF-8                         2022-07-09
   *    DO NOT COMPILE INTO THIS FOLDER.  DO NOT PUT SOURCE CODE IN THIS   *
   *    FOLDER. USE THE COMPANION src\ FOLDER OR ANOTHER FOLDER FOR YOUR   *
   *    OWN PROJECT.  SEE THE DESCRIPTION FOR THIS VCrayApp RELEASE        *
-  *    (E.G., THE VCrayApp-0.0.0.txt FILE).                               *                                                     *
+  *    (E.G., THE VCrayApp-0.1.0.txt FILE).                               *                                                     *
   *                                                                       *
   *    If VCrayApp is re-extracted or is updated and extracted, the       *
   *    files listed in this manifest will be replaced.  If any VS Code    *
-  *    customizations are made, they should be backed up in files with    *
-  *    different names to avoid their over-writing.                       *
-  *                                                                       *
+  *    customizations have been made, they should be backed up with       *
+  *    different names to avoid their being over-written.  Then review    *
+  *    the new content for merging your customizations as appropriate.    *                                                         *
   *                                                                       *
   * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 
@@ -58,6 +58,7 @@ MANIFEST
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+0.0.3 2023-01-14T21:34Z Adjust for VCrayApp 0.1.0
 0.0.2 2022-07-09T19:10Z Touch-up, complete TODO
 0.0.1 2022-07-09T17:34Z Provide initial draft of content
 0.0.0 2022-07-08T17:48Z Creation of placeholder for further explanation.

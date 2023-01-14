@@ -1,5 +1,5 @@
 @echo off
-rem VCrayApp 0.0.0 VCrayApp.bat 0.0.18 UTF-8                       2022-12-31
+rem VCrayApp 0.1.0 VCrayApp.bat 0.0.19 UTF-8                       2023-01-14
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 rem                  BUILDING RAYLIB APP WITH VC/C++ TOOLS
@@ -25,12 +25,12 @@ rem *********** NO CHANGES ARE NEEDED BELOW HERE *****************************
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 rem Designate the semantic-versioned distribution
-SET VCrayApp=0.0.0
+SET VCrayApp=0.1.0
 
 rem Additional documentation of this procedure and its usage are found in the
 rem accompanying VCrayApp-%VCrayApp%.txt file.  For further information, see
 rem ^<https://orcmid.github.io/nfoTools/dev/D211101^> and check for the latest
-rem version at ^<https://orcmid.github.io/nfoTools/dev/D211101/D211101c^>.
+rem version.
 
 rem Remembering where rayApp.bat is called *from*, so it can be restored on
 rem exit, including after errors.
@@ -239,7 +239,7 @@ EXIT /B %ERRORLEVEL%
 
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 rem
-rem                 Copyright 2021-2022 Dennis E. Hamilton
+rem                 Copyright 2021-2023 Dennis E. Hamilton
 rem
 rem Licensed under the Apache License, Version 2.0 (the "License");
 rem you may not use this file except in compliance with the License.
@@ -257,6 +257,7 @@ rem For additional information, see the accompanying NOTICE.txt file.
 rem
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 rem
+rem 0.0.19 2023-01-14T19:25Z Update for VCrayApp 0.1.0
 rem 0.0.18 2022-12-31T20:39Z Review and touch-up
 rem 0.0.17 2022-10-26T16:38Z More message cleanups
 rem 0.0.16 2022-10-17T18:35Z Cleanup compilation failure and success messages
