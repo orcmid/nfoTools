@@ -1,4 +1,4 @@
-# .gitignore 0.0.3                  UTF-8                       dh:2021-11-11
+# .gitignore 0.0.4                  UTF-8                         2023-01-14
 #---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 #
 #                   COMPILED RAYAPP APPLICATION FOLDER
@@ -16,10 +16,11 @@
 resources/
 #   intermediate files
 *.obj
-# app.txt in an unzipped rayApp-version.zip deliverable.
+# app.txt in an unzipped rayApp-*semver*.zip deliverable.
 
 #---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+# 0.0.4 2023-01-14T21:22Z Use *semver* for terminology consistency.
 # 0.0.3 2021-11-11T18:20z Adjust to final form.
 # 0.0.2 2021-11-05T23:05Z Further adjustments
 # 0.0.1 2021-10-18T21:52Z Adjust for FC_CPP/S2-Axe/app/ companion folder
