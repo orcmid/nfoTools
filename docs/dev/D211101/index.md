@@ -1,4 +1,4 @@
-<!-- index.md 0.0.11                UTF-8                          2023-01-13
+<!-- index.md 0.0.12                UTF-8                          2023-01-14
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                VCRAYAPP: VC/C++ COMMAND-LINE RAYLIB APP DEVKIT
@@ -6,7 +6,7 @@
 
 # [VCrayApp: VC/C++ Command-Line raylib App DevKit](.)
 
-| ***[nfoTools](../../)*** | [dev](../)[>D211101](.) | ***[index.html](index.html) 0.0.11 2023-01-13*** |
+| ***[nfoTools](../../)*** | [dev](../)[>D211101](.) | ***[index.html](index.html) 0.0.12 2023-01-14*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../../images/hardhat-logo.gif) |
 
@@ -113,6 +113,12 @@ Further details of VCrayApp operation are provided in
 
 ## 2. Prerequisites and Dependencies
 
+**NOTE:** Current materials are now at the *alpha* level, with the
+[VCrayApp 0.0.0](D211101d) release.  There is incomplete supporting material.
+This will change with progressive improvements in the next weeks until the
+*beta* release is feasible. The *beta* will be accompanied by more support for
+novice developers, including demonstration of raylib examples.
+
 For novice developers, the creation of raylib applications can be carried out
 by compiling the many available `raylib\examples` and finding additional
 explanations for the minimum prerequisites.  For self-study, other resources
@@ -168,7 +174,7 @@ testing and confirmation with the same program that is provided to users.
 | [D211101b](D211101b/) | 2022-08-18 | placeholder | VCrayApp Operation |
 | [D211101c](D211101c/) | 2022-08-21 | placeholder | VCrayApp Testing/Development |
 |                       |            |                  |     |
-| [D211101d](D211101d/) | 2022-10-26 | 0.0.6 2023-01-13 | VCrayApp 0.0.0 (alpha)
+| [D211101d](D211101d/) | 2022-10-26 | 0.0.7 2023-01-14 | VCrayApp 0.0.0 (alpha)
 
 ## 5. Development
 
@@ -210,6 +216,7 @@ time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.12 2023-01-14T23:38Z Small adjustments and disclaimer about *alpha*
      0.0.11 2023-01-13T01:37Z Reflect updated D211101d
      0.0.10 2023-01-12T17:19Z Redefine D211101c, small touch-up
      0.0.9 2023-01-12T05:17Z Update D211101d status, add NOTICE.txt to map

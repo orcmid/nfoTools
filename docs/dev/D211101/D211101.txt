@@ -1,4 +1,4 @@
-D211101.txt 0.0.10                   UTF-8                         2023-01-14
+D211101.txt 0.0.11                   UTF-8                         2023-01-14
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -28,8 +28,6 @@ MANIFEST
 
     D211101d/       VCrayApp 0.0.0 (alpha)
 
-
-
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                     Copyright 2022-2023 Dennis E. Hamilton
@@ -51,7 +49,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. VCrayApp: VC/C++ Command-Line raylib App devKit.
-   nfoTools development text file D211101.txt version 0.0.10 dated 2023-01-**,
+   nfoTools development text file D211101.txt version 0.0.11 dated 2023-01-14,
    available on the Internet as a version of
    <https://orcmid.github.io/nfoTools/dev/D211101/D211101.txt>
 
@@ -59,10 +57,9 @@ TODO
 
  * Dig into devKits/WinDev/VCrayApp for more material and explanations here.
 
- * Get an alpha release over here raw and refine over here in terms of
-   Internet browsable information and linked materials.
+ * Refine with more internet browsable information and linked materials.
 
- * Create and verify hashes and signatures
+ * Verify hashes and signatures and document how it is done.
 
  * Appeal to skills and toolcraft on handling hashes and signatures, when
    available.
@@ -70,23 +67,16 @@ TODO
  * Distinguish between using a VCrayApp kit found in a distribution one is
    using versus incorporation in a distribution one is producing.  There
    is also the middle case, inserting a VCrayApp kit in a project one wants
-   to work on (a clone of).
+   to work on (a clone of).  This is beyond testing and deployment though.
+   This is customization.  Need to ponder that.
 
  * Ensure that the index.html pages are in the title blocks too
 
- * Update D211101d available materials with release status
-
- * Change D211101c to be about usage, testing, and development
-
- * Add to statement about the shipped and tested builds being the same so
-   that any bug reports or problems are about the same builds.
-
- * Update index.md to indicate that this is limited material during the
-   VCrayApp 0.0.0 (alpha) release and there will be continuing adjustments
-   until the VCrayApp 0.1.0 (beta) release.
+ * Change D211101c to be about testing and deployment, maybe life-cycle.
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.11 2023-01-14T23:40Z Manage TODOs, synchronize with D211101d
  0.0.10 2023-01-14T10:51Z Manage TODOs, emphasizing alpha and incomplete
         materials
  0.0.9 2023-01-12T17:02Z Manage TODOs, changing D211101c purpose
