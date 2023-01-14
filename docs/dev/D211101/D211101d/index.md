@@ -1,22 +1,22 @@
-<!-- index.md 0.0.6                 UTF-8                          2023-01-13
+<!-- index.md 0.0.7                 UTF-8                          2023-01-14
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                      VCRAYAPP 0.0.0 RELEASE (ALPHA)
      -->
 
-# ***VCrayLib** [0.0.0 Release (alpha)](.)*
+# ***VCrayApp** [0.0.0 Release (alpha)](.)*
 
-| ***[nfoTools](../../../)*** | [dev](../../)[>D211101](../)[>D211101c](.) | [index.html](index.html) ***0.0.6 2023-01-13*** |
+| ***[nfoTools](../../../)*** | [dev](../../)[>D211101](../)[>D211101c](.) | [index.html](index.html) ***0.0.7 2023-01-14*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../../../images/hardhat-logo.gif) |
 |              |                     |           |
-| This Version | VCrayLib 0.0.0 alpha release | [here](.) |
+| This Version | VCrayApp 0.0.0 alpha release | [here](.) |
 |              |                              |           |
 | **Downloads:** |                            |           |
-|   | **VCrayLib 0.0.0 Description and Manifest** | [VCrayApp-0.0.0.txt](VCrayApp-0.0.0.txt) |
-|   | **VCrayLib 0.0.0 Zip Package** | [VCrayApp-0.0.0.zip](VCrayApp-0.0.0.zip) |
-|   | **VCrayLib 0.0.0 Digital Signature** | [VCrayApp-0.0.0.zip.asc](VCrayApp-0.0.0.zip.asc) |
-|   | **VCrayLib 0.0.0 Digital Hash Value** | [VCrayApp-0.0.0.zip.sha256](VCrayApp-0.0.0.zip.sha256) |
+|   | **VCrayApp 0.0.0 Description and Manifest** | [VCrayApp-0.0.0.txt](VCrayApp-0.0.0.txt) |
+|   | **VCrayApp 0.0.0 Zip Package** | [VCrayApp-0.0.0.zip](VCrayApp-0.0.0.zip) |
+|   | **VCrayApp 0.0.0 Digital Signature** | [VCrayApp-0.0.0.zip.asc](VCrayApp-0.0.0.zip.asc) |
+|   | **VCrayApp 0.0.0 Digital Hash Value** | [VCrayApp-0.0.0.zip.sha256](VCrayApp-0.0.0.zip.sha256) |
 
 This is an alpha release.  It is provided early in the development of VCrayApp
 in order to obtain confirmation and feedback prior to creation of a beta
@@ -27,7 +27,7 @@ please read the file [VCrayApp-0.0.0.txt](VCrayApp-0.0.0.txt).  Also consult
 the current main page [VCrayApp: VC/C++ Command-Line raylib App DevKit](..),
 information on [VCrayApp Setup](../D211101a), and information on
 [VCrayApp Operation](../D211101b).  During the alpha-beta-release cycle, these
-materials will be works in progress.
+and related materials will be expanded for support of a wider audience.
 
 Feedback and requests concerning this alpha release should be addressed to the
 [nfoTools GitHub Project](https://github.com/orcmid/nfoTools) with mention of
@@ -49,6 +49,7 @@ time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.7 2023-01-14T22:40Z Ditch "VCrayLib" mistakes, touch up
      0.0.6 2023-01-13T01:31Z Repair header strip layout
      0.0.5 2023-01-12T17:09Z Correct links and names of the downloads
      0.0.4 2023-01-12T05:32Z Clean up formatting, wordsmith a little
