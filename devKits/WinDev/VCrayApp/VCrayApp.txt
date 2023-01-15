@@ -1,4 +1,4 @@
-VCrayApp.txt 0.0.8                  UTF-8                         2023-01-08
+VCrayApp.txt 0.0.9                  UTF-8                         2023-01-15
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                       RAYLIB APP DEVELOPMENT PROJECT
@@ -122,7 +122,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. Raylib App Construction-Kit Project. nfoTools Project
-   text file VCrayApp.txt 0.0.8 dated 2023-01-08, available on the Internet
+   text file VCrayApp.txt 0.0.9 dated 2023-01-15, available on the Internet
    as a version of
    <https://github.com/orcmid/nfoTools/blob/master/devKits/WinDev/VCrayApp/VCrayApp.txt>
 
@@ -188,8 +188,58 @@ TODO
    structure for for src, cache, and app in generic construction projects of
    single executables.
 
+ * There needs to be a structure, maybe beside dev/ for testing against the
+   raylib/examples in some sort of easy to verify and run form.  This will
+   need a good script that runs VCrayApp.bat to accomplish all of its work.
+   I need to figure out a folder structure.  There is already a raylib\ here,
+   with dev\ alongside.  I have a small problem because dev\ does not lock
+   down.  I should have thought of that.  With test\ or verify\ alongside
+   raylib\, I am puzzled about what the structure is and how to switch among
+   raylib sources and also VCrayApp versions.  I need to ponder this.
+
+ * I have the idea of a .bat file that has labels for the raylib example
+   groups and also the the within-group places.  There needs to be a way to
+   jump in at any one of these and test or to test and continue.  There may
+   also be some parameters that get passed to VCrayApp for certain operations.
+   There needs to be good ways to pop out of a run as well.
+
+ * So, should verify\ *be* a VCrayApp project that I copy the additional
+   script, verify.bat into, and then run from there?  that might be easy in
+   terms of using the existing structure at the same level as VCrayApp.bat.
+   So I want to create it in that form.
+
+ * Now the promise of VCrayApp that
+   it can be unzipped over the same location and not touch anything that is
+   not part of VCrayApp directly should work.  So this should not be in dev\
+   because it doesn't ship with VCrayApp.
+
+ * There is a question about managing
+   and making verification available, so I have to think about that.  Then
+   there needs to be a bit more scaffolding.  Mmm, yes, but the same applies.
+   I could make VCrayVerify and that should work just fine.  Still noodling.
+   This is a great idea because it provides a structure for reverifying the
+   examples when raylib\examples change and also when there is a new releases
+   of Visual Studio Build Tools.  We have both of those to contend with and
+   the ability to rerun everything relatively quickly matters.
+
+ * The technique in VCbind for choosing a start configuration should work for
+   VCrayVerify.  Then a technique for doing only one instead of running the
+   table should also work.  Because there are 9 groups of raylib\example
+   folders, it is probably good to have some sort of granularity in which
+   examples are verified, including how many. Might want some sort of wild-
+   card scheme, and must deal with * being use in VCbind and VCrayApp for
+   other purposes.  Need this to be simple.
+
+ * It looks like VCrayVerify should be a peer project or a subproject of
+   VCrayApp.  I don't like the deeper nesting.  And this is as much about
+   raylib (or more) than it being an application of VCrayApp.  Wherever I
+   create this, I should move some of these work items and considerations
+   there.
+
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.9 2023-01-15T06:02Z Pondering how to create a verification fixture that
+       works through raylib\example folders in some deliberate way.
  0.0.8 2023-01-08T21:06Z Reflect VCrayApp-0.0.0 release candidacy and manage
        TODOs.
  0.0.7 2022-12-21T19:26Z Manifest correction, manage TODOs
