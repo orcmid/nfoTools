@@ -1,4 +1,4 @@
-VCrayNest.txt 0.0.0                 UTF-8                     dh:2022-04-08
+VCrayNest.txt 0.0.1                 UTF-8                         2023-01-15
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 <https://github.com/orcmid/nfoTools/blob/master/devKits/WinDev/VCrayNest/VCrayNest.txt>
@@ -23,7 +23,7 @@ MANIFEST
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-                       Copyright 2022 Dennis E. Hamilton
+                    Copyright 2022-2023 Dennis E. Hamilton
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -42,7 +42,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. VCrayNest: DevKit for Shared raylib VCrayApp projects.
-   nfoTools file VCrayNest.txt version 0.0.0 dated 2022-04-08, available on
+   nfoTools file VCrayNest.txt version 0.0.1 dated 2023-01-15, available on
    the Internet as a version of
    <https://github.com/orcmid/nfoTools/blob/master/devKits/WinDev/VCrayNest/VCrayNest.txt>
 
@@ -72,9 +72,28 @@ TODO
  * We're also looking at a development lifecycle case.  Need to take the
    VCrayNest scenarios and tutorials all the way to producing a distribution.
 
+ * I have decided to create VCrayVerify for the specific task of running
+   raylib\examples\ progressively through a VCrayApp series with a setup and
+   batch script.  In this case, it works by moving the examples into the
+   reused VCrayApp setup as it goes. It might get away with not always moving
+   code.  There are a number of challenges.  These will be found at
+   VCrayVerify.
+
+ * I don't think VCrayNest is needed, but I am leaving the place on nfoTools
+   for now.  VCrayTest is doubtless needed, but it is a different case, the
+   testing of a VCrayApp.  There might be an useful model in VCrayVerify to
+   suggest how a test suite can be built for a VCrayApp; that remains to be
+   seen.
+
+ * Also, a VCtest should not be neglected, for running test suites on other
+   kinds of command-line app constructions, whether VCrayApp or some other
+   flavor.
+
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
+ 0.0.1 2023-01-15T17:19Z Consider switching attention to VCrayVerify and
+       maybe VCrayTest as well as a more-generic VCappTest.  Whatever.
  0.0.0 2022-04-08T16:56Z Clone from WinDev.txt 0.0.14 to establish the
        VCrayNest folder.
 
