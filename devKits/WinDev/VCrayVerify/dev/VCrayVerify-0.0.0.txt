@@ -1,0 +1,228 @@
+
+
+VCrayVerify-0.0.0.txt 0.0.0           UTF-8                        2023-01-16
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+                      NFOTOOLS DEVKIT FOR RAYLIB TESTS
+                      ================================
+
+    <https://orcmid.github.io/dev/**somewhere**/VCrayVerify-0.0.0.txt>
+
+
+         VERIFYING RAYLIB EXAMPLES WITH VS DEVELOPER COMMAND PROMPT
+         ----------------------------------------------------------
+
+  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+  *                                                                     *
+  *                              CAUTION                                *
+  *                              *******                                *
+  *                                                                     *
+  *    This is an alpha release of VCrayVerify.  There is incomplete    *
+  *    information.  Alpha is intended for review and testing of the    *
+  *    functionality.  It requires moderate self-reliance for use by    *
+  *    novice developers.  Any problem reports out of operation may     *
+  *    require additional skill in interpreting the results.            *
+  *    There will be beta releases followed by stable releases.         *
+  *       There may be breaking changes in that progression, although   *
+  *    upgrading to use of a later version should not be difficult.     *
+  *                                                                     *
+  *                             IMPORTANT                               *
+  *                             *********                               *
+  *                                                                     *
+  *    The raylib/examples/ are written in C Language and depend on     *
+  *    C language raylib components.  In addition, VCrayVerify depends  *
+  *    on the Microsoft VC C/C++ compiler and related developer tools   *
+  *    on a Windows desktop PC, laptop or Microsoft Surface.  Su;pport  *
+  *    is not available for other language bindings and platforms.      *
+  *                                                                     *
+  *    VCrayVerify 0.0.0 Uses a customized VCrayApp 0.0.0. VCrayVerify  *
+  *    is tested and confirmed with raylib 4.0.0 code. Changes and      *
+  *    incompatibilities in later versions of raylib may present        *
+  *    issues for VCrayVerify operation.  Detecting and resolving such  *
+  *    situations is part of VCrayVerify's utility as an instrument.    *
+  *                                                                     *                                                                     *
+  *                                                                     *
+  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+    The VCrayVerify-0.0.0 distribution is available on the web at
+    <https://orcmid.github.io/nfoTools/dev/**somewhere**>.  Consult
+    that page for the latest status, links to useful related material,
+    and any more-recent version.  If there is concern for the authenticity
+    or correctness of any VCrayVerify distribution, obtain a full replacement
+    via <https://orcmid.github.io/nfoTools/dev/**mainplace**>.
+
+    VCrayVerify is designed to work with versions of Visual Studio that are
+    free for personal/open-source use, including the Visual Studio Build Tools
+    (recommended) and the Visual Studio Community editions.  Additional levels
+    of licensed Visual Studio can also be used, all via their Native Tools
+    Command Prompt.
+
+ PREREQUISITES AND DEPENDENCIES
+
+    Operation of VCrayVerify involves the following tools along with some
+    confidence at understanding compilation errors and other error conditions
+    that may be reported dur VCrayVerify operation.
+
+     * Windows File Explorer
+     * Windows Built-in Zip-Folder Tool
+     * Visual Studio Native Build Tools
+     * Developer Command Prompt
+     * Microsoft VC/C++ Command Line Compiler, CL.exe
+     * raylib *source* code *release* 4.0.0 (or 3.7.0) downloaded and unzipped
+     + GPG4Win for creation and verification of digital signatures
+     + A text-editor for work on source code, other files, all in plain text
+       (Visual Studio Code recommended for its C/C++ and Microsoft support)
+     + Git4Win implementation for source-code control
+     + TortoiseGit for File Explorer integration of Git
+     + GitHub Windows Client for public access to development projects
+
+    The first six (*) are essential.  The remainder (+) are optional and
+    recommended mainly for your own development projects that make further use
+    of, or contribute to, raylib.  There are alternatives.  The specific ones
+    happen to be those relied upon in the development of nfoTools projects.
+    For more information on dependencies, see
+    <https://orcmid.github.io/nfoTools/dev/**mainplace**>.
+
+DOWNLOADS AND SETUP
+
+    It is recommended that you have already installed Visual Studio Native
+    Build Tools and confirmed that the Developer Command Prompt is operating
+    properly.  See <https://orcmid.github.io/nfoTools/tools/T211002/>.
+
+    If you have not already done so, choose where on your computer you want
+    to have the VCrayVerify code.  There may be sufficient room for including
+    a complete copy or raylib source into the VCrayVerify project folder.  See
+    the setup arrangements at <https://orcmid.github.io/nfoTools/dev/**mainplace**>.
+
+    Download VCrayVerify from <https://orcmid.github.io/nfoTools/dev/**somewhere**>.
+    If a later version is available, consider using that version instead.
+
+    It is useful to download VCrayVerify-0.0.0.zip to a location that you can
+    use as a source of copies for one or more VCrayVerify setups, as in side-
+    by-side comparision with different raylib\ versions.
+
+EXTRACTION AND RENAMING OF VCrayVerify-0.0.0.zip CONTENT
+
+    After downloading VCrayVerify-0.0.0.zip to a place where you want to keep
+    it, make a copy to a place where you want to use it, if different.
+
+    Right click on File Explorer VCrayVerify-0.0.0.zip and click
+    "Extract all ..." in the context menu that appears.
+
+    In the "Extract Compressed (Zipped) Folders" Dialog that appears,
+    accept the "Files will be extracted to this folder:" choice that is
+    offered automatically.
+
+    Check the "Show extracted files when complete" entry.
+
+    Click "Extract".
+
+    There should now be a VCrayVerify-0.0.0\ folder in the same folder as the
+    Zip file you extracted.  Rename that sub-folder to the name you want for
+    this VCrayVerify project of yours.  This is your verification folder.
+
+***** EDITOR'S NOTE: FOLLOWING MATERIAL NOT CUSTOMIZED YET ******************
+
+
+ CONFIRMING THE VCrayApp SETUP AND OPERATION
+
+    Using a Visual Studio Developer Command Prompt, navigate to your project
+    folder and use the command
+
+        VCrayApp ?
+
+    To confirm that the project folder is setup properly and that VCrayApp.bat
+    is operating.
+
+    If that succeeds, use the command
+
+        VCrayApp -r
+
+    This will compile raylib components to the cache\ folder, compile a sample
+    program to the app\ folder, and then operate that program.
+
+    If there are any failure messages, correct for them until this command
+    succeeds.  See <https://orcmid.github.io/nfoTools/dev/D211101> for
+    additional information.
+
+    Use your text editor to modify VCrayApp.bat for your own project instead
+    of the sample.  Only two changes are required, as specified in that file.
+
+
+MANIFEST OF VCrayApp-0.0.0.zip
+
+    NOTICE.txt 1.0.2 2,056 byte 2023-01-02T22:09Z version
+        applicable NOTICE for VCrayApp-0.0.0.zip and its content
+
+    VCrayApp-0.0.0.txt 0.0.7 11,862 byte 2023-01-07T20:49 clearsigned version
+        This description file on organization of the archive and use of its
+        materials.
+
+    VCrayApp.bat 0.0.18 10,901 byte 2022-12-31T20:30Z version
+        Script that, when run, will confirm VC/C++ command-prompt settings
+        and perform compilation of a raylib cache\ and project source codes,
+        to deliver a compiled result in app\.
+
+    .vscode\                      provided for use of Visual Studio Code with
+        .vscode.txt                  a .txt project synopsis and manifest for
+        c_cpp_properties.json        the .vscode folder
+
+    app\
+        .gitignore   used to suppress compiled binaries from source control
+        app.txt      synopsis and manifest for the app\ folder
+
+    cache\
+        .gitignore   used to suppress intermediate files from source control
+        cache.txt    synopsis and manifest for the cache\ folder
+        rayConfirm.c sample program used to confirm successful operation
+        raylibCode.3.7.0.opt
+                     options file for compiling raylib-3.7.0 components
+        raylibCode.4.0.0.opt
+                     options file for compiling raylib-4.0.0 components
+        raylibCode.opt
+                     options file that is used (raylib-4.0.0 default)
+        raylibVars.opt
+                     additional parameters used in compiling the cache
+        rayLinking.opt
+                     options file for linking to make the .exe file
+        VCoptions.opt
+                     options file for both cache\ and project code compilation
+
+    src\
+        src.txt      synopsis and manifest for the src\ folder
+
+    The supplied text files provide further descriptions and explanations
+    for usage and customization of each folder.
+
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+                    Copyright 2021-2023 Dennis E. Hamilton
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+ ATTRIBUTION
+
+   Hamilton, Dennis E. Building raylib Apps with VS Developer Command Prompt.
+   nfoTools file VCrayApp-0.0.0.txt version 0.0.7 dated 2023-01-07 available
+   on the internet as a version of
+   <https://orcmid.github.io/dev/D211101/D211101c/VCrayApp-0.0.0.txt>
+
+
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+ 0.0.0 2023-01-16T20:44Z Placeholder draft with VCrayApp-0.0.0.txt 0.0.7
+       boilerplate
+
+                  ***** end of VCrayVerify-0.0.0.txt *****

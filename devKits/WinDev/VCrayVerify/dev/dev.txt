@@ -1,41 +1,39 @@
-VCrayVerify.txt 0.0.1               UTF-8                         2023-01-**
+dev.txt 0.0.0                       UTF-8                         2023-01-**
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-<https://github.com/orcmid/nfoTools/blob/master/devKits/WinDev/VCrayVerify/VCrayVerify.txt>
+<https://github.com/orcmid/nfoTools/blob/master/devKits/WinDev/VCrayVerify/dev/dev.txt>
 
-           VCRAYVERIFY: TEST HARNESS FOR VERIFYING RAYLIB EXAMPLES
-           =======================================================
+       DEVELOP VCRAYVERIFY TEST HARNESSES FOR VERIFYING RAYLIB EXAMPLES
+       ================================================================
 
-    VCrayVerify is a a folder structure and and batch (.bat) script that
-    uses VCrayApp and a raylib source release or development clone to verify
-    compilation of all of the raylib/examples/ that can be compiled by current
-    Microsoft VC/C++ Build Tools. construction kit and helpers are for creation of
-    construction sets that build sets of Windows raylib applications using
-    Microsoft developer tools on Windows for Windows.
+    This folder is for the development, confirmation, and packaging of a
+    VCrayVerify test suite.
 
-    This area is for the development, confirmation, and packaging of the
-    VCrayVerify.  The public availability of distributions and their
-    usage is treated under docs/dev <https://orcmid.google.io/nfoTools/dev/>
-    topics.
+    The structure of this folder is that of the intended test suite.  It is
+    tested and developed in place against particular versions of raylib.
 
-    There are a variety of confirmations achieved by running the VCrayVerify
-    script:
+    A VCrayVerify folder will have its own raylib\ subfolder with an adjacent
+    VCrayApp\ adaptation.  This keeps VCrayVerify operation separate from any
+    use of raylib\ and VCrayApp for other purposes, especially where official
+    stable releases are preferable.  VCrayVerify provides for verification
+    with a variety of raylib releases, including clones of the current
+    under-development raylib\ release.
 
-     - the availability of the examples in the raylib source employed
-     - the successful compiling and execution of the examples in that source
-     - presence of discrepancies in the examples because of breaking changes
-       in a raylib (leading to update of the examples)
-     - difficulties with an example because of problems in VCrayApp and/or
-       the (versions of) VC/C++ tools used
+    The VCrayApp\ adaptation employs src\ as the location where examples
+    and other source codes are placed.  The app\ folder will receive compiled
+    examples and the resources\ subfolder for examples that expects one.
+
+
+
+
 
 MANIFEST
 
-    VCrayVerify.txt
+    dev.txt
         This description file on organization of the folder and use of its
         materials.
 
-    dev/
-        the development folder for versions of VCrayVeryify
+
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
@@ -57,7 +55,7 @@ MANIFEST
 
  ATTRIBUTION
 
-   Hamilton, Dennis E. VCrayNest: DevKit for Shared raylib VCrayApp projects.
+   Hamilton, Dennis E.  DevKit for Shared raylib VCrayApp projects.
    nfoTools file VCrayNest.txt version 0.0.0 dated 2023-01-15, available on
    the Internet as a version of
    <https://github.com/orcmid/nfoTools/blob/master/devKits/WinDev/VCrayVerify/VCrayVerify.txt>
