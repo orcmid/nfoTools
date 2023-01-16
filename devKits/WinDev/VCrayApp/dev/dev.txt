@@ -1,4 +1,4 @@
-dev.txt 0.0.6                       UTF-8                         2023-01-14
+dev.txt 0.0.7                       UTF-8                         2023-01-16
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                        AN NFOTOOLS COMING ATTRACTION
@@ -71,25 +71,19 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. raylib App Build with VS Developer Command Prompt.
-   nfoTools text file version 0.0.5 dated 2023-01-14, available on the
+   nfoTools text file version 0.0.7 dated 2023-01-16, available on the
    Internet as a version of
    <https://github.com/orcmid/nfoTools/blob/master/devKits/WinDev/VCrayApp/dev/dev.txt>
 
 TODO
 
- * Work toward VCrayApp 1.0.0 after 0.0.x alphas and 0.1.x betas
+ * Work toward VCrayApp 1.0.0 after 0.1.x beta(s)
 
  * Add links to more and better information in the rayConfirm.c file.
    Replace place-holder <...> items with valid links.
 
- * Prepare an alpha release for early testing.  Establish prerequisites.
-
- * Remember how to setup all the digital signatures and provide that.
-
- * Include a link on signature and hash checking in the manifest.  Also
+  * Include a link on signature and hash checking in the manifest.  Also
    provide something more on the documentation for such things.
-
- * Add attribution suggestion to NOTICE.txt.  It will be release-specific.
 
  * Update the materials for preparation of VCrayApp 0.1.0 (beta).
 
@@ -108,8 +102,16 @@ TODO
  * In .vscode.txt there is a link place-holder.  This should be dealt with
    by the time of VCrayApp 0.1.0 release.
 
+ * Ensure that there is a check for raylib\ presence in VCrayApp.bat
+
+ * In the VSrayApp-*semver*.txt, ensure that there are not consecutive "--..."
+   at the beginning of ruler lines, so that armor signatures do not substitute
+   spaces among them.  There needs to be something that extraction won't alter
+   as well.  Put a "*" in place of the first "-"
+
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.7 2023-01-16T18:36Z Manage TODOs and more to handle in 0.1.0
  0.0.6 2023-01-14T21:34Z More TODOs on 0.1.0 preparation
  0.0.5 2023-01-14T17:53Z Manage TODOs, prepare for VCrayApp 0.1.0 development
  0.0.4 2022-12-31T20:43Z Manage TODOs, update remarks
