@@ -1,0 +1,4 @@
+"..\..\raylib\src\rcore.c" "..\..\raylib\src\rshapes.c"
+"..\..\raylib\src\rtextures.c" "..\..\raylib\src\rtext.c"
+"..\..\raylib\src\rmodels.c" "..\..\raylib\src\utils.c"
+"..\..\raylib\src\raudio.c" "..\..\raylib\src\rglfw.c"

@@ -1,0 +1,28 @@
+# .gitignore 0.0.3                  UTF-8                       dh:2021-11-11
+#---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+#
+#                   COMPILED RAYAPP APPLICATION FOLDER
+#                   ==================================
+#
+#       .GITIGNORE FOR KEEPING EXECUTABLES OUT OF A GIT REPOSITORY
+#
+#   This .gitignore file is intended to exclude intermediate compilation
+#   and even the deliverables from a Git repository.  The presumption is
+#   that project customizations are all reflected elsewhere and the files
+#   here can be recreated on demand.  See the app.txt file.
+
+#   XCopy/MSIX package executables
+*.exe
+resources/
+#   intermediate files
+*.obj
+# app.txt in an unzipped rayApp-version.zip deliverable.
+
+#---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+# 0.0.3 2021-11-11T18:20z Adjust to final form.
+# 0.0.2 2021-11-05T23:05Z Further adjustments
+# 0.0.1 2021-10-18T21:52Z Adjust for FC_CPP/S2-Axe/app/ companion folder
+# 0.0.0 2021-09-27T23:46Z Block expected final forms - placeholder
+
+#                       *** end of app/.gitignore ***

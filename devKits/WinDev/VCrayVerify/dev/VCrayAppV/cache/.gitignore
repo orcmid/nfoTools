@@ -1,0 +1,22 @@
+# .gitignore 0.0.2                  UTF-8                       dh:2021-10-20
+#---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+#
+#                    Orcmid's Windows Companion to FC_CPP
+#                    ====================================
+#
+#              .GITIGNORE FOR KEEPING BUILDS OUT OF THE REPOSITORY
+#
+#   This .gitignore file is intended to exclude intermediate compilation
+#   materials from the git repository.  If this were included from a kit,
+#   there would be other files also excluded.
+
+#   MS Built Tools Intermediates
+*.obj
+
+#---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+# 0.0.2 2021-10-20T20:09Z Adjust for renaming to cache
+# 0.0.1 2021-09-28T15:10Z Rename tmp to wrk and recognized kit difference
+# 0.0.0 2021-09-27T23:20Z Block expected intermediates - placeholder
+
+#                       *** end of cache/.gitignore ***

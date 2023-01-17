@@ -1,0 +1,2 @@
+..\cache\*.obj *.obj
+kernel32.lib user32.lib shell32.lib winmm.lib gdi32.lib opengl32.lib

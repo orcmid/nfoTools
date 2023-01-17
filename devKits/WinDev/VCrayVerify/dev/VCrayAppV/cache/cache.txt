@@ -1,0 +1,163 @@
+VCrayApp 0.0.0 cache.txt 0.0.18     UTF-8                         2023-01-02
+----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+
+
+                     VCRAYAPP APPLICATION-BUILD DEVKIT
+                     =================================
+
+                       VCRAYAPP RAYLIB CACHE FOLDER
+                       ----------------------------
+
+  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+  *                                                                       *
+  *          DO NOT REMOVE THIS FILE. VCRAYAPP.BAT REQUIRES ONE           *
+  *          **************************************************           *
+  *                                                                       *
+  *    cache\ serves double-duty for VCrayApp.  It contains supporting    *
+  *    files and a setup confirmation file for demonstrating successful   *
+  *    compilation.  It is also the location for a cache of compiled      *
+  *    raylib *.obj files that can be incorporation in the project .exe   *
+  *    without taking the time to compile them every time.                *
+  *                                                                       *
+  *    If VCrayApp is re-extracted or is updated and extracted, this      *
+  *    file and all other files of the new manifest will be replaced. If  *
+  *    any *.opt files have been altered, they should first be renamed    *
+  *    for protection against being over-written.  Then use those for     *
+  *    review and adjustment of the restored/updated versions.            *
+  *                                                                       *
+  *                            ** IMPORTANT **                            *
+  *                            ***************                            *
+  *                                                                       *
+  *         THESE CACHE\ FILES DEPEND ON RAYLIB 4.0.0 RELEASE CODE        *
+  *         ******************************************************        *                                                                     *
+  *          THERE IS ALSO PROVISION FOR THE RAYLIB 3.7.0 RELEASE         *
+  *                                                                       *
+  *                            **  WARNING  **                            *
+  *                            ***************                            *
+  *                                                                       *
+  *    RAYLIB-4.2.0 CANNOT BE USED WITH VCRAYAPP because of a defect in   *
+  *    the external/miniaudio.h file depended upon by raudio.c.  The bug  *
+  *    prevents VCrayApp compiling with any version of Microsoft VC/C++.  *
+  *    When there is a repaired raylib-4.x.0 release, support will be     *
+  *    incorporated in VCrayApp.                                          *
+  *                                                                       *
+  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+
+    cache/ contains compilation materials, a setup confirmation program, and
+    compiled raylib files that become a pre-compiled library to the project.
+
+    When the cache has been populated with compiled raylib code, new compiles
+    will avoid the time it would take to compile that code again.
+
+    Using a cache in this manner, with the applicable compilation *.opt files,
+    ensures that the compiled raylib *.obj files and the user compiled files
+    are always compatible.
+
+    IMPORTANT DEPENDENCY: The VCrayApp.bat file (in the folder above cache/)
+    and the option files raylibCode.opt and VCoptions.opt all depend on
+    relative location of a raylib/ source-code folder.  These must be altered
+    together for any change to relative location (including use of an absolute
+    location).  The use of relative addresses also requires that VCrayApp be
+    installed on the same drive as the raylib\ release code.
+
+    For more information, see <https://orcmid.github.io/nfoTools/dev/D211101>.
+
+MANIFEST
+
+    cache.txt
+        this manifest and job-jar file
+
+    .gitignore
+        excluding the compilation intermediates from any git commits. The
+        *.obj files should always be excluded because they are temporary
+        and should be rebuilt as needed, not backed-up under version control.
+
+    rayConfirm.c
+        sample program used to confirm the setup and building of a raylib
+        application with VS Build Tools.  Once setup is confirmed,
+        VCrayApp.bat can be modified to compile the user's rayApp project src\
+        files.  See the instructions at the beginning of VCrayApp.bat.
+
+    raylibCode.opt
+        Option file identifying the raylib ***4.0.0*** source modules to be
+        compiled and their *.obj files cached.  This file depends on raylib\
+        being at a fixed location relative to cache\. raylib\src\rglfw.c must
+        be the last one successfully compiled.  It's presence is checked to
+        confirm that a complete cache is available.
+
+    raylibCode.3.7.0.opt
+        Option file to be copied to raylibCode.opt when using raylib 3.7.0.
+        Later releases of rayLib have different names for some core files.
+
+    raylibCode.4.0.0.opt
+        Option file to be copied to raylibCode.opt when using raylib 4.0.0,
+        the default for VCrayApp 0.0.0.
+        ***NOTE*** VCrayApp cannot be used to build later raylib 4.x.0 apps
+        until an error in raylib\src\external\miniaudio.h is repaired.
+
+    raylibVars.opt
+        Preprocessor definitions for the compilation of the raylib modules
+
+    rayLinking.opt
+        Parameters for linking the compiled raylib app and the cache of
+        raylib *.obj files into a .exe program
+
+    VCoptions.opt
+        Compilation options for Visual C/C++ native compiler cl.exe.
+        These options are the same between cache\ and app\ compiles.  This
+        file also depends on raylib\ being in the same predictable relative
+        location as relied on in raylibCode.opt.
+
+    *.obj (after compilation of cached raylib components)
+        VC/C++ compiled C Language *.obj modules from compilation of the
+        raylib files identified in raylibCode.opt.
+
+----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+                    Copyright 2021-2023 Dennis E. Hamilton
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+ ATTRIBUTION
+
+   Hamilton, Dennis E. VCrayApp raylib Cache Folder.  VCrayApp 0.0.0 text file
+   cache.txt version 0.0.18 dated 2023-01-02, available on the Internet as a
+   version of
+    <https://github.com/orcmid/nfoTools/blob/master/devKits/WinDev/VCrayApp/dev/cache/cache.txt>.
+
+
+----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+ 0.0.18 2023-01-02T22:29Z Add link to the docs/dev/D211101/ material
+ 0.0.17 2023-01-02T17:47Z Touch up explanations
+ 0.0.16 2022-10-23T19:14Z Add /fp:precise to VCoptions for predictable graphic
+        computations
+ 0.0.15 2022-10-19T21:14Z Introduce 4.0.0/3.7.0 raylibCode.opt alternatives,
+        identifying 4.2.0 incompatibility with Microsoft VC/C++ compilers.
+ 0.0.14 2022-07-15T22:31Z Emphasize raylib 3.7.0 dependency, touch-ups
+ 0.0.13 2022-07-13T18:28Z More touch-ups
+ 0.0.12 2022-07-12T15:11Z Touch-ups
+ 0.0.11 2022-07-12T03:56Z Bring to full-draft alpha-release level
+ 0.0.10 2022-03-30T17:49Z Manage TODOs, expand usage commentary
+ 0.0.9 2021-11-14T00:46Z Migration to VCrayApp 0.0.0 setup cache\ folder
+ 0.0.8 2021-11-11T19:39Z More refactoring with all *.opt in cache\
+ 0.0.7 2021-11-09T02:47Z Complete refactoring pending nfoTools VCrayApp.zip
+ 0.0.6 2021-11-08T00:11Z Refactored initial content and options/confirmation
+       files preparatory to streamlining and bundling into a Zipped setup
+ 0.0.0 2021-09-27T23:13Z placeholder for native-build intermediate materials
+
+                         ***** end of cache.txt *****
