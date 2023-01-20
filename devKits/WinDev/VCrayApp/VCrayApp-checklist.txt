@@ -1,4 +1,4 @@
-VCrayApp-checklist.txt 0.0.3        UTF-8                         2023-01-07
+VCrayApp-checklist.txt 0.0.4        UTF-8                         2023-01-20
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                       RAYLIB APP DEVELOPMENT PROJECT
@@ -95,13 +95,18 @@ DEPLOYMENT
       verify the signature, the clearsigned VCrayApp-*semver*.txt.
     * Create the SHA256 Hash of the VCrayApp-*semver*.zip for usage also.
       This can be done running certUtil -hashfile (file) SHA256 >(file).SHA256
+    * Explore use of winget hash for making SHA256 hashes and see if that
+      works as well.  This might be a better alternative for command-line
+      operation on current Windows 10/11.
 
     * The signature check works with gpg --verify naming either the .txt
       version or the .asc detached signature.
 
     * The hash can be checked by comparison, which is not much fun.  There
       seems to be no check utility and that's just too bad.  THIS SHOULD BE
-      AN NFOTOOLS PROJECT.
+      AN NFOTOOLS PROJECT.  It seems that Winget hash works a little better.
+      I could probably do a hash to a file and then do a file compare.  That
+      might be a lot better.
 
     * Ensure that GIT and the site treat .asc and .sha256 as text/plain. That
       is the default.  We need to figure out if clear-sign armor files check
@@ -130,7 +135,7 @@ DEPLOYMENT
  ATTRIBUTION
 
    Hamilton, Dennis E. VCrayApp Release Development and Deployment Checklist.
-   nfoTools Project text file VCrayApp-checklist.txt 0.0.2 dated 2022-08-6,
+   nfoTools Project text file VCrayApp-checklist.txt 0.0.4 dated 2023-01-20,
    available on the Internet as a version of
    <https://github.com/orcmid/nfoTools/blob/master/devKits/WinDev/VCrayApp/VCrayApp-release.txt>
 
@@ -176,6 +181,7 @@ TODO
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.4 2023-01-20T17:38Z Update TODOs on use of winget hash
  0.0.3 2023-01-09T23:22Z Update and manage TODOs
  0.0.2 2022-08-16T15:54Z Rename VCrayApp-checklist.txt
  0.0.1 2022-07-17T18:46Z Intermediate check-in
