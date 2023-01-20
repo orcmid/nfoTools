@@ -1,7 +1,7 @@
-NOTICE.txt 1.0.2                      UTF-8                      2023-01-02
+NOTICE.txt 1.0.0                      UTF-8                      2023-01-20
 
-                                 VCrayApp NOTICE
-                                =================
+                               VCrayVerify NOTICE
+                               ==================
 
 This work is licensed to you under the Apache License, Version 2.0 (the
 "License"; you may not use this work except in compliance with the License.
@@ -17,24 +17,24 @@ under the License.
 
 THIRD-PARTY ACKNOWLEDGMENT
 
-    The VCrayApp model and VCrayApp.bat are inspired by Ramon Santamaria's
+    The VCrayVerify model and VCrayAppV.bat are inspired by Ramon Santamaria's
     <https://github.com/raysan5/raylib/blob/master/projects/scripts/build-windows.bat>
     under zlib license, <https://github.com/orcmid/raylib/blob/master/LICENSE>.
 
-    The style of VCrayApp.bat is based on that of VCbind.bat 0.1.9 version of
+    VCrayVerify.bat and VCrayAppV.bat blend VCbind.bat 0.1.9 methods of
     <https://github.com/orcmid/nfoTools/blob/master/devKits/WinDev/VCbinder/devBind/VCbind.bat>.
 
 
 INFORMAL SUMMARY
 
     This notification applies only to the materials distributed in the
-    VCrayApp-0.0.0.zip package and not to any content from other sources.
+    VCrayVerify-0.0.0.zip package and not to any content from other sources.
 
-    You can use and redistribute releases of VCrayApp without limitation.
-    If you modify and/or incorporate VCrayApp in a distribution of your own,
-    you should provide attribution to the origin of VCrayApp and also assert
+    You can use and redistribute releases of VCrayVerify without limitation.
+    If you modify and/or incorporate VCrayVerify in a distribution of yours,
+    you should provide attribution to the origin of VCrayVerify and assert
     that the locatable original form is available under the Apache License
-    at <https://orcmid.github.io/nfoTools/dev/D211101d>.
+    at <https://orcmid.github.io/nfoTools/dev/**place-to-be-supplied**>.
 
     You can provide a different license of your own choosing.  That does not
     alter the copyright and license over the original portions that do not
@@ -42,4 +42,4 @@ INFORMAL SUMMARY
 
     For specific details, consult the complete Apache License.
 
-                     *** end of VCrayApp NOTICE.txt ***
+                   *** end of VCrayVerify NOTICE.txt ***
