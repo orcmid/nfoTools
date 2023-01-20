@@ -1,4 +1,4 @@
-WinDev.txt 0.0.18                     UTF-8                     dh:2023-01-20
+WinDev.txt 0.0.17                     UTF-8                     dh:2023-01-07
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
   <https://github.com/orcmid/nfoTools/blob/master/devKits/WinDev/WinDev.txt>
@@ -30,31 +30,17 @@ MANIFEST
         Kit for construction sets that build C/C++ Windows Console applica-
         tions using Windows command shell sessions. These include projects
         for command-line games and utilities as well as ones that provide
-        simple graphical operation apart from VCrayApp and the other raylib
-        supports.
+        simple graphical operation.
 
     VCrayApp/
-        devKit for building Windows applications using the raylib library
+        Template for building Windows applications using the raylib library
         for graphical applications.
 
     VCrayNest/
         Template for a set of VCrayApp-organized projects all relying on the
         same copy of raylib/ but (potentially) having their own cache.  It can
         also be used for a singleton project.  Or to have a fork alongside one
-        or more earlier versions. **NOTE:** This project is being deprecated.
-        VCrayVerify/ and VCrayTest/ are of current interest and will be
-        pursued.
-
-    VCrayTest/
-        reserved project for possible development of testing functions in the
-        development of raylib-based applications using VS Native Build Tools.
-        The prospect of using Visual Studio testing capabilities is an open
-        question.
-
-    VCrayVerify/
-        Fixture for verifying the examples in a raylib/ source distribution
-        to confirm continued working of the examples as Win32 x64 native
-        applications constructed with current VC/C++ Build Tools.
+        or more earlier versions.
 
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
@@ -78,7 +64,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. Templates, Kits, and Helpers on Windows. nfoTools file
-   WinDev.txt version 0.0.18 dated 2023-01-20, available on the Internet as a
+   WinDev.txt version 0.0.17 dated 2023-01-07, available on the Internet as a
    version of
    <https://github.com/orcmid/nfoTools/blob/master/devKits/WinDev/WinDev.txt>
 
@@ -104,7 +90,7 @@ TODO
    binaries of the same distributions.  Implement that in VCbinder.  Remember
    what this item is about.  [2021-11-16 I have no idea what this item is
    about.  I think it is about mumble-src.zip packagings.  Then it makes
-   sense.  There should be tie-in to GitHub branches then, just maybe.]
+   sense.  There should be tie-in to GitHub brances then, just maybe.]
 
  * We need to look into dependencies when one is developing and what they
    might change to in a stable construction set.  I suppose the intriguing
@@ -160,12 +146,17 @@ TODO
  * There's a pattern to WinDev (maybe devkit level) that might deserve being
    accounted for, probably under dev/ and not tools/.  Yes, definitely.
 
+ * Figure out the use of VCrayNest, VCrayFarm, VCrayTest, VCrayLand,
+   VCrayLab, and any other VCray thingies.  Need to focus on which tools we
+   mean for what.  Also VCraySet, VCrayNest, VCrayLair I am settling on
+   VCrayLab because it is pronounceable and sort of goes with multiple
+   experiments, games.  I have talked my way into VCrayNest for a shared
+   raylib release in a set of VCrayApp-based applications.
+
  * A good VCrayTest would provide for cycling through testcases and also
    reporting success.  Could run quiet or with away to select the test or
    example to demonstrate.  I am not certain this is about testing one's own
-   raylib or raySuite (what took me so long to identify that).  I now think
-   VCrayVerify is what is meant in one case.  VCrayTest[s] is for testing
-   by other than the raylib-distributed examples and maybe unit testing aids.
+   raylib or raySuite (what took me so long to identify that).
 
  * There needs to be a good account of C vs C++ and then how to navigate the
    dependencies.  And also what language to use.  When would we want C++ and
@@ -178,9 +169,7 @@ TODO
  * We must not forget numerical analysis and ways to exercise that.  It might
    be at a different level than WinDev but maybe not, since we want to focus
    on the quality of Wintel libraries and computation.  Need to think about
-   generalizing.  It will show up under docs/ skills as well as tools.  Also
-   using rigid settings for the floating-point operations should be made
-   widespread.
+   generalizing.  It will show up under docs/ skills as well as tools.
 
  * The need for numerical analysis with regard to graphics programming is also
    of interest.
@@ -196,13 +185,8 @@ TODO
    be found in src/ before being moved to cache/ and compiled there. This
    reusability is valuable.
 
- * **DEPLOYMENT** Need to figure out MSIX as well as xcopy deployment cases
-   and how that all can work, especially for the construction of games and
-   apps that want per-user persistent but modifiable materials.
-
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
- 0.0.18 2023-01-20T18:36Z Manage TODOs, add VCrayVerify\ and VCrayTest[s]
  0.0.17 2023-01-07T18:27Z Happy New Year and manage TODOs
  0.0.16 2022-08-14T19:44Z Manage TODOs
  0.0.15 2022-04-08T17:03Z Manage TODOs, move some TODOs to VCrayNest.txt
