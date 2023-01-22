@@ -1,4 +1,4 @@
-NOTICE.txt 1.0.0                      UTF-8                      2023-01-20
+NOTICE.txt 1.0.1                      UTF-8                      2023-01-22
 
                                VCrayVerify NOTICE
                                ==================
@@ -15,6 +15,8 @@ WARRANTIES OR CONDITIONS OF ANY KIND, either expressed or implied.  See
 the License for the specific language governing permission and limitations
 under the License.
 
+For specific details, consult the complete Apache License.
+
 THIRD-PARTY ACKNOWLEDGMENT
 
     The VCrayVerify model and VCrayAppV.bat are inspired by Ramon Santamaria's
@@ -28,7 +30,8 @@ THIRD-PARTY ACKNOWLEDGMENT
 INFORMAL SUMMARY
 
     This notification applies only to the materials distributed in the
-    VCrayVerify-0.0.0.zip package and not to any content from other sources.
+    VCrayVerify-0.0.0.zip package and not to content from other sources, such
+    as a raylib version that is incorporated for use in VCrayVerify operation.
 
     You can use and redistribute releases of VCrayVerify without limitation.
     If you modify and/or incorporate VCrayVerify in a distribution of yours,
@@ -37,9 +40,8 @@ INFORMAL SUMMARY
     at <https://orcmid.github.io/nfoTools/dev/**place-to-be-supplied**>.
 
     You can provide a different license of your own choosing.  That does not
-    alter the copyright and license over the original portions that do not
-    comprise your original authorship.
+    alter the copyright and license over any portions that do not comprise
+    your original authorship as part of your derivative work.
 
-    For specific details, consult the complete Apache License.
 
                    *** end of VCrayVerify NOTICE.txt ***
