@@ -1,5 +1,5 @@
 @echo off
-rem VCrayApp 0.1.0 VCrayApp.bat 0.0.19 UTF-8                       2023-01-14
+rem VCrayApp 0.1.0 VCrayApp.bat 0.0.20 UTF-8                       2023-02-09
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 rem                  BUILDING RAYLIB APP WITH VC/C++ TOOLS
@@ -113,9 +113,13 @@ rem Using presence of the last-built raylib .obj to determine full cache.
 rem *IMPORTANT* Keep consistent with %~dp0cache\raylibCode.opt
 
 CD %~dp0cache
+REM *** THE DETERMINATION OF RAYLIB VERSION IF ANY GOES HERE. AN ENVIRONMENT
+REM *** VARIABLE IS SET AND AVAILABLE FOR CONDITIONAL ACTIONS, SUCH AS
+REM *** SETTING THE raylibCode.opt FILE OR OTHERS WHERE RAYLIB VERSION MATTERS
 CL %VChush% /w /c @VCoptions.opt @raylibVars.opt @raylibCode.opt %VCterse%
 IF ERRORLEVEL 2 GOTO :FAIL4
 ECHO: [VCrayApp] FRESH CACHE OF RAYLIB *.OBJ FILES COMPILED
+REM XXX PUT RAYLIB VERSION IN HERE WHEN KNOWN
 ECHO: %VCterse%
 
 :APPBUILD
@@ -257,6 +261,8 @@ rem For additional information, see the accompanying NOTICE.txt file.
 rem
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 rem
+rem 0.0.20 2023-02-09T22:48Z Review for automation of raylib version checking
+rem        and reporting
 rem 0.0.19 2023-01-14T19:25Z Update for VCrayApp 0.1.0
 rem 0.0.18 2022-12-31T20:39Z Review and touch-up
 rem 0.0.17 2022-10-26T16:38Z More message cleanups
@@ -277,4 +283,5 @@ rem 0.0.3 2021-11-08T22:05Z Start blending VCbind on-ramp and guard rails
 rem 0.0.2 2021-11-07T23:43Z Rename and continue prototyping.
 rem 0.0.1 2021-11-05T21:39Z Trial Simplification for nfoTools + FC_CPP
 rem 0.0.0 2021-04-26T00:01Z 3.7.0 raylib/projects/scripts/build_windows.bat
+rem
 rem                      *** end of VCrayApp.bat ***
