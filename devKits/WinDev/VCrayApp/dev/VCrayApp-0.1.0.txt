@@ -1,13 +1,10 @@
------BEGIN PGP SIGNED MESSAGE-----
-Hash: SHA256
-
-VCrayApp-0.0.0.txt 0.0.7            UTF-8                         2023-01-07
-- ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+VCrayApp-0.1.0.txt 0.0.8            UTF-8                         2023-02-09
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                       NFOTOOLS DEVKIT FOR RAYLIB APPS
                       ===============================
 
-    <https://orcmid.github.io/dev/D211101/D211101c/VCrayApp-0.0.0.txt>
+    <https://orcmid.github.io/dev/D211101/D211101e/VCrayApp-0.1.0.txt>
 
 
            BUILDING RAYLIB APPS WITH VS DEVELOPER COMMAND PROMPT
@@ -18,13 +15,18 @@ VCrayApp-0.0.0.txt 0.0.7            UTF-8                         2023-01-07
   *                              CAUTION                                *
   *                              *******                                *
   *                                                                     *
-  *    This is an alpha release of VCrayApp.  There is incomplete       *
-  *    information.  Alpha is intended for review and testing of the    *
-  *    functionality.  It requires more self-reliance than expected     *
-  *    of novice developers.  The purpose is gathering feedback from    *
-  *    trial use.  There will be beta releases followed by stable       *
-  *    releases.  There may be breaking changes in that progression.    *
-  *    Be cautious.  Be careful.  Here be dragons.                      *
+  *    This is a beta release of VCrayApp.  The release is intended     *
+  *    as a preview of the stable release to follow once there has been *
+  *    a period of testing and review with feedback from trial use.     *
+  *                                                                     *
+  *    There could still be breaking changes, possibly to adjust for    *
+  *    changes in raylib and other tools that occur in the interim.     *
+  *                                                                     *
+  *    Be cautious.  Be careful.  It is recommended that VCrayApp be    *
+  *    used solely with official stable releases of raylib and other    *
+  *    tools.  Use of development versions of raylib\ and other tools   *
+  *    is recommended only for those interested in working on raylib\   *
+  *   itself, sustaining its usefulness.                                *
   *                                                                     *
   *                             IMPORTANT                               *
   *                             *********                               *
@@ -34,9 +36,9 @@ VCrayApp-0.0.0.txt 0.0.7            UTF-8                         2023-01-07
   *    related developer tools on a Windows desktop PC, laptop or       *
   *    Microsoft Surface.                                               *
   *                                                                     *
-  *    VCRAYAPP 0.0.0 IS BEING TESTED WITH THE RAYLIB 4.0.0 SOURCE      *
+  *    VCRAYAPP 0.1.0 IS BEING TESTED WITH THE RAYLIB 4.0.0 SOURCE      *
   *    CODE.  RAYLIB 4.2.0 CANNOT BE USED BECAUSE OF A VC/C++           *
-  *    INCOMPATIBILITY.  VCRAYAPP 0.0.0 CAN ALSO BE USED WITH 3.7.0.    *
+  *    INCOMPATIBILITY.  VCRAYAPP 0.1.0 CAN ALSO BE USED WITH 3.7.0.    *
   *    CONFIRMATION WITH LATER RAYLIB RELEASES IS FUTURE WORK.          *
   *                                                                     *                                                                     *
   *    Ramon Santiago's raylib software is written in a clean-form of   *
@@ -47,8 +49,8 @@ VCrayApp-0.0.0.txt 0.0.7            UTF-8                         2023-01-07
   *                                                                     *
   * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 
-    The VCrayApp-0.0.0 distribution is available on the web at
-    <https://orcmid.github.io/nfoTools/dev/D211101/D211101d>.  Consult
+    The VCrayApp-0.1.0 distribution is available on the web at
+    <https://orcmid.github.io/nfoTools/dev/D211101/D211101e>.  Consult
     that page for the latest status, links to useful related material,
     and any more-recent version.  If there is concern for the authenticity
     or correctness of any VCrayApp distribution, obtain a full replacement
@@ -99,18 +101,18 @@ DOWNLOADS AND SETUP
     raylib\ must be setup before VCrayApp can be used.
 
     Download VCrayApp from
-    <https://orcmid.github.io/nfoTools/dev/D211101/D211101d>.
+    <https://orcmid.github.io/nfoTools/dev/D211101/D211101e>.
     If a later version is available, consider using that version instead.
 
-    It is useful to download VCrayApp-0.0.0.zip to a location that you can
+    It is useful to download VCrayApp-0.1.0.zip to a location that you can
     use as a source of copies for one or more VCrayApp projects.
 
-EXTRACTION AND RENAMING OF VCrayApp-0.0.0.zip CONTENT
+EXTRACTION AND RENAMING OF VCrayApp-0.1.0.zip CONTENT
 
-    After downloading VCrayApp-0.0.0.zip to a place where you want to keep
+    After downloading VCrayApp-0.1.0.zip to a place where you want to keep
     it, make a copy to a place where you want to use it.
 
-    Right click on File Explorer VCrayApp-0.0.0.zip and click
+    Right click on File Explorer VCrayApp-0.1.0.zip and click
     "Extract all ..." in the context menu that appears.
 
     In the "Extract Compressed (Zipped) Folders" Dialog that appears,
@@ -121,7 +123,7 @@ EXTRACTION AND RENAMING OF VCrayApp-0.0.0.zip CONTENT
 
     Click "Extract".
 
-    There should now be a VCrayApp-0.0.0\ sub-folder in the same folder as the
+    There should now be a VCrayApp-0.1.0\ sub-folder in the same folder as the
     Zip file you extracted.  Rename that sub-folder to the name you want for
     this VCrayApp project of yours.  This is your project folder.
 
@@ -151,12 +153,12 @@ EXTRACTION AND RENAMING OF VCrayApp-0.0.0.zip CONTENT
     of the sample.  Only two changes are required, as specified in that file.
 
 
-MANIFEST OF VCrayApp-0.0.0.zip
+MANIFEST OF VCrayApp-0.1.0.zip
 
     NOTICE.txt 1.0.2 2,056 byte 2023-01-02T22:09Z version
-        applicable NOTICE for VCrayApp-0.0.0.zip and its content
+        applicable NOTICE for VCrayApp-0.1.0.zip and its content
 
-    VCrayApp-0.0.0.txt 0.0.7 11,862 byte 2023-01-07T20:49 clearsigned version
+    VCrayApp-0.1.0.txt 0.0.7 11,862 byte 2023-01-07T20:49 clearsigned version
         This description file on organization of the archive and use of its
         materials.
 
@@ -196,7 +198,7 @@ MANIFEST OF VCrayApp-0.0.0.zip
     The supplied text files provide further descriptions and explanations
     for usage and customization of each folder.
 
-- ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                     Copyright 2021-2023 Dennis E. Hamilton
 
@@ -212,18 +214,18 @@ MANIFEST OF VCrayApp-0.0.0.zip
     See the License for the specific language governing permissions and
     limitations under the License.
 
-- ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
  ATTRIBUTION
 
    Hamilton, Dennis E. Building raylib Apps with VS Developer Command Prompt.
-   nfoTools file VCrayApp-0.0.0.txt version 0.0.7 dated 2023-01-07 available
+   nfoTools file VCrayApp-0.1.0.txt version 0.0.8 dated 2023-02-09 available
    on the internet as a version of
-   <https://orcmid.github.io/dev/D211101/D211101c/VCrayApp-0.0.0.txt>
+   <https://orcmid.github.io/dev/D211101/D211101e/VCrayApp-0.0.0.txt>
 
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-- ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
-
+ 0.0.8 2023-02-09T23:37Z Rough-draft retargeting for VcrayApp-0.1.0.
  0.0.7 2023-01-07T20:44Z Clearsigned version
  0.0.6 2023-01-02T22:36Z Updating manifested time stamps
  0.0.5 2022-12-31T20:12Z Review and Touch-ups
@@ -234,15 +236,4 @@ MANIFEST OF VCrayApp-0.0.0.zip
  0.0.0 2021-10-09T00:46Z Placeholder draft
 
 
-                    ***** end of VCrayApp-0.0.0.txt *****
------BEGIN PGP SIGNATURE-----
-
-iQFGBAEBCAAwFiEEBNBDIpebhN4QdwM0+W6J/9RWYooFAmO52tQSHG9yY21pZEBh
-cGFjaGUub3JnAAoJEPluif/UVmKKtW4H/jCpyZKIiZ9N++UiTeOHPEbFfyPQZUkU
-Y2hAvWrxahx1OZlNabrO9hioDzuBwcf7boRcXmwdAaT6Ownkf+2nxc39Wex3JdDe
-cqLkgKS9HMNvXAYML0BA2baGOv109Kw12t9VreAx/k0rL6EVmvCNJGj/+A7h8K6h
-ofahN85h9gfXMBrVzgDPgfMWGNeLFwu8celeJg4jazK21/T4OkTg6FZPZdGD6lNZ
-ssqOdV1RO7mZu6Pj1rJnw48hvryI0ZFoFWm6uJjZnlK7Hv5gIpHF/QnIEEqwyTsU
-JooGU41ENTj2VrYxvn+99K69OF8Id0Ofx5WfWqmsb7W2oYlOGxvZMZc=
-=ixB8
------END PGP SIGNATURE-----
+                    ***** end of VCrayApp-0.1.0.txt *****
