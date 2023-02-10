@@ -1,4 +1,4 @@
-<!-- index.md 0.0.10                 UTF-8                         2022-08-19
+<!-- index.md 0.0.11                 UTF-8                         2023-02-10
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                         NFOTOOLS DEVELOPMENT NOTES
@@ -6,7 +6,7 @@
 
 # ***nfoTools** [Development Notes](.)*
 
-| ***[nfoTools](../)*** | [dev](.)| ***[index.html](index.html) 0.0.9 2022-08-16*** |
+| ***[nfoTools](../)*** | [dev](.)| ***[index.html](index.html) 0.0.11 2023-02-10*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../images/hardhat-logo.gif) |
 
@@ -19,7 +19,7 @@ construction of individual tools, their distribution, and demonstration.
 
 | **ID** | **Started** | **Status** | **Topic** |
 |   :-:   |   :-:   |  :-:   |  ---  |
-| [D211101](D211101) | 2021-09-11 | 0.0.6  2022-08-19 | VCrayApp: VC/C++ Command-Line raylib App DevKit |
+| [D211101](D211101) | 2021-09-11 | 0.0.13  2023-02-10 | VCrayApp: VC/C++ Command-Line raylib App DevKit |
 | [D161101](D161101) | 2016-11-12 | 0.1.14 2021-06-11 | VCbind: VC/C++ Command-Line Setup Script|
 
 
@@ -36,6 +36,7 @@ time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.11 2023-02-10T18:54Z Update D211101 status
      0.0.10 2022-08-19T21:48Z Reflect 0.0.6 D211101
      0.0.9 2022-08-16T22:50Z Update to 0.0.4 D211101
      0.0.8 2022-06-16T03:28Z Go back to reverse chronological like the others

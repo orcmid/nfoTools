@@ -24,7 +24,7 @@ MANIFEST
        index.md     the web front page to this D211101 folio.
     D211101a/       VCrayApp Setup
     D211101b/       VCrayApp Operation
-    D211101c/       VCrayApp Latest
+    D211101c/       VCrayApp Verification/Deployment Lifecycle
 
     D211101d/       VCrayApp 0.0.0 (alpha)
     D211101e/       VCrayApp 0.1.0 (beta)
@@ -81,7 +81,7 @@ TODO
  * Add link to T211102 on Git and GitHub and having more on that case.
    Those could be supplements.
 
- * Add link to T211001 on Visual Studio Code.  Be certin to add a link to
+ * Add link to T211001 on Visual Studio Code.  Be certain to add a link to
    the documentation <https://code.visualstudio.com/docs> and maybe need to
    emphasize some things about trusted repositories.
 
@@ -89,11 +89,10 @@ TODO
 
  * Update status on the docs/dev/index.md page.
 
- * Add D211101e and implement placeholder
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
- 0.0.13 2023-02-10T00:16Z Introduce D211101e and tidy up
+ 0.0.13 2023-02-10T18:41Z Introduce D211101e shadow and tidy up
  0.0.12 2023-01-15T01:47Z Manage TODOs, recommend more tidying, linking
  0.0.11 2023-01-14T23:40Z Manage TODOs, synchronize with D211101d
  0.0.10 2023-01-14T10:51Z Manage TODOs, emphasizing alpha and incomplete

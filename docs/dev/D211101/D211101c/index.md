@@ -1,18 +1,19 @@
-<!-- index.md 0.0.2                 UTF-8                          2022-06-11
+<!-- index.md 0.0.3                 UTF-8                          2023-02-10
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-                     VCRAYLIB 0.0.0 RELEASE (ALPHA)
+                VCRAYLIB VERIFICATION/DEPLOYMENT LIFECYCLE
      -->
 
-# ***VCrayLib** [0.0.0 Release (alpha)](.)*
+# ***VCrayApp** [Verification/Deployment Lifecycle](.)*
 
-| ***[nfoTools](../../../)*** | [dev](../../)[>D211101](../)[>D211101c](.) | ***0.0.1 2022-06-11*** |
+| ***[nfoTools](../../../)*** | [dev](../../)[>D211101](../)[>D211101c](.) | (index.html) ***0.0.3 2023-02-10*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../../../images/hardhat-logo.gif) |
 
 # PLACEHOLDER: CONTENT TBD
 
-
+This sub-folio will provide information on the Verification/Deployment lifecycle
+of a program constructed using VCrayApp.
 
 ----
 
@@ -26,6 +27,7 @@ time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.3 2023-02-10T18:51Z Repurpose to Verification/Deployment Lifecycle
      0.0.2 2022-06-11T21:17Z Bring top banner up to standard
      0.0.1 2022-06-10T02:32Z Remove commented out boilerplate for now
      0.0.0 2022-06-10T00:41Z Create Initial Placeholder

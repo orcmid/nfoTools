@@ -1,4 +1,4 @@
-<!-- index.md 0.0.12                UTF-8                          2023-01-14
+<!-- index.md 0.0.13                UTF-8                          2023-02-10
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                VCRAYAPP: VC/C++ COMMAND-LINE RAYLIB APP DEVKIT
@@ -6,7 +6,7 @@
 
 # [VCrayApp: VC/C++ Command-Line raylib App DevKit](.)
 
-| ***[nfoTools](../../)*** | [dev](../)[>D211101](.) | ***[index.html](index.html) 0.0.12 2023-01-14*** |
+| ***[nfoTools](../../)*** | [dev](../)[>D211101](.) | ***[index.html](index.html) 0.0.13 2023-02-10*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../../images/hardhat-logo.gif) |
 
@@ -156,15 +156,18 @@ tools along with confident use of C Language:
 The first seven are essential.  The remainder or equivalents are recommended.
 For further details on dependencies, see
 [VCrayApp Setup](D211101a/) and [VCrayApp Operation](D211101b/).  Additional
-usage of VCrayApp is covered with [VCrayApp Testing/Development](D211101c).
+usage of VCrayApp is covered with
+[VCrayApp Verification/Deployment Lifecycle](D211101c).
 
 VCrayApp is designed to work with versions of Visual Studio that are free
 for personal use, including the Visual Studio Build Tools (recommended)
 and the Visual Studio Community editions.  Additional levels of Visual
-Studio can also be used, all via their Native Tools Command Prompt.  No
-use is made of Visual Studio projects, solutions, and the conventional
+Studio can also be used, all via their Native Tools Command Prompt.
+
+No use is made of Visual Studio projects, solutions, and the conventional
 separation of debug and release builds.  With nfoTools, emphasis is on
-testing and confirmation with the same program that is provided to users.
+testing and confirmation with the same program that is provided to users
+along with built-in troubleshooting support as needed.
 
 ## 4. Available Materials
 
@@ -172,7 +175,7 @@ testing and confirmation with the same program that is provided to users.
 |   :-:   |   :-:   |  :-:   |  ---  |
 | [D211101a](D211101a/) | 2022-08-18 | placeholder | VCrayApp Setup |
 | [D211101b](D211101b/) | 2022-08-18 | placeholder | VCrayApp Operation |
-| [D211101c](D211101c/) | 2022-08-21 | placeholder | VCrayApp Testing/Development |
+| [D211101c](D211101c/) | 2022-08-21 | placeholder | VCrayApp Verification/Deployment Lifecycle |
 |                       |            |                  |     |
 | [D211101d](D211101d/) | 2022-10-26 | 0.0.7 2023-01-14 | VCrayApp 0.0.0 (alpha)
 
@@ -190,19 +193,19 @@ main branch.
   applications on native Windows.
 * Simple manual instructions for free-standing use and for incorporation
   in projects designed for novice and advanced usage.
-* Sufficient for incorporation inside more-elaborate construction sets.
+* Sufficient for expert incorporation inside more-elaborate construction sets.
 * Designed for confirmation of operation and confident employment.
 
 ### 5.2 Plan
 
 * Develop VCrayApp on GitHub as part of the nfoTools project.
-* Provide pilot demonstration in confirmation of raylib examples
-* Release alpha and beta versions for confirmation and early-adopter trial
+* Provide pilot demonstration in confirmation of raylib examples.
+* Release alpha and beta versions for confirmation and early-adopter trial.
 * Include confirmation materials and approaches.
-* Deal with levels of prerequisite and progressive disclosure
+* Deal with levels of prerequisite and progressive disclosure.
 * Address life-cycle issues with respect to VCrayApp and interdependency with
-  raylib releases
-* Address usage with raylib work-in-progress for raylib contributors
+  raylib releases.
+* Address usage with raylib work-in-progress for raylib contributors.
 
 ----
 
@@ -216,6 +219,7 @@ time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.13 2023-02-10T18:50Z Touch up, correcting d211101c designation
      0.0.12 2023-01-14T23:38Z Small adjustments and disclaimer about *alpha*
      0.0.11 2023-01-13T01:37Z Reflect updated D211101d
      0.0.10 2023-01-12T17:19Z Redefine D211101c, small touch-up
