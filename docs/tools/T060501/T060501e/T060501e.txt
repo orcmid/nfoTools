@@ -1,5 +1,5 @@
-T060501e.txt 0.0.0                 UTF-8                        dh:2021-09-20
-----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+T060501e.txt 0.0.1                 UTF-8                          2023-02-01
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
                         nfoWare/nfoWorks nfoTools
@@ -27,9 +27,9 @@ MANIFEST
   T060501e4.png       MS-DOS Prompt on Windows SE Start Pop-Up
   T060501e5.png       MS-DOS Prompt looking at WINDOWS\COMMAND
 
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-              Copyright 2006-2007, 2021 Dennis E. Hamilton
+            Copyright 2006-2007, 2021-2023 Dennis E. Hamilton
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -43,12 +43,12 @@ MANIFEST
     See the License for the specific language governing permissions and
     limitations under the License.
 
-----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
  ATTRIBUTION
 
    Hamilton, Dennis E. Windows Built-In Help (Historical).  nfoTools project
-   text file T060501e.txt version 0.0.0 dated 2021-09-20, available on the
+   text file T060501e.txt version 0.0.1 dated 2023-02-10, available on the
    Internet as a version of
    <https://orcmid.github.io/nfoTools/tools/T060501/T060501e/T060501e.txt>
 
@@ -57,6 +57,19 @@ TODO
  * Migrate the nfoWare.com folio t060501e page here and then worry about
    cleaning it up.
 
+ * Restate as a historical statement.  Tie to CP/M and minicomputer usage.
+
+ * <https://en.wikipedia.org/wiki/IBM_PC_DOS#Versions> for the early history,
+   and the nature of the command-line operation.
+
+ * <https://en.wikipedia.org/wiki/MS-DOS>
+
+ * <https://en.wikipedia.org/wiki/MS-DOS#MS-DOS_7/8_(as_part_of_Windows_9x)>
+
+ * <https://en.wikipedia.org/wiki/MS-DOS#Windows_command-line_interface>
+
+ * The change to CMD was complete with Windows XP.
+
  * Review resources and find more-recent ones, also confirm links to
    older materials or alternatives.
 
@@ -64,8 +77,16 @@ TODO
    archaic.  Identify as historical and prepare for a follow-on that deals
    with contemporary Windows 10/11 provisions.
 
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ * Better text and explanation is needed for this now historical situation.
+   Contrast with modern version which needs its own page or maybe higher-level
+   summary on nfotools/docs/.
 
+ * This needs a new title, maybe something about COMMAND.com and MS-DOS as
+   the historical case, linking onward to CMD as it is mainly operating now.
+
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+ 0.0.1 2023-02-10T21:39Z Manage TODOs around renaming and repurposing this
  0.0.0 2021-09-20T17:40Z Placeholder for the salvaging and refreshing of the
        nfoWare.com t060501e folio progression.
 
