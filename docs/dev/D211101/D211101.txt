@@ -1,5 +1,5 @@
-D211101.txt 0.0.12                   UTF-8                         2023-01-15
-----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+D211101.txt 0.0.13                   UTF-8                         2023-02-10
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
                         nfoWare/nfoWorks nfoTools
@@ -27,8 +27,9 @@ MANIFEST
     D211101c/       VCrayApp Latest
 
     D211101d/       VCrayApp 0.0.0 (alpha)
+    D211101e/       VCrayApp 0.1.0 (beta)
 
-----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                     Copyright 2022-2023 Dennis E. Hamilton
 
@@ -44,12 +45,12 @@ MANIFEST
     See the License for the specific language governing permissions and
     limitations under the License.
 
-----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
  ATTRIBUTION
 
    Hamilton, Dennis E. VCrayApp: VC/C++ Command-Line raylib App devKit.
-   nfoTools development text file D211101.txt version 0.0.12 dated 2023-01-15,
+   nfoTools development text file D211101.txt version 0.0.13 dated 2023-02-09,
    available on the Internet as a version of
    <https://orcmid.github.io/nfoTools/dev/D211101/D211101.txt>
 
@@ -88,8 +89,11 @@ TODO
 
  * Update status on the docs/dev/index.md page.
 
-----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+ * Add D211101e and implement placeholder
 
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+ 0.0.13 2023-02-10T00:16Z Introduce D211101e and tidy up
  0.0.12 2023-01-15T01:47Z Manage TODOs, recommend more tidying, linking
  0.0.11 2023-01-14T23:40Z Manage TODOs, synchronize with D211101d
  0.0.10 2023-01-14T10:51Z Manage TODOs, emphasizing alpha and incomplete

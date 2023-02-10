@@ -1,0 +1,49 @@
+VCrayApp-0.1.0.txt 0.0.0            UTF-8                         2023-02-10
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+                      NFOTOOLS DEVKIT FOR RAYLIB APPS
+                      ===============================
+
+    <https://orcmid.github.io/dev/D211101/D211101e/VCrayApp-0.1.0.txt>
+
+
+           BUILDING RAYLIB APPS WITH VS DEVELOPER COMMAND PROMPT
+           -----------------------------------------------------
+
+*** THIS IS A PLACEHOLDER TO PROVIDE A TARGET FOR THE PLANNED LOCATION OF
+*** THE VCrayApp-0.1.0.txt AND RELEASE MATERIALS.  THIS PAGE WILL BE REPLACED
+*** WHEN THE BETA RELEASE ARTIFACTS ARE BROUGHT HERE AND AVAILABLW FOR
+*** DOWNLOADING.
+
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+                    Copyright 2021-2023 Dennis E. Hamilton
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+ ATTRIBUTION
+
+   Hamilton, Dennis E. Building raylib Apps with VS Developer Command Prompt.
+   nfoTools file VCrayApp-0.1.0.txt version 0.0.0 placehoder dated 2023-02-10
+   available on the internet as a version of
+   <https://orcmid.github.io/dev/D211101/D211101e/VCrayApp-0.1.0.txt>
+
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+
+ 0.0.0 2023-02-10T00:38Z Placeholder
+
+
+                    ***** end of VCrayApp-0.1.0.txt *****
