@@ -1,4 +1,4 @@
-dev.txt 0.0.7                      UTF-8                        dh:2022-06-11
+dev.txt 0.0.8                      UTF-8                        dh:2023-02-10
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -39,7 +39,7 @@ MANIFEST
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-                   Copyright 2021-2022 Dennis E. Hamilton
+                   Copyright 2021-2023 Dennis E. Hamilton
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -58,7 +58,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. nfoTools Development Notebook.  nfoTools project text
-   file dev.txt version 0.0.7 dated 2022-06-11, available on the Internet
+   file dev.txt version 0.0.8 dated 2023-02-10, available on the Internet
    as a version of <https://orcmid.github.io/nfoTools/dev/dev.txt>
 
 TODO
@@ -82,8 +82,12 @@ TODO
  * Redo the folio-page title strips to have the desired form that will be
    preserved when authoring is separated from staged publishing.
 
+ * Create a folio on the formatting and other conventions applicable to the
+   participation in nfoTools development efforts (a.k.a coding standards)
+
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.8 2023-02-10T19:00Z Manage TODOs
  0.0.7 2022-06-11T19:58Z Manage TODOs and identify some heading changes
  0.0.6 2022-05-30T17:48Z Reflect initiation of D211101 with related TODOs
  0.0.5 2021-11-11T23:58Z Anticipate D211101, manage TODOs
