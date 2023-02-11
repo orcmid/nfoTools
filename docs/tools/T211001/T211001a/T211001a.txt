@@ -1,4 +1,4 @@
-T211001c.txt 0.0.1                  UTF-8                       dh:2023-02-11
+T211001a.txt 0.0.2                  UTF-8                         2023-02-11
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -8,8 +8,8 @@ T211001c.txt 0.0.1                  UTF-8                       dh:2023-02-11
 <https://github.com/orcmid/nfoTools/blob/master/docs/tools/T211001/T211001.txt>
       <https://orcmid.github.io/nfoTools/tools/T211001/T211001.txt>
 
-                       T211001c: VS CODE INSTALLION
-                       ----------------------------
+                         T211001a: VS CODE SETUP
+                         -----------------------
 
     nfoTools docs/tools folio on Visual Studio Code, including the new
     Visual Studio Code on the web.
@@ -17,11 +17,11 @@ T211001c.txt 0.0.1                  UTF-8                       dh:2023-02-11
 
 MANIFEST
 
-    T211001c.txt
+    T211001a.txt
              this manifest and job-jar file
 
 
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                     Copyright 2021, 2023 Dennis E. Hamilton
 
@@ -37,14 +37,14 @@ MANIFEST
     See the License for the specific language governing permissions and
     limitations under the License.
 
-----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
  ATTRIBUTION
 
-   Hamilton, Dennis E. T211001c: VS Code Installation.  nfoTools project text
-   file T211001c.txt version 0.0.1 dated 2023-02-11, available on the Internet
+   Hamilton, Dennis E. T211001a: VS Code Setup.  nfoTools project text
+   file T211001a.txt version 0.0.2 dated 2023-02-11, available on the Internet
    as a version of
-   <https://orcmid.github.io/nfoTools/tools/T211001/T211001c/T211001c.txt>
+   <https://orcmid.github.io/nfoTools/tools/T211001/T211001a/T211001a.txt>
 
 TODO
 
@@ -54,12 +54,12 @@ TODO
 
  * Show some of the configuration features but only do the C/C++ extension
 
- * Rename the folder to T21001a, VS Code Setup.
-
  * Identify the images in the manifest
 
-  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+ 0.0.2 2023-02-11T16:49Z Changes to convert T21001a.txt from T21001c.txt
  0.0.1 2023-02-11T15:28Z Prepare for renaming to T21001a
  0.0.0 2021-10-20T23:37Z Placeholder made from T21001.txt as boiler plate.
 
-                     ***** end of T21001c.txt *****
+                     ***** end of T21001a.txt *****

@@ -1,5 +1,5 @@
-T211001.txt 0.0.4                   UTF-8                         2023-01-07
-----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+T211001.txt 0.0.5                   UTF-8                         2023-02-11
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
                         nfoWare/nfoWorks nfoTools
@@ -26,7 +26,7 @@ MANIFEST
      VSCode-2021-10-20-0950-WebPreview.png
            parking place for VSCode Web material until have a place for it
 
-----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                 Copyright 2021-2023 Dennis E. Hamilton
 
@@ -42,20 +42,21 @@ MANIFEST
     See the License for the specific language governing permissions and
     limitations under the License.
 
-----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
-
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
  ATTRIBUTION
 
    Hamilton, Dennis E. T211001: Visual Studio Code.  nfoTools project text
-   file T211001.txt version 0.0.4 dated 2023-01-07, available on the Internet
+   file T211001.txt version 0.0.5 dated 2023-02-10, available on the Internet
    as a version of
    <https://orcmid.github.io/nfoTools/tools/T211001/T211001.txt>
 
 TODO
 
  * Recommend VS Code or editor first, then GitHub for Windows, then
-   TortoiseGit and GitHub Desktop, then VIsual Studio Developer Tools or
-   Community Edition.  I don't think this is the correct sequence.  I need
+   TortoiseGit and GitHub Desktop, then Visual Studio Developer Tools or
+   Community Edition.
+
+ * I don't think this is the correct sequence.  I need
    to tie it into spiraling and projects here that always build.  This means
    I can recommend teething exercises that work.  The raylib ones matter as
    is something like building Adv10, although that will depend on the state
@@ -87,6 +88,8 @@ TODO
  * Deal with VS 2019 and VS 2017 installation and also detection.  Unclear
    about 2015 and earlier any longer.  There is the need to be able to rebuild
    and test and to patch that may require continued support of those releases.
+
+ * Now it's more important to deal with VS 2022
 
  * Resolve the CMD Command Prompt situation as follows.  We will speak of the
    command-line ENVIRONMENT that CMD establishes.  Then things like VC/C++
@@ -125,9 +128,30 @@ TODO
  * VS Code is no longer showing me where lines have been deleted, inserted,
    or changed until they get checked into GitHub.  Those useful annotations
    are missing and I don't know what setting restores them, if any.
+   [SOLUTION: It has to do with needing to authorize working under a folder
+   that is a Git working folder.  I need to point that out somehow.]
+
+ * I need a TOC of pages here so that I can start provisional ones, whether
+   exposed or not, as targets for URLs in other materials, such as description
+   of .vscode\ in VCrayApp.  Once I do this, I can't change the URL, so there
+   may be an "out-of-order" sequence in the higher-level manifest.
+
+ * There needs to be a quickstart case, using VS Code as part of a beginner
+   operation, such as doing a VCrayApp install or starting small C Language
+   projects.
+
+ * Tentative organization
+   T211001\  Cover and Overview
+   T211001a\ VS Code Setup
+   T211001b\ VS Code Operation
+   T211001c\ VS Code Text Editing
+   T211001d\ VS Code Language/Notation Support
+   T211001e\ VS Code Project Support
+   T211001f\ VS Code VC/C++ Development Support
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.5 2023-02-11T16:52Z Start on the Tentative organization with T211001a
  0.0.4 2023-01-07T18:35Z Manage TODOs, identify change-marking glitch.
  0.0.3 2022-12-27T17:38Z Tidy up.  TODOs need to be reviewed.
  0.0.2 2022-04-27T16:43Z Manage TODOs, muse on Git and GitHub
