@@ -1,4 +1,4 @@
-dev.txt 0.0.3                       UTF-8                         2023-01-22
+VCrayVerify-0.0.0 dev.txt 0.0.4     UTF-8                         2023-01-22
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 <https://github.com/orcmid/nfoTools/blob/master/devKits/WinDev/VCrayVerify/dev/dev.txt>
@@ -6,11 +6,17 @@ dev.txt 0.0.3                       UTF-8                         2023-01-22
         DEVELOP VCRAYVERIFY TEST HARNESS FOR VERIFYING RAYLIB EXAMPLES
         ==============================================================
 
-    This folder is for the development, confirmation, and packaging of a
-    VCrayVerify test suite.
+    On GitHub, this folder is for the development, confirmation, and packaging
+    of a VCrayVerify test suite.  This dev.txt file is incorporated in the
+    VCrayVerify-0.0.0.zip package and extracted folder for reference and
+    historical purposes.
 
-    The structure of this folder is that of the intended test suite.  It is
-    tested and developed in place against particular versions of raylib.
+    The structure of this folder is that of the intended test suite, apart
+    from those components, such as a raylib source release, that must be
+    obtained from elsewhere.  VCrayVerify is tested and developed in place
+    in this dev\ folder and then the release content is separate out into the
+    distributable VCrayVerify-0.0.0.zip.  For this and later releases, see
+    <https://orcmid.github.io/nfoTools/dev/>.
 
     A VCrayVerify folder will have its own raylib\ subfolder with an adjacent
     VCrayApp\ adaptation.  This keeps VCrayVerify operation separate from any
@@ -19,9 +25,10 @@ dev.txt 0.0.3                       UTF-8                         2023-01-22
     with a variety of raylib releases, including clones of the current
     under-development raylib\ release.
 
-    The VCrayAppV\ adaptation employs src\ as the location where examples
-    and other source codes are placed.  The app\ folder will receive compiled
-    examples and the resources\ subfolder for examples that expects one.
+    The VCrayAppV\ adaptation employs src\ as the location where copies of
+    examples and other source codes are placed for compilation.  The app\
+    folder will receive compiled examples and and resources\ subfolder for
+    examples that expects one.
 
     Generally, VCrayVerify runs much like VCrayApp except for the selection
     of examples to (attempt to) build and run.  There is not so much about
@@ -36,26 +43,24 @@ MANIFEST
 
     dev.txt
         This description file on organization of the folder and use of its
-        materials. (not part of the deliverable)
+        materials.
 
     VCrayVerify-0.0.0.txt
         The synopsis, read-me, and manifest for VCrayVerify 0.0.0
         A signed version is available separately as as part of the
-        VCrayVerify-0.0.0.zip
+        VCrayVerify-0.0.0.zip and for independent examination from the
+        release download page.
 
     NOTICE.txt
-        Notification applicable to all VCrayVerify content
+        Notification applicable to the VCrayVerify content
 
     VCrayAppV\
-        The customized VCrayApp 0.0.0 that is used for each example
-        verification
+        The customized VCrayApp 0.0.0 that is used for the compiling-and-run
+        step of each verification.
 
     raylib\ (not delivered, not under VCrayVerify source-control)
         An extracted raylib version (or developer clone) to verify, a peer
-        of VCrayAppV\
-
-
-
+        of VCrayAppV\ as required by the VCrayApp model.
 
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
@@ -122,8 +127,13 @@ TODO
 
  * Determine where .vscode goes, even if not packaged in the deliverable.
 
+ * Include dev.txt as a component of VCrayVerify so that history is packaged
+   with this kind of development. Consider it for other development projects
+   too.
+
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.4 2023-01-22T17:31Z Touch-ups and Manage TODOs
  0.0.3 2023-01-22T16:03Z Touch-ups and Manage TODOs
  0.0.2 2023-01-17T02:00Z Bring Manifest current
  0.0.1 2023-01-17T01:34Z Initial Text and TODOs
