@@ -1,5 +1,5 @@
-T211001c.txt 0.0.0                  UTF-8                       dh:2021-10-20
-----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+T211001c.txt 0.0.1                  UTF-8                       dh:2023-02-11
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
                         nfoWare/nfoWorks nfoTools
@@ -23,7 +23,7 @@ MANIFEST
 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-                       Copyright 2021 Dennis E. Hamilton
+                    Copyright 2021, 2023 Dennis E. Hamilton
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -42,7 +42,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. T211001c: VS Code Installation.  nfoTools project text
-   file T211001c.txt version 0.0.0 dated 2021-10-20, available on the Internet
+   file T211001c.txt version 0.0.1 dated 2023-02-11, available on the Internet
    as a version of
    <https://orcmid.github.io/nfoTools/tools/T211001/T211001c/T211001c.txt>
 
@@ -54,8 +54,12 @@ TODO
 
  * Show some of the configuration features but only do the C/C++ extension
 
-  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ * Rename the folder to T21001a, VS Code Setup.
 
+ * Identify the images in the manifest
+
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ 0.0.1 2023-02-11T15:28Z Prepare for renaming to T21001a
  0.0.0 2021-10-20T23:37Z Placeholder made from T21001.txt as boiler plate.
 
                      ***** end of T21001c.txt *****
