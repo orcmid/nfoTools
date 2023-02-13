@@ -1,0 +1,71 @@
+VCshowDefs.txt 0.0.0                UTF-8                         2023-02-13
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+<https://github.com/orcmid/nfoTools/blob/master/devKits/WinDev/VCshowDefs/VCshowDefs.txt>
+
+              VCshowDefs: SHOW PREPROCESSOR DEFINES IN VC/C++
+              ===============================================
+
+    A family of small C/C++ Language programs that demonstrate the values
+    of preprocessor settings introduced-by/used-in various libraries,
+    including the C Language Standard libraries and other libraries of
+    interest.  These are useful for confirmation of settings and also for
+    identifying what platform-specific settings might be in a particular
+    compilation configuration.
+
+MANIFEST
+
+    VCshowDefs.txt
+        This description file on organization of the archive and use of its
+        materials.
+
+    VCshowDefs.c
+        The archetypical showDefs file set up for verification of C/C++
+        preprocessor definitions when using the Microsoft Buid Tools VC/C++
+        compiler, CL.exe.
+
+
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+                    Copyright 2016-2023 Dennis E. Hamilton
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+ ATTRIBUTION
+
+   Hamilton, Dennis E. VCshowDefs: Show Preprocessor Defines in VC/C++.
+   VCshowDefs.txt version 0.0.0 dated 2023-02-13, available on the Internet
+   as a version of
+   <https://github.com/orcmid/nfoTools/blob/master/devKits/WinDev/VCshowDefs/VCshowDefs.txt>
+
+TODO
+
+ * Add showDefs to WinDev as a tool for development and also testing.  Even
+   though it might work on other platforms, I don't intend to support it
+   with compilers other than VC in Visual Studio Build Tools.
+
+ * Distinguish specific instances from the archtypical template.  This may
+   involve splitting apart the showDefs.c being transformed to VCshowDefs.c
+   and other variations.
+
+ * Cross-link to the example of a capture technique as used in VCrayApp 0.1.0.
+
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+ 0.0.0 2023-02-13T16:26Z Clone from WinDev.txt 0.0.19 and morph into a place-
+       holder for further customization as VCshowDefs\ is expanded and made
+       available for re-use.
+
+                      *** end of VCshowDefs.txt ***
