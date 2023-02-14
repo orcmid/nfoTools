@@ -1,0 +1,67 @@
+D230201.txt 0.0.0                   UTF-8                         2023-02-14
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+
+                        nfoWare/nfoWorks nfoTools
+                        =========================
+
+<https://github.com/orcmid/nfoTools/blob/master/docs/dev/D230201/D230201.txt>
+        <https://orcmid.github.io/nfoTools/dev/D230201/D230201.txt>
+
+            VCshowDefs: SHOW PREPROCESSOR DEFINES IN VC/C++
+            ===============================================
+
+    A family of small C/C++ Language programs that demonstrate the values
+    of preprocessor settings introduced-by/used-in various libraries,
+    including the C Language Standard libraries and other libraries of
+    interest.  These are useful for confirmation of settings and also for
+    identifying what platform-specific settings might be in a particular
+    compilation configuration.
+
+MANIFEST
+
+     D230201.txt    this manifest and job-jar file
+
+       index.md     the web front page to this D211101 folio.
+
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+                     Copyright 2023 Dennis E. Hamilton
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+ ATTRIBUTION
+
+   Hamilton, Dennis E. VCshowDefs: Show Preprocessor Defines in VC/C++.
+   nfoTools development text file D230201.txt version 0.0.0 dated 2023-02-14,
+   available on the Internet as a version of
+   <https://orcmid.github.io/nfoTools/dev/D211101/D211101.txt>
+
+TODO
+
+ * Create index.md placeholder to provide a link target from VCshowDevs files
+   and the devkits/WinDev/VCshowDefs project.
+
+ * Document the key technique and the typical use cases, then catalog the
+   prebuilt ones that are useful for checking use of various configurations.
+
+ * Catalog in docs\dev\ when there is anything substantial enough.
+
+
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+ 0.0.0 2023-02-14T15:48Z Placeholder and initial TODOs
+
+                       ***** end of D230201.txt *****
