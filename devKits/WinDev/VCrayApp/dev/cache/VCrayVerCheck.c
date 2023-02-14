@@ -1,4 +1,4 @@
-/* VCrayVerCheck.c 0.0.2            UTF-8                         2023-02-12
+/* VCrayVerCheck.c 0.0.4            UTF-8                         2023-02-13
    -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                         DETERMINATION OF RAYLIB VERSION
@@ -41,21 +41,27 @@
 #define TV(X) #X ""
       /* Turns pre-processor variables into string arguments */
 
-#include <stdlib.h>     // for exit cases
-#include <stdio.h>      // for output functions
+#define SHOW(X) TV(X)
 
-#include <raylib.h>
+#include <stdlib.h>     // for exit cases
+#include <stdio.h>      // for fputs()
+#include <string.h>     // for strlen()
+
+#include <raylib.h>     // for RAYLIB_VERSION
 
 int main(void)
-    {
-       fputs( "ECHO VCrayVerCheck 0.0.0 Determination of raylib Version\n",
-              stdout );
+    {   /* Determining what, if any, RAYLIB_VERSION is defined */
+
        # if   !defined(RAYLIB_VERSION)
-             fputs( "SET VCRAYVER=unknown\n"
+             fputs( "ECHO [VCrayApp] Using unknown version of raylib\n"
+                    "SET VCRAYVER=unknown\n"
                     "EXIT 0\n",
                     stdout);
        # else
-              fputs( "SET VCRAYVER=" TV(RAYLIB_VERSION) "\n"
+              fputs( "ECHO [VCrayApp] Using version "
+                           SHOW(RAYLIB_VERSION)
+                           " of raylib\n"
+                     "SET VCRAYVER=" SHOW(RAYLIB_VERSION) "\n"
                      "EXIT 0\n",
                      stdout );
        # endif
@@ -63,7 +69,9 @@ int main(void)
        return EXIT_SUCCESS;
     }
 
-/* 0.0.2 2023-02-12T23:01T Use VCshowDefs TV(X) definition to enstring the
+/* 0.0.4 2023-02-13T00:06Z Clean up reporting on version
+   0.0.3 2023-02-12T23:47Z Struggling to get TV(X) to glom the value
+   0.0.2 2023-02-12T23:01Z Use VCshowDefs TV(X) definition to enstring the
          value of RAYLIB_VERSION
    0.0.1 2023-02-12T20:18Z Touch-up description and try raylib.h inclusion
    0.0.0 2023-02-12T05:53Z Stub providing default behavior
