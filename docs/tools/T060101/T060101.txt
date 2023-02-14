@@ -1,4 +1,4 @@
-T060101.txt 0.0.9                   UTF-8                       dh:2023-02-06
+T060101.txt 0.0.10                  UTF-8                          2023-02-14
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -44,7 +44,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. T060101: C/C++ Programming.  nfoTools project text
-   file T060101.txt version 0.0.9 dated 2023-01-06, available on the
+   file T060101.txt version 0.0.10 dated 2023-02-14, available on the
    Internet as a version of
    <https://orcmid.github.io/nfoTools/tools/T060101/T060101.txt>
 
@@ -61,6 +61,13 @@ TODO
   * There needs to be a good account of C vs C++ and then how to navigate the
    dependencies.  And also what language to use.  When would we want C++ and
    for that matter, why when .NET?
+
+  * Here is an useful statement about the .NET languages from Microsoft,
+    <https://learn.microsoft.com/en-us/dotnet/fundamentals/languages>.
+
+  * Microsoft has good dccumentation on C++ and their deviations/extensions.
+    Not so much for the supported C Language.  There is mention only of C89
+    so the material must be seriously dated.
 
   * We need a tie-in to development lifecycle.  This may end up drawing on
     Git and GitHub too.
@@ -148,16 +155,20 @@ TODO
     Jaeschke, Rex.  Portability and the C Language, ed.2. Wikibooks edition
     (January 2022)available on the Internet with editing history at
     <https://en.wikibooks.org/w/index.php?title=Portability_and_the_C_Language&action=history>.
-    This should be the GOTO case in terms of current information.
+    THIS DOES NOT COVER C LANGUAGE.  It covers portability matters and it
+    follows the outline of the C99 standard.  But it does not cover the
+    language and it is not designed as a tutorial or a reference on that.
 
   * For C++ that is undifferentiated from C, there are Codecademy selections,
     <https://www.codecademy.com/resources/blog/c-plus-plus-books/>.
 
-  * Change rulers to start with * and not mess up PGP armor cases.
+  * Here's a general question about choosing first programming languages,
+    <https://www.codecademy.com/resources/blog/why-you-cant-choose-the-wrong-programming-language-when-you-first-start/>
 
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.10 2023-02-14T01:07Z More TODOs, sources on other ideas than C/C++.
  0.0.9 2023-02-06T05:25Z Change rules, small touch-ups
  0.0.8 2022-12-28T05:07Z Add Rex Jaeschke citation to add to the list.
  0.0.7 2022-11-29T17:06Z Musing on the Codecademy career exploration quiz.
