@@ -1,4 +1,4 @@
-/* VCshowDefs.c 1.1.0               UTF-8                         2023-02-12
+/* VCshowDefs.c 1.1.1               UTF-8                         2023-02-15
  * -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
  *
  *             SHOW PRESENCE OF VISUAL C/C++ PREPROCESSOR DEFINES
@@ -11,7 +11,10 @@
  *      a list of selected pre-processor variables with either their
  *      value, the notation "is defined" or the notation "undefined".
  *
- *   Copyright 2005, 2014, 2021 Dennis E. Hamilton
+ *   Further details and additional customizations are available at
+ *   <https://orcmid.github.io/nfoTools/dev/D230201>.
+ *
+ *   Copyright 2005, 2014, 2021, 2023 Dennis E. Hamilton
  *
  *   Licensed under the Apache License, Version 2.0 (the "License");
  *   you may not use this file except in compliance with the License.
@@ -41,19 +44,19 @@
                                 ? "is defined" \
                                 : strcmp(tv, #X) == 0 \
                                      ? "undefined" \
-                                     : TV(is defined to X) ), \
+                                     : TV(=X) ), \
                            stdout); \
                     fputc('\n', stdout);
 
       /* The macro prints a line where the token X is right-justified
          after the string of spaces SP, and then followed with one of
          " is defined" (with no value), " undefined" (with no value)
-         or " is defined to " followed by what X is #define-ed to.
+         or "=" followed by what X is #define-ed to.
          See the body of main() to see how to add and vary the pre-
          processor definitions to check for.
-            See the companion file, showdefs.txt for ways to compile
-         the program to discover the settings that were applied at
-         compile time.
+            See the <https://orcmid.github.io/nfoTools/dev/D230201>
+         documentation for ways to compile the program and to discover
+         the settings that were applied at compile time.
             See the main() function for declaration of the string
          variable tv that is set and used in the SHOW macro.
          */
@@ -71,13 +74,13 @@ int main(void)
 
        char *tv;  /* pointer to the token value string */
 
-       fputs(  "VCshowDefs> 1.0.25 Check for documented pre-processor macros",
+       fputs(  "VCshowDefs> 1.1.1 Check for documented pre-processor macros",
               stdout);
        fputs("\n            that might be predefined in this compile.\n",
               stdout);
 
 
-       fputs("\n  Supported ANSI/ISO Macros:\n", stdout);
+       fputs("\n  Supported ANSI/ISO Definitions:\n", stdout);
 
        SHOW(__DATE__, "                ");
        SHOW(__FILE__, "                ");
@@ -142,8 +145,6 @@ int main(void)
        SHOW(_X64_, "                   ");
        SHOW(_X86_, "                   ");
 
-
-
        /* This list can be extended to check known predefines of
           other compilers too.  This program is the basis for
           being able to confirm the settings and options as part
@@ -156,7 +157,8 @@ int main(void)
        } /* main() */
 
 
-/*  1.1.0  2023-02-12T22:48T Claw back from Maiko version as general utility
+/*  1.1.1  2023-02-15T20:39Z Touch-up and tie to D230201.
+ *  1.1.0  2023-02-12T22:48T Claw back from Maiko version as general utility
  *  1.0.26 2021-11-28T21:54Z Add Byte order checking
  *  1.0.25 2021-11-28T21:36Z Introduce in MAIKO windev branch
  *  1.0.24 2021-11-28T21:05Z Update for MAIKO settings, touching up

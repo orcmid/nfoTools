@@ -1,0 +1,85 @@
+** Visual Studio 2022 Developer Command Prompt v17.3.6
+** Copyright (c) 2022 Microsoft Corporation
+**********************************************************************
+[vcvarsall.bat] Environment initialized for: 'x64'
+
+H:\Documents\GitHub>cd nfoTools\devKits\WinDev\VCshowDefs\
+
+H:\Documents\GitHub\nfoTools\devKits\WinDev\VCshowDefs>code .
+
+H:\Documents\GitHub\nfoTools\devKits\WinDev\VCshowDefs>cl VCshowDefs.c
+Microsoft (R) C/C++ Optimizing Compiler Version 19.33.31630 for x64
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+VCshowDefs.c
+Microsoft (R) Incremental Linker Version 14.33.31630.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/out:VCshowDefs.exe
+VCshowDefs.obj
+
+H:\Documents\GitHub\nfoTools\devKits\WinDev\VCshowDefs>VCshowDefs
+VCshowDefs> 1.1.1 Check for documented pre-processor macros
+            that might be predefined in this compile.
+
+  Supported ANSI/ISO Definitions:
+                __DATE__ ="Feb 15 2023"
+                __FILE__ ="VCshowDefs.c"
+                __LINE__ =87
+                __STDC__ undefined
+         __STDC_HOSTED__ =1
+        __STDC_IEC_559__ undefined
+__STDC_IEC_599_COMPLEX__ undefined
+      __STDC_ISO_10646__ undefined
+        __STDC_VERSION__ undefined
+                __TIME__ ="12:39:46"
+
+  Supported (VC++?) reflection support:
+             __COUNTER__ =0
+             __cplusplus undefined
+               __FSTREXP is defined
+            __FUNCTION__ =__FSTREXP __FUNCTION__
+           __FUNCDNAME__ =__FSTREXP __FUNCDNAME__
+             __FUNCSIG__ =__FSTREXP __FUNCSIG__
+           __TIMESTAMP__ ="Wed Feb 15 12:39:30 2023"
+
+  VC++ MS-Specific Macros:
+                _ATL_VER undefined
+          _CHAR_UNSIGNED undefined
+             _CPPLIB_VER undefined
+                _CPPRTTI undefined
+              _CPPUNWIND undefined
+                  _DEBUG undefined
+                    _DLL undefined
+                _M_ALPHA undefined
+                _M_AMD64 =100
+                 _M_IA64 undefined
+                 _M_IX86 undefined
+                 _M_MPPC undefined
+               _M_MRX000 undefined
+                  _M_PPC undefined
+                _MANAGED undefined
+                _MFC_VER undefined
+         _MSC_EXTENSIONS =1
+                _MSC_VER =1933
+   __MSVC_RUNTIME_CHECKS undefined
+                     _MT =1
+ _NATIVE_WCHAR_T_DEFINED undefined
+        _WCHAR_T_DEFINED is defined
+                  _WIN32 =1
+                  _WIN64 =1
+
+  And some favorites when compiling Windows code:
+            _INC_WINDOWS undefined
+                    _MAC undefined
+              RC_INVOKED undefined
+     WIN32_LEAN_AND_MEAN undefined
+               _WIN32NLS undefined
+                _WINDEF_ undefined
+               _WINDOWS_ undefined
+             __WINDOWS__ undefined
+                  WINVER undefined
+                   _X64_ undefined
+                   _X86_ undefined
+
+H:\Documents\GitHub\nfoTools\devKits\WinDev\VCshowDefs>
