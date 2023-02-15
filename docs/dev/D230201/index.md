@@ -6,29 +6,20 @@
 
 # [VCshowDefs: Show Preprocessor Defines in VC/C++](.)
 
-| ***[nfoTools](../../)*** | [dev](../)[>D230201](.) | ***[index.html](index.html) 0.0.0 2023-02-14*** |
+| ***[nfoTools](../../)*** | [dev](../)[>D230201](.) | ***[index.html](index.html) 0.0.1 2023-02-15*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../../images/hardhat-logo.gif) |
 
 ## 1. Overview
 
+**PLACEHOLDER AS A TARGET FOR URLS.  CONTENT TO FOLLOW.**
+
 ## 2. Prerequisites and Dependencies
 
-**NOTE:** Current materials are now at the *alpha* level,
+**NOTE:** Current materials are now at the *pre-alpha* level,
 
-***EDITOR NOTES: SOFTEN THIS STATEMENT AND MAKE IT STRAIGHTFORWARD***
-
-***SUCCESSFUL USE OF VCrayAPP REQUIRES CONFIDENT USE OF C LANGUAGE AND A
-C/C++ LANGUAGE COMPILER*** for creation of clean programs involving source
-files, include files, and the interfaces (APIs) of standard libraries as well
-as the special-purpose raylib libraries.  For more on C Language see
-[T060101: C/C++ Programming](https://orcmid.github.io/nfoTools/tools/T060101/).
-
-It is assumed that Microsoft Windows 7 Professional or later are used.
-Thorough VCrayApp testing is with Microsoft Windows 10 latest versions.
-
-Development with VCrayApp and illustration of usage involves the following
-tools along with confident use of C Language:
+Using pre-built VCShowDef customizations is straightforward.  Development
+of new customizations requires some understanding of essential tools along with confident use of C Language:
 
 * Windows File Explorer
 * [Visual Studio Native Build Tools](https://orcmid.github.io/nfoTools/tools/T211002/)
@@ -44,7 +35,7 @@ Studio can also be used, all via their Native Tools Command Prompt.
 
 VCshowDefs tends to be compiler and platform specific.  The technique may be
 adaptable to other tools, such as GCC used on Windows, Linux, and other
-platforms.
+platforms.  Portability is not assured.
 
 The template and the confirmation case may be valuable in confirming operation
 with other compilers.  Those use cases are out of scope for nfoTools at this
@@ -78,6 +69,7 @@ time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.1 2023-02-15T20:12Z Tidy up
      0.0.0 2023-02-14T16:36Z placeholder
 
                  *** end of docs/dev/D230201/index.md ***
