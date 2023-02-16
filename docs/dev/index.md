@@ -1,4 +1,4 @@
-<!-- index.md 0.0.12                 UTF-8                         2023-02-15
+<!-- index.md 0.0.13                 UTF-8                         2023-02-16
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                         NFOTOOLS DEVELOPMENT NOTES
@@ -19,7 +19,7 @@ construction of individual tools, their distribution, and demonstration.
 
 | **ID** | **Started** | **Status** | **Topic** |
 |   :-:   |   :-:   |  :-:   |  ---  |
-| [D230201](D230201) | 2023-02-14 | 0.0.2 2023-02-15 |  VCshowDefs: Show Preprocessor Defines in VC/C++ |
+| [D230201](D230201) | 2023-02-14 | 0.0.3 2023-02-16 |  VCshowDefs: Show Preprocessor Defines in VC/C++ |
 | [D211101](D211101) | 2021-09-11 | 0.0.13  2023-02-10 | VCrayApp: VC/C++ Command-Line raylib App DevKit |
 | [D161101](D161101) | 2016-11-12 | 0.1.14 2021-06-11 | VCbind: VC/C++ Command-Line Setup Script|
 
@@ -37,6 +37,7 @@ time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.13 2023-02-16T05:56Z 0.0.2 D230201
      0.0.12 2023-02-15T20:16Z Add D230201
      0.0.11 2023-02-10T18:54Z Update D211101 status
      0.0.10 2022-08-19T21:48Z Reflect 0.0.6 D211101

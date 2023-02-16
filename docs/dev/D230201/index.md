@@ -1,4 +1,4 @@
-<!-- index.md 0.0.0                UTF-8                          2023-02-14
+<!-- index.md 0.0.2                UTF-8                          2023-02-16
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                VCRSHOWDEFS: SHOW PREPROCESSOR DEFINES DEVKIT
@@ -6,7 +6,7 @@
 
 # [VCshowDefs: Show Preprocessor Defines in VC/C++](.)
 
-| ***[nfoTools](../../)*** | [dev](../)[>D230201](.) | ***[index.html](index.html) 0.0.1 2023-02-15*** |
+| ***[nfoTools](../../)*** | [dev](../)[>D230201](.) | ***[index.html](index.html) 0.0.2 2023-02-16*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../../images/hardhat-logo.gif) |
 
@@ -47,7 +47,7 @@ time.  Consult other sources for variations on VCshowDefs.
 | **ID** | **Started** | **Status** | **Topic** |
 |   :-:   |   :-:   |  :-:   |  ---  |
 | [D230201a](D230201a/) | 2023-02-14 | reserved | VCshowDefs Template |
-| [D230201b](D230201b/) | 2023-02-14 | reserved } VCshowDefs Confirmation |
+| [D230201b](D230201b/) | 2023-02-14 | reserved | VCshowDefs Confirmation |
 
 
 ## 4. Development
@@ -69,6 +69,7 @@ time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.2 2023-02-16T05:54Z Fix typo
      0.0.1 2023-02-15T20:12Z Tidy up
      0.0.0 2023-02-14T16:36Z placeholder
 

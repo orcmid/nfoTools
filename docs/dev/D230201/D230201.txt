@@ -1,4 +1,4 @@
-D230201.txt 0.0.0                   UTF-8                         2023-02-14
+D230201.txt 0.0.1                   UTF-8                         2023-02-16
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -45,23 +45,19 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. VCshowDefs: Show Preprocessor Defines in VC/C++.
-   nfoTools development text file D230201.txt version 0.0.0 dated 2023-02-14,
+   nfoTools development text file D230201.txt version 0.0.1 dated 2023-02-16,
    available on the Internet as a version of
-   <https://orcmid.github.io/nfoTools/dev/D211101/D211101.txt>
+   <https://orcmid.github.io/nfoTools/dev/D230201/D230201.txt>
 
 TODO
-
- * Create index.md placeholder to provide a link target from VCshowDevs files
-   and the devkits/WinDev/VCshowDefs project.
 
  * Document the key technique and the typical use cases, then catalog the
    prebuilt ones that are useful for checking use of various configurations.
 
- * Catalog in docs\dev\ when there is anything substantial enough.
-
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.1 2023-02-16T06:02Z Touch-ups, manage TODOs
  0.0.0 2023-02-14T15:48Z Placeholder and initial TODOs
 
                        ***** end of D230201.txt *****
