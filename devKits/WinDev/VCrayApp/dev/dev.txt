@@ -1,4 +1,4 @@
-dev.txt 0.0.9                       UTF-8                         2023-02-09
+dev.txt 0.0.10                       UTF-8                         2023-02-16
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                        AN NFOTOOLS COMING ATTRACTION
@@ -87,7 +87,7 @@ TODO
 
  * Update the materials for preparation of VCrayApp 0.1.0 (beta).
 
- * If for any reason, there needs to be a VCrayApp 0.0.1 or further, that
+ * If for any reason, there needs to be a VCrayApp 0.1.1 or further, that
    can be developed on a separate branch using the VCrayApp\ artifacts that
    will be untouched there.  That needs to be mentioned on the checklist and
    also VCrayApp.txt.
@@ -121,13 +121,22 @@ TODO
    because the cache is stale.  There needs to be some precaution that must be
    made known somehow.
 
+ * Go back through the 3.x releases until we find one that doesn't build a
+   proper cache.  This will be the limit on defaulting to the 3.7 case.  We
+   might want to make the oldest that works the default name though?  For
+   VCrayVerify, it might be more sticky than that.  We should start with the
+   3.7 assumption if there is no version.  We'll have to see about that
+   concerning raylib examples.
+
  * It would be nice if there was a way to recompile rayConfirm.c without
    messing up any user development.  This would change the customization
    needed for switching to the users's source.  Just don't make things more
-   brittle than they are already.
+   brittle than they are already.  That is, we would have src\ as the default
+   but how do we distinguish first run from later?
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.10 2023-02-16T19:38Z Manage TODOs
  0.0.9 2023-02-09T23:47Z Manage TODOs and drafting of 0.1.0.
  0.0.8 2023-02-09T23:04Z Manage TODOs around raylib version adaptation
  0.0.7 2023-01-16T18:36Z Manage TODOs and more to handle in 0.1.0
