@@ -1,4 +1,4 @@
-games.txt 0.0.5                    UTF-8                        dh:2022-12-27
+games.txt 0.0.6                     UTF-8                         2023-02-17
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -48,7 +48,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. nfoTools Project Games.  nfoTools file docs/games.txt
-   version 0.0.5 dated 2022-12-27, available on the Internet as a version of
+   version 0.0.6 dated 2023-02-17, available on the Internet as a version of
    <https://orcmid.github.io/nfoTools/games/games.txt>
 
 TODO
@@ -128,9 +128,20 @@ TODO
    <https://docs.google.com/spreadsheets/d/e/2PACX-1vTr9cr3fzEUTaTRSXo0oVE_FI1eW2kTDlub4RcZm13FX0G2UE_cbnixPTT2SeiSG9369suPVJo4FVHz/pubhtml>.
    (The Google docs URLs are wild)
 
+ * With regard to Unity, Visial Studio integration, and probably C++ there are
+   <https://developer.microsoft.com/en-us/games/blog/havok-physics-for-unity-is-now-production-ready/>
+
+ * Also DirectX which should work in VC/C++,
+   <https://learn.microsoft.com/en-us/windows/win32/directx>
+
+ * And for mixed-reality, including iOS ARKit and Android ARCore, with Azure
+   <https://learn.microsoft.com/en-us/azure/spatial-anchors/overview>
+
+
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.6 2023-02-17T21:38Z More Links
  0.0.5 2022-12-27T17:49Z Add more connections and my interest in computer
        chess games
  0.0.4 2022-11-16T17:33Z Manage TODOs, more links and musings
