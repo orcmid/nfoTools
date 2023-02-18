@@ -56,27 +56,25 @@ int main(void)
 
        if (EOF ==
        # if   !defined(RAYLIB_VERSION)
-             fputs( "ECHO [VCrayApp] Using unknown version of raylib\n"
-                    "SET VCRAYVER=unknown\n"
-                    "EXIT 0\n",
-                    stdout)
+             fputs( "ECHO [VCrayApp] Using unknown version of raylib %VCterse%\n"
+                    "SET VCRAYVER=unknown   %VCterse%\n"
        # else
               fputs( "ECHO [VCrayApp] Using version "
                            SHOW(RAYLIB_VERSION)
-                           " of raylib\n"
-                     "SET VCRAYVER=" SHOW(RAYLIB_VERSION) "\n"
-                     "EXIT 0\n",
-                     stdout )
+                           " of raylib %VCterse%\n"
+                     "SET VCRAYVER=" SHOW(RAYLIB_VERSION) "   %VCterse%\n"
        # endif
-
-                )  // checking for unlikely fputs( ) failure case.
+                     "EXIT /B 0  %VCterse%\n",
+                     stdout)
+            )  // checking for unlikely fputs( ) failure case.
             return EXIT_FAILURE;
        else return EXIT_SUCCESS;
     }
 
 /*
-
-   0.0.5 2023-02-18T21:49 Add EOF handling of the fputs( ) used.
+   0.0.6 2023-02-18T22:59Z Incorporate %VCterse% in the generated .bat
+         use batch exit
+   0.0.5 2023-02-18T21:49Z Add EOF handling of the fputs( ) used.
    0.0.4 2023-02-13T00:06Z Clean up reporting on version
    0.0.3 2023-02-12T23:47Z Struggling to get TV(X) to glom the value
    0.0.2 2023-02-12T23:01Z Use VCshowDefs TV(X) definition to enstring the

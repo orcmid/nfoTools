@@ -1,9 +1,9 @@
 
 
-VCrayVerify-0.0.0.txt 0.0.0           UTF-8                        2023-01-16
+VCrayVerify-0.0.0.txt 0.0.1           UTF-8                        2023-01-**
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-                      NFOTOOLS DEVKIT FOR RAYLIB TESTS
+                      NFOTOOLS TEST FIXTURE FOR RAYLIB
                       ================================
 
     <https://orcmid.github.io/dev/**somewhere**/VCrayVerify-0.0.0.txt>
@@ -35,21 +35,24 @@ VCrayVerify-0.0.0.txt 0.0.0           UTF-8                        2023-01-16
   *    on a Windows desktop PC, laptop or Microsoft Surface.  Su;pport  *
   *    is not available for other language bindings and platforms.      *
   *                                                                     *
-  *    VCrayVerify 0.0.0 Uses a customized VCrayApp 0.0.0. VCrayVerify  *
+  *    VCrayVerify 0.0.0 Uses a customized VCrayApp 0.1.0. VCrayVerify  *
   *    is tested and confirmed with raylib 4.0.0 code. Changes and      *
   *    incompatibilities in later versions of raylib may present        *
   *    issues for VCrayVerify operation.  Detecting and resolving such  *
   *    situations is part of VCrayVerify's utility as an instrument.    *
+  *                                                                     *
+  *    Further releases of VCrayVerify will extend coverage and adjust  *
+  *    for more variations in raylib, its examples, and VS Build Tools. *
   *                                                                     *                                                                     *
   *                                                                     *
   * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 
     The VCrayVerify-0.0.0 distribution is available on the web at
-    <https://orcmid.github.io/nfoTools/dev/**somewhere**>.  Consult
+    <https://orcmid.github.io/nfoTools/dev/D230202/D230202d/>.  Consult
     that page for the latest status, links to useful related material,
     and any more-recent version.  If there is concern for the authenticity
     or correctness of any VCrayVerify distribution, obtain a full replacement
-    via <https://orcmid.github.io/nfoTools/dev/**mainplace**>.
+    via <https://orcmid.github.io/nfoTools/dev/D230202/>.
 
     VCrayVerify is designed to work with versions of Visual Studio that are
     free for personal/open-source use, including the Visual Studio Build Tools
@@ -61,7 +64,7 @@ VCrayVerify-0.0.0.txt 0.0.0           UTF-8                        2023-01-16
 
     Operation of VCrayVerify involves the following tools along with some
     confidence at understanding compilation errors and other error conditions
-    that may be reported dur VCrayVerify operation.
+    that may be reported during VCrayVerify operation.
 
      * Windows File Explorer
      * Windows Built-in Zip-Folder Tool
@@ -72,15 +75,13 @@ VCrayVerify-0.0.0.txt 0.0.0           UTF-8                        2023-01-16
      + GPG4Win for creation and verification of digital signatures
      + A text-editor for work on source code, other files, all in plain text
        (Visual Studio Code recommended for its C/C++ and Microsoft support)
-     + Git4Win implementation for source-code control
-     + TortoiseGit for File Explorer integration of Git
-     + GitHub Windows Client for public access to development projects
+
 
     The first six (*) are essential.  The remainder (+) are optional and
     recommended mainly for your own development projects that make further use
-    of, or contribute to, raylib.  There are alternatives.  The specific ones
-    happen to be those relied upon in the development of nfoTools projects.
-    For more information on dependencies, see
+    of, or contribute to, raylib and VCrayVerify.  There are alternatives.
+    The specific ones happen to be those relied upon in the development of
+    nfoTools projects.  For more information on dependencies, see
     <https://orcmid.github.io/nfoTools/dev/**mainplace**>.
 
 DOWNLOADS AND SETUP
@@ -90,11 +91,11 @@ DOWNLOADS AND SETUP
     properly.  See <https://orcmid.github.io/nfoTools/tools/T211002/>.
 
     If you have not already done so, choose where on your computer you want
-    to have the VCrayVerify code.  There may be sufficient room for including
+    to have the VCrayVerify code.  There must be sufficient room for including
     a complete copy or raylib source into the VCrayVerify project folder.  See
-    the setup arrangements at <https://orcmid.github.io/nfoTools/dev/**mainplace**>.
+    the setup arrangements at <https://orcmid.github.io/nfoTools/dev/D230202/D230202a/>.
 
-    Download VCrayVerify from <https://orcmid.github.io/nfoTools/dev/**somewhere**>.
+    Download VCrayVerify from <https://orcmid.github.io/nfoTools/dev/D230202/d230202d/>.
     If a later version is available, consider using that version instead.
 
     It is useful to download VCrayVerify-0.0.0.zip to a location that you can
@@ -174,7 +175,6 @@ MANIFEST OF VCrayApp-0.0.0.zip
     cache\
         .gitignore   used to suppress intermediate files from source control
         cache.txt    synopsis and manifest for the cache\ folder
-        rayConfirm.c sample program used to confirm successful operation
         raylibCode.3.7.0.opt
                      options file for compiling raylib-3.7.0 components
         raylibCode.4.0.0.opt
@@ -187,6 +187,7 @@ MANIFEST OF VCrayApp-0.0.0.zip
                      options file for linking to make the .exe file
         VCoptions.opt
                      options file for both cache\ and project code compilation
+    VerifyConfirm.c
 
     src\
         src.txt      synopsis and manifest for the src\ folder
@@ -215,13 +216,14 @@ MANIFEST OF VCrayApp-0.0.0.zip
  ATTRIBUTION
 
    Hamilton, Dennis E. Building raylib Apps with VS Developer Command Prompt.
-   nfoTools file VCrayApp-0.0.0.txt version 0.0.7 dated 2023-01-07 available
-   on the internet as a version of
-   <https://orcmid.github.io/dev/D211101/D211101c/VCrayApp-0.0.0.txt>
+   nfoTools file VCrayVerify-0.0.0.txt version 0.0.1 dated 2023-01-07
+   available on the internet as a version of
+   <https://orcmid.github.io/dev/D23****/D23*****/VCrayApp-0.0.0.txt>
 
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.1 2023-01-**
  0.0.0 2023-01-16T20:44Z Placeholder draft with VCrayApp-0.0.0.txt 0.0.7
        boilerplate
 

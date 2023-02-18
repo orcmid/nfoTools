@@ -1,5 +1,5 @@
 @echo off
-rem VCrayApp 0.1.0 VCrayApp.bat 0.0.20 UTF-8                       2023-02-09
+rem VCrayApp 0.1.0 VCrayApp.bat 0.0.21 UTF-8                       2023-02-18
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 rem                  BUILDING RAYLIB APP WITH VC/C++ TOOLS
@@ -65,7 +65,7 @@ rem CONFIRM COMMAND-LINE ENVIRONMENT
 IF "%VSCMD_VER%" == "" GOTO FAIL3
 WHERE cl.exe >nul 2>nul
 IF ERRORLEVEL 1 goto FAIL3
-ECHO: [VCrayApp] %VCrayApp% BUILDING RAYLIB APP WITH VC/C++ TOOLS
+ECHO: [VCrayApp] %VCrayApp% BUILDING RAYLIB APP WITH VC/C++ %VSCMD_VER% TOOLS
 
 IF "%VCsplice%" == "+" GOTO :PARMCHECK
 ECHO:          %TIME% %DATE% on %USERNAME%'s %COMPUTERNAME%         %VCterse%
@@ -224,6 +224,9 @@ ECHO:
 ECHO:    Exit code 0 is produced on all successful operations.
 ECHO:    Exit codes greater than 1 are produced for any failure.
 ECHO:
+ECHO:    There is definition and use of environment variables GAME_EXE, SRC,
+ECHO:    VCrayApp, VCfrom, VCterse, VChush, VCsplice, VCclean, and VCrun.
+ECHO:    VSCMD_VER is depended on for operation from a VS Command Prompt.
 ENDLOCAL
 IF "%VCsplice%" == "+" EXIT /B 0
 PAUSE
@@ -261,6 +264,7 @@ rem For additional information, see the accompanying NOTICE.txt file.
 rem
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 rem
+rem 0.0.21 2023-02-18T23:43Z Update Usage and show Tools Version
 rem 0.0.20 2023-02-09T22:48Z Review for automation of raylib version checking
 rem        and reporting
 rem 0.0.19 2023-01-14T19:25Z Update for VCrayApp 0.1.0
