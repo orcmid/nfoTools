@@ -1,0 +1,78 @@
+D2302012txt 0.0.0                   UTF-8                         2023-02-18
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+
+                        nfoWare/nfoWorks nfoTools
+                        =========================
+
+<https://github.com/orcmid/nfoTools/blob/master/docs/dev/D230202/D230202.txt>
+        <https://orcmid.github.io/nfoTools/dev/D230202/D230202.txt>
+
+       VCrayVerify TEST HARNESS FOR VERIFYING RAYLIB EXAMPLES
+       ======================================================
+
+    VCrayVerify is a test suite for verification of the examples that are
+    included in a raylib release distribution.  It can also be used with a
+    dev branch to see if examples continue to build and operate properly.
+
+    This is also demonstration that VCrayApp is working properly with the
+    particular examples and raylib release or current "-dev" version source
+    code.  VCrayVerify incorporates a customization of the latest VCrayApp
+    for compilation and operation of the raylib examples.
+
+    VCrayVerify can also pin-point situations where the Visual Studio Build
+    Tools do not support features of C Language standards that an example or
+    the required raylib modules depend on.
+
+    To facilitate the focused reuse of VCrayVerify as part of example
+    verification, the VCrayVerify command parameters provide for focusing
+    on a particular category of examples and even individual examples.
+
+MANIFEST
+
+     D230201.txt    this manifest and job-jar file
+
+       index.md     the web front page to this D230201 folio.
+
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+                     Copyright 2023 Dennis E. Hamilton
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+ ATTRIBUTION
+
+   Hamilton, Dennis E. VCrayVerify Test Harness for Verifying raylib Examples.
+   nfoTools development text file D230202.txt version 0.0.0 dated 2023-02-18,
+   available on the Internet as a version of
+   <https://orcmid.github.io/nfoTools/dev/D230202/D230202.txt>
+
+TODO
+
+ * Document the key technique and the typical use cases, then catalog the
+   prebuilt ones that are useful for checking use of various configurations.
+
+ * Provide folio for distributions of VCrayVerify releases, documenting their
+   usage.
+
+ * Use the standard folio structure, D230202a Setup, D230202b Operation,
+   D230202c Testing/Improvement, and D230302d VCrayVerify 0.0.0 (beta), etc.
+
+
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+ 0.0.0 2023-02-18T16:52Z Placeholder and initial TODOs
+
+                       ***** end of D230202.txt *****

@@ -1,4 +1,4 @@
-dev.txt 0.0.10                      UTF-8                          2023-02-16
+dev.txt 0.0.11                      UTF-8                          2023-02-18
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -32,6 +32,7 @@ MANIFEST
        index.md
              the orcmid.github.io/nfoTools/dev/ entrance-page Markdown source
 
+     D230202/   VCrayVerify Test Harness for Verifying raylib Examples
      D230201/   VCshowDefs: VC/C++ Fixtures for Confirming/Demonstrating
                 whether chosen preprocessor definitions are in effect
 
@@ -61,7 +62,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. nfoTools Development Notebook.  nfoTools project text
-   file dev.txt version 0.0.10 dated 2023-02-16, available on the Internet
+   file dev.txt version 0.0.11 dated 2023-02-18, available on the Internet
    as a version of <https://orcmid.github.io/nfoTools/dev/dev.txt>
 
 TODO
@@ -91,6 +92,7 @@ TODO
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.11 2023-02-18T17:40Z Add D230202
  0.0.10 2023-02-16T05:59Z Touch-up rulers, manage TODOs
  0.0.9 2023-02-14T15:32Z Add D230201
  0.0.8 2023-02-10T19:00Z Manage TODOs
