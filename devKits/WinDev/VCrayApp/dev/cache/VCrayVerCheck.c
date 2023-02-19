@@ -1,4 +1,4 @@
-/* VCrayVerCheck.c 0.0.7            UTF-8                         2023-02-19
+/* VCrayVerCheck.c 0.0.8            UTF-8                         2023-02-19
    -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                         DETERMINATION OF RAYLIB VERSION
@@ -8,8 +8,8 @@
 
    File raylib.h defines a preprocessor variable RAYLIB_VERSION in all
    versions starting with the raylib 4.0 release.  This variable is checked
-   for and the value used if available.  Otherwise an unknown version is
-   reported.
+   for and the value used if available.  Otherwise an unidentified version is
+   reported.  (There may be other ways to resolve such cases.)
 
    The console output from VCrayVercheck.exe is in the form of a small batch
    file that VCrayApp saves to VCrayVer.bat and then calls to have the version
@@ -58,13 +58,14 @@
 
 int main(void)
     {   /* Determining what, if any, RAYLIB_VERSION is defined.
-           Note that a different program is compiled depending on whether
+           Note that different code is compiled depending on whether
            definition of RAYLIB_VERSION is supplied by raylib.h
            */
 
        if (EOF ==
        # if   !defined(RAYLIB_VERSION)
-             fputs( "ECHO [VCrayApp] Using unknown version of raylib %VCterse%\n"
+             fputs( "ECHO [VCrayApp] Using unidentified"
+                          " version of raylib %VCterse%\n"
                     "SET VCRAYVER=unknown   %VCterse%\n"
        # else
               fputs( "ECHO [VCrayApp] Using version "
@@ -80,6 +81,7 @@ int main(void)
     }
 
 /*
+   0.0.8 2023-02-19T18:32Z Prefer "unidentified" over "unknown"
    0.0.7 2023-02-19T18:11Z Tidy up, explaining the procedure better.
    0.0.6 2023-02-18T22:59Z Incorporate %VCterse% in the generated .bat
          use batch exit
