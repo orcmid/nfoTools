@@ -1,4 +1,4 @@
-/* VCrayVerCheck.c 0.0.5            UTF-8                         2023-02-18
+/* VCrayVerCheck.c 0.0.7            UTF-8                         2023-02-19
    -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                         DETERMINATION OF RAYLIB VERSION
@@ -11,11 +11,16 @@
    for and the value used if available.  Otherwise an unknown version is
    reported.
 
-   VCrayApp creates a small batch file that can be used by VCrayApp.bat and
-   outer scripts to determine what setup variations are required in the
-   compilation options, the list of raylib files to cache, and the ability of
-   certain raylib features to be used and demonstrated, depending on the
-   version of Visual Studio Build Tools being used.
+   The console output from VCrayVercheck.exe is in the form of a small batch
+   file that VCrayApp saves to VCrayVer.bat and then calls to have the version
+   available to the VCrayApp.bat procedure.  THIS OUTPUT DEPENDS ON %VCterse%
+   BEING SET BY THE CALLING SCRIPT, AS VCrayApp.bat does.  The script reports
+   its operation as a report from VCrayApp.
+
+   VCrayApp uses the detected raylib version and the version of VS Build Tools
+   to determine what setup variations are required in the VCrayApp compilation
+   options, the list of raylib files to cache, and the ability of certain
+   raylib features to be used.
 
    VCrayVerCheck.c is compiled, with cache\ the current directory, using the
    command
@@ -27,7 +32,7 @@
    VCrayApp-based project.
 
    VCrayApp.bat compiles VCrayVercheck.c and executes a successful result
-   with a command equivalent to
+   with command
 
         VCrayVerCheck >VCrayVer.bat
 
@@ -35,8 +40,8 @@
    "unknown" or the value of RAYLIB_VERSION from raylib.h in the nearby
    raylib\src directory.
 
-   This is accomplished as part of VCrayApp.bat cache-creation operation in
-   order to select raylib-version-compatible compilation options.
+   The technique for capturing preprocessor variable RAYLIB_VERSION is a
+   variation on VCshowDefs, <https://orcmid.github.io/nfoTools/dev/D230201/>.
 
    */
 
@@ -44,15 +49,18 @@
       /* Turns pre-processor variables into string arguments */
 
 #define SHOW(X) TV(X)
+      /* Stringifies any defined value of pre-processor arugment X */
 
 #include <stdlib.h>     // for exit cases
 #include <stdio.h>      // for fputs()
-#include <string.h>     // for strlen()
 
 #include <raylib.h>     // for RAYLIB_VERSION
 
 int main(void)
-    {   /* Determining what, if any, RAYLIB_VERSION is defined */
+    {   /* Determining what, if any, RAYLIB_VERSION is defined.
+           Note that a different program is compiled depending on whether
+           definition of RAYLIB_VERSION is supplied by raylib.h
+           */
 
        if (EOF ==
        # if   !defined(RAYLIB_VERSION)
@@ -65,13 +73,14 @@ int main(void)
                      "SET VCRAYVER=" SHOW(RAYLIB_VERSION) "   %VCterse%\n"
        # endif
                      "EXIT /B 0  %VCterse%\n",
-                     stdout)
+                     stdout )
             )  // checking for unlikely fputs( ) failure case.
             return EXIT_FAILURE;
        else return EXIT_SUCCESS;
     }
 
 /*
+   0.0.7 2023-02-19T18:11Z Tidy up, explaining the procedure better.
    0.0.6 2023-02-18T22:59Z Incorporate %VCterse% in the generated .bat
          use batch exit
    0.0.5 2023-02-18T21:49Z Add EOF handling of the fputs( ) used.
