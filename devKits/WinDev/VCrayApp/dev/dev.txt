@@ -1,4 +1,4 @@
-dev.txt 0.0.11                       UTF-8                         2023-02-18
+dev.txt 0.0.12                       UTF-8                         2023-02-19
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                        AN NFOTOOLS COMING ATTRACTION
@@ -142,8 +142,16 @@ TODO
    VisualStudioVersion=17.0
    VSCMD_VER=17.4.5 and that is supplied in the VS 2022 Command Prompt line.
 
+ * Add verification of cache\VCrayVerCheck.c presence.
+
+ * Verify all of the raylibCode-semver.opt files being present.
+
+ * Modify VCrayVercheck.c building to eliminate VCrayVercheck.obj as soon as
+  oompilation succeeds.  Leaving it there taints any linking of the App.
+
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.12 2023-02-19T00:01Z Manage TODOs about checking and cleaning files
  0.0.11 2023-02-18T21:21Z Manaage TODOs about getting environment variables
  0.0.10 2023-02-16T19:38Z Manage TODOs
  0.0.9 2023-02-09T23:47Z Manage TODOs and drafting of 0.1.0.
