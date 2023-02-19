@@ -1,5 +1,5 @@
 @echo off
-rem VCrayApp 0.1.0 VCrayApp.bat 0.0.21 UTF-8                       2023-02-18
+rem VCrayApp 0.1.0 VCrayApp.bat 0.0.22 UTF-8                       2023-02-19
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 rem                  BUILDING RAYLIB APP WITH VC/C++ TOOLS
@@ -91,10 +91,13 @@ rem VERIFY LOCATION OF THE SCRIPT WHERE VCRayApp.zip IS FULLY EXTRACTED
 rem Some are customizable, none should be removed, all %VCrayApp% specific
 IF NOT EXIST "%~dp0cache\cache.txt" GOTO :FAIL1
 IF NOT EXIST "%~dp0cache\rayConfirm.c" GOTO :FAIL1
+IF NOT EXIST "%~dp0cache\raylibCode.3.7.0.opt" GOTO :FAIL1
+IF NOT EXIST "%~dp0cache\raylibCode.4.0.0.opt" GOTO :FAIL1
 IF NOT EXIST "%~dp0cache\raylibCode.opt" GOTO :FAIL1
 IF NOT EXIST "%~dp0cache\raylibVars.opt" GOTO :FAIL1
 IF NOT EXIST "%~dp0cache\rayLinking.opt" GOTO :FAIL1
 IF NOT EXIST "%~dp0cache\VCoptions.opt" GOTO :FAIL1
+IF NOT EXIST "%~dp0cache\VCrayVerCheck.cx" GOTO :FAIL1
 IF NOT EXIST "%~dp0app\app.txt" GOTO :FAIL1
 IF NOT EXIST "%~dp0src\src.txt" GOTO :FAIL1
 IF NOT EXIST "%~dp0VCrayApp-%VCrayApp%.txt" GOTO :FAIL1
@@ -264,6 +267,8 @@ rem For additional information, see the accompanying NOTICE.txt file.
 rem
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 rem
+rem 0.0.22 2023-02-19T21:00Z Check all required cache/ files including the
+rem        newly-named VCrayVerCheck.cx
 rem 0.0.21 2023-02-18T23:43Z Update Usage and show Tools Version
 rem 0.0.20 2023-02-09T22:48Z Review for automation of raylib version checking
 rem        and reporting
