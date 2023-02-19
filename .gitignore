@@ -1,4 +1,4 @@
-# .gitignore 0.0.5                     UTF-8                    dh:2016-10-04
+# .gitignore 0.0.6                     UTF-8                    dh:2023-02-19
 #
 #                                  ORCMID/ADV10
 #                                  ============
@@ -16,6 +16,8 @@
 #   jEdit backup and working files
 *~
 *#
+#   Eliminate local-specific helpers
+*.lnk
 
 ## ELIMINATION OF VISUAL STUDIO SOLUTIONS
 ## --------------------------------------
@@ -217,6 +219,7 @@ FakesAssemblies/
 
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# 0.0.6 2023-02-19T22:42 Eliminate local-only helpers like .lnk
 # 0.0.5 2016-10-04-12:30 Transpose for the orcmid/Adv10 GitHub Project
 #       switching to Semantic Versioning in the process.
 # 0.04 2014-12-20-08:31 Prevent Short Names

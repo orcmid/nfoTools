@@ -1,4 +1,4 @@
-# .gitignore 0.0.4                  UTF-8                         2023-02-12
+# .gitignore 0.0.5                  UTF-8                         2023-02-19
 #---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 #
 #                    VCrayApp cache\ Exclusions from Git
@@ -18,8 +18,13 @@
 *.exe
 *.bat
 
+#   Exclude files that are created dynamically and also ephemeral
+raylibCode.opt
+VCrayVer.bat
+
 #---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+# 0.0.5 2023-02-19T22:37Z Exclude ephemeral derived files
 # 0.0.4 2023-02-12T19:56Z Touch up the commentary
 # 0.0.3 2023-02-12T16:40Z Adjust for having other compiled/generated transient
 #       materials.
