@@ -1,4 +1,4 @@
-dev.txt 0.0.13                       UTF-8                         2023-02-19
+dev.txt 0.0.14                       UTF-8                         2023-02-20
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                        AN NFOTOOLS COMING ATTRACTION
@@ -71,7 +71,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. raylib App Build with VS Developer Command Prompt.
-   nfoTools text file version 0.0.13 dated 2023-02-19, available on the
+   nfoTools text file version 0.0.14 dated 2023-02-20, available on the
    Internet as a version of
    <https://github.com/orcmid/nfoTools/blob/master/devKits/WinDev/VCrayApp/dev/dev.txt>
 
@@ -121,12 +121,32 @@ TODO
    because the cache is stale.  There needs to be some precaution that must be
    made known somehow.
 
- * Go back through the 3.x releases until we find one that doesn't build a
-   proper cache.  This will be the limit on defaulting to the 3.7 case.  We
-   might want to make the oldest that works the default name though?  For
-   VCrayVerify, it might be more sticky than that.  We should start with the
-   3.7 assumption if there is no version.  We'll have to see about that
-   concerning raylib examples.
+ * Adjust VCrayApp.bat to do the following when a new cache is to be built.
+   1. Compile cache\VCrayVerCheck.cx.  FAILURE case.
+   2. On success, Execute VCrayVerCheck >VCrayVer.bat
+   3. Then delete VCrayVercheck.* to avoid tainting cache\  FAILURE case?
+   3. Then CALL VCrayVer.bat and check that VCRAYVER is set. FAILURE case.
+      Copy raylibCode.4.0.0.opt to raylibCode.opt
+   4. If VCRAYVER is set to "unidentified" it is necessary to check into
+      the raylib\ folder for files that reveal variations among pre-4.0
+      versions.
+       a. If any of the files appveyor.yml, .travis.yml, and HELPME.md
+          are present, it is raylib 3.0 or earlier and it
+          remains unidentified.
+       b. raylibCode.3.x.0.opt is copied to raylibCode.opt, over-riding the
+          default raylibCode.4.0.0.opt default.
+       c. If CONTRIBUTORS.md is present it is raylib 3.7.
+       d. Otherwise, it is raylib 3.5.
+       e. VCRAYVER is set accordingly.
+   5. When VCRAYVER remains unidentified, the versions 3.0 and earlier are
+      declined.
+   6. If VCRAYVER is "4.0" we're good.
+      If VCRAYVER is "4.2" we must decline because of a VC/C++ defect.
+   7. If there is a "*-dev" VCRAYVER, we will warn about use for a release
+      and proceed.
+   8. We don't know about releases after 4.2 at this time.  We will attempt
+      to proceed and see what happens.  We may need to test with 4.5-dev
+      in order to be prepared.
 
  * It would be nice if there was a way to recompile rayConfirm.c without
    messing up any user development.  This would change the customization
@@ -134,27 +154,16 @@ TODO
    brittle than they are already.  That is, we would have src\ as the default
    but how do we distinguish first run from later?
 
- * VCrayVerCheck can use getenv(char* envar) to access environment variables
-   to make better displays of information.  rayConfirm.c can use them also,
-   includings one defined by the VCverCheck-created .bat file.
+ * rayConfirm.c can use getenv() to grab VCRAYVER and other vars also.
 
  * With the current VS 2022 Build Tools, there are
    VisualStudioVersion=17.0
    VSCMD_VER=17.4.5 and that is supplied in the VS 2022 Command Prompt line.
 
- * Modify VCrayVercheck.c building to eliminate VCrayVercheck.obj as soon as
-  oompilation succeeds.  Leaving it there taints any linking of the App.
-
- * Confirm version 3.x in VCrayApp.  This should be evident in the script
-   projects\scripts\build-windows.bat
-
- * Change name of VCrayVercheck.c to VCrayVercheck.cx so that it does not
-   taint the compiling of rayConfirm.c with cache/ as the %SRC% file.  Confirm
-   compiles properly with use of the /Tc option.
-
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
- 0.0.13 2023-02-19T21:06Z Change VCrayVerCheckc to VCrayVerCheckx
+ 0.0.14 2023-02-20T21:21Z Manage TODOs, preparing for raylib version filtering
+ 0.0.13 2023-02-19T21:06Z Change VCrayVerCheck.c to VCrayVerCheck.cx
  0.0.12 2023-02-19T00:01Z Manage TODOs about checking and cleaning files
  0.0.11 2023-02-18T21:21Z Manaage TODOs about getting environment variables
  0.0.10 2023-02-16T19:38Z Manage TODOs
