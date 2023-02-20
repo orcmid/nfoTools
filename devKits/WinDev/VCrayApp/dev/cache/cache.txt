@@ -1,4 +1,4 @@
-VCrayApp 0.1.0 cache.txt 0.0.19     UTF-8                         2023-01-14
+VCrayApp 0.1.0 cache.txt 0.0.20     UTF-8                         2023-02-19
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -26,12 +26,6 @@ VCrayApp 0.1.0 cache.txt 0.0.19     UTF-8                         2023-01-14
   *    for protection against being over-written.  Then use those for     *
   *    review and adjustment of the restored/updated versions.            *
   *                                                                       *
-  *                            ** IMPORTANT **                            *
-  *                            ***************                            *
-  *                                                                       *
-  *         THESE CACHE\ FILES DEPEND ON RAYLIB 4.0.0 RELEASE CODE        *
-  *         ******************************************************        *                                                                     *
-  *          THERE IS ALSO PROVISION FOR THE RAYLIB 3.7.0 RELEASE         *
   *                                                                       *
   *                            **  WARNING  **                            *
   *                            ***************                            *
@@ -42,6 +36,9 @@ VCrayApp 0.1.0 cache.txt 0.0.19     UTF-8                         2023-01-14
   *    When there is a repaired raylib-4.x.0 release, support will be     *
   *    incorporated in VCrayApp.                                          *
   *                                                                       *
+  *    RAYLIB-3.0.0 CANNOT BE USED WITH VCRAYAPP because of a defect in   *
+  *    the src/external/stb_image.h file having an incompatibility with   *
+  *    Microsoft VC/C++.                                                  *
   * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 
 
@@ -56,7 +53,7 @@ VCrayApp 0.1.0 cache.txt 0.0.19     UTF-8                         2023-01-14
     are always compatible.
 
     IMPORTANT DEPENDENCY: The VCrayApp.bat file (in the folder above cache/)
-    and the option files raylibCode.opt and VCoptions.opt all depend on
+    and the option files raylibCode-x.y.z.opt and VCoptions.opt all depend on
     relative location of a raylib/ source-code folder.  These must be altered
     together for any change to relative location (including use of an absolute
     location).  The use of relative addresses also requires that VCrayApp be
@@ -70,9 +67,8 @@ MANIFEST
         this manifest and job-jar file
 
     .gitignore
-        excluding the compilation intermediates from any git commits. The
-        *.obj files should always be excluded because they are temporary
-        and should be rebuilt as needed, not backed-up under version control.
+        excluding the compilation intermediates and other ephemeral files
+        from any git commits.
 
     rayConfirm.c
         sample program used to confirm the setup and building of a raylib
@@ -81,15 +77,11 @@ MANIFEST
         files.  See the instructions at the beginning of VCrayApp.bat.
 
     raylibCode.opt
-        Option file identifying the raylib ***4.0.0*** source modules to be
-        compiled and their *.obj files cached.  This file depends on raylib\
-        being at a fixed location relative to cache\. raylib\src\rglfw.c must
-        be the last one successfully compiled.  It's presence is checked to
-        confirm that a complete cache is available.
+        Option file chosen depending on the version of Raylib to be cached.
 
-    raylibCode.3.7.0.opt
-        Option file to be copied to raylibCode.opt when using raylib 3.7.0.
-        Later releases of rayLib have different names for some core files.
+    raylibCode.3.x.0.opt
+        Option file to be copied to raylibCode.opt when using an acceptable
+        raylib 3.x release.
 
     raylibCode.4.0.0.opt
         Option file to be copied to raylibCode.opt when using raylib 4.0.0,
@@ -110,9 +102,21 @@ MANIFEST
         file also depends on raylib\ being in the same predictable relative
         location as relied on in raylibCode.opt.
 
+    VCrayVerCheck.cx
+        C Language program that is hot-compiled to determine if RAYLIB_VERSION
+        is defined in raylib.h.  The *.cx extension prevents tainting the
+        compilation of rayConfirm.c.
+
+    VCrayVer.bat
+        Is an ephemeral file that holds the script output by VCrayVercheck.exe
+        for delivering VCRAYVER to VCrayApp.bat and use in determining that
+        the raylib version is acceptable to VCrayApp and any adjustment to
+        options that are required.
+
     *.obj (after compilation of cached raylib components)
         VC/C++ compiled C Language *.obj modules from compilation of the
-        raylib files identified in raylibCode.opt.
+        raylib files identified in raylibCode.opt.  Other *.obj files created
+        here must be removed to avoid tainting VCrayApp linking of cache files
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
@@ -135,13 +139,15 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. VCrayApp raylib Cache Folder.  VCrayApp 0.1.0 text file
-   cache.txt version 0.0.19 dated 2023-01-14, available on the Internet as a
+   cache.txt version 0.0.20 dated 2023-02-19, available on the Internet as a
    version of
     <https://github.com/orcmid/nfoTools/blob/master/devKits/WinDev/VCrayApp/dev/cache/cache.txt>.
 
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.20 2023-02-19T23:57Z Adjust for VCrayVerChecks.cx and ephemeral content
+        that is created in cache\
  0.0.19 2023-01-14T19:42Z Adjust for VCrayApp 0.1.0
  0.0.18 2023-01-02T22:29Z Add link to the docs/dev/D211101/ material
  0.0.17 2023-01-02T17:47Z Touch up explanations
