@@ -1,4 +1,4 @@
-dev.txt 0.0.14                       UTF-8                         2023-02-20
+dev.txt 0.0.15                       UTF-8                         2023-02-20
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                        AN NFOTOOLS COMING ATTRACTION
@@ -71,7 +71,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. raylib App Build with VS Developer Command Prompt.
-   nfoTools text file version 0.0.14 dated 2023-02-20, available on the
+   nfoTools text file version 0.0.15 dated 2023-02-20, available on the
    Internet as a version of
    <https://github.com/orcmid/nfoTools/blob/master/devKits/WinDev/VCrayApp/dev/dev.txt>
 
@@ -156,12 +156,22 @@ TODO
 
  * rayConfirm.c can use getenv() to grab VCRAYVER and other vars also.
 
+ * see if rayconfirm.c can be made %SRC% temporarily, then restore %SRC% that
+   has been set by modification of VCrayApp.bat.
+
+ * See if we can use the app-compilation code in VCrayApp.bat to also compile
+   rayConfirm.c as part of a new-cache confirmation without changing the
+   compilation of an App if requested.  This will re-use \app and we need to
+   remove rayConfirm.* from there when done.
+
  * With the current VS 2022 Build Tools, there are
    VisualStudioVersion=17.0
    VSCMD_VER=17.4.5 and that is supplied in the VS 2022 Command Prompt line.
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.15 2023-02-20T21:59Z Adjust TODOs concerning use of rayConfirm after
+        every cache population.
  0.0.14 2023-02-20T21:21Z Manage TODOs, preparing for raylib version filtering
  0.0.13 2023-02-19T21:06Z Change VCrayVerCheck.c to VCrayVerCheck.cx
  0.0.12 2023-02-19T00:01Z Manage TODOs about checking and cleaning files
