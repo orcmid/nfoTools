@@ -1,4 +1,4 @@
-VCrayApp 0.1.0 cache.txt 0.0.21     UTF-8                         2023-02-21
+VCrayApp 0.1.0 cache.txt 0.0.22     UTF-8                         2023-02-21
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -107,10 +107,9 @@ MANIFEST
         VCrayApp.bat can be modified to compile the user's rayApp project src\
         files.  See the instructions at the beginning of VCrayApp.bat.
 
-    VCrayVerCheck.cx
-        C Language program that is hot-compiled to determine if RAYLIB_VERSION
-        is defined in raylib.h.  The *.cx extension prevents tainting the
-        compilation of rayConfirm.c.
+    VCrayVerCheck.c
+        C Language program that is hot-compiled to determine any setting of
+        RAYLIB_VERSION defined in raylib.h.
 
     VCrayVer.bat
         Is an ephemeral file that holds the script output by VCrayVercheck.exe
@@ -144,13 +143,14 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. VCrayApp raylib Cache Folder.  VCrayApp 0.1.0 text file
-   cache.txt version 0.0.21 dated 2023-02-21, available on the Internet as a
+   cache.txt version 0.0.22 dated 2023-02-21, available on the Internet as a
    version of
     <https://github.com/orcmid/nfoTools/blob/master/devKits/WinDev/VCrayApp/dev/cache/cache.txt>.
 
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.22 2023-02-21T01:35Z Revert back to VCrayVerCheck.c from .cx
  0.0.21 2023-02-21T01:16Z Adjust for VCrayApp.bat and other changes
  0.0.20 2023-02-19T23:57Z Adjust for VCrayVerChecks.cx and ephemeral content
         that is created in cache\
