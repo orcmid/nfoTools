@@ -1,16 +1,15 @@
-/* VCrayVerCheck.cx 0.0.11           UTF-8                         2023-02-21
+/* VCrayVerCheck.c 0.0.12            UTF-8                         2023-02-21
    -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                         DETERMINATION OF RAYLIB VERSION
 
-   VCrayVerCheck.cx determines the version of raylib that is currently used
-   by a VCrayApp-based project.  The *.cx extension is designed to prevent
-   this file being caught in a *.c wild-card compilation command.
+   VCrayVerCheck.c determines the version of raylib that is currently used
+   by a VCrayApp-based project.
 
    File raylib.h defines a preprocessor variable RAYLIB_VERSION in all
    versions starting with the raylib 4.0 release.  This variable is checked
    for and the value used if available.  Otherwise an unidentified version is
-   reported.  (There are other ways VCrayApp.bat can resolve such cases.)
+   reported.  (There are further ways VCrayApp.bat can resolve such cases.)
 
    The console output from VCrayVercheck.exe is in the form of a small batch
    file that VCrayApp saves to VCrayVer.bat and then CALLs to have the version
@@ -18,10 +17,10 @@
    BEING SET BY THE CALLING VCrayApp.bat does.  The script announces the
    determination as part of VCrayApp.bat operation.
 
-   VCrayVerCheck.cx is compiled, with cache\ the current directory, using the
+   VCrayVerCheck.c is compiled, with cache\ the current directory, using the
    command
 
-        CL @VCoptions.opt /TcVCrayVerCheck.cx
+        CL @VCoptions.opt VCrayVerCheck.c
 
    On a successful compilation VCrayApp.bat executes the result with command
 
@@ -71,6 +70,7 @@ int main(void)
     }
 
 /*
+   0.0.12 2023-02-21T01:39Z Revert back to VCrayVerCheck.c from .cx
    0.0.11 2023-02-21T01:13Z Remove EXIT command from the output script
    0.0.10 2023-02-20T00:20Z Touch up and use "unidentified" consistently
    0.0.9 2023-02-19T21:05Z Adjust for new name VCrayVerCheck.cx

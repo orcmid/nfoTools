@@ -1,5 +1,5 @@
 @echo off
-rem VCrayApp 0.1.0 VCrayApp.bat 0.0.23 UTF-8                       2023-02-22
+rem VCrayApp 0.1.0 VCrayApp.bat 0.0.24 UTF-8                       2023-02-21
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 rem                  BUILDING RAYLIB APP WITH VC/C++ TOOLS
@@ -96,7 +96,7 @@ IF NOT EXIST "%~dp0cache\raylibVars.opt" GOTO :FAIL1
 IF NOT EXIST "%~dp0cache\rayLinking.opt" GOTO :FAIL1
 IF NOT EXIST "%~dp0cache\VCoptions.opt" GOTO :FAIL1
 IF NOT EXIST "%~dp0cache\VCrayConfirm.c" GOTO :FAIL1
-IF NOT EXIST "%~dp0cache\VCrayVerCheck.cx" GOTO :FAIL1
+IF NOT EXIST "%~dp0cache\VCrayVerCheck.c" GOTO :FAIL1
 IF NOT EXIST "%~dp0app\app.txt" GOTO :FAIL1
 IF NOT EXIST "%~dp0src\src.txt" GOTO :FAIL1
 IF NOT EXIST "%~dp0VCrayApp-%VCrayApp%.txt" GOTO :FAIL1
@@ -118,7 +118,7 @@ CD %~dp0cache
 rem DETERMINING RAYLIB VERSION THAT IS INSTALLED
 rem First Compile VCrayVerCheck that fishes RAYLIB_VERSION if in raylib.h
 SET VCEXE=VCrayVerCheck.exe
-CL %VChush% @VCoptions.opt /TcVCrayVerCheck.cx
+CL %VChush% @VCoptions.opt VCrayVerCheck.c   %VCterse%
 IF ERRORLEVEL 1 GOTO :FAIL5
 IF NOT EXIST VCrayVerCheck.exe GOTO :FAIL5
 del VCrayVer.bat >nul 2>nul
@@ -289,6 +289,7 @@ rem For additional information, see the accompanying NOTICE.txt file.
 rem
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 rem
+rem 0.0.24 2023-02-21T02:59Z Revert to using VCrayVerCheck.c from .cz
 rem 0.0.23 2023-02-21T01:19Z Introduce code to derive VCRAYVER variable.
 rem        Rename rayConfirm.c to VCrayConfirm.c and VCrayConfirm.exe
 rem        Make fixes found in having VCrayVerCheck procedure work
