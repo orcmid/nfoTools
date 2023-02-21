@@ -1,4 +1,4 @@
-/* VCrayVerCheck.cx 0.0.10           UTF-8                         2023-02-20
+/* VCrayVerCheck.cx 0.0.11           UTF-8                         2023-02-21
    -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                         DETERMINATION OF RAYLIB VERSION
@@ -57,14 +57,13 @@ int main(void)
        # if   !defined(RAYLIB_VERSION)
              fputs( "ECHO [VCrayApp] Using unidentified"
                           " version of raylib %VCterse%\n"
-                    "SET VCRAYVER=unidentified   %VCterse%\n"
+                    "SET VCRAYVER=unidentified   %VCterse%\n",
        # else
               fputs( "ECHO [VCrayApp] Using version "
                            SHOW(RAYLIB_VERSION)
                            " of raylib %VCterse%\n"
-                     "SET VCRAYVER=" SHOW(RAYLIB_VERSION) "   %VCterse%\n"
+                     "SET VCRAYVER=" SHOW(RAYLIB_VERSION) "   %VCterse%\n",
        # endif
-                     "EXIT /B 0  %VCterse%\n",
                      stdout )
             )  // checking for unlikely fputs( ) failure case.
             return EXIT_FAILURE;
@@ -72,6 +71,7 @@ int main(void)
     }
 
 /*
+   0.0.11 2023-02-21T01:13Z Remove EXIT command from the output script
    0.0.10 2023-02-20T00:20Z Touch up and use "unidentified" consistently
    0.0.9 2023-02-19T21:05Z Adjust for new name VCrayVerCheck.cx
    0.0.8 2023-02-19T18:32Z Prefer "unidentified" over "unknown"

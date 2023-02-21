@@ -1,5 +1,5 @@
 @echo off
-rem VCrayApp 0.1.0 VCrayApp.bat 0.0.22 UTF-8                       2023-02-19
+rem VCrayApp 0.1.0 VCrayApp.bat 0.0.23 UTF-8                       2023-02-22
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 rem                  BUILDING RAYLIB APP WITH VC/C++ TOOLS
@@ -15,11 +15,10 @@ IF ERRORLEVEL 1 GOTO :FAIL0
 
 rem cache\rayConfirm.c is compiled as a simple example to confirm the setup.
 rem After successful confirmation, substitute your app's .exe name here ...
-SET GAME_EXE=rayConfirm.exe
+SET GAME_EXE=VCrayConfirm.exe
 
 rem ... and switch to your app's source code location, e.g., SRC=src\*.c
-SET SRC=cache\rayConfirm.c
-
+SET SRC=cache\VCrayConfirm.c
 
 rem *********** NO CHANGES ARE NEEDED BELOW HERE *****************************
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
@@ -90,13 +89,13 @@ IF NOT "%1" == "" GOTO FAIL2
 rem VERIFY LOCATION OF THE SCRIPT WHERE VCRayApp.zip IS FULLY EXTRACTED
 rem Some are customizable, none should be removed, all %VCrayApp% specific
 IF NOT EXIST "%~dp0cache\cache.txt" GOTO :FAIL1
-IF NOT EXIST "%~dp0cache\rayConfirm.c" GOTO :FAIL1
-IF NOT EXIST "%~dp0cache\raylibCode.3.7.0.opt" GOTO :FAIL1
+IF NOT EXIST "%~dp0cache\raylibCode.3.x.0.opt" GOTO :FAIL1
 IF NOT EXIST "%~dp0cache\raylibCode.4.0.0.opt" GOTO :FAIL1
 IF NOT EXIST "%~dp0cache\raylibCode.opt" GOTO :FAIL1
 IF NOT EXIST "%~dp0cache\raylibVars.opt" GOTO :FAIL1
 IF NOT EXIST "%~dp0cache\rayLinking.opt" GOTO :FAIL1
 IF NOT EXIST "%~dp0cache\VCoptions.opt" GOTO :FAIL1
+IF NOT EXIST "%~dp0cache\VCrayConfirm.c" GOTO :FAIL1
 IF NOT EXIST "%~dp0cache\VCrayVerCheck.cx" GOTO :FAIL1
 IF NOT EXIST "%~dp0app\app.txt" GOTO :FAIL1
 IF NOT EXIST "%~dp0src\src.txt" GOTO :FAIL1
@@ -107,23 +106,45 @@ IF NOT EXIST "%~dp0..\raylib\src\raylib.h" GOTO :FAIL6
 
 rem COMPILE INTO THE CACHE IF NEEDED
 IF NOT "%VCclean%" == "1" GOTO :CACHECHECK
-DEL %~dp0cache\rglfw.obj
+DEL %~dp0cache\rglfw.obj >nul 2>nul
 
 :CACHECHECK
 IF EXIST %~dp0cache\rglfw.obj GOTO :APPBUILD
-DEL %~dp0cache\*.obj > nul 2>nul
+DEL %~dp0cache\*.obj >nul 2>nul
 rem Using presence of the last-built raylib .obj to determine full cache.
 rem *IMPORTANT* Keep consistent with %~dp0cache\raylibCode.opt
 
 CD %~dp0cache
-REM *** THE DETERMINATION OF RAYLIB VERSION IF ANY GOES HERE. AN ENVIRONMENT
-REM *** VARIABLE IS SET AND AVAILABLE FOR CONDITIONAL ACTIONS, SUCH AS
-REM *** SETTING THE raylibCode.opt FILE OR OTHERS WHERE RAYLIB VERSION MATTERS
+rem DETERMINING RAYLIB VERSION THAT IS INSTALLED
+rem First Compile VCrayVerCheck that fishes RAYLIB_VERSION if in raylib.h
+SET VCEXE=VCrayVerCheck.exe
+CL %VChush% @VCoptions.opt /TcVCrayVerCheck.cx
+IF ERRORLEVEL 1 GOTO :FAIL5
+IF NOT EXIST VCrayVerCheck.exe GOTO :FAIL5
+del VCrayVer.bat >nul 2>nul
+SET VCEXE=VCrayVer.bat
+VCrayVerCheck.exe >VCrayVer.bat
+del VCrayVerCheck.obj VCrayVerCheck.exe >nul 2>nul
+IF NOT EXIST VCrayVer.bat GOTO :FAIL5
+CALL VCrayVer.bat
+IF ERRORLEVEL 1 GOTO :FAIL5
+IF "%VCRAYVER%" == "" GOTO :FAIL5
+
+REM VCRAYVER IS SET.  WE NOW NEED TO SET A RAYLIBCODE.OPT THAT REFLECTS
+REM WHAT HAS BEEN DETERMINED AFTER ANALYZING FURTHER.  THIS ALL HAPPENS
+REM BEFORE THE CACHE IS BUILT.
+REM ******************************************************************
+
 CL %VChush% /w /c @VCoptions.opt @raylibVars.opt @raylibCode.opt %VCterse%
 IF ERRORLEVEL 2 GOTO :FAIL4
-ECHO: [VCrayApp] FRESH CACHE OF RAYLIB *.OBJ FILES COMPILED
-REM XXX PUT RAYLIB VERSION IN HERE WHEN KNOWN
+ECHO: [VCrayApp] FRESH CACHE OF RAYLIB %RAYVER% *.OBJ FILES COMPILED
 ECHO: %VCterse%
+
+REM HERE IS WHERE WE COMPILE rayConfirm.exe TO SEE THAT WE HAVE THAT MUCH
+REM WORKING BEFORE WE DO THE USER'S APPBUILD IF REQUESTED. We DO THIS BY
+REM SETTING PARAMETERS FOR COMPILING AND RUNNING rayConfirm.c AND THEN
+REM PUTTING IT ALL BACK AFTER THAT RETURNS SUCCESSFULLY.  THEN WE DROP THROUGH
+REM :APPBUILD THE LAST TIME, UNLESS %GAME_EXE% NOT SET YET.
 
 :APPBUILD
 CD %~dp0app
@@ -133,6 +154,7 @@ SET OUT=/Fe: "%GAME_EXE%"
 SET SUBSYS=/SUBSYSTEM:WINDOWS /ENTRY:mainCRTStartup
 
 rem Compiling the %SRC%
+SET VCEXE=%GAME_EXE%
 CL %VChush% /W3 /c @%~dp0cache\VCoptions.opt %~dp0%SRC%          %VCterse%
 IF ERRORLEVEL 2 GOTO :FAIL5
 ECHO: %VCterse%
@@ -166,7 +188,7 @@ ECHO:            NO ACTIONS HAVE BEEN PERFORMED                     %VCterse%
 GOTO :BAIL
 
 :FAIL5
-ECHO: [VCrayApp] ****COMPILING %GAME_EXE% FAILED ****
+ECHO: [VCrayApp] ****PRODUCING %VCEXE% FAILED ****
 ECHO:            Review the errors reported for the compilation.    %VCterse%
 ECHO:            Make repairs and reattempt.                        %VCterse%
 ECHO:            RESULTS ARE UNPREDICTABLE                          %VCterse%
@@ -267,6 +289,9 @@ rem For additional information, see the accompanying NOTICE.txt file.
 rem
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 rem
+rem 0.0.23 2023-02-21T01:19Z Introduce code to derive VCRAYVER variable.
+rem        Rename rayConfirm.c to VCrayConfirm.c and VCrayConfirm.exe
+rem        Make fixes found in having VCrayVerCheck procedure work
 rem 0.0.22 2023-02-19T21:00Z Check all required cache/ files including the
 rem        newly-named VCrayVerCheck.cx
 rem 0.0.21 2023-02-18T23:43Z Update Usage and show Tools Version
