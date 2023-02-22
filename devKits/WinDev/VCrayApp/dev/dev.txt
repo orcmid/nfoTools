@@ -1,4 +1,4 @@
-dev.txt 0.0.15                       UTF-8                         2023-02-20
+dev.txt 0.0.16                       UTF-8                         2023-02-21
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                        AN NFOTOOLS COMING ATTRACTION
@@ -164,12 +164,22 @@ TODO
    compilation of an App if requested.  This will re-use \app and we need to
    remove rayConfirm.* from there when done.
 
+ * Modify rayConfirm.c to have a smaller display.
+     1. Confirm raylib version
+     2. Confirm VC/C++ tools being used
+     3. Confirm compilation, identifying the VCrayApp version.
+     4. Wording should be as if it is a configuration confirmation and not
+        a congratulatory observation.
+
  * With the current VS 2022 Build Tools, there are
    VisualStudioVersion=17.0
    VSCMD_VER=17.4.5 and that is supplied in the VS 2022 Command Prompt line.
 
+ * Make embedded caution emphatic in VCrayApp-0.1.0.txt and later.
+
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.16 2023-02-21T16:16Z Manage TODOs, moving forward in 0.1.0 customization
  0.0.15 2023-02-20T21:59Z Adjust TODOs concerning use of rayConfirm after
         every cache population.
  0.0.14 2023-02-20T21:21Z Manage TODOs, preparing for raylib version filtering
