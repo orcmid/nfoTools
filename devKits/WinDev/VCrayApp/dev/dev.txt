@@ -106,14 +106,6 @@ TODO
    reflected in the VCrayConfirm.c output.  We can use VC information also, to
    indicate any assumptions that apply when VCrayApp is used.
 
- * We are going to need a way to export RAYLIB_VERSION so it can be used from
-   scripts and even other commands.  This means there needs to be a program,
-   also compiled with VC, that can establish the version that is in-hand and
-   performed before any cache creation.  We only would do this if there is no
-   cache or the "-c" option has been selected.  This can be done in cache\ so
-   there is no messing with the user's src files and their location whether in
-   src\ or elsewhere.  Also, app\ is undisturbed.
-
  * There might also be a compatibility check at compile time if the version
    detected in compiling rayConfirm is incompatible with the cache.  Things
    are brittle around this and we need to be careful in the case of an user
@@ -122,24 +114,9 @@ TODO
    made known somehow.
 
  * Adjust VCrayApp.bat to do the following when a new cache is to be built.
-   3. Copy raylibCode.4.0.0.opt to raylibCode.opt
-   4. If VCRAYVER is set to "unidentified" it is necessary to check into
-      the raylib\ folder for files that reveal variations among pre-4.0
-      versions.
-       a. If any of the files appveyor.yml, .travis.yml, and HELPME.md
-          are present, it is raylib 3.0 or earlier and it
-          remains unidentified.
-       b. raylibCode.3.x.0.opt is copied to raylibCode.opt, over-riding the
-          default raylibCode.4.0.0.opt default.
-       c. If CONTRIBUTORS.md is present it is raylib 3.7.
-       d. Otherwise, it is raylib 3.5.
-       e. VCRAYVER is set accordingly.
-   5. When VCRAYVER remains unidentified, the versions 3.0 and earlier are
-      declined.
-   6. If VCRAYVER is "4.0" we're good.
-      If VCRAYVER is "4.2" we must decline because of an raudio.c defect.
+
    7. If there is a "*-dev" VCRAYVER, we will warn about use for a release
-      and proceed.
+      in VCrayConfirm.c and proceed.
    8. We don't know about releases after 4.2 at this time.  We will attempt
       to proceed and see what happens.  We may need to test with 4.5-dev
       in order to be prepared.
@@ -154,15 +131,15 @@ TODO
    brittle than they are already.  That is, we would have src\ as the default
    but how do we distinguish first run from later?
 
- * rayConfirm.c can use getenv() to grab VCRAYVER and other vars also.
+ * VCrayConfirm.c can use getenv() to grab VCRAYVER and other vars also.
 
- * see if rayconfirm.c can be made %SRC% temporarily, then restore %SRC% that
-   has been set by modification of VCrayApp.bat.
+ * see if VCrayconfirm.c can be made %SRC% temporarily, then restore %SRC%
+   that has been set by modification of VCrayApp.bat.
 
  * See if we can use the app-compilation code in VCrayApp.bat to also compile
-   rayConfirm.c as part of a new-cache confirmation without changing the
+   VCrayConfirm.c as part of a new-cache confirmation without changing the
    compilation of an App if requested.  This will re-use \app and we need to
-   remove rayConfirm.* from there when done.
+   remove VCrayConfirm.* from there when done.
 
  * Because of EXIT cases, we cannot re-use the compilation code for SRC
    in compiling VCrayConfirm.c.  We will duplicate the necessary code as
@@ -184,6 +161,7 @@ TODO
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.18 2023-02-23T16:38Z Manage TODOs, Preparing for VCrayConfirm.c update
  0.0.17 2023-02-22T21:00Z Manage TODOs, reflect progress so far.
  0.0.16 2023-02-21T16:16Z Manage TODOs, moving forward in 0.1.0 customization
  0.0.15 2023-02-20T21:59Z Adjust TODOs concerning use of rayConfirm after
