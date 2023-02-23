@@ -1,5 +1,5 @@
 @echo off
-rem VCrayApp 0.1.0 VCrayApp.bat 0.0.24 UTF-8                       2023-02-21
+rem VCrayApp 0.1.0 VCrayApp.bat 0.0.25 UTF-8                       2023-02-23
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 rem                  BUILDING RAYLIB APP WITH VC/C++ TOOLS
@@ -25,6 +25,8 @@ rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 rem Designate the semantic-versioned distribution
 SET VCrayApp=0.1.0
+SET VCraylib=..\..\raylib
+rem XXX This is a fragile dependency also in cache\rayLibCode.opt files.
 
 rem Additional documentation of this procedure and its usage are found in the
 rem accompanying VCrayApp-%VCrayApp%.txt file.  For further information, see
@@ -112,11 +114,11 @@ DEL %~dp0cache\rglfw.obj >nul 2>nul
 IF EXIST %~dp0cache\rglfw.obj GOTO :APPBUILD
 DEL %~dp0cache\*.obj >nul 2>nul
 rem Using presence of the last-built raylib .obj to determine full cache.
-rem *IMPORTANT* Keep consistent with %~dp0cache\raylibCode.opt
+rem *IMPORTANT* Keep consistent with %~dp0cache\raylibCode.opt cases
 
 CD %~dp0cache
 rem DETERMINING RAYLIB VERSION THAT IS INSTALLED
-rem First Compile VCrayVerCheck that fishes RAYLIB_VERSION if in raylib.h
+rem First Compile VCrayVerCheck that fishes any RAYLIB_VERSION from raylib.h
 SET VCEXE=VCrayVerCheck.exe
 CL %VChush% @VCoptions.opt VCrayVerCheck.c   %VCterse%
 IF ERRORLEVEL 1 GOTO :FAIL5
@@ -129,22 +131,34 @@ IF NOT EXIST VCrayVer.bat GOTO :FAIL5
 CALL VCrayVer.bat
 IF ERRORLEVEL 1 GOTO :FAIL5
 IF "%VCRAYVER%" == "" GOTO :FAIL5
+REM Refine VCRAYVER based on additional information at %RAYVER$.
+IF %VCRAYVER% == "4.2" GOTO :FAIL8
+REM   Additional beyond 4.0 exclusions go here
+COPY /Y raylibCode.4.0.0.opt raylibCode.opt
+IF NOT %VCRAYVER% == "unidentified" GOTO :BUILDCACHE
+IF EXIST %VCraylib%\appveyor.yml GOTO :FAIL7
+IF EXIST %VCraylib%\.travis.yml GOTO :FAIL7
+IF EXIST %VCraylib%\HELPME.md GOTO :FAIL7
+COPY /Y raylibCode.3.x.0.opt rayLibCode.opt
+SET VCRAYVER="3.7.0"
+IF EXIST %VCraylib%\CONTRIBUTORS.md GOTO :BUILDCACHE
+SET VCRAYVER="3.5.0"
 
-REM VCRAYVER IS SET.  WE NOW NEED TO SET A RAYLIBCODE.OPT THAT REFLECTS
-REM WHAT HAS BEEN DETERMINED AFTER ANALYZING FURTHER.  THIS ALL HAPPENS
-REM BEFORE THE CACHE IS BUILT.
-REM ******************************************************************
-
+:BUILDCACHE
 CL %VChush% /w /c @VCoptions.opt @raylibVars.opt @raylibCode.opt %VCterse%
 IF ERRORLEVEL 2 GOTO :FAIL4
 ECHO: [VCrayApp] FRESH CACHE OF RAYLIB %RAYVER% *.OBJ FILES COMPILED
 ECHO: %VCterse%
 
-REM HERE IS WHERE WE COMPILE rayConfirm.exe TO SEE THAT WE HAVE THAT MUCH
+REM HERE IS WHERE WE COMPILE VCrayConfirm.exe TO SEE THAT WE HAVE THAT MUCH
 REM WORKING BEFORE WE DO THE USER'S APPBUILD IF REQUESTED. We DO THIS BY
 REM SETTING PARAMETERS FOR COMPILING AND RUNNING rayConfirm.c AND THEN
 REM PUTTING IT ALL BACK AFTER THAT RETURNS SUCCESSFULLY.  THEN WE DROP THROUGH
 REM :APPBUILD THE LAST TIME, UNLESS %GAME_EXE% NOT SET YET.
+REM WE DO NOT DO THAT AS PART OF APPBUILD.  WE CAN ALSO EXIT APPBUILD IF
+REM THERE IS NOTHING AT %SRC%.  THIS COUNTS AS A FIRST-RUN.
+
+
 
 :APPBUILD
 CD %~dp0app
@@ -180,6 +194,17 @@ ECHO:  %VCterse%
 IF NOT "%VCrun%" == "1" PAUSE
 EXIT /B 0
 
+:FAIL8
+ECHO: [VCrayApp] **** FAILURE: VCRAYLIB DOES NOT SUPPORT RAYLIB %VCRAYVER% ****
+ECHO:            USE VERSION 4.0 OR ONE LATER THAN 4.2              %VCterse%
+ECHO:            NO SIGNIFICANT ACTIONS HAVE BEEN PERFORMED         %VCterse%
+GOTO :BAIL
+
+:FAIL7
+ECHO: [VCrayApp] **** FAILURE: VCRAYLIB REQUIRES A RAYLIB VERSION ^> 3.0.0 ****
+ECHO:            3.5.0 OR 3.7.0 ARE ONLY ACCEPTABLE PRE-4.0 VERSIONS%VCterse%
+ECHO:            NO SIGNIFICANT ACTIONS HAVE BEEN PERFORMED         %VCterse%
+GOTO :BAIL
 
 :FAIL6
 ECHO: [VCrayApp] **** FAILURE: RAYLIB NOT FOUND WHERE EXPECTED ****
@@ -289,6 +314,7 @@ rem For additional information, see the accompanying NOTICE.txt file.
 rem
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 rem
+rem 0.0.25 2023-02-23T06:02Z Narrow down VCRAYVER when no REYLIB_VERSION
 rem 0.0.24 2023-02-21T02:59Z Revert to using VCrayVerCheck.c from .cz
 rem 0.0.23 2023-02-21T01:19Z Introduce code to derive VCRAYVER variable.
 rem        Rename rayConfirm.c to VCrayConfirm.c and VCrayConfirm.exe

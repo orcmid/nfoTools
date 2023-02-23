@@ -1,4 +1,4 @@
-/* VCrayVerCheck.c 0.0.12            UTF-8                         2023-02-21
+/* VCrayVerCheck.c 0.0.13            UTF-8                         2023-02-23
    -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                         DETERMINATION OF RAYLIB VERSION
@@ -39,7 +39,8 @@
       /* Turns pre-processor variables into string arguments */
 
 #define SHOW(X) TV(X)
-      /* Stringifies any defined value of pre-processor arugment X */
+      /* Stringifies any defined value of pre-processor arugment
+         XXX RAYLIB_VERSION values are expected to be quoted strings */
 
 #include <stdlib.h>     // for exit cases
 #include <stdio.h>      // for fputs()
@@ -53,23 +54,26 @@ int main(void)
            */
 
        if (EOF ==
-       # if   !defined(RAYLIB_VERSION)
-             fputs( "ECHO [VCrayApp] Using unidentified"
+       # if !defined(RAYLIB_VERSION)
+              fputs( "ECHO [VCrayApp] Using unidentified"
                           " version of raylib %VCterse%\n"
-                    "SET VCRAYVER=unidentified   %VCterse%\n",
+                     "SET VCRAYVER=\"unidentified\"   %VCterse%\n",
+                     stdout )
        # else
               fputs( "ECHO [VCrayApp] Using version "
                            SHOW(RAYLIB_VERSION)
                            " of raylib %VCterse%\n"
                      "SET VCRAYVER=" SHOW(RAYLIB_VERSION) "   %VCterse%\n",
-       # endif
                      stdout )
+       # endif
+
             )  // checking for unlikely fputs( ) failure case.
             return EXIT_FAILURE;
        else return EXIT_SUCCESS;
     }
 
 /*
+   0.0.13 2023-02-23T05:49Z Use "..." form on all VCRAYVER settings
    0.0.12 2023-02-21T01:39Z Revert back to VCrayVerCheck.c from .cx
    0.0.11 2023-02-21T01:13Z Remove EXIT command from the output script
    0.0.10 2023-02-20T00:20Z Touch up and use "unidentified" consistently
