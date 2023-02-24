@@ -1,4 +1,4 @@
-dev.txt 0.0.20                       UTF-8                         2023-02-24
+dev.txt 0.0.21                       UTF-8                         2023-02-24
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                        AN NFOTOOLS COMING ATTRACTION
@@ -147,11 +147,10 @@ TODO
     1. Parse getenv("VCRAYVER") result to find "-dev" match.
     2. Try using stdbool.h and the bool, true, and false reserved words.
 
- * Rename raylibCode.4.0.0.opt to raylibCode.4.x.0.opt now that we know
-   raylibCode.4.0.0.opt works for raylib 4.5-dev.
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.21 2023-02-24T18:49Z Manage TODOs, continuing VCrayApp.bat refinement
  0.0.20 2023-02-24T05:43Z Manage TODOs, reflect use of raylib 4.5-dev
  0.0.19 2023-02-23T22:06Z Manage TODOs, satisfied with VCrayConfirm.c for now.
  0.0.18 2023-02-23T16:38Z Manage TODOs, Preparing for VCrayConfirm.c update

@@ -1,5 +1,5 @@
 @echo off
-rem VCrayApp 0.1.0 VCrayApp.bat 0.0.25 UTF-8                       2023-02-23
+rem VCrayApp 0.1.0 VCrayApp.bat 0.0.26 UTF-8                       2023-02-24
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 rem                  BUILDING RAYLIB APP WITH VC/C++ TOOLS
@@ -92,8 +92,7 @@ rem VERIFY LOCATION OF THE SCRIPT WHERE VCRayApp.zip IS FULLY EXTRACTED
 rem Some are customizable, none should be removed, all %VCrayApp% specific
 IF NOT EXIST "%~dp0cache\cache.txt" GOTO :FAIL1
 IF NOT EXIST "%~dp0cache\raylibCode.3.x.0.opt" GOTO :FAIL1
-IF NOT EXIST "%~dp0cache\raylibCode.4.0.0.opt" GOTO :FAIL1
-IF NOT EXIST "%~dp0cache\raylibCode.opt" GOTO :FAIL1
+IF NOT EXIST "%~dp0cache\raylibCode.4.x.0.opt" GOTO :FAIL1
 IF NOT EXIST "%~dp0cache\raylibVars.opt" GOTO :FAIL1
 IF NOT EXIST "%~dp0cache\rayLinking.opt" GOTO :FAIL1
 IF NOT EXIST "%~dp0cache\VCoptions.opt" GOTO :FAIL1
@@ -105,6 +104,7 @@ IF NOT EXIST "%~dp0VCrayApp-%VCrayApp%.txt" GOTO :FAIL1
 IF NOT EXIST "%~dp0VCrayApp.bat" GOTO :FAIL1
 
 IF NOT EXIST "%~dp0..\raylib\src\raylib.h" GOTO :FAIL6
+rem *IMPORTANT* Another fragile dependency on location of raylib\
 
 rem COMPILE INTO THE CACHE IF NEEDED
 IF NOT "%VCclean%" == "1" GOTO :CACHECHECK
@@ -131,15 +131,15 @@ IF NOT EXIST VCrayVer.bat GOTO :FAIL5
 CALL VCrayVer.bat
 IF ERRORLEVEL 1 GOTO :FAIL5
 IF "%VCRAYVER%" == "" GOTO :FAIL5
-REM Refine VCRAYVER based on additional information at %RAYVER$.
+REM Refine VCRAYVER based on additional information at %RAYVER%.
 IF %VCRAYVER% == "4.2" GOTO :FAIL8
-REM   Additional beyond 4.0 exclusions go here
-COPY /Y raylibCode.4.0.0.opt raylibCode.opt
+REM **IMPORTANT**  Additional beyond 4.0 exclusions go here
+COPY /Y raylibCode.4.x.0.opt raylibCode.opt >nul 2>nul
 IF NOT %VCRAYVER% == "unidentified" GOTO :BUILDCACHE
 IF EXIST %VCraylib%\appveyor.yml GOTO :FAIL7
 IF EXIST %VCraylib%\.travis.yml GOTO :FAIL7
 IF EXIST %VCraylib%\HELPME.md GOTO :FAIL7
-COPY /Y raylibCode.3.x.0.opt rayLibCode.opt
+COPY /Y raylibCode.3.x.0.opt rayLibCode.opt >nul 2>nul
 SET VCRAYVER="3.7.0"
 IF EXIST %VCraylib%\CONTRIBUTORS.md GOTO :BUILDCACHE
 SET VCRAYVER="3.5.0"
@@ -158,6 +158,10 @@ REM :APPBUILD THE LAST TIME, UNLESS %GAME_EXE% NOT SET YET.
 REM WE DO NOT DO THAT AS PART OF APPBUILD.  WE CAN ALSO EXIT APPBUILD IF
 REM THERE IS NOTHING AT %SRC%.  THIS COUNTS AS A FIRST-RUN.
 
+REM WHEN THESE STEPS ARE PRESENT, WE MUST CHANGE THE TOP OF THIS FILE SO
+REM THAT IFGAME_EXE DOES NOT NAME A SOURCE AND\OR %SRC% IS NOT NAMED,
+REM WE DO NOT ATTEMPT TO BUILD THE APPLICATION BUT WE EXIT SORT-OF NICE
+
 
 
 :APPBUILD
@@ -170,6 +174,7 @@ SET SUBSYS=/SUBSYSTEM:WINDOWS /ENTRY:mainCRTStartup
 rem Compiling the %SRC%
 SET VCEXE=%GAME_EXE%
 CL %VChush% /W3 /c @%~dp0cache\VCoptions.opt %~dp0%SRC%          %VCterse%
+REM XXXX THIS MIGHT NOT BE THE BEST WAY TO FIND %SRC%, WHICH COULD BE ANYWHERE
 IF ERRORLEVEL 2 GOTO :FAIL5
 ECHO: %VCterse%
 
@@ -186,6 +191,8 @@ CD %VCfrom%
 IF NOT "%VCrun%" == "1" GOTO :SUCCESS
 ECHO: [VCrayApp] Launching App.  Exit App to Continue Command Session
 "%~dp0app\%GAME_EXE%"
+REM XXXX HERE, IF THERE WAS NO COMPILATION BUT THERE WAS "-r", WE NEED TO
+REM XXXX    SET A FAILURE EXIT CODE AND GIVE A HELPFUL ERROR MESSAGE
 
 :SUCCESS
 ENDLOCAL
@@ -195,14 +202,14 @@ IF NOT "%VCrun%" == "1" PAUSE
 EXIT /B 0
 
 :FAIL8
-ECHO: [VCrayApp] **** FAILURE: VCRAYLIB DOES NOT SUPPORT RAYLIB %VCRAYVER% ****
-ECHO:            USE VERSION 4.0 OR ONE LATER THAN 4.2              %VCterse%
+ECHO: [VCrayApp] **** FAILURE: RAYLIB %VCRAYVER% NOT SUPPORTED ****
+ECHO:            USE 4.0 OR ONE LATER THAN 4.2 WITH VCrayApp        %VCterse%
 ECHO:            NO SIGNIFICANT ACTIONS HAVE BEEN PERFORMED         %VCterse%
 GOTO :BAIL
 
 :FAIL7
-ECHO: [VCrayApp] **** FAILURE: VCRAYLIB REQUIRES A RAYLIB VERSION ^> 3.0.0 ****
-ECHO:            3.5.0 OR 3.7.0 ARE ONLY ACCEPTABLE PRE-4.0 VERSIONS%VCterse%
+ECHO: [VCrayApp] **** FAILURE: RAYLIB VERSION NOT ^> 3.0.0 ****
+ECHO:            3.5.0/3.7.0 ARE ONLY PRE-4.0 SUPPORTED BY VCrayApp %VCterse%
 ECHO:            NO SIGNIFICANT ACTIONS HAVE BEEN PERFORMED         %VCterse%
 GOTO :BAIL
 
@@ -210,6 +217,7 @@ GOTO :BAIL
 ECHO: [VCrayApp] **** FAILURE: RAYLIB NOT FOUND WHERE EXPECTED ****
 ECHO:            expected at "%~dp0..\raylib\"                      %VCterse%
 ECHO:            NO ACTIONS HAVE BEEN PERFORMED                     %VCterse%
+REM XXXX ANOTHER DEPENDENCY ON raylib\ LOCATION
 GOTO :BAIL
 
 :FAIL5
@@ -275,8 +283,9 @@ ECHO:    Exit code 0 is produced on all successful operations.
 ECHO:    Exit codes greater than 1 are produced for any failure.
 ECHO:
 ECHO:    There is definition and use of environment variables GAME_EXE, SRC,
-ECHO:    VCrayApp, VCfrom, VCterse, VChush, VCsplice, VCclean, and VCrun.
-ECHO:    VSCMD_VER is depended on for operation from a VS Command Prompt.
+ECHO:    VCrayApp, VCfrom, VCterse, VChush, VCsplice, VCclean, VCrun, VCexe,
+ECHO:    and VCRAYVER.  VSCMD_VER is depended on for operation from a
+ECHO:    VS Command Prompt, which must be used.
 ENDLOCAL
 IF "%VCsplice%" == "+" EXIT /B 0
 PAUSE
@@ -314,6 +323,8 @@ rem For additional information, see the accompanying NOTICE.txt file.
 rem
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 rem
+rem 0.0.25 2023-02-24T18:44Z Renamed raylibCode.4.0.0.opt to 4.x.0, and
+rem        touching up, annotating for further changes.
 rem 0.0.25 2023-02-23T06:02Z Narrow down VCRAYVER when no REYLIB_VERSION
 rem 0.0.24 2023-02-21T02:59Z Revert to using VCrayVerCheck.c from .cz
 rem 0.0.23 2023-02-21T01:19Z Introduce code to derive VCRAYVER variable.
