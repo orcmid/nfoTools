@@ -1,4 +1,4 @@
-D211101.txt 0.0.13                   UTF-8                         2023-02-10
+D211101.txt 0.0.14                   UTF-8                         2023-02-24
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -50,7 +50,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. VCrayApp: VC/C++ Command-Line raylib App devKit.
-   nfoTools development text file D211101.txt version 0.0.13 dated 2023-02-09,
+   nfoTools development text file D211101.txt version 0.0.14 dated 2023-02-24,
    available on the Internet as a version of
    <https://orcmid.github.io/nfoTools/dev/D211101/D211101.txt>
 
@@ -69,7 +69,8 @@ TODO
    using versus incorporation in a distribution one is producing.  There
    is also the middle case, inserting a VCrayApp kit in a project one wants
    to work on (a clone of).  This is beyond testing and deployment though.
-   This is customization.  Need to ponder that.
+   This is customization.  Need to ponder that.  Be emphatic in the D211101d
+   and D211101e subfolios.
 
  * Ensure that the index.html pages are in the title blocks too
 
@@ -89,9 +90,19 @@ TODO
 
  * Update status on the docs/dev/index.md page.
 
+ * Add D211101e to D211101 available materials when release is imminent and
+   the next official release (4.6?) is made for raylib and confirmed.
+
+ * Fix the description on D211101 on how first-run of VCrayApp is handled,
+   now that VCrayConfirm is handled differently with 0.1.0(beta).
+
+ * Set up D21101e for targetting by links from VCrayApp materials, including
+   explanation of error messages.
+
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.14 2023-02-24T20:32Z Manage TODOs and preparations for 0.1.0
  0.0.13 2023-02-10T18:41Z Introduce D211101e shadow and tidy up
  0.0.12 2023-01-15T01:47Z Manage TODOs, recommend more tidying, linking
  0.0.11 2023-01-14T23:40Z Manage TODOs, synchronize with D211101d
