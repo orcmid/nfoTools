@@ -1,4 +1,4 @@
-dev.txt 0.0.19                       UTF-8                         2023-02-23
+dev.txt 0.0.20                       UTF-8                         2023-02-24
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                        AN NFOTOOLS COMING ATTRACTION
@@ -71,7 +71,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. raylib App Build with VS Developer Command Prompt.
-   nfoTools text file version 0.0.19 dated 2023-02-23, available on the
+   nfoTools text file version 0.0.20 dated 2023-02-24, available on the
    Internet as a version of
    <https://github.com/orcmid/nfoTools/blob/master/devKits/WinDev/VCrayApp/dev/dev.txt>
 
@@ -118,8 +118,8 @@ TODO
    7. If there is a "*-dev" VCRAYVER, we will warn about use for a release
       in VCrayConfirm.c and proceed.
    8. We don't know about releases after 4.2 at this time.  We will attempt
-      to proceed and see what happens.  We may need to test with 4.5-dev
-      in order to be prepared.
+      to proceed and see what happens.  Work with 4.5-dev until it is
+      released.  Then adjust and release the 0.1.0.
 
  * Location of "..\..\raylib" in the script creates a lot of dependencies
    on raylib location in VCrayApp.bat.  It would be nice to reduce those.
@@ -131,8 +131,6 @@ TODO
    brittle than they are already.  That is, we would have src\ as the default
    but how do we distinguish first run from later?
 
- * VCrayConfirm.c can use getenv() to grab VCRAYVER and other vars also.
-
  * see if VCrayconfirm.c can be made %SRC% temporarily, then restore %SRC%
    that has been set by modification of VCrayApp.bat.
 
@@ -143,11 +141,18 @@ TODO
 
  * Modify rayConfirm.c to have a smaller display.
     5. Check if a raylib "-dev" version and caution if so.
+    6. Also make VS version reoommendation for 17.5.0 or later.
 
  * Test VCrayApp 0.1.0 (beta) with raylib 4.5-dev
+    1. Parse getenv("VCRAYVER") result to find "-dev" match.
+    2. Try using stdbool.h and the bool, true, and false reserved words.
+
+ * Rename raylibCode.4.0.0.opt to raylibCode.4.x.0.opt now that we know
+   raylibCode.4.0.0.opt works for raylib 4.5-dev.
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.20 2023-02-24T05:43Z Manage TODOs, reflect use of raylib 4.5-dev
  0.0.19 2023-02-23T22:06Z Manage TODOs, satisfied with VCrayConfirm.c for now.
  0.0.18 2023-02-23T16:38Z Manage TODOs, Preparing for VCrayConfirm.c update
  0.0.17 2023-02-22T21:00Z Manage TODOs, reflect progress so far.
