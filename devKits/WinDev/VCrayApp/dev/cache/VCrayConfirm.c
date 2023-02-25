@@ -1,4 +1,4 @@
-/* VCrayconfirm.c 0.1.3               UTF-8                    2023-02-23
+/* VCrayConfirm.c 0.1.4               UTF-8                       2023-02-25
    -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                     CONFIRMATION OF RAYLIB APP CACHE SETUP
@@ -6,29 +6,37 @@
    raylib is licensed under an unmodified zlib/libpng license (View raylib.h
    for details).
 
-   rayconfirm.c is adapted from raylib/projects/scripts/core_basic_windows.c
-   Copyright (c) 2013-2016 Ramon Santamaria (@raysan5)
+   rayconfirm.c is inspired by raylib/projects/scripts/core_basic_windows.c
+   Copyright (c) 2013-2016 Ramon Santamaria (@raysan5).  VCrayConfirm.c has
+   more details and dependency on operation under VCrayApp.bat.
 
-   This file is used to demonstrate successful compilation of a raylib-
-   based native Windows app.  It is also useful in confirming VS Code
-   highlighting, C/C++ Intellisense, and location of header file raylib.h.
+   VCrayConfirm is used following successful compilation of the VCrayApp
+   cache of raylib .obj files to demonstrate a successful build using that
+   cache for compiling with VC/C++ under a VS Developer Command Prompt.
 
    For further details, see <https://orcmid.github.io/nfoTools/dev/D211101>
    and <https://orcmid.github.io/nfoTools/tools/> for additional information.
 
+   VCrayConfirm.c FEATURES REQUIRE STANDARD C11 OR LATER COMPILATION
+
    */
-#include <string.h>   // for strncat_s(), strcmp() text-output building
+#include <string.h>   // for strncat_s(), strcmp(), and text-output building
 
 #include <raylib.h>
 
+#ifdef _MSC_VER
+ #pragma warning(disable: 4996)
+   /* Do not warn about getenv() */
+#endif
+
 #define _CRT_SECURE_NO_WARNINGS
+#include <stdlib.h>   // for getenv() and exit()
+
     // *** IMPORTANT ***
     // The usages of getenv() are both thread safe and safe from any
     // buffer over-runs in the line[] arrays.  For this reason, and this
     // reason alone, compiling with _CRT_SECURE_NO_WARNINGS is safe.
     // This technique is specific to VC/VC++ and Standard C11 or later.
-
-#include <stdlib.h>   // for getenv() and exit()
 
 
 int main(void)
@@ -37,29 +45,31 @@ int main(void)
 
     #define LINE_MAX 80
 
+    // incorporate VSCMD_VER in the first message.
+    char line1[LINE_MAX+1] = { '\0'};
+         // assuring always a final '\0' "after" the buffer.
+         // see definition of strncat about this
+
+    strncat_s( line1, LINE_MAX,
+               "Compiling with VC/C++ of VS version ", _TRUNCATE);
+    strncat_s( line1, LINE_MAX,
+               getenv("VSCMD_VER"), _TRUNCATE);
+
     // capture VCRAYVER for reporting and also detection of special cases
     char verstring[LINE_MAX+1] = { '\0' };
-            // assuring always a final '\0' "after" the buffer
+
 
     strncat_s( verstring, LINE_MAX,
                getenv("VCRAYVER"), _TRUNCATE);
         // capturing VCRAYVER
 
-    // incorporate VCRAYVER in the first message line.
-    char line1[LINE_MAX+1] = { '\0' };
+    // incorporate VCRAYVER in the second message.
+    char line2[LINE_MAX+1] = { '\0' };
 
-    strncat_s( line1, LINE_MAX,
+    strncat_s( line2, LINE_MAX,
                "VCrayApp 0.1.0 using raylib ", _TRUNCATE);
-    strncat_s( line1, LINE_MAX,
+    strncat_s( line2, LINE_MAX,
                verstring, _TRUNCATE);
-
-    // incorporate VSCMD_VER in the second message line.
-    char line2[LINE_MAX+1] = { '\0'};
-
-    strncat_s( line2, LINE_MAX,
-               "Compiling with VC/C++ of VS ", _TRUNCATE);
-    strncat_s( line2, LINE_MAX,
-               getenv("VSCMD_VER"), _TRUNCATE);
 
 
     // RAYLIB INITIALIZATION
@@ -82,14 +92,14 @@ int main(void)
 
             ClearBackground(RAYWHITE);
 
-            DrawText("VCrayConfirm 0.1.3",
+            DrawText("VCrayConfirm 0.1.4",
                      90, 50, 20, GRAY);
 
             DrawText(line1,
-                     190, 100, 20, BLUE);
+                     140, 100, 20, BLUE);
 
             DrawText(line2,
-                     190, 150, 20, BLUE);
+                     140, 150, 20, BLUE);
 
             DrawText("Press ESC to Continue",
                      190, 400, 20, RED);
@@ -108,6 +118,8 @@ int main(void)
 
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+   0.1.4 2023-02-24T19:55Z Touch-up comments and display layout, suppress
+         getenv safety warnings
    0.1.3 2023-02-23T21:57Z Add announcements of RAYVER and VSCMD_VER
    0.1.2 2023-02-23T17:24Z Bring message lines closer together, clean exit
    0.1.1 2023-02-23T18:57Z Initial adjustments to new name and purpose.
