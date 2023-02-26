@@ -1,7 +1,15 @@
-/* VCrayVerCheck.c 0.0.13            UTF-8                         2023-02-23
+/* VCrayVerCheck.c 0.1.0            UTF-8                         2023-02-26
    -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                         DETERMINATION OF RAYLIB VERSION
+
+  ************************************************************************
+  *                                                                      *
+  * THIS PROGRAM IS MEANT TO BE RETAINED IN A VCrayApp cache\ FOLDER AND *
+  * USED INTERNALLY BY VcrayApp.bat.  IT IS ONLY SUPPORTED AS INTENDED   *
+  * IN THAT LOCATION WITHIN A VCrayApp RELEASE.                          *
+  *                                                                      *
+  ************************************************************************
 
    VCrayVerCheck.c determines the version of raylib that is currently used
    by a VCrayApp-based project.
@@ -9,26 +17,27 @@
    File raylib.h defines a preprocessor variable RAYLIB_VERSION in all
    versions starting with the raylib 4.0 release.  This variable is checked
    for and the value used if available.  Otherwise an unidentified version is
-   reported.  (There are further ways VCrayApp.bat can resolve such cases.)
+   reported.  (There are further ways VCrayApp.bat resolves such cases.)
 
    The console output from VCrayVercheck.exe is in the form of a small batch
    file that VCrayApp saves to VCrayVer.bat and then CALLs to have the version
-   available to the VCrayApp.bat procedure.  THIS OUTPUT DEPENDS ON %VCterse%
-   BEING SET BY THE CALLING VCrayApp.bat does.  The script announces the
-   determination as part of VCrayApp.bat operation.
+   available to the VCrayApp.bat procedure.  THIS OUTPUT RELIES ON %VCterse%
+   BEING SET BY THE CALLING VCrayApp.bat script if at all.
 
-   VCrayVerCheck.c is compiled, with cache\ the current directory, using the
-   command
+   VCrayVerCheck.c is compiled, with cache\ the current directory, using a
+   command equivalent to
 
         CL @VCoptions.opt VCrayVerCheck.c
 
    On a successful compilation VCrayApp.bat executes the result with command
+   equivalent to
 
         VCrayVerCheck >VCrayVer.bat
 
-   Calling VCrayVer.bat will then set environment variable VCRAYVER to either
-   "unidentified" or the value of RAYLIB_VERSION from raylib.h in the nearby
-   raylib\src directory.  The result guides further VCrayApp.bat action.
+   Performing VCrayVer.bat will then set environment variable VCRAYVER to the
+   value of RAYLIB_VERSION from raylib.h in the nearby raylib\src directory.
+   If RAYLIB_VERSION is not set, the value "unidentified" is reported. The
+   result guides further VCrayApp.bat action.
 
    The technique for capturing preprocessor variable RAYLIB_VERSION is a
    variation on VCshowDefs, <https://orcmid.github.io/nfoTools/dev/D230201/>.
@@ -39,11 +48,11 @@
       /* Turns pre-processor variables into string arguments */
 
 #define SHOW(X) TV(X)
-      /* Stringifies any defined value of pre-processor arugment
-         XXX RAYLIB_VERSION values are expected to be quoted strings */
+      /* Stringifies any defined value of the pre-processor argument.
+         XXX: RAYLIB_VERSION values are expected to be quoted strings */
 
-#include <stdlib.h>     // for exit cases
-#include <stdio.h>      // for fputs()
+#include <stdlib.h>     // for exit() and its defined cases
+#include <stdio.h>      // for fputs() and EOF
 
 #include <raylib.h>     // for RAYLIB_VERSION
 
@@ -73,6 +82,7 @@ int main(void)
     }
 
 /*
+   0.1.0  2023-02-26T19:40Z Cleaned-up VCrayApp 0.1.0 release candidate
    0.0.13 2023-02-23T05:49Z Use "..." form on all VCRAYVER settings
    0.0.12 2023-02-21T01:39Z Revert back to VCrayVerCheck.c from .cx
    0.0.11 2023-02-21T01:13Z Remove EXIT command from the output script
@@ -90,5 +100,5 @@ int main(void)
    0.0.1 2023-02-12T20:18Z Touch-up description and try raylib.h inclusion
    0.0.0 2023-02-12T05:53Z Stub providing default behavior
 
-                      *** end of VCrayVerCheck.cx ***
+                      *** end of VCrayVerCheck.c ***
    */
