@@ -1,29 +1,37 @@
-/* VCrayConfirm.c 0.1.5               UTF-8                       2023-02-25
+/* VCrayConfirm.c 0.1.6               UTF-8                       2023-02-26
    -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                     CONFIRMATION OF RAYLIB APP CACHE SETUP
 
+   ************************************************************************
+   *                                                                      *
+   * THIS PROGRAM IS MEANT TO BE RETAINED IN A VCrayApp cache\ FOLDER AND *
+   * USED INTERNALLY BY VcrayApp.bat.  IT IS ONLY SUPPORTED AS INTENDED   *
+   * IN THAT LOCATION WITHIN A VCrayApp RELEASE.                          *
+   *                                                                      *
+   ************************************************************************
+
    raylib is licensed under an unmodified zlib/libpng license (View raylib.h
    for details).
 
-   rayconfirm.c is inspired by raylib/projects/scripts/core_basic_windows.c
+   VCrayConfirm.c is inspired by raylib/projects/scripts/core_basic_windows.c
    Copyright (c) 2013-2016 Ramon Santamaria (@raysan5).  VCrayConfirm.c has
    more details and dependency on operation under VCrayApp.bat.
 
    VCrayConfirm is used following successful compilation of the VCrayApp
    cache of raylib .obj files to demonstrate a successful build using that
-   cache for compiling with VC/C++ under a VS Developer Command Prompt.
+   cache with VC/C++ under a VS Developer Command Prompt.
 
    For further details, see <https://orcmid.github.io/nfoTools/dev/D211101>
    and <https://orcmid.github.io/nfoTools/tools/> for additional information.
 
-   VCrayConfirm.c FEATURES REQUIRE STANDARD C11 OR LATER COMPILATION
+   VCrayConfirm.c FEATURES REQUIRE STANDARD C11 OR LATER COMPILATION.
 
    */
 
 #include <string.h>   // for strncat_s(), strcmp(), and text-output building
 
-#include <raylib.h>
+#include <raylib.h>   // for the raylib API
 
 #ifdef _MSC_VER
  #pragma warning(disable: 4996)
@@ -34,7 +42,7 @@
 #include <stdlib.h>   // for getenv() and exit()
 
     // *** IMPORTANT ***
-    // The usages of getenv() are both thread safe and safe from any
+    // VCrayConfirm usages of getenv() are both thread safe and safe from any
     // buffer over-runs in the line[] arrays.  For this reason, and this
     // reason alone, compiling with _CRT_SECURE_NO_WARNINGS is safe.
     // This technique is specific to VC/VC++ and Standard C11 or later.
@@ -47,6 +55,7 @@ int main(void)
     // --------------------------
 
     #define LINE_MAX 80
+    // A length that should never be reached.
 
     // incorporate VSCMD_VER in the first message.
     char line1[LINE_MAX+1] = { '\0'};
@@ -83,7 +92,6 @@ int main(void)
                  break; }
 
 
-
     // RAYLIB INITIALIZATION
     //----------------------
     const int screenWidth = 800;
@@ -105,7 +113,7 @@ int main(void)
 
             ClearBackground(RAYWHITE);
 
-            DrawText("VCrayConfirm 0.1.5",
+            DrawText("VCrayConfirm 0.1.6",
                      90, 50, 20, GRAY);
 
             DrawText(line1,
@@ -140,6 +148,7 @@ int main(void)
 
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+   0.1.6 2023-02-26T20:16Z VCrayApp 0.1.0 Release candidate
    0.1.5 2023-02-25T01:41Z Complete analyzing/reporting versions
    0.1.4 2023-02-24T19:55Z Touch-up comments and display layout, suppress
          getenv safety warnings
