@@ -1,4 +1,4 @@
-dev.txt 0.0.21                       UTF-8                         2023-02-24
+dev.txt 0.0.22                       UTF-8                         2023-02-25
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                        AN NFOTOOLS COMING ATTRACTION
@@ -71,7 +71,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. raylib App Build with VS Developer Command Prompt.
-   nfoTools text file version 0.0.20 dated 2023-02-24, available on the
+   nfoTools text file version 0.0.22 dated 2023-02-25, available on the
    Internet as a version of
    <https://github.com/orcmid/nfoTools/blob/master/devKits/WinDev/VCrayApp/dev/dev.txt>
 
@@ -106,15 +106,7 @@ TODO
    reflected in the VCrayConfirm.c output.  We can use VC information also, to
    indicate any assumptions that apply when VCrayApp is used.
 
- * There might also be a compatibility check at compile time if the version
-   detected in compiling rayConfirm is incompatible with the cache.  Things
-   are brittle around this and we need to be careful in the case of an user
-   source-code where there is no check and a version incompatibility comes up
-   because the cache is stale.  There needs to be some precaution that must be
-   made known somehow.
-
  * Adjust VCrayApp.bat to do the following when a new cache is to be built.
-
    7. If there is a "*-dev" VCRAYVER, we will warn about use for a release
       in VCrayConfirm.c and proceed.
    8. We don't know about releases after 4.2 at this time.  We will attempt
@@ -131,25 +123,14 @@ TODO
    brittle than they are already.  That is, we would have src\ as the default
    but how do we distinguish first run from later?
 
- * see if VCrayconfirm.c can be made %SRC% temporarily, then restore %SRC%
-   that has been set by modification of VCrayApp.bat.
-
  * Because of EXIT cases, we cannot re-use the compilation code for SRC
    in compiling VCrayConfirm.c.  We will duplicate the necessary code as
    part of the cache-compilation case.  \app will be reused and that should
    be fine.
 
- * Modify rayConfirm.c to have a smaller display.
-    5. Check if a raylib "-dev" version and caution if so.
-    6. Also make VS version reoommendation for 17.5.0 or later.
-
- * Test VCrayApp 0.1.0 (beta) with raylib 4.5-dev
-    1. Parse getenv("VCRAYVER") result to find "-dev" match.
-    2. Try using stdbool.h and the bool, true, and false reserved words.
-
-
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.22 2023-02-25T01:42Z Manage TODOs, reflecting VCrayConfirm 0.1.5 success
  0.0.21 2023-02-24T18:49Z Manage TODOs, continuing VCrayApp.bat refinement
  0.0.20 2023-02-24T05:43Z Manage TODOs, reflect use of raylib 4.5-dev
  0.0.19 2023-02-23T22:06Z Manage TODOs, satisfied with VCrayConfirm.c for now.
