@@ -1,5 +1,5 @@
 @echo off
-rem VCrayApp 0.1.0 VCrayApp.bat 0.0.27 UTF-8                       2023-02-27
+rem VCrayApp 0.1.0 VCrayApp.bat 0.0.28 UTF-8                       2023-02-27
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 rem                  BUILDING RAYLIB APP WITH VC/C++ TOOLS
@@ -16,13 +16,14 @@ IF ERRORLEVEL 1 GOTO :FAIL0
 rem VCrayApp does not build your own project until you specify the desired
 rem .exe name.  Specify it by replacing "RenameMe" in the setting of APP_EXE.
 
-SET APP_EXE=RenameMe.exe
+REM SET APP_EXE=RenameMe.exe
+SET APP_EXE=bogus.exe
 rem Hint: don't use RenameMe.exe for your app.
 
 rem If not using the recommended SRC location, replace this setting.  You
 rem may need to provide an absolute path if you're using a different folder.
 
-SET SRC=src\*.c
+REM SET SRC=src\*.c
 
 rem *********** NO CHANGES ARE NEEDED BELOW HERE *****************************
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
@@ -180,12 +181,16 @@ IF NOT EXIST %~dp0app\%VCEXE% GOTO :FAIL5
 %~dp0app\%VCEXE%
 IF ERRORLEVEL 1 GOTO :FAIL5
 
+IF "%APP_EXE%" == "" GOTO :NOAPP
 IF NOT "%APP_EXE%" == "RenameMe.exe" GOTO :APPBUILD
+:NOAPP
 ECHO: [VCrayApp] **** ALL SET.  NO APP TO COMPILE YET. ****
 ECHO:            Have your C Language source code and any headers in the
-ECHO:            src\ folder.  Then put your app .exe name in the APP_EXE
-ECHO:            setting at the beginning of VCrayApp.bat.  Once that's done,
-ECHO:            VCrayApp.bat will compile your app. For more information,
+ECHO:            SRC folder.  Then put your app .exe name in the APP_EXE
+ECHO:            setting at the beginning of VCrayApp.bat or otherwise set it.
+:MAYBEAPP
+ECHO:            Once that's done, VCrayApp.bat will compile your app.
+ECHO:            For more information,
 ECHO:            see ^<https://orcmid.github.io/nfoTools/dev/D211101/^>.
 ECHO: %VCterse%
 
@@ -193,6 +198,13 @@ IF NOT "%VCrun%" == "1" GOTO :SUCCESS
 ECHO: [VCrayApp] **** CANNOT RUN AN APP YET. DO THE SETUP. ****
 SET VCrun=0
 GOTO :SUCCESS
+
+:NOSRC
+ECHO: [VCrayApp] **** NO SOURCE CODE LOCATION SUPPLIED ****
+ECHO:            The SRC environment variable must be set the location of
+ECHO:            the App source code to be compiled.  This should be either
+ECHO:            SET SRC="src\*.c" or a full-path location to use.
+GOTO :MAYBEAPP
 
 :APPBUILD
 CD %~dp0app
@@ -202,6 +214,7 @@ SET OUT=/Fe: "%APP_EXE%"
 SET SUBSYS=/SUBSYSTEM:WINDOWS /ENTRY:mainCRTStartup
 
 rem Compiling the %SRC%
+IF "%SRC%" == "" GOTO :NOSRC
 SET VCSRC=%~dp0%SRC%
 IF "%SRC%" == "src\*.c" GOTO :APPCOMPILE
 rem otherwise, a different %SRC% has been set.
@@ -356,6 +369,7 @@ rem For additional information, see the accompanying NOTICE.txt file.
 rem
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 rem
+rem 0.0.28 2023-02-27T Defend against undefined APP_EXE and SRC
 rem 0.0.27 2023-02-27T02:22Z Wrap up as candidate for VCrayApp 0.1.0
 rem 0.0.26 2023-02-27T02:14Z Add separate VCrayConfirm.c building, update
 rem        to handle with or without app code introduced.

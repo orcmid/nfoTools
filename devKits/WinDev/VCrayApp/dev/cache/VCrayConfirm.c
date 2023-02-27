@@ -1,4 +1,4 @@
-/* VCrayConfirm.c 0.1.6               UTF-8                       2023-02-26
+/* VCrayConfirm.c 0.1.7               UTF-8                       2023-02-27
    -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                     CONFIRMATION OF RAYLIB APP CACHE SETUP
@@ -7,7 +7,7 @@
    *                                                                      *
    * THIS PROGRAM IS MEANT TO BE RETAINED IN A VCrayApp cache\ FOLDER AND *
    * USED INTERNALLY BY VcrayApp.bat.  IT IS ONLY SUPPORTED AS INTENDED   *
-   * IN THAT LOCATION WITHIN A VCrayApp RELEASE.                          *
+   * IN THAT LOCATION WITHIN A VCrayApp RELEASE OR A CUSTOMIZATION.       *
    *                                                                      *
    ************************************************************************
 
@@ -29,6 +29,7 @@
 
    */
 
+#include <stddef.h>   // for NULL
 #include <string.h>   // for strncat_s(), strcmp(), and text-output building
 
 #include <raylib.h>   // for the raylib API
@@ -58,6 +59,11 @@ int main(void)
     // A length that should never be reached.
 
     // incorporate VSCMD_VER in the first message.
+
+    char *pVCcmdVer = getenv("VSCMD_VER");
+    if (pVCcmdVer == NULL)
+         pVCcmdVer = "unknown";
+
     char line1[LINE_MAX+1] = { '\0'};
          // assuring always a final '\0' "after" the buffer.
          // See definition of strncat about this.
@@ -65,13 +71,18 @@ int main(void)
     strncat_s( line1, LINE_MAX,
                "Compiling with VC/C++ VS version ", _TRUNCATE);
     strncat_s( line1, LINE_MAX,
-               getenv("VSCMD_VER"), _TRUNCATE);
+               pVCcmdVer, _TRUNCATE);
 
     // capture VCRAYVER for reporting and also detection of special cases
+
+    char *pVCrayVer = getenv("VCRAYVER");
+    if (pVCrayVer == NULL)
+         pVCrayVer = "unknown";
+
     char verstring[LINE_MAX+1] = { '\0' };
 
     strncat_s( verstring, LINE_MAX,
-               getenv("VCRAYVER"), _TRUNCATE);
+               pVCrayVer, _TRUNCATE);
         // capturing VCRAYVER
 
     // incorporate VCRAYVER in the second message.
@@ -113,7 +124,7 @@ int main(void)
 
             ClearBackground(RAYWHITE);
 
-            DrawText("VCrayConfirm 0.1.6",
+            DrawText("VCrayConfirm 0.1.7",
                      90, 50, 20, GRAY);
 
             DrawText(line1,
@@ -148,6 +159,7 @@ int main(void)
 
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+   0.1.7 2023-02-27T20:19Z Defend against getenv() NULL returns
    0.1.6 2023-02-26T20:16Z VCrayApp 0.1.0 Release candidate
    0.1.5 2023-02-25T01:41Z Complete analyzing/reporting versions
    0.1.4 2023-02-24T19:55Z Touch-up comments and display layout, suppress
