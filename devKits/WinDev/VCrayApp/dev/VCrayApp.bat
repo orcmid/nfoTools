@@ -16,14 +16,13 @@ IF ERRORLEVEL 1 GOTO :FAIL0
 rem VCrayApp does not build your own project until you specify the desired
 rem .exe name.  Specify it by replacing "RenameMe" in the setting of APP_EXE.
 
-REM SET APP_EXE=RenameMe.exe
-SET APP_EXE=bogus.exe
+SET APP_EXE=RenameMe.exe
 rem Hint: don't use RenameMe.exe for your app.
 
 rem If not using the recommended SRC location, replace this setting.  You
 rem may need to provide an absolute path if you're using a different folder.
 
-REM SET SRC=src\*.c
+SET SRC=src\*.c
 
 rem *********** NO CHANGES ARE NEEDED BELOW HERE *****************************
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
@@ -369,7 +368,7 @@ rem For additional information, see the accompanying NOTICE.txt file.
 rem
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 rem
-rem 0.0.28 2023-02-27T Defend against undefined APP_EXE and SRC
+rem 0.0.28 2023-02-27T21:14Z Defend against undefined APP_EXE and SRC
 rem 0.0.27 2023-02-27T02:22Z Wrap up as candidate for VCrayApp 0.1.0
 rem 0.0.26 2023-02-27T02:14Z Add separate VCrayConfirm.c building, update
 rem        to handle with or without app code introduced.
