@@ -1,5 +1,5 @@
 @echo off
-rem VCrayApp 0.1.0 VCrayApp.bat 0.0.26 UTF-8                       2023-02-27
+rem VCrayApp 0.1.0 VCrayApp.bat 0.0.26 UTF-8                       2023-02-24
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 rem                  BUILDING RAYLIB APP WITH VC/C++ TOOLS
@@ -13,16 +13,12 @@ rem confirmed.  Then alter the GAME_EXE and SRC vars for the specific project.
 SETLOCAL ENABLEEXTENSIONS
 IF ERRORLEVEL 1 GOTO :FAIL0
 
-rem VCrayApp does not build your own project until you specify the desired
-rem .exe name.  Specify it by replacing "RenameMe" in the setting of APP_EXE.
+rem cache\rayConfirm.c is compiled as a simple example to confirm the setup.
+rem After successful confirmation, substitute your app's .exe name here ...
+SET GAME_EXE=VCrayConfirm.exe
 
-SET APP_EXE=RenameMe.exe
-rem Hint: don't use RenameMe.exe for your app.
-
-rem If not using the recommended SRC location, replace this setting.  You
-rem may need to provide an absolute path if you're using a different folder.
-
-SET SRC=src\*.c
+rem ... and switch to your app's source code location, e.g., SRC=src\*.c
+SET SRC=cache\VCrayConfirm.c
 
 rem *********** NO CHANGES ARE NEEDED BELOW HERE *****************************
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
@@ -30,8 +26,7 @@ rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 rem Designate the semantic-versioned distribution
 SET VCrayApp=0.1.0
 SET VCraylib=..\..\raylib
-rem XXX This is a fragile dependency also in cache\rayLibCode.opt files and
-rem     other parts of this script.
+rem XXX This is a fragile dependency also in cache\rayLibCode.opt files.
 
 rem Additional documentation of this procedure and its usage are found in the
 rem accompanying VCrayApp-%VCrayApp%.txt file.  For further information, see
@@ -111,7 +106,7 @@ IF NOT EXIST "%~dp0VCrayApp.bat" GOTO :FAIL1
 IF NOT EXIST "%~dp0..\raylib\src\raylib.h" GOTO :FAIL6
 rem *IMPORTANT* Another fragile dependency on location of raylib\
 
-rem CACHE LINKABLE RAYLIB CODE IF NEEDED
+rem COMPILE INTO THE CACHE IF NEEDED
 IF NOT "%VCclean%" == "1" GOTO :CACHECHECK
 DEL %~dp0cache\rglfw.obj >nul 2>nul
 
@@ -155,77 +150,49 @@ IF ERRORLEVEL 2 GOTO :FAIL4
 ECHO: [VCrayApp] FRESH CACHE OF RAYLIB %RAYVER% *.OBJ FILES COMPILED
 ECHO: %VCterse%
 
-:VCRAYCONFIRMBUILD
-SET VCEXE=VCrayConfirm.exe
-SET VCSRC=%~dp0cache\VCrayConfirm.c
-CD %~dp0app
-DEL *.exe >nul 2>nul
-rem Flags
-SET OUT=/Fe: "%VCEXE%"
-SET SUBSYS=/SUBSYSTEM:WINDOWS /ENTRY:mainCRTStartup
+REM HERE IS WHERE WE COMPILE VCrayConfirm.exe TO SEE THAT WE HAVE THAT MUCH
+REM WORKING BEFORE WE DO THE USER'S APPBUILD IF REQUESTED. We DO THIS BY
+REM SETTING PARAMETERS FOR COMPILING AND RUNNING rayConfirm.c AND THEN
+REM PUTTING IT ALL BACK AFTER THAT RETURNS SUCCESSFULLY.  THEN WE DROP THROUGH
+REM :APPBUILD THE LAST TIME, UNLESS %GAME_EXE% NOT SET YET.
+REM WE DO NOT DO THAT AS PART OF APPBUILD.  WE CAN ALSO EXIT APPBUILD IF
+REM THERE IS NOTHING AT %SRC%.  THIS COUNTS AS A FIRST-RUN.
 
-rem Compiling %VCSRC%
-CL %VChush% /W3 /c @%~dp0cache\VCoptions.opt %VCSRC%        %VCterse%
-IF ERRORLEVEL 2 GOTO :FAIL5
-ECHO: %VCterse%
+REM WHEN THESE STEPS ARE PRESENT, WE MUST CHANGE THE TOP OF THIS FILE SO
+REM THAT IFGAME_EXE DOES NOT NAME A SOURCE AND\OR %SRC% IS NOT NAMED,
+REM WE DO NOT ATTEMPT TO BUILD THE APPLICATION BUT WE EXIT SORT-OF NICE
 
-rem Linking it all to %VCEXE%
-CL %VChush% %OUT% @%~dp0cache\rayLinking.opt /link /LTCG %SUBSYS% %VCterse%
-IF ERRORLEVEL 2 GOTO :FAIL5
-ECHO: %VCterse%
-DEL *.obj >nul 2>nul
 
-CD %VCfrom%
-IF NOT EXIST %~dp0app\%VCEXE% GOTO :FAIL5
-%~dp0app\%VCEXE%
-IF ERRORLEVEL 1 GOTO :FAIL5
-
-IF NOT "%APP_EXE%" == "RenameMe.exe" GOTO :APPBUILD
-ECHO: [VCrayApp] **** ALL SET.  NO APP TO COMPILE YET. ****
-ECHO:            Have your C Language source code and any headers in the
-ECHO:            src\ folder.  Then put your app .exe name in the APP_EXE
-ECHO:            setting at the beginning of VCrayApp.bat.  Once that's done,
-ECHO:            VCrayApp.bat will compile your app. For more information,
-ECHO:            see ^<https://orcmid.github.io/nfoTools/dev/D211101/^>.
-ECHO: %VCterse%
-
-IF NOT "%VCrun%" == "1" GOTO :SUCCESS
-ECHO: [VCrayApp] **** CANNOT RUN AN APP YET. DO THE SETUP. ****
-SET VCrun=0
-GOTO :SUCCESS
 
 :APPBUILD
 CD %~dp0app
 DEL *.exe >nul 2>nul
 rem Flags
-SET OUT=/Fe: "%APP_EXE%"
+SET OUT=/Fe: "%GAME_EXE%"
 SET SUBSYS=/SUBSYSTEM:WINDOWS /ENTRY:mainCRTStartup
 
 rem Compiling the %SRC%
-SET VCSRC=%~dp0%SRC%
-IF "%SRC%" == "src\*.c" GOTO :APPCOMPILE
-rem otherwise, a different %SRC% has been set.
-SET VCSRC=%SRC%
-:APPCOMPILE
-SET VCEXE=%APP_EXE%
-CL %VChush% /W3 /c @%~dp0cache\VCoptions.opt %VCSRC%          %VCterse%
-
+SET VCEXE=%GAME_EXE%
+CL %VChush% /W3 /c @%~dp0cache\VCoptions.opt %~dp0%SRC%          %VCterse%
+REM XXXX THIS MIGHT NOT BE THE BEST WAY TO FIND %SRC%, WHICH COULD BE ANYWHERE
 IF ERRORLEVEL 2 GOTO :FAIL5
 ECHO: %VCterse%
 
-rem Linking it all to %APP_EXE%
+rem Linking it all to %GAME_EXE%
 CL %VChush% %OUT% @%~dp0cache\rayLinking.opt /link /LTCG %SUBSYS% %VCterse%
 IF ERRORLEVEL 2 GOTO :FAIL5
 ECHO: %VCterse%
 DEL *.obj >nul 2>nul
 
-ECHO: [VCrayApp] PROGRAM %APP_EXE% COMPILED TO %~dp0app
+ECHO: [VCrayApp] PROGRAM %GAME_EXE% COMPILED TO %~dp0app
 ECHO: %VCterse%
 
 CD %VCfrom%
 IF NOT "%VCrun%" == "1" GOTO :SUCCESS
 ECHO: [VCrayApp] Launching App.  Exit App to Continue Command Session
-"%~dp0app\%APP_EXE%"
+"%~dp0app\%GAME_EXE%"
+REM XXXX HERE, IF THERE WAS NO COMPILATION BUT THERE WAS "-r", WE NEED TO
+REM XXXX    SET A FAILURE EXIT CODE AND GIVE A HELPFUL ERROR MESSAGE
 
 :SUCCESS
 ENDLOCAL
@@ -356,8 +323,6 @@ rem For additional information, see the accompanying NOTICE.txt file.
 rem
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 rem
-rem 0.0.26 2023-02-27T02:14Z Add separate VCrayConfirm.c building, update
-rem        to handle with or without app code introduced.
 rem 0.0.25 2023-02-24T18:44Z Renamed raylibCode.4.0.0.opt to 4.x.0, and
 rem        touching up, annotating for further changes.
 rem 0.0.25 2023-02-23T06:02Z Narrow down VCRAYVER when no REYLIB_VERSION
@@ -371,5 +336,24 @@ rem 0.0.21 2023-02-18T23:43Z Update Usage and show Tools Version
 rem 0.0.20 2023-02-09T22:48Z Review for automation of raylib version checking
 rem        and reporting
 rem 0.0.19 2023-01-14T19:25Z Update for VCrayApp 0.1.0
+rem 0.0.18 2022-12-31T20:39Z Review and touch-up
+rem 0.0.17 2022-10-26T16:38Z More message cleanups
+rem 0.0.16 2022-10-17T18:35Z Cleanup compilation failure and success messages
+rem 0.0.15 2022-08-24T23:22Z Add Copyright, touch-ups
+rem 0.0.14 2022-08-20T21:21Z Correct compilation to app\ message.
+rem 0.0.13 2022-08-14T20:03Z Improve some message
+rem 0.0.12 2022-07-10T21:34Z Require src\src.txt to be present
+rem 0.0.11 2022-06-21T14:38Z Catch some missed name changes + some touch-ups
+rem 0.0.10 2022-05-29T21:29Z Switch to VCrayApp name and review, tidy up.
+rem 0.0.9 2021-11-20T20:59Z Adjust error checks and preserving original %CD%
+rem 0.0.8 2021-11-11T20:13Z Checking for expected presence of raylib/
+rem 0.0.7 2021-11-11T17:52Z Moving all *.opt files to cache/
+rem 0.0.6 2021-11-10T03:30Z Confirmed and touched-up ready for nfoTools
+rem 0.0.5 2021-11-10T00:08Z Complete draft of guard-railed script
+rem 0.0.4 2021-11-08T23:43Z First stage provisional built
+rem 0.0.3 2021-11-08T22:05Z Start blending VCbind on-ramp and guard rails
+rem 0.0.2 2021-11-07T23:43Z Rename and continue prototyping.
+rem 0.0.1 2021-11-05T21:39Z Trial Simplification for nfoTools + FC_CPP
+rem 0.0.0 2021-04-26T00:01Z 3.7.0 raylib/projects/scripts/build_windows.bat
 rem
 rem                      *** end of VCrayApp.bat ***
