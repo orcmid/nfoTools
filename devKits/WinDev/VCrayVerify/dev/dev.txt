@@ -1,4 +1,4 @@
-VCrayVerify-0.0.0 dev.txt 0.0.4     UTF-8                         2023-01-22
+VCrayVerify-0.0.0 dev.txt 0.0.5     UTF-8                         2023-02-27
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 <https://github.com/orcmid/nfoTools/blob/master/devKits/WinDev/VCrayVerify/dev/dev.txt>
@@ -14,9 +14,9 @@ VCrayVerify-0.0.0 dev.txt 0.0.4     UTF-8                         2023-01-22
     The structure of this folder is that of the intended test suite, apart
     from those components, such as a raylib source release, that must be
     obtained from elsewhere.  VCrayVerify is tested and developed in place
-    in this dev\ folder and then the release content is separate out into the
+    in a dev\ folder and then the release content is separate out into the
     distributable VCrayVerify-0.0.0.zip.  For this and later releases, see
-    <https://orcmid.github.io/nfoTools/dev/>.
+    <https://orcmid.github.io/nfoTools/dev/D230202/>.
 
     A VCrayVerify folder will have its own raylib\ subfolder with an adjacent
     VCrayApp\ adaptation.  This keeps VCrayVerify operation separate from any
@@ -25,10 +25,10 @@ VCrayVerify-0.0.0 dev.txt 0.0.4     UTF-8                         2023-01-22
     with a variety of raylib releases, including clones of the current
     under-development raylib\ release.
 
-    The VCrayAppV\ adaptation employs src\ as the location where copies of
+    The VCrayAppV\ adaptation might use src\ as the location where copies of
     examples and other source codes are placed for compilation.  The app\
     folder will receive compiled examples and and resources\ subfolder for
-    examples that expects one.
+    examples that expect one.
 
     Generally, VCrayVerify runs much like VCrayApp except for the selection
     of examples to (attempt to) build and run.  There is not so much about
@@ -84,7 +84,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. Develop VCrayVerify Test Harnesses for Verifying
-   raylib Examples, version 0.0.3 dated 2023-01-22, available on the Internet
+   raylib Examples, version 0.0.5 dated 2023-02-27, available on the Internet
    as a version of
    <https://github.com/orcmid/nfoTools/blob/master/devKits/WinDev/VCrayVerify/VCrayVerify.txt>
 
@@ -131,8 +131,28 @@ TODO
    with this kind of development. Consider it for other development projects
    too.
 
+ * I need to be cautious of VCrayApp customizations for VCrayVerify.  I want
+   VCrayApp to be close to a drop-in as much as possible.
+   I'd like not to adjust much and I need to figure out, there, how to avoid
+   customizing it every time there is a VCrayApp release.  There is enough to
+   manage in VCrayVerify with regard to raylib changes, VC/C++ compatibility,
+   etc.  Ideally, VCrayVerify would not need to change SRC and it might
+   change APP_EXE separately.  Or we always use VCrayVerify.exe since there
+   does not have to be any source-file agreement.  This means that VCrayVerify
+   mght need to have an initial program in src\ that gets compiled until
+   another program is established. Alternatively, VCrayVerify could use
+   sources directly in the example folders.
+
+ * I think the solution might be to remove the %APP_EXE% and %SRC% settings
+   from VCrayApp.bat.
+
+ * I'm not thrilled about having a VCrayAppV folder although the idea is to
+   have a project name.  To reflect the customization, I might also have a
+   VCrayAppV.bat to reflect there is a customized script.  Makes sense.
+
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.5 2023-02-27T18:13Z Manage TODOs, consider VCrayApp customization
  0.0.4 2023-01-22T17:31Z Touch-ups and Manage TODOs
  0.0.3 2023-01-22T16:03Z Touch-ups and Manage TODOs
  0.0.2 2023-01-17T02:00Z Bring Manifest current

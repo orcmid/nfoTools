@@ -1,4 +1,4 @@
-dev.txt 0.0.22                       UTF-8                         2023-02-25
+dev.txt 0.0.23                       UTF-8                         2023-02-27
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                        AN NFOTOOLS COMING ATTRACTION
@@ -71,16 +71,13 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. raylib App Build with VS Developer Command Prompt.
-   nfoTools text file version 0.0.22 dated 2023-02-25, available on the
+   nfoTools text file version 0.0.23 dated 2023-02-27, available on the
    Internet as a version of
    <https://github.com/orcmid/nfoTools/blob/master/devKits/WinDev/VCrayApp/dev/dev.txt>
 
 TODO
 
  * Work toward VCrayApp 1.0.0 after 0.1.x beta(s)
-
- * Add links to more and better information in the VCrayConfirm.c file.
-   Replace place-holder <...> items with valid links.
 
   * Include a link on signature and hash checking in the manifest.  Also
    provide something more on the documentation for such things.
@@ -102,13 +99,7 @@ TODO
  * In .vscode.txt there is a link place-holder.  This should be dealt with
    by the time of VCrayApp 0.1.0 release.
 
- * Use RAYLIB_VERSION defined in raylib.h starting with "4.0".  This should be
-   reflected in the VCrayConfirm.c output.  We can use VC information also, to
-   indicate any assumptions that apply when VCrayApp is used.
-
  * Adjust VCrayApp.bat to do the following when a new cache is to be built.
-   7. If there is a "*-dev" VCRAYVER, we will warn about use for a release
-      in VCrayConfirm.c and proceed.
    8. We don't know about releases after 4.2 at this time.  We will attempt
       to proceed and see what happens.  Work with 4.5-dev until it is
       released.  Then adjust and release the 0.1.0.
@@ -117,19 +108,29 @@ TODO
    on raylib location in VCrayApp.bat.  It would be nice to reduce those.
    The brittleness of that and raylibCode.opt is troubling.
 
- * It would be nice if there was a way to recompile VCrayConfirm.c without
-   messing up any user development.  This would change the customization
-   needed for switching to the users's source.  Just don't make things more
-   brittle than they are already.  That is, we would have src\ as the default
-   but how do we distinguish first run from later?
+ * Add VCrayConfirm.c detection of the %APP_EXE% setting and report on what
+   to do if it is set or not.  Indicate that no compiles of an App will happen
+   until the variable is set in the beginning of VCrayApp.bat.
 
- * Because of EXIT cases, we cannot re-use the compilation code for SRC
-   in compiling VCrayConfirm.c.  We will duplicate the necessary code as
-   part of the cache-compilation case.  \app will be reused and that should
-   be fine.
+ * Add VCrayConfirm.c reporting of the %SRC% setting and report the assumption
+   of it usage and what to do to change it.
+
+ * There needs to be consideration of customizations, such as for VCrayVerify.
+   I'd like not to adjust much and I need to figure out, there, how to avoid
+   customizing it every time there is a VCrayApp release.  There is enough to
+   manage in VCrayVerify with regard to raylib changes, VC/C++ compatibility,
+   etc.  Ideally, VCrayVerify would not need to change SRC and it might
+   change APP_EXE separately.  Or we always use VCrayVerify.exe since there
+   does not have to be agreement.  This means that VCrayVerify mght need to
+   have an initial program in src\ that gets compiled until another program
+   is established. Alternatively, VCrayVerify could use sources directly in
+   the example folders. Uh, that can't work without even mor changes to
+   VCrayApp.bat, and that will make VCrayConfirm.c even stranger.  Add this
+   consideration to VCrayVerify.dev to.
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.23 2023-02-27T17:55Z Manage TODOs, considering more improvements.
  0.0.22 2023-02-25T01:42Z Manage TODOs, reflecting VCrayConfirm 0.1.5 success
  0.0.21 2023-02-24T18:49Z Manage TODOs, continuing VCrayApp.bat refinement
  0.0.20 2023-02-24T05:43Z Manage TODOs, reflect use of raylib 4.5-dev
