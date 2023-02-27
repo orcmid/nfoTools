@@ -1,5 +1,5 @@
 @echo off
-rem VCrayApp 0.1.0 VCrayApp.bat 0.0.26 UTF-8                       2023-02-27
+rem VCrayApp 0.1.0 VCrayApp.bat 0.0.27 UTF-8                       2023-02-27
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 rem                  BUILDING RAYLIB APP WITH VC/C++ TOOLS
@@ -356,6 +356,7 @@ rem For additional information, see the accompanying NOTICE.txt file.
 rem
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 rem
+rem 0.0.27 2023-02-27T02:22Z Wrap up as candidate for VCrayApp 0.1.0
 rem 0.0.26 2023-02-27T02:14Z Add separate VCrayConfirm.c building, update
 rem        to handle with or without app code introduced.
 rem 0.0.25 2023-02-24T18:44Z Renamed raylibCode.4.0.0.opt to 4.x.0, and
