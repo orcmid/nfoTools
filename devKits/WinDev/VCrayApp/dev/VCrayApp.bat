@@ -1,5 +1,5 @@
 @echo off
-rem VCrayApp 0.1.0 VCrayApp.bat 0.0.28 UTF-8                       2023-02-27
+rem VCrayApp 0.1.0 VCrayApp.bat 0.0.29 UTF-8                       2023-03-02
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 rem                  BUILDING RAYLIB APP WITH VC/C++ TOOLS
@@ -8,19 +8,31 @@ rem                  =====================================
 rem This code depends on the presence of cache\, app\, src\ and ..\raylib\.
 rem It must be operated within a VS Command Prompt command-line environment.
 rem Use the script without modification until installation and operation is
-rem confirmed.  Then alter the GAME_EXE and SRC vars for the specific project.
+rem confirmed.  Then alter the APP_EXE and SRC vars for the specific project.
+
+rem NOTE: If VCrayApp.bat is incorporated as a component of a larger project,
+rem       setting VCrayAppHost will provide for smoother operation as a
+rem       component.
 
 SETLOCAL ENABLEEXTENSIONS
 IF ERRORLEVEL 1 GOTO :FAIL0
 
-rem VCrayApp does not build your own project until you specify the desired
-rem .exe name.  Specify it by replacing "RenameMe" in the setting of APP_EXE.
+rem When VCrayApp is installed for use as a component in a larger project,
+rem set the name of that project in VCrayAppHost here.
+SET VCrayAppHost=
+
+rem VCrayApp does not compile a project's source code until APP_EXE is set.
+rem If a VCrayAppHost will set it, the line below will be commented out.
+rem Otherwise, replace "RenameMe" in the setting of APP_EXE here.
 
 SET APP_EXE=RenameMe.exe
-rem Hint: don't use RenameMe.exe for your app.
+rem Hint: don't use RenameMe.exe for your app.  Do use the complete .exe name.
 
-rem If not using the recommended SRC location, replace this setting.  You
-rem may need to provide an absolute path if you're using a different folder.
+rem VcrayApp will not attempt to compile a project's source code until SRC is
+rem also set. If a VCrayAppHost will set it, the line below will be commented
+rem out.  Otherwise, your project should use the src\ folder here in the
+rem VCrayApp location.  For further information about VCrayApp customizations
+rem see ^<https://orcmid.github.io/nfoTools/dev/D211101a/^>.
 
 SET SRC=src\*.c
 
@@ -38,9 +50,9 @@ rem accompanying VCrayApp-%VCrayApp%.txt file.  For further information, see
 rem ^<https://orcmid.github.io/nfoTools/dev/D211101^> and check for the latest
 rem version.
 
-rem Remembering where rayApp.bat is called *from*, so it can be restored on
-rem exit, including after errors.
 SET VCfrom=%CD%
+rem remembering where VCrayApp.bat is called *from*, so it can be restored on
+rem exit, including after errors.
 
 rem SELECT EMBEDDED, TERSE, OR DEFAULT
 rem     %1 value "+" selects smooth non-stop operation for splicing output
@@ -109,17 +121,19 @@ IF NOT EXIST "%~dp0VCrayApp-%VCrayApp%.txt" GOTO :FAIL1
 IF NOT EXIST "%~dp0VCrayApp.bat" GOTO :FAIL1
 
 IF NOT EXIST "%~dp0..\raylib\src\raylib.h" GOTO :FAIL6
-rem *IMPORTANT* Another fragile dependency on location of raylib\
+rem XXX *IMPORTANT* Another fragile dependency on location of raylib\
 
 rem CACHE LINKABLE RAYLIB CODE IF NEEDED
 IF NOT "%VCclean%" == "1" GOTO :CACHECHECK
 DEL %~dp0cache\rglfw.obj >nul 2>nul
+rem XXX We depend on rglfw.c being compiled last and absence is taken
+rem XXX to mean cache is absent/obsolete.
 
 :CACHECHECK
 IF EXIST %~dp0cache\rglfw.obj GOTO :APPBUILD
-DEL %~dp0cache\*.obj >nul 2>nul
 rem Using presence of the last-built raylib .obj to determine full cache.
 rem *IMPORTANT* Keep consistent with %~dp0cache\raylibCode.opt cases
+DEL %~dp0cache\*.obj >nul 2>nul
 
 CD %~dp0cache
 rem DETERMINING RAYLIB VERSION THAT IS INSTALLED
@@ -184,11 +198,11 @@ IF "%APP_EXE%" == "" GOTO :NOAPP
 IF NOT "%APP_EXE%" == "RenameMe.exe" GOTO :APPBUILD
 :NOAPP
 ECHO: [VCrayApp] **** ALL SET.  NO APP TO COMPILE YET. ****
-ECHO:            Have your C Language source code and any headers in the
-ECHO:            SRC folder.  Then put your app .exe name in the APP_EXE
+ECHO:            Have the C Language source code and any headers in the
+ECHO:            %SRC% SRC folder.  Then put the app .exe name in the APP_EXE
 ECHO:            setting at the beginning of VCrayApp.bat or otherwise set it.
 :MAYBEAPP
-ECHO:            Once that's done, VCrayApp.bat will compile your app.
+ECHO:            Once that's done, VCrayApp.bat will compile the app.
 ECHO:            For more information,
 ECHO:            see ^<https://orcmid.github.io/nfoTools/dev/D211101/^>.
 ECHO: %VCterse%
@@ -218,6 +232,7 @@ SET VCSRC=%~dp0%SRC%
 IF "%SRC%" == "src\*.c" GOTO :APPCOMPILE
 rem otherwise, a different %SRC% has been set.
 SET VCSRC=%SRC%
+
 :APPCOMPILE
 SET VCEXE=%APP_EXE%
 CL %VChush% /W3 /c @%~dp0cache\VCoptions.opt %VCSRC%          %VCterse%
@@ -225,7 +240,7 @@ CL %VChush% /W3 /c @%~dp0cache\VCoptions.opt %VCSRC%          %VCterse%
 IF ERRORLEVEL 2 GOTO :FAIL5
 ECHO: %VCterse%
 
-rem Linking it all to %APP_EXE%
+rem Linking it all to make %APP_EXE%
 CL %VChush% %OUT% @%~dp0cache\rayLinking.opt /link /LTCG %SUBSYS% %VCterse%
 IF ERRORLEVEL 2 GOTO :FAIL5
 ECHO: %VCterse%
@@ -238,6 +253,7 @@ CD %VCfrom%
 IF NOT "%VCrun%" == "1" GOTO :SUCCESS
 ECHO: [VCrayApp] Launching App.  Exit App to Continue Command Session
 "%~dp0app\%APP_EXE%"
+IF ERRORLEVEL 1 GOTO FAIL5
 
 :SUCCESS
 ENDLOCAL
@@ -262,12 +278,12 @@ GOTO :BAIL
 ECHO: [VCrayApp] **** FAILURE: RAYLIB NOT FOUND WHERE EXPECTED ****
 ECHO:            expected at "%~dp0..\raylib\"                      %VCterse%
 ECHO:            NO ACTIONS HAVE BEEN PERFORMED                     %VCterse%
-REM XXXX ANOTHER DEPENDENCY ON raylib\ LOCATION
+REM   XXXX ANOTHER DEPENDENCY ON raylib\ LOCATION
 GOTO :BAIL
 
 :FAIL5
-ECHO: [VCrayApp] ****PRODUCING %VCEXE% FAILED ****
-ECHO:            Review the errors reported for the compilation.    %VCterse%
+ECHO: [VCrayApp] ****PRODUCING OR OPERATING %VCEXE% FAILED ****
+ECHO:            Review any reported errors.                        %VCterse%
 ECHO:            Make repairs and reattempt.                        %VCterse%
 ECHO:            RESULTS ARE UNPREDICTABLE                          %VCterse%
 GOTO :BAIL
@@ -329,8 +345,8 @@ ECHO:    Exit codes greater than 1 are produced for any failure.
 ECHO:
 ECHO:    There is definition and use of environment variables GAME_EXE, SRC,
 ECHO:    VCrayApp, VCfrom, VCterse, VChush, VCsplice, VCclean, VCrun, VCexe,
-ECHO:    and VCRAYVER.  VSCMD_VER is depended on for operation from a
-ECHO:    VS Command Prompt, which must be used.
+ECHO:    VCRAYVER, and VCrayAppHost.  VSCMD_VER is depended on for operation
+ECHO:    from a VS Command Prompt, which must be used.
 ENDLOCAL
 IF "%VCsplice%" == "+" EXIT /B 0
 PAUSE
@@ -368,6 +384,7 @@ rem For additional information, see the accompanying NOTICE.txt file.
 rem
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 rem
+rem 0.0.29 2023-03-02T19:19Z Introduce VCrayAppHost and clean up around it.
 rem 0.0.28 2023-02-27T21:14Z Defend against undefined APP_EXE and SRC
 rem 0.0.27 2023-02-27T02:22Z Wrap up as candidate for VCrayApp 0.1.0
 rem 0.0.26 2023-02-27T02:14Z Add separate VCrayConfirm.c building, update
