@@ -1,5 +1,5 @@
 @echo off
-rem VCrayApp 0.1.0 VCrayApp.bat 0.0.29 UTF-8                       2023-03-02
+rem VCrayApp 0.1.0 VCrayApp.bat 0.0.30 UTF-8                       2023-03-03
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 rem                  BUILDING RAYLIB APP WITH VC/C++ TOOLS
@@ -12,14 +12,21 @@ rem confirmed.  Then alter the APP_EXE and SRC vars for the specific project.
 
 rem NOTE: If VCrayApp.bat is incorporated as a component of a larger project,
 rem       setting VCrayAppHost will provide for smoother operation as a
-rem       component.
+rem       component. Similarly, VCrayAppHostURL is added to failure messages
+rem       If defined.
 
 SETLOCAL ENABLEEXTENSIONS
 IF ERRORLEVEL 1 GOTO :FAIL0
 
 rem When VCrayApp is installed for use as a component in a larger project,
-rem set the name of that project in VCrayAppHost here.
+rem set the name of that project in VCrayAppHost here.  If a host sets this
+rem itself, this SET will be commented (rem) out.
 SET VCrayAppHost=
+
+rem When VCrayAppHost is set, a URL for additional handling of VCrayApp fails
+rem will be used from VCrayAppHostURL if set.  If a host sets this itself,
+rem the following SET will be commented (rem) out.
+SET VCrayAppHostURL=
 
 rem VCrayApp does not compile a project's source code until APP_EXE is set.
 rem If a VCrayAppHost will set it, the line below will be commented out.
@@ -35,13 +42,15 @@ rem VCrayApp location.  For further information about VCrayApp customizations
 rem see ^<https://orcmid.github.io/nfoTools/dev/D211101a/^>.
 
 SET SRC=src\*.c
+rem VCrayApp treats this as a special case.  If this is defined to a location
+rem and files elsewhere, a complete absolute location must be provided.
 
 rem *********** NO CHANGES ARE NEEDED BELOW HERE *****************************
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 rem Designate the semantic-versioned distribution
 SET VCrayApp=0.1.0
-SET VCraylib=..\..\raylib
+SET VCraylib=%~dp0..\raylib
 rem XXX This is a fragile dependency also in cache\rayLibCode.opt files and
 rem     other parts of this script.
 
@@ -120,7 +129,7 @@ IF NOT EXIST "%~dp0src\src.txt" GOTO :FAIL1
 IF NOT EXIST "%~dp0VCrayApp-%VCrayApp%.txt" GOTO :FAIL1
 IF NOT EXIST "%~dp0VCrayApp.bat" GOTO :FAIL1
 
-IF NOT EXIST "%~dp0..\raylib\src\raylib.h" GOTO :FAIL6
+IF NOT EXIST "%VCraylib%\src\raylib.h" GOTO :FAIL6
 rem XXX *IMPORTANT* Another fragile dependency on location of raylib\
 
 rem CACHE LINKABLE RAYLIB CODE IF NEEDED
@@ -276,7 +285,7 @@ GOTO :BAIL
 
 :FAIL6
 ECHO: [VCrayApp] **** FAILURE: RAYLIB NOT FOUND WHERE EXPECTED ****
-ECHO:            expected at "%~dp0..\raylib\"                      %VCterse%
+ECHO:            expected at "%VCraylib%    \"                      %VCterse%
 ECHO:            NO ACTIONS HAVE BEEN PERFORMED                     %VCterse%
 REM   XXXX ANOTHER DEPENDENCY ON raylib\ LOCATION
 GOTO :BAIL
@@ -384,6 +393,7 @@ rem For additional information, see the accompanying NOTICE.txt file.
 rem
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 rem
+rem 0.0.30 2023-03-03T21:10Z Initial VCrayAppHost and VCrayAppHostURL setting
 rem 0.0.29 2023-03-02T19:19Z Introduce VCrayAppHost and clean up around it.
 rem 0.0.28 2023-02-27T21:14Z Defend against undefined APP_EXE and SRC
 rem 0.0.27 2023-02-27T02:22Z Wrap up as candidate for VCrayApp 0.1.0

@@ -1,4 +1,4 @@
-/* VCrayConfirm.c 0.1.7               UTF-8                       2023-02-27
+/* VCrayConfirm.c 0.1.8               UTF-8                       2023-03-03
    -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                     CONFIRMATION OF RAYLIB APP CACHE SETUP
@@ -7,7 +7,7 @@
    *                                                                      *
    * THIS PROGRAM IS MEANT TO BE RETAINED IN A VCrayApp cache\ FOLDER AND *
    * USED INTERNALLY BY VcrayApp.bat.  IT IS ONLY SUPPORTED AS INTENDED   *
-   * IN THAT LOCATION WITHIN A VCrayApp RELEASE OR A CUSTOMIZATION.       *
+   * IN THAT LOCATION WITHIN VCrayApp RELEASES AND ANY EMBEDDED USAGE.    *
    *                                                                      *
    ************************************************************************
 
@@ -19,18 +19,19 @@
    more details and dependency on operation under VCrayApp.bat.
 
    VCrayConfirm is used following successful compilation of the VCrayApp
-   cache of raylib .obj files to demonstrate a successful build using that
-   cache with VC/C++ under a VS Developer Command Prompt.
+   cache of raylib .obj files to demonstrate a successful build, confirming
+   working of the cache with VC/C++ under a VS Developer Command Prompt.
 
    For further details, see <https://orcmid.github.io/nfoTools/dev/D211101>
-   and <https://orcmid.github.io/nfoTools/tools/> for additional information.
+   and, for background, <https://orcmid.github.io/nfoTools/tools/>.
 
    VCrayConfirm.c FEATURES REQUIRE STANDARD C11 OR LATER COMPILATION.
 
    */
 
 #include <stddef.h>   // for NULL
-#include <string.h>   // for strncat_s(), strcmp(), and text-output building
+#include <string.h>   // for strncat_s(), strncmp()
+#include <stdbool.h>  // for bool type, true and false
 
 #include <raylib.h>   // for the raylib API
 
@@ -38,8 +39,8 @@
  #pragma warning(disable: 4996)
    /* Do not warn about getenv() */
 #endif
-
 #define _CRT_SECURE_NO_WARNINGS
+
 #include <stdlib.h>   // for getenv() and exit()
 
     // *** IMPORTANT ***
@@ -48,17 +49,14 @@
     // reason alone, compiling with _CRT_SECURE_NO_WARNINGS is safe.
     // This technique is specific to VC/VC++ and Standard C11 or later.
 
-#include <stdbool.h>  // for bool type, true and false
-
-
 int main(void)
 {   // SETUP DISPLAYED TEXT LINES
     // --------------------------
 
-    #define LINE_MAX 80
+    #define LINE_MAX 200
     // A length that should never be reached.
 
-    // incorporate VSCMD_VER in the first message.
+    // INCORPORATE VSCMD_VER IN THE LINE1 MESSAGE.
 
     char *pVCcmdVer = getenv("VSCMD_VER");
     if (pVCcmdVer == NULL)
@@ -73,7 +71,7 @@ int main(void)
     strncat_s( line1, LINE_MAX,
                pVCcmdVer, _TRUNCATE);
 
-    // capture VCRAYVER for reporting and also detection of special cases
+    // CAPTURE VCRAYVER FOR REPORTING AND ALSO SPECIAL CASES
 
     char *pVCrayVer = getenv("VCRAYVER");
     if (pVCrayVer == NULL)
@@ -85,7 +83,7 @@ int main(void)
                pVCrayVer, _TRUNCATE);
         // capturing VCRAYVER
 
-    // incorporate VCRAYVER in the second message.
+    // incorporate VCRAYVER in the line2 message.
     char line2[LINE_MAX+1] = { '\0' };
 
     strncat_s( line2, LINE_MAX,
@@ -101,6 +99,56 @@ int main(void)
           if ( !strncmp(&verstring[i++], "-dev\"", 5) )
                { isDev = true;
                  break; }
+
+    // ADAPT TO HOSTING, APP_EXE, AND SRC CASES
+
+    char VCrayAppHost[LINE_MAX+1] = { '\0' };
+    bool isHosted = true;
+    char *pVCrayAppHost = getenv("VCrayAppHost");
+    if ( pVCrayAppHost == NULL )
+         isHosted = false;
+    if (isHosted)
+         strncat_s( VCrayAppHost, LINE_MAX,
+                    pVCrayAppHost, _TRUNCATE);
+
+    char VCrayAppHostURL[LINE_MAX+1] = { '\0' };
+    bool hasURL = true;
+    char *pVCrayAppHostURL = getenv("VCrayAppHostURL");
+    if (pVCrayAppHostURL == NULL)
+         hasURL = false;
+    if (hasURL)
+         strncat_s( VCrayAppHostURL, LINE_MAX,
+                    pVCrayAppHostURL, _TRUNCATE);
+
+    // determine SRC location, if any
+    bool isSRC = true;
+    char VCSRC[LINE_MAX+1] = { '\0' };
+
+    char *pVCappSRC = getenv("SRC");
+    if( pVCappSRC == NULL )
+         { pVCappSRC = "omitted";
+           isSRC = false; }
+    strncat_s( VCSRC, LINE_MAX,
+               pVCappSRC, _TRUNCATE );
+
+    // determine APP_EXE value, if any
+    bool isEXE = true;
+    char VCEXE[LINE_MAX+1] = { '\0' };
+
+    char *pVCappEXE = getenv("APP_EXE");
+    if ( pVCappEXE == NULL)
+         { pVCappEXE = "omitted";
+           isEXE = false; }
+    strncat_s( VCEXE, LINE_MAX,
+               pVCappEXE, _TRUNCATE );
+
+// ************* UNDER CONSTRUCTION *****************
+
+    char line3[LINE_MAX+1] = { '\0' };
+    strncat_s( line3, LINE_MAX,
+               "SRC is ", _TRUNCATE);
+    strncat_s( line3, LINE_MAX,
+               VCSRC, _TRUNCATE );
 
 
     // RAYLIB INITIALIZATION
@@ -124,7 +172,7 @@ int main(void)
 
             ClearBackground(RAYWHITE);
 
-            DrawText("VCrayConfirm 0.1.7",
+            DrawText("VCrayConfirm 0.1.8",
                      90, 50, 20, GRAY);
 
             DrawText(line1,
@@ -138,8 +186,8 @@ int main(void)
             if (isDev)
                  { DrawText("Thank you for testing with a -dev version.",
                             140, 185, 20, GRAY);
-                   DrawText("When stable builds needed, "
-                            "use release version.",
+                   DrawText("When stable builds required, "
+                            "use a release version.",
                             140, 210, 20, GRAY); }
 
             DrawText("Press ESC to Continue",
@@ -159,6 +207,7 @@ int main(void)
 
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+   0.1.8 2023-03-02T21:08Z Capture VCrayAppHost and VCrayAppHostURL presence.
    0.1.7 2023-02-27T20:19Z Defend against getenv() NULL returns
    0.1.6 2023-02-26T20:16Z VCrayApp 0.1.0 Release candidate
    0.1.5 2023-02-25T01:41Z Complete analyzing/reporting versions
