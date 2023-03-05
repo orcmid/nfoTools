@@ -1,4 +1,4 @@
-T060101.txt 0.0.10                  UTF-8                          2023-02-14
+T060101.txt 0.0.11                  UTF-8                          2023-03-05
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -44,7 +44,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. T060101: C/C++ Programming.  nfoTools project text
-   file T060101.txt version 0.0.10 dated 2023-02-14, available on the
+   file T060101.txt version 0.0.11 dated 2023-03-05, available on the
    Internet as a version of
    <https://orcmid.github.io/nfoTools/tools/T060101/T060101.txt>
 
@@ -97,6 +97,22 @@ TODO
     Also, general education with regard to programming.  Then why learn the
     tradition-embedded compile, link/library, execute model and its situation
     in a software-development life-cycle.
+
+  * The fact that C is technically *not* a subset of C++ needs to be carefully
+    understood.  There is a major difference in the lack of namespaces and
+    in how external modules are linked.  C connects by function or data name,
+    but not by signature or other type information.  In C++, generic functions
+    are supported across modules.  The telling difference is in the special
+    extern "C" { ... } in C language to prevent "name-mangling" when used from
+    a C++ program.  The naming of headers is useful in this respect.  *.h
+    headers should work in C and C++ (thanks to that gimmick) and headers
+    that require C++ should use *.hpp or similar.  The absence of a filename
+    extension, a Unixism, is not recommended on non-POSIX platforms.
+       One might mention the #! game for telling what language a text file
+    with no extension on its name happens to be.
+       Mention CFront and how that all happened.
+       There is also the Microsoft COM binary interface scheme and how that
+    fits with C++ compilers.  Then the JNI technique for working either way.
 
   * Courses of potential interest:
     Introduction to Software Engineering from IBM
@@ -168,6 +184,7 @@ TODO
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.11 2023-03-05T17:51Z Add notes about C non-subsetting C++.
  0.0.10 2023-02-14T01:07Z More TODOs, sources on other ideas than C/C++.
  0.0.9 2023-02-06T05:25Z Change rules, small touch-ups
  0.0.8 2022-12-28T05:07Z Add Rex Jaeschke citation to add to the list.
