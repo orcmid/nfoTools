@@ -1,4 +1,4 @@
-dev.txt 0.0.26                       UTF-8                         2023-03-02
+dev.txt 0.0.27                       UTF-8                         2023-03-08
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                        AN NFOTOOLS COMING ATTRACTION
@@ -17,9 +17,11 @@ SYNOPSIS
     the VCrayApp level and also in a web location for direct download and
     employment.  See <https://orcmid.github.io/nfoTools/dev/D211101>.
 
-    Versions of VCrayApp content in this folder is unstable and under
+    Versions of VCrayApp content in this folder are unstable and under
     development.  This should not be used except on an experimental basis
-    and part of cooperation in development of VCrayApp.
+    and part cooperation in development of VCrayApp itself.  Development
+    snapshots may also be used in early testing of applications that embed
+    VCrayApp, such as VCrayVerify.
 
     Further information on the development of VCrayApp 0.1.0 can be found
     at the GitHub project, <https://github.com/orcmid/nfoTools/projects/11>,
@@ -47,11 +49,11 @@ MANIFEST
         and optional src/ setup.
 
     .vscode\
-        VS Code folder information for any folder the VCrayApp Zip template
-        is extracted into
+        VS Code folder information for any folder the VCrayApp Zip is
+        extracted into
 
     app\
-        the folder compiled executables and resourses are placed in
+        the folder compiled executables and their resourses are placed in
 
     cache\
         folder for VCrayApp-required assets and the caching of raylib
@@ -82,7 +84,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. raylib App Build with VS Developer Command Prompt.
-   nfoTools text file version 0.0.26 dated 2023-03-02, available on the
+   nfoTools text file version 0.0.27 dated 2023-03-08, available on the
    Internet as a version of
    <https://github.com/orcmid/nfoTools/blob/master/devKits/WinDev/VCrayApp/dev/dev.txt>
 
@@ -127,12 +129,13 @@ TODO
    of it usage and what to do to change it.
 
  * There needs to be consideration of customizations, such as for VCrayVerify.
-   There will be customization where VCrayApp.bat setting of APP_EXE and SRC
-   can be removed and supplied insted by a %VCrayAppHost%.  This needs to
-   be documented in D211101.
+   There will be customization where VCrayApp.bat setting of VCAPPEXE and
+   VCAPPSRC can be removed and supplied insted by a %VCrayAppHost%.  This
+   needs to be documented in D211101.
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.27 2023-03-08T21:17Z Manage TODOs, reflect VCrayApp.bat variable changes
  0.0.26 2023-03-02T19:25Z Manage TODOs, clarifying VCrayAppHost impact
  0.0.25 2023-03-02T18:05Z Add CHANGES.txt to manifest
  0.0.24 2023-03-02T16:57Z Manage TODOs, start the improvements and tracking
