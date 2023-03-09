@@ -1,4 +1,4 @@
-VCrayApp-checklist.txt 0.0.4        UTF-8                         2023-01-20
+VCrayApp-checklist.txt 0.0.5        UTF-8                         2023-03-09
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                       RAYLIB APP DEVELOPMENT PROJECT
@@ -78,6 +78,13 @@ VCrayApp-checklist.txt 0.0.4        UTF-8                         2023-01-20
 
     * VCrayApp-semver.txt
         o Ensure place-holder under D211101x subfolder.
+
+    * Include CHECKLIST.txt and keep it current as development of a new
+      release is underway.  It will be included in the VCrayApp zip and be
+      downloadable separately via D211101.
+
+    * Ensure rational operation when VCrayApp is embedded in a project and
+      hosted in a script of that project.
 
 DEPLOYMENT
 
@@ -181,6 +188,7 @@ TODO
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.5 2023-03-09T20:34Z Additions on CHANGES.txt and checking sigs/hashes
  0.0.4 2023-01-20T17:38Z Update TODOs on use of winget hash
  0.0.3 2023-01-09T23:22Z Update and manage TODOs
  0.0.2 2022-08-16T15:54Z Rename VCrayApp-checklist.txt
