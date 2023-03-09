@@ -1,5 +1,5 @@
 @echo off
-rem VCrayApp 0.1.0 VCrayApp.bat 0.0.31 UTF-8                       2023-03-08
+rem VCrayApp 0.1.0 VCrayApp.bat 0.0.32 UTF-8                       2023-03-09
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 rem                  BUILDING RAYLIB APP WITH VC/C++ TOOLS
@@ -44,7 +44,7 @@ rem be commented out.  Otherwise, your project should use the src\ folder here
 rem in the VCrayApp folder.  For further information about VCrayApp
 rem customizations see ^<https://orcmid.github.io/nfoTools/dev/D211101a/^>.
 
-SET VCAPPSRC=src\*.c
+REM SET VCAPPSRC=src\*.c
 rem VCrayApp treats this as a special case.  If this is defined to a location
 rem and files elsewhere, a complete absolute location must be provided.
 
@@ -209,12 +209,12 @@ IF ERRORLEVEL 1 GOTO :FAIL5
 IF "%VCAPPEXE%" == "" GOTO :NOAPP
 IF NOT "%VCAPPEXE%" == "RenameMe.exe" GOTO :APPBUILD
 IF "%VCsplice%" == "+" GOTO :SUCCESS
-IF NOT "%VCrayAppHost%" == "" GOTO :SUCCESS
+IF NOT "%VCrayAppHost%" == "" GOTO :FUMBLED
 
 :NOAPP
 ECHO: [VCrayApp] **** ALL SET. CACHE CONFIRMED. NO APP TO COMPILE YET. ****
-ECHO:            Have the C Language source code and any headers in the
-ECHO:            %SRC% SRC folder.  Then put the app .exe name in the APP_EXE
+ECHO:            Have the C Language source code and any headers at
+ECHO:            VCRAYSRC.  Then put the app .exe name in the VCAPPEXE
 ECHO:            setting at the beginning of VCrayApp.bat or otherwise set it.
 :MAYBEAPP
 ECHO:            Once that's done, VCrayApp.bat will compile the app.
@@ -234,9 +234,9 @@ GOTO :SUCCESS
 
 :NOSRC
 ECHO: [VCrayApp] **** NO SOURCE CODE LOCATION SUPPLIED ****
-ECHO:            The SRC environment variable must be set the location of
+ECHO:            The VCAPPSRC environment variable must be set the location of
 ECHO:            the App source code to be compiled.  This should be either
-ECHO:            SET SRC="src\*.c" or a full-path location to use.
+ECHO:            "SET VCAPPSRC=src\*.c" or a full-path location to use.
 GOTO :MAYBEAPP
 
 :APPBUILD
@@ -405,6 +405,7 @@ rem For additional information, see the accompanying NOTICE.txt file.
 rem
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 rem
+rem 0.0.32 2023-03-09T00:16Z Verify setting cases and touch-up the handling
 rem 0.0.31 2023-03-08T21:13Z Complete Filtering on the prologue settings.
 rem 0.0.30 2023-03-03T21:10Z Initial VCrayAppHost and VCrayAppHostURL setting
 rem 0.0.29 2023-03-02T19:19Z Introduce VCrayAppHost and clean up around it.
