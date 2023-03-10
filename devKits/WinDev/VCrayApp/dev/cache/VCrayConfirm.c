@@ -1,4 +1,4 @@
-/* VCrayConfirm.c 0.1.8               UTF-8                       2023-03-03
+/* VCrayConfirm.c 0.1.9               UTF-8                       2023-03-10
    -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                     CONFIRMATION OF RAYLIB APP CACHE SETUP
@@ -28,6 +28,8 @@
    VCrayConfirm.c FEATURES REQUIRE STANDARD C11 OR LATER COMPILATION.
 
    */
+
+#define VCRAYCONFIRM "VCrayConfirm 0.1.9"
 
 #include <stddef.h>   // for NULL
 #include <string.h>   // for strncat_s(), strncmp()
@@ -91,6 +93,7 @@ int main(void)
     strncat_s( line2, LINE_MAX,
                verstring, _TRUNCATE);
 
+    // DETERMINE VARIABLE INFORMATION
     // determine whether a Dev version is being used
     bool isDev = false;
     int i = 0;
@@ -102,53 +105,90 @@ int main(void)
 
     // ADAPT TO HOSTING, APP_EXE, AND SRC CASES
 
-    char VCrayAppHost[LINE_MAX+1] = { '\0' };
-    bool isHosted = true;
-    char *pVCrayAppHost = getenv("VCrayAppHost");
-    if ( pVCrayAppHost == NULL )
-         isHosted = false;
-    if (isHosted)
-         strncat_s( VCrayAppHost, LINE_MAX,
-                    pVCrayAppHost, _TRUNCATE);
 
-    char VCrayAppHostURL[LINE_MAX+1] = { '\0' };
-    bool hasURL = true;
-    char *pVCrayAppHostURL = getenv("VCrayAppHostURL");
-    if (pVCrayAppHostURL == NULL)
-         hasURL = false;
-    if (hasURL)
-         strncat_s( VCrayAppHostURL, LINE_MAX,
-                    pVCrayAppHostURL, _TRUNCATE);
-
-    // determine SRC location, if any
-    bool isSRC = true;
+    // Determine isSRC and VCSRC[]
     char VCSRC[LINE_MAX+1] = { '\0' };
 
-    char *pVCappSRC = getenv("SRC");
+    bool isSRC = true;
+    char *pVCappSRC = getenv("VCAPPSRC");
     if( pVCappSRC == NULL )
-         { pVCappSRC = "omitted";
+         { pVCappSRC = "not defined";
            isSRC = false; }
+
     strncat_s( VCSRC, LINE_MAX,
                pVCappSRC, _TRUNCATE );
 
-    // determine APP_EXE value, if any
-    bool isEXE = true;
+    // Determine isEXE, hasName, and VCEXE[]
     char VCEXE[LINE_MAX+1] = { '\0' };
 
-    char *pVCappEXE = getenv("APP_EXE");
+    bool isEXE = true;
+    char *pVCappEXE = getenv("VCAPPEXE");
     if ( pVCappEXE == NULL)
-         { pVCappEXE = "omitted";
+         { pVCappEXE = "not defined";
            isEXE = false; }
-    strncat_s( VCEXE, LINE_MAX,
+
+     strncat_s( VCEXE, LINE_MAX,
                pVCappEXE, _TRUNCATE );
 
-// ************* UNDER CONSTRUCTION *****************
+    bool hasName = true;
+    if ( !strncmp(pVCappEXE, "RenameMe.exe", 12) )
+         { hasName = false;
+           strncat_s( VCEXE, LINE_MAX,
+                      " (needs replacing)", _TRUNCATE );
+           }
 
+    // Identify Source, defined or not
     char line3[LINE_MAX+1] = { '\0' };
     strncat_s( line3, LINE_MAX,
                "SRC is ", _TRUNCATE);
     strncat_s( line3, LINE_MAX,
                VCSRC, _TRUNCATE );
+
+    // Identify EXE, defined or not
+    char line4[LINE_MAX+1] = { '\0' };
+    strncat_s( line4, LINE_MAX,
+               "EXE is ", _TRUNCATE);
+    strncat_s( line4, LINE_MAX,
+               VCEXE, _TRUNCATE );
+
+
+    // Determine isHosted and VCrayAppHost[]
+    char VCrayAppHost[LINE_MAX+1] = { '\0' };
+
+    bool isHosted = true;
+    char *pVCrayAppHost = getenv("VCrayAppHost");
+    if ( pVCrayAppHost == NULL )
+         {  pVCrayAppHost = "No identified host";
+            isHosted = false; }
+
+    strncat_s( VCrayAppHost, LINE_MAX,
+               pVCrayAppHost, _TRUNCATE);
+
+    // Determine hasURL and VCrayAppHostURL[]
+    char VCrayAppHostURL[LINE_MAX+1] = { '\0' };
+
+    bool hasURL = true;
+    char *pVCrayAppHostURL = getenv("VCrayAppHostURL");
+    if (pVCrayAppHostURL == NULL)
+         { pVCrayAppHostURL = "https://example.com";
+           hasURL = false; }
+
+    strncat_s( VCrayAppHostURL, LINE_MAX,
+               pVCrayAppHostURL, _TRUNCATE);
+
+    // Identify Any Host
+    char line5[LINE_MAX+1] = { '\0' };
+    strncat_s( line5, LINE_MAX,
+               VCrayAppHost, _TRUNCATE);
+    strncat_s( line5, LINE_MAX,
+               " is operating VCrayApp", _TRUNCATE);
+
+    // Identify Any Host URL (used only if also isHosted)
+    char line6[LINE_MAX+1] = { '\0' };
+    strncat_s( line6, LINE_MAX,
+               "See ", _TRUNCATE );
+    strncat_s( line6, LINE_MAX,
+               VCrayAppHostURL, _TRUNCATE );
 
 
     // RAYLIB INITIALIZATION
@@ -172,26 +212,52 @@ int main(void)
 
             ClearBackground(RAYWHITE);
 
-            DrawText("VCrayConfirm 0.1.8",
+            DrawText(VCRAYCONFIRM,
                      90, 50, 20, GRAY);
 
-            DrawText(line1,
+            DrawText(line1, // VS Command Prompt version
                      90, 100, 20, BLUE);
             DrawText("17.5.0 and later have "
                      "improved C99/C11 support.",
                      140, 130, 20, GRAY);
 
-            DrawText(line2,
+            DrawText(line2, // presumed raylib Version
                      90, 160, 20, BLUE);
+            int nextLine = 185;
             if (isDev)
                  { DrawText("Thank you for testing with a -dev version.",
-                            140, 185, 20, GRAY);
+                            140, nextLine, 20, GRAY);
                    DrawText("When stable builds required, "
                             "use a release version.",
-                            140, 210, 20, GRAY); }
+                            140, nextLine+25, 20, GRAY);
+                   nextLine += 55; }
+
+            DrawText(line3, // SRC location
+                     90, nextLine, 20, BLUE );
+            DrawText(line4, // EXE location
+                     90, nextLine+25, 20, BLUE);
+            nextLine += 60;
+
+            if (isHosted)
+                 { DrawText(line5, // Host Name
+                            90, nextLine, 20, BLUE );
+                   if (hasURL)
+                        { DrawText( line6, // URL only if Host
+                                    90, nextLine+25, 20, GRAY );
+                          nextLine += 50; }
+                   else nextLine +=30;
+                   }
+
+            if (isHosted)
+                 DrawText( "Settings are controlled by the host.",
+                           140, nextLine, 20, GRAY );
+            else if (!hasName || !isSRC)
+                     DrawText( "Adjust the VCrayApp.bat settings"
+                               " to compile project code.",
+                               90, nextLine, 20, RED);
 
             DrawText("Press ESC to Continue",
-                     90, 400, 20, RED);
+                     90, 400, 20, BLUE);
 
         EndDrawing();
         //--------------------------------------------------------------------
@@ -207,6 +273,7 @@ int main(void)
 
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+   0.1.9 2023-03-10T02:16Z Complete draft beta candidate
    0.1.8 2023-03-02T21:08Z Capture VCrayAppHost and VCrayAppHostURL presence.
    0.1.7 2023-02-27T20:19Z Defend against getenv() NULL returns
    0.1.6 2023-02-26T20:16Z VCrayApp 0.1.0 Release candidate

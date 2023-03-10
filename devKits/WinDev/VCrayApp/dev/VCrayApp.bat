@@ -1,5 +1,5 @@
 @echo off
-rem VCrayApp 0.1.0 VCrayApp.bat 0.0.33 UTF-8                       2023-03-10
+rem VCrayApp 0.1.0 VCrayApp.bat 0.0.34 UTF-8                       2023-03-10
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 rem                  BUILDING RAYLIB APP WITH VC/C++ TOOLS
@@ -203,16 +203,17 @@ DEL *.obj >nul 2>nul
 
 CD %VCfrom%
 IF NOT EXIST %~dp0app\%VCEXE% GOTO :FAIL5
-ECHO: [VCrayApp] Launching %VCEXE%.  Exit App to Continue Session
+ECHO: [VCrayApp] Launching %VCEXE%.  Exit App to Continue Session  %VCterse%
+ECHO: %VCterse%
 %~dp0app\%VCEXE%
 IF ERRORLEVEL 1 GOTO :FAIL5
 
 IF "%VCAPPEXE%" == "" GOTO :NOAPP
 IF NOT "%VCAPPEXE%" == "RenameMe.exe" GOTO :APPBUILD
 IF "%VCsplice%" == "+" GOTO :SUCCESS
-IF NOT "%VCrayAppHost%" == "" GOTO :FUMBLED
 
 :NOAPP
+IF NOT "%VCrayAppHost%" == "" GOTO :FUMBLED
 ECHO: [VCrayApp] **** ALL SET. CACHE CONFIRMED. NO APP TO COMPILE YET. ****
 ECHO:            Have the C Language source code and any headers at
 ECHO:            VCRAYSRC.  Then put the app .exe name in the VCAPPEXE
@@ -406,6 +407,7 @@ rem For additional information, see the accompanying NOTICE.txt file.
 rem
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 rem
+rem 0.0.34 2023-03-10T02:17Z Initial Beta Candidate
 rem 0.0.33 2023-03-10T00:07Z Notification on launching VCrayConfirm
 rem 0.0.32 2023-03-09T00:16Z Verify setting cases and touch-up the handling
 rem 0.0.31 2023-03-08T21:13Z Complete Filtering on the prologue settings.
