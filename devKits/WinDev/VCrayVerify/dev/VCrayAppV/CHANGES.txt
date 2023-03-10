@@ -1,0 +1,107 @@
+VCrayApp 0.1.0 CHANGES.txt 0.0.4    UTF-8                         2023-03-09
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+                       AN NFOTOOLS COMING ATTRACTION
+                       =============================
+
+<https://github.com/orcmid/nfoTools/blob/master/devKits/WinDev/VCrayApp/dev/CHANGES.txt>
+
+                    CHANGES MADE FOR RAYLIB APP 0.1.0
+                    ---------------------------------
+
+    This file provides tracking of changes made to VCrayApp as part of
+    developing VCrayApp 0.1.0 (beta) as the successor of VCrayApp 0.0.0
+    (alpha).  These changes will also be documented in the release information
+    at <https://orcmid.github.com/nfoTools/dev/D211101/D211101e/>.
+
+    Further information on the development of VCrayApp 0.1.0 can be found
+    at the GitHub project, <https://github.com/orcmid/nfoTools/projects/11>,
+    and nfoTools issues, <https://github.com/orcmid/nfoTools/issues>.
+
+CHANGES IN 0.1.0
+****************
+
+BREAKING: The VCrayApp.bat prologue settings for GAME_EXE and SRC have been
+changed to VCAPPEXE and VCAPPSRC.
+
+Note 1: The value of VCAPPEXE does not have to match the name of any of the
+project source files; any one (and exactly one) of those files can provide
+and external main() definition.
+
+Note 2: VCAPPSRC value src/*.c is special.  For any different value, an
+absolution filepath should be used, whether or not with wild cards.
+
+NEW FEATURES
+
+Environment variable VCrayAppHost can now be set to the name of a larger
+application in which VCrayApp is embedded as a customized component.  This
+is reflected in D211101a/ treatment of VCrayApp setup and in messages from
+VCrayApp.bat.
+
+Environment variable VCrayAppHostURL can now be set to the location of more
+details on VCrayApp messages when VCrayApp is running under a host project.
+
+VCrayApp will detect and report the version of raylib and of VS Command Prompt
+being used.  There is failure checking on versions of raylib that fail with
+the Microsoft VC/C++ compiler.
+
+VCrayApp will detect when in-progress -dev versions of raylib are being used.
+
+CHANGES
+
+VCrayApp will compile and run the cache\VCrayConfirm.c program every time the
+cache of raylib code is created, providing additional confirmation that the
+cache is built and which version of raylib it is set with.
+
+VCrayConfirm.c has been extended to report more about the VCrayApp settings
+and the readiness for use of the cache with particular VC and raylib versions.
+
+Reporting by VCrayApp is abbreviated when "+" is set on an embedded-operation
+case and also when VCrayAppHost is set.
+
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+                       Copyright 2023 Dennis E. Hamilton
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+ ATTRIBUTION
+
+   Hamilton, Dennis E. Changes Made for VCrayApp 0.1.0.  nfoTools text file
+   version 0.0.4 dated 2023-03-09, available on the Internet as a version of
+   <https://github.com/orcmid/nfoTools/blob/master/devKits/WinDev/VCrayApp/dev/CHANGES.txt>
+
+TODO
+
+ * Reflect improvements, especially addition of links, in the usability.
+
+ * Include CHANGES.txt in the delivered Zip.
+
+ * Include CHANGES.txt alongside VCrayApp-0.1.0.txt at D211101e downloads.
+
+ * Clearsign the published CHANGES.txt.
+
+
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+ 0.0.4 2023-03-09T17:55Z Catch up with changes already made
+ 0.0.3 2023-03-08T20:21Z Breaking Changes about GAME_EXE and SRC, now a
+       VCAPPEXE and VCAPPSRC.
+ 0.0.2 2023-03-03T21:11Z Changes about VCrayAppHost and VCrayAppURL.
+ 0.0.1 2023-03-02T19:27Z Reflect introduction of VCrayAppHost
+ 0.0.0 2023-03-02T17:19Z Placeholder draft
+
+
+                        ***** end of CHANGES.txt *****

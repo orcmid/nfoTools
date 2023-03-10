@@ -1,21 +1,33 @@
-# .gitignore 0.0.3                  UTF-8                       dh:2023-02-15
+# .gitignore 0.0.5                  UTF-8                         2023-02-19
 #---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 #
-
-#             .GITIGNORE FOR KEEPING BUILDS OUT OF THE REPOSITORY
+#                    VCrayApp cache\ Exclusions from Git
+#                    ===================================
 #
-#   This .gitignore file is intended to exclude intermediate compilation
-#   materials from the git repository.  If this were included from a kit,
-#   there would be other files also excluded.
+#              .GITIGNORE FOR KEEPING BUILDS OUT OF A REPOSITORY
+#
+#   This .gitignore file is intended to exclude intermediate compilation and
+#   cache *.obj materials from the git repository.  The idea is to avoid
+#   tainting a clone, an install, or a VCrayApp-based project in an user's own
+#   git-backed project.
 
-#   MS Built Tools Intermediates
+#   Exclude MS Built Tools Intermediates from repositories
 *.obj
+
+#   Exclude Cache-housed executables and generated batch scripts
 *.exe
 *.bat
 
+#   Exclude files that are created dynamically and also ephemeral
+raylibCode.opt
+VCrayVer.bat
+
 #---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-# 0.0.3 2023-02-15T21:50Z Adjust to exclude all executable and intermediates
+# 0.0.5 2023-02-19T22:37Z Exclude ephemeral derived files
+# 0.0.4 2023-02-12T19:56Z Touch up the commentary
+# 0.0.3 2023-02-12T16:40Z Adjust for having other compiled/generated transient
+#       materials.
 # 0.0.2 2021-10-20T20:09Z Adjust for renaming to cache
 # 0.0.1 2021-09-28T15:10Z Rename tmp to wrk and recognized kit difference
 # 0.0.0 2021-09-27T23:20Z Block expected intermediates - placeholder

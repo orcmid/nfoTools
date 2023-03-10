@@ -1,4 +1,4 @@
-VCrayVerify-0.0.0 dev.txt 0.0.5     UTF-8                         2023-02-27
+VCrayVerify-0.0.0 dev.txt 0.0.6     UTF-8                         2023-03-10
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 <https://github.com/orcmid/nfoTools/blob/master/devKits/WinDev/VCrayVerify/dev/dev.txt>
@@ -55,8 +55,8 @@ MANIFEST
         Notification applicable to the VCrayVerify content
 
     VCrayAppV\
-        The customized VCrayApp 0.0.0 that is used for the compiling-and-run
-        step of each verification.
+        The customized VCrayApp 0.1.0 draft release candidate that is used
+        for the compiling-and-run step of each verification.
 
     raylib\ (not delivered, not under VCrayVerify source-control)
         An extracted raylib version (or developer clone) to verify, a peer
@@ -84,7 +84,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. Develop VCrayVerify Test Harnesses for Verifying
-   raylib Examples, version 0.0.5 dated 2023-02-27, available on the Internet
+   raylib Examples, version 0.0.6 dated 2023-03-10, available on the Internet
    as a version of
    <https://github.com/orcmid/nfoTools/blob/master/devKits/WinDev/VCrayVerify/VCrayVerify.txt>
 
@@ -109,8 +109,14 @@ TODO
    internal calls on VCrayApp.bat will all use "+" and any "*" will be passed
    through from VCrayVerify.
 
- * The default operation is to build and run all of the currently-covered
-   examples.
+ * When -c is used with VCrayVerify, it will do a cache build at the beginning
+   but not for subsequent operations in the same sequence of runs
+
+ * When -r is used with VCrayVerify, it will cause the runs to occur.
+   Otherwise, the setup is confirmed without compilation ?????????????????
+
+ * The default operation is to confirm operation and then present the usage
+   information.
 
  * There is a way to specify one of the 9 raylib\example\ subfolders.  There
    is a way to specify any of the individual programs having a VCrayVerify
@@ -133,25 +139,24 @@ TODO
 
  * I need to be cautious of VCrayApp customizations for VCrayVerify.  I want
    VCrayApp to be close to a drop-in as much as possible.
-   I'd like not to adjust much and I need to figure out, there, how to avoid
-   customizing it every time there is a VCrayApp release.  There is enough to
-   manage in VCrayVerify with regard to raylib changes, VC/C++ compatibility,
-   etc.  Ideally, VCrayVerify would not need to change SRC and it might
-   change APP_EXE separately.  Or we always use VCrayVerify.exe since there
-   does not have to be any source-file agreement.  This means that VCrayVerify
-   mght need to have an initial program in src\ that gets compiled until
-   another program is established. Alternatively, VCrayVerify could use
-   sources directly in the example folders.
 
  * I think the solution might be to remove the %APP_EXE% and %SRC% settings
-   from VCrayApp.bat.
+   from VCrayApp.bat.  That will
 
  * I'm not thrilled about having a VCrayAppV folder although the idea is to
-   have a project name.  To reflect the customization, I might also have a
-   VCrayAppV.bat to reflect there is a customized script.  Makes sense.
+   have a project name.  To reflect the customization, I will make a notice,
+   provide the host name, and remark out the SRC and EXE, letting them be
+   set by VCrayVerify.
+
+ * I am switching to the VCrayApp 0.1.0 draft release candidate as part of
+   its confirmation in hosted usage.
+
+ * Switch to using the raylib -dev and getting a heads-up on having the
+   examples working in the next raylib release.
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.6 2023-03-10T18:38Z Adjust for using the VCrayApp 0.1.0 draft candidate.
  0.0.5 2023-02-27T18:13Z Manage TODOs, consider VCrayApp customization
  0.0.4 2023-01-22T17:31Z Touch-ups and Manage TODOs
  0.0.3 2023-01-22T16:03Z Touch-ups and Manage TODOs
