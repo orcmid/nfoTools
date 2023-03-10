@@ -1,5 +1,5 @@
 @echo off
-rem VCrayApp 0.1.0 VCrayApp.bat 0.0.34 UTF-8                       2023-03-10
+rem VCrayApp 0.1.0 VCrayApp.bat 0.0.35 UTF-8                       2023-03-10
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 rem                  BUILDING RAYLIB APP WITH VC/C++ TOOLS
@@ -216,7 +216,7 @@ IF "%VCsplice%" == "+" GOTO :SUCCESS
 IF NOT "%VCrayAppHost%" == "" GOTO :FUMBLED
 ECHO: [VCrayApp] **** ALL SET. CACHE CONFIRMED. NO APP TO COMPILE YET. ****
 ECHO:            Have the C Language source code and any headers at
-ECHO:            VCRAYSRC.  Then put the app .exe name in the VCAPPEXE
+ECHO:            VCAPPSRC.  Then put the app .exe name in the VCAPPEXE
 ECHO:            setting at the beginning of VCrayApp.bat.
 :MAYBEAPP
 ECHO:            Once that's done, VCrayApp.bat will compile the app.
@@ -407,6 +407,7 @@ rem For additional information, see the accompanying NOTICE.txt file.
 rem
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 rem
+rem 0.0.35 2023-03-10T18:52Z Fix VCRAYSRC/VCAPPSRC typo
 rem 0.0.34 2023-03-10T02:17Z Initial Beta Candidate
 rem 0.0.33 2023-03-10T00:07Z Notification on launching VCrayConfirm
 rem 0.0.32 2023-03-09T00:16Z Verify setting cases and touch-up the handling
