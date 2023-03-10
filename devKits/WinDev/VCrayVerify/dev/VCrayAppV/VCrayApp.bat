@@ -1,30 +1,24 @@
 @echo off
-rem VCrayApp 0.1.0 VCrayApp.bat 0.0.34 UTF-8                       2023-03-10
+rem VCrayApp 0.1.0-dev VCrayApp.bat 0.0.34 UTF-8                   2023-03-10
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 rem                  BUILDING RAYLIB APP WITH VC/C++ TOOLS
 rem                  =====================================
 
-rem This code depends on the presence of cache\, app\, src\ and ..\raylib\.
-rem It must be operated within a VS Command Prompt command-line environment.
-rem Use the script without modification until installation and operation is
-rem confirmed.  Then alter the APP_EXE and SRC vars for the specific project.
-
-rem NOTE: If VCrayApp.bat is incorporated as a component of a larger project,
-rem       setting VCrayAppHost will provide for smoother operation as a
-rem       component. Similarly, VCrayAppHostURL is added to failure messages
-rem       If defined.
+rem This is a customization of VCrayApp.bat 0.0.34, from VCrayApp 0.1.0-dev.
+rem For separate use of release versions of VCrayApp, consult
+rem ^<https://orcmid.github.io/dev/D211101/^>.
+rem
+rem When VCrayAppV is updated, the customizations to be restored are at the
+rem VCrayVerify file VCrayAppV-prologue.txt
 
 SETLOCAL ENABLEEXTENSIONS
 IF ERRORLEVEL 1 GOTO :FAIL0
 
-REM *** PROLOGUE*** READ CAREFULLY, CHANGE THESE SETTINGS AS NECESSARY ****
+REM *** PROLOGUE*** DON'T TOUCH. CUSTOMIZED FOR VCrayVerify ***************
 REM ***********************************************************************
 
-rem When VCrayApp is installed for use as a component in a larger project,
-rem set the name of that project in VCrayAppHost here.  If a host sets this
-rem directly, this SET will be commented (rem) out.
-SET VCrayAppHost=
+SET VCrayAppHost=VCrayVerify
 
 rem When VCrayAppHost is set, a URL for additional handling of VCrayApp fails
 rem will be presented if VCrayAppHostURL if set.  If set directly by a host,
@@ -35,7 +29,7 @@ rem VCrayApp does not compile a project's source code until VCAPPEXE is set.
 rem If a VCrayAppHost will set it, the line below will be commented out.
 rem Otherwise, replace "RenameMe" in the setting of VCAPPEXE here.
 
-SET VCAPPEXE=RenameMe.exe
+REM VCAPPEXE=RenameMe.exe
 rem Hint: don't use RenameMe.exe for your app.  Do use the complete .exe name.
 
 rem VCrayApp will not attempt to compile a project's source code until
@@ -44,7 +38,7 @@ rem be commented out.  Otherwise, your project should use the src\ folder here
 rem in the VCrayApp folder.  For further information about VCrayApp
 rem customizations see ^<https://orcmid.github.io/nfoTools/dev/D211101a/^>.
 
-SET VCAPPSRC=src\*.c
+REM VCAPPSRC=src\*.c
 rem VCrayApp treats this as a special case.  If this is defined to a location
 rem and files elsewhere, a complete absolute location must be provided.
 
@@ -52,7 +46,7 @@ rem *********** NO CHANGES ARE NEEDED BELOW HERE *****************************
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 rem Designate the semantic-versioned distribution
-SET VCrayApp=0.1.0
+SET VCrayApp=0.1.0-dev
 SET VCraylib=%~dp0..\raylib
 rem XXX This is a fragile dependency also in cache\rayLibCode.opt files and
 rem     other parts of this script.
