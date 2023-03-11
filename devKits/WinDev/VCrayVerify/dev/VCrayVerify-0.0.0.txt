@@ -161,6 +161,8 @@ MANIFEST OF VCrayVerify-0.0.0.zip
     NOTICE.txt 1.0.2 2,170 byte 2023-03-11T20:14Z version
         applicable NOTICE for VCrayVerify-0.0.0.zip and its content
 
+    VCrayVerify.bat
+
     VCrayVerify-0.0.0.txt 0.0.7 11,862 byte 2023-01-07T20:49 clearsigned
         This description file on organization of the archive and use of its
         materials.
@@ -204,7 +206,7 @@ MANIFEST OF VCrayVerify-0.0.0.zip
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
- 0.0.1 2023-03-11T20:43Z Adjustment of provisional text with boilerplate gone
+ 0.0.1 2023-03-11T23:10Z Adjustment of provisional text with boilerplate gone
  0.0.0 2023-01-16T20:44Z Placeholder draft with VCrayApp-0.0.0.txt 0.0.7
        boilerplate
 
