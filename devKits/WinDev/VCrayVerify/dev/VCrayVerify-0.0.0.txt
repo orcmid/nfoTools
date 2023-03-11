@@ -1,12 +1,12 @@
 
 
-VCrayVerify-0.0.0.txt 0.0.1           UTF-8                        2023-01-**
+VCrayVerify-0.0.0.txt 0.0.1           UTF-8                        2023-03-11
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                       NFOTOOLS TEST FIXTURE FOR RAYLIB
                       ================================
 
-    <https://orcmid.github.io/dev/**somewhere**/VCrayVerify-0.0.0.txt>
+    <https://orcmid.github.io/dev/D230202/D230202d/VCrayVerify-0.0.0.txt>
 
 
          VERIFYING RAYLIB EXAMPLES WITH VS DEVELOPER COMMAND PROMPT
@@ -60,6 +60,7 @@ VCrayVerify-0.0.0.txt 0.0.1           UTF-8                        2023-01-**
     of licensed Visual Studio can also be used, all via their Native Tools
     Command Prompt.
 
+
  PREREQUISITES AND DEPENDENCIES
 
     Operation of VCrayVerify involves the following tools along with some
@@ -76,13 +77,13 @@ VCrayVerify-0.0.0.txt 0.0.1           UTF-8                        2023-01-**
      + A text-editor for work on source code, other files, all in plain text
        (Visual Studio Code recommended for its C/C++ and Microsoft support)
 
-
     The first six (*) are essential.  The remainder (+) are optional and
     recommended mainly for your own development projects that make further use
     of, or contribute to, raylib and VCrayVerify.  There are alternatives.
     The specific ones happen to be those relied upon in the development of
     nfoTools projects.  For more information on dependencies, see
-    <https://orcmid.github.io/nfoTools/dev/**mainplace**>.
+    <https://orcmid.github.io/nfoTools/dev/D230202>.
+
 
 DOWNLOADS AND SETUP
 
@@ -100,7 +101,8 @@ DOWNLOADS AND SETUP
 
     It is useful to download VCrayVerify-0.0.0.zip to a location that you can
     use as a source of copies for one or more VCrayVerify setups, as in side-
-    by-side comparision with different raylib\ versions.
+    by-side comparision with different raylib versions.
+
 
 EXTRACTION AND RENAMING OF VCrayVerify-0.0.0.zip CONTENT
 
@@ -119,85 +121,64 @@ EXTRACTION AND RENAMING OF VCrayVerify-0.0.0.zip CONTENT
     Click "Extract".
 
     There should now be a VCrayVerify-0.0.0\ folder in the same folder as the
-    Zip file you extracted.  Rename that sub-folder to the name you want for
-    this VCrayVerify project of yours.  This is your verification folder.
+    Zip file you extracted.  This is the verification-operation folder.  It
+    can be renamed to suit your and may be important if you have more than
+    one installation of the same version.
 
-***** EDITOR'S NOTE: FOLLOWING MATERIAL NOT CUSTOMIZED YET ******************
+INCORPORATING A raylib\ FOLDER WITHIN YOUR VCrayVerify PROJECT.
+
+***** EDITOR'S NOTE: THIS PORTION NOT FILLED-IN YET ******************
 
 
- CONFIRMING THE VCrayApp SETUP AND OPERATION
+ CONFIRMING THE VCrayVerify SETUP AND OPERATION
 
-    Using a Visual Studio Developer Command Prompt, navigate to your project
-    folder and use the command
+    Using a Visual Studio Developer Command Prompt, navigate to the folder
+    of the extracted VCrayVerify use the command
 
-        VCrayApp ?
+        VCrayVerify ?
 
-    To confirm that the project folder is setup properly and that VCrayApp.bat
-    is operating.
+    to confirm that the project folder is setup properly and that
+    VCrayVerify.bat is operating.
 
     If that succeeds, use the command
 
-        VCrayApp -r
+        VCrayVerify -c
 
-    This will compile raylib components to the cache\ folder, compile a sample
-    program to the app\ folder, and then operate that program.
+    This will compile raylib components to the VCrayAppV\cache\ folder and
+    demonstrate that compilation with the installed raylib\ is successful.
 
     If there are any failure messages, correct for them until this command
-    succeeds.  See <https://orcmid.github.io/nfoTools/dev/D211101> for
-    additional information.
-
-    Use your text editor to modify VCrayApp.bat for your own project instead
-    of the sample.  Only two changes are required, as specified in that file.
+    succeeds.  See <https://orcmid.github.io/nfoTools/dev/D230202/> for
+    additional information.  If an error message is from "[VCrayApp], see
+    <https://orcmid.github.io/nfoTools/dev/D211101/> about those as well.
 
 
-MANIFEST OF VCrayApp-0.0.0.zip
+MANIFEST OF VCrayVerify-0.0.0.zip
 
-    NOTICE.txt 1.0.2 2,056 byte 2023-01-02T22:09Z version
-        applicable NOTICE for VCrayApp-0.0.0.zip and its content
+    dev.txt
+        copy of the summary and change history of VCrayVerify development.
 
-    VCrayApp-0.0.0.txt 0.0.7 11,862 byte 2023-01-07T20:49 clearsigned version
+    NOTICE.txt 1.0.2 2,170 byte 2023-03-11T20:14Z version
+        applicable NOTICE for VCrayVerify-0.0.0.zip and its content
+
+    VCrayVerify-0.0.0.txt 0.0.7 11,862 byte 2023-01-07T20:49 clearsigned
         This description file on organization of the archive and use of its
         materials.
 
-    VCrayApp.bat 0.0.18 10,901 byte 2022-12-31T20:30Z version
-        Script that, when run, will confirm VC/C++ command-prompt settings
-        and perform compilation of a raylib cache\ and project source codes,
-        to deliver a compiled result in app\.
+    raylib\
+        Placeholder for the raylib source code to be used in confirmations
+        via VCrayVerify.  VCrayVerify operation will fail if this folder is
+        not replaced by a complete raylib source-code folder.
 
-    .vscode\                      provided for use of Visual Studio Code with
-        .vscode.txt                  a .txt project synopsis and manifest for
-        c_cpp_properties.json        the .vscode folder
+    VCrayAppV\
+        A customization of VCrayApp 0.1.0 that is embedded within VCrayVerify.
+        There is no reason for modification of this folder in a release of
+        VCrayVerify.
 
-    app\
-        .gitignore   used to suppress compiled binaries from source control
-        app.txt      synopsis and manifest for the app\ folder
-
-    cache\
-        .gitignore   used to suppress intermediate files from source control
-        cache.txt    synopsis and manifest for the cache\ folder
-        raylibCode.3.7.0.opt
-                     options file for compiling raylib-3.7.0 components
-        raylibCode.4.0.0.opt
-                     options file for compiling raylib-4.0.0 components
-        raylibCode.opt
-                     options file that is used (raylib-4.0.0 default)
-        raylibVars.opt
-                     additional parameters used in compiling the cache
-        rayLinking.opt
-                     options file for linking to make the .exe file
-        VCoptions.opt
-                     options file for both cache\ and project code compilation
-    VerifyConfirm.c
-
-    src\
-        src.txt      synopsis and manifest for the src\ folder
-
-    The supplied text files provide further descriptions and explanations
-    for usage and customization of each folder.
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-                    Copyright 2021-2023 Dennis E. Hamilton
+                    Copyright 2023 Dennis E. Hamilton
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -215,15 +196,15 @@ MANIFEST OF VCrayApp-0.0.0.zip
 
  ATTRIBUTION
 
-   Hamilton, Dennis E. Building raylib Apps with VS Developer Command Prompt.
-   nfoTools file VCrayVerify-0.0.0.txt version 0.0.1 dated 2023-01-07
+   Hamilton, Dennis E. Verifying raylib Examples with VS Developer Command
+   Prompt.  nfoTools file VCrayVerify-0.0.0.txt version 0.0.1 dated 2023-03-11
    available on the internet as a version of
-   <https://orcmid.github.io/dev/D23****/D23*****/VCrayApp-0.0.0.txt>
+   <https://orcmid.github.io/dev/D230202/D230202d/VCrayApp-0.0.0.txt>
 
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
- 0.0.1 2023-01-**
+ 0.0.1 2023-03-11T20:43Z Adjustment of provisional text with boilerplate gone
  0.0.0 2023-01-16T20:44Z Placeholder draft with VCrayApp-0.0.0.txt 0.0.7
        boilerplate
 
