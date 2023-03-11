@@ -1,4 +1,4 @@
-NOTICE.txt 1.0.1                      UTF-8                      2023-01-22
+NOTICE.txt 1.0.2                      UTF-8                      2023-03-11
 
                                VCrayVerify NOTICE
                                ==================
@@ -19,7 +19,7 @@ For specific details, consult the complete Apache License.
 
 THIRD-PARTY ACKNOWLEDGMENT
 
-    The VCrayVerify model and VCrayAppV.bat are inspired by Ramon Santamaria's
+    The VCrayVerify model and VCrayAppV/ are inspired by Ramon Santamaria's
     <https://github.com/raysan5/raylib/blob/master/projects/scripts/build-windows.bat>
     under zlib license, <https://github.com/orcmid/raylib/blob/master/LICENSE>.
 
@@ -31,13 +31,13 @@ INFORMAL SUMMARY
 
     This notification applies only to the materials distributed in the
     VCrayVerify-0.0.0.zip package and not to content from other sources, such
-    as a raylib version that is incorporated for use in VCrayVerify operation.
+    as the raylib version that is incorporated for use in VCrayVerify operation.
 
     You can use and redistribute releases of VCrayVerify without limitation.
     If you modify and/or incorporate VCrayVerify in a distribution of yours,
     you should provide attribution to the origin of VCrayVerify and assert
     that the locatable original form is available under the Apache License
-    at <https://orcmid.github.io/nfoTools/dev/**place-to-be-supplied**>.
+    at <https://orcmid.github.io/nfoTools/dev/D230202/D230202d/>.
 
     You can provide a different license of your own choosing.  That does not
     alter the copyright and license over any portions that do not comprise
