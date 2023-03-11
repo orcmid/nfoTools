@@ -1,5 +1,5 @@
 @echo off
-rem VCrayApp 0.1.0-dev VCrayApp.bat 0.0.34 UTF-8                   2023-03-10
+rem VCrayApp 0.1.0-dev VCrayApp.bat 0.0.35 UTF-8                   2023-03-11
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 rem                  BUILDING RAYLIB APP WITH VC/C++ TOOLS
@@ -46,7 +46,7 @@ rem *********** NO CHANGES ARE NEEDED BELOW HERE *****************************
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 rem Designate the semantic-versioned distribution
-SET VCrayApp=0.1.0-dev
+SET VCrayApp=0.1.0
 SET VCraylib=%~dp0..\raylib
 rem XXX This is a fragile dependency also in cache\rayLibCode.opt files and
 rem     other parts of this script.
@@ -401,6 +401,8 @@ rem For additional information, see the accompanying NOTICE.txt file.
 rem
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 rem
+rem 0.0.35 2023-03-11T01:05Z Configure for VCrayVerify hosting
+rem - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 rem 0.0.34 2023-03-10T02:17Z Initial Beta Candidate
 rem 0.0.33 2023-03-10T00:07Z Notification on launching VCrayConfirm
 rem 0.0.32 2023-03-09T00:16Z Verify setting cases and touch-up the handling
