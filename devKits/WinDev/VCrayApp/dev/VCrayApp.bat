@@ -1,5 +1,5 @@
 @echo off
-rem VCrayApp 0.1.0 VCrayApp.bat 0.0.35 UTF-8                       2023-03-10
+rem VCrayApp 0.1.0 VCrayApp.bat 0.0.36 UTF-8                       2023-03-11
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 rem                  BUILDING RAYLIB APP WITH VC/C++ TOOLS
@@ -281,7 +281,7 @@ IF ERRORLEVEL 1 GOTO FAIL5
 ENDLOCAL
 IF "%VCsplice%" == "+" EXIT /B 0
 ECHO:  %VCterse%
-IF NOT "%VCrun%" == "1" PAUSE
+REM IF NOT "%VCrun%" == "1" PAUSE
 EXIT /B 0
 
 :FAIL8
@@ -343,10 +343,10 @@ GOTO :BAIL
 
 :FAIL0
 ECHO: [VCrayApp] **** FAIL: COMMAND SHELL EXTENSIONS REQUIRED ****
-ECHO:            VCrayApp.bat requires CMDEXTVERSION 2 or greater.  %VCterse%
-ECHO:            This is available wherever VCrayApp.bat is usable. %VCterse%
-ECHO:            %VCterse%
-ECHO:            NO ACTIONS HAVE BEEN PERFORMED                     %VCterse%
+ECHO:            VCrayApp.bat requires CMDEXTVERSION 2 or greater.
+ECHO:            This is available wherever VCrayApp.bat is usable.
+ECHO:
+ECHO:            NO ACTIONS HAVE BEEN PERFORMED
 GOTO :BAIL
 
 :USAGE
@@ -407,6 +407,8 @@ rem For additional information, see the accompanying NOTICE.txt file.
 rem
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 rem
+rem 0.0.36 2023-03-11T22:29Z Fix :FAIL1 before %VCterse% and don't pause on
+rem        successful cases
 rem 0.0.35 2023-03-10T18:52Z Fix VCRAYSRC/VCAPPSRC typo
 rem 0.0.34 2023-03-10T02:17Z Initial Beta Candidate
 rem 0.0.33 2023-03-10T00:07Z Notification on launching VCrayConfirm
