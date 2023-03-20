@@ -1,4 +1,4 @@
-VCrayVerify.txt 0.0.1               UTF-8                         2023-01-19
+VCrayVerify.txt 0.0.2               UTF-8                         2023-03-20
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 <https://github.com/orcmid/nfoTools/blob/master/devKits/WinDev/VCrayVerify/VCrayVerify.txt>
@@ -33,7 +33,7 @@ VCrayVerify.txt 0.0.1               UTF-8                         2023-01-19
     least-than-can-possibly work and its predecessors that do tiny bits, as
     if in test-first development (without the failing business).  The idea is
     to have something that runs at every stage (similar to work on the
-    orcmid/Adv10 game creation)
+    orcmid/Adv10 game creation).
 
 MANIFEST
 
@@ -64,9 +64,9 @@ MANIFEST
 
  ATTRIBUTION
 
-   Hamilton, Dennis E. VCrayNest: DevKit for Shared raylib VCrayApp projects.
-   nfoTools file VCrayNest.txt version 0.0.1 dated 2023-01-19, available on
-   the Internet as a version of
+   Hamilton, Dennis E. VCrayVerify: Test Harness for Verifying raylib
+   examples.  nfoTools file VCrayVerify.txt version 0.0.2 dated 2023-03-20,
+   available on the Internet as a version of
    <https://github.com/orcmid/nfoTools/blob/master/devKits/WinDev/VCrayVerify/VCrayVerify.txt>
 
 TODO
@@ -87,8 +87,7 @@ TODO
    Adv10 having its own verification built in by going solo through the game.
 
  * VCrayVerify.bat will have similar initial parameters to VCrayApp.  The
-   internal calls on VCrayApp.bat will all use "+" and any "*" will be passed
-   through from VCrayVerify.
+   internal calls on VCrayApp.bat will all use "+ *".
 
  * The default operation is to build and run all of the currently-covered
    examples.
@@ -104,12 +103,29 @@ TODO
    app\resources\ folder is the correct one, if any, for the case about to
    be verified.
 
- * There also needs to be a way of detecting/verifying the version of
-   raylib that is installed within the VCrayVerify project folder.  I need
-   to make a feature request.
+ * VCrayApp provides feature information on raylib and this can be used by
+   VCrayVerify for bypass cases involving different versions of VC/C++ and
+   raylib.
+
+ * Development starts with simple cases, starting with VCrayApp.bat as a
+   boilerplate.  An explicit single compile is done first, followed by
+   introduction of techniques for sequencing through folders.  The idea is
+   to have sequencing work naturally and to have there be techniques to short-
+   circuit it in several cases.
+
+ * raylib examples include PNG files of what to expect in the display of the
+   example.  It would be good to have presentation of these under option
+   control, and maybe the default.
+
+ * On startup, we always consider the VCrayAppV app\ folder to be dirty,
+   including any app\resources\ folder.
+
+ * On startup, should we always consider the VCrayAppV cache\ folder to be
+   dirty also?
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.2 2023-03-20T19:18Z More Touch-ups and TODOs
  0.0.1 2023-01-19T18:34Z Touch-ups and TODO additions
  0.0.0 2023-01-15T18:02Z Clone from VCrayNest.txt 0.0.1 to establish the
        VCrayVerify folder.
