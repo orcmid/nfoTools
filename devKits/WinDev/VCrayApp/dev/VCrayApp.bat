@@ -1,5 +1,5 @@
 @echo off
-rem VCrayApp 0.1.0 VCrayApp.bat 0.0.36 UTF-8                       2023-03-11
+rem VCrayApp 0.1.0 VCrayApp.bat 0.0.37 UTF-8                       2023-03-21
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 rem                  BUILDING RAYLIB APP WITH VC/C++ TOOLS
@@ -62,9 +62,16 @@ rem accompanying VCrayApp-%VCrayApp%.txt file.  For further information, see
 rem ^<https://orcmid.github.io/nfoTools/dev/D211101^> and check for the latest
 rem version.
 
-SET VCfrom=%CD%
-rem remembering where VCrayApp.bat is called *from*, so it can be restored on
-rem exit, including after errors.
+SET VCVfrom=%CD%
+rem remembering where VCrayApp.bat is called *from*, so it can be restored
+rem on exit, including after errors.
+SET VCVterse=
+SET VCVhush=
+rem can :BAIL from any point now
+
+SETLOCAL ENABLEEXTENSIONS
+IF ERRORLEVEL 1 GOTO :FAIL0
+
 
 rem SELECT EMBEDDED, TERSE, OR DEFAULT
 rem     %1 value "+" selects smooth non-stop operation for splicing output
@@ -407,6 +414,7 @@ rem For additional information, see the accompanying NOTICE.txt file.
 rem
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 rem
+rem 0.0.37 2023-03-21R22:17Z Fix: Preliminaries so :BAIL is always clean.
 rem 0.0.36 2023-03-11T22:29Z Fix :FAIL1 before %VCterse% and don't pause on
 rem        successful cases
 rem 0.0.35 2023-03-10T18:52Z Fix VCRAYSRC/VCAPPSRC typo
