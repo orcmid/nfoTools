@@ -23,7 +23,8 @@ SET VCVterse=
 SET VCVhush=
 rem can :BAIL from any point now
 
-SETLOCAL ENABLEEXTENSIONS
+IF NOT "%1" == "+" SETLOCAL ENABLEEXTENSIONS
+rem   A host may want the variables defined here and in VCrayAppV.
 IF ERRORLEVEL 1 GOTO :FAIL0
 
 rem SELECT EMBEDDED, TERSE, OR DEFAULT
@@ -98,31 +99,32 @@ rem    VCrayAppV will check additional configuration and raylib\ details
 
 SET VCAPPEXE=
 SET VCAPPSRC=
+CD "%~dp0"
 
 REM BUILD VCrayAppV CACHE IF REQUESTED OR NEEDED
 
-IF "%VCVclean%" == "1" DEL "%~dp0VCrayVerLast.bat" >nul 2>nul
+IF "%VCVclean%" == "1" DEL VCrayVerLast.bat >nul 2>nul
 SET ERRORLEVEL=0
-IF EXIST "%~dp0VCrayVerLast.bat" GOTO :GOTCACHE
-"%~dp0VCrayAppV\VCrayApp" + * -c
-IF ERROLEVEL 1 GOTO :FAIL4
+IF EXIST VCrayVerLast.bat GOTO :GOTCACHE
+CALL VCrayAppV\VCrayApp.bat + * -c
+IF ERRORLEVEL 1 GOTO :FAIL4
 IF "%VCRAYVER%" == "" GOTO :FAIL5
-ECHO SET VCRAYVER=%VCRAYVER% >"%~dp0VCrayVerLast.bat"
+ECHO SET VCRAYVER=%VCRAYVER% >VCrayVerLast.bat
 
 :GOTCACHE
-CALL "%~dp0VCrayVerLast.bat"
+CALL VCrayVerLast.bat
 IF ERRORLEVEL 1 GOTO :FAIL5
 IF "%VCRAYVER%" == "" GOTO :FAIL5
 rem now we know versions, other information, and can continue.
-ECHO RAYVERSION IS %VCRAYVER%
+ECHO: [VCrayVerify] Working with raylib %VCRAYVER%
 
 :SUCCESS
 ENDLOCAL
-IF "%VCsplice%" == "+" EXIT /B 0
+IF "%VCsplice%" == "+" GOTO :FALLOUT
 ECHO:  %VCterse%
 IF NOT "%VCrun%" == "1" PAUSE
 REM *************** FIX THIS DEPENDING ON HOW THINGS RUN DOWN HERE **********
-EXIT /B 0
+GOTO :FALLOUT
 
 REM :FAIL8
 ECHO: [VCrayApp] **** FAILURE: RAYLIB %VCRAYVER% NOT SUPPORTED ****
@@ -222,9 +224,9 @@ ECHO:    VCSRC, VCRAYVER, VCrayAppHost, and VCrayAppHostURL.  VSCMD_VER is
 ECHO:    depended on for confirming operation is under a VS Command Prompt.
 ECHO:
 ENDLOCAL
-IF "%VCVsplice%" == "+" EXIT /B 0
+IF "%VCVsplice%" == "+" GOTO :FALLOUT
 PAUSE
-EXIT /B 0
+GOTO :FALLOUT
 
 :BAIL
 ECHO:
@@ -237,6 +239,11 @@ ECHO:
 ENDLOCAL
 PAUSE
 EXIT /B %ERRORLEVEL%
+
+:FALLOUT
+rem drop out of this script to allow another to continue
+CD %VCVfrom%                                                       %VCVterse%
+SET ERRORLEVEL=0
 
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 rem
@@ -258,6 +265,8 @@ rem For additional information, see the accompanying NOTICE.txt file.
 rem
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 rem
+rem 0.0.3 2023-03-22T21:57Z Smooth Splicing into VCrayApp testing.  Adapt to
+rem       being hosted as well.
 rem 0.0.2 2023-03-22T04:28Z Introduce conditional cache building and VCVRAYVER
 rem 0.0.1 2023-03-21T23:21Z Initial VCrayAppV cache building confirmed
 rem 0.0.0 2023-03-11T23:09Z Placeholder using VCrayApp.bat 0.0.34 boilerplate.

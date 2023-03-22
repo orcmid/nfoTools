@@ -1,5 +1,5 @@
 @echo off
-rem VCrayApp 0.1.0-dev VCrayApp.bat 0.0.35 UTF-8                   2023-03-11
+rem VCrayAppV 0.1.0-dev VCrayApp.bat 0.0.36 UTF-8                  2023-03-22
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 rem                  BUILDING RAYLIB APP WITH VC/C++ TOOLS
@@ -12,8 +12,11 @@ rem
 rem When VCrayAppV is updated, the customizations to be restored are at the
 rem VCrayVerify file VCrayAppV-prologue.txt
 
-SETLOCAL ENABLEEXTENSIONS
+IF NOT "%1" == "+" SETLOCAL ENABLEEXTENSIONS
 IF ERRORLEVEL 1 GOTO :FAIL0
+REM IMPORTANT: When Hosted, the environment variables created by VCrayApp.bat
+REM            will be visible to the host.  This is important for successful
+REM            embedded operation.  See VCrayVerify.bat for example.
 
 REM *** PROLOGUE*** DON'T TOUCH. CUSTOMIZED FOR VCrayVerify ***************
 REM ***********************************************************************
@@ -172,7 +175,7 @@ SET VCRAYVER="3.5.0"
 :BUILDCACHE
 CL %VChush% /w /c @VCoptions.opt @raylibVars.opt @raylibCode.opt %VCterse%
 IF ERRORLEVEL 2 GOTO :FAIL4
-ECHO: [VCrayApp] FRESH CACHE OF RAYLIB %RAYVER% *.OBJ FILES COMPILED
+ECHO: [VCrayApp] FRESH CACHE OF RAYLIB %VCRAYVER% *.OBJ FILES COMPILED
 ECHO: %VCterse%
 
 :VCRAYCONFIRMBUILD
@@ -225,7 +228,7 @@ ECHO: [VCrayApp] **** CANNOT RUN AN APP YET. DO THE SETUP. ****
 GOTO :SUCCESS
 
 :FUMBLED
-ECHO: [VCrayApp] *** NO APP TO RUN YET FOR %VCrayAppHost%
+ECHO: [VCrayApp] *** NO APP TO RUN YET FOR %VCrayAppHost%      %VCterse%
 GOTO :SUCCESS
 
 :NOSRC
@@ -265,18 +268,17 @@ DEL *.obj >nul 2>nul
 ECHO: [VCrayApp] PROGRAM %VCEXE% COMPILED TO %~dp0app
 ECHO: %VCterse%
 
-CD %VCfrom%
 IF NOT "%VCrun%" == "1" GOTO :SUCCESS
 ECHO: [VCrayApp] Launching App.  Exit App to Continue Command Session
 "%~dp0app\%VCEXE%"
 IF ERRORLEVEL 1 GOTO FAIL5
 
 :SUCCESS
-ENDLOCAL
-IF "%VCsplice%" == "+" EXIT /B 0
+CD %VCfrom%
+IF "%VCsplice%" == "+" GOTO :FALLOUT
 ECHO:  %VCterse%
 IF NOT "%VCrun%" == "1" PAUSE
-EXIT /B 0
+GOTO :FALLOUT
 
 :FAIL8
 ECHO: [VCrayApp] **** FAILURE: RAYLIB %VCRAYVER% NOT SUPPORTED ****
@@ -364,10 +366,11 @@ ECHO:    VCVCrayApp, VCfrom, VCterse, VChush, VCsplice, VCclean, VCrun, VCEXE,
 ECHO:    VCSRC, VCRAYVER, VCrayAppHost, and VCrayAppHostURL.  VSCMD_VER is
 ECHO:    depended on for confirming operation is under a VS Command Prompt.
 ECHO:
+
+IF "%VCsplice%" == "+" GOTO :FALLOUT
 ENDLOCAL
-IF "%VCsplice%" == "+" EXIT /B 0
 PAUSE
-EXIT /B 0
+GOTO :FALLOUT
 
 :BAIL
 ECHO:
@@ -380,6 +383,11 @@ ECHO:
 ENDLOCAL
 PAUSE
 EXIT /B %ERRORLEVEL%
+
+:FALLOUT
+rem All success exits fall through the end to avoid exiting a calling script
+SET ERRORLEVEL=0
+rem now just fall off the end of the file
 
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 rem
@@ -401,6 +409,8 @@ rem For additional information, see the accompanying NOTICE.txt file.
 rem
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 rem
+rem 0.0.36 2023-03-22T22:21Z Test :FALLOUT for clean embedded returns
+rem        bypass of SETLOCAL, which must be handled by a Host.
 rem 0.0.35 2023-03-11T01:05Z Configure for VCrayVerify hosting
 rem - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 rem 0.0.34 2023-03-10T02:17Z Initial Beta Candidate
