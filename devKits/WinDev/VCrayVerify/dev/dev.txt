@@ -1,4 +1,4 @@
-VCrayVerify-0.0.0 dev.txt 0.0.6     UTF-8                         2023-03-10
+VCrayVerify-0.0.0 dev.txt 0.0.7     UTF-8                         2023-03-22
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 <https://github.com/orcmid/nfoTools/blob/master/devKits/WinDev/VCrayVerify/dev/dev.txt>
@@ -51,6 +51,12 @@ MANIFEST
         VCrayVerify-0.0.0.zip and for independent examination from the
         release download page.
 
+    VCrayVerLast.bat
+        This is an ephemeral file, not part of the distribution, that is
+        used to retain the value of %VCRAYVER% from the last build of the
+        cache.  This will be the value as refined by VCrayLib.bat and reported
+        by VCrayConfirm.
+
     NOTICE.txt
         Notification applicable to the VCrayVerify content
 
@@ -59,8 +65,8 @@ MANIFEST
         for the compiling-and-run step of each verification.
 
     raylib\ (not delivered, not under VCrayVerify source-control)
-        An extracted raylib version (or developer clone) to verify, a peer
-        of VCrayAppV\ as required by the VCrayApp model.
+        An extracted raylib version (or developer clone) to verify, located
+        as a peer of VCrayAppV\ as required for VCrayApp operation.
 
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
@@ -107,7 +113,10 @@ TODO
 
  * VCrayVerify.bat will have similar initial parameters to VCrayApp.  The
    internal calls on VCrayApp.bat will all use "+" and any "*" will be passed
-   through from VCrayVerify.
+   through from VCrayVerify.  It might be that we want terse all of the time
+   in the hosted operation, VCrayAppV.  I think it will depend on whether we
+   know what is being compiled and can tell what failures look like in the
+   command prompt.
 
  * When -c is used with VCrayVerify, it will do a cache build at the beginning
    but not for subsequent operations in the same sequence of runs
@@ -140,22 +149,34 @@ TODO
  * I need to be cautious of VCrayApp customizations for VCrayVerify.  I want
    VCrayApp to be close to a drop-in as much as possible.
 
- * I think the solution might be to remove the %APP_EXE% and %SRC% settings
-   from VCrayApp.bat.  That will
+ * I will remove the %VCAPPEXE% and %VCAPPSRC% settings from VCrayApp.bat.
+   That will be done by REM of those setting lines.  The approach in VCrayApp
+   0.1.0 will fit perfectly.
 
  * I'm not thrilled about having a VCrayAppV folder although the idea is to
    have a project name.  To reflect the customization, I will make a notice,
    provide the host name, and remark out the SRC and EXE, letting them be
    set by VCrayVerify.
 
- * I am switching to the VCrayApp 0.1.0 draft release candidate as part of
-   its confirmation in hosted usage.
+ * The file VCrayAppV-prologue.txt allows me to quickly drop in a new
+   prologue file as part of recustomizing a new VCrayAppV drop-in.
 
- * Switch to using the raylib -dev and getting a heads-up on having the
-   examples working in the next raylib release.
+ * Solve the problem of needing to know raylib versions even if the cache has
+   not been run by having a file that holds a SET command from the last time
+   A VCrayApp cache build was done.  The file is initially absent.  The -c
+   option will cause that file to be deleted and the filling of the cache will
+   be triggered.  VCVrayVerLast.bat will be the file name.
+
+ * The value of VCrayVerLast should be reported somehow during operatin in
+   cases where the cache is not rebuilt, serving as a reminder.  This file
+   is not included in the distribution.
+
+ * The -v option should be used to view the PNGs that go with the chosen
+   examples.
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.7 2023-03-22T03:46Z Introduce VCrayVerLast.bat and more TODOs
  0.0.6 2023-03-10T18:38Z Adjust for using the VCrayApp 0.1.0 draft candidate.
  0.0.5 2023-02-27T18:13Z Manage TODOs, consider VCrayApp customization
  0.0.4 2023-01-22T17:31Z Touch-ups and Manage TODOs

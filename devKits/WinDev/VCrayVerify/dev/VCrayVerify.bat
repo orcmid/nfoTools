@@ -1,5 +1,5 @@
 @echo off
-rem VCrayVerify 0.0.0 VCrayVerify.bat 0.0.1 UTF-8                  2023-03-21
+rem VCrayVerify 0.0.0 VCrayVerify.bat 0.0.3 UTF-8                  2023-03-22
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 rem               VERIFYING RAYLIB EXAMPLES WITH VC/C++ TOOLS
@@ -74,8 +74,8 @@ IF "%1" == "-c" ( SET VCVclean=1
 IF "%1" == "-r" ( SET VCVrun=1
                   SHIFT /1 )
 
-REM **** WE NEED SOMETHING DIFFERENT HERE, AND ALSO DECISION ON "-r"
-REM ********************************************************************
+REM **** WE NEED SOMETHING DIFFERENT HERE, AND ALSO DECISION ON "-r" and "-v"
+REM *************************************************************************
 
 REM **** CUSTOMIZE HERE FOR ADDITIONAL PARAMETER CASES ********************
 REM ***********************************************************************
@@ -94,16 +94,27 @@ IF NOT EXIST "%~dp0.gitignore" GOTO :FAIL1
 IF NOT EXIST "%~dp0VCrayAppV\VCrayApp.bat" GOTO :FAIL1
 rem    VCrayAppV will check additional configuration and raylib\ details
 
-REM **** In order to know the Version of Raylib, we need to build the
-REM **** VCrayApp cache, whether we need it rebuilt or not.
+
 
 SET VCAPPEXE=
 SET VCAPPSRC=
 
-VCrayAppV\VCrayApp + * -c
-IF ERROLEVEL 1 GOTO :FAIL4
+REM BUILD VCrayAppV CACHE IF REQUESTED OR NEEDED
 
+IF "%VCVclean%" == "1" DEL "%~dp0VCrayVerLast.bat" >nul 2>nul
+SET ERRORLEVEL=0
+IF EXIST "%~dp0VCrayVerLast.bat" GOTO :GOTCACHE
+"%~dp0VCrayAppV\VCrayApp" + * -c
+IF ERROLEVEL 1 GOTO :FAIL4
+IF "%VCRAYVER%" == "" GOTO :FAIL5
+ECHO SET VCRAYVER=%VCRAYVER% >"%~dp0VCrayVerLast.bat"
+
+:GOTCACHE
+CALL "%~dp0VCrayVerLast.bat"
+IF ERRORLEVEL 1 GOTO :FAIL5
+IF "%VCRAYVER%" == "" GOTO :FAIL5
 rem now we know versions, other information, and can continue.
+ECHO RAYVERSION IS %VCRAYVER%
 
 :SUCCESS
 ENDLOCAL
@@ -132,15 +143,14 @@ ECHO:            NO ACTIONS HAVE BEEN PERFORMED                     %VCterse%
 REM   XXXX ANOTHER DEPENDENCY ON raylib\ LOCATION
 GOTO :BAIL
 
-REM :FAIL5
-REM *** SEEMS VCrayApp SPECIFIC
-ECHO: [VCrayApp] ****PRODUCING OR OPERATING %VCEXE% FAILED ****
-ECHO:            Review any reported errors.                        %VCterse%
-ECHO:            Make repairs and reattempt.                        %VCterse%
-ECHO:            RESULTS ARE UNPREDICTABLE                          %VCterse%
-GOTO :BAIL
-
 REM ***** VCRAYVERIFY FAIL CUSTOMIZATIONS DONE BELOW HERE ******************
+
+:FAIL5
+ECHO: [VCrayVerify] **** UNABLE TO OBTAIN raylib VERSION ****
+ECHO:            Review any reported errors.                        %VCVterse%
+ECHO:            Make repairs and reattempt.                        %VCVterse%
+ECHO:            RESULTS ARE UNPREDICTABLE                          %VCVterse%
+GOTO :BAIL
 
 :FAIL4
 ECHO: [VCrayVerify] **** COMPILING/CONFIRMING RAYLIB CACHE FILES FAILED ****
@@ -248,6 +258,7 @@ rem For additional information, see the accompanying NOTICE.txt file.
 rem
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 rem
+rem 0.0.2 2023-03-22T04:28Z Introduce conditional cache building and VCVRAYVER
 rem 0.0.1 2023-03-21T23:21Z Initial VCrayAppV cache building confirmed
 rem 0.0.0 2023-03-11T23:09Z Placeholder using VCrayApp.bat 0.0.34 boilerplate.
 rem
