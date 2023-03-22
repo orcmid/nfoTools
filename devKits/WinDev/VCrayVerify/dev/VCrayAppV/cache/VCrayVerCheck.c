@@ -1,4 +1,4 @@
-/* VCrayVerCheck.c 0.1.0            UTF-8                         2023-02-26
+/* VCrayVerCheck.c 0.1.1            UTF-8                         2023-03-22
    -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                         DETERMINATION OF RAYLIB VERSION
@@ -66,13 +66,13 @@ int main(void)
        # if !defined(RAYLIB_VERSION)
               fputs( "ECHO [VCrayApp] Using unidentified"
                           " version of raylib %VCterse%\n"
-                     "SET VCRAYVER=\"unidentified\"   %VCterse%\n",
+                     "SET VCRAYVER=\"unidentified\"%VCterse%\n",
                      stdout )
        # else
               fputs( "ECHO [VCrayApp] Using version "
                            SHOW(RAYLIB_VERSION)
                            " of raylib %VCterse%\n"
-                     "SET VCRAYVER=" SHOW(RAYLIB_VERSION) "   %VCterse%\n",
+                     "SET VCRAYVER="SHOW(RAYLIB_VERSION)"%VCterse%\n",
                      stdout )
        # endif
 
@@ -82,6 +82,7 @@ int main(void)
     }
 
 /*
+   0.1.1  2023-03-22T21:22Z Clean up spacing in the output SET commands
    0.1.0  2023-02-26T19:40Z Cleaned-up VCrayApp 0.1.0 release candidate
    0.0.13 2023-02-23T05:49Z Use "..." form on all VCRAYVER settings
    0.0.12 2023-02-21T01:39Z Revert back to VCrayVerCheck.c from .cx
