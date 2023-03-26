@@ -1,4 +1,4 @@
-VCrayApp 0.1.0 CHANGES.txt 0.0.6    UTF-8                         2023-03-26
+VCrayApp 0.1.0 CHANGES.txt 0.0.7    UTF-8                         2023-03-26
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                        AN NFOTOOLS COMING ATTRACTION
@@ -25,11 +25,11 @@ BREAKING: The VCrayApp.bat prologue settings for GAME_EXE and SRC have been
 changed to VCAPPEXE and VCAPPSRC.
 
 Note 1: The value of VCAPPEXE does not have to match the name of any of the
-project source files; any one (and exactly one) of those files can provide
-and external main() definition.
+project source files; any one (and exactly one) of those files must provide
+the external main() definition.
 
 Note 2: VCAPPSRC value src/*.c is special.  For any different value, an
-absolution filepath should be used, whether or not with wild cards.
+absolute filepath should be used, whether or not with wild cards.
 
 NEW FEATURES
 
@@ -41,14 +41,18 @@ clearing the setting in VCrayApp.bat and setting it in a VCrayApp caller.
 
 Environment variable VCrayAppHostURL can now be set to the location of more
 details on VCrayApp messages when VCrayApp is running under a host project.
-It can be introduced in the same two was as for VCrayAppHost.  Provision of
+It can be introduced in the same two ways as for VCrayAppHost.  Provision of
 this companion to VCrayAppHost is optional.
 
 VCrayApp will detect and report the version of raylib and of VS Command Prompt
 being used.  There is failure checking on known versions of raylib that fail
 with the Microsoft VC/C++ compiler.
 
-VCrayApp will detect when in-progress -dev versions of raylib are being used.
+VCrayApp detects and reports when in-progress -dev versions of raylib are
+being used.
+
+CHANGES.txt is included in the VCrayApp-0.1.0.zip file and is also on the
+release page for consultation without downloading the package.
 
 CHANGES
 
@@ -113,6 +117,7 @@ TODO
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.7 2023-03-26T17:48Z Touch-ups
  0.0.6 2023-03-26T02:09Z Reflect embedding changes confirmed by VCrayVerify.
  0.0.5 2023-03-11T23:01Z Include VCrayApp no longer pausing on successful run
  0.0.4 2023-03-09T17:55Z Catch up with changes already made to the code.
