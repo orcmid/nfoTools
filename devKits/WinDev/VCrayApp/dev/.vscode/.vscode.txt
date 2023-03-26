@@ -1,4 +1,4 @@
-VCrayApp-0.1.0 .vscode.txt 0.0.3    UTF-8                         2023-01-14
+VCrayApp-0.1.0 .vscode.txt 0.0.4    UTF-8                         2023-03-26
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
   * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
@@ -13,7 +13,8 @@ VCrayApp-0.1.0 .vscode.txt 0.0.3    UTF-8                         2023-01-14
   *    DO NOT COMPILE INTO THIS FOLDER.  DO NOT PUT SOURCE CODE IN THIS   *
   *    FOLDER. USE THE COMPANION src\ FOLDER OR ANOTHER FOLDER FOR YOUR   *
   *    OWN PROJECT.  SEE THE DESCRIPTION FOR THIS VCrayApp RELEASE        *
-  *    (E.G., THE VCrayApp-0.1.0.txt FILE).                               *                                                     *
+  *    (E.G., THE VCrayApp-0.1.0.txt FILE and the web pages at            *
+  *    <https://orcmid.github.io/nfoTools/dev/D211101/>).                 *                            *                                                     *
   *                                                                       *
   *    If VCrayApp is re-extracted or is updated and extracted, the       *
   *    files listed in this manifest will be replaced.  If any VS Code    *
@@ -26,13 +27,15 @@ VCrayApp-0.1.0 .vscode.txt 0.0.3    UTF-8                         2023-01-14
 USAGE WITH VS CODE
 
     When a VCrayApp project is accessed via Visual Studio Code, the Windows
-    folder that contains this .vscode folder can be used as the workspace.
+    folder that contains this .vscode folder should be the current directory.
     VS Code will then rely on configuration properties and variables of the
     Developer Command Prompt to integrate the project with raylib and with
-    the Windows SDK libraries.
+    the Windows SDK libraries. The benefit is having intellisense for all of
+    the project source code, including standard headers and their libraries.
 
-    See <references to be supplied> for further details and the benefits
-    of using a VS Code workspace.
+    See <https://orcmid.github.io/nfoTools/dev/D211101/D211101b/> for further
+    details on using VS Code with VCrayApp.  For additional information on
+    usage of VS Code, see <https://orcmid.github.io/nfoTools/tools/T211001/>.
 
 MANIFEST
 
@@ -58,6 +61,7 @@ MANIFEST
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+0.0.4 2023-03-26T19:28Z Complete links and advice for VCrayApp 0.1.0.
 0.0.3 2023-01-14T21:34Z Adjust for VCrayApp 0.1.0
 0.0.2 2022-07-09T19:10Z Touch-up, complete TODO
 0.0.1 2022-07-09T17:34Z Provide initial draft of content
