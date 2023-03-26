@@ -21,10 +21,11 @@ VCrayApp-checklist.txt 0.0.6        UTF-8                         2023-03-26
         o Confirm description of workspace/folder use in accessing the user's
           project and experiencing the benefits
         o Verify correct operation in conjunction with VS 2022 Build Tools
-          and raylib 3.7.0 source-code installation.
+          and raylib 3.7.0-4.x.0 source-code installation.
         o Provide link to more explanation of VS Code workspace setup and
           the limited use of the c_cpp_properties.json
-        o Provide orcmid.github.io/nfoTools location for the attribution
+        o Clear/armor sign the .vscode.txt file.
+
 
     * src\src.txt
         o Update to version of VCrayApp
@@ -32,6 +33,8 @@ VCrayApp-checklist.txt 0.0.6        UTF-8                         2023-03-26
         o Provide more links to usage as part of VCrayApp and the benefits
           of using with Developer Command Prompts and VS Code.
         o Provide orcmid.github.io/nfoTools location for the attribution
+        o Emphasize somewhere that VS Code and Intellisense work best when
+          src\ is used for the *.c and *.h files for the project itself.
 
     * app\app.txt
         o Update to version of VCrayApp
@@ -188,6 +191,7 @@ TODO
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.7 2023-03-26T23:20Z Improve .vscode\ checklist
  0.0.6 2023-03-26T17:22Z Touch up for 0.1.0 beta customization
  0.0.5 2023-03-09T20:34Z Additions on CHANGES.txt and checking sigs/hashes
  0.0.4 2023-01-20T17:38Z Update TODOs on use of winget hash
