@@ -1,5 +1,5 @@
 @echo off
-rem VCrayVerify 0.0.0 VCrayVerify.bat 0.0.3 UTF-8                  2023-03-22
+rem VCrayVerify 0.0.0 VCrayVerify.bat 0.0.4 UTF-8                  2023-03-**
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 rem               VERIFYING RAYLIB EXAMPLES WITH VC/C++ TOOLS
@@ -24,7 +24,8 @@ SET VCVhush=
 rem can :BAIL from any point now
 
 IF NOT "%1" == "+" SETLOCAL ENABLEEXTENSIONS
-rem   A host may want the variables defined here and in VCrayAppV.
+rem   Must not SETLOCAL and must :FALLOUT when successful hosted run
+rem
 IF ERRORLEVEL 1 GOTO :FAIL0
 
 rem SELECT EMBEDDED, TERSE, OR DEFAULT
@@ -265,6 +266,7 @@ rem For additional information, see the accompanying NOTICE.txt file.
 rem
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 rem
+rem 0.0.4
 rem 0.0.3 2023-03-22T21:57Z Smooth Splicing into VCrayApp testing.  Adapt to
 rem       being hosted as well.
 rem 0.0.2 2023-03-22T04:28Z Introduce conditional cache building and VCVRAYVER

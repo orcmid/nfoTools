@@ -1,4 +1,4 @@
-VCrayApp 0.1.0 CHANGES.txt 0.0.5    UTF-8                         2023-03-11
+VCrayApp 0.1.0 CHANGES.txt 0.0.6    UTF-8                         2023-03-26
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                        AN NFOTOOLS COMING ATTRACTION
@@ -36,18 +36,25 @@ NEW FEATURES
 Environment variable VCrayAppHost can now be set to the name of a larger
 application in which VCrayApp is embedded as a customized component.  This
 is reflected in D211101a/ treatment of VCrayApp setup and in messages from
-VCrayApp.bat.
+VCrayApp.bat.  This change can be made by modification of VCrayApp.bat or by
+clearing the setting in VCrayApp.bat and setting it in a VCrayApp caller.
 
 Environment variable VCrayAppHostURL can now be set to the location of more
 details on VCrayApp messages when VCrayApp is running under a host project.
+It can be introduced in the same two was as for VCrayAppHost.  Provision of
+this companion to VCrayAppHost is optional.
 
 VCrayApp will detect and report the version of raylib and of VS Command Prompt
-being used.  There is failure checking on versions of raylib that fail with
-the Microsoft VC/C++ compiler.
+being used.  There is failure checking on known versions of raylib that fail
+with the Microsoft VC/C++ compiler.
 
 VCrayApp will detect when in-progress -dev versions of raylib are being used.
 
 CHANGES
+
+NVCrayApp compiles and uses program cache\VCrayVerCheck.c every time the cache
+is about to be filled.  This is used to determine the version of raylib that
+is about to be used.
 
 VCrayApp will compile and run the cache\VCrayConfirm.c program every time the
 cache of raylib code is created, providing additional confirmation that the
@@ -61,6 +68,13 @@ case and also when VCrayAppHost is set.
 
 VCrayApp no longer PAUSES after a successful run, with or without execution
 of any code.
+
+CORRECTION: When executed as embedded (option "+"), VCrayApp.bat no longer
+sets LOCAL.  The caller must do so as appropriate.  This exposes variables set
+by VCrayApp.bat to the host, including %VCRAYVER%, the version of raylib
+detected when the cache is built as part of the VCrayApp run.  An embedded
+VCrayApp does not EXIT on success, it does a :FALLOUT off the end of the
+script.  On any failure, VSrayApp does force EXIT.
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
@@ -99,8 +113,9 @@ TODO
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.6 2023-03-26T02:09Z Reflect embedding changes confirmed by VCrayVerify.
  0.0.5 2023-03-11T23:01Z Include VCrayApp no longer pausing on successful run
- 0.0.4 2023-03-09T17:55Z Catch up with changes already made
+ 0.0.4 2023-03-09T17:55Z Catch up with changes already made to the code.
  0.0.3 2023-03-08T20:21Z Breaking Changes about GAME_EXE and SRC, now a
        VCAPPEXE and VCAPPSRC.
  0.0.2 2023-03-03T21:11Z Changes about VCrayAppHost and VCrayAppURL.
