@@ -1,5 +1,8 @@
-VCrayApp-0.1.0 .vscode.txt 0.0.4    UTF-8                         2023-03-26
-----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+VCrayApp-0.1.0 .vscode.txt 0.0.5    UTF-8                         2023-03-26
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
   * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
   *                                                                       *
@@ -43,7 +46,7 @@ MANIFEST
 
    c_cpp_properties.json   VSCode parameters for VC/C++ compile configuration
 
-----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                        Copyright 2022 Dennis E. Hamilton
 
@@ -59,8 +62,9 @@ MANIFEST
     See the License for the specific language governing permissions and
     limitations under the License.
 
-----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+0.0.5 2023-03-26T23:13Z Fixed rulers; ASCII-armor signed for VCrayApp 0.1.0.
 0.0.4 2023-03-26T19:28Z Complete links and advice for VCrayApp 0.1.0.
 0.0.3 2023-01-14T21:34Z Adjust for VCrayApp 0.1.0
 0.0.2 2022-07-09T19:10Z Touch-up, complete TODO
@@ -68,3 +72,14 @@ MANIFEST
 0.0.0 2022-07-08T17:48Z Creation of placeholder for further explanation.
 
                       ** end of VCrayApp .vscode.txt **
+-----BEGIN PGP SIGNATURE-----
+
+iQFGBAEBCAAwFiEEBNBDIpebhN4QdwM0+W6J/9RWYooFAmQgw54SHG9yY21pZEBh
+cGFjaGUub3JnAAoJEPluif/UVmKKllAH/ius3E+gB7kpKughwdzGAoGuFxszwMrL
+8d4cHAwfWXyS/GDVHh7TpBZdNC5Xg7oHC/3aIL6zqvhwoluBKsKXNFg/uknqWC9L
+lGnpQa4xiTd/a4drFJkbYSshoIzaEKmhx2OaAVv1XERd4f2YVrF098wX+Sdpo7vL
+Xvsri0FcffgFG0QOu5qvw5Ks5qsgnaC7mPGv9EBChARM0uOErP0HNKHb/RQp0MgV
+7lL2D9LCRiVlR4DdE7DKWo33VLdDdm2X4vmHdDwgOUq7LlcwlC3RgoCPosP3Zc4k
+svqtMXSWz8g2Q4X8k347EvLucCa5l5H7jpzI3LhKQtFhnAy6hhgbgqQ=
+=LU0a
+-----END PGP SIGNATURE-----

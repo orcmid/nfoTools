@@ -1,10 +1,10 @@
-VCrayApp-0.1.0-checklist.txt 0.0.7   TF-8                         2023-03-26
-----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+VCrayApp-0.1.0-checklist.txt 0.0.*   TF-8                         2023-03-26
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                       RAYLIB APP DEVELOPMENT PROJECT
                       ==============================
 
-<https://github.com/orcmid/nfoTools/blob/master/devKits/WinDev/VCrayApp/VCrayApp-checklist.txt>
+<https://github.com/orcmid/nfoTools/blob/master/devKits/WinDev/VCrayApp/VCrayApp-0.1.0-checklist.txt>
 
                         VCRAYAPP 0.1.0 Checklist
                         ------------------------
@@ -17,20 +17,14 @@ accomplished.
 
 Changes and improvements will be reflected in the main VCrayApp-checklist.txt.
 
-    *  Create Project for the 0.1.0 beta release and create tasks/issues for
-       these activities as we go.
+    *  IN-PROGRESS: Create Project for the 0.1.0 beta release and create
+       tasks/issues for these activities as we go.  The overall project is
+       #42
 
     * .vscode\
-        o Update to version of VCrayApp
-        o Confirm proper use with VS Code "code ." initiation from Prompt
-            + identify version(s) of VS Code that are applicable
-        o Confirm description of workspace/folder use in accessing the user's
-          project and experiencing the benefits
         o Verify correct operation in conjunction with VS 2022 Build Tools
-          and raylib 3.7.0 source-code installation.
-        o Provide link to more explanation of VS Code workspace setup and
-          the limited use of the c_cpp_properties.json
-        o Provide orcmid.github.io/nfoTools location for the attribution
+          and raylib 3.7.0-4.5.0 and 4.6.0-dev source-code installation.
+        o Clear/armor sign the .vscode.txt file.
 
     * src\src.txt
         o Update to version of VCrayApp
@@ -132,7 +126,7 @@ DEPLOYMENT
       other.  XXX: THIS MAY BE A FRAGILE DEAL.
 
 
-----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                    Copyright 2022-2023 Dennis E. Hamilton
 
@@ -148,7 +142,7 @@ DEPLOYMENT
     See the License for the specific language governing permissions and
     limitations under the License.
 
-----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
 TODO
@@ -185,9 +179,9 @@ TODO
  * Customization instructions must specify some things about what to do with
    signed materials.
 
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
-
+ 0.0.* 2023-03-26T23:19Z Repeatedly backed-up as checklist items completed
  0.0.7 2023-03-26T17:31Z Clone from VCrayApp-checklist.txt
  0.0.6 2023-03-26T17:22Z Touch up for 0.1.0 beta customization
  0.0.5 2023-03-09T20:34Z Additions on CHANGES.txt and checking sigs/hashes
