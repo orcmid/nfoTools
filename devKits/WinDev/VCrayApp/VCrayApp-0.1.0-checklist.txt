@@ -1,4 +1,4 @@
-VCrayApp-checklist.txt 0.0.6        UTF-8                         2023-03-26
+VCrayApp-0.1.0-checklist.txt 0.0.7   TF-8                         2023-03-26
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                       RAYLIB APP DEVELOPMENT PROJECT
@@ -6,13 +6,19 @@ VCrayApp-checklist.txt 0.0.6        UTF-8                         2023-03-26
 
 <https://github.com/orcmid/nfoTools/blob/master/devKits/WinDev/VCrayApp/VCrayApp-checklist.txt>
 
-          VCRAYAPP RELEASE DEVELOPMENT AND DEPLOYMENT CHECKLIST
-          -----------------------------------------------------
+                        VCRAYAPP 0.1.0 Checklist
+                        ------------------------
 
-    This note provides a checklist for the development and deployment of
-    a VCrayApp devKit release.
+This is VCrayApp-checklist.txt used to work through the changes to make the
+release of VCrayApp-0.1.0 (beta).  It will be chewed up as we go.  There is
+no careful release control of this file, which should essentially disappear
+as the checklist is worked.  This file will be deleted when it is all
+accomplished.
 
-    CONTENT [TBD]
+Changes and improvements will be reflected in the main VCrayApp-checklist.txt.
+
+    *  Create Project for the 0.1.0 beta release and create tasks/issues for
+       these activities as we go.
 
     * .vscode\
         o Update to version of VCrayApp
@@ -144,12 +150,6 @@ DEPLOYMENT
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
- ATTRIBUTION
-
-   Hamilton, Dennis E. VCrayApp Release Development and Deployment Checklist.
-   nfoTools Project text file VCrayApp-checklist.txt 0.0.6 dated 2023-03-26,
-   available on the Internet as a version of
-   <https://github.com/orcmid/nfoTools/blob/master/devKits/WinDev/VCrayApp/VCrayApp-release.txt>
 
 TODO
 
@@ -188,6 +188,7 @@ TODO
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.7 2023-03-26T17:31Z Clone from VCrayApp-checklist.txt
  0.0.6 2023-03-26T17:22Z Touch up for 0.1.0 beta customization
  0.0.5 2023-03-09T20:34Z Additions on CHANGES.txt and checking sigs/hashes
  0.0.4 2023-01-20T17:38Z Update TODOs on use of winget hash
