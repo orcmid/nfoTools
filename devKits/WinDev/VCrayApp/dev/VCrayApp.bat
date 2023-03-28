@@ -1,5 +1,5 @@
 @echo off
-rem VCrayApp 0.1.0 VCrayApp.bat 0.0.39 UTF-8                       2023-03-28
+rem VCrayApp 0.1.0 VCrayApp.bat 0.0.41 UTF-8                       2023-03-28
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 rem                  BUILDING RAYLIB APP WITH VC/C++ TOOLS
@@ -8,29 +8,15 @@ rem                  =====================================
 rem This code depends on the presence of cache\, app\, src\ and ..\raylib\.
 rem It must be operated within a VS Command Prompt command-line environment.
 rem Use the script without modification until installation and operation is
-rem confirmed.  Then alter the APP_EXE and SRC vars for the specific project.
+rem confirmed.  Then alter the VCAPP_EXE and VCAPPSRC vars as appropriate
+rem for the specific project.
 
 rem NOTE: If VCrayApp.bat is incorporated as a component of a larger project,
-rem       setting VCrayAppHost will provide for smoother operation as a
-rem       component. Similarly, VCrayAppHostURL is added to failure messages
-rem       If defined.
+rem       indicated by option "+", there are additional variations available.
 
-rem If hosted, the host must set locality and VCrayApp.bat must expose its.
-IF NOT "%1" == "+" SETLOCAL ENABLEEXTENSIONS
-IF ERRORLEVEL 1 GOTO :FAIL0
 
 REM *** PROLOGUE*** READ CAREFULLY, CHANGE THESE SETTINGS AS NECESSARY ****
 REM ***********************************************************************
-
-rem When VCrayApp is installed for use as a component in a larger project,
-rem set the name of that project in VCrayAppHost here.  If a host sets this
-rem directly, this SET will be commented (rem) out.
-SET VCrayAppHost=
-
-rem When VCrayAppHost is set, a URL for additional handling of VCrayApp fails
-rem will be presented if VCrayAppHostURL if set.  If set directly by a host,
-rem the following SET will be commented (rem) out.
-SET VCrayAppHostURL=
 
 rem VCrayApp does not compile a project's source code until VCAPPEXE is set.
 rem If a VCrayAppHost will set it, the line below will be commented out.
@@ -43,7 +29,7 @@ rem VCrayApp will not attempt to compile a project's source code until
 rem VCAPPSRC is also set. If a VCrayAppHost will set it, the line below will
 rem be commented out.  Otherwise, your project should use the src\ folder here
 rem in the VCrayApp folder.  For further information about VCrayApp
-rem customizations see ^<https://orcmid.github.io/nfoTools/dev/D211101a/^>.
+rem customizations see ^<https://orcmid.github.io/nfoTools/dev/D211101/^>.
 
 SET VCAPPSRC=src\*.c
 rem VCrayApp treats this as a special case.  If this is defined to a location
@@ -63,25 +49,36 @@ rem accompanying VCrayApp-%VCrayApp%.txt file.  For further information, see
 rem ^<https://orcmid.github.io/nfoTools/dev/D211101^> and check for the latest
 rem version.
 
-SET VCVfrom=%CD%
+SET VCfrom=%CD%
 rem remembering where VCrayApp.bat is called *from*, so it can be restored
 rem on exit, including after errors.
-SET VCVterse=
-SET VCVhush=
+SET VCterse=
+SET VChush=
+SET VCsplice=%1
 rem can :BAIL from any point now
 
-SETLOCAL ENABLEEXTENSIONS
+rem If embedded, the host must set locality and VCrayApp.bat will expose the
+rem environment variables it defines, especially related to confirming a
+rem cache.  Note that the variables set/cleared above are all in the locality
+rem of any calling/host script.
+SET ERRORLEVEL=0
+IF NOT "%1" == "+" SETLOCAL ENABLEEXTENSIONS
 IF ERRORLEVEL 1 GOTO :FAIL0
 
+IF NOT "%1" == "+" SET VCrayAppHost=
+rem When VCrayApp is hosted by another script, VCrayAppHost can be set to
+rem have this reported in the confirmation of VCrayApp cache creation.
+
+IF NOT "%1" == "+" SET VCrayAppHostURL=
+rem When VCrayAppHost is set, a URL for additional handling of VCrayApp fails
+rem can be presented if VCrayAppHostURL is set by the host.
 
 rem SELECT EMBEDDED, TERSE, OR DEFAULT
 rem     %1 value "+" selects smooth non-stop operation for splicing output
 rem        into that of a calling script.
 rem     %2 might then be "*" and allow for that.
 rem don't shift anything out until %1-%2 handled.
-SET VCterse=
-SET VChush=
-SET VCsplice=%1
+
 IF NOT "%1" == "+" GOTO :MAYBETERSE
 IF NOT "%2" == "*" GOTO :MAYBETERSE
 SET VCterse=^>NUL 2^>NUL
@@ -327,8 +324,8 @@ GOTO :BAIL
 :FAIL3
 ECHO: [VCrayApp] **** FAIL: NO VS NATIVE COMMAND-LINE ENVIRONMENT ****
 ECHO:            VCrayApp.bat requires the command-line environment %VCterse%
-ECHO:            for VS Native Build Tools to be established.       %VCterse%
-ECHO:            See ^<some nfoTools support information^>.         %VCterse%
+ECHO:            for VS Native Build Tools to be established.  See  %VCterse%
+ECHO:            ^<https://orcmid.github.com/nfoTools/dev/D211101^>.%VCterse%
 ECHO:            NO ACTIONS HAVE BEEN PERFORMED                     %VCterse%
 GOTO :BAIL
 
@@ -362,8 +359,9 @@ ECHO:   USAGE: VCrayApp [+] ?
 ECHO:          VCrayApp [+] [*] [-c] [-r]
 IF NOT "%1" == "?" GOTO :BAIL
 ECHO:   where  ? produces this usage information.
-ECHO:          + for operating non-stop without any screen clearing
-ECHO:            and pausing.  Good for use called as a helper.
+ECHO:          + for operating as a helper from another script, providing
+ECHO:            non-stop operation without any screen clearing and without
+ECHO:            pausing, among other adjustments.
 ECHO:          * selects terse output.  If operation fails, repeat
 ECHO:            without this option for more details.
 ECHO:         -c for a complete rebuild of any cache
@@ -372,10 +370,12 @@ ECHO:
 ECHO:    Exit code 0 is produced on all successful operations.
 ECHO:    Exit codes greater than 1 are produced for any failure.
 ECHO:
-ECHO:    There is definition/use of environment variables VCAPPEXE, VCAPPSRC,
-ECHO:    VCVCrayApp, VCfrom, VCterse, VChush, VCsplice, VCclean, VCrun, VCEXE,
-ECHO:    VCSRC, VCRAYVER, VCrayAppHost, and VCrayAppHostURL.  VSCMD_VER is
-ECHO:    depended on for confirming operation is under a VS Command Prompt.
+ECHO:    VCrayApp depends on VSCMD_VER being set by the VS Command Prompt
+ECHO:    with CMDEXTEVERSION 2 or better available for operation.
+ECHO:    There is use/clearing of environment variables VCAPPEXE, VCAPPSRC,
+ECHO:    VCfrom, VChush, VCrayApp, VCrayAppHost, VCrayAppHostURL, VCraylib,
+ECHO:    VCsplice, and VCterse.  When VCrayApp is operated under another
+ECHO:    script (option "+"), additional variables are exposed to that host.
 ECHO:
 IF "%VCsplice%" == "+" GOTO :FALLOUT
 ENDLOCAL
@@ -419,6 +419,9 @@ rem For additional information, see the accompanying NOTICE.txt file.
 rem
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 rem
+rem 0.0.41 2023-03-28T19:44Z Streamline "+" and VCrayAppHost considerations
+rem 0.0.40 2023-03-28T19:16Z Fix: Correct some misplaced VCrayVerify change
+rem                          Work on proper ordering of operations
 rem 0.0.39 2023-03-28T16:18Z Fix: Silly typo
 rem 0.0.38 2023-03-22T22:20Z Fix: Backport successful hosted subordination
 rem 0.0.37 2023-03-21T22:17Z Fix: Preliminaries so :BAIL is always clean.
