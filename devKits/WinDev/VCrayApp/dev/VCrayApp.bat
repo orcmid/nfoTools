@@ -1,5 +1,5 @@
-e@echo off
-rem VCrayApp 0.1.0 VCrayApp.bat 0.0.38 UTF-8                       2023-03-22
+@echo off
+rem VCrayApp 0.1.0 VCrayApp.bat 0.0.39 UTF-8                       2023-03-28
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 rem                  BUILDING RAYLIB APP WITH VC/C++ TOOLS
@@ -419,6 +419,7 @@ rem For additional information, see the accompanying NOTICE.txt file.
 rem
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 rem
+rem 0.0.39 2023-03-28T16:18Z Fix: Silly typo
 rem 0.0.38 2023-03-22T22:20Z Fix: Backport successful hosted subordination
 rem 0.0.37 2023-03-21T22:17Z Fix: Preliminaries so :BAIL is always clean.
 rem 0.0.36 2023-03-11T22:29Z Fix :FAIL1 before %VCterse% and don't pause on
