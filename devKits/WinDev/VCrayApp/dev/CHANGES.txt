@@ -1,4 +1,4 @@
-VCrayApp 0.1.0 CHANGES.txt 0.0.7    UTF-8                         2023-03-26
+VCrayApp 0.1.0 CHANGES.txt 0.0.8    UTF-8                         2023-03-28
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                        AN NFOTOOLS COMING ATTRACTION
@@ -33,26 +33,21 @@ absolute filepath should be used, whether or not with wild cards.
 
 NEW FEATURES
 
-Environment variable VCrayAppHost can now be set to the name of a larger
-application in which VCrayApp is embedded as a customized component.  This
-is reflected in D211101a/ treatment of VCrayApp setup and in messages from
-VCrayApp.bat.  This change can be made by modification of VCrayApp.bat or by
-clearing the setting in VCrayApp.bat and setting it in a VCrayApp caller.
-
-Environment variable VCrayAppHostURL can now be set to the location of more
-details on VCrayApp messages when VCrayApp is running under a host project.
-It can be introduced in the same two ways as for VCrayAppHost.  Provision of
-this companion to VCrayAppHost is optional.
-
 VCrayApp will detect and report the version of raylib and of VS Command Prompt
-being used.  There is failure checking on known versions of raylib that fail
-with the Microsoft VC/C++ compiler.
+being used each time the cache is built.  There is failure checking on known
+recent versions of raylib that fail with the Microsoft VC/C++ compiler.
 
 VCrayApp detects and reports when in-progress -dev versions of raylib are
 being used.
 
 CHANGES.txt is included in the VCrayApp-0.1.0.zip file and is also on the
 release page for consultation without downloading the package.
+
+Use of VCrayApp embedded in a larger project with VCrayApp.bat called from
+a higher "host" script has been improved.  Environment variable VCrayAppHost
+can now be set by the host to have it be accounted for by VCrayApp.  The host
+can also set VCrayAppHostURL for reporting as a source of additional
+information.
 
 CHANGES
 
@@ -67,8 +62,7 @@ cache is built and which version of raylib it is set with.
 VCrayConfirm.c has been extended to report more about the VCrayApp settings
 and the readiness for use of the cache with particular VC and raylib versions.
 
-Reporting by VCrayApp is abbreviated when "+" is set on an embedded-operation
-case and also when VCrayAppHost is set.
+Reporting by VCrayApp is abbreviated when "+" is set for embedded-operation.
 
 VCrayApp no longer PAUSES after a successful run, with or without execution
 of any code.
@@ -78,7 +72,7 @@ sets LOCAL.  The caller must do so as appropriate.  This exposes variables set
 by VCrayApp.bat to the host, including %VCRAYVER%, the version of raylib
 detected when the cache is built as part of the VCrayApp run.  An embedded
 VCrayApp does not EXIT on success, it does a :FALLOUT off the end of the
-script.  On any failure, VSrayApp does force EXIT.
+script.  On any failure, VCrayApp does force EXIT.
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
@@ -101,8 +95,8 @@ script.  On any failure, VSrayApp does force EXIT.
  ATTRIBUTION
 
    Hamilton, Dennis E. Changes Made for VCrayApp 0.1.0.  nfoTools text file
-   version 0.0.4 dated 2023-03-09, available on the Internet as a version of
-   <https://github.com/orcmid/nfoTools/blob/master/devKits/WinDev/VCrayApp/dev/CHANGES.txt>
+   version 0.0.8 dated 2023-03-28, available on the Internet as a version of
+   <https://orcmid.github.io/nfoTools/dev/D211101/D211101e/CHANGES.txt>
 
 TODO
 
@@ -117,6 +111,7 @@ TODO
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.8 2023-03-28T20:42Z Adjustments for 0.1.0 and latest handling of hosting
  0.0.7 2023-03-26T17:48Z Touch-ups
  0.0.6 2023-03-26T02:09Z Reflect embedding changes confirmed by VCrayVerify.
  0.0.5 2023-03-11T23:01Z Include VCrayApp no longer pausing on successful run
