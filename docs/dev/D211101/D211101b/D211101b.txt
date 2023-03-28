@@ -1,4 +1,4 @@
-D211101b.txt 0.0.0                  UTF-8                         2022-08-18
+D211101b.txt 0.0.1                  UTF-8                         2023-03-28
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -22,7 +22,7 @@ MANIFEST
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-                      Copyright 2022 Dennis E. Hamilton
+                   Copyright 2022-2023 Dennis E. Hamilton
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -41,7 +41,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. D211101b: VCrayApp Operation.  nfoTools development
-   documentation text file D211101a.txt version 0.0.0 dated 2022-08-18,
+   documentation text file D211101b.txt version 0.0.1 dated 2023-02-28,
    available on the Internet as a version of
    <https://orcmid.github.io/nfoTools/dev/D211101/D211101b/D211101b.txt>
 
@@ -53,8 +53,19 @@ TODO
 
  * Create a placeholder index.htm
 
+ * Upon 0.1.0 beta release
+        o Indicate purpose of app\
+        o Explain Xcopy/Zip deployment
+        o Explain setting up for command-line/shortcut execution
+        o Link to additional information on Zip deployment
+        o Link to additional information on MSIX deployment
+        o Address single-use versus multiple-use installation
+        o Provide orcmid.github.io/nfoTools location for the attribution
+
+
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.1 2023-03-28T20:28Z Additional TODOs from 0.1.0 checklist items
  0.0.0 2022-08-18T17:57Z Placeholder morphed from D211101a.txt 0.0.0 and
        adjusted for VCrayApp Operation as part of alpha availability.
 
