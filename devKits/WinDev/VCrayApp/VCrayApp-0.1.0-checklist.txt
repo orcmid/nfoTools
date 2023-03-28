@@ -32,6 +32,7 @@ Changes and improvements will be reflected in the main VCrayApp-checklist.txt.
         o Provide more links to usage as part of VCrayApp and the benefits
           of using with Developer Command Prompts and VS Code.
         o Provide orcmid.github.io/nfoTools location for the attribution
+        o Clear/armor sign the src.txt file.
 
     * app\app.txt
         o Update to version of VCrayApp
@@ -42,6 +43,7 @@ Changes and improvements will be reflected in the main VCrayApp-checklist.txt.
         o Link to additional information on MSIX deployment
         o Address single-use versus multiple-use installation
         o Provide orcmid.github.io/nfoTools location for the attribution
+        o Clear/armor sign the app.txt file.
 
     * cache\
         o Update cache.txt to version of VCrayApp
@@ -51,10 +53,17 @@ Changes and improvements will be reflected in the main VCrayApp-checklist.txt.
         o Provide orcmid.github.io/nfoTools location for the attribution
         o Ensure that the cache components work with the version of raylib
           being used
+        o Clear/armor sign the cache.txt file.
+
+    * cache\VCrayConfirm.c
+        o Adjust version-specific information
+        o Adjust VCrayApp package identification
+        o Clear/armor sign the VCrayConfirm.c file
 
     * cache\rayConfirm.c
         o Adjust version-specific information
         o Adjust VCrayApp package identification
+        o Clearn/armor sign the rayConfirm.c file.
 
     * VCrayApp.bat
         o Set the semantic version variable, VCrayApp
@@ -79,15 +88,13 @@ Changes and improvements will be reflected in the main VCrayApp-checklist.txt.
     * VCrayApp-semver.txt
         o Ensure place-holder under D211101x subfolder.
 
-    * Include CHECKLIST.txt and keep it current as development of a new
+    * Include CHANGES.txt and keep it current as development of a new
       release is underway.  It will be included in the VCrayApp zip and be
       downloadable separately via D211101.
 
     * Ensure rational operation when VCrayApp is embedded in a project and
       hosted in a script of that project.  This is done with VCrayVerify but
       other cases might be needed.
-
-    * Maintain and include CHANGES.txt.
 
     * Clearsign *all* of the text files in the deliverable (even NOTICE.txt?).
 

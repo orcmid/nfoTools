@@ -1,4 +1,4 @@
-VCrayApp-checklist.txt 0.0.6        UTF-8                         2023-03-26
+VCrayApp-checklist.txt 0.0.8        UTF-8                         2023-03-28
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                       RAYLIB APP DEVELOPMENT PROJECT
@@ -35,6 +35,7 @@ VCrayApp-checklist.txt 0.0.6        UTF-8                         2023-03-26
         o Provide orcmid.github.io/nfoTools location for the attribution
         o Emphasize somewhere that VS Code and Intellisense work best when
           src\ is used for the *.c and *.h files for the project itself.
+        o Clear/armor sign the src.txt file
 
     * app\app.txt
         o Update to version of VCrayApp
@@ -45,6 +46,7 @@ VCrayApp-checklist.txt 0.0.6        UTF-8                         2023-03-26
         o Link to additional information on MSIX deployment
         o Address single-use versus multiple-use installation
         o Provide orcmid.github.io/nfoTools location for the attribution
+        o Clear/armor sign the app.txt file
 
     * cache\
         o Update cache.txt to version of VCrayApp
@@ -54,10 +56,17 @@ VCrayApp-checklist.txt 0.0.6        UTF-8                         2023-03-26
         o Provide orcmid.github.io/nfoTools location for the attribution
         o Ensure that the cache components work with the version of raylib
           being used
+        o Clear/armor sign the cache.txt file
 
-    * cache\rayConfirm.c
+    * cache\VCrayVerCheck.c
         o Adjust version-specific information
         o Adjust VCrayApp package identification
+        o Clear/armor sign the VCrayVerCheck.c
+
+    * cache\VCrayConfirm.c
+        o Adjust version-specific information
+        o Adjust VCrayApp package identification
+        o Clear/armor sign the VCrayConfirm.c file
 
     * VCrayApp.bat
         o Set the semantic version variable, VCrayApp
@@ -82,17 +91,18 @@ VCrayApp-checklist.txt 0.0.6        UTF-8                         2023-03-26
     * VCrayApp-semver.txt
         o Ensure place-holder under D211101x subfolder.
 
-    * Include CHECKLIST.txt and keep it current as development of a new
+    * Include CHANGES.txt and keep it current as development of a new
       release is underway.  It will be included in the VCrayApp zip and be
       downloadable separately via D211101.
+        o Clear/Armor sign CHANGES.txt
+
+    * Review the Notice to be current and complete
+        o Clear/Armor sign NOTICE.txt
 
     * Ensure rational operation when VCrayApp is embedded in a project and
       hosted in a script of that project.  This is done with VCrayVerify but
       other cases might be needed.
 
-    * Maintain and include CHANGES.txt.
-
-    * Clearsign *all* of the text files in the deliverable (even NOTICE.txt?).
 
 DEPLOYMENT
 
@@ -191,6 +201,7 @@ TODO
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.8 2023-03-28T20:13Z Reflect updates from 0.1.0 beta preparation
  0.0.7 2023-03-26T23:20Z Improve .vscode\ checklist
  0.0.6 2023-03-26T17:22Z Touch up for 0.1.0 beta customization
  0.0.5 2023-03-09T20:34Z Additions on CHANGES.txt and checking sigs/hashes
