@@ -1,4 +1,4 @@
-<!-- index.md 0.0.7                 UTF-8                          2023-01-14
+<!-- index.md 0.0.8                 UTF-8                          2023-03-30
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                      VCRAYAPP 0.0.0 RELEASE (ALPHA)
@@ -6,7 +6,7 @@
 
 # ***VCrayApp** [0.0.0 Release (alpha)](.)*
 
-| ***[nfoTools](../../../)*** | [dev](../../)[>D211101](../)[>D211101c](.) | [index.html](index.html) ***0.0.7 2023-01-14*** |
+| ***[nfoTools](../../../)*** | [dev](../../)[>D211101](../)[>D211101d](.) | [index.html](index.html) ***0.0.8 2023-03-30*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../../../images/hardhat-logo.gif) |
 |              |                     |           |
@@ -49,6 +49,7 @@ time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.8 2023-03-30T18:53Z Correct title block header to use d211101d.
      0.0.7 2023-01-14T22:40Z Ditch "VCrayLib" mistakes, touch up
      0.0.6 2023-01-13T01:31Z Repair header strip layout
      0.0.5 2023-01-12T17:09Z Correct links and names of the downloads

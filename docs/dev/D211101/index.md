@@ -1,4 +1,4 @@
-<!-- index.md 0.0.13                UTF-8                          2023-02-10
+<!-- index.md 0.0.14                UTF-8                          2023-03-30
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                VCRAYAPP: VC/C++ COMMAND-LINE RAYLIB APP DEVKIT
@@ -6,7 +6,7 @@
 
 # [VCrayApp: VC/C++ Command-Line raylib App DevKit](.)
 
-| ***[nfoTools](../../)*** | [dev](../)[>D211101](.) | ***[index.html](index.html) 0.0.13 2023-02-10*** |
+| ***[nfoTools](../../)*** | [dev](../)[>D211101](.) | ***[index.html](index.html) 0.0.14 2023-03-30*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../../images/hardhat-logo.gif) |
 
@@ -177,7 +177,7 @@ along with built-in troubleshooting support as needed.
 | [D211101b](D211101b/) | 2022-08-18 | placeholder | VCrayApp Operation |
 | [D211101c](D211101c/) | 2022-08-21 | placeholder | VCrayApp Verification/Deployment Lifecycle |
 |                       |            |                  |     |
-| [D211101d](D211101d/) | 2022-10-26 | 0.0.7 2023-01-14 | VCrayApp 0.0.0 (alpha)
+| [D211101d](D211101d/) | 2022-10-26 | 0.0.8 2023-03-30 | VCrayApp 0.0.0 (alpha)
 
 ## 5. Development
 
@@ -219,6 +219,7 @@ time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.14 2023-03-30T18:58Z Reflect D211101d 0.0.8
      0.0.13 2023-02-10T18:50Z Touch up, correcting d211101c designation
      0.0.12 2023-01-14T23:38Z Small adjustments and disclaimer about *alpha*
      0.0.11 2023-01-13T01:37Z Reflect updated D211101d

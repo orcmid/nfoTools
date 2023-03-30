@@ -1,4 +1,4 @@
-D211101d.txt 0.0.9                  UTF-8                         2023-01-14
+D211101d.txt 0.0.10                  UTF-8                         2023-03-30
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -34,7 +34,7 @@ MANIFEST
         this signature confirms the source and the integrity of the .zip.
 
   VCrayApp-0.0.0.zip.sha256 86 byte file dated 2023-01-07T14:29-0800
-        SHA 256 crypt ographic hash of file VCrayApp-0.0.0.zip.  Verification
+        SHA 256 cryptographic hash of file VCrayApp-0.0.0.zip.  Verification
         of *this* hash value is evidence that the downloaded .zip (or .sha256)
         have not been altered in the downloading/redistribution and usage.
 
@@ -59,7 +59,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. D211101d: VCrayApp 0.0.0 (alpha).  nfoTools development
-   documentation text file D211101d.txt version 0.0.9 dated 2023-01-14,
+   documentation text file D211101d.txt version 0.0.10 dated 2023-03-30,
    available on the Internet as a version of
    <https://orcmid.github.io/nfoTools/dev/D211101/D211101d/D211101d.txt>
 
@@ -71,10 +71,14 @@ TODO
 
  * Download all files and confirm content, signatures, and hashes
 
- * Change all of the bogus "VCrayLib" to "VCRayApp".
+ * Change the reference to D211101c to D211101d in the title block header.
+
+ * When D211101e/ for 0.1.0 beta is released, remember to include the
+   clear-signed CHANGES.txt in the Downloads.
 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.10 2023-03-30T18:51Z Manage TODOs, fix a typo in the index.md top strip
  0.0.9 2023-01-14T22:43Z Cleanups of text and "VCrayLib" mistake namings.
  0.0.8 2023-01-13T01:34Z Manage completed TODOs
  0.0.7 2023-01-12T17:06Z Manage TODOs, repair incorrect index.md links

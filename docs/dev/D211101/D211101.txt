@@ -1,4 +1,4 @@
-D211101.txt 0.0.14                   UTF-8                         2023-02-24
+D211101.txt 0.0.15                   UTF-8                         2023-**-**
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -50,7 +50,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. VCrayApp: VC/C++ Command-Line raylib App devKit.
-   nfoTools development text file D211101.txt version 0.0.14 dated 2023-02-24,
+   nfoTools development text file D211101.txt version 0.0.15 dated 2023-**-**,
    available on the Internet as a version of
    <https://orcmid.github.io/nfoTools/dev/D211101/D211101.txt>
 
@@ -99,9 +99,27 @@ TODO
  * Set up D21101e for targetting by links from VCrayApp materials, including
    explanation of error messages.
 
+ * Add CHANGES.txt (since 0.1.0) to the 1.1 Project Files Organization.
+
+ * Determine whether there is an extended signature for VCrayApp.bat and also
+   for anything in the cache.  This is probably unnecessary and we have to
+   deal with the fact that many of the cache\*.opt files may be modified and
+   the the VCrayApp.bat as well.
+
+ * Embedded use should be an advanced topic related to lifecycle management
+   and such considerations.  This is moderately acute when VCrayApp is
+   embedded in a distribution, such as VCrayVerify.
+
+ * Fix 1.2 VCrayApp.bat explanation about how a sample program is built each
+   time the cache is built to ensure that the cached materials seem to be
+   used properly.  Versions of raylib\ releases that are known to fail will
+   VC/C++ are detected and will cause VCrayApp.bat to fail with a specific
+   message.  This can be cross-linked and the :FAIL number should be given.
+
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.15
  0.0.14 2023-02-24T20:32Z Manage TODOs and preparations for 0.1.0
  0.0.13 2023-02-10T18:41Z Introduce D211101e shadow and tidy up
  0.0.12 2023-01-15T01:47Z Manage TODOs, recommend more tidying, linking
