@@ -21,14 +21,6 @@ Changes and improvements will be reflected in the main VCrayApp-checklist.txt.
        tasks/issues for these activities as we go.  The overall project is
        #42
 
-    * src\src.txt
-        o Update to version of VCrayApp
-        o Indicate value of using src\
-        o Provide more links to usage as part of VCrayApp and the benefits
-          of using with Developer Command Prompts and VS Code.
-        o Provide orcmid.github.io/nfoTools location for the attribution
-        o Clear/armor sign the src.txt file.
-
     * app\app.txt
         o Update to version of VCrayApp
         o Indicate purpose of app\
