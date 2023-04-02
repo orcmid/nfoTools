@@ -1,5 +1,5 @@
 @echo off
-rem VCrayApp 0.1.0 VCrayApp.bat 0.0.42 UTF-8                       2023-04-02
+rem VCrayApp 0.1.0 VCrayApp.bat 0.0.43 UTF-8                       2023-04-02
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 rem                  BUILDING RAYLIB APP WITH VC/C++ TOOLS
@@ -301,6 +301,10 @@ IF ERRORLEVEL 1 GOTO FAIL5
 :SUCCESS
 CD %VCfrom%
 IF "%VCsplice%" == "+" GOTO :FALLOUT
+ENDLOCAL
+SET VCAPPEXE=
+SET VCAPPSRC=
+rem    Protecting against a subsequent splicing re-entry to VCrayApp.bat
 ECHO:  %VCterse%
 REM IF NOT "%VCrun%" == "1" PAUSE
 GOTO :FALLOUT
@@ -397,7 +401,9 @@ ECHO:    script (option "+"), additional variables are exposed to that host.
 ECHO:
 IF "%VCsplice%" == "+" GOTO :FALLOUT
 ENDLOCAL
-PAUSE
+SET VCAPPEXE=
+SET VCAPPSRC=
+rem     Prevent these from leaking into embedded ("+") VSrayApp.bat re-entry
 GOTO :FALLOUT
 
 :BAIL
@@ -405,10 +411,13 @@ ECHO:
 IF NOT ERRORLEVEL 2 SET ERRORLEVEL=2
 CD %VCfrom%                                                         %VCterse%
 rem always leave with the one that brung us
-IF NOT "%VCterse%" == "" EXIT /B %ERRORLEVEL%
 IF "%VCsplice%" == "+" EXIT /B %ERRORLEVEL%
-ECHO:
 ENDLOCAL
+SET VCAPPEXE=
+SET VCAPPSRC=
+rem    Also prevent leaking into an embedded ("+") re-entry to VCrayApp.bat
+IF NOT "%VCterse%" == "" EXIT /B %ERRORLEVEL%
+ECHO:
 PAUSE
 EXIT /B %ERRORLEVEL%
 
@@ -437,6 +446,7 @@ rem For additional information, see the accompanying NOTICE.txt file.
 rem
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 rem
+rem 0.0.43 2023-04-02T20:45Z Clean up exits to prevent EXE/SRC leaking
 rem 0.0.42 2023-04-02T16:37Z Improved embedding, release-candidate touch-ups
 rem 0.0.41 2023-03-28T19:44Z Streamline "+" and VCrayAppHost considerations
 rem 0.0.40 2023-03-28T19:16Z Fix: Correct some misplaced VCrayVerify change
