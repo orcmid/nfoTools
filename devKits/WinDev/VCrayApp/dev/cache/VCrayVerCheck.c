@@ -1,4 +1,9 @@
-/* VCrayVerCheck.c 0.1.2            UTF-8                         2023-04-02
+
+/* VCrayVerCheck.c 0.1.3            UTF-8                         2023-04-02
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+
    -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                         DETERMINATION OF RAYLIB VERSION
@@ -86,6 +91,7 @@ int main(void)
     }
 
 /*
+   0.1.3  2023-04-03T19:40Z Clear armor sign for release
    0.1.2  2023-04-02T17:35Z Touch up for release candidate
    0.1.1  2023-03-22T21:22Z Clean up spacing in the output SET commands
    0.1.0  2023-02-26T19:40Z Cleaned-up VCrayApp 0.1.0 release candidate
@@ -107,4 +113,15 @@ int main(void)
    0.0.0 2023-02-12T05:53Z Stub providing default behavior
 
                       *** end of VCrayVerCheck.c ***
-   */
+-----BEGIN PGP SIGNATURE-----
+
+iQFGBAEBCAAwFiEEBNBDIpebhN4QdwM0+W6J/9RWYooFAmQp2C8SHG9yY21pZEBh
+cGFjaGUub3JnAAoJEPluif/UVmKK58wH/1ccHGaHCmNYmoj6K805XW4lbJLXXaAF
+i9WuUfgI8M5oa8QgksMaUDNgx/xyopI43mz2p+mQomsqxbo6KBb8z4M/a0IqxOfR
+oI3vT9NRbGbUIaWOQFPUuXRwAy82vYeC6DnIw7y1OuCQ1sqkxT2VmksIJ8OMxYiT
+m53uoVlqw4vC3jhuc9UtfFRvEoNhEsR793xJtbhyYugucbtUu4IFnRzlWijP2nGa
+FtE+R5nzpmw6eX7Lr9ZpNqtwxx8vb3XMoRN1ljHhbFNyRhGckNc2hXmHwMyE9cE9
+lJM3QmYJm5Yt3/+K8Y97SRjAJJhM7XnXDiupWrzXCWpiCvYIA6l4wYc=
+=L6TR
+-----END PGP SIGNATURE-----
+*/
