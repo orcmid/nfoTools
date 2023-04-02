@@ -1,4 +1,4 @@
-/* VCrayVerCheck.c 0.1.1            UTF-8                         2023-03-22
+/* VCrayVerCheck.c 0.1.2            UTF-8                         2023-04-02
    -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                         DETERMINATION OF RAYLIB VERSION
@@ -45,7 +45,11 @@
    */
 
 #define TV(X) #X ""
-      /* Turns pre-processor variables into string arguments */
+      /* Turns pre-processor variables into string arguments.
+         The extra "" works whether #X provides a quoted string
+         or provides nothing. This and the fputs() below rely on
+         the fact that string constants separated only by white
+         space are automatically concatenated into a single string. */
 
 #define SHOW(X) TV(X)
       /* Stringifies any defined value of the pre-processor argument.
@@ -82,6 +86,7 @@ int main(void)
     }
 
 /*
+   0.1.2  2023-04-02T17:35Z Touch up for release candidate
    0.1.1  2023-03-22T21:22Z Clean up spacing in the output SET commands
    0.1.0  2023-02-26T19:40Z Cleaned-up VCrayApp 0.1.0 release candidate
    0.0.13 2023-02-23T05:49Z Use "..." form on all VCRAYVER settings
