@@ -1,5 +1,5 @@
 @echo off
-rem VCrayApp 0.1.0 VCrayApp.bat 0.0.41 UTF-8                       2023-03-28
+rem VCrayApp 0.1.0 VCrayApp.bat 0.0.42 UTF-8                       2023-04-02
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 rem                  BUILDING RAYLIB APP WITH VC/C++ TOOLS
@@ -8,36 +8,42 @@ rem                  =====================================
 rem This code depends on the presence of cache\, app\, src\ and ..\raylib\.
 rem It must be operated within a VS Command Prompt command-line environment.
 rem Use the script without modification until installation and operation is
-rem confirmed.  Then alter the VCAPP_EXE and VCAPPSRC vars as appropriate
-rem for the specific project.
+rem confirmed.  Then alter the VCAPPEXE and VCAPPSRC vars as appropriate
+rem for a specific standalone project.
 
 rem NOTE: If VCrayApp.bat is incorporated as a component of a larger project,
-rem       indicated by option "+", there are additional variations available.
-
+rem       indicated by option "+", this file does not require modification.
 
 REM *** PROLOGUE*** READ CAREFULLY, CHANGE THESE SETTINGS AS NECESSARY ****
+REM *** THESE SETTING ONLY MATTER FOR STANDALONE USAGE OF VCRAYAPP     ****
+REM *** WHEN CALLED FROM A HOST PROJECT (OPTION "+") THESE ARE IGNORED.****
+REM *** See ^<https://orcmid.github.io/nfoTools/dev/D211101^>.         ****
 REM ***********************************************************************
 
-rem VCrayApp does not compile a project's source code until VCAPPEXE is set.
-rem If a VCrayAppHost will set it, the line below will be commented out.
-rem Otherwise, replace "RenameMe" in the setting of VCAPPEXE here.
+IF "%1" == "+" GOTO :NOCHANGES
+REM DO NOT REMOVE THIS LINE.  IT DOES NOT INTERFERE WITH STANDALONE USAGE
+
+rem VCrayApp does not compile a standalone project's source code until
+rem VCAPPEXE is set.
 
 SET VCAPPEXE=RenameMe.exe
 rem Hint: don't use RenameMe.exe for your app.  Do use the complete .exe name.
+rem When VCrayApp is operated embedded in another project, this is skipped.
 
-rem VCrayApp will not attempt to compile a project's source code until
-rem VCAPPSRC is also set. If a VCrayAppHost will set it, the line below will
-rem be commented out.  Otherwise, your project should use the src\ folder here
-rem in the VCrayApp folder.  For further information about VCrayApp
-rem customizations see ^<https://orcmid.github.io/nfoTools/dev/D211101/^>.
+rem VCrayApp will not attempt to compile a standalone project's source code
+rem until VCAPPSRC is also set. When VCrayApp is operated embedded in
+rem another project, this is also skipped.
 
 SET VCAPPSRC=src\*.c
 rem VCrayApp treats this as a special case.  If this is defined to a location
 rem and files elsewhere, a complete absolute location must be provided.
+rem It is strongly-recommended that src\ be used for standalone raylib app
+rem projects, especially for novice applications of raylib.
 
-rem *********** NO CHANGES ARE NEEDED BELOW HERE *****************************
+rem *********** NO CHANGES EVER NEEDED BELOW HERE ****************************
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+:NOCHANGES
 rem Designate the semantic-versioned distribution
 SET VCrayApp=0.1.0
 SET VCraylib=%~dp0..\raylib
@@ -70,8 +76,8 @@ rem When VCrayApp is hosted by another script, VCrayAppHost can be set to
 rem have this reported in the confirmation of VCrayApp cache creation.
 
 IF NOT "%1" == "+" SET VCrayAppHostURL=
-rem When VCrayAppHost is set, a URL for additional handling of VCrayApp fails
-rem can be presented if VCrayAppHostURL is set by the host.
+rem When VCrayAppHost is set, a URL for additional handling of VCrayApp
+rem failure messages can be presented if VCrayAppHostURL is set by the host.
 
 rem SELECT EMBEDDED, TERSE, OR DEFAULT
 rem     %1 value "+" selects smooth non-stop operation for splicing output
@@ -136,6 +142,7 @@ IF NOT EXIST "%~dp0app\app.txt" GOTO :FAIL1
 IF NOT EXIST "%~dp0src\src.txt" GOTO :FAIL1
 IF NOT EXIST "%~dp0VCrayApp-%VCrayApp%.txt" GOTO :FAIL1
 IF NOT EXIST "%~dp0VCrayApp.bat" GOTO :FAIL1
+IF NOT EXIST "%~dp0CHANGES.txt" GOTO :FAIL1
 
 IF NOT EXIST "%VCraylib%\src\raylib.h" GOTO :FAIL6
 rem XXX *IMPORTANT* Another fragile dependency on location of raylib\
@@ -147,10 +154,13 @@ rem XXX We depend on rglfw.c being compiled last and absence is taken
 rem XXX to mean cache is absent/obsolete.
 
 :CACHECHECK
-IF EXIST %~dp0cache\rglfw.obj GOTO :APPBUILD
+IF EXIST %~dp0cache\rglfw.obj GOTO :APPCHECK
 rem Using presence of the last-built raylib .obj to determine full cache.
 rem *IMPORTANT* Keep consistent with %~dp0cache\raylibCode.opt cases
 DEL %~dp0cache\*.obj >nul 2>nul
+
+REM COMPILE THE CACHE OF RAYLIB FILES THAT MAY BE NEEDED
+REM ****************************************************
 
 CD %~dp0cache
 rem DETERMINING RAYLIB VERSION THAT IS INSTALLED
@@ -172,6 +182,8 @@ IF %VCRAYVER% == "4.2" GOTO :FAIL8
 REM **IMPORTANT**  Additional beyond 4.0 exclusions go here
 COPY /Y raylibCode.4.x.0.opt raylibCode.opt >nul 2>nul
 IF NOT %VCRAYVER% == "unidentified" GOTO :BUILDCACHE
+rem Versions of raylib.h before 4.0 do not set RAYLIB_VERSION so we must
+rem    use some known fingeprints of earlier versions.
 IF EXIST %VCraylib%\appveyor.yml GOTO :FAIL7
 IF EXIST %VCraylib%\.travis.yml GOTO :FAIL7
 IF EXIST %VCraylib%\HELPME.md GOTO :FAIL7
@@ -187,6 +199,7 @@ ECHO: [VCrayApp] FRESH CACHE OF RAYLIB %VCRAYVER% *.OBJ FILES COMPILED
 ECHO: %VCterse%
 
 :VCRAYCONFIRMBUILD
+REM THE PROGRAM VCrayConfirm IS BUILT AND RUN AFTER EVER CACHE BUILD
 SET VCEXE=VCrayConfirm.exe
 SET VCSRC=%~dp0cache\VCrayConfirm.c
 CD %~dp0app
@@ -212,6 +225,10 @@ ECHO: [VCrayApp] Launching %VCEXE%.  Exit App to Continue Session  %VCterse%
 ECHO: %VCterse%
 %~dp0app\%VCEXE%
 IF ERRORLEVEL 1 GOTO :FAIL5
+
+:APPCHECK
+REM THERE IS A CONFIRMED CACHE.  NOW COMPILE AND RUN THE PROJECT APP AS NEEDED
+REM **************************************************************************
 
 IF "%VCAPPEXE%" == "" GOTO :NOAPP
 IF NOT "%VCAPPEXE%" == "RenameMe.exe" GOTO :APPBUILD
@@ -372,6 +389,7 @@ ECHO:    Exit codes greater than 1 are produced for any failure.
 ECHO:
 ECHO:    VCrayApp depends on VSCMD_VER being set by the VS Command Prompt
 ECHO:    with CMDEXTEVERSION 2 or better available for operation.
+ECHO:
 ECHO:    There is use/clearing of environment variables VCAPPEXE, VCAPPSRC,
 ECHO:    VCfrom, VChush, VCrayApp, VCrayAppHost, VCrayAppHostURL, VCraylib,
 ECHO:    VCsplice, and VCterse.  When VCrayApp is operated under another
@@ -419,6 +437,7 @@ rem For additional information, see the accompanying NOTICE.txt file.
 rem
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 rem
+rem 0.0.42 2023-04-02T16:37Z Improved embedding, release-candidate touch-ups
 rem 0.0.41 2023-03-28T19:44Z Streamline "+" and VCrayAppHost considerations
 rem 0.0.40 2023-03-28T19:16Z Fix: Correct some misplaced VCrayVerify change
 rem                          Work on proper ordering of operations
