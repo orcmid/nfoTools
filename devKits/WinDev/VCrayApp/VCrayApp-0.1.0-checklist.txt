@@ -43,10 +43,10 @@ Changes and improvements will be reflected in the main VCrayApp-checklist.txt.
         o Adjust VCrayApp package identification
         o Clear/armor sign the VCrayConfirm.c file
 
-    * cache\rayConfirm.c
+    * cache\VCrayVerCheck.c
         o Adjust version-specific information
         o Adjust VCrayApp package identification
-        o Clearn/armor sign the rayConfirm.c file.
+        o Clearn/armor sign the VCrayVerCheck.c file.
 
     * VCrayApp.bat
         o Set the semantic version variable, VCrayApp
