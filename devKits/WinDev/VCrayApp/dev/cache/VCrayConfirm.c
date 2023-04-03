@@ -289,7 +289,8 @@ int main(void)
                  DrawText( "Settings are controlled by the host.",
                            140, nextLine, 20, GRAY );
             else if (isSpliced)
-                     DrawText( "Embedded operation requires a host.",
+                     DrawText( "Embedded operation (option \"+\")"
+                               " requires a host.",
                                90, nextLine, 20, RED);
             else if (!hasName || !isSRC)
                      DrawText( "Adjust the VCrayApp.bat settings"
@@ -313,7 +314,7 @@ int main(void)
 
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-   0.1.10 2023-04-03T21:16Z Adjust to the embedding changes in VCrayApp.bat
+   0.1.10 2023-04-03T21:37Z Adjust to the embedding changes in VCrayApp.bat
    0.1.9 2023-03-10T02:16Z Complete draft beta candidate
    0.1.8 2023-03-02T21:08Z Capture VCrayAppHost and VCrayAppHostURL presence.
    0.1.7 2023-02-27T20:19Z Defend against getenv() NULL returns
