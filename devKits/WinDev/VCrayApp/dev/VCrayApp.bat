@@ -1,5 +1,5 @@
 @echo off
-rem VCrayApp 0.1.0 VCrayApp.bat 0.0.44 UTF-8                       2023-04-04
+rem VCrayApp 0.1.0 VCrayApp.bat 0.0.45 UTF-8                       2023-04-04
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 rem                  BUILDING RAYLIB APP WITH VC/C++ TOOLS
@@ -402,9 +402,9 @@ ECHO:    VCrayApp depends on VSCMD_VER being set by the VS Command Prompt
 ECHO:    with CMDEXTEVERSION 2 or better available for operation.
 ECHO:
 ECHO:    There is use/clearing of environment variables VCAPPEXE, VCAPPSRC,
-ECHO:    VCfrom, VChush, VCrayApp, VCrayAppHost, VCrayAppHostURL, VCraylib,
-ECHO:    VCsplice, and VCterse.  When VCrayApp is operated under another
-ECHO:    script (option "+"), additional variables are exposed to that host.
+ECHO:    VCfrom, VChush, VCrayApp, VCraylib, VCsplice, and VCterse.  When
+ECHO:    VCrayApp is operated under another script (option "+"), additional
+ECHO:    variables are exposed to that host.
 ECHO:
 IF "%VCsplice%" == "+" GOTO :FALLOUT
 ENDLOCAL
@@ -453,6 +453,7 @@ rem For additional information, see the accompanying NOTICE.txt file.
 rem
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 rem
+rem 0.0.45 2023-04-04T20:43Z Update Usage Information, now release candidate
 rem 0.0.44 2023-04-04T20:21Z Fix an embedded case, some comment touch-ups
 rem 0.0.43 2023-04-02T20:45Z Clean up exits to prevent EXE/SRC leaking
 rem 0.0.42 2023-04-02T16:37Z Improved embedding, release-candidate touch-ups
