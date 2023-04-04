@@ -1,5 +1,5 @@
 @echo off
-rem VCrayApp 0.1.0 VCrayApp.bat 0.0.43 UTF-8                       2023-04-02
+rem VCrayApp 0.1.0 VCrayApp.bat 0.0.44 UTF-8                       2023-04-04
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 rem                  BUILDING RAYLIB APP WITH VC/C++ TOOLS
@@ -177,9 +177,11 @@ IF NOT EXIST VCrayVer.bat GOTO :FAIL5
 CALL VCrayVer.bat
 IF ERRORLEVEL 1 GOTO :FAIL5
 IF "%VCRAYVER%" == "" GOTO :FAIL5
-REM Refine VCRAYVER based on additional information at %VCraylib%.
+
+REM REFINE VCRAYVER BASED ON ADDITIONAL INSPECTIONS,OF %VCraylib%.
 IF %VCRAYVER% == "4.2" GOTO :FAIL8
-REM **IMPORTANT**  Additional beyond 4.0 exclusions go here
+
+REM **IMPORTANT**  Additional beyond-4.0 exclusions go here
 COPY /Y raylibCode.4.x.0.opt raylibCode.opt >nul 2>nul
 IF NOT %VCRAYVER% == "unidentified" GOTO :BUILDCACHE
 rem Versions of raylib.h before 4.0 do not set RAYLIB_VERSION so we must
@@ -208,12 +210,12 @@ rem Flags
 SET OUT=/Fe: "%VCEXE%"
 SET SUBSYS=/SUBSYSTEM:WINDOWS /ENTRY:mainCRTStartup
 
-rem Compiling %VCSRC%
+rem Compiling as %VCSRC%
 CL %VChush% /W3 /c @%~dp0cache\VCoptions.opt %VCSRC%        %VCterse%
 IF ERRORLEVEL 2 GOTO :FAIL5
 ECHO: %VCterse%
 
-rem Linking it all to %VCEXE%
+rem Linking it all as %VCEXE%
 CL %VChush% %OUT% @%~dp0cache\rayLinking.opt /link /LTCG %SUBSYS% %VCterse%
 IF ERRORLEVEL 2 GOTO :FAIL5
 ECHO: %VCterse%
@@ -236,6 +238,7 @@ IF "%VCsplice%" == "+" GOTO :SUCCESS
 
 :NOAPP
 IF NOT "%VCrayAppHost%" == "" GOTO :FUMBLED
+IF "%VCsplice%" == "+" GOTO :MUMBLED
 ECHO: [VCrayApp] **** ALL SET. CACHE CONFIRMED. NO APP TO COMPILE YET. ****
 ECHO:            Have the C Language source code and any headers at
 ECHO:            VCAPPSRC.  Then put the app .exe name in the VCAPPEXE
@@ -255,6 +258,10 @@ GOTO :SUCCESS
 :FUMBLED
 ECHO: [VCrayApp] *** NO APP TO RUN YET FOR %VCrayAppHost%      %VCterse%
 GOTO :SUCCESS
+
+:MUMBLED
+ECHO: [VCrayApp] NAMED HOST REQUIRED FOR EMBEDDED ("+") OPERATION  %VCterse%
+GOTO :MAYBEAPP
 
 :NOSRC
 ECHO: [VCrayApp] **** NO SOURCE CODE LOCATION SUPPLIED ****
@@ -446,6 +453,7 @@ rem For additional information, see the accompanying NOTICE.txt file.
 rem
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 rem
+rem 0.0.44 2023-04-04T20:21Z Fix an embedded case, some comment touch-ups
 rem 0.0.43 2023-04-02T20:45Z Clean up exits to prevent EXE/SRC leaking
 rem 0.0.42 2023-04-02T16:37Z Improved embedding, release-candidate touch-ups
 rem 0.0.41 2023-03-28T19:44Z Streamline "+" and VCrayAppHost considerations
