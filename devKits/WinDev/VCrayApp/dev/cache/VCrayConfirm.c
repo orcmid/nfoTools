@@ -1,5 +1,9 @@
-/* VCrayConfirm.c 0.1.10               UTF-8                       2023-04-03
+
+/* VCrayConfirm.c 0.1.11               UTF-8                       2023-04-05
    -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
 
                     CONFIRMATION OF RAYLIB APP CACHE SETUP
 
@@ -29,7 +33,7 @@
 
    */
 
-#define VCRAYCONFIRM "VCrayConfirm 0.1.10"
+#define VCRAYCONFIRM "VCrayConfirm 0.1.11"
 
 #include <stddef.h>   // for NULL
 #include <string.h>   // for strncat_s(), strncmp()
@@ -314,6 +318,7 @@ int main(void)
 
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+   0.1.11 2023-04-05T17:42Z Clearsign as release candidate
    0.1.10 2023-04-03T21:37Z Adjust to the embedding changes in VCrayApp.bat
    0.1.9 2023-03-10T02:16Z Complete draft beta candidate
    0.1.8 2023-03-02T21:08Z Capture VCrayAppHost and VCrayAppHostURL presence.
@@ -331,4 +336,15 @@ int main(void)
          raylib 3.7.0.zip release downloaded 2021-10-08T00:41
 
                         *** end of VCrayConfirm.c ***
-   */
+-----BEGIN PGP SIGNATURE-----
+
+iQFGBAEBCAAwFiEEBNBDIpebhN4QdwM0+W6J/9RWYooFAmQtsqgSHG9yY21pZEBh
+cGFjaGUub3JnAAoJEPluif/UVmKKGfcH/0ChOpVU62PhYvV2iTrKjvosAkytgZxl
+TFlmip8YjyaIMpSPEDuaXN/rNLLIkVqS4QWKRvTf5Su+DFMrtpeomRSoGZxL7ZXl
+i1j3x4nQBWNQL55gDppQcbNKeKrC5n23wy75sZILcWDtayqf2KjeRWWNY3ONaeky
+iZ5DfX+Yx+A42L2pO7f4Qs37NRXYcx5WonGUsNg1Ql9nb9qKsxnC6L5vApqukyci
+UJWN+u/KhEOuY8+jPZZqUXlJpxsKMj+DA87rcuWMajJv2hWcOQZzBdMMqPl2uobb
+ntnsc+jJ/YTx4A5B4gQcTwAAA+n05tffY5psf7gkdKJZEE3qA6WFbuk=
+=w8JZ
+-----END PGP SIGNATURE-----
+*/
