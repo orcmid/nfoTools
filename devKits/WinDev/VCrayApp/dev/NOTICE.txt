@@ -1,4 +1,7 @@
-NOTICE.txt 1.0.3                      UTF-8                      2023-01-14
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+NOTICE.txt 1.0.4                      UTF-8                       2023-04-05
 
                                  VCrayApp NOTICE
                                 =================
@@ -37,9 +40,20 @@ INFORMAL SUMMARY
     at <https://orcmid.github.io/nfoTools/dev/D211101>.
 
     You can provide a different license of your own choosing.  That does not
-    alter the copyright and license over the original portions that do not
+    alter the copyright status and license over the portions that do not
     comprise your original authorship.
 
     For specific details, consult the complete Apache License.
 
                      *** end of VCrayApp NOTICE.txt ***
+-----BEGIN PGP SIGNATURE-----
+
+iQFGBAEBCAAwFiEEBNBDIpebhN4QdwM0+W6J/9RWYooFAmQtqqkSHG9yY21pZEBh
+cGFjaGUub3JnAAoJEPluif/UVmKK6TcH/RkNyQGxhObPWgqWJvr/9LgqMvPVPsfG
+iGQC0GnrMNGzfpVCnpn24SK4MYkd/jhbCpQQsHXt9XsvHffJjaKTOdf8GqLGEvys
+xKQiIsOnKyB/UTEKXaCBqePVfzZ4J+zShDEsAAV50d6Un0jP3oFzlSmXzP6wnpHX
+VxzvjTpDIZtC0s0qyfXwN0uWuhTP9KZ5WVa3PeqPxbPHeEYwE5P6Qf6PZgKhjZYh
+k8q8otw/Lza70a4PGWl59IxuSsO7OeIAWwt3iZJh5S4LlsggZcl77fH2/uXQbao+
+DsXsGGA247azILPaOIJYVlYq2XdvUvBMxw2LrlVhqbGoNpQ9EckT9Kw=
+=WzzI
+-----END PGP SIGNATURE-----
