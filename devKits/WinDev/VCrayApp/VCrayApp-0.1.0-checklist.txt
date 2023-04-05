@@ -38,13 +38,7 @@ Changes and improvements will be reflected in the main VCrayApp-checklist.txt.
           being used
         o Clear/armor sign the cache.txt file.
 
-    * cache\VCrayConfirm.c
-        o Adjust version-specific information
-        o Adjust VCrayApp package identification
-        o Clear/armor sign the VCrayConfirm.c file
-
     * VCrayApp.bat
-        o Set the semantic version variable, VCrayApp
         o Provide the <place-to-be-announced> as the location for VCrayApp
           dev location
         o Provide the <related-place-to-be-announced> as the location for
