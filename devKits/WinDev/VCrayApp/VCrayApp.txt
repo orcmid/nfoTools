@@ -1,4 +1,4 @@
-VCrayApp.txt 0.0.9                  UTF-8                         2023-01-15
+VCrayApp.txt 0.0.10                  UTF-8                         2023-04-06
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                       RAYLIB APP DEVELOPMENT PROJECT
@@ -41,27 +41,38 @@ MANIFEST
         development project
 
     .gitignore
-        Keeping raylib\ and VCrayapp\ here out of the winDev\VCrayApp
-        repository
+        Keeping raylib\, VCrayApp\, and any raylib-*\ out of the
+        winDev\VCrayApp repository.  When raylib\ is a cloned "-dev" of
+        raylib, it will be under its own GitHub coordination.
 
     VCrayApp-checklist.txt
         Checklist of activities in the development and staging of a VCrayApp
         release.
 
+    VCrayApp-*semver*-checklist.txt
+        Checklist being consumed on behalf of preparation for the *semver*
+        release.
+
     dev\
-        Developer foder for the VCrayApp materials under current development.
+        Folder for the VCrayApp materials under current development.
         A version of VCrayApp structure before packaging in a release Zip.
         This is always work-in-progress.  This code is not intended for use
-        by other than developers contributing to VCrayApp itself.
+        by other than developers contributing to VCrayApp itself.  There
+        are some files (including dev.txt there) that are not included in
+        a release.
 
+    raylib-3.5.0.zip
+        The raylib 3.5.0 source release also supported by VCrayApp.
     raylib-3.7.0.zip
-        The raylib 3.7.0 release zip used in original confirmation of
-        VCrayApp-0.0.0 at this time.
-
+        The raylib 3.7.0 source release zip used in original confirmation of
+        VCrayApp-0.0.0.
     raylib-4.0.0.zip
         The raylib 4.0.0 release zip used for confirming VCrayApp operation
         with the latest raylib version that works with Microsoft VC/C++.
         (See VCrayApp-0.0.0.txt for particulars)
+    raylib-4.5.0.zip
+        The raylib 4.5.0 release zip also used for confirming VCrayApp
+        operation with VCrayApp-0.1.0 development.
 
     raylib\
         The Zipped raylib-x.x.0\ folder extracted to here and renamed
@@ -69,24 +80,34 @@ MANIFEST
         (excluded from Git, extracted from the raylib release .zip under test.
         This is at the same level as dev\ and any VCrayApp\ opened here for
         confirmation of a VCrayApp-*semver*.zip release candidate.
+        When testing with the current raylib\ main (a -dev version), this
+        holds a clone and is generally used for confirming under-development
+        VCrayApp versions.
 
     VCrayApp\
         Produced by unzipping VCrayApp-*semver*.zip here and renaming it to
         VCrayApp.  This folder is also excluded from Git.  It is created for
         confirmation of any VCrayApp release candidate and located at the
-        same level as raylib\ for that purpose.
+        same level as raylib\ for that purpose. This is generally only done
+        to ensure no regressions with an under-development raylib\
 
-    VCrayApp-0.0.0 Release candidate
-        The following comprise the release candidate for VCrayApp-0.0.0.  The
-        confimred candidate will be preserved and distributed via
+    VCrayApp-*semver* Release Materials
+        The following comprise the release candidate for VCrayApp-*semver*.
+        The confirmed candidate will be preserved and distributed via
         <https://orcmid.githug.io/nfoTools/dev/D211101/> .  General practice
-        is to download all four of the files into the same folder.
+        is to download all five of the files into the same folder.  Only the
+        latest set is carried here.  Previous ones can be found at D211101.
 
     VCrayApp-0.0.0.txt
         Synopsis, summaries, and manifest for the VCrayApp-0.0.0 alpha
         release candidate.  The file is clear-signed and the same as the one
         included in VCrayApp-0.0.0.zip.  Download and review of this file
         is useful before deciding to download the additional files.
+
+    CHANGES.txt
+        A file cataloging changes *since* the original 0.0.0 release.  These
+        will also be clear-signed and availabel for download and review before
+        downloading the latest package.  This should probably have a *semver*.
 
     VCrayApp-0.0.0.zip
         Package of the VCrayApp-0.0.0 release candidate with contents as
@@ -122,23 +143,11 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. Raylib App Construction-Kit Project. nfoTools Project
-   text file VCrayApp.txt 0.0.9 dated 2023-01-15, available on the Internet
+   text file VCrayApp.txt 0.0.10 dated 2023-04-06, available on the Internet
    as a version of
    <https://github.com/orcmid/nfoTools/blob/master/devKits/WinDev/VCrayApp/VCrayApp.txt>
 
 TODO
-
- * Derive a VCrayApp-0.0.0.zip and employ it in orcmid/RayLab to confirm the
-   templates and examples.
-
- * This project was started using raylib-3.7.0 for the testing.  It is now
-   important to distribute in a form that works with raylib-4.0.0 for
-   newbies.
-
- * IMPORTANT NOTE: raylib-4.2.0 uses a version of external/miniaudio.h that
-   WILL NOT COMPILE WITH VC/C++.  Until that is remedied in miniaudio.h and
-   a subsequent release of raylib-4.x, raylib source cannot be used for
-   VCrayApp-constructed raylib applications.
 
  * In general, the use of an in-progress raylib version is not covered
    for building applications that depend on raylib.  That does not
@@ -151,11 +160,6 @@ TODO
    should never depend on a dependency achieving release. There are enough
    hazards that are under ones own control.
 
- * I intend to make VCrayApp-0.0.0 available as an alpha release, inviting
-   exploration and employment by interested users of raylib.  This means I
-   need to update the text files and also have something on docs/dev for the
-   alpha release.
-
  * The beta release, VCrayApp-0.1.0 should also address the replacement of
    one release by another and all the support there is for such changes.
    Saving ones customizations, having the customizations already on the users
@@ -165,17 +169,10 @@ TODO
  * These aspects of trustworthy production need to be accounted for.  There
    should also be some integration with respect to confirmable experience.
 
- * Create docs/dev/ folio(s) on VCrayApp and link from VCrayApp-0.0.0 content.
-
- * In VCrayApp.bat, have places for error messages to link to that provide
+  * In VCrayApp.bat, have places for error messages to link to that provide
    more information on resolving a particular failure.
 
  * Resolve use of docs/dev connections back and forth on raylib at docs/tools.
-
- * Do alpha/beta availability and distribution once there is a docs/dev folder
-   for downloading, usage information, and gathering feedback.
-
- * Use project structure for developing/working the checklist.
 
  * It is not possible to provide VCrayApp as the basis for learning C/C++
    programming.  This must be emphasized in some manner.  We do want on-ramps
@@ -188,39 +185,11 @@ TODO
    structure for for src, cache, and app in generic construction projects of
    single executables.
 
- * There needs to be a structure, maybe beside dev/ for testing against the
-   raylib/examples in some sort of easy to verify and run form.  This will
-   need a good script that runs VCrayApp.bat to accomplish all of its work.
-   I need to figure out a folder structure.  There is already a raylib\ here,
-   with dev\ alongside.  I have a small problem because dev\ does not lock
-   down.  I should have thought of that.  With test\ or verify\ alongside
-   raylib\, I am puzzled about what the structure is and how to switch among
-   raylib sources and also VCrayApp versions.  I need to ponder this.
-
- * I have the idea of a .bat file that has labels for the raylib example
-   groups and also the the within-group places.  There needs to be a way to
-   jump in at any one of these and test or to test and continue.  There may
-   also be some parameters that get passed to VCrayApp for certain operations.
-   There needs to be good ways to pop out of a run as well.
-
- * So, should verify\ *be* a VCrayApp project that I copy the additional
-   script, verify.bat into, and then run from there?  that might be easy in
-   terms of using the existing structure at the same level as VCrayApp.bat.
-   So I want to create it in that form.
-
- * Now the promise of VCrayApp that
-   it can be unzipped over the same location and not touch anything that is
-   not part of VCrayApp directly should work.  So this should not be in dev\
-   because it doesn't ship with VCrayApp.
-
- * There is a question about managing
-   and making verification available, so I have to think about that.  Then
-   there needs to be a bit more scaffolding.  Mmm, yes, but the same applies.
-   I could make VCrayVerify and that should work just fine.  Still noodling.
-   This is a great idea because it provides a structure for reverifying the
-   examples when raylib\examples change and also when there is a new releases
-   of Visual Studio Build Tools.  We have both of those to contend with and
-   the ability to rerun everything relatively quickly matters.
+ * The project VCrayVerify needs to be usable in confirming that all examples
+   build properly with a release candidate.  Recent improvements for VCrayApp
+   0.1.0 will make it easier to drop in a fresh VCrayApp candidate.  This will
+   usually work against the main -dev raylib code to anticipate problems and
+   provide feedback to the raylib project as appropriate.
 
  * The technique in VCbind for choosing a start configuration should work for
    VCrayVerify.  Then a technique for doing only one instead of running the
@@ -230,14 +199,10 @@ TODO
    card scheme, and must deal with * being use in VCbind and VCrayApp for
    other purposes.  Need this to be simple.
 
- * It looks like VCrayVerify should be a peer project or a subproject of
-   VCrayApp.  I don't like the deeper nesting.  And this is as much about
-   raylib (or more) than it being an application of VCrayApp.  Wherever I
-   create this, I should move some of these work items and considerations
-   there.
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.10 2023-04-06T18:13Z Bring current with more annotation, touch-ups
  0.0.9 2023-01-15T06:02Z Pondering how to create a verification fixture that
        works through raylib\example folders in some deliberate way.
  0.0.8 2023-01-08T21:06Z Reflect VCrayApp-0.0.0 release candidacy and manage
