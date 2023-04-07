@@ -1,4 +1,4 @@
-D211101a.txt 0.0.2                  UTF-8                         2023-01-**
+D211101a.txt 0.0.2                  UTF-8                         2023-04-07
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -41,7 +41,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. D211101a: VCrayApp Setup.  nfoTools development
-   documentation text file D211101a.txt version 0.0.2 dated 2022-01-**,
+   documentation text file D211101a.txt version 0.0.2 dated 2022-04-07,
    available on the Internet as a version of
    <https://orcmid.github.io/nfoTools/dev/D211101/D211101a/D211101a.txt>
 
@@ -66,10 +66,24 @@ TODO
  * Demonstrate the initial confirmation of the setup
 
  * Error messages, or some Error messages may be treated here?
+   We are only going to confirm setup.  We can link the error messages to
+   other locations.
+
+ * Feature the prerequisite setups: Having chosen a place for VCrayApp
+   projects, installing Visual Studio Built Tools, and installing raylib
+   releases.
+
+ * Recommend holding onto a source-release .zip file.
+
+ * Provide tips for novices but don't get in the way of more-experienced
+   developers.  Identify tips and also provide links to specialized materials.
+   I may need a tool folio on raylib soon.
+
+ * Identify the VCrayApp version that this information is current with.
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
- 0.0.2 2023-01-**
+ 0.0.2 2023-04-07T15:59Z More TODOs
  0.0.1 2023-01-12T03:10Z Adjustment TODOs
  0.0.0 2022-08-18T17:51Z Placeholder morphed from D211101c.txt 0.0.2 and
        adjusted for VCrayApp Setup as part of alpha availability.
