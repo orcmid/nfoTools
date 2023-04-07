@@ -22,10 +22,7 @@ Changes and improvements will be reflected in the main VCrayApp-checklist.txt.
        #42
 
     * app\app.txt
-        o Update to version of VCrayApp
-        o Indicate purpose of app\
         o Connect to D211101b\
-        o Provide orcmid.github.io/nfoTools location for the attribution
         o Clear/armor sign the app.txt file.
 
     * cache\

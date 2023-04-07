@@ -1,4 +1,4 @@
-VCrayApp 0.1.0 app.txt 0.0.11       UTF-8                          2023-01-14
+VCrayApp 0.1.0 app.txt 0.0.12       UTF-8                          2023-04-07
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                       VCRAYAPP APPLICATION-BUILD DEVKIT
@@ -15,25 +15,30 @@ VCrayApp 0.1.0 app.txt 0.0.11       UTF-8                          2023-01-14
   *    app\ is the standard VCrayApp subfolder into which a project's     *
   *    .exe executable code is compiled.  app\ is also the location for   *
   *    accompanying files/folders that must be adjacent to the .exe       *
-  *    for correct operation.                                             *
+  *    for correct operation.  This will depend on the nature of the      *
+  *    project.                                                           *
   *                                                                       *
   *    app\ folder content is amenable to delivery in a Zip file after    *
   *    copying to a separate location, removal of extraneous material     *
-  *    (such as this file) there, and addition of supporting content      *
+  *    (such as this file), and addition of supporting content needed     *
   *    needed for the deployed result. The typical case is demonstrated   *
-  *    at <*** link to be provided ***>                                   *
+  *    at <https://orcmid.github.io/nfoTools/dev/D211101/D21101c>.        *
   *                                                                       *
   *    The deployed folder can also be employed for derived materials     *
   *    of the running application including user information and saved    *
   *    history/state.  It is recommended that there be a means for the    *
   *    confirmation of correct installation and also accepting updates.   *
   *                                                                       *
-  *    Further details are at <**Location to be provided**>. For more     *
-  *    information see <***link to be provided***>.                       *
+  *    See <https://orcmid.github.io/nfoTools/dev/D211101> for further    *
+  *    details.                                                           *
   *                                                                       *
   *    If VCrayApp is re-extracted or is updated and extracted, this      *
   *    file and the .gitignore will be restored/replaced.  Any other      *
-  *    files already in this folder will be untouched.                    *                                          *
+  *    files already in this folder will be untouched.  If there have     *
+  *    been customizations, those should be renamed first to avoid        *
+  *    collision.  Then review to see what changes need to be made, if    *
+  *    any, to the fresh copies of app.txt and .gitignore.  There will    *
+  *    usually be no need.                                                *
   *                                                                       *
   * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 
@@ -41,7 +46,7 @@ VCrayApp 0.1.0 app.txt 0.0.11       UTF-8                          2023-01-14
 MANIFEST
 
     app.txt
-        this synopsis and manifest (customizable, not usually deployed)
+        this synopsis and manifest (not usually deployed by project)
 
     .gitignore
         excluding some VCrayApp app\ and compilation results from
@@ -50,16 +55,22 @@ MANIFEST
 
     resources/
         here when provided as a neighbor of the compiled .exe file and
-        included in the app package (the typical raylib technique)
+        included in the app package (the typical raylib technique).  There
+        may be other "assets" here, whether in subfolders or as companion
+        files.
 
     *.exe
-        here as the compiled product (deliverable)
+        here as the compiled product (deliverable), with actual name
+        specified for the project in VCrayApp.bat or via a host script.
+        See <https://orcmid.github.io/nfoTools/dev/D211101/D211101b>.
 
     *.obj
         files that are only transient here and not part of the app package
         (not to be deployed, usually remaining only if a compile fails)
 
-    other materials are provided as an individual project requires.
+    Other materials are part of the individual project and untouched by
+    VCrayApp.  They should be preserved and backed-up as needed.  See
+    <https://orcmid.github.io/nfoTools/dev/D211101/D211101c>.
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
@@ -82,12 +93,13 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. VCrayApp XCOPY/MSIX App Folder.  File app.txt version
-   0.0.11 dated 2023-01-14 available on the Internet as a version of
+   0.0.12 dated 2023-04-07 available on the Internet as a version of
    <https://github.com/orcmid/nfoTools/blob/master/devKits/WinDev/VCrayApp/dev/app/app.txt>.
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
+ 0.0.12 2023-04-07T16:55Z Completion of information for release-candidate.
  0.0.11 2023-01-14T21:18Z Adjusted for VCrayApp 0.1.0
  0.0.10 2022-10-30T16:24Z Touch-ups to clarify development use versus
         what is not intended to be included in the deployed app
@@ -103,6 +115,5 @@ MANIFEST
  0.0.2 2021-09-29T18:17Z Reflect change from rawCL/ to rawVC/.
  0.0.1 2021-09-28T14:15Z touch-up, manage TODOs
  0.0.0 2021-09-27T23:42Z placeholder for native-build intermediate materials
-
 
                           ***** end of app.txt *****
