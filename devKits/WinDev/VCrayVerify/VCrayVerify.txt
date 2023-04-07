@@ -1,4 +1,4 @@
-VCrayVerify.txt 0.0.3               UTF-8                         2023-04-01
+VCrayVerify.txt 0.0.4               UTF-8                         2023-04-**
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 <https://github.com/orcmid/nfoTools/blob/master/devKits/WinDev/VCrayVerify/VCrayVerify.txt>
@@ -65,7 +65,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. VCrayVerify: Test Harness for Verifying raylib
-   examples.  nfoTools file VCrayVerify.txt version 0.0.3 dated 2023-04-01,
+   examples.  nfoTools file VCrayVerify.txt version 0.0.4 dated 2023-04-**,
    available on the Internet as a version of
    <https://github.com/orcmid/nfoTools/blob/master/devKits/WinDev/VCrayVerify/VCrayVerify.txt>
 
@@ -108,6 +108,20 @@ TODO
    app\resources\ folder is the correct one, if any, for the case about to
    be verified.
 
+ * So the parameters are [+] [*] [-c] [-v] [-r] [name1 [name2] [*[*]]]
+   name2 is normally only meaningful when name1 is an example folder name.
+   If name1 is "examples", it essentially names all of the examples.  It may
+   be possible for there to be other locations of tests to verify.
+
+ * name1 can be "examples" or an examples folder name or an example file name
+   in a specified folder.  In the the last case, name2 should not be present
+   although it is expected to name a specific example in the named folder and
+   name1 only specifices the examples subfolder.
+
+ * The final * after at least name1 specifies continuation to the end
+   of the named folder or the folder holding name1, for "**", continuation
+   is to the end of the examples from the specified starting point.
+
  * VCrayApp provides feature information on raylib and this can be used by
    VCrayVerify for bypass cases involving different versions of VC/C++ and
    raylib.
@@ -120,7 +134,7 @@ TODO
 
  * raylib examples include PNG files of what to expect in the display of the
    example.  It would be good to have presentation of these under option
-   control, and maybe the default.
+   control, not the default.  I am thinking of option "-v"
 
  * On startup, we always consider the VCrayAppV app\ folder to be dirty,
    including any app\resources\ folder.
@@ -137,6 +151,7 @@ TODO
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.4 2023-04-**
  0.0.3 2023-04-01T20:47Z Manage TODOs and some touch-ups
  0.0.2 2023-03-20T19:18Z More Touch-ups and TODOs
  0.0.1 2023-01-19T18:34Z Touch-ups and TODO additions

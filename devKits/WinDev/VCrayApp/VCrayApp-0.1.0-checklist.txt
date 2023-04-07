@@ -21,10 +21,6 @@ Changes and improvements will be reflected in the main VCrayApp-checklist.txt.
        tasks/issues for these activities as we go.  The overall project is
        #42
 
-    * app\app.txt
-        o Connect to D211101b\
-        o Clear/armor sign the app.txt file.
-
     * cache\
         o Update cache.txt to version of VCrayApp
         o Indicate purpose of cache\
