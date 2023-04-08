@@ -1,5 +1,5 @@
 @echo off
-rem VCrayApp 0.1.0 VCrayApp.bat 0.0.45 UTF-8                       2023-04-04
+rem VCrayApp 0.1.0 VCrayApp.bat 0.0.46 UTF-8                       2023-04-08
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 rem                  BUILDING RAYLIB APP WITH VC/C++ TOOLS
@@ -11,13 +11,9 @@ rem Use the script without modification until installation and operation is
 rem confirmed.  Then alter the VCAPPEXE and VCAPPSRC vars as appropriate
 rem for a specific standalone project.
 
-rem NOTE: If VCrayApp.bat is incorporated as a component of a larger project,
-rem       indicated by option "+", this file does not require modification.
-
 REM *** PROLOGUE*** READ CAREFULLY, CHANGE THESE SETTINGS AS NECESSARY ****
 REM *** THESE SETTING ONLY MATTER FOR STANDALONE USAGE OF VCRAYAPP     ****
 REM *** WHEN CALLED FROM A HOST PROJECT (OPTION "+") THESE ARE IGNORED.****
-REM *** See ^<https://orcmid.github.io/nfoTools/dev/D211101^>.         ****
 REM ***********************************************************************
 
 IF "%1" == "+" GOTO :NOCHANGES
@@ -38,22 +34,19 @@ SET VCAPPSRC=src\*.c
 rem VCrayApp treats this as a special case.  If this is defined to a location
 rem and files elsewhere, a complete absolute location must be provided.
 rem It is strongly-recommended that src\ be used for standalone raylib app
-rem projects, especially for novice applications of raylib.
+rem projects, especially for introductory applications of raylib.
 
 rem *********** NO CHANGES EVER NEEDED BELOW HERE ****************************
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-:NOCHANGES
-rem Designate the semantic-versioned distribution
-SET VCrayApp=0.1.0
-SET VCraylib=%~dp0..\raylib
-rem XXX This is a fragile dependency also in cache\rayLibCode.opt files and
-rem     other parts of this script.
-
 rem Additional documentation of this procedure and its usage are found in the
-rem accompanying VCrayApp-%VCrayApp%.txt file.  For further information, see
+rem accompanying VCrayApp-0.1.0.txt file.  For further information, see
 rem ^<https://orcmid.github.io/nfoTools/dev/D211101^> and check for the latest
 rem version.
+
+:NOCHANGES
+rem Designate the semantic-versioned distribution of VCrayApp
+SET VCrayApp=0.1.0
 
 SET VCfrom=%CD%
 rem remembering where VCrayApp.bat is called *from*, so it can be restored
@@ -63,21 +56,30 @@ SET VChush=
 SET VCsplice=%1
 rem can :BAIL from any point now
 
-rem If embedded, the host must set locality and VCrayApp.bat will expose the
+rem If embedded, the host must enable extensions and VCrayApp.bat will expose
 rem environment variables it defines, especially related to confirming a
 rem cache.  Note that the variables set/cleared above are all in the locality
 rem of any calling/host script.
+
 SET ERRORLEVEL=0
-IF NOT "%1" == "+" SETLOCAL ENABLEEXTENSIONS
+IF "%1" == "+" GOTO :ALLFLAVORS
+VERIFY bogus 2>nul
+rem forcing an error in case CMD doesn't actually handle ENABLEEXTENSIONS
+SETLOCAL ENABLEEXTENSIONS
 IF ERRORLEVEL 1 GOTO :FAIL0
 
-IF NOT "%1" == "+" SET VCrayAppHost=
+SET VCrayAppHost=
+SET VCrayAppHostURL=
 rem When VCrayApp is hosted by another script, VCrayAppHost can be set to
 rem have this reported in the confirmation of VCrayApp cache creation.
-
-IF NOT "%1" == "+" SET VCrayAppHostURL=
 rem When VCrayAppHost is set, a URL for additional handling of VCrayApp
 rem failure messages can be presented if VCrayAppHostURL is set by the host.
+
+:ALLFLAVORS
+rem below here, extensions are employed, embedded or not
+SET VCraylib=%~dp0..\raylib
+rem XXX This is a fragile dependency also in cache\rayLibCode.opt files and
+rem     other parts of this script.
 
 rem SELECT EMBEDDED, TERSE, OR DEFAULT
 rem     %1 value "+" selects smooth non-stop operation for splicing output
@@ -142,7 +144,7 @@ IF NOT EXIST "%~dp0app\app.txt" GOTO :FAIL1
 IF NOT EXIST "%~dp0src\src.txt" GOTO :FAIL1
 IF NOT EXIST "%~dp0VCrayApp-%VCrayApp%.txt" GOTO :FAIL1
 IF NOT EXIST "%~dp0VCrayApp.bat" GOTO :FAIL1
-IF NOT EXIST "%~dp0CHANGES.txt" GOTO :FAIL1
+IF NOT EXIST "%~dp0CHANGES-%VCrayApp%.txt" GOTO :FAIL1
 
 IF NOT EXIST "%VCraylib%\src\raylib.h" GOTO :FAIL6
 rem XXX *IMPORTANT* Another fragile dependency on location of raylib\
@@ -166,6 +168,7 @@ CD %~dp0cache
 rem DETERMINING RAYLIB VERSION THAT IS INSTALLED
 rem First Compile VCrayVerCheck that fishes any RAYLIB_VERSION from raylib.h
 SET VCEXE=VCrayVerCheck.exe
+rem       for customization of any FAIL5 message
 CL %VChush% @VCoptions.opt VCrayVerCheck.c   %VCterse%
 IF ERRORLEVEL 1 GOTO :FAIL5
 IF NOT EXIST VCrayVerCheck.exe GOTO :FAIL5
@@ -180,8 +183,8 @@ IF "%VCRAYVER%" == "" GOTO :FAIL5
 
 REM REFINE VCRAYVER BASED ON ADDITIONAL INSPECTIONS,OF %VCraylib%.
 IF %VCRAYVER% == "4.2" GOTO :FAIL8
-
 REM **IMPORTANT**  Additional beyond-4.0 exclusions go here
+
 COPY /Y raylibCode.4.x.0.opt raylibCode.opt >nul 2>nul
 IF NOT %VCRAYVER% == "unidentified" GOTO :BUILDCACHE
 rem Versions of raylib.h before 4.0 do not set RAYLIB_VERSION so we must
@@ -201,7 +204,7 @@ ECHO: [VCrayApp] FRESH CACHE OF RAYLIB %VCRAYVER% *.OBJ FILES COMPILED
 ECHO: %VCterse%
 
 :VCRAYCONFIRMBUILD
-REM THE PROGRAM VCrayConfirm IS BUILT AND RUN AFTER EVER CACHE BUILD
+REM THE PROGRAM VCrayConfirm IS BUILT AND RUN AFTER EVERY CACHE BUILD
 SET VCEXE=VCrayConfirm.exe
 SET VCSRC=%~dp0cache\VCrayConfirm.c
 CD %~dp0app
@@ -245,8 +248,7 @@ ECHO:            VCAPPSRC.  Then put the app .exe name in the VCAPPEXE
 ECHO:            setting at the beginning of VCrayApp.bat.
 :MAYBEAPP
 ECHO:            Once that's done, VCrayApp.bat will compile the app.
-ECHO:            For more information,
-ECHO:            see ^<https://orcmid.github.io/nfoTools/dev/D211101/^>.
+ECHO:            See ^<https://orcmid.github.io/nfoTools/dev/D211101/^>.
 ECHO: %VCterse%
 
 IF NOT "%VCrun%" == "1" GOTO :SUCCESS
@@ -317,40 +319,40 @@ REM IF NOT "%VCrun%" == "1" PAUSE
 GOTO :FALLOUT
 
 :FAIL8
-ECHO: [VCrayApp] **** FAILURE: RAYLIB %VCRAYVER% NOT SUPPORTED ****
+ECHO: [VCrayApp] **** FAILCODE8: RAYLIB %VCRAYVER% NOT SUPPORTED ****
 ECHO:            USE 4.0 OR ONE LATER THAN 4.2 WITH VCrayApp        %VCterse%
 ECHO:            NO SIGNIFICANT ACTIONS HAVE BEEN PERFORMED         %VCterse%
 GOTO :BAIL
 
 :FAIL7
-ECHO: [VCrayApp] **** FAILURE: RAYLIB VERSION NOT ^> 3.0.0 ****
+ECHO: [VCrayApp] **** FAILCODE7: RAYLIB VERSION NOT ^> 3.0.0 ****
 ECHO:            3.5.0/3.7.0 ARE ONLY PRE-4.0 SUPPORTED BY VCrayApp %VCterse%
 ECHO:            NO SIGNIFICANT ACTIONS HAVE BEEN PERFORMED         %VCterse%
 GOTO :BAIL
 
 :FAIL6
-ECHO: [VCrayApp] **** FAILURE: RAYLIB NOT FOUND WHERE EXPECTED ****
+ECHO: [VCrayApp] **** FAILCODE6: RAYLIB NOT FOUND WHERE EXPECTED ****
 ECHO:            expected at "%VCraylib%    \"                      %VCterse%
 ECHO:            NO ACTIONS HAVE BEEN PERFORMED                     %VCterse%
 REM   XXXX ANOTHER DEPENDENCY ON raylib\ LOCATION
 GOTO :BAIL
 
 :FAIL5
-ECHO: [VCrayApp] ****PRODUCING OR OPERATING %VCEXE% FAILED ****
+ECHO: [VCrayApp] **** FAILCODE5: PRODUCING/OPERATING %VCEXE% FAILED ****
 ECHO:            Review any reported errors.                        %VCterse%
 ECHO:            Make repairs and reattempt.                        %VCterse%
 ECHO:            RESULTS ARE UNPREDICTABLE                          %VCterse%
 GOTO :BAIL
 
 :FAIL4
-ECHO: [VCrayApp] **** COMPILING CACHE OF RAYLIB FILES FAILED ****
+ECHO: [VCrayApp] **** FAILCODE4: COMPILING CACHE OF RAYLIB FILES FAILED ****
 ECHO:            Review the errors reported for the compilation.    %VCterse%
 ECHO:            Make repairs and reattempt.                        %VCterse%
 ECHO:            RESULTS ARE UNPREDICTABLE.  REBUILD CACHE.         %VCterse%
 GOTO :BAIL
 
 :FAIL3
-ECHO: [VCrayApp] **** FAIL: NO VS NATIVE COMMAND-LINE ENVIRONMENT ****
+ECHO: [VCrayApp] **** FAILCODE3: NO VS NATIVE COMMAND-LINE ENVIRONMENT ****
 ECHO:            VCrayApp.bat requires the command-line environment %VCterse%
 ECHO:            for VS Native Build Tools to be established.  See  %VCterse%
 ECHO:            ^<https://orcmid.github.com/nfoTools/dev/D211101^>.%VCterse%
@@ -358,26 +360,25 @@ ECHO:            NO ACTIONS HAVE BEEN PERFORMED                     %VCterse%
 GOTO :BAIL
 
 :FAIL2
-ECHO: [VCrayApp] **** FAIL: UNSUPPORTED VCRAYAPP.BAT PARAMETERS ****
+ECHO: [VCrayApp] **** FAILCODE2: UNSUPPORTED VCRAYAPP.BAT PARAMETERS ****
 ECHO:            Invalid Here: %*
 ECHO:            %VCterse%
 ECHO:            NO ACTIONS HAVE BEEN PERFORMED                     %VCterse%
 GOTO :USAGE
 
 :FAIL1
-ECHO: [VCrayApp] **** FAIL: INCORRECT VCrayApp FILES CONFIGURATION ****
+ECHO: [VCrayApp] **** FAILCODE1: INCORRECT VCrayApp FILES CONFIGURATION ****
 ECHO:            VCrayApp.bat must be in a folder that VCrayApp.zip %VCterse%
 ECHO:            is extracted into, along with the cache\ app\ and  %VCterse%
 ECHO:            src\ subfolders.  See                              %VCterse%
-ECHO:            ^<other nfoTools support information^>.            %VCterse%
+ECHO:            ^<https://orcmid.github.io/nfoTools/dev/D211101^>. %VCterse%
 ECHO:            NO ACTIONS HAVE BEEN PERFORMED                     %VCterse%
 GOTO :BAIL
 
 :FAIL0
-ECHO: [VCrayApp] **** FAIL: COMMAND SHELL EXTENSIONS REQUIRED ****
+ECHO: [VCrayApp] **** FAILCODE0: COMMAND SHELL EXTENSIONS REQUIRED ****
 ECHO:            VCrayApp.bat requires CMDEXTVERSION 2 or greater.
 ECHO:            This is available wherever VCrayApp.bat is usable.
-ECHO:
 ECHO:            NO ACTIONS HAVE BEEN PERFORMED
 GOTO :BAIL
 
@@ -387,30 +388,29 @@ ECHO:   USAGE: VCrayApp [+] ?
 ECHO:          VCrayApp [+] [*] [-c] [-r]
 IF NOT "%1" == "?" GOTO :BAIL
 ECHO:   where  ? produces this usage information.
-ECHO:          + for operating as a helper from another script, providing
-ECHO:            non-stop operation without any screen clearing and without
-ECHO:            pausing, among other adjustments.
+ECHO:          + ONLY FOR OPERATING AS A HELPER FROM ANOTHER SCRIPT, with
+ECHO:            non-stop operation, among other adjustments.
 ECHO:          * selects terse output.  If operation fails, repeat
 ECHO:            without this option for more details.
 ECHO:         -c for a complete rebuild of any cache
 ECHO:         -r for running the app on successful build
 ECHO:
-ECHO:    Exit code 0 is produced on all successful operations.
-ECHO:    Exit codes greater than 1 are produced for any failure.
+ECHO:    ERRORLEVEL 0 is produced on all successful operations;
+ECHO:    codes greater than 1 are produced for any failures.
 ECHO:
 ECHO:    VCrayApp depends on VSCMD_VER being set by the VS Command Prompt
-ECHO:    with CMDEXTEVERSION 2 or better available for operation.
-ECHO:
+ECHO:    with CMDEXTVERSION 2 or better available for operation.
 ECHO:    There is use/clearing of environment variables VCAPPEXE, VCAPPSRC,
-ECHO:    VCfrom, VChush, VCrayApp, VCraylib, VCsplice, and VCterse.  When
-ECHO:    VCrayApp is operated under another script (option "+"), additional
-ECHO:    variables are exposed to that host.
+ECHO:    VCfrom, VChush, VCrayApp, VCsplice, and VCterse.  More are exposed
+ECHO:    when operating under another script (option "+").
+ECHO:
+ECHO:    See ^<https://orcmid.github.io/nfoTools/dev/D211101^> for details.
 ECHO:
 IF "%VCsplice%" == "+" GOTO :FALLOUT
 ENDLOCAL
 SET VCAPPEXE=
 SET VCAPPSRC=
-rem     Prevent these from leaking into embedded ("+") VSrayApp.bat re-entry
+rem     Prevent these from leaking into embedded ("+") VCrayApp.bat re-entry
 GOTO :FALLOUT
 
 :BAIL
@@ -453,6 +453,7 @@ rem For additional information, see the accompanying NOTICE.txt file.
 rem
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 rem
+rem 0.0.46 2023-04-08T19:55Z Improve CMDEXTENSIONS check, touch-ups, fixes
 rem 0.0.45 2023-04-04T20:43Z Update Usage Information, now release candidate
 rem 0.0.44 2023-04-04T20:21Z Fix an embedded case, some comment touch-ups
 rem 0.0.43 2023-04-02T20:45Z Clean up exits to prevent EXE/SRC leaking
