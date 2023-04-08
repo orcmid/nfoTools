@@ -1,5 +1,5 @@
 @echo off
-rem VCrayApp 0.1.0 VCrayApp.bat 0.0.46 UTF-8                       2023-04-08
+rem VCrayApp 0.1.0 VCrayApp.bat 0.0.47 UTF-8                       2023-04-08
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 rem                  BUILDING RAYLIB APP WITH VC/C++ TOOLS
@@ -63,7 +63,7 @@ rem of any calling/host script.
 
 SET ERRORLEVEL=0
 IF "%1" == "+" GOTO :ALLFLAVORS
-VERIFY bogus 2>nul
+VERIFY bogus 2>NUL
 rem forcing an error in case CMD doesn't actually handle ENABLEEXTENSIONS
 SETLOCAL ENABLEEXTENSIONS
 IF ERRORLEVEL 1 GOTO :FAIL0
@@ -106,7 +106,7 @@ CLS
 :WHISPER
 rem CONFIRM COMMAND-LINE ENVIRONMENT
 IF "%VSCMD_VER%" == "" GOTO FAIL3
-WHERE cl.exe >nul 2>nul
+WHERE cl.exe >NUL 2>NUL
 IF ERRORLEVEL 1 goto FAIL3
 ECHO: [VCrayApp] %VCrayApp% BUILDING RAYLIB APP WITH VC/C++ %VSCMD_VER% TOOLS
 
@@ -136,7 +136,8 @@ IF NOT EXIST "%~dp0cache\cache.txt" GOTO :FAIL1
 IF NOT EXIST "%~dp0cache\raylibCode.3.x.0.opt" GOTO :FAIL1
 IF NOT EXIST "%~dp0cache\raylibCode.4.x.0.opt" GOTO :FAIL1
 IF NOT EXIST "%~dp0cache\raylibVars.opt" GOTO :FAIL1
-IF NOT EXIST "%~dp0cache\rayLinking.opt" GOTO :FAIL1
+IF NOT EXIST "%~dp0cache\rayConfirmLinking.opt" GOTO :FAIL1
+IF NOT EXIST "%~dp0cache\rayAppLinking.opt" GOTO :FAIL1
 IF NOT EXIST "%~dp0cache\VCoptions.opt" GOTO :FAIL1
 IF NOT EXIST "%~dp0cache\VCrayConfirm.c" GOTO :FAIL1
 IF NOT EXIST "%~dp0cache\VCrayVerCheck.c" GOTO :FAIL1
@@ -151,7 +152,7 @@ rem XXX *IMPORTANT* Another fragile dependency on location of raylib\
 
 rem CACHE LINKABLE RAYLIB CODE IF NEEDED
 IF NOT "%VCclean%" == "1" GOTO :CACHECHECK
-DEL %~dp0cache\rglfw.obj >nul 2>nul
+DEL %~dp0cache\rglfw.obj >NUL 2>NUL
 rem XXX We depend on rglfw.c being compiled last and absence is taken
 rem XXX to mean cache is absent/obsolete.
 
@@ -159,7 +160,7 @@ rem XXX to mean cache is absent/obsolete.
 IF EXIST %~dp0cache\rglfw.obj GOTO :APPCHECK
 rem Using presence of the last-built raylib .obj to determine full cache.
 rem *IMPORTANT* Keep consistent with %~dp0cache\raylibCode.opt cases
-DEL %~dp0cache\*.obj >nul 2>nul
+DEL %~dp0cache\*.obj >NUL 2>NUL
 
 REM COMPILE THE CACHE OF RAYLIB FILES THAT MAY BE NEEDED
 REM ****************************************************
@@ -172,10 +173,10 @@ rem       for customization of any FAIL5 message
 CL %VChush% @VCoptions.opt VCrayVerCheck.c   %VCterse%
 IF ERRORLEVEL 1 GOTO :FAIL5
 IF NOT EXIST VCrayVerCheck.exe GOTO :FAIL5
-del VCrayVer.bat >nul 2>nul
+del VCrayVer.bat >NUL 2>NUL
 SET VCEXE=VCrayVer.bat
 VCrayVerCheck.exe >VCrayVer.bat
-del VCrayVerCheck.obj VCrayVerCheck.exe >nul 2>nul
+del VCrayVerCheck.obj VCrayVerCheck.exe >NUL 2>NUL
 IF NOT EXIST VCrayVer.bat GOTO :FAIL5
 CALL VCrayVer.bat
 IF ERRORLEVEL 1 GOTO :FAIL5
@@ -185,14 +186,14 @@ REM REFINE VCRAYVER BASED ON ADDITIONAL INSPECTIONS,OF %VCraylib%.
 IF %VCRAYVER% == "4.2" GOTO :FAIL8
 REM **IMPORTANT**  Additional beyond-4.0 exclusions go here
 
-COPY /Y raylibCode.4.x.0.opt raylibCode.opt >nul 2>nul
+COPY /Y raylibCode.4.x.0.opt raylibCode.opt >NUL 2>NUL
 IF NOT %VCRAYVER% == "unidentified" GOTO :BUILDCACHE
 rem Versions of raylib.h before 4.0 do not set RAYLIB_VERSION so we must
 rem    use some known fingeprints of earlier versions.
 IF EXIST %VCraylib%\appveyor.yml GOTO :FAIL7
 IF EXIST %VCraylib%\.travis.yml GOTO :FAIL7
 IF EXIST %VCraylib%\HELPME.md GOTO :FAIL7
-COPY /Y raylibCode.3.x.0.opt rayLibCode.opt >nul 2>nul
+COPY /Y raylibCode.3.x.0.opt rayLibCode.opt >NUL 2>NUL
 SET VCRAYVER="3.7.0"
 IF EXIST %VCraylib%\CONTRIBUTORS.md GOTO :BUILDCACHE
 SET VCRAYVER="3.5.0"
@@ -207,29 +208,29 @@ ECHO: %VCterse%
 REM THE PROGRAM VCrayConfirm IS BUILT AND RUN AFTER EVERY CACHE BUILD
 SET VCEXE=VCrayConfirm.exe
 SET VCSRC=%~dp0cache\VCrayConfirm.c
-CD %~dp0app
-DEL *.exe >nul 2>nul
+DEL *.exe >NUL 2>NUL
 rem Flags
 SET OUT=/Fe: "%VCEXE%"
 SET SUBSYS=/SUBSYSTEM:WINDOWS /ENTRY:mainCRTStartup
 
 rem Compiling as %VCSRC%
-CL %VChush% /W3 /c @%~dp0cache\VCoptions.opt %VCSRC%        %VCterse%
+CL %VChush% /W3 /c @VCoptions.opt %VCSRC% %VCterse%
 IF ERRORLEVEL 2 GOTO :FAIL5
 ECHO: %VCterse%
 
 rem Linking it all as %VCEXE%
-CL %VChush% %OUT% @%~dp0cache\rayLinking.opt /link /LTCG %SUBSYS% %VCterse%
+CL %VChush% %OUT% @rayConfirmLinking.opt /link /LTCG %SUBSYS% %VCterse%
 IF ERRORLEVEL 2 GOTO :FAIL5
 ECHO: %VCterse%
-DEL *.obj >nul 2>nul
+DEL VCrayConfirm.obj >NUL 2>NUL
 
 CD %VCfrom%
 IF NOT EXIST %~dp0app\%VCEXE% GOTO :FAIL5
 ECHO: [VCrayApp] Launching %VCEXE%.  Exit App to Continue Session  %VCterse%
 ECHO: %VCterse%
-%~dp0app\%VCEXE%
+%~dp0cache\%VCEXE%
 IF ERRORLEVEL 1 GOTO :FAIL5
+DEL %~dp0cache\%VCEXE% >NUL 2>NUL
 
 :APPCHECK
 REM THERE IS A CONFIRMED CACHE.  NOW COMPILE AND RUN THE PROJECT APP AS NEEDED
@@ -274,7 +275,7 @@ GOTO :MAYBEAPP
 
 :APPBUILD
 CD %~dp0app
-DEL *.exe >nul 2>nul
+DEL *.exe >NUL 2>NUL
 rem Flags
 SET OUT=/Fe: "%VCAPPEXE%"
 SET SUBSYS=/SUBSYSTEM:WINDOWS /ENTRY:mainCRTStartup
@@ -294,10 +295,10 @@ IF ERRORLEVEL 2 GOTO :FAIL5
 ECHO: %VCterse%
 
 rem Linking it all to make %VCEXE%
-CL %VChush% %OUT% @%~dp0cache\rayLinking.opt /link /LTCG %SUBSYS% %VCterse%
+CL %VChush% %OUT% @%~dp0cache\rayAppLinking.opt /link /LTCG %SUBSYS% %VCterse%
 IF ERRORLEVEL 2 GOTO :FAIL5
 ECHO: %VCterse%
-DEL *.obj >nul 2>nul
+DEL *.obj >NUL 2>NUL
 
 ECHO: [VCrayApp] PROGRAM %VCEXE% COMPILED TO %~dp0app
 ECHO: %VCterse%
@@ -453,6 +454,7 @@ rem For additional information, see the accompanying NOTICE.txt file.
 rem
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 rem
+rem 0.0.47 2023-04-08T20:48Z Fixes to build VCrayConfirm in cache\, not app\
 rem 0.0.46 2023-04-08T19:55Z Improve CMDEXTENSIONS check, touch-ups, fixes
 rem 0.0.45 2023-04-04T20:43Z Update Usage Information, now release candidate
 rem 0.0.44 2023-04-04T20:21Z Fix an embedded case, some comment touch-ups
