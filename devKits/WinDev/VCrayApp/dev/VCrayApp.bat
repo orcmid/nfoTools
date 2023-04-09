@@ -1,5 +1,5 @@
 @echo off
-rem VCrayApp 0.1.0 VCrayApp.bat 0.0.47 UTF-8                       2023-04-08
+rem VCrayApp 0.1.0 VCrayApp.bat 0.0.48 UTF-8                       2023-04-09
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 rem                  BUILDING RAYLIB APP WITH VC/C++ TOOLS
@@ -380,7 +380,8 @@ GOTO :BAIL
 ECHO: [VCrayApp] **** FAILCODE0: COMMAND SHELL EXTENSIONS REQUIRED ****
 ECHO:            VCrayApp.bat requires CMDEXTVERSION 2 or greater.
 ECHO:            This is available wherever VCrayApp.bat is usable.
-ECHO:            NO ACTIONS HAVE BEEN PERFORMED
+ECHO:            NO ACTIONS HAVE BEEN PERFORMED. For more information,
+ECHO:            ^<https://orcmid.github.io/nfoTools/dev/D211101/fails/FAIL0^>.
 GOTO :BAIL
 
 :USAGE
@@ -454,6 +455,7 @@ rem For additional information, see the accompanying NOTICE.txt file.
 rem
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 rem
+rem 0.0.48 2023-04-09T19:52Z Finalize :FAIL0 message with link
 rem 0.0.47 2023-04-08T20:48Z Fixes to build VCrayConfirm in cache\, not app\
 rem 0.0.46 2023-04-08T19:55Z Improve CMDEXTENSIONS check, touch-ups, fixes
 rem 0.0.45 2023-04-04T20:43Z Update Usage Information, now release candidate

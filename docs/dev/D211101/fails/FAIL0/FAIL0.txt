@@ -1,0 +1,70 @@
+FAIL0.txt 0.0.0                     UTF-8                         2023-04-09
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+
+                        nfoWare/nfoWorks nfoTools
+                        =========================
+
+  <https://orcmid.github.io/nfoTools/dev/D211101/fails/FAIL0/FAIL0.txt>
+
+         VCRAYAPP FAILCODE0: COMMAND SHELL EXTENSIONS REQUIRED
+         -----------------------------------------------------
+
+    This FAILCODE should be almost impossible to encounter.  One case is
+    if VCrayApp.bat has been damaged, the only way I could force the message
+    to be produced for a screen capture.
+
+MANIFEST
+
+    index.md    GitHub nfoTools/docs/dev/d211101/fails/FAIL0 index markdown
+
+    index.html  (generated) web page for FAILCODE0 Explanation
+
+    FAIL0-2023-04-1248-VCrayApp-0.1.0.png
+                screen capture of session producing FAIL0 failure
+
+
+
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+                       Copyright 2023 Dennis E. Hamilton
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+ ATTRIBUTION
+
+   Hamilton, Dennis E. VCrayApp FAILCODE0: COMMAND SHELL EXTENSIONS REQUIRED.
+   nfoTools development text file fails.txt version 0.0.0 dated 2023-04-09,
+   available on the Internet as a version of
+   <https://orcmid.github.io/nfoTools/dev/D211101/fails/FAIL0/FAIL0.txt>
+
+TODO
+
+ * Force the message to be produced by VCrayApp 0.1.0.
+
+ * Explain the difficulties.
+
+ * Create index.htm
+
+ * Include screen capture of an incident.
+
+
+
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+
+ 0.0.0 2023-04-09T20:20Z placeholder
+
+                       ***** end of FAIL0.txt *****

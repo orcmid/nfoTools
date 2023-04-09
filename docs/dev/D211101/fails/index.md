@@ -1,4 +1,4 @@
-<!-- index.md 0.0.0                 UTF-8                          2023-04-09
+<!-- index.md 0.0.1                 UTF-8                          2023-04-09
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                          VCRAYAPP FAILCODE MESSAGES
@@ -6,7 +6,7 @@
 
 # ***VCrayApp** [FAILCODE MESSAGES](.)*
 
-| ***[nfoTools](../../../)*** | [dev](../../)[>D211101](../)[>fails](.) | [index.html](index.html) ***0.0.0 2023-04-09*** |
+| ***[nfoTools](../../../)*** | [dev](../../)[>D211101](../)[>fails](.) | [index.html](index.html) ***0.0.1 2023-04-09*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../../../images/hardhat-logo.gif) |
 |              |                     |           |
@@ -34,7 +34,7 @@ comments are appreciated.
 
 | LABEL | FAILCODE |
 | :-: | :- |
-| FAIL0 | FAILCODE0: COMMAND SHELL EXTENSIONS REQUIRED |
+| [FAIL0](FAIL0) | FAILCODE0: COMMAND SHELL EXTENSIONS REQUIRED |
 | FAIL1 | FAILCODE1: INCORRECT VCrayApp FILES CONFIGURATION |
 | FAIL2 | FAILCODE2: UNSUPPORTED VCRAYAPP.BAT PARAMETERS |
 | FAIL3 | FAILCODE3: NO VS NATIVE COMMAND-LINE ENVIRONMENT |
@@ -59,6 +59,7 @@ time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.1 2023-04-09T20:00Z Connect FAIL0
      0.0.0 2023-04-09T17:41Z Create Initial Placeholder from D211101d 0.0.8
 
                     *** end D211101/fails/index.md ***
