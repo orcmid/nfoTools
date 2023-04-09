@@ -1,5 +1,4 @@
-fails.txt 0.0.0                     UTF-8                         2023-04-07
-*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+fails.txt 0.0.1                     UTF-8                         2023-04-079*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
                         nfoWare/nfoWorks nfoTools
@@ -19,8 +18,16 @@ operation before customization as part of a specific project.
 
 MANIFEST
 
-        fails.txt   this manifest and job-jar file
-
+        fails.txt  this manifest and job-jar file
+        FAIL0\     FAILCODE0: COMMAND SHELL EXTENSIONS REQUIRED
+        FAIL1\     FAILCODE1: INCORRECT VCrayApp FILES CONFIGURATION
+        FAIL2\     FAILCODE2: UNSUPPORTED VCRAYAPP.BAT PARAMETERS
+        FAIL3\     FAILCODE3: NO VS NATIVE COMMAND-LINE ENVIRONMENT
+        FAIL4\     FAILCODE4: COMPILING CACHE OF RAYLIB FILES FAILED
+        FAIL5\     FAILCODE5: PRODUCING/OPERATING %VCEXE% FAILED
+        FAIL6\     FAILCODE6: RAYLIB NOT FOUND WHERE EXPECTED
+        FAIL7\     FAILCODE7: RAYLIB VERSION NOT > 3.0.0
+        FAIL8\     FAILCODE8: RAYLIB %VCRAYVER% NOT SUPPORTED
 
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
@@ -44,7 +51,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. VCrayApp: Failure-Message Explanations.  nfoTools
-   development text file fails.txt version 0.0.0 dated 2023-04-07,
+   development text file fails.txt version 0.0.1 dated 2023-04-09,
    available on the Internet as a version of
    <https://orcmid.github.io/nfoTools/dev/D211101/fails/fails.txt>
 
@@ -72,11 +79,12 @@ TODO
    places.  So there will be TODOs at other locations on required support of
    a more-general nature.
 
- * Expand the manifest for the FAILn folios.
+ * Create a folio for each FAILCODE and Connect it to the fails\index.md
 
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.1 2023-04-09T04:06Z Expand manifest to include FAIL0\-FAIL8\
  0.0.0 2023-04-07T15:48Z placeholder cloned from D211101.txt 0.0.15
 
                        ***** end of fails.txt *****
