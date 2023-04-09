@@ -1,4 +1,4 @@
-fails.txt 0.0.1                     UTF-8                         2023-04-09
+fails.txt 0.0.2                     UTF-8                         2023-04-09
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -52,24 +52,11 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. VCrayApp: Failure-Message Explanations.  nfoTools
-   development text file fails.txt version 0.0.1 dated 2023-04-09,
+   development text file fails.txt version 0.0.2 dated 2023-04-09,
    available on the Internet as a version of
    <https://orcmid.github.io/nfoTools/dev/D211101/fails/fails.txt>
 
 TODO
-
- * we need a folio for failure messages.  D21101/fails/ is the choice.  The
-   failure messages will be one level down.  E.g.,
-   <https://orcmid.github.io/nfoTools/dev/D211101/fails/FAIL1>.  There is
-   a folder for each one and fails/ provides an index to them.  In this case,
-   FAIL .bat message names cannot be reused.  A significant change to a
-   message requires use of a new name.
-
- * The use of subfolders is in order to have assets on an individual message
-   explanation, along with links to other materials, their own manifests,
-   etc.
-
- * Create a index.md on the folio pattern for fails just like other content.
 
  * There needs to be non-failure advisory-message explanations also.  Those
    might be under the individual D211101a-c pages.
@@ -82,9 +69,18 @@ TODO
 
  * Create a folio for each FAILCODE and Connect it to the fails\index.md
 
+ * Correct "perserved" to "preserved" in first text of index.md
+
+ * Use ` ... ` around file names.
+
+ * And *the* particular FAILCODE in the Feedback paragraph.
+
+ * Replace "here" to D211101e direct link.
+
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.2 2023-04-09T30:50Z Manage TODOs after proof-reading
  0.0.1 2023-04-09T19:17Z Expand manifest to include FAIL0\-FAIL8\
  0.0.0 2023-04-07T15:48Z placeholder cloned from D211101.txt 0.0.15
 
