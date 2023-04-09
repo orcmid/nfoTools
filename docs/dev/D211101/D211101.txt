@@ -1,4 +1,4 @@
-D211101.txt 0.0.15                   UTF-8                         2023-04-07
+D211101.txt 0.0.16                   UTF-8                         2023-04-09
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -106,8 +106,8 @@ TODO
 
  * Determine whether there is an extended signature for VCrayApp.bat and also
    for anything in the cache.  This is probably unnecessary and we have to
-   deal with the fact that many of the cache\*.opt files may be modified and
-   the the VCrayApp.bat as well.
+   deal with the fact that many of the cache\*.opt files may be modified as
+   will be VCrayApp.bat as well.
 
  * Embedded use should be an advanced topic related to lifecycle management
    and such considerations.  This is moderately acute when VCrayApp is
@@ -126,9 +126,25 @@ TODO
    FAIL message names cannot be reused.  A significant change to a message
    requires use of a new name.
 
+ * Add CHANGES-*semver*.txt to Project Files organization, when there are
+   changes from any previous versions.
+
+ * Give more examples of Semantic Versioning beside 0.0.0.
+
+ * Change the observation about initially and subsequent cache builds to
+   document that a confirmation build happens on those cases.
+
+ * Update the Usage message.  Maybe reflect that it is from 0.1.0.
+
+ * Update the NOTE on section 2.
+
+ * Mention "recent" raylib source-code release.  This business is also
+   important with respect to life-cycle.
+
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.16 2023-04-09T17:01Z Manage TODOs
  0.0.15 2023-04-07T04:09Z Add fails/ to the manifest
  0.0.14 2023-02-24T20:32Z Manage TODOs and preparations for 0.1.0
  0.0.13 2023-02-10T18:41Z Introduce D211101e shadow and tidy up
