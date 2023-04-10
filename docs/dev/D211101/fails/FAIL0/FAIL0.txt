@@ -1,4 +1,4 @@
-FAIL0.txt 0.0.1                     UTF-8                         2023-04-09
+FAIL0.txt 0.0.2                     UTF-8                         2023-04-10
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -46,19 +46,20 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. VCrayApp FAILCODE0: COMMAND SHELL EXTENSIONS REQUIRED.
-   nfoTools development text file fails.txt version 0.0.1 dated 2023-04-09,
+   nfoTools development text file fails.txt version 0.0.2 dated 2023-04-10,
    available on the Internet as a version of
    <https://orcmid.github.io/nfoTools/dev/D211101/fails/FAIL0/FAIL0.txt>
 
 TODO
 
-* Use ` ... ` on file names and also the capitalized terms.
+
 
 
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
+ 0.0.2 2023-04-10T17:58Z Clear TODOs
  0.0.1 2023-04-09T20:47Z Manage TODOs
  0.0.0 2023-04-09T20:20Z placeholder
 
