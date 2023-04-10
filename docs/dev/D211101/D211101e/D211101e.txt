@@ -1,4 +1,4 @@
-D211101e.txt 0.0.10                  UTF-8                         2023-02-10
+D211101e.txt 0.0.11                  UTF-8                         2023-04-10
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -14,9 +14,9 @@ SYNOPSIS [TBD]
 
 MANIFEST
 
-            D211101e.txt This synopsis and manifest file (placeholder)
+            D211101e.txt This synopsis and manifest file
 
-               index.md  The description for VCrayApp-0.0.0 (alpha)
+               index.md  The description for VCrayApp-0.1.0 (beta)
 
 **** THIS IS A PLACEHOLDER USING D211101d.txt FOR BOILERPLATE ****
 
@@ -25,6 +25,8 @@ MANIFEST
         release candidate.  The file is clear-signed and the same as the one
         included in VCrayApp-0.0.0.zip.  Download and review of this file
         is useful before deciding to download the additional files.
+
+      CHANGES-0.1.0.txt (details pending)
 
       VCrayApp-0.0.0.zip 2,120,473 byte file dated 2023-01-07T12:56-0800
         Package of the VCrayApp-0.0.0 release candidate with contents as
@@ -60,7 +62,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. D211101e: VCrayApp 0.1.0 (beta).  nfoTools development
-   documentation text file D211101e.txt version 0.0.10 dated 2023-02-10,
+   documentation text file D211101e.txt version 0.0.11 dated 2023-04-10,
    available on the Internet as a version of
    <https://orcmid.github.io/nfoTools/dev/D211101/D211101e/D211101e.txt>
 
@@ -77,6 +79,7 @@ TODO
 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.11 2023-04-10T17:30Z Touch-ups
  0.0.10 2023-02-10T00:28Z Draft Placeholder from 0.0.9 D211101d.txt being
         take as boilerplate
 
