@@ -52,14 +52,13 @@ MANIFEST
 
 TODO
 
- * Adapt the FAIL0 index.md for FAIL1 with the image and explanation.
-
  * There needs to be a manifest to check against.  It might need to be
    elsewhere.  It will be release-specific.  Hmm, not liking this.
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
+ 0.0.3 2023-04-10T22:10Z Manage TODOs - index.md created
  0.0.2 2023-04-10T19:38Z Add screen capture
  0.0.1 2023-04-10T18:35Z Manage TODOs
  0.0.0 2023-04-10T18:18Z placeholder boilerplate from FAIL0.txt 0.0.2
