@@ -69,17 +69,10 @@ TODO
 
  * Create a folio for each FAILCODE and Connect it to the fails\index.md
 
- * Correct "perserved" to "preserved" in first text of index.md
-
- * Use ` ... ` around file names.
-
- * And *the* particular FAILCODE in the Feedback paragraph.
-
- * Replace "here" to D211101e direct link.
-
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.3 2023-04-10T22:25Z Remove complted TODOs
  0.0.2 2023-04-09T30:50Z Manage TODOs after proof-reading
  0.0.1 2023-04-09T19:17Z Expand manifest to include FAIL0\-FAIL8\
  0.0.0 2023-04-07T15:48Z placeholder cloned from D211101.txt 0.0.15
