@@ -1,5 +1,5 @@
 @echo off
-rem VCrayApp 0.1.0 VCrayApp.bat 0.0.49 UTF-8                       2023-04-10
+rem VCrayApp 0.1.0 VCrayApp.bat 0.0.50 UTF-8                       2023-04-10
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 rem                  BUILDING RAYLIB APP WITH VC/C++ TOOLS
@@ -146,6 +146,7 @@ IF NOT EXIST "%~dp0src\src.txt" GOTO :FAIL1
 IF NOT EXIST "%~dp0VCrayApp-%VCrayApp%.txt" GOTO :FAIL1
 IF NOT EXIST "%~dp0VCrayApp.bat" GOTO :FAIL1
 IF NOT EXIST "%~dp0CHANGES-%VCrayApp%.txt" GOTO :FAIL1
+IF NOT EXIST "%~dp0NOTICE.txt" GOTO :FAIL1
 
 IF NOT EXIST "%VCraylib%\src\raylib.h" GOTO :FAIL6
 rem XXX *IMPORTANT* Another fragile dependency on location of raylib\
@@ -372,9 +373,7 @@ GOTO :USAGE
 ECHO: [VCrayApp] **** FAILCODE1: INCORRECT VCrayApp FILES CONFIGURATION ****
 ECHO:            VCrayApp.bat must be in a folder that VCrayApp.zip %VCterse%
 ECHO:            is extracted into, along with the cache\ app\ and  %VCterse%
-ECHO:            src\ subfolders.  See                              %VCterse%
-ECHO:            ^<https://orcmid.github.io/nfoTools/dev/D211101^>. %VCterse%
-ECHO:            NO ACTIONS HAVE BEEN TAKEN. For more information,  %VCterse%
+ECHO:            src\ subfolders.  NO ACTIONS HAVE BEEN TAKEN.  See %VCterse%
 ECHO:            ^<https://orcmid.github.io/nfoTools/dev/D211101/fails/FAIL1^>.
 GOTO :BAIL
 
@@ -457,6 +456,7 @@ rem For additional information, see the accompanying NOTICE.txt file.
 rem
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 rem
+rem 0.0.50 2023-04-10T19:21Z Add NOTICE.txt to required files
 rem 0.0.49 2023-04-10T18:32Z Finalize :FAIL1 and FAIL2 messages with links
 rem 0.0.48 2023-04-09T19:52Z Finalize :FAIL0 message with link
 rem 0.0.47 2023-04-08T20:48Z Fixes to build VCrayConfirm in cache\, not app\
