@@ -1,0 +1,67 @@
+FAIL1.txt 0.0.0                     UTF-8                         2023-04-10
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+
+                        nfoWare/nfoWorks nfoTools
+                        =========================
+
+  <https://orcmid.github.io/nfoTools/dev/D211101/fails/FAIL0/FAIL0.txt>
+
+      VCRAYAPP FAILCODE1: INCORRECT VCrayApp FILES CONFIGURATION
+      ----------------------------------------------------------
+
+    This FAILCODE can occur when any of the extracted files is missing
+    or renamed.  Some of the files can be modified, but they must not be
+    removed or renamed. This strict requirement is a protection for the
+    integrity and support of VCrayApp use in raylib-based VC/C++ projects.
+
+MANIFEST
+
+    index.md    GitHub nfoTools/docs/dev/d211101/fails/FAIL1 index markdown
+
+    index.html  (generated) web page for FAILCODE1 Explanation
+
+
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+                       Copyright 2023 Dennis E. Hamilton
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+ ATTRIBUTION
+
+   Hamilton, Dennis E. VCrayApp FAILCODE1: INCORRECT VCrayApp FILES
+   CONFIGURATION.  nfoTools development text file FAIL1.txt version 0.0.0
+   dated 2023-04-10, available on the Internet as a version of
+   <https://orcmid.github.io/nfoTools/dev/D211101/fails/FAIL1/FAIL1.txt>
+
+TODO
+
+ * Create a screen capture of a FAILCODE1 from the VCrayApp.bat 0.1.0
+   release candidate.
+
+ * Adapt the FAIL0 index.md for FAIL1 with the image and explanation.
+
+ * There needs to be a manifest to check against.  It might need to be
+   elsewhere.  It will be release-specific.  Hmm, not liking this.
+
+ * Place a link in the message from the VCrayApp.bat for 0.1.0 (beta)
+
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+
+ 0.0.0 2023-04-10T18:18Z placeholder boilerplate from FAIL0.txt 0.0.2
+
+                       ***** end of FAIL1.txt *****
