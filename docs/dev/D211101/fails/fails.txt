@@ -1,4 +1,4 @@
-fails.txt 0.0.4                     UTF-8                         2023-04-11
+fails.txt 0.0.5                     UTF-8                         2023-04-11
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -52,7 +52,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. VCrayApp: Failure-Message Explanations.  nfoTools
-   development text file fails.txt version 0.0.4 dated 2023-04-11,
+   development text file fails.txt version 0.0.5 dated 2023-04-11,
    available on the Internet as a version of
    <https://orcmid.github.io/nfoTools/dev/D211101/fails/fails.txt>
 
@@ -76,9 +76,17 @@ TODO
    o Create FAIL7 coverage
    o Create FAIL8 coverage
 
+ * Point out that the screen captures are verbose (or not) versions.
+   o Check FAIL0 and correct for this as needed
+   o Check FAIL1 and correct for this as needed
+
+ * Should we show both flavors when they differ?  YES, because the quieter
+   ones show up in embedded cases.
+
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.5 2023-04-11T15:10Z Manage TODOs
  0.0.4 2023-04-11T14:26Z Track FAILx completions individually
  0.0.3 2023-04-10T22:25Z Remove completed TODOs
  0.0.2 2023-04-09T30:50Z Manage TODOs after proof-reading
