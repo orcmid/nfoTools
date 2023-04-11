@@ -1,0 +1,70 @@
+FAIL2.txt 0.0.0                     UTF-8                         2023-04-11
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+
+                        nfoWare/nfoWorks nfoTools
+                        =========================
+
+  <https://orcmid.github.io/nfoTools/dev/D211101/fails/FAIL2/FAIL2.txt>
+
+       VCRAYAPP FAILCODE2: UNSUPPORTED VCRAYAPP.BAT PARAMETERS
+       -------------------------------------------------------
+
+    This FAILCODE occurs when the command line for operation of VCrayApp.bat
+    has unrecognized parameters.  They can appear anywhere in the command
+    text.  The FAILCODE is followed by the parameters starting with the
+    unsupported one.
+
+    This will usually be a simple error corrected by retrying VCrayApp with
+    the corrected parameters.
+
+    When this occurs in an embedded use of VCrayApp, remedy may be more
+    involved.
+
+MANIFEST
+
+    index.md    GitHub nfoTools/docs/dev/d211101/fails/FAIL2 index markdown
+
+    index.html  (generated) web page for FAILCODE2 Explanation
+
+    FAIL2-2023-04-11-1529-VCrayApp-0.1.0.png
+                screen capture of a forced FAIL2 error condition
+
+
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+                       Copyright 2023 Dennis E. Hamilton
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+ ATTRIBUTION
+
+   Hamilton, Dennis E. VCrayApp FAILCODE2: UNSUPPORTED VCRAYAPP.BAT
+   PARAMETERS.  nfoTools development text file FAIL2.txt version 0.0.0
+   dated 2023-04-11, available on the Internet as a version of
+   <https://orcmid.github.io/nfoTools/dev/D211101/fails/FAIL2/FAIL2.txt>
+
+TODO
+
+ * Create a screen capture
+
+ * Determine whether the corrected rerun should be shown.  Use silent in
+   both cases, after showing a verbose example.
+
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+ 0.0.0 2023-04-11-22:33Z placeholder boilerplate from FAIL1.txt 0.0.3
+
+                       ***** end of FAIL1.txt *****
