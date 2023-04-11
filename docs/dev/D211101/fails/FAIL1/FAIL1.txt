@@ -1,4 +1,4 @@
-FAIL1.txt 0.0.4                     UTF-8                         2023-04-11
+FAIL1.txt 0.0.5                     UTF-8                         2023-04-11
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -21,7 +21,7 @@ MANIFEST
 
     index.html  (generated) web page for FAILCODE1 Explanation
 
-    FAIL1-2023-04-1229-VCrayApp-0.1.0.png
+    FAIL1-2023-04-11-1559-VCrayApp-0.1.0.png
                 screen capture of a forced FAIL1 error condition
 
 
@@ -46,7 +46,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. VCrayApp FAILCODE1: INCORRECT VCrayApp FILES
-   CONFIGURATION.  nfoTools development text file FAIL1.txt version 0.0.4
+   CONFIGURATION.  nfoTools development text file FAIL1.txt version 0.0.5
    dated 2023-04-11, available on the Internet as a version of
    <https://orcmid.github.io/nfoTools/dev/D211101/fails/FAIL1/FAIL1.txt>
 
@@ -58,6 +58,7 @@ TODO
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
+ 0.0.5 2023-04-11T23:02Z Replace the image with a better one
  0.0.4 2023-04-11T15:06Z Correct URL
  0.0.3 2023-04-10T22:10Z Manage TODOs - index.md created
  0.0.2 2023-04-10T19:38Z Add screen capture

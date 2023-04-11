@@ -1,4 +1,4 @@
-<!-- index.md 0.0.0                 UTF-8                          2023-04-10
+<!-- index.md 0.0.1                 UTF-8                          2023-04-11
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
             FAILCODE1: INCORRECT VCrayApp FILES CONFIGURATION
@@ -12,7 +12,7 @@
 |              |                     |           |
 | This Version | since VCrayApp 0.1.0 beta release | [D211101e](../../D211101e) |
 
-![FAILCODE1 Message](FAIL1-2023-04-1229-VCrayApp-0.1.0.png)
+![FAILCODE1 Message](FAIL1-2023-04-11-1559-VCrayApp-0.1.0.png)
 
 `VCrayApp.bat` conducts an integrity check on the folders and files that it
 is installed with.  If any of the files that are installed directly by
@@ -46,6 +46,7 @@ time.
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
+     0.0.1 2023-04-11T23:04Z Replace with improved screen capture
      0.0.0 2023-04-10T22:07Z Initial account
 
                *** end D211101/fails/FAIL1/index.md ***
