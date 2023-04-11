@@ -1,5 +1,5 @@
 @echo off
-rem VCrayApp 0.1.0 VCrayApp.bat 0.0.50 UTF-8                       2023-04-10
+rem VCrayApp 0.1.0 VCrayApp.bat 0.0.52 UTF-8                       2023-04-11
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 rem                  BUILDING RAYLIB APP WITH VC/C++ TOOLS
@@ -98,12 +98,6 @@ IF "%1" == "*" ( SET VCterse=^>NUL 2^>NUL
                  SET VChush=/nologo
                  )
 
-rem ANNOUNCE THIS SCRIPT
-IF "%1" == "*" GOTO :WHISPER
-IF "%1" == "+" GOTO :WHISPER
-CLS
-
-:WHISPER
 rem CONFIRM COMMAND-LINE ENVIRONMENT
 IF "%VSCMD_VER%" == "" GOTO FAIL3
 WHERE cl.exe >NUL 2>NUL
@@ -245,9 +239,9 @@ IF "%VCsplice%" == "+" GOTO :SUCCESS
 IF NOT "%VCrayAppHost%" == "" GOTO :FUMBLED
 IF "%VCsplice%" == "+" GOTO :MUMBLED
 ECHO: [VCrayApp] **** ALL SET. CACHE CONFIRMED. NO APP TO COMPILE YET. ****
-ECHO:            Have the C Language source code and any headers at
-ECHO:            VCAPPSRC.  Then put the app .exe name in the VCAPPEXE
-ECHO:            setting at the beginning of VCrayApp.bat.
+ECHO:            At the beginning of VCrayApp.bat, Keep or change VCAPPSRC for
+ECHO:            locating the App source code and headers.  Then change the
+ECHO:            VCAPPEXE setting there also.
 :MAYBEAPP
 ECHO:            Once that's done, VCrayApp.bat will compile the app.
 ECHO:            See ^<https://orcmid.github.io/nfoTools/dev/D211101/^>.
@@ -364,9 +358,9 @@ GOTO :BAIL
 :FAIL2
 ECHO: [VCrayApp] **** FAILCODE2: UNSUPPORTED VCRAYAPP.BAT PARAMETERS ****
 ECHO:            Invalid Here: %*
-ECHO:            %VCterse%
 ECHO:            NO ACTIONS HAVE BEEN TAKEN. For more information, %VCterse%
 ECHO:            ^<https://orcmid.github.io/nfoTools/dev/D211101/fails/FAIL2^>.
+ECHO:            %VCterse%
 GOTO :USAGE
 
 :FAIL1
@@ -456,6 +450,9 @@ rem For additional information, see the accompanying NOTICE.txt file.
 rem
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 rem
+rem 0.0.52 2023-04-11T22:23Z Improve FAILCODE2 reporting
+rem 0.0.51 2023-04-11T22:14Z Remove screen clearing at beginning and improve
+rem        successful conclusion when no project .exe identified yet.
 rem 0.0.50 2023-04-10T19:21Z Add NOTICE.txt to required files
 rem 0.0.49 2023-04-10T18:32Z Finalize :FAIL1 and FAIL2 messages with links
 rem 0.0.48 2023-04-09T19:52Z Finalize :FAIL0 message with link
