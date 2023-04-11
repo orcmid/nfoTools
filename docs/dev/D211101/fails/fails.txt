@@ -1,4 +1,4 @@
-fails.txt 0.0.2                     UTF-8                         2023-04-09
+fails.txt 0.0.4                     UTF-8                         2023-04-11
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -52,7 +52,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. VCrayApp: Failure-Message Explanations.  nfoTools
-   development text file fails.txt version 0.0.2 dated 2023-04-09,
+   development text file fails.txt version 0.0.4 dated 2023-04-11,
    available on the Internet as a version of
    <https://orcmid.github.io/nfoTools/dev/D211101/fails/fails.txt>
 
@@ -68,11 +68,19 @@ TODO
    a more-general nature.
 
  * Create a folio for each FAILCODE and Connect it to the fails\index.md
+   o Create FAIL2 coverage
+   o Create FAIL3 coverage
+   o Create FAIL4 coverage
+   o Create FAIL5 coverage
+   o Create FAIL6 coverage
+   o Create FAIL7 coverage
+   o Create FAIL8 coverage
 
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
- 0.0.3 2023-04-10T22:25Z Remove complted TODOs
+ 0.0.4 2023-04-11T14:26Z Track FAILx completions individually
+ 0.0.3 2023-04-10T22:25Z Remove completed TODOs
  0.0.2 2023-04-09T30:50Z Manage TODOs after proof-reading
  0.0.1 2023-04-09T19:17Z Expand manifest to include FAIL0\-FAIL8\
  0.0.0 2023-04-07T15:48Z placeholder cloned from D211101.txt 0.0.15
