@@ -1,11 +1,11 @@
-FAIL1.txt 0.0.2                     UTF-8                         2023-04-10
+FAIL1.txt 0.0.4                     UTF-8                         2023-04-11
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
                         nfoWare/nfoWorks nfoTools
                         =========================
 
-  <https://orcmid.github.io/nfoTools/dev/D211101/fails/FAIL0/FAIL0.txt>
+  <https://orcmid.github.io/nfoTools/dev/D211101/fails/FAIL1/FAIL1.txt>
 
       VCRAYAPP FAILCODE1: INCORRECT VCrayApp FILES CONFIGURATION
       ----------------------------------------------------------
@@ -46,8 +46,8 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. VCrayApp FAILCODE1: INCORRECT VCrayApp FILES
-   CONFIGURATION.  nfoTools development text file FAIL1.txt version 0.0.2
-   dated 2023-04-10, available on the Internet as a version of
+   CONFIGURATION.  nfoTools development text file FAIL1.txt version 0.0.4
+   dated 2023-04-11, available on the Internet as a version of
    <https://orcmid.github.io/nfoTools/dev/D211101/fails/FAIL1/FAIL1.txt>
 
 TODO
@@ -58,6 +58,7 @@ TODO
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
+ 0.0.4 2023-04-11T15:06Z Correct URL
  0.0.3 2023-04-10T22:10Z Manage TODOs - index.md created
  0.0.2 2023-04-10T19:38Z Add screen capture
  0.0.1 2023-04-10T18:35Z Manage TODOs
