@@ -1,5 +1,5 @@
 @echo off
-rem VCrayApp 0.1.0 VCrayApp.bat 0.0.52 UTF-8                       2023-04-11
+rem VCrayApp 0.1.0 VCrayApp.bat 0.0.53 UTF-8                       2023-04-12
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 rem                  BUILDING RAYLIB APP WITH VC/C++ TOOLS
@@ -349,10 +349,11 @@ GOTO :BAIL
 
 :FAIL3
 ECHO: [VCrayApp] **** FAILCODE3: NO VS NATIVE COMMAND-LINE ENVIRONMENT ****
-ECHO:            VCrayApp.bat requires the command-line environment %VCterse%
-ECHO:            for VS Native Build Tools to be established.  See  %VCterse%
-ECHO:            ^<https://orcmid.github.com/nfoTools/dev/D211101^>.%VCterse%
+ECHO:            VCrayApp.bat requires command-line operation under %VCterse%
+ECHO:            the "x64 Native Tools Command Prompt" environment. %VCterse%
+ECHO:            ^<https://orcmid.github.io/nfoTools/dev/D211101c^>.%VCterse%
 ECHO:            NO ACTIONS HAVE BEEN PERFORMED                     %VCterse%
+ECHO:            ^<https://orcmid.github.io/nfoTools/dev/D211101/fails/FAIL3^>
 GOTO :BAIL
 
 :FAIL2
@@ -450,6 +451,7 @@ rem For additional information, see the accompanying NOTICE.txt file.
 rem
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 rem
+rem 0.0.53 2023-04-12T19:46Z Improve FAILCODE3 reporting
 rem 0.0.52 2023-04-11T22:23Z Improve FAILCODE2 reporting
 rem 0.0.51 2023-04-11T22:14Z Remove screen clearing at beginning and improve
 rem        successful conclusion when no project .exe identified yet.
