@@ -1,4 +1,4 @@
-<!-- index.md 0.0.1                 UTF-8                          2023-04-10
+<!-- index.md 0.0.2                 UTF-8                          2023-04-12
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                  FAILCODE0: COMMAND SHELL EXTENSIONS REQUIRED
@@ -6,13 +6,13 @@
 
 # ***VCrayApp** [FAILCODE0: COMMAND SHELL EXTENSIONS REQUIRED](.)*
 
-| ***[nfoTools](../../../../)*** | [dev](../../../)[>D211101](../../)[>fails](../)[>FAIL0](.) | [index.html](index.html) ***0.0.1 2023-04-10*** |
+| ***[nfoTools](../../../../)*** | [dev](../../../)[>D211101](../../)[>fails](../)[>FAIL0](.) | [index.html](index.html) ***0.0.2 2023-04-12*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../../../../images/hardhat-logo.gif) |
 |              |                     |           |
 | This Version | since VCrayApp 0.1.0 beta release | [D211101e](../../D211101e) |
 
-![FAILCODE0 Message](FAIL0-2023-04-1248-VCrayApp-0.1.0.png)
+![FAILCODE0 Message](FAIL0-2023-04-12-1549-VCrayApp-0.1.0.png)
 
 This message should never be encountered.  It occurs if the version of
 `CMD.exe` being used does not support `CMD EXTENSIONS`.  This should not be
@@ -44,6 +44,7 @@ time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.2 2023-04-12T15:58Z Use better image of a FAIL0 failure
      0.0.1 2023-04-10T17:56Z Fixed D211101e link, touch-ups
      0.0.0 2023-04-09T20:19Z Initial account
 
