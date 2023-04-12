@@ -1,4 +1,4 @@
-D211101b.txt 0.0.1                  UTF-8                         2023-03-28
+D211101b.txt 0.0.2                  UTF-8                         2023-04-12
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -41,7 +41,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. D211101b: VCrayApp Operation.  nfoTools development
-   documentation text file D211101b.txt version 0.0.1 dated 2023-02-28,
+   documentation text file D211101b.txt version 0.0.2 dated 2023-04-12,
    available on the Internet as a version of
    <https://orcmid.github.io/nfoTools/dev/D211101/D211101b/D211101b.txt>
 
@@ -62,9 +62,11 @@ TODO
         o Address single-use versus multiple-use installation
         o Provide orcmid.github.io/nfoTools location for the attribution
 
+ * Fix title to be "VCrayApp Operation" in index.md
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.2 2023-04-12T00:06Z New TODO
  0.0.1 2023-03-28T20:28Z Additional TODOs from 0.1.0 checklist items
  0.0.0 2022-08-18T17:57Z Placeholder morphed from D211101a.txt 0.0.0 and
        adjusted for VCrayApp Operation as part of alpha availability.

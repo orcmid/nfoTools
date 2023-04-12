@@ -1,4 +1,4 @@
-fails.txt 0.0.5                     UTF-8                         2023-04-11
+fails.txt 0.0.6                     UTF-8                         2023-04-12
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -52,7 +52,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. VCrayApp: Failure-Message Explanations.  nfoTools
-   development text file fails.txt version 0.0.5 dated 2023-04-11,
+   development text file fails.txt version 0.0.6 dated 2023-04-12,
    available on the Internet as a version of
    <https://orcmid.github.io/nfoTools/dev/D211101/fails/fails.txt>
 
@@ -83,9 +83,14 @@ TODO
  * Should we show both flavors when they differ?  YES, because the quieter
    ones show up in embedded cases.
 
+ * Projects should link to the Classic Projects being used.
+   <https://github.com/orcmid/nfoTools/projects?type=classic>
+
+ * Connect to FAIL2
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.6 2023-04-12T00:13Z New TODOs
  0.0.5 2023-04-11T15:10Z Manage TODOs
  0.0.4 2023-04-11T14:26Z Track FAILx completions individually
  0.0.3 2023-04-10T22:25Z Remove completed TODOs
