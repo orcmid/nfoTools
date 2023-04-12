@@ -41,9 +41,9 @@ Feedback and requests concerning this beta release should be addressed to the
 D211101e in any headings.  Review
 [discussions](https://github.com/orcmid/nfoTools/discussions),
 [issues](https://github.com/orcmid/nfoTools/issues), and
-[projects](https://github.com/orcmid/nfoTools/projects) for information and
-comments related to this VCrayApp 0.1.0 release.  All questions and comments
-are appreciated.
+[projects](https://github.com/orcmid/nfoTools/projects?type=classic) for
+information and comments related to this VCrayApp 0.1.0 release.  All
+questions and comments are appreciated.
 
 ----
 
@@ -52,8 +52,8 @@ Discussion about nfoTools is welcome at the
 Improvements and removal of defects in this particular documentation can be
 reported and addressed in the
 [Issues section](https://github.com/orcmid/nfoTools/issues).  There are also
-relevant [projects](https://github.com/orcmid/nfoTools/projects) from time to
-time.
+relevant [projects](https://github.com/orcmid/nfoTools/projects?type=classic)
+from time to time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
