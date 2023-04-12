@@ -1,4 +1,4 @@
-<!-- index.md 0.0.2                 UTF-8                          2023-04-10
+<!-- index.md 0.0.3                 UTF-8                          2023-04-12
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                          VCRAYAPP FAILCODE MESSAGES
@@ -6,7 +6,7 @@
 
 # ***VCrayApp** [FAILCODE MESSAGES](.)*
 
-| ***[nfoTools](../../../)*** | [dev](../../)[>D211101](../)[>fails](.) | [index.html](index.html) ***0.0.2 2023-04-10*** |
+| ***[nfoTools](../../../)*** | [dev](../../)[>D211101](../)[>fails](.) | [index.html](index.html) ***0.0.3 2023-04-10*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../../../images/hardhat-logo.gif) |
 |              |                     |           |
@@ -26,9 +26,9 @@ of D211101 and the particular `FAILCODE`.
 
 Review [discussions](https://github.com/orcmid/nfoTools/discussions),
 [issues](https://github.com/orcmid/nfoTools/issues), and
-[projects](https://github.com/orcmid/nfoTools/projects) for discussions and
-comments related to specific VCrayApp releases.  All questions and
-comments are appreciated.
+[projects](https://github.com/orcmid/nfoTools/projects?type=classic) for
+discussions and comments related to specific VCrayApp releases.  All questions
+and comments are appreciated.
 
 ## FAILCODE CATALOG
 
@@ -36,7 +36,7 @@ comments are appreciated.
 | :-: | :- |
 | [FAIL0](FAIL0) | FAILCODE0: COMMAND SHELL EXTENSIONS REQUIRED |
 | [FAIL1](FAIL1) | FAILCODE1: INCORRECT VCrayApp FILES CONFIGURATION |
-| FAIL2 | FAILCODE2: UNSUPPORTED VCRAYAPP.BAT PARAMETERS |
+| [FAIL2](FAIL2) | FAILCODE2: UNSUPPORTED VCRAYAPP.BAT PARAMETERS |
 | FAIL3 | FAILCODE3: NO VS NATIVE COMMAND-LINE ENVIRONMENT |
 | FAIL4 | FAILCODE4: COMPILING CACHE OF RAYLIB FILES FAILED |
 | FAIL5 | FAILCODE5: PRODUCING/OPERATING %VCEXE% FAILED |
@@ -59,6 +59,7 @@ from time to time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.3 2023-04-12T19:02Z Touch-up, connecting FAIL2
      0.0.2 2023-04-10T22:26Z Provide touch-ups and connect FAIL1
      0.0.1 2023-04-09T20:00Z Connect FAIL0
      0.0.0 2023-04-09T17:41Z Create Initial Placeholder from D211101d 0.0.8
