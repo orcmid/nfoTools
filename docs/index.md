@@ -1,10 +1,10 @@
-<!-- index.md 0.0.10                UTF-8                       dh:2021-10-21
+<!-- index.md 0.0.11                UTF-8                       dh:2023-04-12
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
      -->
 
 # Welcome to nfoTools
 
-| ***[nfoTools](index.html)*** | ***Work-in-Progress*** | ***0.0.10 2021-10-21*** |
+| ***[nfoTools](index.html)*** | ***Work-in-Progress*** | ***0.0.11 2023-04-12*** |
 | :--                |       :-:          | --: |
 | | ![Welding nfoTools](images/nfoWorks-2014-06-02-1638-LogoLarge.png) | |
 
@@ -58,10 +58,11 @@ I invite discussion about nfoTools topics in the
 Improvements and removal of defects in this particular documentation can be
 reported and addressed in the
 [Issues section](https://github.com/orcmid/nfoTools/issues).  There are also
-relevant [projects](https://github.com/orcmid/nfoTools/projects) from time to
-time.
+relevant [projects](https://github.com/orcmid/nfoTools/projects?type=classic)
+from time to time.
 
 <!--
+      0.0.11 2023-04-12T16:12Z Mass change of [projects] links
       0.0.10 2021-11-21T20:52Z Tidying up
       0.0.9 2021-10-04T19:17Z Make Toolcraft not specific to prerequisites
       0.0.8 2021-09-21T16:51Z Welcoming games

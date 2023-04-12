@@ -1,4 +1,4 @@
-docs.txt 0.0.16                     UTF-8                      dh:2022-12-22
+docs.txt 0.0.17                     UTF-8                      dh:2023-04-12
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                             nfoWare/nfoWorks nfoTools
@@ -87,8 +87,8 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. nfoTools Documentation-Authoring Construction
-   Structure.  nfoTools project text file docs.txt version 0.0.16 dated
-   2022-12-22, available on the Internet as a version of
+   Structure.  nfoTools project text file docs.txt version 0.0.17 dated
+   2023-04-12, available on the Internet as a version of
    <https://github.com/orcmid/nfoTools/blob/master/docs/docs.txt>
 
 TODO
@@ -204,6 +204,7 @@ TODO
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.17 2023-04-12T16:15Z Mass change of [projects] links
  0.0.16 2022-12-22T16:34Z Add a11n considerations, manage TODOs
  0.0.15 2022-12-16T17:39Z Additional work items on cryptographic tools, skills
         and their construction.
