@@ -1,4 +1,4 @@
-CHANGES-0.1.0.txt 0.0.10            UTF-8                         2023-04-06
+CHANGES-0.1.0.txt 0.0.11            UTF-8                         2023-04-06
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                        AN NFOTOOLS COMING ATTRACTION
@@ -40,6 +40,9 @@ recent versions of raylib that fail with the Microsoft VC/C++ compiler.
 
 VCrayApp detects and reports when in-progress -dev versions of raylib are
 being used.
+
+VCrayApp failure messages all have FAILCODE numbers and each message has links
+to details under <https://orcmid.github.io/nfoTools/dev/D211101/fails/>.
 
 CHANGES-0.1.0.txt is included in the VCrayApp-0.1.0.zip file and is also one
 the release page for consultation without downloading the package.
@@ -99,7 +102,7 @@ script.  On any failure, VCrayApp does force EXIT.
  ATTRIBUTION
 
    Hamilton, Dennis E. Changes Made for VCrayApp 0.1.0.  nfoTools text file
-   version 0.0.10 dated 2023-04-06, available on the Internet as a version of
+   version 0.0.11 dated 2023-04-13, available on the Internet as a version of
    <https://orcmid.github.io/nfoTools/dev/D211101/D211101e/CHANGES-0.1.0.txt>
 
 TODO
@@ -116,6 +119,7 @@ TODO
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.11 2023-04-13T20:15Z Include error-message cleanups and links
  0.0.10 2023-04-06T18:24Z Reflect CHANGES-0.1.0 name change, make touch-ups
  0.0.9 2023-04-05T15:51Z Touch-ups
  0.0.8 2023-03-28T20:42Z Adjustments for 0.1.0 and latest handling of hosting
