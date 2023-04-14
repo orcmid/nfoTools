@@ -1,4 +1,4 @@
-<!-- index.md 0.0.1                 UTF-8                          2023-04-11
+<!-- index.md 0.0.2                 UTF-8                          2023-04-14
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
             FAILCODE1: INCORRECT VCrayApp FILES CONFIGURATION
@@ -6,7 +6,7 @@
 
 # ***VCrayApp** [FAILCODE1: INCORRECT VCrayApp FILES CONFIGURATION](.)*
 
-| ***[nfoTools](../../../../)*** | [dev](../../../)[>D211101](../../)[>fails](../)[>FAIL1](.) | [index.html](index.html) ***0.0.0 2023-04-10*** |
+| ***[nfoTools](../../../../)*** | [dev](../../../)[>D211101](../../)[>fails](../)[>FAIL1](.) | [index.html](index.html) ***0.0.2 2023-04-14*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../../../../images/hardhat-logo.gif) |
 |              |                     |           |
@@ -46,6 +46,7 @@ from time to time.
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
+     0.0.2 2023-04-14T17:40Z Fix simple typo
      0.0.1 2023-04-11T23:04Z Replace with improved screen capture
      0.0.0 2023-04-10T22:07Z Initial account
 

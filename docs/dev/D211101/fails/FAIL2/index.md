@@ -1,4 +1,4 @@
-<!-- index.md 0.0.0                 UTF-8                          2023-04-12
+<!-- index.md 0.0.1                 UTF-8                          2023-04-14
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
               FAILCODE2: UNSUPPORTED VCRAYAPP.BAT PARAMETERS
@@ -6,13 +6,13 @@
 
 # ***VCrayApp** [FAILCODE2: UNSUPPORTED VCRAYAPP.BAT PARAMETERS](.)*
 
-| ***[nfoTools](../../../../)*** | [dev](../../../)[>D211101](../../)[>fails](../)[>FAIL2](.) | [index.html](index.html) ***0.0.0 2023-04-12*** |
+| ***[nfoTools](../../../../)*** | [dev](../../../)[>D211101](../../)[>fails](../)[>FAIL2](.) | [index.html](index.html) ***0.0.1 2023-04-14*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../../../../images/hardhat-logo.gif) |
 |              |                     |           |
 | This Version | since VCrayApp 0.1.0 beta release | [D211101e](../../D211101e) |
 
-![FAILCODE1 Message](FAIL2-2023-04-11-1529-VCrayApp-0.1.0.png)
+![FAILCODE2 Message](FAIL2-2023-04-11-1529-VCrayApp-0.1.0.png)
 
 `VCrayApp.bat` verifies the parameter list of the command used to operate it.
 As soon as a discrepancy is detected, processing fails.   The failure message
@@ -44,6 +44,7 @@ from time to time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.1 2023-04-14T17:42Z Fix simple typo
      0.0.0 2023-04-12T18:55Z Initial page from 0.0.1 FAIL1 boilerplate.
 
                *** end D211101/fails/FAIL2/index.md ***

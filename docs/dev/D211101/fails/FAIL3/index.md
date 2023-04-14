@@ -1,4 +1,4 @@
-<!-- index.md 0.0.0                 UTF-8                          2023-04-12
+<!-- index.md 0.0.1                 UTF-8                          2023-04-14
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
               FAILCODE3: NO VS NATIVE COMMAND-LINE ENVIRONMENT
@@ -6,13 +6,13 @@
 
 # ***VCrayApp** [FAILCODE3: NO VS NATIVE COMMAND-LINE ENVIRONMENT](.)*
 
-| ***[nfoTools](../../../../)*** | [dev](../../../)[>D211101](../../)[>fails](../)[>FAIL3](.) | [index.html](index.html) ***0.0.0 2023-04-12*** |
+| ***[nfoTools](../../../../)*** | [dev](../../../)[>D211101](../../)[>fails](../)[>FAIL3](.) | [index.html](index.html) ***0.0.1 2023-04-14*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../../../../images/hardhat-logo.gif) |
 |              |                     |           |
 | This Version | since VCrayApp 0.1.0 beta release | [D211101e](../../D211101e) |
 
-![FAILCODE1 Message](FAIL3-2023-04-12-1253-VCrayApp-0.1.0.png)
+![FAILCODE3 Message](FAIL3-2023-04-12-1253-VCrayApp-0.1.0.png)
 
 VCrayApp operation depends on the VS "x64 Developer Command Prompt" being
 set up as part of initiating command-line interaction.  This establishes an
@@ -53,6 +53,7 @@ from time to time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.2 2023-04-14T17:44Z Fix simple typo
      0.0.0 2023-04-12T20:46Z Initial page from 0.0.0 FAIL2 boilerplate.
 
                *** end D211101/fails/FAIL3/index.md ***
