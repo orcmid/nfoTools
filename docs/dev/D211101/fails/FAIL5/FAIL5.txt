@@ -1,0 +1,76 @@
+FAIL5.txt 0.0.0                     UTF-8                         2023-04-14
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+
+                        nfoWare/nfoWorks nfoTools
+                        =========================
+
+  <https://orcmid.github.io/nfoTools/dev/D211101/fails/FAIL4/FAIL4.txt>
+
+        VCRAYAPP FAILCODE5: PRODUCING/OPERATING %VCEXE% FAILED
+        ------------------------------------------------------
+
+    This FAILCODE is most likely to be encountered when building from the
+    project source.  Some of the cases are unlikely and will indicate that
+    there is some sort of damage or discrepancy in operation.
+
+    The last case is most likely and its trouble-shooting is comparable for
+    all of the possible reasons.
+
+
+
+MANIFEST
+
+    FAIL5.txt   This synopsis and manifest
+
+    index.md    GitHub nfoTools/docs/dev/d211101/fails/FAIL5 index markdown
+                This file does not appear at <orcmid.github.io/nfoTools>.
+
+    index.html  (generated) web page for FAILCODE5 Explanation
+
+    FAIL5 2023-04-13-1717-verboseErrors-VCrayApp-0.1.0.png
+
+    FAIL5-2023-04-13-1719-operator.c-VCrayApp-0.1.0.png
+
+
+TODOS:
+
+ * Create index.md reflecting both terse and verbose (faked) cases.
+
+ * Explain that there should be more details just above the FAIL5 message,
+   and that running verbose is usually more helpful.
+
+ * Describe the different possible names in the FAIL5 message.
+
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+                       Copyright 2023 Dennis E. Hamilton
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+ ATTRIBUTION
+
+   Hamilton, Dennis E. VCrayApp FAILCODE5: PRODUCING/OPERATING %VCEXE% FAILED.
+   nfoTools development text file FAIL5.txt version 0.0.0 dated 2023-04-14,
+   available on the Internet as a version of
+   <https://orcmid.github.io/nfoTools/dev/D211101/fails/FAIL5/FAIL5.txt>
+
+
+
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+ 0.0.0 2023-04-14-04:04Z placeholder boilerplate from FAIL4.txt 0.0.0
+
+                       ***** end of FAIL5.txt *****
