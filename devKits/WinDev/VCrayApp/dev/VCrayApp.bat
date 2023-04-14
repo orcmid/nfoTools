@@ -1,5 +1,5 @@
 @echo off
-rem VCrayApp 0.1.0 VCrayApp.bat 0.0.54 UTF-8                       2023-04-13
+rem VCrayApp 0.1.0 VCrayApp.bat 0.0.55 UTF-8                       2023-04-14
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 rem                  BUILDING RAYLIB APP WITH VC/C++ TOOLS
@@ -342,11 +342,14 @@ ECHO:            ^<https://orcmid.github.io/nfoTools/dev/D211101/fails/FAIL5^>
 GOTO :BAIL
 
 :FAIL4
+DEL %~dp0cache\rglfw.obj >NUL 2>NUL
+rem   ensure that attempting to use the cache can't be worked-around
 ECHO: [VCrayApp] **** FAILCODE4: CACHING RAYLIB %VCRAYVER% FILES FAILED ****
 ECHO:            Review the errors reported for the compilation.    %VCterse%
 ECHO:            Make repairs and reattempt.                        %VCterse%
 ECHO:            RESULTS ARE UNPREDICTABLE.  REBUILD CACHE.         %VCterse%
 ECHO:            ^<https://orcmid.github.io/nfoTools/dev/D211101/fails/FAIL4^>
+
 GOTO :BAIL
 
 :FAIL3
@@ -453,6 +456,7 @@ rem For additional information, see the accompanying NOTICE.txt file.
 rem
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 rem
+rem 0.0.55 2023-04-14T19:33Z Force cache rebuild after a FAILCODE4
 rem 0.0.54 2023-04-13T19:55Z Improve FAILCODE4/5 reporting
 rem 0.0.53 2023-04-12T19:46Z Improve FAILCODE3 reporting
 rem 0.0.52 2023-04-11T22:23Z Improve FAILCODE2 reporting
