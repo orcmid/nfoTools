@@ -1,5 +1,5 @@
 @echo off
-rem VCrayApp 0.1.0 VCrayApp.bat 0.0.55 UTF-8                       2023-04-14
+rem VCrayApp 0.1.0 VCrayApp.bat 0.0.56 UTF-8                       2023-04-15
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 rem                  BUILDING RAYLIB APP WITH VC/C++ TOOLS
@@ -220,7 +220,7 @@ ECHO: %VCterse%
 DEL VCrayConfirm.obj >NUL 2>NUL
 
 CD %VCfrom%
-IF NOT EXIST %~dp0app\%VCEXE% GOTO :FAIL5
+IF NOT EXIST %~dp0cache\%VCEXE% GOTO :FAIL5
 ECHO: [VCrayApp] Launching %VCEXE%.  Exit App to Continue Session  %VCterse%
 ECHO: %VCterse%
 %~dp0cache\%VCEXE%
@@ -456,6 +456,7 @@ rem For additional information, see the accompanying NOTICE.txt file.
 rem
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 rem
+rem 0.0.56 2023-04-15T15:29Z Fix incorrect :FAIL5 check on VCrayConfirm.exe
 rem 0.0.55 2023-04-14T19:33Z Force cache rebuild after a FAILCODE4
 rem 0.0.54 2023-04-13T19:55Z Improve FAILCODE4/5 reporting
 rem 0.0.53 2023-04-12T19:46Z Improve FAILCODE3 reporting
