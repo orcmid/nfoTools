@@ -1,4 +1,4 @@
-<!-- index.md 0.0.1                 UTF-8                          2023-04-15
+<!-- index.md 0.0.2                 UTF-8                          2023-04-15
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
               FAILCODE5: PRODUCING/OPERATING %VCEXE% FAILED
@@ -14,18 +14,18 @@
 
 `FAILCODE5`, and the companion `FAILCODE4`, are produced for a variety of
 build and operation failures in operation of `VCrayApp.bat`.  If operation
-is in terse (option "*") mode, there may not be enough information about
+is in terse (option `*`) mode, there may not be enough information about
 the failure.  In that case, rerun `VCrayApp.bat` in verbose mode, using the
-same parameters with out the "*".
+same parameters with out the `*`.
 
-The '%VCEXE%` in an actual `FAILCODE5` report will be one of
+The `%VCEXE%` in an actual `FAILCODE5` report will be one of
 
-* The executable (%VCAPPEXE%) specified for the project -- the most likely
+* The executable (`%VCAPPEXE%`) specified for the project -- the most likely
 case
 * Different stages in building/refreshing the cache of raylib components
-  * VCrayVerCheck.exe
-  * VCrayVer.bat
-  * `FAILCODE4` possible before the next case
+  * `VCrayVerCheck.exe`
+  * `VCrayVer.bat`
+  * `FAILCODE4` avoided before the next case
   * `VCrayConfirm.exe`
 
 ## %VCEXE% IS THE PROJECT EXECUTABLE (%VCAPPEXE% VALUE)
@@ -38,12 +38,12 @@ That's the case for the demonstration project with `%VCEXE%` of `operator.c`.
 
 ### Source-Code Compilation Diagnostics
 
-![FAILCODE5 Verbose Error](FAIL5-2023-04-13-1717-verboseErrors-VCrayApp-0.1.0.png)
+![FAILCODE5 Verbose](FAIL5-2023-04-13-1717-verboseErrors-VCrayApp-0.1.0.png)
 
 Typically, the name of the file being compiled (here, `operator.c`) is named
 by VC/C++ and any diagnostic messages will follow that name, as shown above.
 
-Diagnostic message can be cryptic.  However, there is key information.  Each
+Diagnostic messages can be cryptic.  However, there is key information.  Each
 message indicates the file being processed (`operator.c`) and the number of
 the line in that file (`(9)`) along with an error code and some explanatory
 text.  These might not be particularly information.  They do provide places
@@ -51,7 +51,7 @@ to look in the code that is being compiled.
 
 ![FAILCODE5 Located Source Error](FAIL5-2023-04-13-1719-operator.c-VCrayApp-0.1.0.png)
 
-Although this is a contrived example, similar considerations will apply in other projects and a great variety of diagnostic messages.
+Although this is a contrived example, similar considerations will apply in other projects along with a great variety of diagnostic messages.
 
 In line 9 of example `operator.c` viewed in Visual Studio Code, the difficulty
 is with the "+" there.  This is signified by the underlining and also the dot
@@ -68,7 +68,7 @@ rely on its definitions.  The definition of `Vector3` is recognized and the
 C/C++ Intellisense feature finds nothing objectionable except the suspicious
 "+" on line 9.  It is valuable to notice that VS Code does not identify any
 other concern.  (Without that "+" the code appears to be a legitimate
-definition of a function named `operator`, although that term is discouraged
+definition of a function named `operator`, although that usage is discouraged
 for C Language because of its significance as a keyword in C++.)
 
 ### Project Link Errors
@@ -82,7 +82,7 @@ be used every time VCrayApp is used.  Also, any time a new release (or `-dev`
 update) is installed, it is important to rebuild the VCrayApp project's cache.
 
 For understanding of the link process, review
-[VCrayApp Operation](../../D211101b) as well as
+[VCrayApp Operation](../../D211101b) as well as information on the
 [VS Build Tools](https://orcmid.github.io/nfoTools/tools/T211002/).
 
 
@@ -99,7 +99,8 @@ from time to time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-     0.0.1 2023-04-15-19:29Z Intermediate Review Draft
+     0.0.2 2023-04-15T20:16Z Tidied Intermediate Draft
+     0.0.1 2023-04-15T19:29Z Intermediate Review Draft
      0.0.0 2023-04-13T21:42Z Initial page from 0.0.0 FAIL3 boilerplate.
 
                *** end D211101/fails/FAIL5/index.md ***
