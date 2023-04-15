@@ -1,4 +1,4 @@
-<!-- index.md 0.0.2                 UTF-8                          2023-04-15
+<!-- index.md 0.0.3                 UTF-8                          2023-04-15
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
               FAILCODE5: PRODUCING/OPERATING %VCEXE% FAILED
@@ -38,7 +38,7 @@ That's the case for the demonstration project with `%VCEXE%` of `operator.c`.
 
 ### Source-Code Compilation Diagnostics
 
-![FAILCODE5 Verbose](FAIL5-2023-04-13-1717-verboseErrors-VCrayApp-0.1.0.png)
+![FAILCODE5 Verbose](FAIL5-2023-04-13-1717-verbose-VCrayApp-0.1.0.png)
 
 Typically, the name of the file being compiled (here, `operator.c`) is named
 by VC/C++ and any diagnostic messages will follow that name, as shown above.
@@ -99,6 +99,7 @@ from time to time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.3 2023-04-15T22:59Z Attempt to get FAIL5-verbose displayed
      0.0.2 2023-04-15T20:16Z Tidied Intermediate Draft
      0.0.1 2023-04-15T19:29Z Intermediate Review Draft
      0.0.0 2023-04-13T21:42Z Initial page from 0.0.0 FAIL3 boilerplate.
