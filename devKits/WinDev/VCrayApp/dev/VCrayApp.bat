@@ -1,5 +1,5 @@
 @echo off
-rem VCrayApp 0.1.0 VCrayApp.bat 0.0.56 UTF-8                       2023-04-15
+rem VCrayApp 0.1.0 VCrayApp.bat 0.0.57 UTF-8                       2023-04-16
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 rem                  BUILDING RAYLIB APP WITH VC/C++ TOOLS
@@ -152,9 +152,13 @@ rem XXX We depend on rglfw.c being compiled last and absence is taken
 rem XXX to mean cache is absent/obsolete.
 
 :CACHECHECK
+IF NOT EXIST %~dp0cache\VCrayConfirm.exe GOTO :CACHENEEDED
+rem If we had cratered on :FAIL4, we must retry the cache creation.
 IF EXIST %~dp0cache\rglfw.obj GOTO :APPCHECK
 rem Using presence of the last-built raylib .obj to determine full cache.
 rem *IMPORTANT* Keep consistent with %~dp0cache\raylibCode.opt cases
+
+:CACHENEEDED
 DEL %~dp0cache\*.obj >NUL 2>NUL
 
 REM COMPILE THE CACHE OF RAYLIB FILES THAT MAY BE NEEDED
@@ -342,7 +346,7 @@ ECHO:            ^<https://orcmid.github.io/nfoTools/dev/D211101/fails/FAIL5^>
 GOTO :BAIL
 
 :FAIL4
-DEL %~dp0cache\rglfw.obj >NUL 2>NUL
+DEL %~dp0cache\rglfw.obj %~dp0cache\VCrayConfirm.exe >NUL 2>NUL
 rem   ensure that attempting to use the cache can't be worked-around
 ECHO: [VCrayApp] **** FAILCODE4: CACHING RAYLIB %VCRAYVER% FILES FAILED ****
 ECHO:            Review the errors reported for the compilation.    %VCterse%
@@ -456,6 +460,8 @@ rem For additional information, see the accompanying NOTICE.txt file.
 rem
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 rem
+rem 0.0.57 2023-04-16T17:42Z Ensure no VCrayConfirm.exe upon :FAIL4, forcing
+rem        rebuild of cache on next run.
 rem 0.0.56 2023-04-15T15:29Z Fix incorrect :FAIL5 check on VCrayConfirm.exe
 rem 0.0.55 2023-04-14T19:33Z Force cache rebuild after a FAILCODE4
 rem 0.0.54 2023-04-13T19:55Z Improve FAILCODE4/5 reporting
