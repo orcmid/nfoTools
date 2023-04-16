@@ -1,5 +1,5 @@
 @echo off
-rem VCrayApp 0.1.0 VCrayApp.bat 0.0.57 UTF-8                       2023-04-16
+rem VCrayApp 0.1.0 VCrayApp.bat 0.0.58 UTF-8                       2023-04-16
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 rem                  BUILDING RAYLIB APP WITH VC/C++ TOOLS
@@ -153,7 +153,7 @@ rem XXX to mean cache is absent/obsolete.
 
 :CACHECHECK
 IF NOT EXIST %~dp0cache\VCrayConfirm.exe GOTO :CACHENEEDED
-rem If we had cratered on :FAIL4, we must retry the cache creation.
+rem If we had cratered on :FAIL4/:FAIL5, we must retry the cache creation.
 IF EXIST %~dp0cache\rglfw.obj GOTO :APPCHECK
 rem Using presence of the last-built raylib .obj to determine full cache.
 rem *IMPORTANT* Keep consistent with %~dp0cache\raylibCode.opt cases
@@ -229,7 +229,7 @@ ECHO: [VCrayApp] Launching %VCEXE%.  Exit App to Continue Session  %VCterse%
 ECHO: %VCterse%
 %~dp0cache\%VCEXE%
 IF ERRORLEVEL 1 GOTO :FAIL5
-DEL %~dp0cache\%VCEXE% >NUL 2>NUL
+rem leaving VCrayConfirm.exe as indicator of cache-deemed good
 
 :APPCHECK
 REM THERE IS A CONFIRMED CACHE.  NOW COMPILE AND RUN THE PROJECT APP AS NEEDED
@@ -338,6 +338,8 @@ REM   XXXX ANOTHER DEPENDENCY ON raylib\ LOCATION
 GOTO :BAIL
 
 :FAIL5
+IF NOT "%VCEXE%" == "%VCAPPEXE%" DEL %~dp0cache\VCrayConfirm.exe >NUL 2>NUL
+rem ensure that the cache will be rebuilt except when the problem is later.
 ECHO: [VCrayApp] **** FAILCODE5: PRODUCING/OPERATING %VCEXE% FAILED ****
 ECHO:            Review any reported errors.                        %VCterse%
 ECHO:            Make repairs and reattempt.                        %VCterse%
@@ -460,6 +462,7 @@ rem For additional information, see the accompanying NOTICE.txt file.
 rem
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 rem
+rem 0.0.58 2023-04-16T19:01Z More FAILCODE4/5 cache rebuild forcing edge cases
 rem 0.0.57 2023-04-16T17:42Z Ensure no VCrayConfirm.exe upon :FAIL4, forcing
 rem        rebuild of cache on next run.
 rem 0.0.56 2023-04-15T15:29Z Fix incorrect :FAIL5 check on VCrayConfirm.exe
