@@ -1,4 +1,4 @@
-<!-- index.md 0.0.4                 UTF-8                          2023-04-12
+<!-- index.md 0.0.5                 UTF-8                          2023-04-17
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                          VCRAYAPP FAILCODE MESSAGES
@@ -38,8 +38,8 @@ and comments are appreciated.
 | [FAIL1](FAIL1) | FAILCODE1: INCORRECT VCrayApp FILES CONFIGURATION |
 | [FAIL2](FAIL2) | FAILCODE2: UNSUPPORTED VCRAYAPP.BAT PARAMETERS |
 | [FAIL3](FAIL3) | FAILCODE3: NO VS NATIVE COMMAND-LINE ENVIRONMENT |
-| FAIL4 | FAILCODE4: COMPILING CACHE OF RAYLIB FILES FAILED |
-| FAIL5 | FAILCODE5: PRODUCING/OPERATING %VCEXE% FAILED |
+| [FAIL4](FAIL4) | FAILCODE4: COMPILING CACHE OF RAYLIB FILES FAILED |
+| [FAIL5](FAIL5) | FAILCODE5: PRODUCING/OPERATING %VCEXE% FAILED |
 | FAIL6 | FAILCODE6: RAYLIB NOT FOUND WHERE EXPECTED |
 | FAIL7 | FAILCODE7: RAYLIB VERSION NOT > 3.0.0 |
 | FAIL8 | FAILCODE8: RAYLIB %VCRAYVER% NOT SUPPORTED |
@@ -59,6 +59,7 @@ from time to time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.5 2023-04-17T16:15Z Connect FAIL4-FAIL5
      0.0.4 2023-04-12T20:54Z Connect FAIL3
      0.0.3 2023-04-12T19:02Z Touch-up, connecting FAIL2
      0.0.2 2023-04-10T22:26Z Provide touch-ups and connect FAIL1
