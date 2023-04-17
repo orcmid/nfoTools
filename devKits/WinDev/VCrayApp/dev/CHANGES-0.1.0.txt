@@ -1,4 +1,4 @@
-CHANGES-0.1.0.txt 0.0.11            UTF-8                         2023-04-06
+CHANGES-0.1.0.txt 0.0.12            UTF-8                         2023-04-17
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                        AN NFOTOOLS COMING ATTRACTION
@@ -36,7 +36,7 @@ NEW FEATURES
 
 VCrayApp will detect and report the version of raylib and of VS Command Prompt
 being used each time the cache is built.  There is failure checking on known
-recent versions of raylib that fail with the Microsoft VC/C++ compiler.
+recent releases of raylib that fail with the Microsoft VC/C++ compiler.
 
 VCrayApp detects and reports when in-progress -dev versions of raylib are
 being used.
@@ -73,6 +73,16 @@ of setting VCrayAppHost, VCAPPEXE, and VCAPPSRC.  Otherwise, there is warning.
 
 VCrayApp no longer PAUSES after a successful run, with or without execution
 of any code.
+
+VCrayApp no longer employs app\ for anything but compiling the project code.
+All compiles of the VCrayApp helper programs that are part of cache\ will be
+compiled in cache\ in a manner that does not interfere with use of cache\ for
+precompiled raylib components.
+
+In case of problems with unpredictable results related to population of the
+cache\, whether FAILCODE4 or FAILCODE5, VCrayApp will automatically attempt
+to rebuild the cache on the next usage, whether requested (option "-c") or
+not.
 
 CORRECTION: When executed as embedded (option "+"), VCrayApp.bat no longer
 sets LOCAL.  The caller must do so as appropriate.  This exposes variables set
@@ -119,6 +129,7 @@ TODO
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.12 2023-04-17T16:32Z More information on failures and cache rebuilding
  0.0.11 2023-04-13T20:15Z Include error-message cleanups and links
  0.0.10 2023-04-06T18:24Z Reflect CHANGES-0.1.0 name change, make touch-ups
  0.0.9 2023-04-05T15:51Z Touch-ups
