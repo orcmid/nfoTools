@@ -84,6 +84,11 @@ MANIFEST
         holds a clone and is generally used for confirming under-development
         VCrayApp versions.
 
+    tests\
+        Files that are used to test/confirm/demonstrate certain uses of
+        VCrayApp.  They are aids for documenting success and failure of
+        VCrayApp operations.
+
     VCrayApp\
         Produced by unzipping VCrayApp-*semver*.zip here and renaming it to
         VCrayApp.  This folder is also excluded from Git.  It is created for
