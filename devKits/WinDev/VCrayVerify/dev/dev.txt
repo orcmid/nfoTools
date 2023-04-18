@@ -1,5 +1,5 @@
-VCrayVerify-0.0.0 dev.txt 0.0.8     UTF-8                         2023-04-18
-----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+VCrayVerify-0.0.0 dev.txt 0.0.9     UTF-8                         2023-04-18
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 <https://github.com/orcmid/nfoTools/blob/master/devKits/WinDev/VCrayVerify/dev/dev.txt>
 
@@ -9,12 +9,14 @@ VCrayVerify-0.0.0 dev.txt 0.0.8     UTF-8                         2023-04-18
     On GitHub, this folder is for the development, confirmation, and packaging
     of a VCrayVerify test suite.  This dev.txt file is incorporated in the
     VCrayVerify-0.0.0.zip package and extracted folder for reference and
-    historical purposes.
+    historical purposes.  VCrayVerify-0.0.0 is definitely an alpha and proof-
+    of-concept release.  There are raylib\examples\ cases that may not be
+    ameanable to building with a simple VCrayAppV and pure VCrayApp building.
 
     The structure of this folder is that of the intended test suite, apart
     from those components, such as a raylib source release, that must be
     obtained from elsewhere.  VCrayVerify is tested and developed in place
-    in a dev\ folder and then the release content is separate out into the
+    in a GitHub folder and then the release content is separate out into the
     distributable VCrayVerify-0.0.0.zip.  For this and later releases, see
     <https://orcmid.github.io/nfoTools/dev/D230202/>.
 
@@ -25,25 +27,28 @@ VCrayVerify-0.0.0 dev.txt 0.0.8     UTF-8                         2023-04-18
     with a variety of raylib releases, including clones of the current
     under-development raylib\ release.
 
-    The VCrayAppV\ adaptation might use src\ as the location where copies of
-    examples and other source codes are placed for compilation.  The app\
-    folder will receive compiled examples and and resources\ subfolder for
-    examples that expect one.
+    VCrayVerify might use VCrayAppV\src\ as the location where copies of
+    examples and other source codes are placed for compilation sometimes.
+    The app\ folder will receive compiled examples and and resources\
+    subfolder for examples that expect one at runtime.
 
     Generally, VCrayVerify runs much like VCrayApp except for the selection
-    of examples to (attempt to) build and run.  There is not so much about
-    customization in contrast with VCrayApp.  VCrayVerify versions are used
+    of examples to (attempt to) build and run.  VCrayVerify versions are used
     to adjust to new raylib\ and raylib\examples\ situations, and also such
     matters as VS Build Tools changes that impact support of C/C++ features.
 
     The development and staging of releases is along the same lines used for
-    VCrayApp releases.  There is a similar checklist.
+    VCrayApp releases.  There will be a similar checklist.
 
 MANIFEST
 
     dev.txt
         This description file on organization of the folder and use of its
         materials.
+
+    CHALLENGES.txt
+        File documenting challenges that need to be overcome with some
+        raylib\examples\ cases.
 
     VCrayVerify-0.0.0.txt
         The synopsis, read-me, and manifest for VCrayVerify 0.0.0
@@ -64,13 +69,15 @@ MANIFEST
 
     VCrayAppV\
         The VCrayApp 0.1.0 beta release candidate that is used
-        for the compiling-and-run step of each verification.
+        for the compiling-and-run step of each verification.  This is a pure
+        VCrayApp 0.1.0 setup with accomodation of embedded operation for
+        working under VCrayVerify without any modifications required.
 
     raylib\ (not delivered, not under VCrayVerify source-control)
         An extracted raylib version (or developer clone) to verify, located
         as a peer of VCrayAppV\ as required for VCrayApp operation.
 
-----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                     Copyright 2022-2023 Dennis E. Hamilton
 
@@ -86,12 +93,12 @@ MANIFEST
     See the License for the specific language governing permissions and
     limitations under the License.
 
-----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
  ATTRIBUTION
 
    Hamilton, Dennis E. Develop VCrayVerify Test Harnesses for Verifying
-   raylib Examples, version 0.0.6 dated 2023-03-10, available on the Internet
+   raylib Examples, version 0.0.9 dated 2023-04-18, available on the Internet
    as a version of
    <https://github.com/orcmid/nfoTools/blob/master/devKits/WinDev/VCrayVerify/VCrayVerify.txt>
 
@@ -104,13 +111,11 @@ TODO
  * I have decided to create VCrayVerify for the specific task of running
    raylib\examples\ progressively through a VCrayApp series with a setup and
    batch script.  In this case, it works by moving the examples into the
-   reused VCrayApp setup as it goes. It might get away with not always moving
-   code.  There are a number of challenges.  These will be found and resolved
+   VCrayAppV setup as necessary. Various challenges will be found and resolved
    in VCrayVerify development.
 
  * This might be an example that can be morphed into test suites for other
-   application developments, although I am also in love with the idea of
-   Adv10 having its own verification built in by going solo through the game.
+   application developments.
 
  * VCrayVerify.bat will have similar initial parameters to VCrayApp.  The
    internal calls on VCrayApp.bat will all use "+" and any "*" will be passed
@@ -120,10 +125,13 @@ TODO
    command prompt.
 
  * When -c is used with VCrayVerify, it will do a cache build at the beginning
-   but not for subsequent operations in the same sequence of runs
+   but not for subsequent operations in the same sequence of runs.
 
  * When -r is used with VCrayVerify, it will cause the runs to occur.
-   Otherwise, the setup is confirmed without compilation ?????????????????
+   Otherwise, the setup is confirmed without compilation. This is a problem.
+   We always want to run, so it is unclear what this means.  Going through
+   just to test compiles seems odd although it could be done that way.  Needs
+   more thought.
 
  * The default operation is to confirm operation and then present the usage
    information.
@@ -143,40 +151,33 @@ TODO
 
  * Determine where .vscode goes, even if not packaged in the deliverable.
 
- * Include dev.txt as a component of VCrayVerify so that history is packaged
-   with this kind of development. Consider it for other development projects
-   too.
-
- * I need to be cautious of VCrayApp customizations for VCrayVerify.  I want
-   VCrayApp to be close to a drop-in as much as possible.
-
- * I will remove the %VCAPPEXE% and %VCAPPSRC% settings from VCrayApp.bat.
-   That will be done by REM of those setting lines.  The approach in VCrayApp
-   0.1.0 will fit perfectly.
+ * Leave this dev.txt as a component of VCrayVerify so that history is
+   packaged with this kind development.
 
  * I'm not thrilled about having a VCrayAppV folder although the idea is to
-   have a project name.  To reflect the customization, I will make a notice,
-   provide the host name, and remark out the SRC and EXE, letting them be
-   set by VCrayVerify.
+   have a project name.  It would work with a simple VCrayApp folder name.
+   However, room for customization is available with VCrayAppV.
 
- * The file VCrayAppV-prologue.txt allows me to quickly drop in a new
-   prologue file as part of recustomizing a new VCrayAppV drop-in.
+ * Solve the problem of needing to know raylib versions even if the cache is
+   previously built by having a file that holds a SET command from the last
+   VCrayAppV cache build.  The file is initially absent.  The -c option will
+   cause that file to be deleted.  The filling of the cache will be triggered.
+   On a successful cache creation, the file VCVrayVerLast.bat is created to
+   provide the raylib version that was used, as reported by VCrayAppV.
 
- * Solve the problem of needing to know raylib versions even if the cache has
-   not been run by having a file that holds a SET command from the last time
-   A VCrayApp cache build was done.  The file is initially absent.  The -c
-   option will cause that file to be deleted and the filling of the cache will
-   be triggered.  VCVrayVerLast.bat will be the file name.
-
- * The value of VCrayVerLast should be reported somehow during operatin in
-   cases where the cache is not rebuilt, serving as a reminder.  This file
-   is not included in the distribution.
+ * The value of VCrayVerLast should be reported somehow during operation in
+   cases where the cache is not rebuilt, serving as a reminder.
 
  * The -v option should be used to view the PNGs that go with the chosen
    examples.
 
-----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+ * Create a CHALLENGES.txt file that works through challenges found in the
+   example folders, and the workarounds, if any, that are put in place.  Some
+   have already been found in eyeballing raylib\examples\ materials.
 
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+ 0.0.9 2023-04-18T15:57Z Update TODOs, add CHALLENGES.txt
  0.0.8 2023-04-18T17:11Z Remove VCrayAppV-prologue.txt and update of manifest
  0.0.7 2023-03-22T03:46Z Introduce VCrayVerLast.bat and more TODOs
  0.0.6 2023-03-10T18:38Z Adjust for using the VCrayApp 0.1.0 draft candidate.
