@@ -1,4 +1,4 @@
-VCrayVerify-0.0.0 dev.txt 0.0.7     UTF-8                         2023-03-22
+VCrayVerify-0.0.0 dev.txt 0.0.8     UTF-8                         2023-04-18
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 <https://github.com/orcmid/nfoTools/blob/master/devKits/WinDev/VCrayVerify/dev/dev.txt>
@@ -51,23 +51,24 @@ MANIFEST
         VCrayVerify-0.0.0.zip and for independent examination from the
         release download page.
 
-    VCrayVerLast.bat
-        This is an ephemeral file, not part of the distribution, that is
-        used to retain the value of %VCRAYVER% from the last build of the
-        cache.  This will be the value as refined by VCrayLib.bat and reported
-        by VCrayConfirm.
+    VCrayVerify.bat
+        The batch script for operation of VCrayVerify verifications of
+        the raylib\example\ files and potentially others
 
-    NOTICE.txt
+    VCrayVerLast.bat
+        A script for recording the version determined on the last cache
+        creation of project VCrayAppV.
+
+     NOTICE.txt
         Notification applicable to the VCrayVerify content
 
     VCrayAppV\
-        The customized VCrayApp 0.1.0 draft release candidate that is used
+        The VCrayApp 0.1.0 beta release candidate that is used
         for the compiling-and-run step of each verification.
 
     raylib\ (not delivered, not under VCrayVerify source-control)
         An extracted raylib version (or developer clone) to verify, located
         as a peer of VCrayAppV\ as required for VCrayApp operation.
-
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
@@ -176,6 +177,7 @@ TODO
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.8 2023-04-18T17:11Z Remove VCrayAppV-prologue.txt and update of manifest
  0.0.7 2023-03-22T03:46Z Introduce VCrayVerLast.bat and more TODOs
  0.0.6 2023-03-10T18:38Z Adjust for using the VCrayApp 0.1.0 draft candidate.
  0.0.5 2023-02-27T18:13Z Manage TODOs, consider VCrayApp customization
