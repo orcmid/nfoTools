@@ -22,6 +22,8 @@ MANIFEST
         This manifest and job jar for the VCrayApp construction-kit
         development project
 
+    operator.c  Demonstration of error using C++ operator command in c
+
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
@@ -57,7 +59,8 @@ TODO
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
- 0.0.0 2023-04-17T17:23Z Initial placeholder
+ 0.0.1 2023-04-18T21:38Z Introduce operator.c
+ 0.0.0 2023-04-17T21:27Z Initial placeholder
 
 
                         ***** end of tests.txt *****
