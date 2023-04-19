@@ -1,4 +1,4 @@
-FAIL4.txt 0.0.2                     UTF-8                         2023-04-14
+FAIL4.txt 0.0.3                     UTF-8                         2023-04-19
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -55,7 +55,7 @@ MANIFEST
     index.md    GitHub nfoTools/docs/dev/d211101/fails/FAIL4 index markdown
                 This file does not appear at <orcmid.github.io/nfoTools>.
 
-    index.html  (generated) web page for FAILCODE4 Explanation
+    index.html  (generated) web page from index.md
 
     FAIL4-terse-2023-04-13-1256-VCrayApp-0.1.0.png
 
@@ -63,10 +63,21 @@ MANIFEST
 
 TODOS:
 
- * Explain that there should be more details just above the FAIL4 message,
-   and that running verbose may be more helpful.
-
  * Appeal to FAIL5 for how to fix this kind of thing if it actually happens.
+
+ * Proof-read and make the contrivance of the message clear.
+
+ * Indicate this is a counterpart of FAIL5 except that there is no linking
+   and difficulties may be related to raylib, rather than ones ruled out at
+   this point.
+
+ * Confirm that there is little or no failure information in this case.
+
+ * An option for here should be to also check raylib and nfoTools issues for
+   any known difficulties.
+
+ * As cases become known, if ever, there can be comments here and in the FAIL
+   account.
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
@@ -97,8 +108,9 @@ TODOS:
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
- 0.0.w 2023-04-14-17:36Z Fix typo typo and manage TODOs
- 0.0.1 2023-04-14-04:06Z Fix typo
- 0.0.0 2023-04-13-20:33Z placeholder boilerplate from FAIL3.txt 0.0.0
+ 0.0.3 2023-04-19T15:18Z Manage TODOs, fix more typos here
+ 0.0.2 2023-04-14T17:36Z Fix typo fix typo and manage TODOs
+ 0.0.1 2023-04-14T04:06Z Fix typo
+ 0.0.0 2023-04-13T20:33Z placeholder boilerplate from FAIL3.txt 0.0.0
 
                        ***** end of FAIL4.txt *****
