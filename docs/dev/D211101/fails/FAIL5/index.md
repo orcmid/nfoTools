@@ -1,4 +1,4 @@
-<!-- index.md 0.0.4                 UTF-8                          2023-04-16
+<!-- index.md 0.0.5                 UTF-8                          2023-04-19
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
               FAILCODE5: PRODUCING/OPERATING %VCEXE% FAILED
@@ -6,7 +6,7 @@
 
 # ***VCrayApp** [FAILCODE5: PRODUCING/OPERATING %VCEXE% FAILED](.)*
 
-| ***[nfoTools](../../../../)*** | [dev](../../../)[>D211101](../../)[>fails](../)[>FAIL5](.) | [index.html](index.html) ***0.0.1 2023-04-15*** |
+| ***[nfoTools](../../../../)*** | [dev](../../../)[>D211101](../../)[>fails](../)[>FAIL5](.) | [index.html](index.html) ***0.0.5 2023-04-19*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../../../../images/hardhat-logo.gif) |
 |              |                     |           |
@@ -14,7 +14,7 @@
 
 `FAILCODE5`, and the companion `FAILCODE4`, are produced for a variety of
 build and operation failures in operation of `VCrayApp.bat`.  If operation
-is in terse (option `*`) mode, there may not be enough information about
+is in terse (option `*`) mode, there is no helpful information about
 the failure.  In that case, rerun `VCrayApp.bat` in verbose mode, using the
 same parameters with out the `*`.
 
@@ -51,13 +51,13 @@ the line in that file (`(9)`) along with an error code and some explanatory
 text.  These might not be particularly information.  They do provide places
 to look in the code that is being compiled.
 
-![FAILCODE5 Located Source Error](FAIL5-2023-04-13-1719-operator.c-VCrayApp-0.1.0.png)
+![FAILCODE5 Located Source Error](FAIL5-2023-04-19-0844-operator.c-VCrayApp-0.1.0.png)
 
 Although this is a contrived example, similar considerations will apply in other projects along with a great variety of diagnostic messages.
 
 In line 9 of example `operator.c` viewed in Visual Studio Code, the difficulty
-is with the "+" there.  This is signified by the underlining and also the dot
-adjacent to the line.
+is with the "+" there.  This is signified by the squiggly underlining beneath
+the "+" and the pop-up explanation when placing the cursor there.
 
 The problem is that `operator` is not a keyword of C Language.  It is a C++
 feature not supported in C.  This small program was written to confirm that.
@@ -75,19 +75,28 @@ for C Language because of its significance as a keyword in C++.)
 
 ### Project Link Errors
 
-Link errors in the project technically arise from conflicts in the names of
-external functions, the absence (or too many) of `main`, or even incompatible
-components among those being linked.
+Link errors in the project technically arise from conflicts/errors in the
+names of external functions, the absence (or too many) of `main`, or even
+incompatible components among those being linked.
 
 In the last case, it is important that the same "x64 Developer Command Prompt"
 be used every time VCrayApp is used.  Also, any time a new release (or `-dev`
-update) is installed, it is important to rebuild the VCrayApp project's cache.
+update) is installed, it is important to rebuild the VCrayApp project's cache,
+so the raylib header files and the compiled raylib components are compatible.
 
-For understanding of the link process, review
+For a simple standalone project, there should be no modifications of the
+VCrayApp project cache\ folder *.opt files.  If they have been altered,
+restore them to original form and determine if the problem remains.
+
+For better understanding of the link process, review
 [VCrayApp Operation](../../D211101b) as well as information on the
 [VS Build Tools](https://orcmid.github.io/nfoTools/tools/T211002/).
 
-
+If the linking problem remains, consult the
+[nfoTools issues](https://github.com/orcmid/nfoTools/issues) on GitHub to see
+if there is a known problem. Add an issue for your case if you are unable to
+resolve it first.   There may be relevant
+[raylib issues](https://github.com/raysan5/raylib/issues).
 
 ----
 
@@ -101,6 +110,7 @@ from time to time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.5 2023-04-19T16:58Z Cleaning up the likely cases
      0.0.4 2023-04-16T01:34Z Still working around the display problem
      0.0.3 2023-04-15T22:59Z Attempt to get FAIL5-verbose displayed
      0.0.2 2023-04-15T20:16Z Tidied Intermediate Draft
