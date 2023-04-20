@@ -1,4 +1,4 @@
-fails.txt 0.0.10                     UTF-8                         2023-04-17
+fails.txt 0.0.11                     UTF-8                         2023-04-20
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -52,7 +52,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. VCrayApp: Failure-Message Explanations.  nfoTools
-   development text file fails.txt version 0.0.9 dated 2023-04-13,
+   development text file fails.txt version 0.0.11 dated 2023-04-20,
    available on the Internet as a version of
    <https://orcmid.github.io/nfoTools/dev/D211101/fails/fails.txt>
 
@@ -82,9 +82,15 @@ TODO
  * Projects should link to the Classic Projects being used.
    <https://github.com/orcmid/nfoTools/projects?type=classic>
 
+ * Clarify the first beta mention to be about the fails/ coverage.  Maybe
+   don't say anything about that.  Maybe more about starting with VCrayApp
+   0.1.0 (beta) coverage. Take beta out of this material and only talk about
+   what release it is current with.
+
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.11 2-23-04-20T16:35Z More TODO spinning
  0.0.10 2023-04-17T16:13Z Setup FAIL5
  0.0.9 2023-04-13T20:36Z Setup FAIL4
  0.0.8 2023-04-12T20:56Z Complete FAIL3
