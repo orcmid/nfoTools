@@ -1,4 +1,4 @@
-D211101.txt 0.0.16                   UTF-8                         2023-04-09
+D211101.txt 0.0.17                   UTF-8                         2023-04-20
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -53,7 +53,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. VCrayApp: VC/C++ Command-Line raylib App devKit.
-   nfoTools development text file D211101.txt version 0.0.15 dated 2023-04-07,
+   nfoTools development text file D211101.txt version 0.0.17 dated 2023-04-20,
    available on the Internet as a version of
    <https://orcmid.github.io/nfoTools/dev/D211101/D211101.txt>
 
@@ -76,8 +76,6 @@ TODO
    and D211101e subfolios.
 
  * Ensure that the index.html pages are in the title blocks too
-
- * Change D211101c to be about testing and deployment, maybe life-cycle.
 
  * Add link to T211002 on Visual Studio Native Build Tools and eventually
    have more on the VC/C++ compiler usage at that place, or a new Toolnote
@@ -134,16 +132,45 @@ TODO
  * Change the observation about initially and subsequent cache builds to
    document that a confirmation build happens on those cases.
 
- * Update the Usage message.  Maybe reflect that it is from 0.1.0.
+ * Update the Usage message.  Maybe reflect that it is from 0.1.0.  Also,
+   use a screen capture.
 
  * Update the NOTE on section 2.
 
  * Mention "recent" raylib source-code release.  This business is also
    important with respect to life-cycle.
 
+ * There needs to be some links on using Windows File Explorer.  Something
+   general around usage by/for developers.
+
+ * Use of the built-in Zip also needs to be described better elsewhere.
+
+ * Use of the VC/C++ Command Line Compiler also needs a general tools place.
+
+ * Link to Visual Studio Code.
+
+ * Link to TortoiseGit tool.
+
+ * Link to Git4Win and other Git materials.
+
+ * Link to GitHub Windows Client for additional information.  Feature that
+   this is not required, and Git can be used directly as a command-line
+   utility.
+
+ * Link to GPG4Win and other generic GPG materials.
+
+ * Establish that this material is effective as of, and applicable, to the
+   0.1.0 (beta) release of VCrayApp.
+
+ * Use 0.1.0 as well as 0.0.0 for semver cases.
+
+ * Add fails/ to the Available Materials.
+
+
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.17 2023-04-20T16:14Z More TODOs, not actual progress
  0.0.16 2023-04-09T17:01Z Manage TODOs
  0.0.15 2023-04-07T04:09Z Add fails/ to the manifest
  0.0.14 2023-02-24T20:32Z Manage TODOs and preparations for 0.1.0
