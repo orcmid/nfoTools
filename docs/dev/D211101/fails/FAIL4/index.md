@@ -1,4 +1,4 @@
-<!-- index.md 0.0.1                 UTF-8                          2023-04-20
+<!-- index.md 0.0.2                 UTF-8                          2023-04-20
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
               FAILCODE4: COMPILING CACHE OF RAYLIB FILES FAILED
@@ -6,7 +6,7 @@
 
 # ***VCrayApp** [FAILCODE4: COMPILING CACHE OF RAYLIB FILES FAILED](.)*
 
-| ***[nfoTools](../../../../)*** | [dev](../../../)[>D211101](../../)[>fails](../)[>FAIL4](.) | [index.html](index.html) ***0.0.1 2023-04-20*** |
+| ***[nfoTools](../../../../)*** | [dev](../../../)[>D211101](../../)[>fails](../)[>FAIL4](.) | [index.html](index.html) ***0.0.2 2023-04-20*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../../../../images/hardhat-logo.gif) |
 |              |                     |           |
@@ -16,12 +16,12 @@
 
 ![FAILCODE4 Terse Message](FAIL4-terse-2023-04-13-1256-VCrayApp-0.1.0.png)
 
-With all of the checks that have succeeded before this point, it is likely
-that the failure is from a small number of causes.
+With all of the checks that have succeeded before this point in a run of VCrayApp, it is likely that the failure is from a small number of causes.
 
-* The installed raylib source code is from a release later than 4.5 having
-breaking changes that impact use of the VC/C++ compiler or VCrayApp itself.
-  * Revert to raylib 4.5.0 or the latest stable release known not to be
+* The installed raylib source code is from a release more-recent than 4.5
+and there are breaking changes that impact use of the VC/C++ compiler or
+VCrayApp itself.
+  * Revert to raylib 4.5.0 or more-recent stable release known not to be
 problematic.
   * Check [D211101](../..) for any helpful notices.
 * The installed raylib source code is from an under-development release in
@@ -33,9 +33,9 @@ latest stable release of VS Build Tools is being used.
  [raylib source-code release](https://github.com/raysan5/raylib/releases)
  known to be usable with VCrayApp.  Ensure the latest stable release of
  VCrayApp is also being used.
-* There have been modifications made to VCrayApp cache\*.opt files that
+* There have been modifications made to VCrayApp `cache\*.opt` files that
 prevent successful compilation of raylib components into the cache.
-  * Restore the cache\*.opt files that are supplied with the version of
+  * Restore the `cache\*.opt` files that are supplied with the version of
 VCrayApp being used.
   * Ensure that the latest stable version of VCrayApp is being used.
 * Modifications to VCrayApp.bat have corrupted cache-creation/-update
@@ -82,6 +82,7 @@ from time to time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.2 2023-04-20T23:35Z Draft touch-ups
      0.0.1 2023-04-20T20:12Z Intermediate draft
      0.0.0 2023-04-13T21:42Z Initial page from 0.0.0 FAIL3 boilerplate.
 
