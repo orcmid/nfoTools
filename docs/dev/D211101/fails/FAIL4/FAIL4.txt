@@ -1,4 +1,4 @@
-FAIL4.txt 0.0.3                     UTF-8                         2023-04-19
+FAIL4.txt 0.0.4                     UTF-8                         2023-04-21
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -12,19 +12,6 @@ FAIL4.txt 0.0.3                     UTF-8                         2023-04-19
 
     This FAILCODE is difficult to encounter.  It is even difficult to force.
 
-    There needs to be division between two different cases:
-
-     1. There is install of a recent version of raylib/ later than 4.5 that
-        has an incompatibility with VCrayApp.  This will tend to be a case
-        of a missing or failing component.
-
-     2. This also can happen becase of a build-breaking change in an
-        in-progress -dev version being installed.  In that case, the break
-        might be in one of the externals that has introduced the failure
-        situation.
-
-     3. Alterations of *.opt files can also lead to failures.
-
     What we know did work is that
 
      o VCrayVerCheck.c compiled correctly and accessed raylib\src\raylib.h
@@ -36,14 +23,8 @@ FAIL4.txt 0.0.3                     UTF-8                         2023-04-19
      o cache\*.obj files can reveal which ones, if any, were successfully
        produced before the failure.
      o As the sources are compiled in the verbose list, it should be clear
-       where the failure is occuring.  If there are any changes to the
-       reported parameters, the related *.opt files and the command line
-       should be restored, either by re-unzipping or reverting individual
-       changes.
-     o There should be compiler error messages that can be reviewed for
-       determination of where the failure occured.  If necessary, rerun the
-       VCrayApp in verbose (absence of "*" option) mode to see the compile
-       log.
+       where the failure is occuring.
+
      o We are not going to get into that.  We need a link for how to handle
        compiler diagnostics and getting details of the build problems in
        the identified code locations.
@@ -70,8 +51,6 @@ TODOS:
  * Indicate this is a counterpart of FAIL5 except that there is no linking
    and difficulties may be related to raylib, rather than ones ruled out at
    this point.
-
- * Confirm that there is little or no failure information in this case.
 
  * An option for here should be to also check raylib and nfoTools issues for
    any known difficulties.
@@ -100,7 +79,7 @@ TODOS:
  ATTRIBUTION
 
    Hamilton, Dennis E. VCrayApp FAILCODE4: COMPILING CACHE OF RAYLIB FILES
-   FAILED.  nfoTools development text file FAIL4.txt version 0.0.2
+   FAILED.  nfoTools development text file FAIL4.txt version 0.0.4
    dated 2023-04-14, available on the Internet as a version of
    <https://orcmid.github.io/nfoTools/dev/D211101/fails/FAIL4/FAIL4.txt>
 
@@ -108,6 +87,7 @@ TODOS:
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.4 2023-04-21T19:12Z Catch up, reduce TODOs
  0.0.3 2023-04-19T15:18Z Manage TODOs, fix more typos here
  0.0.2 2023-04-14T17:36Z Fix typo fix typo and manage TODOs
  0.0.1 2023-04-14T04:06Z Fix typo
