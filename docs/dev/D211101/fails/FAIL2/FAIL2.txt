@@ -1,4 +1,4 @@
-FAIL2.txt 0.0.1                     UTF-8                         2023-04-14
+FAIL2.txt 0.0.2                     UTF-8                         2023-04-21
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -52,20 +52,16 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. VCrayApp FAILCODE2: UNSUPPORTED VCRAYAPP.BAT
-   PARAMETERS.  nfoTools development text file FAIL2.txt version 0.0.0
-   dated 2023-04-11, available on the Internet as a version of
+   PARAMETERS.  nfoTools development text file FAIL2.txt version 0.0.2
+   dated 2023-04-21, available on the Internet as a version of
    <https://orcmid.github.io/nfoTools/dev/D211101/fails/FAIL2/FAIL2.txt>
 
 TODO
 
- * Create a screen capture
-
- * Determine whether the corrected rerun should be shown.  Use silent in
-   both cases, after showing a verbose example.
-
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
- 0.0.0 2023-04-14-17:31Z Fix typo
+ 0.0.2 2023-04-21T18:40Z Clear TODOs, touch-up
+ 0.0.1 2023-04-14-17:31Z Fix typo
  0.0.0 2023-04-11-22:33Z placeholder boilerplate from FAIL1.txt 0.0.3
 
                        ***** end of FAIL2.txt *****
