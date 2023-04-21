@@ -1,4 +1,4 @@
-<!-- index.md 0.0.2                 UTF-8                          2023-04-14
+<!-- index.md 0.0.3                 UTF-8                          2023-04-21
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
             FAILCODE1: INCORRECT VCrayApp FILES CONFIGURATION
@@ -6,11 +6,11 @@
 
 # ***VCrayApp** [FAILCODE1: INCORRECT VCrayApp FILES CONFIGURATION](.)*
 
-| ***[nfoTools](../../../../)*** | [dev](../../../)[>D211101](../../)[>fails](../)[>FAIL1](.) | [index.html](index.html) ***0.0.2 2023-04-14*** |
+| ***[nfoTools](../../../../)*** | [dev](../../../)[>D211101](../../)[>fails](../)[>FAIL1](.) | [index.html](index.html) ***0.0.3 2023-04-21*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../../../../images/hardhat-logo.gif) |
 |              |                     |           |
-| This Version | since VCrayApp 0.1.0 beta release | [D211101e](../../D211101e) |
+| This Version | since VCrayApp 0.1.0 | [D211101e](../../D211101e) |
 
 ![FAILCODE1 Message](FAIL1-2023-04-11-1559-VCrayApp-0.1.0.png)
 
@@ -21,17 +21,17 @@ fail, with `FAILCODE1` reported.
 
 The check is for presence of the named files.  Removal or renaming of the
 VCrayApp-provided files, and folders, will cause the integrity check to fail.
-Modifications are not detected directly; there may be other consequences
-however.
+IN-place modification of the files is not detected directly; there may be
+other consequences however.
+
+The strict checking is by design.
+If confirmation fails in an unmodified VCrayApp setup, please report in
+an [nfoTools Discussion](https://github.com/orcmid/nfoTools/discussions)
+mentioning VCrayApp FAIL1.
 
 For more on the files and their usage, including modifications, see the
 [VCrayApp Operation](../../D211101b/) and
 [VCrayApp Testing/Lifecycle](../../D211101c/) materials.
-
-The strict checking is by design; it being undesirable is not a defect.
-If confirmation fails in an unmodified VCrayApp setup, please report in
-an [nfoTools Discussion](https://github.com/orcmid/nfoTools/discussions)
-mentioning VCrayApp FAIL1.
 
 ----
 
@@ -45,7 +45,7 @@ from time to time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-
+     0.0.3 2023-04-21T17:10Z Touch-ups
      0.0.2 2023-04-14T17:40Z Fix simple typo
      0.0.1 2023-04-11T23:04Z Replace with improved screen capture
      0.0.0 2023-04-10T22:07Z Initial account
