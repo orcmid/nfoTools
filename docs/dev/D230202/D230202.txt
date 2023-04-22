@@ -1,4 +1,4 @@
-D2302012txt 0.0.0                   UTF-8                         2023-02-18
+D2302012txt 0.0.1                   UTF-8                         2023-04-22
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -55,7 +55,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. VCrayVerify Test Harness for Verifying raylib Examples.
-   nfoTools development text file D230202.txt version 0.0.0 dated 2023-02-18,
+   nfoTools development text file D230202.txt version 0.0.1 dated 2023-04-22,
    available on the Internet as a version of
    <https://orcmid.github.io/nfoTools/dev/D230202/D230202.txt>
 
@@ -70,9 +70,12 @@ TODO
  * Use the standard folio structure, D230202a Setup, D230202b Operation,
    D230202c Testing/Improvement, and D230302d VCrayVerify 0.0.0 (beta), etc.
 
+ * Fix typo in D230202d Available Materials entry.
+
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.1 2023-04-22T16:40Z TODOs found in proof-reading
  0.0.0 2023-02-18T16:52Z Placeholder and initial TODOs
 
                        ***** end of D230202.txt *****
