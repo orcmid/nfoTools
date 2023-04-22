@@ -1,4 +1,4 @@
-fails.txt 0.0.11                     UTF-8                         2023-04-20
+fails.txt 0.0.12                     UTF-8                         2023-04-22
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -68,29 +68,35 @@ TODO
    a more-general nature.
 
  * Create a folio for each FAILCODE and Connect it to the fails\index.md
-   o Create FAIL6 coverage
-   o Create FAIL7 coverage
-   o Create FAIL8 coverage
 
  * Point out that the screen captures are verbose (or not) versions.
-   o Check FAIL0 and correct for this as needed
    o Check FAIL1 and correct for this as needed
 
- * Should we show both flavors when they differ?  YES, because the quieter
-   ones show up in embedded cases.
+ * Should we show both flavors when they differ?  Sometimes.
 
  * Projects should link to the Classic Projects being used.
    <https://github.com/orcmid/nfoTools/projects?type=classic>
 
+ * The screen captures may be confusing for novices because they are done
+   from within VCrayApp\dev\ for development.  I should find a better way
+   to produce these that is not so confusing, and retake the screen shots.
+
  * Clarify the first beta mention to be about the fails/ coverage.  Maybe
    don't say anything about that.  Maybe more about starting with VCrayApp
-   0.1.0 (beta) coverage. Take beta out of this material and only talk about
-   what release it is current with.
+   0.1.0 coverage. Take beta out of this material and only talk about
+   what release it is began with.
+
+ * The scheme will become complicated if there are any diagnostic message
+   changes at all.  Need a way to finess that.  Or stabilize on 1.0.0 and
+   then worry only if there need to be changes later.
+
+ * The statement about FAILCODEs not being reused needs to be clearer.
 
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
- 0.0.11 2-23-04-20T16:35Z More TODO spinning
+ 0.0.12 2023-04-22T16:06Z Manage TODOs, continue drafts and proofing
+ 0.0.11 2023-04-20T16:35Z More TODO spinning
  0.0.10 2023-04-17T16:13Z Setup FAIL5
  0.0.9 2023-04-13T20:36Z Setup FAIL4
  0.0.8 2023-04-12T20:56Z Complete FAIL3
