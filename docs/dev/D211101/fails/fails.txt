@@ -1,4 +1,4 @@
-fails.txt 0.0.12                     UTF-8                         2023-04-22
+fails.txt 0.0.13                     UTF-8                         2023-04-22
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -52,7 +52,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. VCrayApp: Failure-Message Explanations.  nfoTools
-   development text file fails.txt version 0.0.11 dated 2023-04-20,
+   development text file fails.txt version 0.0.13 dated 2023-04-20,
    available on the Internet as a version of
    <https://orcmid.github.io/nfoTools/dev/D211101/fails/fails.txt>
 
@@ -72,19 +72,15 @@ TODO
  * Point out that the screen captures are verbose (or not) versions.
    o Check FAIL1 and correct for this as needed
 
- * Should we show both flavors when they differ?  Sometimes.
+ * Should we show both flavors terse/verbose when they differ?  Sometimes.
 
  * Projects should link to the Classic Projects being used.
-   <https://github.com/orcmid/nfoTools/projects?type=classic>
+   <https://github.com/orcmid/nfoTools/projects?type=classic>.
+   Propogate this to all other docs/ pages.
 
  * The screen captures may be confusing for novices because they are done
-   from within VCrayApp\dev\ for development.  I should find a better way
-   to produce these that is not so confusing, and retake the screen shots.
-
- * Clarify the first beta mention to be about the fails/ coverage.  Maybe
-   don't say anything about that.  Maybe more about starting with VCrayApp
-   0.1.0 coverage. Take beta out of this material and only talk about
-   what release it is began with.
+   from within VCrayApp\dev\ for development.  When I've covered all the
+   cases, retake all of the screen shots.
 
  * The scheme will become complicated if there are any diagnostic message
    changes at all.  Need a way to finess that.  Or stabilize on 1.0.0 and
@@ -95,6 +91,7 @@ TODO
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.13 2023-04-22T18:38Z Cleanup TODOs
  0.0.12 2023-04-22T16:06Z Manage TODOs, continue drafts and proofing
  0.0.11 2023-04-20T16:35Z More TODO spinning
  0.0.10 2023-04-17T16:13Z Setup FAIL5
