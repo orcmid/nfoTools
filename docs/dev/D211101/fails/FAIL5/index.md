@@ -1,4 +1,4 @@
-<!-- index.md 0.0.6                 UTF-8                          2023-04-21
+<!-- index.md 0.0.7                 UTF-8                          2023-04-23
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
               FAILCODE5: PRODUCING/OPERATING %VCEXE% FAILED
@@ -6,7 +6,7 @@
 
 # ***VCrayApp** [FAILCODE5: PRODUCING/OPERATING %VCEXE% FAILED](.)*
 
-| ***[nfoTools](../../../../)*** | [dev](../../../)[>D211101](../../)[>fails](../)[>FAIL5](.) | [index.html](index.html) ***0.0.6 2023-04-21*** |
+| ***[nfoTools](../../../../)*** | [dev](../../../)[>D211101](../../)[>fails](../)[>FAIL5](.) | [index.html](index.html) ***0.0.7 2023-04-23*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../../../../images/hardhat-logo.gif) |
 |              |                     |           |
@@ -18,14 +18,18 @@ is in terse (option `*`) mode, there is no helpful information about
 the failure.  In that case, rerun `VCrayApp.bat` in verbose mode, using the
 same parameters without the `*`.
 
-The `%VCEXE%` in an actual `FAILCODE5` report will be one of
+NOTE: If VCrayApp is embedded and operated under another script, VCrayApp
+should be rerun directly for trouble-shooting.  Follow the instructions
+provided with the containing software (e.g., with
+[VCrayVerify](https://orcmid.github.io/nfoTools/dev/D230202/)).
+
+The `%VCEXE%` value shown in an actual `FAILCODE5` report will be one of
 
 * The executable (`%VCAPPEXE%`) specified for the project -- the most likely
 case
 * Different stages in building/refreshing the cache of raylib components
   * `VCrayVerCheck.exe`
   * `VCrayVer.bat`
-  * `FAILCODE4` avoided before the next case
   * `VCrayConfirm.exe`
 
 ## %VCEXE% IS THE PROJECT EXECUTABLE (%VCAPPEXE% VALUE)
@@ -34,7 +38,8 @@ If [initial setup of VCrayApp](../../D211101a) has been successful, with
 successful initialization/update of the VCrayApp cache,  error cases are
 typically when compiling the project source code (`%VCAPPSRC%` location).
 
-That's the case for the demonstration project with `%VCEXE%` of `operator.c`.
+That's the case for the demonstration project with `%VCEXE%` of
+`operator.exe`.
 
 ### Source-Code Compilation Diagnostics
 
@@ -112,6 +117,7 @@ from time to time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.7 2023-04-23T19:49Z Small touch-ups of current draft
      0.0.6 2023-04-21T20:07Z Touch-ups of this draft portion
      0.0.5 2023-04-19T16:58Z Cleaning up the likely cases
      0.0.4 2023-04-16T01:34Z Still working around the display problem
