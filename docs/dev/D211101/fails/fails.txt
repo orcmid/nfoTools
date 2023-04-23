@@ -1,4 +1,4 @@
-fails.txt 0.0.13                     UTF-8                         2023-04-22
+fails.txt 0.0.14                     UTF-8                         2023-04-23
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -52,7 +52,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. VCrayApp: Failure-Message Explanations.  nfoTools
-   development text file fails.txt version 0.0.13 dated 2023-04-20,
+   development text file fails.txt version 0.0.14 dated 2023-04-23,
    available on the Internet as a version of
    <https://orcmid.github.io/nfoTools/dev/D211101/fails/fails.txt>
 
@@ -66,8 +66,6 @@ TODO
    about, and so on.  Generic/comprehensive materials may belong in other
    places.  So there will be TODOs at other locations on required support of
    a more-general nature.
-
- * Create a folio for each FAILCODE and Connect it to the fails\index.md
 
  * Point out that the screen captures are verbose (or not) versions.
    o Check FAIL1 and correct for this as needed
@@ -88,9 +86,17 @@ TODO
 
  * The statement about FAILCODEs not being reused needs to be clearer.
 
+ * Explain the categories of error messages.  There is only one message
+   pertaining to the project code itself.  All of the rest are related to
+   verification of the configuration of the VCrayApp project, to the
+   successful compilation of a simple C Language program to check the
+   raylib version, and then compiling of the cache and a confirmation program
+   relying on that cache.
+
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.14 2023-04-23T20:04Z Bring current
  0.0.13 2023-04-22T18:38Z Cleanup TODOs
  0.0.12 2023-04-22T16:06Z Manage TODOs, continue drafts and proofing
  0.0.11 2023-04-20T16:35Z More TODO spinning
