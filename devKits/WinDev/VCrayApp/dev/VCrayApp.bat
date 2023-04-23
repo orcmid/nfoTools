@@ -1,5 +1,5 @@
 @echo off
-rem VCrayApp 0.1.0 VCrayApp.bat 0.0.59 UTF-8                       2023-04-21
+rem VCrayApp 0.1.0 VCrayApp.bat 0.0.60 UTF-8                       2023-04-23
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 rem                  BUILDING RAYLIB APP WITH VC/C++ TOOLS
@@ -334,8 +334,8 @@ GOTO :BAIL
 
 :FAIL6
 ECHO: [VCrayApp] **** FAILCODE6: RAYLIB NOT FOUND WHERE EXPECTED ****
-ECHO:            expected at "%VCraylib%\"                          %VCterse%
-ECHO:            NO ACTIONS HAVE BEEN PERFORMED                     %VCterse%
+ECHO:            expected at "%VCraylib%\"
+ECHO:            NO ACTIONS HAVE BEEN PERFORMED
 ECHO:            ^<https://orcmid.github.io/nfoTools/dev/D211101/fails/FAIL6^>
 REM   XXXX ANOTHER DEPENDENCY ON raylib\ LOCATION
 GOTO :BAIL
@@ -465,6 +465,7 @@ rem For additional information, see the accompanying NOTICE.txt file.
 rem
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 rem
+rem 0.0.60 2023-04-23T20:24Z Always give verbose FAILCODE6 report
 rem 0.0.59 2023-04-21T22:41Z Improve FAILCODE6-FAILCODE8 reporting
 rem 0.0.58 2023-04-16T19:01Z More FAILCODE4/5 cache rebuild forcing edge cases
 rem 0.0.57 2023-04-16T17:42Z Ensure no VCrayConfirm.exe upon :FAIL4, forcing

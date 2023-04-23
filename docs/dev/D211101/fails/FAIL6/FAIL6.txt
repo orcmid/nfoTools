@@ -1,4 +1,4 @@
-FAIL6.txt 0.0.1                     UTF-8                         2023-04-21
+FAIL6.txt 0.0.2                     UTF-8                         2023-04-23
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -39,6 +39,9 @@ TODOS:
  * Explain it without much deep to add.  It is mostly about not extracting
    properly or not having extracted at all.
 
+ * Change the screen capture to a more-representative VCrayApp project
+   location.
+
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                        Copyright 2023 Dennis E. Hamilton
@@ -60,12 +63,13 @@ TODOS:
  ATTRIBUTION
 
    Hamilton, Dennis E. VCrayApp FAILCODE6: RAYLIB NOT FOUND WHERE EXPECTED.
-   nfoTools development text file FAIL6.txt version 0.0.0 dated 2023-04-21,
+   nfoTools development text file FAIL6.txt version 0.0.2 dated 2023-04-23,
    available on the Internet as a version of
    <https://orcmid.github.io/nfoTools/dev/D211101/fails/FAIL6/FAIL6.txt>
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.2 2023-04-23T20:18Z Current with completed draft
  0.0.1 2023-04-21T22:40Z Add screen capture
  0.0.0 2023-04-21T21:55Z placeholder boilerplate from FAIL5.txt 0.0.2
 

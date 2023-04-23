@@ -1,4 +1,4 @@
-<!-- index.md 0.0.0                 UTF-8                          2023-04-21
+<!-- index.md 0.0.1                 UTF-8                          2023-04-23
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
               FAILCODE6: RAYLIB NOT FOUND WHERE EXPECTED
@@ -14,6 +14,17 @@
 
 ![FAILCODE6](FAIL6-2023-04-21-1534-VCrayApp-0.1.0.png)
 
+FAILCODE6 signifies that a released **source-code** version of raylib, in a
+folder named `raylib\` is not positioned properly on the same drive and level
+as the unzipped VCrayApp project.
+
+The determination is that `raylib\src\raylib.h` does not exist using the
+location described in the diagnostic message.
+
+NOTE: If a clone of the raylib Github repository is used, the folder holding
+the clone must be named `raylib` no matter what the clone is named.
+
+See [VCrayApp Setup](../../D211101a) for more details.
 
 ----
 
@@ -28,6 +39,7 @@ from time to time.
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
+     0.0.1 2023-04-23T20:16Z Completed draft
      0.0.0 2023-04-22T02:45Z Boilerplate from 0.0.6 FAIL5.
 
                *** end D211101/fails/FAIL6/index.md ***
