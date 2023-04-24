@@ -1,4 +1,4 @@
-FAIL8.txt 0.0.0                     UTF-8                         2023-04-21
+FAIL8.txt 0.0.1                     UTF-8                         2023-04-24
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -26,12 +26,13 @@ MANIFEST
 
     index.html  (generated) web page for FAILCODE8 Explanation
 
+    FAIL8-2023-04-2301750-VCrayApp-0.1.0.png
+
 
 TODOS:
 
- * Cause this diagnostic for screen capture purposes.
+*  Replace the image with one produced using a demo VCrayApp project.
 
- * Explain it without much detail.
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
@@ -54,12 +55,13 @@ TODOS:
  ATTRIBUTION
 
    Hamilton, Dennis E. VCrayApp FAILCODE8: RAYLIB %VCRAYVER% NOT SUPPORTED.
-   nfoTools development text file FAIL8.txt version 0.0.0 dated 2023-04-21,
+   nfoTools development text file FAIL8.txt version 0.0.1 dated 2023-04-23,
    available on the Internet as a version of
    <https://orcmid.github.io/nfoTools/dev/D211101/fails/FAIL7/FAIL7.txt>
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.1 2023-04-24T00:55Z Full Draft of text
  0.0.0 2023-04-20T22:14Z placeholder boilerplate from FAIL7.txt 0.0.0
 
                        ***** end of FAIL8.txt *****

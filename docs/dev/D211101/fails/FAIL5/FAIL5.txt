@@ -1,4 +1,4 @@
-FAIL5.txt 0.0.2                     UTF-8                         2023-04-21
+FAIL5.txt 0.0.3                     UTF-8                         2023-04-**
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -16,8 +16,6 @@ FAIL5.txt 0.0.2                     UTF-8                         2023-04-21
 
     The last case is most likely and its trouble-shooting is comparable for
     all of the possible reasons.
-
-
 
 MANIFEST
 
@@ -42,6 +40,12 @@ TODOS:
     o FAILCODE4 possible here
     o VCrayConfirm.exe
 
+ * Use a demo project location for the screen captures.
+
+ * In the first paragraph on %VCEXE%, %VCEXE% is "operator.exe" not ".c".
+
+ * Fix the typically statement also.
+
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                        Copyright 2023 Dennis E. Hamilton
@@ -63,7 +67,7 @@ TODOS:
  ATTRIBUTION
 
    Hamilton, Dennis E. VCrayApp FAILCODE5: PRODUCING/OPERATING %VCEXE% FAILED.
-   nfoTools development text file FAIL5.txt version 0.0.2 dated 2023-04-21,
+   nfoTools development text file FAIL5.txt version 0.0.3 dated 2023-04-**,
    available on the Internet as a version of
    <https://orcmid.github.io/nfoTools/dev/D211101/fails/FAIL5/FAIL5.txt>
 
@@ -71,6 +75,7 @@ TODOS:
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.3
  0.0.2 2023-04-21T19:57Z Manage TODOs, touch-ups
  0.0.1 2023-04-14-19:27Z Manage TODOs
  0.0.0 2023-04-14-04:04Z placeholder boilerplate from FAIL4.txt 0.0.0
