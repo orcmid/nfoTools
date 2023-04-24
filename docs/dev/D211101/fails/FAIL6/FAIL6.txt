@@ -1,4 +1,4 @@
-FAIL6.txt 0.0.2                     UTF-8                         2023-04-23
+FAIL6.txt 0.0.3                     UTF-8                         2023-04-24
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -36,9 +36,6 @@ MANIFEST
 
 TODOS:
 
- * Explain it without much deep to add.  It is mostly about not extracting
-   properly or not having extracted at all.
-
  * Change the screen capture to a more-representative VCrayApp project
    location.
 
@@ -69,6 +66,7 @@ TODOS:
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.3 2023-04-24T22:28Z Explain most-likely cause
  0.0.2 2023-04-23T20:18Z Current with completed draft
  0.0.1 2023-04-21T22:40Z Add screen capture
  0.0.0 2023-04-21T21:55Z placeholder boilerplate from FAIL5.txt 0.0.2
