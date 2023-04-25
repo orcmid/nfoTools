@@ -1,4 +1,4 @@
-FAIL7.txt 0.0.0                     UTF-8                         2023-04-21
+FAIL7.txt 0.0.1                     UTF-8                         2023-04-24
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -30,7 +30,7 @@ MANIFEST
     index.md    GitHub nfoTools/docs/dev/d211101/fails/FAIL7 index markdown
                 This file does not appear at <orcmid.github.io/nfoTools>.
 
-    index.html  (generated) web page for FAILCODE6 Explanation
+    index.html  (generated) web page for FAILCODE7 Explanation
 
 
 TODOS:
@@ -60,12 +60,13 @@ TODOS:
  ATTRIBUTION
 
    Hamilton, Dennis E. VCrayApp FAILCODE7: RAYLIB VERSION NOT > 3.0.0.
-   nfoTools development text file FAIL7.txt version 0.0.0 dated 2023-04-21,
+   nfoTools development text file FAIL7.txt version 0.0.1 dated 2023-04-24,
    available on the Internet as a version of
    <https://orcmid.github.io/nfoTools/dev/D211101/fails/FAIL7/FAIL7.txt>
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.1 2023-04-24T
  0.0.0 2023-04-20T22:15Z placeholder boilerplate from FAIL6.txt 0.0.0
 
                        ***** end of FAIL7.txt *****
