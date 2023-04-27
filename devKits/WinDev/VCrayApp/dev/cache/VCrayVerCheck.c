@@ -1,7 +1,7 @@
-
-/* VCrayVerCheck.c 0.1.3            UTF-8                         2023-04-02
+/* VCrayVerCheck.c 0.1.4            UTF-8                         2023-04-27
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA256
+
 
 
    -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
@@ -73,14 +73,14 @@ int main(void)
 
        if (EOF ==
        # if !defined(RAYLIB_VERSION)
-              fputs( "ECHO [VCrayApp] Using unidentified"
-                          " version of raylib %VCterse%\n"
+              fputs( "ECHO: [VCrayApp] Using unidentified"
+                          " version of raylib\n"
                      "SET VCRAYVER=\"unidentified\"%VCterse%\n",
                      stdout )
        # else
-              fputs( "ECHO [VCrayApp] Using version "
+              fputs( "ECHO: [VCrayApp] Using version "
                            SHOW(RAYLIB_VERSION)
-                           " of raylib %VCterse%\n"
+                           " of raylib\n"
                      "SET VCRAYVER="SHOW(RAYLIB_VERSION)"%VCterse%\n",
                      stdout )
        # endif
@@ -91,6 +91,8 @@ int main(void)
     }
 
 /*
+   0.1.4  2023-04-27T17:15Z Correct spacing in the output ECHO commands,
+          always echo the version identification.
    0.1.3  2023-04-03T19:40Z Clear armor sign for release
    0.1.2  2023-04-02T17:35Z Touch up for release candidate
    0.1.1  2023-03-22T21:22Z Clean up spacing in the output SET commands
@@ -115,13 +117,13 @@ int main(void)
                       *** end of VCrayVerCheck.c ***
 -----BEGIN PGP SIGNATURE-----
 
-iQFGBAEBCAAwFiEEBNBDIpebhN4QdwM0+W6J/9RWYooFAmQp2C8SHG9yY21pZEBh
-cGFjaGUub3JnAAoJEPluif/UVmKK58wH/1ccHGaHCmNYmoj6K805XW4lbJLXXaAF
-i9WuUfgI8M5oa8QgksMaUDNgx/xyopI43mz2p+mQomsqxbo6KBb8z4M/a0IqxOfR
-oI3vT9NRbGbUIaWOQFPUuXRwAy82vYeC6DnIw7y1OuCQ1sqkxT2VmksIJ8OMxYiT
-m53uoVlqw4vC3jhuc9UtfFRvEoNhEsR793xJtbhyYugucbtUu4IFnRzlWijP2nGa
-FtE+R5nzpmw6eX7Lr9ZpNqtwxx8vb3XMoRN1ljHhbFNyRhGckNc2hXmHwMyE9cE9
-lJM3QmYJm5Yt3/+K8Y97SRjAJJhM7XnXDiupWrzXCWpiCvYIA6l4wYc=
-=L6TR
+iQFGBAEBCAAwFiEEBNBDIpebhN4QdwM0+W6J/9RWYooFAmRKvkkSHG9yY21pZEBh
+cGFjaGUub3JnAAoJEPluif/UVmKKbz4H/2JuUZMyZ+CGDHnYJVcHxrlhNQ6uTsPP
+awBqa+p3XOtUHIcaT+z5Yb/Ra37DCf6P/i1Luh0fAIkpfYG4NEqLmS4iCFRmrTEl
+4gR74rhbhI1oHXP9DQRYso9ab1o0iUYt6MGzj7xts+9/Ayttok8nm94zPSOZHng6
+rM1AFa9cWqeAnYlP9dpFTNdM5MXC2K8X+51wlBslLWv+Zcrhc3WK8HC9BdNURk6J
+7yXyTWNQX7E8nkZIPpxO0BeXb8fMF/D8wQberp2ELjxOjhYyAQy7St02uUhx1BRu
+RPfl3ZggTKb7K+P8NN+SV08gAQVO0Tf3NB6xmf3S33t1+1a8Kwy5+nM=
+=3EJu
 -----END PGP SIGNATURE-----
 */
