@@ -1,4 +1,4 @@
-CHANGES-0.1.0.txt 0.0.12            UTF-8                         2023-04-17
+CHANGES-0.1.0.txt 0.0.13            UTF-8                         2023-04-28
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                        AN NFOTOOLS COMING ATTRACTION
@@ -28,9 +28,9 @@ Note 1: The value of VCAPPEXE does not have to match the name of any of the
 project source files; any one (and exactly one) of those files must provide
 the external main() definition.
 
-Note 2: VCAPPSRC value src\*.c is special.  For any different value, an
-absolute filepath should be used, whether or not with wild cards.  The use
-of src\ for *.c and *.h files of the project is recommended.
+Note 2: VCAPPSRC value src\*.c is special.   The use of src\ for *.c and *.h
+files of the project is recommended.For any different value, an absolute
+filepath must be used, whether or not with wild cards.
 
 NEW FEATURES
 
@@ -45,7 +45,7 @@ VCrayApp failure messages all have FAILCODE numbers and each message has links
 to details under <https://orcmid.github.io/nfoTools/dev/D211101/fails/>.
 
 CHANGES-0.1.0.txt is included in the VCrayApp-0.1.0.zip file and is also one
-the release page for consultation without downloading the package.
+of the release pages for consultation without downloading the full package.
 
 Use of VCrayApp embedded in a larger project with VCrayApp.bat called from
 a higher "host" script has been improved.  Environment variable VCrayAppHost
@@ -57,12 +57,11 @@ having to modify VCrayApp.bat at all.
 CHANGES
 
 VCrayApp compiles and uses program cache\VCrayVerCheck.c every time the cache
-is about to be filled.  This assists in determination of the raylib version
-about to be used.
+is about to be filled.  This assists in determination of the raylib version.
 
 VCrayApp will compile and run the cache\VCrayConfirm.c program every time the
 cache of raylib code is created, providing additional confirmation that the
-cache is built and which version of raylib it is set with.
+cache is built and the version of raylib it is set with.
 
 VCrayConfirm.c has been extended to report more about the VCrayApp settings
 and the readiness for use of the cache with particular VC and raylib versions.
@@ -76,8 +75,8 @@ of any code.
 
 VCrayApp no longer employs app\ for anything but compiling the project code.
 All compiles of the VCrayApp helper programs that are part of cache\ will be
-compiled in cache\ in a manner that does not interfere with use of cache\ for
-precompiled raylib components.
+compiled into cache\ in a manner that does not interfere with use of cache\
+for precompiled raylib components.
 
 In case of problems with unpredictable results related to population of the
 cache\, whether FAILCODE4 or FAILCODE5, VCrayApp will automatically attempt
@@ -87,9 +86,9 @@ not.
 CORRECTION: When executed as embedded (option "+"), VCrayApp.bat no longer
 sets LOCAL.  The caller must do so as appropriate.  This exposes variables set
 by VCrayApp.bat to the host, including %VCRAYVER%, the version of raylib
-detected when the cache is built as part of the VCrayApp run.  An embedded
+determined when the cache is built as part of the VCrayApp run.  An embedded
 VCrayApp does not EXIT on success, it does a :FALLOUT off the end of the
-script.  On any failure, VCrayApp does force EXIT.
+script.  On any FAILCODE, VCrayApp does force EXIT.
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
@@ -112,7 +111,7 @@ script.  On any failure, VCrayApp does force EXIT.
  ATTRIBUTION
 
    Hamilton, Dennis E. Changes Made for VCrayApp 0.1.0.  nfoTools text file
-   version 0.0.11 dated 2023-04-13, available on the Internet as a version of
+   version 0.0.13 dated 2023-04-28, available on the Internet as a version of
    <https://orcmid.github.io/nfoTools/dev/D211101/D211101e/CHANGES-0.1.0.txt>
 
 TODO
@@ -129,6 +128,7 @@ TODO
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.12 1012-04-28T19:19Z Touch-ups
  0.0.12 2023-04-17T16:32Z More information on failures and cache rebuilding
  0.0.11 2023-04-13T20:15Z Include error-message cleanups and links
  0.0.10 2023-04-06T18:24Z Reflect CHANGES-0.1.0 name change, make touch-ups
