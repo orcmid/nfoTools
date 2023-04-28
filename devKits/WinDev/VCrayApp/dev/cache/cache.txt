@@ -1,5 +1,8 @@
-VCrayApp 0.1.0 cache.txt 0.0.22     UTF-8                         2023-02-21
-----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+VCrayApp 0.1.0 cache.txt 0.0.23     UTF-8                         2023-04-28
+- ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
 
@@ -11,8 +14,8 @@ VCrayApp 0.1.0 cache.txt 0.0.22     UTF-8                         2023-02-21
 
   * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
   *                                                                       *
-  *          DO NOT REMOVE THIS FILE. VCRAYAPP.BAT REQUIRES ONE           *
-  *          **************************************************           *
+  *      DO NOT REMOVE THIS FILE. VCRAYAPP.BAT REQUIRES ONE HERE          *
+  *      *******************************************************          *
   *                                                                       *
   *    cache\ serves double-duty for VCrayApp.  It contains supporting    *
   *    files and a setup confirmation file for demonstrating successful   *
@@ -26,6 +29,11 @@ VCrayApp 0.1.0 cache.txt 0.0.22     UTF-8                         2023-02-21
   *    for protection against being over-written.  Then use those for     *
   *    review and adjustment of the restored/updated versions.            *
   *                                                                       *
+  *  CRITICAL IMPORTANCE.  Rebuild the cache (using VCrayApp option "-c") *
+  *    every time the raylib\ folder is populated or updated.  If this is *
+  *    not done, there is risk that the raylib header files accessed in   *
+  *    the project will not be compatible with the *.obj files in the     *
+  *    cache.                                                             *
   *                                                                       *
   *                            **  WARNING  **                            *
   *                            ***************                            *
@@ -33,20 +41,21 @@ VCrayApp 0.1.0 cache.txt 0.0.22     UTF-8                         2023-02-21
   *    RAYLIB-4.2.0 CANNOT BE USED WITH VCRAYAPP because of a defect in   *
   *    the external/miniaudio.h file depended upon by raudio.c.  The bug  *
   *    prevents VCrayApp compiling with any version of Microsoft VC/C++.  *
-  *    When there is a repaired raylib-4.x.0 release, support will be     *
-  *    incorporated in VCrayApp.                                          *
+  *    Raylib 4.0.0 and 4.5.0 are supported.  For the situation with      *
+  *    later versions of raylib, check the page                           *
+  *    <https://orcmid.github/nfoTools/D211101/D21101e> and also check    *
+  *    whether a later version of VCrayApp is recommended/required        *
   *                                                                       *
   *    RAYLIB-3.0.0 CANNOT BE USED WITH VCRAYAPP because of a defect in   *
-  *    the src/external/stb_image.h file having an incompatibility with   *
+  *    the src/external/stb_image.h file causing incompatibility with     *
   *    Microsoft VC/C++.                                                  *
   *                                                                       *
   *    VCrayApp is not supported for raylib versions earlier than 3.5.0.  *
-  *    than 3.5.0.                                                        *
   *                                                                       *
   * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 
 
-    cache/ contains compilation materials, a setup confirmation program, and
+    cache/ contains compilation materials, setup confirmation programs, and
     compiled raylib files that become a pre-compiled library to the project.
 
     When the cache has been populated with compiled raylib code, new compiles
@@ -65,6 +74,9 @@ VCrayApp 0.1.0 cache.txt 0.0.22     UTF-8                         2023-02-21
 
     For more information, see <https://orcmid.github.io/nfoTools/dev/D211101>.
 
+    For details of the *.opt files and how they are employed with vCrayApp
+    0.1.0, see <https://orcmid.guthub.io/nfoTools/dev/D211101/D211101e>.
+
 MANIFEST
 
     cache.txt
@@ -74,6 +86,14 @@ MANIFEST
         excluding the compilation intermediates and other ephemeral files
         from any git commits.
 
+    rayAppLinking.opt
+        Parameters for linking the compiled raylib app and the cache of
+        raylib *.obj files into an .exe program in app\.
+
+    rayConfirmLinking.opt
+        Parameters for linking the compiled VCrayConfirm.c into the
+        VCrayConfirm.exe in cache\
+
     raylibCode.opt
         Ephemerial file chosen depending on the version of Raylib that is
         be cached.
@@ -82,18 +102,12 @@ MANIFEST
         Option file to be copied to raylibCode.opt when using an acceptable
         raylib 3.x release.
 
-    raylibCode.4.0.0.opt
-        Option file to be copied to raylibCode.opt when using raylib 4.0.0,
-        the default for VCrayApp 0.0.0.
-        ***NOTE*** VCrayApp cannot be used to build later raylib 4.x.0 apps
-        until an error in raylib\src\external\miniaudio.h is repaired.
+    raylibCode.4.x.0.opt
+        Option file copied to raylibCode.opt when using an acceptable
+        raylib-4.x or raylib-4.x-dev.
 
     raylibVars.opt
         Preprocessor definitions for the compilation of the raylib modules
-
-    rayLinking.opt
-        Parameters for linking the compiled raylib app and the cache of
-        raylib *.obj files into a .exe program
 
     VCoptions.opt
         Compilation options for Visual C/C++ native compiler cl.exe.
@@ -103,26 +117,27 @@ MANIFEST
 
     VCrayConfirm.c
         sample program used to confirm the setup and building of a raylib
-        application with VS Build Tools.  Once setup is confirmed,
-        VCrayApp.bat can be modified to compile the user's rayApp project src\
-        files.  See the instructions at the beginning of VCrayApp.bat.
-
-    VCrayVerCheck.c
-        C Language program that is hot-compiled to determine any setting of
-        RAYLIB_VERSION defined in raylib.h.
+        application with VS Build Tools.
 
     VCrayVer.bat
         Is an ephemeral file that holds the script output by VCrayVercheck.exe
-        for delivering VCRAYVER to VCrayApp.bat and use in determining that
-        the raylib version is acceptable to VCrayApp and any adjustment to
-        options that are required.
+        for delivering VCRAYVER to VCrayApp.bat for refinement and verifying
+        that the raylib version is acceptable for use with VCrayApp.
+
+    VCrayVerCheck.c
+        C Language program that is compiled as part of the cache\ population
+        procedure.  It determines whatever version is identified, if any,
+        in the file raylib.h.
 
     *.obj (after compilation of cached raylib components)
         VC/C++ compiled C Language *.obj modules from compilation of the
         raylib files identified in raylibCode.opt.  Other *.obj files created
-        here must be removed to avoid tainting VCrayApp linking of cache files
+        here are removed to avoid tainting VCrayApp linking of cache files.
 
-----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+    *.exe files in cache\ are all ephemeral biproducts of the cache creation
+        process.
+
+- ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                     Copyright 2021-2023 Dennis E. Hamilton
 
@@ -138,18 +153,18 @@ MANIFEST
     See the License for the specific language governing permissions and
     limitations under the License.
 
-----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+- ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
  ATTRIBUTION
 
    Hamilton, Dennis E. VCrayApp raylib Cache Folder.  VCrayApp 0.1.0 text file
-   cache.txt version 0.0.22 dated 2023-02-21, available on the Internet as a
-   version of
-    <https://github.com/orcmid/nfoTools/blob/master/devKits/WinDev/VCrayApp/dev/cache/cache.txt>.
+   cache.txt version 0.0.23 dated 2023-04-28, available on the Internet as a
+   version of cache.txt in
+   <https://orcmid.github.io/nfoTools/D211101/D211101e/VCrayApp-0.1.0.zip>.
 
+- ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
-
+ 0.0.23 2023-04-28T20:29Z Touch-ups for VCrayApp 0.1.0
  0.0.22 2023-02-21T01:35Z Revert back to VCrayVerCheck.c from .cx
  0.0.21 2023-02-21T01:16Z Adjust for VCrayApp.bat and other changes
  0.0.20 2023-02-19T23:57Z Adjust for VCrayVerChecks.cx and ephemeral content
@@ -174,3 +189,14 @@ MANIFEST
  0.0.0 2021-09-27T23:13Z placeholder for native-build intermediate materials
 
                          ***** end of cache.txt *****
+-----BEGIN PGP SIGNATURE-----
+
+iQFGBAEBCAAwFiEEBNBDIpebhN4QdwM0+W6J/9RWYooFAmRMLvoSHG9yY21pZEBh
+cGFjaGUub3JnAAoJEPluif/UVmKKJmwH/0HrRzLTLJjXMmEY5WpJTXM+nyL7/Vy0
+mhCifFAU3vD9hPLsLx3dlxytWIoF5CGcD1AhDU3dpeoVzkvZBqyJhsf0uiYCp//Y
+YUQIteaP/haaph2hplbzXuSA1BGh80MeWuUveEdM5jQbVG7pcDrdIu9UrbMrrAky
+H/rzLyHinmmX6u61axEgUZ24RcNdljgAHBW/hscBNa/yw+w9mkY8r2julGtAt3ZM
+2FF2SKKkBKk7Oyu8PWjeCWQexdUGYA8tiztfVPwyZbuleIBRUV8Vc1Yp1cwKnpjj
+tO0TAldyzx47/Nw4LhGLqkODMyoHpE0wxtOOwXcQqMnVI8UZ4nWTyZY=
+=bXD0
+-----END PGP SIGNATURE-----

@@ -21,16 +21,6 @@ Changes and improvements will be reflected in the main VCrayApp-checklist.txt.
        tasks/issues for these activities as we go.  The overall project is
        #42
 
-    * cache\
-        o Update cache.txt to version of VCrayApp
-        o Indicate purpose of cache\
-        o Link to information on the compilation option files
-        o Link to explanation of the compilation steps
-        o Provide orcmid.github.io/nfoTools location for the attribution
-        o Ensure that the cache components work with the version of raylib
-          being used
-        o Clear/armor sign the cache.txt file.
-
     * VCrayApp.bat
         o Provide the <place-to-be-announced> as the location for VCrayApp
           dev location
