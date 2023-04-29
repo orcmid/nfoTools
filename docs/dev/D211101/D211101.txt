@@ -1,4 +1,4 @@
-D211101.txt 0.0.17                   UTF-8                         2023-04-20
+D211101.txt 0.0.18                   UTF-8                         2023-04-29
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -75,8 +75,6 @@ TODO
    This is customization.  Need to ponder that.  Be emphatic in the D211101d
    and D211101e subfolios.
 
- * Ensure that the index.html pages are in the title blocks too
-
  * Add link to T211002 on Visual Studio Native Build Tools and eventually
    have more on the VC/C++ compiler usage at that place, or a new Toolnote
 
@@ -100,12 +98,13 @@ TODO
  * Set up D21101e for targetting by links from VCrayApp materials, including
    explanation of error messages.
 
- * Add CHANGES.txt (since 0.1.0) to the 1.1 Project Files Organization.
+ * Add CHANGES-*semver*.txt (since 0.1.0) to the 1.1 Project Files
+   Organization.
 
- * Determine whether there is an extended signature for VCrayApp.bat and also
+ * Determine whether there is a detacched signature for VCrayApp.bat and also
    for anything in the cache.  This is probably unnecessary and we have to
-   deal with the fact that many of the cache\*.opt files may be modified as
-   will be VCrayApp.bat as well.
+   deal with the fact that many of the cache\*.opt files may be modified but
+   ideally not VCrayApp.bat itself.
 
  * Embedded use should be an advanced topic related to lifecycle management
    and such considerations.  This is moderately acute when VCrayApp is
@@ -116,16 +115,6 @@ TODO
    used properly.  Versions of raylib\ releases that are known to fail will
    VC/C++ are detected and will cause VCrayApp.bat to fail with a specific
    message.  This can be cross-linked and the :FAIL number should be given.
-
- * we need a folio for failure messages.  D21101/fails/ would be good.  The
-   failure messages would be one level down.  E.g.,
-   <https://orcmid.github.io/nfoTools/dev/D211101/fails/FAIL1>.  There is
-   a folder for each one and fails provides an index to them.  In this case,
-   FAIL message names cannot be reused.  A significant change to a message
-   requires use of a new name.
-
- * Add CHANGES-*semver*.txt to Project Files organization, when there are
-   changes from any previous versions.
 
  * Give more examples of Semantic Versioning beside 0.0.0.
 
@@ -166,10 +155,23 @@ TODO
 
  * Add fails/ to the Available Materials.
 
+ * Expand the cache\ entry of the 1.1 files organization to include possible
+   foreign static libs.
+
+ * Mention libs as a prospect in the cache but not in src\*.c because we don't
+   have a good way to parse that or any alternative %VCAPPSRC% value.  So the
+   only place for foreign libs is cache, which rather makes sense.
+
+ * Create a demo project that is at a higher place in the file hierarchy and
+   redo everything from there.  Use that for all of the screen captures.
+
+ * The creation of shortcuts and customized properties for the Developer
+   Command Prompt needs to be introduced in some manner.
 
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.18 2023-04-29T19:13Z TODO touch-ups
  0.0.17 2023-04-20T16:14Z More TODOs, not actual progress
  0.0.16 2023-04-09T17:01Z Manage TODOs
  0.0.15 2023-04-07T04:09Z Add fails/ to the manifest

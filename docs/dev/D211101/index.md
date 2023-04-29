@@ -1,4 +1,4 @@
-<!-- index.md 0.0.14                UTF-8                          2023-03-30
+<!-- index.md 0.0.15                UTF-8                          2023-04-28
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                VCRAYAPP: VC/C++ COMMAND-LINE RAYLIB APP DEVKIT
@@ -6,7 +6,7 @@
 
 # [VCrayApp: VC/C++ Command-Line raylib App DevKit](.)
 
-| ***[nfoTools](../../)*** | [dev](../)[>D211101](.) | ***[index.html](index.html) 0.0.14 2023-03-30*** |
+| ***[nfoTools](../../)*** | [dev](../)[>D211101](.) | ***[index.html](index.html) 0.0.15 2023-04-29*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../../images/hardhat-logo.gif) |
 
@@ -30,7 +30,7 @@ custom instructions that apply to specific usage in that project.
 ### 1.1 Project Files Organization
 
 The expected setup for a VCrayApp-organized project of your own is with the
-following folder structure:
+following folder structure (since VCrayApp-0.1.0):
 
 ```text
     your-development-files-location\
@@ -39,22 +39,26 @@ following folder structure:
      |- VCrayApp-*semver*.zip   // at the same level, same drive as raylib\
      |- YOUR-PROJECT-FOLDER\    // extracted-VCrayApp-*semver*-folder-renamed
          |- .vscode\            // suggested .vscode settings
-         |- app\                // folder where you App is compiled to
-         |- cache\              // folder for cached working files and
-         |                      //    VCrayApp materials
-         |- src\                // recommended location for your
-         |                      //    source-code files
+         |- app\                // folder your App is compiled to
+         |- cache\              // folder of VCrayApp resources, cached raylib
+         |                      //    components, and foreign static libraries
+         |- src\                // recommended location for your source-code
+         |                      //    *.c files and header/include files
          |- NOTICE.txt          // licensing and origin of only the content
          |                         provided with VCrayApp-*semver*.zip itself
+         |- CHANGES-*semver*.txt
+         |                      // changes from any earlier versions
          |- VCrayApp.bat        // the batch script for compiling your app
          |- VCrayApp-*semver*.txt
                                 // *semver* version synopsis and manifest
 ```
 
 [Semantic versioning](https://semver.org/) is used.  E.g., the Alpha release
-has *semver* 0.0.0 and is packaged in `VCrayApp-0.0.0.zip`.  There are
-explanatory materials and other files in the extracted VCrayApp version and
-its four subfolders.
+had *semver* 0.0.0 and was packaged in `VCrayApp-0.0.0.zip`.  Starting with
+*semver* 1.0.0 further breaking changes will require a change at the major
+level, with feature additions at 1.*x*.0 levels and fixes at 1.*x*.*y* levels.
+The subfolders, `.vscode`, `app\`, `cache\` and `src\` include explanatory
+`*.txt` files with regard to the VCrayApp purpose for them.
 
 It is recommended that  `src\` be for your own source code and `app\` include
 any resources that will be distributed with and accessed by the compiled
@@ -73,11 +77,15 @@ a developer command prompt.  The `.bat` script will report progress through
 build stages and also provide diagnostic messages concerning any failures
 that occur in the `.bat` operation.
 
-`VCrayApp.bat` is initially set to compile a sample program that
-is provided in the `cache\` folder.  After installation and operation is
-confirmed, `VCrayApp.bat` **must be modified** to specify the name for your
-application and the location of your source files.  No other modifications
-are required.  The initial lines of `VCrayApp.bat` direct the modifications.
+On initial operation of VCrayApp, `VCrayApp.bat` will verify the setup,
+compile raylib components into `cache`, and then demonstrate operation by
+compiling and operating program `VCrayConfirm`.  This procedure will be
+performed each time the cache is rebuilt as well as after any failure in
+having a working cache of raylib components.
+
+After installation and operation is confirmed, `VCrayApp.bat`
+**must be modified** to specify the name for your application.  VCrayApp
+messages and the initial lines of VCrayApp.bat` direct the modifications.
 
 Performing command "`VCrayApp ?`" from a developer command prompt focused on
 your project folder will provide usage information.
@@ -104,9 +112,10 @@ compilation of the app after building any needed cache.  This is recommended
 to develop a sense of the stages and their details until predictable
 operation is confirmed.
 
-A successful compile will provide an executable in the `app\` subfolder
-for operation along with whatever assets have been placed there.  It is
-possible to deploy a successfully-built application from `app\`.
+A successful compile of your source code will provide an executable in the
+`app\` subfolder for operation along with whatever assets that have been
+placed there.  It is possible to deploy a successfully-built application from
+ `app\`.
 
 Further details of VCrayApp operation are provided in
 [D211101b: VCrayApp Operation](D211101b).
@@ -167,7 +176,8 @@ Studio can also be used, all via their Native Tools Command Prompt.
 No use is made of Visual Studio projects, solutions, and the conventional
 separation of debug and release builds.  With nfoTools, emphasis is on
 testing and confirmation with the same program that is provided to users
-along with built-in troubleshooting support as needed.
+along with built-in troubleshooting support as needed.  There are additional
+tips in the available materials.
 
 ## 4. Available Materials
 
@@ -219,6 +229,7 @@ from time to time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.15 2023-04-29T19:44Z Staging for 0.1.0 release
      0.0.14 2023-03-30T18:58Z Reflect D211101d 0.0.8
      0.0.13 2023-02-10T18:50Z Touch up, correcting d211101c designation
      0.0.12 2023-01-14T23:38Z Small adjustments and disclaimer about *alpha*
