@@ -32,10 +32,11 @@ MANIFEST
 
     index.html  (generated) web page for FAILCODE7 Explanation
 
+    FAIL7-2023-04-24-1648-VCrayApp-0.0.0.png
+        demonstration of FAILCODE7
+
 
 TODOS:
-
- * Cause this diagnostic for screen capture purposes.
 
  * Explain it without much detail.
 
