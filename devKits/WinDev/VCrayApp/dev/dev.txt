@@ -1,4 +1,4 @@
-dev.txt 0.0.27                       UTF-8                         2023-03-08
+dev.txt 0.0.28                       UTF-8                         2024-04-30
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                        AN NFOTOOLS COMING ATTRACTION
@@ -84,7 +84,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. raylib App Build with VS Developer Command Prompt.
-   nfoTools text file version 0.0.27 dated 2023-03-08, available on the
+   nfoTools text file version 0.0.28 dated 2023-04-30, available on the
    Internet as a version of
    <https://github.com/orcmid/nfoTools/blob/master/devKits/WinDev/VCrayApp/dev/dev.txt>
 
@@ -133,8 +133,14 @@ TODO
    VCAPPSRC can be removed and supplied insted by a %VCrayAppHost%.  This
    needs to be documented in D211101.
 
+ * MAJOR BREAKING CHANGE.  The setting of %VCAPPEXE% in VCrayApp.bat is
+   removed.  The specification of %VCAPPEXE% will be with a command-line
+   parameter to VCrayApp.bat.  Numerous supporting changes will be required.
+
+
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.28 2023-04-30T23:02Z Major TODO Change to take VCAPPEXE as parameter
  0.0.27 2023-03-08T21:17Z Manage TODOs, reflect VCrayApp.bat variable changes
  0.0.26 2023-03-02T19:25Z Manage TODOs, clarifying VCrayAppHost impact
  0.0.25 2023-03-02T18:05Z Add CHANGES.txt to manifest
