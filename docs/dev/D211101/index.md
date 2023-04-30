@@ -1,4 +1,4 @@
-<!-- index.md 0.0.15                UTF-8                          2023-04-28
+<!-- index.md 0.0.16                UTF-8                          2023-04-30
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                VCRAYAPP: VC/C++ COMMAND-LINE RAYLIB APP DEVKIT
@@ -6,7 +6,7 @@
 
 # [VCrayApp: VC/C++ Command-Line raylib App DevKit](.)
 
-| ***[nfoTools](../../)*** | [dev](../)[>D211101](.) | ***[index.html](index.html) 0.0.15 2023-04-29*** |
+| ***[nfoTools](../../)*** | [dev](../)[>D211101](.) | ***[index.html](index.html) 0.0.16 2023-04-30*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../../images/hardhat-logo.gif) |
 
@@ -34,23 +34,22 @@ following folder structure (since VCrayApp-0.1.0):
 
 ```text
     your-development-files-location\
-     |- raylib\                 // folder where raylib release *source* is
-     :  ...                     //    extracted
-     |- VCrayApp-*semver*.zip   // at the same level, same drive as raylib\
-     |- YOUR-PROJECT-FOLDER\    // extracted-VCrayApp-*semver*-folder-renamed
-         |- .vscode\            // suggested .vscode settings
-         |- app\                // folder your App is compiled to
-         |- cache\              // folder of VCrayApp resources, cached raylib
-         |                      //    components, and foreign static libraries
-         |- src\                // recommended location for your source-code
-         |                      //    *.c files and header/include files
-         |- NOTICE.txt          // licensing and origin of only the content
-         |                         provided with VCrayApp-*semver*.zip itself
-         |- CHANGES-*semver*.txt
-         |                      // changes from any earlier versions
-         |- VCrayApp.bat        // the batch script for compiling your app
-         |- VCrayApp-*semver*.txt
-                                // *semver* version synopsis and manifest
+     |- raylib\                   // folder where raylib release *source* is
+     :  ...                       //    extracted
+     |- VCrayApp-*semver*.zip     // at the same level, same drive as raylib\
+     |- YOUR-PROJECT-FOLDER\      // unzipped VCrayApp-*semver*-folder-renamed
+         |- .vscode\              // suggested .vscode settings
+         |- app\                  // folder your App is compiled to
+         |- cache\                // folder of VCrayApp resources and cached
+         |                        //    raylib components
+         |- src\                  // recommended location for your source-code
+         |                        //    *.c files and header/include files
+         |- NOTICE.txt            // licensing and origin of the content
+         |                        //    from VCrayApp-*semver*.zip itself
+         |- CHANGES-*semver*.txt  // changes from any earlier versions
+         |- VCrayApp.bat          // the batch script for compiling your app
+         |- VCrayApp-*semver*.txt // *semver* version synopsis and manifest
+
 ```
 
 [Semantic versioning](https://semver.org/) is used.  E.g., the Alpha release
@@ -84,8 +83,9 @@ performed each time the cache is rebuilt as well as after any failure in
 having a working cache of raylib components.
 
 After installation and operation is confirmed, `VCrayApp.bat`
-**must be modified** to specify the name for your application.  VCrayApp
-messages and the initial lines of VCrayApp.bat` direct the modifications.
+**must be modified** to be used for a stand-alone project.  The name of the
+projects executable file must be inserted in `VCrayApp.bat`.  VCrayApp
+messages and the initial lines of `VCrayApp.bat` direct the modifications.
 
 Performing command "`VCrayApp ?`" from a developer command prompt focused on
 your project folder will provide usage information.
@@ -229,6 +229,7 @@ from time to time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.16 2023-04-30T17:42Z More Touch-ups
      0.0.15 2023-04-29T19:44Z Staging for 0.1.0 release
      0.0.14 2023-03-30T18:58Z Reflect D211101d 0.0.8
      0.0.13 2023-02-10T18:50Z Touch up, correcting d211101c designation

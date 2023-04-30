@@ -1,4 +1,4 @@
-D211101.txt 0.0.18                   UTF-8                         2023-04-29
+D211101.txt 0.0.19                   UTF-8                         2023-04-30
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -30,7 +30,7 @@ MANIFEST
     D211101e/       VCrayApp 0.1.0 (beta)
 
     fails/          explanations of the VCrayApp failure codes, how to
-                    troubleshoot them, track down difficulties
+                    troubleshoot them, how to track down difficulties
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
@@ -53,7 +53,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. VCrayApp: VC/C++ Command-Line raylib App devKit.
-   nfoTools development text file D211101.txt version 0.0.17 dated 2023-04-20,
+   nfoTools development text file D211101.txt version 0.0.19 dated 2023-04-30,
    available on the Internet as a version of
    <https://orcmid.github.io/nfoTools/dev/D211101/D211101.txt>
 
@@ -92,34 +92,20 @@ TODO
  * Add D211101e to D211101 available materials when release is imminent and
    the next official release (4.6?) is made for raylib and confirmed.
 
- * Fix the description on D211101 on how first-run of VCrayApp is handled,
-   now that VCrayConfirm is handled differently with 0.1.0(beta).
+ * Emphasize that the "must be modified" applies to standalone project usage.
 
  * Set up D21101e for targetting by links from VCrayApp materials, including
    explanation of error messages.
 
- * Add CHANGES-*semver*.txt (since 0.1.0) to the 1.1 Project Files
-   Organization.
-
- * Determine whether there is a detacched signature for VCrayApp.bat and also
+ * Determine whether there is a detached signature for VCrayApp.bat and also
    for anything in the cache.  This is probably unnecessary and we have to
    deal with the fact that many of the cache\*.opt files may be modified but
-   ideally not VCrayApp.bat itself.
+   ideally not VCrayApp.bat itself.  Mmm, except for %VCRAYEXE% and that will
+   immediately break any signature.
 
  * Embedded use should be an advanced topic related to lifecycle management
    and such considerations.  This is moderately acute when VCrayApp is
    embedded in a distribution, such as VCrayVerify.
-
- * Fix 1.2 VCrayApp.bat explanation about how a sample program is built each
-   time the cache is built to ensure that the cached materials seem to be
-   used properly.  Versions of raylib\ releases that are known to fail will
-   VC/C++ are detected and will cause VCrayApp.bat to fail with a specific
-   message.  This can be cross-linked and the :FAIL number should be given.
-
- * Give more examples of Semantic Versioning beside 0.0.0.
-
- * Change the observation about initially and subsequent cache builds to
-   document that a confirmation build happens on those cases.
 
  * Update the Usage message.  Maybe reflect that it is from 0.1.0.  Also,
    use a screen capture.
@@ -151,12 +137,7 @@ TODO
  * Establish that this material is effective as of, and applicable, to the
    0.1.0 (beta) release of VCrayApp.
 
- * Use 0.1.0 as well as 0.0.0 for semver cases.
-
  * Add fails/ to the Available Materials.
-
- * Expand the cache\ entry of the 1.1 files organization to include possible
-   foreign static libs.
 
  * Mention libs as a prospect in the cache but not in src\*.c because we don't
    have a good way to parse that or any alternative %VCAPPSRC% value.  So the
@@ -171,6 +152,7 @@ TODO
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.19 2023-04-30T17:22Z More TODO cleanup and document touch-ups
  0.0.18 2023-04-29T19:13Z TODO touch-ups
  0.0.17 2023-04-20T16:14Z More TODOs, not actual progress
  0.0.16 2023-04-09T17:01Z Manage TODOs
