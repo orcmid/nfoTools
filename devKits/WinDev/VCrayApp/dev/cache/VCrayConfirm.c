@@ -1,4 +1,8 @@
-/* VCrayConfirm.c 0.1.14               UTF-8                       2023-05-03
+/*
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+   VCrayConfirm.c 0.1.14               UTF-8                       2023-05-03
    -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                     CONFIRMATION OF RAYLIB APP CACHE SETUP
@@ -333,4 +337,15 @@ int main(void)
          raylib 3.7.0.zip release downloaded 2021-10-08T00:41
 
                         *** end of VCrayConfirm.c ***
+-----BEGIN PGP SIGNATURE-----
+
+iQFGBAEBCAAwFiEEBNBDIpebhN4QdwM0+W6J/9RWYooFAmRSx0wSHG9yY21pZEBh
+cGFjaGUub3JnAAoJEPluif/UVmKK68UH/3ngyixTkuLGw9qs0r92KD/6ZagaabXw
+99nKJETE2sk8Z/vs7iPc4mBt9FvsuFmtyVHrLSG7YW8w1TnEE3P+EQzxOm2TPEKx
+4uW5zD0WxktSMssuuuc7sC+H6WvKuxq4Ywb1DOijebRO8qK+be0k9A/qEHMa/2xQ
+NulR93+oeLL4DogebH/EreOgEBLBZgNnpOemTGhytbhPwrhrr80W8gzlm2UuGc4V
+olKnoQsUhrVrZbcC5Vl9WJ6ttpLV90Q3jlFUpy/degmCy+0QbUnIfYksLprh7Jg9
+vJ6UF68tofHMV7KfVsfNPLu7AcTIOo85tdzVYCewItaAbJNIo0sPjIM=
+=QpV3
+-----END PGP SIGNATURE-----
 */
