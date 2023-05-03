@@ -1,9 +1,8 @@
-/* VCrayVerCheck.c 0.1.4            UTF-8                         2023-04-27
+/*
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA256
 
-
-
+   VCrayVerCheck.c 0.1.4            UTF-8                         2023-04-27
    -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                         DETERMINATION OF RAYLIB VERSION
@@ -117,13 +116,13 @@ int main(void)
                       *** end of VCrayVerCheck.c ***
 -----BEGIN PGP SIGNATURE-----
 
-iQFGBAEBCAAwFiEEBNBDIpebhN4QdwM0+W6J/9RWYooFAmRKvkkSHG9yY21pZEBh
-cGFjaGUub3JnAAoJEPluif/UVmKKbz4H/2JuUZMyZ+CGDHnYJVcHxrlhNQ6uTsPP
-awBqa+p3XOtUHIcaT+z5Yb/Ra37DCf6P/i1Luh0fAIkpfYG4NEqLmS4iCFRmrTEl
-4gR74rhbhI1oHXP9DQRYso9ab1o0iUYt6MGzj7xts+9/Ayttok8nm94zPSOZHng6
-rM1AFa9cWqeAnYlP9dpFTNdM5MXC2K8X+51wlBslLWv+Zcrhc3WK8HC9BdNURk6J
-7yXyTWNQX7E8nkZIPpxO0BeXb8fMF/D8wQberp2ELjxOjhYyAQy7St02uUhx1BRu
-RPfl3ZggTKb7K+P8NN+SV08gAQVO0Tf3NB6xmf3S33t1+1a8Kwy5+nM=
-=3EJu
+iQFGBAEBCAAwFiEEBNBDIpebhN4QdwM0+W6J/9RWYooFAmRSyvcSHG9yY21pZEBh
+cGFjaGUub3JnAAoJEPluif/UVmKKTkYH/A6E93J4/4dwPcxqbYGbz0YIqYNckqjj
+j019UyjZg6qGcveYs/DG7VKXdl4S94/yQmwktCH6kM5K4LjXr9F6IvBE/rpKzh8R
+E3j1ppDifatWJvLlB/DVUD0Nqez91G6jMbEWPeeSl3IicFy/+q0G8XhJAS7900wq
+bfVY/5N/+U5nZC6YD7frLSSvF2oa3gW4EYvkMY0Jg2HPWy924VrHtXRn9TQotD4x
+yGNQWVa4efSgG2eHKwJOo8FQUM5PMbnZqoOcygPqa1Jon40JMPq5gRJ4QsbrNJPB
+c7YQ5s4FmFEmJONI17WD+Y0dJBUTfs9kYcuzyUUXi4iAqlFyjuw7nxw=
+=PDD0
 -----END PGP SIGNATURE-----
 */
