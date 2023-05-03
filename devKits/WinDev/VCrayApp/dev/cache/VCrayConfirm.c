@@ -1,11 +1,5 @@
-/* VCrayConfirm.c 0.1.13               UTF-8                       2023-04-08
+/* VCrayConfirm.c 0.1.14               UTF-8                       2023-05-03
    -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
------BEGIN PGP SIGNED MESSAGE-----
-Hash: SHA256
-
-
-
-
 
                     CONFIRMATION OF RAYLIB APP CACHE SETUP
 
@@ -35,7 +29,7 @@ Hash: SHA256
 
    */
 
-#define VCRAYCONFIRM "VCrayConfirm 0.1.13"
+#define VCRAYCONFIRM "VCrayConfirm 0.1.14"
 
 #include <stddef.h>   // for NULL
 #include <string.h>   // for strncat_s(), strncmp()
@@ -127,7 +121,7 @@ int main(void)
     // ADAPT TO VCAPPEXE, AND VCAPPSRC CASES
     // -------------------------------------
 
-    // DETERMINE isSRC AND VCSRC[]
+    // DETERMINE isSRC, isDefault, AND VCSRC[]
     char VCSRC[LINE_MAX+1] = { '\0' };
 
     bool isSRC = true;
@@ -139,24 +133,25 @@ int main(void)
     strncat_s( VCSRC, LINE_MAX,
                pVCappSRC, _TRUNCATE );
 
-    // DETERMINE isEXE, hasName, AND VCEXE[]
+    bool isDefault = false;
+    if ( !strncmp(VCSRC, "src\\*.c", 10) )
+         { isDefault = true;
+           strncat_s( VCSRC, LINE_MAX,
+                      " (default)", _TRUNCATE );
+           }
+
+    // DETERMINE hasEXE AND VCEXE[]
     char VCEXE[LINE_MAX+1] = { '\0' };
 
-    bool isEXE = true;
+    bool hasEXE = true;
     char *pVCappEXE = getenv("VCAPPEXE");
     if ( pVCappEXE == NULL)
          { pVCappEXE = "not defined";
-           isEXE = false; }
+           hasEXE = false; }
 
      strncat_s( VCEXE, LINE_MAX,
                pVCappEXE, _TRUNCATE );
 
-    bool hasName = true;
-    if ( !strncmp(VCEXE, "RenameMe.exe", 12) )
-         { hasName = false;
-           strncat_s( VCEXE, LINE_MAX,
-                      " (needs replacing)", _TRUNCATE );
-           }
 
     // IDENTIFY SOURCE IN line3[] DEFINED OR NOT
     // -----------------------------------------
@@ -291,20 +286,14 @@ int main(void)
                    nextLine += 50;
                    }
 
-            if (hasHostName)
-                 DrawText( "Settings are controlled by the host.",
-                           140, nextLine, 20, GRAY );
-            else if (isSpliced)
-                      DrawText( "Embedded operation (option \"+\")"
-                                " requires a host.",
-                                90, nextLine, 20, RED);
-            else if (!hasName || !isSRC)
-                      DrawText( "Adjust the VCrayApp.bat settings"
-                                " to compile project code.",
-                                90, nextLine, 20, RED);
-
-            DrawText( "See <https://orcmid.github.io/nfoTools/dev/D211101>",
-                      140, nextLine+25, 20, GRAY );
+            if (isSpliced && !hasHostName)
+                 { DrawText( "Embedded operation (option \"+\") "
+                             "should have a host.",
+                             90, nextLine, 20, RED);
+                   DrawText( "See <https://orcmid.github.io/nfoTools/"
+                             "dev/D211101/D211101b>",
+                             140, nextLine+25, 20, GRAY );
+                   }
 
             DrawText("Press ESC to Continue",
                      90, 400, 20, BLUE);
@@ -323,6 +312,7 @@ int main(void)
 
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+   0.1.14 2023-05-03T20:28z Align with revised VCrayApp.bat API
    0.1.13 2023-04-08T21:35Z Clearsign as release candidate now
    0.1.12 2023-04-08T21:22Z Provide link to further information
    0.1.11 2023-04-05T17:42Z Clearsign as release candidate
@@ -343,15 +333,4 @@ int main(void)
          raylib 3.7.0.zip release downloaded 2021-10-08T00:41
 
                         *** end of VCrayConfirm.c ***
------BEGIN PGP SIGNATURE-----
-
-iQFGBAEBCAAwFiEEBNBDIpebhN4QdwM0+W6J/9RWYooFAmQx3QoSHG9yY21pZEBh
-cGFjaGUub3JnAAoJEPluif/UVmKKjw8IAKA7O0cAIvonDnxnhrEqHeC7gVIKFy/m
-saqquDWXUm6Ter2LckgK6Gb9xYtlwmPWzyf+LW/90kJIv27uNujwKcBEtB6sQ6DC
-8ijMin/ZB29EeDDnHMrQ+f8eYS3RljV04h5H0Ioz7WCftaZPHpEziOKijMRa3Hti
-rXMRaOgSwW8V2dnVTB2o64SiD4XR2lL6HqYS/A2he+IN3tsOdSKNa05AxLVdDLGY
-n1ufGnm6T2KewgFIERjQjYnzD+jmHYrOsJliB7TuiFW+MMExu5B0GXXRU8z3acxO
-NVpm4X+t9UPEVBEprYRyZvvKa7EFPE6T/jGtZIpdRjDxHbpzLVZQ9P0=
-=zN2s
------END PGP SIGNATURE-----
 */
