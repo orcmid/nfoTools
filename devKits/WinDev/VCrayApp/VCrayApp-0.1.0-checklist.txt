@@ -1,27 +1,77 @@
-VCrayApp-0.1.0-checklist.txt 0.0.*   TF-8                         2023-03-**
-*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+VCrayApp-0.1.0-checklist.txt 0.0.9  UTF-8                         2023-05-03
+----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                       RAYLIB APP DEVELOPMENT PROJECT
                       ==============================
 
-<https://github.com/orcmid/nfoTools/blob/master/devKits/WinDev/VCrayApp/VCrayApp-0.1.0-checklist.txt>
+<https://github.com/orcmid/nfoTools/blob/master/devKits/WinDev/VCrayApp/VCrayApp-checklist.txt>
 
-                        VCRAYAPP 0.1.0 Checklist
-                        ------------------------
+          VCRAYAPP RELEASE DEVELOPMENT AND DEPLOYMENT CHECKLIST
+          -----------------------------------------------------
 
-This is VCrayApp-checklist.txt used to work through the changes to make the
-release of VCrayApp-0.1.0 (beta).  It will be chewed up as we go.  There is
-no careful release control of this file, which should essentially disappear
-as the checklist is worked.  This file will be deleted when it is all
-accomplished.
+    This is the scratchpad checklist that will be worked through for the
+    major breaking change to the VCrayApp command-line usage.  It is taken
+    from VCrayApp-checklist.txt 0.0.9 with possible merging of later changes
+    (such as for documentation).
 
-Changes and improvements will be reflected in the main VCrayApp-checklist.txt.
+    CONTENT [TBD]
 
-    *  IN-PROGRESS: Create Project for the 0.1.0 beta release and create
-       tasks/issues for these activities as we go.  The overall project is
-       #42
+    * .vscode\
+        o Update to version of VCrayApp
+        o Confirm proper use with VS Code "code ." initiation from Prompt
+            + identify version(s) of VS Code that are applicable
+        o Confirm description of workspace/folder use in accessing the user's
+          project and experiencing the benefits
+        o Verify correct operation in conjunction with VS 2022 Build Tools
+          and raylib 3.7.0-4.x.0 source-code installation.
+        o Provide link to more explanation of VS Code workspace setup and
+          the limited use of the c_cpp_properties.json
+        o Clear/armor sign the .vscode.txt file.
+
+
+    * src\src.txt
+        o Update to version of VCrayApp
+        o Indicate value of using src\
+        o Provide more links to usage as part of VCrayApp and the benefits
+          of using with Developer Command Prompts and VS Code.
+        o Provide orcmid.github.io/nfoTools location for the attribution
+        o Emphasize somewhere that VS Code and Intellisense work best when
+          src\ is used for the *.c and *.h files for the project itself.
+        o Clear/armor sign the src.txt file
+
+    * app\app.txt
+        o Update to version of VCrayApp
+        o Indicate purpose of app\
+        o Explain Xcopy/Zip deployment
+        o Explain setting up for command-line/shortcut execution
+        o Link to additional information on Zip deployment
+        o Link to additional information on MSIX deployment
+        o Address single-use versus multiple-use installation
+        o Provide orcmid.github.io/nfoTools location for the attribution
+        o Clear/armor sign the app.txt file
+
+    * cache\
+        o Update cache.txt to version of VCrayApp
+        o Indicate purpose of cache\
+        o Link to information on the compilation option files
+        o Link to explanation of the compilation steps
+        o Provide orcmid.github.io/nfoTools location for the attribution
+        o Ensure that the cache components work with the version of raylib
+          being used
+        o Clear/armor sign the cache.txt file
+
+    * cache\VCrayVerCheck.c
+        o Adjust version-specific information
+        o Adjust VCrayApp package identification
+        o Clear/armor sign the VCrayVerCheck.c
+
+    * cache\VCrayConfirm.c
+        o Adjust version-specific information
+        o Adjust VCrayApp package identification
+        o Clear/armor sign the VCrayConfirm.c file
 
     * VCrayApp.bat
+        o Set the semantic version variable, VCrayApp
         o Provide the <place-to-be-announced> as the location for VCrayApp
           dev location
         o Provide the <related-place-to-be-announced> as the location for
@@ -46,12 +96,15 @@ Changes and improvements will be reflected in the main VCrayApp-checklist.txt.
     * Include CHANGES.txt and keep it current as development of a new
       release is underway.  It will be included in the VCrayApp zip and be
       downloadable separately via D211101.
+        o Clear/Armor sign CHANGES.txt
+
+    * Review the Notice to be current and complete
+        o Clear/Armor sign NOTICE.txt
 
     * Ensure rational operation when VCrayApp is embedded in a project and
       hosted in a script of that project.  This is done with VCrayVerify but
       other cases might be needed.
 
-    * Clearsign *all* of the text files in the deliverable (even NOTICE.txt?).
 
 DEPLOYMENT
 
@@ -88,23 +141,7 @@ DEPLOYMENT
       other.  XXX: THIS MAY BE A FRAGILE DEAL.
 
 
-*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
-
-                   Copyright 2022-2023 Dennis E. Hamilton
-
-    Licensed under the Apache License, Version 2.0 (the "License");
-    you may not use this file except in compliance with the License.
-    You may obtain a copy of the License at
-
-        http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing, software
-    distributed under the License is distributed on an "AS IS" BASIS,
-    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    See the License for the specific language governing permissions and
-    limitations under the License.
-
-*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
 TODO
@@ -141,10 +178,15 @@ TODO
  * Customization instructions must specify some things about what to do with
    signed materials.
 
-*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+ * Include documentation and also CHANGES inclusion more specifically.  There
+   are multiple kinds of changes needed to D211101.
 
- 0.0.* 2023-03-26T23:19Z Repeatedly backed-up as checklist items completed
- 0.0.7 2023-03-26T17:31Z Clone from VCrayApp-checklist.txt
+
+----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+ 0.0.9 2023-05-03T15:53Z Add TODOs about documentation and CHANGES
+ 0.0.8 2023-03-28T20:13Z Reflect updates from 0.1.0 beta preparation
+ 0.0.7 2023-03-26T23:20Z Improve .vscode\ checklist
  0.0.6 2023-03-26T17:22Z Touch up for 0.1.0 beta customization
  0.0.5 2023-03-09T20:34Z Additions on CHANGES.txt and checking sigs/hashes
  0.0.4 2023-01-20T17:38Z Update TODOs on use of winget hash
@@ -154,4 +196,4 @@ TODO
  0.0.0 2022-07-09T16:22Z Initial placeholder cloned from VCrayApp.txt 0.0.4
 
 
-                 ***** end of VCrayApp-checklist.txt *****
+              ***** end of VCrayApp-0.1.0-checklist.txt *****
