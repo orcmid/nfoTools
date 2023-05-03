@@ -1,5 +1,5 @@
 @echo off
-rem VCrayApp 0.1.0 VCrayApp.bat 0.0.60 UTF-8                       2023-04-23
+rem VCrayApp 0.1.0 VCrayApp.bat 0.0.61 UTF-8                       2023-05-03
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 rem                  BUILDING RAYLIB APP WITH VC/C++ TOOLS
@@ -7,54 +7,23 @@ rem                  =====================================
 
 rem This code depends on the presence of cache\, app\, src\ and ..\raylib\.
 rem It must be operated within a VS Command Prompt command-line environment.
-rem Use the script without modification until installation and operation is
-rem confirmed.  Then alter the VCAPPEXE and VCAPPSRC vars as appropriate
-rem for a specific standalone project.
-
-REM *** PROLOGUE*** READ CAREFULLY, CHANGE THESE SETTINGS AS NECESSARY ****
-REM *** THESE SETTING ONLY MATTER FOR STANDALONE USAGE OF VCRAYAPP     ****
-REM *** WHEN CALLED FROM A HOST PROJECT (OPTION "+") THESE ARE IGNORED.****
-REM ***********************************************************************
-
-IF "%1" == "+" GOTO :NOCHANGES
-REM DO NOT REMOVE THIS LINE.  IT DOES NOT INTERFERE WITH STANDALONE USAGE
-
-rem VCrayApp does not compile a standalone project's source code until
-rem VCAPPEXE is set.
-
-SET VCAPPEXE=RenameMe.exe
-rem Hint: don't use RenameMe.exe for your app.  Do use the complete .exe name.
-rem When VCrayApp is operated embedded in another project, this is skipped.
-
-rem VCrayApp will not attempt to compile a standalone project's source code
-rem until VCAPPSRC is also set. When VCrayApp is operated embedded in
-rem another project, this is also skipped.
-
-SET VCAPPSRC=src\*.c
-rem VCrayApp treats this as a special case.  If this is defined to a location
-rem and files elsewhere, a complete absolute location must be provided.
-rem It is strongly-recommended that src\ be used for standalone raylib app
-rem projects, especially for introductory applications of raylib.
-
-rem *********** NO CHANGES EVER NEEDED BELOW HERE ****************************
-rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
-
+rem Use this script and all of the associated files without modification
+rem  until installation and operation are confirmed.
+rem
+rem In most cases of standalone usage, no changes are required to this file.
 rem Additional documentation of this procedure and its usage are found in the
 rem accompanying VCrayApp-0.1.0.txt file.  For further information, see
 rem ^<https://orcmid.github.io/nfoTools/dev/D211101^> and check for the latest
 rem version.
 
-:NOCHANGES
+rem ***** NO CHANGES EVER NEEDED BELOW HERE FOR STANDARD USAGE **************
+
 rem Designate the semantic-versioned distribution of VCrayApp
 SET VCrayApp=0.1.0
 
 SET VCfrom=%CD%
 rem remembering where VCrayApp.bat is called *from*, so it can be restored
 rem on exit, including after errors.
-SET VCterse=
-SET VChush=
-SET VCsplice=%1
-rem can :BAIL from any point now
 
 rem If embedded, the host must enable extensions and VCrayApp.bat will expose
 rem environment variables it defines, especially related to confirming a
@@ -62,7 +31,11 @@ rem cache.  Note that the variables set/cleared above are all in the locality
 rem of any calling/host script.
 
 SET ERRORLEVEL=0
-IF "%1" == "+" GOTO :ALLFLAVORS
+SET VCsplice=%1
+
+REM WE CAN BAIL AT ANY TIME BELOW HERE
+
+IF "%VCsplice%" == "+" GOTO :ALLFLAVORS
 VERIFY bogus 2>NUL
 rem forcing an error in case CMD doesn't actually handle ENABLEEXTENSIONS
 SETLOCAL ENABLEEXTENSIONS
@@ -87,6 +60,8 @@ rem        into that of a calling script.
 rem     %2 might then be "*" and allow for that.
 rem don't shift anything out until %1-%2 handled.
 
+SET VChush=
+SET VCterse=
 IF NOT "%1" == "+" GOTO :MAYBETERSE
 IF NOT "%2" == "*" GOTO :MAYBETERSE
 SET VCterse=^>NUL 2^>NUL
@@ -121,10 +96,25 @@ IF "%1" == "-c" ( SET VCclean=1
                   SHIFT /1 )
 IF "%1" == "-r" ( SET VCrun=1
                   SHIFT /1 )
+
+REM DETERMINE IF THERE IS A NAMED APP TO PRODUCE
+SET VCAPPEXE=
+IF NOT "%1" == "" (SET VCAPPEXE=%1
+                   SHIFT /1)
+
+REM NOW SEE IF THERE IS A NON-DEFAULT SOURCE CODE LOCATION
+SET VCAPPSRC=src\*.c
+rem This is the default source file location.  It is treated as a special
+rem case.  It can be over-ridden with a parameter at this point.
+IF NOT "%1" == "" (SET VCAPPSRC=%1
+                   SHIFT /1)
+
+REM SO FAR, NO FURTHER PARAMETER IS ALLOWED FOR
 IF NOT "%1" == "" GOTO FAIL2
 
 :LOCATE
-rem VERIFY LOCATION OF THE SCRIPT WHERE VCRayApp.zip IS FULLY EXTRACTED
+REM SUPPOSED PARAMETERS HAVE BEEN ESTABLISHED.  NOW CHECK INTEGRITY OF
+rem THE VCrayApp PROJECT STRUCTURE AND THE RAYLIB LIBRARY LOCATION
 rem Some are customizable, none should be removed, all %VCrayApp% specific
 IF NOT EXIST "%~dp0cache\cache.txt" GOTO :FAIL1
 IF NOT EXIST "%~dp0cache\raylibCode.3.x.0.opt" GOTO :FAIL1
@@ -146,27 +136,21 @@ IF NOT EXIST "%VCraylib%\src\raylib.h" GOTO :FAIL6
 rem XXX *IMPORTANT* Another fragile dependency on location of raylib\
 
 rem CACHE LINKABLE RAYLIB CODE IF NEEDED
-IF NOT "%VCclean%" == "1" GOTO :CACHECHECK
-DEL %~dp0cache\rglfw.obj >NUL 2>NUL
-rem XXX We depend on rglfw.c being compiled last and absence is taken
-rem XXX to mean cache is absent/obsolete.
-
-:CACHECHECK
 IF NOT EXIST %~dp0cache\VCrayConfirm.exe GOTO :CACHENEEDED
-rem If we had cratered on :FAIL4/:FAIL5, we must retry the cache creation.
-IF EXIST %~dp0cache\rglfw.obj GOTO :APPCHECK
-rem Using presence of the last-built raylib .obj to determine full cache.
-rem *IMPORTANT* Keep consistent with %~dp0cache\raylibCode.opt cases
+rem If we had cratered on :FAIL4/:FAIL5, we must also rebuild cache,
+rem signalled by deleating VCrayConfirm.exe. First run finds this too.
+IF NOT EXIST %~dp0cache\rglfw.obj GOTO :CACHENEEDED
+IF NOT "%VCclean%" == "1" GOTO :APPCHECK
 
 :CACHENEEDED
 DEL %~dp0cache\*.obj >NUL 2>NUL
 
-REM COMPILE THE CACHE OF RAYLIB FILES THAT MAY BE NEEDED
-REM ****************************************************
+REM COMPILE THE CACHE OF RAYLIB COMPONENTS FOR LINKING AS NEEDED
+REM ************************************************************
 
 CD %~dp0cache
-rem DETERMINING RAYLIB VERSION THAT IS INSTALLED
-rem First Compile VCrayVerCheck that fishes any RAYLIB_VERSION from raylib.h
+rem FIRST, DETERMINE THE VERSION OF RAYLIB THAT IS AVAILABLE
+rem VCrayVerCheck fishes any RAYLIB_VERSION from raylib.h
 SET VCEXE=VCrayVerCheck.exe
 rem       for customization of any FAIL5 message
 CL %VChush% @VCoptions.opt VCrayVerCheck.c   %VCterse%
@@ -181,14 +165,17 @@ CALL VCrayVer.bat
 IF ERRORLEVEL 1 GOTO :FAIL5
 IF "%VCRAYVER%" == "" GOTO :FAIL5
 
-REM REFINE VCRAYVER BASED ON ADDITIONAL INSPECTIONS,OF %VCraylib%.
+REM %VCRAYVER% IS THE VERSION FROM raylib.h OR IT IS "unidentified"
 IF %VCRAYVER% == "4.2" GOTO :FAIL8
-REM **IMPORTANT**  Additional beyond-4.0 exclusions go here
+REM **IMPORTANT**  Additional exclusions beyond "4.5" must go here.
 
 COPY /Y raylibCode.4.x.0.opt raylibCode.opt >NUL 2>NUL
+REM assuming that the same raylibCode.opt serves all 4.x versions
+
 IF NOT %VCRAYVER% == "unidentified" GOTO :BUILDCACHE
-rem Versions of raylib.h before 4.0 do not set RAYLIB_VERSION so we must
-rem    use some known fingeprints of earlier versions.
+
+rem Versions of raylib.h before 4.0 do not set RAYLIB_VERSION so some
+rem    known fingeprints isolate supported versions.
 IF EXIST %VCraylib%\appveyor.yml GOTO :FAIL7
 IF EXIST %VCraylib%\.travis.yml GOTO :FAIL7
 IF EXIST %VCraylib%\HELPME.md GOTO :FAIL7
@@ -198,6 +185,8 @@ IF EXIST %VCraylib%\CONTRIBUTORS.md GOTO :BUILDCACHE
 SET VCRAYVER="3.5.0"
 
 :BUILDCACHE
+REM AT LAST, WE ARE READY TO BUILD THE CACHE OF RAYLIB COMPONENTS
+
 CL %VChush% /w /c @VCoptions.opt @raylibVars.opt @raylibCode.opt %VCterse%
 IF ERRORLEVEL 2 GOTO :FAIL4
 ECHO: [VCrayApp] FRESH CACHE OF RAYLIB %VCRAYVER% *.OBJ FILES COMPILED
@@ -205,14 +194,17 @@ ECHO: %VCterse%
 
 :VCRAYCONFIRMBUILD
 REM THE PROGRAM VCrayConfirm IS BUILT AND RUN AFTER EVERY CACHE BUILD
+REM It is all built in cache\, leaving app\ and %VCAPPSRC% untouched.
+
 SET VCEXE=VCrayConfirm.exe
 SET VCSRC=%~dp0cache\VCrayConfirm.c
+
 DEL *.exe >NUL 2>NUL
 rem Flags
 SET OUT=/Fe: "%VCEXE%"
 SET SUBSYS=/SUBSYSTEM:WINDOWS /ENTRY:mainCRTStartup
 
-rem Compiling as %VCSRC%
+rem Compiling the %VCSRC%
 CL %VChush% /W3 /c @VCoptions.opt %VCSRC% %VCterse%
 IF ERRORLEVEL 2 GOTO :FAIL5
 ECHO: %VCterse%
@@ -224,63 +216,65 @@ ECHO: %VCterse%
 DEL VCrayConfirm.obj >NUL 2>NUL
 
 CD %VCfrom%
+REM RESTORE ORIGINAL %CD% IN CASE WE FAIL OR ARE CLOSED HERE
 IF NOT EXIST %~dp0cache\%VCEXE% GOTO :FAIL5
+
 ECHO: [VCrayApp] Launching %VCEXE%.  Exit App to Continue Session  %VCterse%
 ECHO: %VCterse%
 %~dp0cache\%VCEXE%
 IF ERRORLEVEL 1 GOTO :FAIL5
-rem leaving VCrayConfirm.exe as indicator of cache-deemed good
+
+REM leaving VCrayConfirm.exe as indicator of cache-deemed good
 
 :APPCHECK
-REM THERE IS A CONFIRMED CACHE.  NOW COMPILE AND RUN THE PROJECT APP AS NEEDED
-REM **************************************************************************
+REM THERE IS A CONFIRMED CACHE.  NOW SEE HOW TO ADVANCE THE PROJECT.
+REM ****************************************************************
 
-IF "%VCAPPEXE%" == "" GOTO :NOAPP
-IF NOT "%VCAPPEXE%" == "RenameMe.exe" GOTO :APPBUILD
+IF NOT "%VCAPPEXE%" == "" GOTO :APPBUILD
+REM IF THAT PARAMETER WAS PROVIDED, IT IS TIME TO BUILD SOME PROJECT CODE
+
 IF "%VCsplice%" == "+" GOTO :SUCCESS
+REM BUT IF WE ARE RUNNING EMBEDDED THERE IS NO NEED FOR COMMENTARY
 
 :NOAPP
+REM WE DON'T KNOW ANYTHING TO BUILD AND WE'LL BOW OUT NOW.
 IF NOT "%VCrayAppHost%" == "" GOTO :FUMBLED
 IF "%VCsplice%" == "+" GOTO :MUMBLED
-ECHO: [VCrayApp] **** ALL SET. CACHE CONFIRMED. NO APP TO COMPILE YET. ****
-ECHO:            At the beginning of VCrayApp.bat, Keep or change VCAPPSRC for
-ECHO:            locating the App source code and headers.  Then change the
-ECHO:            VCAPPEXE setting there also.
+ECHO: [VCrayApp] **** ALL SET. CACHE AVAILABLE. NO APP TO COMPILE YET. ****
+ECHO:            When the project executable is named on the call to VCrayApp,
+ECHO:            compilation of the project source code will be attempted.
+ECHO:            Source code will be taken from the default src\*.c or from
+ECHO:            the src parameter of the VCrayApp command.
 :MAYBEAPP
-ECHO:            Once that's done, VCrayApp.bat will compile the app.
 ECHO:            See ^<https://orcmid.github.io/nfoTools/dev/D211101/^>.
 ECHO: %VCterse%
 
 IF NOT "%VCrun%" == "1" GOTO :SUCCESS
+REM There is nothing we know to run, so shrug about the "-r".
 SET VCrun=0
 IF NOT "%VCrayAppHost%" == "" GOTO :FUMBLED
-ECHO: [VCrayApp] **** CANNOT RUN AN APP YET. DO THE SETUP. ****
+ECHO: [VCrayApp] **** IGNORING "-r" OPTION.  NAME THE EXECUTABLE FIRST. ****
 GOTO :SUCCESS
 
 :FUMBLED
-ECHO: [VCrayApp] *** NO APP TO RUN YET FOR %VCrayAppHost%      %VCterse%
+ECHO: [VCrayApp] **** NO APP TO RUN YET FOR %VCrayAppHost% ****    %VCterse%
 GOTO :SUCCESS
 
 :MUMBLED
 ECHO: [VCrayApp] NAMED HOST REQUIRED FOR EMBEDDED ("+") OPERATION  %VCterse%
 GOTO :MAYBEAPP
 
-:NOSRC
-ECHO: [VCrayApp] **** NO SOURCE CODE LOCATION SUPPLIED ****
-ECHO:            The VCAPPSRC environment variable must be set the location of
-ECHO:            the App source code to be compiled.  This should be either
-ECHO:            "SET VCAPPSRC=src\*.c" or a full-path location to use.
-GOTO :MAYBEAPP
-
 :APPBUILD
+REM WE HAVE A PROJECT TO BUILD.  IT IS TIME TO BUILD IT.
+REM ****************************************************
+
 CD %~dp0app
 DEL *.exe >NUL 2>NUL
 rem Flags
 SET OUT=/Fe: "%VCAPPEXE%"
 SET SUBSYS=/SUBSYSTEM:WINDOWS /ENTRY:mainCRTStartup
 
-rem Compiling the %SRC%
-IF "%VCAPPSRC%" == "" GOTO :NOSRC
+REM COMPILING THE SOURCE CODE
 SET VCSRC=%~dp0%VCAPPSRC%
 IF "%VCAPPSRC%" == "src\*.c" GOTO :APPCOMPILE
 rem otherwise, a different %SRC% has been set.
@@ -293,7 +287,7 @@ CL %VChush% /W3 /c @%~dp0cache\VCoptions.opt %VCSRC%          %VCterse%
 IF ERRORLEVEL 2 GOTO :FAIL5
 ECHO: %VCterse%
 
-rem Linking it all to make %VCEXE%
+REM LINKING IT ALL TO MAKE %VCEXE%
 CL %VChush% %OUT% @%~dp0cache\rayAppLinking.opt /link /LTCG %SUBSYS% %VCterse%
 IF ERRORLEVEL 2 GOTO :FAIL5
 ECHO: %VCterse%
@@ -311,9 +305,6 @@ IF ERRORLEVEL 1 GOTO FAIL5
 CD %VCfrom%
 IF "%VCsplice%" == "+" GOTO :FALLOUT
 ENDLOCAL
-SET VCAPPEXE=
-SET VCAPPSRC=
-rem    Protecting against a subsequent splicing re-entry to VCrayApp.bat
 ECHO:  %VCterse%
 REM IF NOT "%VCrun%" == "1" PAUSE
 GOTO :FALLOUT
@@ -397,7 +388,7 @@ GOTO :BAIL
 :USAGE
 rem    PROVIDE USAGE INFORMATION
 ECHO:   USAGE: VCrayApp [+] ?
-ECHO:          VCrayApp [+] [*] [-c] [-r]
+ECHO:          VCrayApp [+] [*] [-c] [[-r] exe [src]]
 IF NOT "%1" == "?" GOTO :BAIL
 ECHO:   where  ? produces this usage information.
 ECHO:          + ONLY FOR OPERATING AS A HELPER FROM ANOTHER SCRIPT, with
@@ -406,23 +397,24 @@ ECHO:          * selects terse output.  If operation fails, repeat
 ECHO:            without this option for more details.
 ECHO:         -c for a complete rebuild of any cache
 ECHO:         -r for running the app on successful build
+ECHO:        exe the name of the executable to be built in app\
+ECHO:        src the location of source code to compile when not the
+ECHO:            default src\*.c location
 ECHO:
 ECHO:    ERRORLEVEL 0 is produced on all successful operations;
 ECHO:    codes greater than 1 are produced for any failures.
 ECHO:
 ECHO:    VCrayApp depends on VSCMD_VER being set by the VS Command Prompt
 ECHO:    with CMDEXTVERSION 2 or better available for operation.
-ECHO:    There is use/clearing of environment variables VCAPPEXE, VCAPPSRC,
-ECHO:    VCfrom, VChush, VCrayApp, VCsplice, and VCterse.  More are exposed
-ECHO:    when operating under another script (option "+").
+ECHO:    There is use/clearing of environment variables VCrayApp, VCfrom,
+ECHO:    and VCsplice.  Others are exposed when operating under another
+ECHO:    script (option "+").
 ECHO:
 ECHO:    See ^<https://orcmid.github.io/nfoTools/dev/D211101^> for details.
 ECHO:
+
 IF "%VCsplice%" == "+" GOTO :FALLOUT
 ENDLOCAL
-SET VCAPPEXE=
-SET VCAPPSRC=
-rem     Prevent these from leaking into embedded ("+") VCrayApp.bat re-entry
 GOTO :FALLOUT
 
 :BAIL
@@ -432,12 +424,6 @@ CD %VCfrom%                                                         %VCterse%
 rem always leave with the one that brung us
 IF "%VCsplice%" == "+" EXIT /B %ERRORLEVEL%
 ENDLOCAL
-SET VCAPPEXE=
-SET VCAPPSRC=
-rem    Also prevent leaking into an embedded ("+") re-entry to VCrayApp.bat
-IF NOT "%VCterse%" == "" EXIT /B %ERRORLEVEL%
-ECHO:
-PAUSE
 EXIT /B %ERRORLEVEL%
 
 :FALLOUT
@@ -465,6 +451,7 @@ rem For additional information, see the accompanying NOTICE.txt file.
 rem
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 rem
+rem 0.0.61 2023-05-03T04:33Z MAJOR REORGANIZATION AND USAGE CHANGES
 rem 0.0.60 2023-04-23T20:24Z Always give verbose FAILCODE6 report
 rem 0.0.59 2023-04-21T22:41Z Improve FAILCODE6-FAILCODE8 reporting
 rem 0.0.58 2023-04-16T19:01Z More FAILCODE4/5 cache rebuild forcing edge cases
