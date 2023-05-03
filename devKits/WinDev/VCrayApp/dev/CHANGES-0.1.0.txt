@@ -1,4 +1,4 @@
-CHANGES-0.1.0.txt 0.0.13            UTF-8                         2023-04-28
+CHANGES-0.1.0.txt 0.0.14            UTF-8                         2023-05-03
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                        AN NFOTOOLS COMING ATTRACTION
@@ -21,16 +21,35 @@ CHANGES-0.1.0.txt 0.0.13            UTF-8                         2023-04-28
 CHANGES IN 0.1.0
 ****************
 
-BREAKING: The VCrayApp.bat prologue settings for GAME_EXE and SRC have been
-changed to VCAPPEXE and VCAPPSRC.
+BREAKING: The VCrayApp.bat API has changed dramatically.  The name of the
+project exe is required on the command line before the project code will be
+compiled and optionally ran.  No modifications of VCrayApp.bat are required.
 
-Note 1: The value of VCAPPEXE does not have to match the name of any of the
-project source files; any one (and exactly one) of those files must provide
-the external main() definition.
+IMPORTANT: With this change, VCrayApp-0.1.0 is not a simple drop-in
+replacement for VCrayApp-0.0.0.  The workflow within which VCrayApp is used
+must be adjusted for the changed VCrayApp.bat command prompt API,
 
-Note 2: VCAPPSRC value src\*.c is special.   The use of src\ for *.c and *.h
-files of the project is recommended.For any different value, an absolute
-filepath must be used, whether or not with wild cards.
+    VCrayApp [+] ?
+    VCrayApp [+] [*] [-c] [[-r] exe [src]]
+
+Note 1: The value supplied for exe need not reflect the name of any of
+the project source files; any one (and exactly one) of those files must
+provide the external main() definition.  There may not be any spaces in the
+chosen .exe name.
+
+Note 2: The default API src value, "src\*.c" is special.  The use of src\
+for *.c and *.h files of the project is recommended.  When explicit src
+parameters are supplied on the VCrayApp.bat command line, absolute filepaths
+must be used, whether or not with wild cards.  There must not be any spaces
+in the full-path names.
+
+ADVANCED TECHNIQUES: Quotation of the src parameter and use of spaces in the
+value will be taken as multiple src locations.  Advanced need for includes and
+libraries for the standalone application should be handled by modification
+of the environment variables available for that purpose under the Visual
+Studio Native Command Prompt.  It may be valuable to use VCrayApp.bat from a
+command script that accomplishes that, embedding the use of VCrayApp. For
+examples, see <https://orcmid.github.io/dev/D211101/D211101b>.
 
 NEW FEATURES
 
@@ -51,8 +70,7 @@ Use of VCrayApp embedded in a larger project with VCrayApp.bat called from
 a higher "host" script has been improved.  Environment variable VCrayAppHost
 can now be set by the host to have it be accounted for by VCrayApp.  The host
 can also set VCrayAppHostURL for reporting as a source of additional
-information.  The Host is expected to provide VCAPPEXE and VCAPPSRC without
-having to modify VCrayApp.bat at all.
+information.
 
 CHANGES
 
@@ -61,14 +79,14 @@ is about to be filled.  This assists in determination of the raylib version.
 
 VCrayApp will compile and run the cache\VCrayConfirm.c program every time the
 cache of raylib code is created, providing additional confirmation that the
-cache is built and the version of raylib it is set with.
+cache is built and operational with the version of raylib being used.
 
 VCrayConfirm.c has been extended to report more about the VCrayApp settings
 and the readiness for use of the cache with particular VC and raylib versions.
 
 Reporting by VCrayApp is abbreviated when "+" is set for embedded-operation.
 This should only be done when calling from another script that takes charge
-of setting VCrayAppHost, VCAPPEXE, and VCAPPSRC.  Otherwise, there is warning.
+of setting VCrayAppHost and commanding VCrayApp.  Otherwise, there is warning.
 
 VCrayApp no longer PAUSES after a successful run, with or without execution
 of any code.
@@ -111,7 +129,7 @@ script.  On any FAILCODE, VCrayApp does force EXIT.
  ATTRIBUTION
 
    Hamilton, Dennis E. Changes Made for VCrayApp 0.1.0.  nfoTools text file
-   version 0.0.13 dated 2023-04-28, available on the Internet as a version of
+   version 0.0.14 dated 2023-05-03, available on the Internet as a version of
    <https://orcmid.github.io/nfoTools/dev/D211101/D211101e/CHANGES-0.1.0.txt>
 
 TODO
@@ -128,7 +146,8 @@ TODO
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
- 0.0.12 1012-04-28T19:19Z Touch-ups
+ 0.0.14 2023-05-03T16:46Z Adjust for the new VCrayApp-0.1.0 API.
+ 0.0.12 2023-04-28T19:19Z Touch-ups
  0.0.12 2023-04-17T16:32Z More information on failures and cache rebuilding
  0.0.11 2023-04-13T20:15Z Include error-message cleanups and links
  0.0.10 2023-04-06T18:24Z Reflect CHANGES-0.1.0 name change, make touch-ups
