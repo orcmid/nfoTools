@@ -12,7 +12,10 @@ VCrayApp-checklist.txt 0.0.9        UTF-8                         2023-05-03
     This note provides a checklist for the development and deployment of
     a VCrayApp devKit release.
 
-    CONTENT [TBD]
+    * VCrayApp-*semver*-checklist.txt
+       o Make a *semver* checklist copy and start working through it.
+       o Reflect changes/improvements noticed should be transposed into the
+         main checklist also.
 
     * .vscode\
         o Update to version of VCrayApp
@@ -25,6 +28,8 @@ VCrayApp-checklist.txt 0.0.9        UTF-8                         2023-05-03
         o Provide link to more explanation of VS Code workspace setup and
           the limited use of the c_cpp_properties.json
         o Clear/armor sign the .vscode.txt file.
+        o The establishment of .vscode folders may have changed recently.
+          Work that out and confirm or not in the web materials.
 
 
     * src\src.txt
@@ -45,7 +50,6 @@ VCrayApp-checklist.txt 0.0.9        UTF-8                         2023-05-03
         o Link to additional information on Zip deployment
         o Link to additional information on MSIX deployment
         o Address single-use versus multiple-use installation
-        o Provide orcmid.github.io/nfoTools location for the attribution
         o Clear/armor sign the app.txt file
 
     * cache\

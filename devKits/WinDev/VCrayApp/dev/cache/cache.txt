@@ -1,8 +1,8 @@
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA256
 
-VCrayApp 0.1.0 cache.txt 0.0.23     UTF-8                         2023-04-28
-- ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+VCrayApp 0.1.0 cache.txt 0.0.24     UTF-8                          2023-05-04
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
 
@@ -20,7 +20,7 @@ VCrayApp 0.1.0 cache.txt 0.0.23     UTF-8                         2023-04-28
   *    cache\ serves double-duty for VCrayApp.  It contains supporting    *
   *    files and a setup confirmation file for demonstrating successful   *
   *    compilation.  It is also the location for a cache of compiled      *
-  *    raylib *.obj files that can be incorporation in the project .exe   *
+  *    raylib *.obj files that can be used as a library for project .exe  *
   *    without taking the time to compile them every time.                *
   *                                                                       *
   *    If VCrayApp is re-extracted or is updated and extracted, this      *
@@ -31,7 +31,7 @@ VCrayApp 0.1.0 cache.txt 0.0.23     UTF-8                         2023-04-28
   *                                                                       *
   *  CRITICAL IMPORTANCE.  Rebuild the cache (using VCrayApp option "-c") *
   *    every time the raylib\ folder is populated or updated.  If this is *
-  *    not done, there is risk that the raylib header files accessed in   *
+  *    not done, there is risk that raylib\src\ header files accessed in  *
   *    the project will not be compatible with the *.obj files in the     *
   *    cache.                                                             *
   *                                                                       *
@@ -45,10 +45,6 @@ VCrayApp 0.1.0 cache.txt 0.0.23     UTF-8                         2023-04-28
   *    later versions of raylib, check the page                           *
   *    <https://orcmid.github/nfoTools/D211101/D21101e> and also check    *
   *    whether a later version of VCrayApp is recommended/required        *
-  *                                                                       *
-  *    RAYLIB-3.0.0 CANNOT BE USED WITH VCRAYAPP because of a defect in   *
-  *    the src/external/stb_image.h file causing incompatibility with     *
-  *    Microsoft VC/C++.                                                  *
   *                                                                       *
   *    VCrayApp is not supported for raylib versions earlier than 3.5.0.  *
   *                                                                       *
@@ -67,10 +63,9 @@ VCrayApp 0.1.0 cache.txt 0.0.23     UTF-8                         2023-04-28
 
     IMPORTANT DEPENDENCY: The VCrayApp.bat file (in the folder above cache/)
     and the option files raylibCode-x.y.z.opt and VCoptions.opt all depend on
-    relative location of a raylib/ source-code folder.  These must be altered
-    together for any change to relative location (including use of an absolute
-    location).  The use of relative addresses also requires that VCrayApp be
-    installed on the same drive as the raylib\ release code.
+    relative location of a raylib/ source-code folder.  The use of relative
+    addresses also requires that VCrayApp be installed on the same drive as
+    the raylib\ release code.
 
     For more information, see <https://orcmid.github.io/nfoTools/dev/D211101>.
 
@@ -91,7 +86,7 @@ MANIFEST
         raylib *.obj files into an .exe program in app\.
 
     rayConfirmLinking.opt
-        Parameters for linking the compiled VCrayConfirm.c into the
+        Parameters for linking the compiled VCrayConfirm.c into
         VCrayConfirm.exe in cache\
 
     raylibCode.opt
@@ -121,8 +116,8 @@ MANIFEST
 
     VCrayVer.bat
         Is an ephemeral file that holds the script output by VCrayVercheck.exe
-        for delivering VCRAYVER to VCrayApp.bat for refinement and verifying
-        that the raylib version is acceptable for use with VCrayApp.
+        for delivering VCRAYVER to VCrayApp.bat for determining that the
+        raylib version is acceptable for use with VCrayApp.
 
     VCrayVerCheck.c
         C Language program that is compiled as part of the cache\ population
@@ -132,12 +127,12 @@ MANIFEST
     *.obj (after compilation of cached raylib components)
         VC/C++ compiled C Language *.obj modules from compilation of the
         raylib files identified in raylibCode.opt.  Other *.obj files created
-        here are removed to avoid tainting VCrayApp linking of cache files.
+        here temporarily are removed to avoid tainting the cache files.
 
     *.exe files in cache\ are all ephemeral biproducts of the cache creation
         process.
 
-- ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                     Copyright 2021-2023 Dennis E. Hamilton
 
@@ -153,17 +148,17 @@ MANIFEST
     See the License for the specific language governing permissions and
     limitations under the License.
 
-- ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
  ATTRIBUTION
 
    Hamilton, Dennis E. VCrayApp raylib Cache Folder.  VCrayApp 0.1.0 text file
-   cache.txt version 0.0.23 dated 2023-04-28, available on the Internet as a
+   cache.txt version 0.0.24 dated 2023-05-04, available on the Internet as a
    version of cache.txt in
    <https://orcmid.github.io/nfoTools/D211101/D211101e/VCrayApp-0.1.0.zip>.
 
-- ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
-
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+ 0.0.24 2023-05-04T20:58Z Touch-ups on changes to the VCrayApp 0.1.0 API
  0.0.23 2023-04-28T20:29Z Touch-ups for VCrayApp 0.1.0
  0.0.22 2023-02-21T01:35Z Revert back to VCrayVerCheck.c from .cx
  0.0.21 2023-02-21T01:16Z Adjust for VCrayApp.bat and other changes
@@ -191,12 +186,12 @@ MANIFEST
                          ***** end of cache.txt *****
 -----BEGIN PGP SIGNATURE-----
 
-iQFGBAEBCAAwFiEEBNBDIpebhN4QdwM0+W6J/9RWYooFAmRMLvoSHG9yY21pZEBh
-cGFjaGUub3JnAAoJEPluif/UVmKKJmwH/0HrRzLTLJjXMmEY5WpJTXM+nyL7/Vy0
-mhCifFAU3vD9hPLsLx3dlxytWIoF5CGcD1AhDU3dpeoVzkvZBqyJhsf0uiYCp//Y
-YUQIteaP/haaph2hplbzXuSA1BGh80MeWuUveEdM5jQbVG7pcDrdIu9UrbMrrAky
-H/rzLyHinmmX6u61axEgUZ24RcNdljgAHBW/hscBNa/yw+w9mkY8r2julGtAt3ZM
-2FF2SKKkBKk7Oyu8PWjeCWQexdUGYA8tiztfVPwyZbuleIBRUV8Vc1Yp1cwKnpjj
-tO0TAldyzx47/Nw4LhGLqkODMyoHpE0wxtOOwXcQqMnVI8UZ4nWTyZY=
-=bXD0
+iQFGBAEBCAAwFiEEBNBDIpebhN4QdwM0+W6J/9RWYooFAmRUHXcSHG9yY21pZEBh
+cGFjaGUub3JnAAoJEPluif/UVmKKR2wH/0YTyp1giPM0oRN7vKQ0uebcp1ut0M6R
+B8/3UNGMHNtjzZQ0x7lkw4xA5FY3jAXfftgHsLbAUI5nuQZ3k2CJxqNjRanc8Uci
+STQ9YuqAwFHIm/hUqTQHLdrYD7q43TiORGU0LUENk9Pa7CDkXS5UKjnqddqviDBV
+gpTMtbjlpiK6tSIQxumdFN47iOyqqUehRXeV9LCtJHTumc80TB5t8+v6auRy9dyZ
+yjMji0xcdwZIrdcI4WHm30Ywml3W5AIdKo6wGMZoKCzBTKQ6XRryjOaD8CEn0Sxe
+WeR/om/emcxJNhXwNIkKG0RFLnPbKr2xCag9y1j1Ghx2RULoOMs209s=
+=R75b
 -----END PGP SIGNATURE-----

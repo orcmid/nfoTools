@@ -1,4 +1,4 @@
-VCrayApp-0.1.0-checklist.txt 0.0.9  UTF-8                         2023-05-03
+VCrayApp-0.1.0-checklist.txt 0.0.*  UTF-8                         2023-05-04
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                       RAYLIB APP DEVELOPMENT PROJECT
@@ -14,51 +14,29 @@ VCrayApp-0.1.0-checklist.txt 0.0.9  UTF-8                         2023-05-03
     from VCrayApp-checklist.txt 0.0.9 with possible merging of later changes
     (such as for documentation).
 
-    CONTENT [TBD]
+   * VCrayApp-*semver*-checklist.txt
+        o Make a *semver* checklist copy and start working through it.
+        o Reflect changes/improvements noticed should be transposed into the
+          main checklist also.
 
     * .vscode\
-        o Update to version of VCrayApp
-        o Confirm proper use with VS Code "code ." initiation from Prompt
-            + identify version(s) of VS Code that are applicable
-        o Confirm description of workspace/folder use in accessing the user's
-          project and experiencing the benefits
-        o Verify correct operation in conjunction with VS 2022 Build Tools
-          and raylib 3.7.0-4.x.0 source-code installation.
         o Provide link to more explanation of VS Code workspace setup and
           the limited use of the c_cpp_properties.json
-        o Clear/armor sign the .vscode.txt file.
-
-
-    * src\src.txt
-        o Update to version of VCrayApp
-        o Indicate value of using src\
-        o Provide more links to usage as part of VCrayApp and the benefits
-          of using with Developer Command Prompts and VS Code.
-        o Provide orcmid.github.io/nfoTools location for the attribution
-        o Emphasize somewhere that VS Code and Intellisense work best when
-          src\ is used for the *.c and *.h files for the project itself.
-        o Clear/armor sign the src.txt file
+        o The establishment of .vscode folders may have changed recently.
+          Work that out and confirm or not in the web materials.
 
     * app\app.txt
-        o Update to version of VCrayApp
-        o Indicate purpose of app\
         o Explain Xcopy/Zip deployment
         o Explain setting up for command-line/shortcut execution
         o Link to additional information on Zip deployment
         o Link to additional information on MSIX deployment
         o Address single-use versus multiple-use installation
-        o Provide orcmid.github.io/nfoTools location for the attribution
-        o Clear/armor sign the app.txt file
+
 
     * cache\
-        o Update cache.txt to version of VCrayApp
-        o Indicate purpose of cache\
-        o Link to information on the compilation option files
-        o Link to explanation of the compilation steps
-        o Provide orcmid.github.io/nfoTools location for the attribution
         o Ensure that the cache components work with the version of raylib
           being used
-        o Clear/armor sign the cache.txt file
+
 
     * cache\VCrayVerCheck.c
         o Adjust version-specific information
@@ -184,6 +162,7 @@ TODO
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.* 2023-05-**        Incremental changes as the list is worked
  0.0.9 2023-05-03T15:53Z Add TODOs about documentation and CHANGES
  0.0.8 2023-03-28T20:13Z Reflect updates from 0.1.0 beta preparation
  0.0.7 2023-03-26T23:20Z Improve .vscode\ checklist
