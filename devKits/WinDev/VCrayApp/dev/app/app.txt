@@ -1,7 +1,7 @@
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA256
 
-VCrayApp 0.1.0 app.txt 0.0.13       UTF-8                          2023-04-07
+VCrayApp 0.1.0 app.txt 0.0.14       UTF-8                          2023-05-04
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                       VCRAYAPP APPLICATION-BUILD DEVKIT
@@ -24,8 +24,8 @@ VCrayApp 0.1.0 app.txt 0.0.13       UTF-8                          2023-04-07
   *    app\ folder content is amenable to delivery in a Zip file after    *
   *    copying to a separate location, removal of extraneous material     *
   *    (such as this file), and addition of supporting content needed     *
-  *    needed for the deployed result. The typical case is demonstrated   *
-  *    at <https://orcmid.github.io/nfoTools/dev/D211101/D21101c>.        *
+  *    for the deployed result. The typical case is demonstrated at       *
+  *    <https://orcmid.github.io/nfoTools/dev/D211101/D21101c>.           *
   *                                                                       *
   *    The deployed folder can also be employed for derived materials     *
   *    of the running application including user information and saved    *
@@ -63,9 +63,9 @@ MANIFEST
         files.
 
     *.exe
-        here as the compiled product (deliverable), with actual name
-        specified for the project in VCrayApp.bat or via a host script.
-        See <https://orcmid.github.io/nfoTools/dev/D211101/D211101b>.
+        here as the compiled product (deliverable), with the exe name
+        specified for compilation with the VCrayApp command.  See
+        <https://orcmid.github.io/nfoTools/dev/D211101/D211101b>.
 
     *.obj
         files that are only transient here and not part of the app package
@@ -96,11 +96,12 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. VCrayApp XCOPY/MSIX App Folder.  File app.txt version
-   0.0.13 dated 2023-04-07 clear-signed and available as a version of
+   0.0.14 dated 2023-05-04 clear-signed and available as a version of
    <https://github.com/orcmid/nfoTools/blob/master/devKits/WinDev/VCrayApp/dev/app/app.txt>.
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.14 2023-05-04T18:58Z Adjust to VCrayApp 0.1.0 command-line change
  0.0.13 2023-04-07T19:30Z Clear-signed release-candidate
  0.0.12 2023-04-07T16:55Z Completion of information for release-candidate.
  0.0.11 2023-01-14T21:18Z Adjusted for VCrayApp 0.1.0
@@ -120,7 +121,7 @@ MANIFEST
  0.0.0 2021-09-27T23:42Z placeholder for native-build intermediate materials
 
                           ***** end of app.txt *****
------BEGIN PGP SIGNATURE-----
+- -----BEGIN PGP SIGNATURE-----
 
 iQFGBAEBCAAwFiEEBNBDIpebhN4QdwM0+W6J/9RWYooFAmQwbnYSHG9yY21pZEBh
 cGFjaGUub3JnAAoJEPluif/UVmKKOIIH/1uLNrwfKSe+AVbvKjbFh8QzwJkPtq9c
@@ -130,4 +131,15 @@ bBDJQBGBUVutT6ccx3CvUr2h/ES98shlXOvgCTOnmMarwjtFc4scVgXHc3VJwFYX
 e/1qPJ2Jy/T9ajSlYBY6Jwy5VBgkMjZYcxR20Rg1o/izSsI5hpbtFABLv7R9v6zm
 hURd9ENm3Crkx6qwBPnX0vrfTWeKbAxNQ/aE9czD2Cq14ba1qyb0Kqk=
 =EBvg
+- -----END PGP SIGNATURE-----
+-----BEGIN PGP SIGNATURE-----
+
+iQFGBAEBCAAwFiEEBNBDIpebhN4QdwM0+W6J/9RWYooFAmRUANISHG9yY21pZEBh
+cGFjaGUub3JnAAoJEPluif/UVmKK5ukIAKSC/xyGo3sIIWPi27zjMWMnS/1z5iol
+kA4cEojfwV9SoXAJ8NVGBwXRvFbyhmQlQJNTNJjHLD/VdwJddy7WgcyTc7FWjzbt
+KU3skgOPUbJ8Ny1J8v57iRmt2QcNKYfyVCgiGOsbnaXzz7yUdUosEBdotPkwE7Jr
+UsfjPjFabrYbefcKz3r/6pMtLJikEGmliQqEfCYGFMqe2UcMIYu7V+FQ802ekrWl
+rldB+1R4zMT4/aXriAFO/wqA0DSWe+OXeIGzWK/hC4OBZngdp/0BYrhzR1b5bwyo
+j8Y8+PLjViujXo41ZjtvvSU5h0omuwr8WKXba7YVzHu7bnTUBruZPro=
+=6Qp8
 -----END PGP SIGNATURE-----
