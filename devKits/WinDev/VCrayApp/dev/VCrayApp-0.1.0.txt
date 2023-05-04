@@ -1,4 +1,4 @@
-VCrayApp-0.1.0.txt 0.0.9            UTF-8                         2023-02-22
+VCrayApp-0.1.0.txt 0.0.10            UTF-8                         2023-05-04
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                       NFOTOOLS DEVKIT FOR RAYLIB APPS
@@ -21,6 +21,11 @@ VCrayApp-0.1.0.txt 0.0.9            UTF-8                         2023-02-22
   *   account and follow instructions provided for the project that     *
   *   contains VCrayApp as a component.  The embedded VCrayApp should   *
   *   be maintained  only with the containing application.              *
+  *                                                                     *
+  *                              WARNING                                *
+  *                                                                     *
+  *   There are breaking changes between VCrayApp-0.1.0 and the earlier *
+  *   VCrayApp-0.0.0 (alpha).  See the accompanying CHANGES-0.1.0.txt.  *
   *                                                                     *
   *                              CAUTION                                *
   *                              *******                                *
@@ -51,10 +56,11 @@ VCrayApp-0.1.0.txt 0.0.9            UTF-8                         2023-02-22
   *    related developer tools on a Windows desktop PC, laptop or       *
   *    Microsoft Surface.                                               *
   *                                                                     *
-  *    VCRAYAPP 0.1.0 IS BEING TESTED WITH THE RAYLIB 4.0.0 SOURCE      *
+  *    VCRAYAPP 0.1.0 IS BEING TESTED WITH THE RAYLIB 4.5.0 SOURCE      *
   *    CODE.  RAYLIB 4.2.0 CANNOT BE USED BECAUSE OF A VC/C++           *
-  *    INCOMPATIBILITY.  VCRAYAPP 0.1.0 CAN ALSO BE USED WITH 3.7.0 AND *
-  *    3.5.0. CONFIRMATION WITH LATER RAYLIB RELEASES IS FUTURE WORK.   *
+  *    INCOMPATIBILITY.  VCRAYAPP 0.1.0 CAN ALSO BE USED WITH 4.0.0,    *
+  *    3.7.0, AND 3.5.0. CONFIRMATION WITH LATER RAYLIB RELEASES IS     *
+  *    FUTURE WORK.                                                     *
   *                                                                     *
   *    Ramon Santiago's raylib software is written in a clean-form of   *
   *    the C Language (C99 standard).  Use of the raylib code, include  *
@@ -139,8 +145,8 @@ EXTRACTION AND RENAMING OF VCrayApp-0.1.0.zip CONTENT
     Click "Extract".
 
     There should now be a VCrayApp-0.1.0\ sub-folder in the same folder as the
-    Zip file you extracted.  Rename that sub-folder to the name you want for
-    this VCrayApp project of yours.  This is your project folder.
+    Zip file you extracted it from.  Rename that sub-folder to the name you
+    want for this VCrayApp project of yours.  This is the new project folder.
 
 
  CONFIRMING THE VCrayApp SETUP AND OPERATION
@@ -155,20 +161,20 @@ EXTRACTION AND RENAMING OF VCrayApp-0.1.0.zip CONTENT
 
     If that succeeds, use the command
 
-        VCrayApp -c
+        VCrayApp
 
-    This will compile raylib components to the cache\ folder, compile a sample
-    program to the app\ folder, and then operate that program.  If the
-    VCrayApp.bat file has not yet been modified for your project, no other
-    compilation will occur.
+    This will compile some raylib components to the cache\ folder along with
+    some setup checks and the program VCrayConfir.exe.  That program will run,
+    confirming usability of the setup and the cache.
 
     If there are any failure messages, correct for them until this VCrayApp
     succeeds.  See <https://orcmid.github.io/nfoTools/dev/D211101> for
     additional information.
 
-    Once VCrayApp operation has been confirmed, use your text editor to
-    modify two settings in the beginning of VCrayApp.bat for your own
-    project.  No other changes are required.
+    You can now use the src\ folder of the new project for source code.
+    It will be compiled when you provide the name of your executable as a
+    parameter to VCrayApp.
+
 
 MANIFEST OF VCrayApp-0.1.0.zip
 
@@ -179,10 +185,13 @@ MANIFEST OF VCrayApp-0.1.0.zip
         This description file on organization of the archive and use of its
         materials.
 
+    CHANGES-0.1.0.txt
+
+
     VCrayApp.bat 0.0.18 10,901 byte 2022-12-31T20:30Z version
-        Script that, when run, will confirm VC/C++ command-prompt settings
-        and perform compilation of a raylib cache\ and project source codes,
-        to deliver a compiled result in app\.
+        Script that, when run, will confirm VC/C++ command-prompt settings,
+        performing compilations of a raylib cache\ as well as project source
+        codes to deliver a compiled result in app\.
 
     .vscode\                      provided for use of Visual Studio Code with
         .vscode.txt                  a .txt project synopsis and manifest for
@@ -194,10 +203,15 @@ MANIFEST OF VCrayApp-0.1.0.zip
 
     cache\
         .gitignore   used to suppress intermediate files from source control
-        cache.txt    synopsis and manifest for the cache\ folder
+        cache.txt    synopsis and manifest for the cache\ folder.  There are
+                        several "helper" files there for use of VCrayApp
+                        as part of its operation
 
     src\
         src.txt      synopsis and manifest for the src\ folder
+                        this is the recommended place for adding code for
+                        a standalone raylib project.  More-advanced cases
+                        are described on the VCrayApp web pages.
 
     The supplied text files provide further descriptions and explanations
     for usage and customization of app\, cache\ and src\.
@@ -223,12 +237,13 @@ MANIFEST OF VCrayApp-0.1.0.zip
  ATTRIBUTION
 
    Hamilton, Dennis E. Building raylib Apps with VS Developer Command Prompt.
-   nfoTools file VCrayApp-0.1.0.txt version 0.0.9 dated 2023-02-22 available
+   nfoTools file VCrayApp-0.1.0.txt version 0.0.10 dated 2023-05-04 available
    on the internet as a version of
    <https://orcmid.github.io/dev/D211101/D211101e/VCrayApp-0.0.0.txt>
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.10 2023-05-04T17:14Z Touch-ups to align with changes to VCrayApp API
  0.0.9 2023-02-22T23:40Z Final draft for VCrayApp-0.1.0
  0.0.8 2023-02-09T23:37Z Rough-draft retargeting for VcrayApp-0.1.0.
  0.0.7 2023-01-07T20:44Z Clearsigned version
