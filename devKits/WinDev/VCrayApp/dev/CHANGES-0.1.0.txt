@@ -1,4 +1,4 @@
-CHANGES-0.1.0.txt 0.0.14            UTF-8                         2023-05-03
+CHANGES-0.1.0.txt 0.0.15            UTF-8                         2023-05-04
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                        AN NFOTOOLS COMING ATTRACTION
@@ -23,7 +23,8 @@ CHANGES IN 0.1.0
 
 BREAKING: The VCrayApp.bat API has changed dramatically.  The name of the
 project exe is required on the command line before the project code will be
-compiled and optionally ran.  No modifications of VCrayApp.bat are required.
+compiled and optionally ran.  Modifications of VCrayApp.bat are no longer
+required and are definitely not recommended.
 
 IMPORTANT: With this change, VCrayApp-0.1.0 is not a simple drop-in
 replacement for VCrayApp-0.0.0.  The workflow within which VCrayApp is used
@@ -35,7 +36,7 @@ must be adjusted for the changed VCrayApp.bat command prompt API,
 Note 1: The value supplied for exe need not reflect the name of any of
 the project source files; any one (and exactly one) of those files must
 provide the external main() definition.  There may not be any spaces in the
-chosen .exe name.
+chosen .exe name.  Remember to include ".exe" in the name.
 
 Note 2: The default API src value, "src\*.c" is special.  The use of src\
 for *.c and *.h files of the project is recommended.  When explicit src
@@ -54,11 +55,12 @@ examples, see <https://orcmid.github.io/dev/D211101/D211101b>.
 NEW FEATURES
 
 VCrayApp will detect and report the version of raylib and of VS Command Prompt
-being used each time the cache is built.  There is failure checking on known
-recent releases of raylib that fail with the Microsoft VC/C++ compiler.
+being used each time the cache is built.  There is checking on known recent
+releases of raylib that fail with the Microsoft VC/C++ compiler.  Those won't
+be used.
 
 VCrayApp detects and reports when in-progress -dev versions of raylib are
-being used.
+being used, rather than recommended official releases.
 
 VCrayApp failure messages all have FAILCODE numbers and each message has links
 to details under <https://orcmid.github.io/nfoTools/dev/D211101/fails/>.
@@ -86,7 +88,7 @@ and the readiness for use of the cache with particular VC and raylib versions.
 
 Reporting by VCrayApp is abbreviated when "+" is set for embedded-operation.
 This should only be done when calling from another script that takes charge
-of setting VCrayAppHost and commanding VCrayApp.  Otherwise, there is warning.
+by setting VCrayAppHost and commanding VCrayApp.  Otherwise, there is warning.
 
 VCrayApp no longer PAUSES after a successful run, with or without execution
 of any code.
@@ -129,12 +131,10 @@ script.  On any FAILCODE, VCrayApp does force EXIT.
  ATTRIBUTION
 
    Hamilton, Dennis E. Changes Made for VCrayApp 0.1.0.  nfoTools text file
-   version 0.0.14 dated 2023-05-03, available on the Internet as a version of
+   version 0.0.15 dated 2023-05-04, available on the Internet as a version of
    <https://orcmid.github.io/nfoTools/dev/D211101/D211101e/CHANGES-0.1.0.txt>
 
 TODO
-
- * Reflect improvements, especially addition of links, in the usability.
 
  * Include CHANGES-0.1.0.txt in the delivered Zip.
 
@@ -146,6 +146,7 @@ TODO
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.15 2023-05-04T16:38Z Touch-ups
  0.0.14 2023-05-03T16:46Z Adjust for the new VCrayApp-0.1.0 API.
  0.0.12 2023-04-28T19:19Z Touch-ups
  0.0.12 2023-04-17T16:32Z More information on failures and cache rebuilding
