@@ -1,4 +1,4 @@
-games.txt 0.0.6                     UTF-8                         2023-02-17
+games.txt 0.0.7                     UTF-8                         2023-05-05
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -48,7 +48,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. nfoTools Project Games.  nfoTools file docs/games.txt
-   version 0.0.6 dated 2023-02-17, available on the Internet as a version of
+   version 0.0.7 dated 2023-05-05, available on the Internet as a version of
    <https://orcmid.github.io/nfoTools/games/games.txt>
 
 TODO
@@ -137,10 +137,19 @@ TODO
  * And for mixed-reality, including iOS ARKit and Android ARCore, with Azure
    <https://learn.microsoft.com/en-us/azure/spatial-anchors/overview>
 
+ * I need to get more clear at promoting things that I have experience with.
+   I can mention other sources but make it clear they are not endorsements.
+
+ * <https://www.gamedev.tv/> is a good resource, but not recommended for
+   learning a programming language.  I recommend teething on programming
+   languages with very simple (e.g., command-line) games.  The progression
+   that Adv10 is part of could be informative but it is a bit large.
+
 
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.7 2023-05-05T19:02Z More about gamedev.tv, with caution
  0.0.6 2023-02-17T21:38Z More Links
  0.0.5 2022-12-27T17:49Z Add more connections and my interest in computer
        chess games

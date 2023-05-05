@@ -1,4 +1,4 @@
-T060101.txt 0.0.11                  UTF-8                          2023-03-05
+T060101.txt 0.0.12                  UTF-8                          2023-05-05
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -44,7 +44,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. T060101: C/C++ Programming.  nfoTools project text
-   file T060101.txt version 0.0.11 dated 2023-03-05, available on the
+   file T060101.txt version 0.0.12 dated 2023-05-05, available on the
    Internet as a version of
    <https://orcmid.github.io/nfoTools/tools/T060101/T060101.txt>
 
@@ -181,9 +181,16 @@ TODO
   * Here's a general question about choosing first programming languages,
     <https://www.codecademy.com/resources/blog/why-you-cant-choose-the-wrong-programming-language-when-you-first-start/>
 
+ * <https://www.gamedev.tv/> is a good resource, but not recommended for
+   learning a programming language.  I recommend teething on programming
+   languages with very simple (e.g., command-line) games.  The progression
+   that Adv10 is part of could be informative but it is a bit large.  The
+   possibility here, and on Udemy, elsewhere, needs to be mentioned but with
+   cautionary remarks.
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.12 2023-05-05T19:07Z Add cautionary note about gamedev.tv and Udemy too.
  0.0.11 2023-03-05T17:51Z Add notes about C non-subsetting C++.
  0.0.10 2023-02-14T01:07Z More TODOs, sources on other ideas than C/C++.
  0.0.9 2023-02-06T05:25Z Change rules, small touch-ups
