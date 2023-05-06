@@ -1,4 +1,4 @@
-D211101.txt 0.0.20                   UTF-8                         2023-05-06
+D211101.txt 0.0.21                   UTF-8                         2023-05-06
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -22,15 +22,16 @@ MANIFEST
      D211101.txt    this manifest and job-jar file
 
        index.md     the web front page to this D211101 folio.
-    D211101a/       VCrayApp Setup
-    D211101b/       VCrayApp Operation
-    D211101c/       VCrayApp Verification/Deployment Lifecycle
+           a/       D211101a: VCrayApp Setup
+           b/       D211101b: VCrayApp Operation
+           c/       D211101c: VCrayApp Verification/Deployment Lifecycle
 
-    D211101d/       VCrayApp 0.0.0 (alpha)
-    D211101e/       VCrayApp 0.1.0 (beta)
+           d/       D211101d: VCrayApp 0.0.0 (alpha)
+           e/       D211101e: VCrayApp 0.1.0 (beta)
 
-    fails/          explanations of the VCrayApp failure codes, how to
-                    troubleshoot them, how to track down difficulties
+           f/       D211101f: VCrayApp Failure Codes
+
+    D211101d/       tombstone at former location of D211101d.
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
@@ -53,7 +54,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. VCrayApp: VC/C++ Command-Line raylib App devKit.
-   nfoTools development text file D211101.txt version 0.0.20 dated 2023-05-06,
+   nfoTools development text file D211101.txt version 0.0.21 dated 2023-05-06,
    available on the Internet as a version of
    <https://orcmid.github.io/nfoTools/dev/D211101/D211101.txt>
 
@@ -159,6 +160,7 @@ TODO
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.21
  0.0.20 2023-05-06T18:52Z TODOs on Folio restructuring
  0.0.19 2023-04-30T17:22Z More TODO cleanup and document touch-ups
  0.0.18 2023-04-29T19:13Z TODO touch-ups
