@@ -1,4 +1,4 @@
-<!-- index.md 0.0.16                UTF-8                          2023-04-30
+<!-- index.md 0.0.17                UTF-8                          2023-05-06
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                VCRAYAPP: VC/C++ COMMAND-LINE RAYLIB APP DEVKIT
@@ -6,7 +6,7 @@
 
 # [VCrayApp: VC/C++ Command-Line raylib App DevKit](.)
 
-| ***[nfoTools](../../)*** | [dev](../)[>D211101](.) | ***[index.html](index.html) 0.0.16 2023-04-30*** |
+| ***[nfoTools](../../)*** | [dev](../)[>D211101](.) | ***[index.html](index.html) 0.0.17 2023-05-06*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../../images/hardhat-logo.gif) |
 
@@ -179,7 +179,7 @@ testing and confirmation with the same program that is provided to users
 along with built-in troubleshooting support as needed.  There are additional
 tips in the available materials.
 
-## 4. Available Materials
+## 3. Available Materials
 
 | **ID** | **Started** | **Status** | **Topic** |
 |   :-:   |   :-:   |  :-:   |  ---  |
@@ -189,14 +189,14 @@ tips in the available materials.
 |                       |            |                  |     |
 | [D211101d](D211101d/) | 2022-10-26 | 0.0.8 2023-03-30 | VCrayApp 0.0.0 (alpha)
 
-## 5. Development
+## 4. Development
 
 Development within the GitHub
 [orcmid/nfoTools](https://github.com/orcmid/nfoTools) project is at the
 [devKits/WinDev/VCrayApp](https://github.com/orcmid/nfoTools/tree/master/devKits/WinDev/VCrayApp)
 main branch.
 
-### 5.1 Principles
+### 4.1 Principles
 
 * Operation with freely-available and free-to-use development tools.
 * Safe for novice developers and others keen to develop games and graphical
@@ -206,7 +206,7 @@ main branch.
 * Sufficient for expert incorporation inside more-elaborate construction sets.
 * Designed for confirmation of operation and confident employment.
 
-### 5.2 Plan
+### 4.2 Plan
 
 * Develop VCrayApp on GitHub as part of the nfoTools project.
 * Provide pilot demonstration in confirmation of raylib examples.
@@ -229,6 +229,7 @@ from time to time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.17 2023-05-06T15:47Z Correct section numbering
      0.0.16 2023-04-30T17:42Z More Touch-ups
      0.0.15 2023-04-29T19:44Z Staging for 0.1.0 release
      0.0.14 2023-03-30T18:58Z Reflect D211101d 0.0.8
