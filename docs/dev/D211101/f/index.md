@@ -1,16 +1,16 @@
-<!-- index.md 0.0.6                 UTF-8                          2023-04-21
+<!-- index.md 0.0.7                 UTF-8                          2023-05-06
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                          VCRAYAPP FAILCODE MESSAGES
      -->
 
-# ***VCrayApp** [FAILCODE MESSAGES](.)*
+# ***D211101f** [VCrayApp FAILCODE MESSAGES](.)*
 
-| ***[nfoTools](../../../)*** | [dev](../../)[>D211101](../)[>fails](.) | [index.html](index.html) ***0.0.6 2023-04-21*** |
+| ***[nfoTools](../../../)*** | [dev](../../)[>D211101](../)[>f](.) | [index.html](index.html) ***0.0.7 2023-05-06*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../../../images/hardhat-logo.gif) |
 |              |                     |           |
-| This Version | as of VCrayApp 0.1.0 beta release | [D211101e](../D211101e) |
+| This Version | as of VCrayApp 0.1.0 beta release | [D211101e](../e) |
 
 This material is provided to supplement VCrayApp **FAILCODE***n* messages from
 `VCrayApp.bat` starting with VCrayApp-0.1.0. FAILCODEs are not reused.
@@ -44,7 +44,7 @@ application.
 | [:FAIL8](FAIL8) | FAILCODE8: RAYLIB %VCRAYVER% NOT SUPPORTED |
 
 The labels are where the message is produced in `VCrayApp.bat` code.  All
-the references to them can be found by searching that file.
+the references to them can be found by searching the `VCrayApp.bat` file.
 
 ----
 
@@ -58,6 +58,7 @@ from time to time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.7 2023-05-06T22:47Z Transpose from D211101/fails 0.0.6
      0.0.6 2023-04-21T16:38Z Touch-ups and connection of FAIL6-FAIL8
      0.0.5 2023-04-17T16:15Z Connect FAIL4-FAIL5
      0.0.4 2023-04-12T20:54Z Connect FAIL3
@@ -66,5 +67,5 @@ from time to time.
      0.0.1 2023-04-09T20:00Z Connect FAIL0
      0.0.0 2023-04-09T17:41Z Create Initial Placeholder from D211101d 0.0.8
 
-                    *** end D211101/fails/index.md ***
+                     *** end D211101/f/index.md ***
      -->

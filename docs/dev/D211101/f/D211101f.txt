@@ -1,25 +1,27 @@
-fails.txt 0.0.14                     UTF-8                         2023-04-23
+D211101f.txt 0.0.15                 UTF-8                         2023-05-06
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
                         nfoWare/nfoWorks nfoTools
                         =========================
 
-<https://github.com/orcmid/nfoTools/blob/master/docs/dev/D211101/fails/fails.txt>
-        <https://orcmid.github.io/nfoTools/dev/D211101/fails/fails.txt>
+     <https://orcmid.github.io/nfoTools/dev/D211101/f/D211101f.txt>
 
-                 VCRAYAPP: FAILURE-MESSAGE EXPLANATIONS
-                 --------------------------------------
+            D211101F: VCRAYAPP FAILURE-MESSAGE EXPLANATIONS
+            -----------------------------------------------
 
-VCrayApp consists of a Zip package for a software construction set to simplify
-command-line compiling of C/C++ language programs using Microsoft Windows
-developer tools and the raysan5/raylib library for graphical applications.
-VCrayApp is delivered in a form that can be confirmed for correct
-operation before customization as part of a specific project.
+   VCrayApp.bat produces a variety of identified FAILCODEs.  This folder
+   provides individual explanations and guidance that are reached by links
+   in VCrayApp.bat messages.
+
+   The folders of FAILCODE explanations do not follow the folio accession-
+   numbering system.  It is more important that simple links are provided
+   in the references from VCrayApp.bat messages.
 
 MANIFEST
 
-        fails.txt  this manifest and job-jar file
+     D211101f.txt  this manifest and job-jar file
+        index.md   web page of the FAILCODE catalog
         FAIL0\     FAILCODE0: COMMAND SHELL EXTENSIONS REQUIRED
         FAIL1\     FAILCODE1: INCORRECT VCrayApp FILES CONFIGURATION
         FAIL2\     FAILCODE2: UNSUPPORTED VCRAYAPP.BAT PARAMETERS
@@ -29,7 +31,6 @@ MANIFEST
         FAIL6\     FAILCODE6: RAYLIB NOT FOUND WHERE EXPECTED
         FAIL7\     FAILCODE7: RAYLIB VERSION NOT > 3.0.0
         FAIL8\     FAILCODE8: RAYLIB %VCRAYVER% NOT SUPPORTED
-
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
@@ -51,10 +52,10 @@ MANIFEST
 
  ATTRIBUTION
 
-   Hamilton, Dennis E. VCrayApp: Failure-Message Explanations.  nfoTools
-   development text file fails.txt version 0.0.14 dated 2023-04-23,
-   available on the Internet as a version of
-   <https://orcmid.github.io/nfoTools/dev/D211101/fails/fails.txt>
+   Hamilton, Dennis E. D211101f: VCrayApp Failure-Message Explanations.
+   nfoTools development text file D211101f.txt version 0.0.15 dated
+   2023-05-06 available on the Internet as a version of
+   <https://orcmid.github.io/nfoTools/dev/D211101/f/D211101f.txt>
 
 TODO
 
@@ -93,9 +94,23 @@ TODO
    raylib version, and then compiling of the cache and a confirmation program
    relying on that cache.
 
+ * Adjust the individual FAIL folders to account for the renamings in the
+   D211101 folder structure. The images must be replaced with ones from the
+   updated VCrayApp-0.1.0 VCrayApp.bat operation.
+
+     o FAIL0
+     o FAIL1
+     o FAIL2
+     o FAIL3
+     o FAIL4
+     o FAIL5
+     o FAIL6
+     o FAIL7
+     o FAIL8
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.15 2023-05-06T22:41Z Transpose from 0.0.14 fails.txt with related TODOs
  0.0.14 2023-04-23T20:04Z Bring current
  0.0.13 2023-04-22T18:38Z Cleanup TODOs
  0.0.12 2023-04-22T16:06Z Manage TODOs, continue drafts and proofing
@@ -112,4 +127,4 @@ TODO
  0.0.1 2023-04-09T19:17Z Expand manifest to include FAIL0\-FAIL8\
  0.0.0 2023-04-07T15:48Z placeholder cloned from D211101.txt 0.0.15
 
-                       ***** end of fails.txt *****
+                    ***** end of D211101f.txt *****
