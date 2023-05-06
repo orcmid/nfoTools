@@ -1,4 +1,4 @@
-dev.txt 0.0.12                      UTF-8                          2023-04-11
+dev.txt 0.0.13                      UTF-8                          2023-05-06
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -62,7 +62,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. nfoTools Development Notebook.  nfoTools project text
-   file dev.txt version 0.0.12 dated 2023-04-11, available on the Internet
+   file dev.txt version 0.0.13 dated 2023-05-06, available on the Internet
    as a version of <https://orcmid.github.io/nfoTools/dev/dev.txt>
 
 TODO
@@ -91,9 +91,16 @@ TODO
 
  * Redo the Usage and use an actual 0.1.0 result.
 
+ * Restructure dev/ folders to the revised nesting convention
+   o D161101
+   o D211101
+   o D230202
+   o D230501
+
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.13 2023-05-06T18:41Z Restructing folio nest TODOs
  0.0.12 2023-04-11T23:56Z Manage TODOs
  0.0.11 2023-02-18T17:40Z Add D230202
  0.0.10 2023-02-16T05:59Z Touch-up rulers, manage TODOs
