@@ -6,220 +6,80 @@
 
 # [D230501: VCrayMathStudio: raymath Exploration Devkit](.)
 
-| ***[nfoTools](../../)*** | [dev](../)[>D230501](.) | ***[index.html](index.html) 0.0.0 2023-05-05*** |
+| ***[nfoTools](../../)*** | [dev](../)[>D230501](.) | ***[index.html](index.html) 0.0.1 2023-05-06*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../../images/hardhat-logo.gif) |
 
-## BOILERPLATE BELOW HERE
+## 1. Synopsis
 
-----
+VCrayMathStudio is a suite of examples, tutorial explanations, and a variety
+of demonstration programs for celebrating the carefully-crafted
+[ raymath.h](https://github.com/raysan5/raylib/blob/master/src/raylib.h)
+portion of [Ramon Santamaria's raylib library](https://www.raylib.com/) for
+constructing graphical software.
 
-VCrayApp is a project-folder organization that is useful for creating
-Microsoft Windows programs using the
-[`raysan5/raylib`](https://www.raylib.com/) library for graphical
-applications.
+The objective is to be instructive and to illuminate the careful crafting of
+`raymath.h` and the ways to make use of it as part of impressive computer
+graphics applications.
 
-Initial VCrayApp project-folder setup includes confirmation of correct
-operation that can then be confidently customized for a new project.
+VCrayMathStudio uses [VCrayApp](../D211101/) for compilation and demonstration
+of exploratory programs; some operated from the
+[ command line](https://orcmid.github.io/nfoTools/tools/T060501/) and others
+performed as raylib graphical applications.  The Microsoft VC/C++ compiler and
+[Visual Studio Build Tools](https://orcmid.github.io/nfoTools/tools/T211002/)
+are used throughout.  The assumed platform is an x64 Windows desktop PC.
+These specific selections provide for consistent, clear-cut results.
 
-## 1. Overview
-
-VCrayApp provides compilation of raylib apps using the Microsoft Visual
-C/C++ command-line compiler, `CL.exe`, along with other freely-available
-developer tools, including others from Microsoft.
-
-If VCrayApp is found incorporated in a larger project, check for any
-custom instructions that apply to specific usage in that project.
-
-### 1.1 Project Files Organization
-
-The expected setup for a VCrayApp-organized project of your own is with the
-following folder structure (since VCrayApp-0.1.0):
-
-```text
-    your-development-files-location\
-     |- raylib\                   // folder where raylib release *source* is
-     :  ...                       //    extracted
-     |- VCrayApp-*semver*.zip     // at the same level, same drive as raylib\
-     |- YOUR-PROJECT-FOLDER\      // unzipped VCrayApp-*semver*-folder-renamed
-         |- .vscode\              // suggested .vscode settings
-         |- app\                  // folder your App is compiled to
-         |- cache\                // folder of VCrayApp resources and cached
-         |                        //    raylib components
-         |- src\                  // recommended location for your source-code
-         |                        //    *.c files and header/include files
-         |- NOTICE.txt            // licensing and origin of the content
-         |                        //    from VCrayApp-*semver*.zip itself
-         |- CHANGES-*semver*.txt  // changes from any earlier versions
-         |- VCrayApp.bat          // the batch script for compiling your app
-         |- VCrayApp-*semver*.txt // *semver* version synopsis and manifest
-
-```
-
-[Semantic versioning](https://semver.org/) is used.  E.g., the Alpha release
-had *semver* 0.0.0 and was packaged in `VCrayApp-0.0.0.zip`.  Starting with
-*semver* 1.0.0 further breaking changes will require a change at the major
-level, with feature additions at 1.*x*.0 levels and fixes at 1.*x*.*y* levels.
-The subfolders, `.vscode`, `app\`, `cache\` and `src\` include explanatory
-`*.txt` files with regard to the VCrayApp purpose for them.
-
-It is recommended that  `src\` be for your own source code and `app\` include
-any resources that will be distributed with and accessed by the compiled
-`.exe`.
-
-Code examples, other projects, and related tutorials will further demonstrate
-the VCrayApp arrangement.
-
-Details of this organization and structure of the individual
-subfolders is provided in [D211101a: VCrayApp Setup](D211101a).
-
-### 1.2 VCrayApp.bat
-
-Builds of your VCrayApp project's code are by performing `VCrayApp.bat` from
-a developer command prompt.  The `.bat` script will report progress through
-build stages and also provide diagnostic messages concerning any failures
-that occur in the `.bat` operation.
-
-On initial operation of VCrayApp, `VCrayApp.bat` will verify the setup,
-compile raylib components into `cache`, and then demonstrate operation by
-compiling and operating program `VCrayConfirm`.  This procedure will be
-performed each time the cache is rebuilt as well as after any failure in
-having a working cache of raylib components.
-
-After installation and operation is confirmed, `VCrayApp.bat`
-**must be modified** to be used for a stand-alone project.  The name of the
-projects executable file must be inserted in `VCrayApp.bat`.  VCrayApp
-messages and the initial lines of `VCrayApp.bat` direct the modifications.
-
-Performing command "`VCrayApp ?`" from a developer command prompt focused on
-your project folder will provide usage information.
-
-```text
-   _______________________________________________________________
-  | USAGE: VCrayApp [+] ?                                         |
-  |       VCrayApp [+] [*] [-c] [-r]                              |
-  | where  ? produces this usage information.                     |
-  |        + for operating non-stop without any screen clearing   |
-  |          and pausing.  Good for use called as a helper.       |
-  |        * selects terse output.  If operation fails, repeat    |
-  |          without this option for more details.                |
-  |       -c for a complete rebuild of any cache                  |
-  |       -r for running the app on successful build              |
-  |                                                               |
-  |  Exit code 0 is produced on all successful operations.        |
-  |  Exit codes greater than 1 are produced for any failure.      |
-  |_______________________________________________________________|
-```
-
-Without any parameters, `VCrayApp.bat` will provide a verbose
-compilation of the app after building any needed cache.  This is recommended
-to develop a sense of the stages and their details until predictable
-operation is confirmed.
-
-A successful compile of your source code will provide an executable in the
-`app\` subfolder for operation along with whatever assets that have been
-placed there.  It is possible to deploy a successfully-built application from
- `app\`.
-
-Further details of VCrayApp operation are provided in
-[D211101b: VCrayApp Operation](D211101b).
+Using these studies for explorations of variations on other platforms is
+invited.  Accounting for platform and compiling variations is out of scope
+for VCrayMathStudio.
 
 ## 2. Prerequisites and Dependencies
 
-**NOTE:** Current materials are now at the *alpha* level, with the
-[VCrayApp 0.0.0](D211101d) release.  There is incomplete supporting material.
-This will change with progressive improvements in the next weeks until the
-*beta* release is feasible. The *beta* will be accompanied by more support for
-novice developers, including demonstration of raylib examples.
+**NOTE:** Current materials are now at the *alpha* level.  There is incomplete
+material.  This will change with progressive improvements until a
+*beta* level is feasible. The *beta* level will have expanded coverage
+suitable for novice developers and those who are curious about how mathematics
+and numerical analysis are important in computer graphics.
 
-For novice developers, the creation of raylib applications can be carried out
-by compiling the many available `raylib\examples` and finding additional
-explanations for the minimum prerequisites.  For self-study, other resources
-should be used to develop familiarity and confidence in the tools to be
-mastered.
+Although the narratives and examples are intended to be informative on their
+own, inspection of the illustrative programs and duplicating them for
+individual purposes will require successful use of [VCrayApp](../D211101/).
 
-***SUCCESSFUL USE OF VCrayAPP REQUIRES CONFIDENT USE OF C LANGUAGE AND A
-C/C++ LANGUAGE COMPILER*** for creation of clean programs involving source
-files, include files, and the interfaces (APIs) of standard libraries as well
-as the special-purpose raylib libraries.  For more on C Language see
-[T060101: C/C++ Programming](https://orcmid.github.io/nfoTools/tools/T060101/).
-
-It is assumed that Microsoft Windows 7 Professional or later are used.
-Thorough VCrayApp testing is with Microsoft Windows 10 latest versions.
-
-Development with VCrayApp and illustration of usage involves the following
-tools along with confident use of C Language:
-
-* Windows File Explorer
-* Windows Built-in Zip-Folder Tool
-* [Visual Studio Native Build Tools](https://orcmid.github.io/nfoTools/tools/T211002/)
-* [Developer Command Prompt](https://orcmid.github.io/nfoTools/tools/T060501/)
-* VC/C++ Command Line Compiler, `CL.exe`
-* raylib *source* code *release* downloaded, unzipped, and renamed `raylib\`
-* a text editor for editing of project files (Visual Studio Code recommended)
-
-----
-
-* Git4Win implementation for source-code control and backup
-* TortoiseGit for File Explorer integration of Git
-* GitHub Windows Client for public access to your and other development
-  projects
-* GPG4Win for creation and verification of digital signatures
-
-The first seven are essential.  The remainder or equivalents are recommended.
-For further details on dependencies, see
-[VCrayApp Setup](D211101a/) and [VCrayApp Operation](D211101b/).  Additional
-usage of VCrayApp is covered with
-[VCrayApp Verification/Deployment Lifecycle](D211101c).
-
-VCrayApp is designed to work with versions of Visual Studio that are free
-for personal use, including the Visual Studio Build Tools (recommended)
-and the Visual Studio Community editions.  Additional levels of Visual
-Studio can also be used, all via their Native Tools Command Prompt.
-
-No use is made of Visual Studio projects, solutions, and the conventional
-separation of debug and release builds.  With nfoTools, emphasis is on
-testing and confirmation with the same program that is provided to users
-along with built-in troubleshooting support as needed.  There are additional
-tips in the available materials.
-
-## 4. Available Materials
+## 3. Available Materials
 
 | **ID** | **Started** | **Status** | **Topic** |
 |   :-:   |   :-:   |  :-:   |  ---  |
-| [D211101a](D211101a/) | 2022-08-18 | placeholder | VCrayApp Setup |
-| [D211101b](D211101b/) | 2022-08-18 | placeholder | VCrayApp Operation |
-| [D211101c](D211101c/) | 2022-08-21 | placeholder | VCrayApp Verification/Deployment Lifecycle |
 |                       |            |                  |     |
-| [D211101d](D211101d/) | 2022-10-26 | 0.0.8 2023-03-30 | VCrayApp 0.0.0 (alpha)
+| (none) | (not yet) | placeholder | something
 
-## 5. Development
+## 4. Development
 
 Development within the GitHub
 [orcmid/nfoTools](https://github.com/orcmid/nfoTools) project is at the
-[devKits/WinDev/VCrayApp](https://github.com/orcmid/nfoTools/tree/master/devKits/WinDev/VCrayApp)
-main branch.
+[devKits/WinDev/VCrayMathStudio](https://github.com/orcmid/nfoTools/tree/master/devKits/WinDev/VCrayMathStudio)
+on the main branch.
 
-### 5.1 Principles
+### 4.1 Principles
 
 * Operation with freely-available and free-to-use development tools.
-* Safe for novice developers and others keen to develop games and graphical
-  applications on native Windows.
-* Simple manual instructions for free-standing use and for incorporation
-  in projects designed for novice and advanced usage.
-* Sufficient for expert incorporation inside more-elaborate construction sets.
-* Designed for confirmation of operation and confident employment.
+* Safe for novice developers and others keen to explore the numerical and
+ mathematical techniques applicable in the programming of computer graphics
+* Simple standalone creation and use of illustrative materials demonstrated
+in mini-projects worked out using native Windows programs.
+* Fostering understanding and application of raymath functions in creation of
+raylib-based computer graphics.
 
-### 5.2 Plan
+ ### 4.2 Plan
 
-* Develop VCrayApp on GitHub as part of the nfoTools project.
-* Provide pilot demonstration in confirmation of raylib examples.
-* Release alpha and beta versions for confirmation and early-adopter trial.
-* Include confirmation materials and approaches.
-* Deal with levels of prerequisite and progressive disclosure.
-* Address life-cycle issues with respect to VCrayApp and interdependency with
-  raylib releases.
-* Address usage with raylib work-in-progress for raylib contributors.
+* Use a spiraling development for gathering together related functions and
+covering them, lower-level functions first.  Populate progressively.
+* Construct a topic-based catalog of the raymath functions, organized around
+the grouping of capabilities and their application in numerical work
+supporting computer graphics.
+* Construct an alphabetical index of the functions and where there are
+applied as demonstrations and explanations are introduced.
+* Update continuously, building out the coverage and responding to feedback.
 
 ----
 
@@ -233,7 +93,8 @@ from time to time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-     0.0.0 2023-05-05T23:58 Placeholder with D211101/index.md 0.0.16
+     0.0.1 2023-05-06T21:54Z Initial sketch
+     0.0.0 2023-05-05T23:58Z Placeholder with D211101/index.md 0.0.16
            boilerplate
 
                  *** end of docs/dev/D230501/index.md ***

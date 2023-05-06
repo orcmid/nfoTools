@@ -1,4 +1,4 @@
-D230501.txt 0.0.0                   UTF-8                         2023-05-05
+D230501.txt 0.0.1                   UTF-8                         2023-05-06
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -11,11 +11,17 @@ D230501.txt 0.0.0                   UTF-8                         2023-05-05
              VCraymathStudio raymath Exploration Devkit
              ------------------------------------------
 
-VCrayApp consists of a Zip package for a software construction set to simplify
-command-line compiling of C/C++ language programs using Microsoft Windows
-developer tools and the raysan5/raylib library for graphical applications.
-VCrayApp is delivered in a form that can be confirmed for correct
-operation before customization as part of a specific project.
+VCrayMathStudio is a suite of examples, tutorial explanations, and a variety
+of demonstration programs for celebrating the carefully-crafted raymath.h
+portion of the raylib source code.
+
+VCrayMath uses VCrayApp for compilation and demonstration of exploratory
+programs, some operating from the command line and others as raylib graphical
+applications.
+
+The objective is to be instructive and to illuminate the careful crafting of
+raylib.h and the ways to make use of it as part of impressive computer
+graphics applications.
 
 MANIFEST
 
@@ -45,7 +51,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. VCrayMathStudio raymath Exploration Devkit.  nfoTools
-   nfoTools development text file D230501.txt version 0.0.0 dated 2023-05-05,
+   nfoTools development text file D230501.txt version 0.0.1 dated 2023-05-06,
    available on the Internet as a version of
    <https://orcmid.github.io/nfoTools/dev/D230501/D30501.txt>
 
@@ -70,9 +76,19 @@ TODO
    on the code elements in devKits\WinDev\VCrayMathStudio\.  There needs to
    be an useful correspondence.
 
+ * D230501a should be a catalog of functions by topics.  There might also
+   need to be an alphabetic index of the functions and maybe how they are
+   emphasized within particular illustrations.
+
+  * (From docs.txt) There need to be dev/, skills/, and tools/ around
+    Numerical Analysis and all the techniques for high-performance computing,
+    graphical computations, etc.  The contributions and historical position of
+    Turing Award recipients needs to be acknowledge around here also.  This
+    project for VCrayMathStudio can serve some of this.
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.1 2023-05-06T14:36Z Initial synopsis, manifest, and kick-off TODOs
  0.0.0 2023-05-05T23:54Z Placeholder derived from D211101.txt 0.0.19
 
 
