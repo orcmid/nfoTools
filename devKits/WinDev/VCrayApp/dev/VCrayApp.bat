@@ -1,5 +1,5 @@
 @echo off
-rem VCrayApp 0.1.0 VCrayApp.bat 0.0.61 UTF-8                       2023-05-03
+rem VCrayApp 0.1.0 VCrayApp.bat 0.0.62 UTF-8                       2023-05-06
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 rem                  BUILDING RAYLIB APP WITH VC/C++ TOOLS
@@ -387,7 +387,7 @@ GOTO :BAIL
 
 :USAGE
 rem    PROVIDE USAGE INFORMATION
-ECHO:   USAGE: VCrayApp [+] ?
+ECHO:   USAGE: VCrayApp [+] ?                            VCrayApp-%VCRAYAPP%
 ECHO:          VCrayApp [+] [*] [-c] [[-r] exe [src]]
 IF NOT "%1" == "?" GOTO :BAIL
 ECHO:   where  ? produces this usage information.
@@ -451,6 +451,7 @@ rem For additional information, see the accompanying NOTICE.txt file.
 rem
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 rem
+rem 0.0.62 2023-05-06T00:22Z Add VCrayApp Version to Usage Information
 rem 0.0.61 2023-05-03T04:33Z MAJOR REORGANIZATION AND USAGE CHANGES
 rem 0.0.60 2023-04-23T20:24Z Always give verbose FAILCODE6 report
 rem 0.0.59 2023-04-21T22:41Z Improve FAILCODE6-FAILCODE8 reporting
