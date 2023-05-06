@@ -1,13 +1,13 @@
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA256
 
-NOTICE.txt 1.0.4                      UTF-8                       2023-04-05
+NOTICE.txt 1.0.5                      UTF-8                       2023-05-06
 
                                  VCrayApp NOTICE
                                 =================
 
 This work is licensed to you under the Apache License, Version 2.0 (the
-"License"; you may not use this work except in compliance with the License.
+"License"); you may not use this work except in compliance with the License.
 You may obtain a copy of the license at
 
     <http://www.apache.org/licenses/LICENSE-2.0>.
@@ -31,7 +31,8 @@ THIRD-PARTY ACKNOWLEDGMENT
 INFORMAL SUMMARY
 
     This notification applies only to the materials distributed in the
-    VCrayApp-0.1.0.zip package and not to any content from other sources.
+    VCrayApp-0.1.0.zip package and not to any content from other sources
+    apart from the unzipped materials.
 
     You can use and redistribute releases of VCrayApp without limitation.
     If you modify and/or incorporate VCrayApp in a distribution of your own,
@@ -48,12 +49,12 @@ INFORMAL SUMMARY
                      *** end of VCrayApp NOTICE.txt ***
 -----BEGIN PGP SIGNATURE-----
 
-iQFGBAEBCAAwFiEEBNBDIpebhN4QdwM0+W6J/9RWYooFAmQtqqkSHG9yY21pZEBh
-cGFjaGUub3JnAAoJEPluif/UVmKK6TcH/RkNyQGxhObPWgqWJvr/9LgqMvPVPsfG
-iGQC0GnrMNGzfpVCnpn24SK4MYkd/jhbCpQQsHXt9XsvHffJjaKTOdf8GqLGEvys
-xKQiIsOnKyB/UTEKXaCBqePVfzZ4J+zShDEsAAV50d6Un0jP3oFzlSmXzP6wnpHX
-VxzvjTpDIZtC0s0qyfXwN0uWuhTP9KZ5WVa3PeqPxbPHeEYwE5P6Qf6PZgKhjZYh
-k8q8otw/Lza70a4PGWl59IxuSsO7OeIAWwt3iZJh5S4LlsggZcl77fH2/uXQbao+
-DsXsGGA247azILPaOIJYVlYq2XdvUvBMxw2LrlVhqbGoNpQ9EckT9Kw=
-=WzzI
+iQFGBAEBCAAwFiEEBNBDIpebhN4QdwM0+W6J/9RWYooFAmRVopASHG9yY21pZEBh
+cGFjaGUub3JnAAoJEPluif/UVmKKlRgH/2M719e8t66Rsj31+aa32Vgo2JlxK8WH
+5zKW7lKKh5X9egbpvfdzjBxO9l40lVxjffB5dw/hPC4k/8KqHeB6exDo46drkymd
+UnDMu1pEAtchdgp0Iy3BHR6ZCWIazNzmbvayoHo4ayDRSOA/EjtNm9YPn8YdhLWo
+VR2Wh2DJtmzXwixnM06n351+/HciT3CVwyyd9MJ88NNrpQ0w1n76fCdUZLyUeUlm
+aHrumJsVF4D7qbh4Y7bgWPsyUFULiKB5q3Lsax3+SujnhYTAnyk1sjBOYZ+G54H7
+Naoffy3EBZkYgdIFJlMLhVQcINtX4imxdwjrO4ciPfTMnxiyFnQrSdU=
+=jWUm
 -----END PGP SIGNATURE-----
