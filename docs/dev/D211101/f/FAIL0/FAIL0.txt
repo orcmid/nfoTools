@@ -1,11 +1,11 @@
-FAIL0.txt 0.0.4                     UTF-8                         2023-04-12
+FAIL0.txt 0.0.5                     UTF-8                         2023-05-07
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
                         nfoWare/nfoWorks nfoTools
                         =========================
 
-  <https://orcmid.github.io/nfoTools/dev/D211101/fails/FAIL0/FAIL0.txt>
+  <https://orcmid.github.io/nfoTools/dev/D211101/f/FAIL0/FAIL0.txt>
 
          VCRAYAPP FAILCODE0: COMMAND SHELL EXTENSIONS REQUIRED
          -----------------------------------------------------
@@ -46,9 +46,9 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. VCrayApp FAILCODE0: COMMAND SHELL EXTENSIONS REQUIRED.
-   nfoTools development text file fails.txt version 0.0.4 dated 2023-04-12,
+   nfoTools development text file fails.txt version 0.0.5 dated 2023-05-07,
    available on the Internet as a version of
-   <https://orcmid.github.io/nfoTools/dev/D211101/fails/FAIL0/FAIL0.txt>
+   <https://orcmid.github.io/nfoTools/dev/D211101/f/FAIL0/FAIL0.txt>
 
 TODO
 
@@ -56,6 +56,7 @@ TODO
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
+ 0.0.5 2023-05-07T19:34Z Transpose for new location under D211101f.
  0.0.4 2023-04-12T15:52Z Replace the image, clear TODOs
  0.0.3 2023-04-12T00:02Z More TODOs
  0.0.2 2023-04-10T17:58Z Clear TODOs

@@ -1,4 +1,4 @@
-D211101.txt 0.0.23                   UTF-8                         2023-05-07
+D211101.txt 0.0.24                   UTF-8                         2023-05-07
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -157,15 +157,9 @@ TODO
  * The creation of shortcuts and customized properties for the Developer
    Command Prompt needs to be introduced in some manner.
 
- * Revise the Folio Structure for each of the subfolders
-
-   fails\    becomes f\ and this must be reconciled in VCrayApp-0.1.0 FAILs
-
-   The point of all this is to have shorter URLs without cluttering the top
-   folio layer.
-
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.24 2023-05-07T20:24Z Complete the transpositions to new subfolder URLs
  0.0.23 2023-05-07T19:04Z Complete D211101b/c/e transpositions
  0.0.22 2023-05-07T17:32Z Complete movement and tombstoning of D211101a.
  0.0.21 2023-05-07T01:21Z Expand TODOs with need for tombstones, preservation

@@ -1,11 +1,11 @@
-FAIL5.txt 0.0.3                     UTF-8                         2023-04-**
+FAIL5.txt 0.0.3                     UTF-8                         2023-05-07
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
                         nfoWare/nfoWorks nfoTools
                         =========================
 
-  <https://orcmid.github.io/nfoTools/dev/D211101/fails/FAIL4/FAIL4.txt>
+    <https://orcmid.github.io/nfoTools/dev/D211101/f/FAIL4/FAIL4.txt>
 
         VCRAYAPP FAILCODE5: PRODUCING/OPERATING %VCEXE% FAILED
         ------------------------------------------------------
@@ -67,15 +67,15 @@ TODOS:
  ATTRIBUTION
 
    Hamilton, Dennis E. VCrayApp FAILCODE5: PRODUCING/OPERATING %VCEXE% FAILED.
-   nfoTools development text file FAIL5.txt version 0.0.3 dated 2023-04-**,
+   nfoTools development text file FAIL5.txt version 0.0.3 dated 2023-05-07,
    available on the Internet as a version of
-   <https://orcmid.github.io/nfoTools/dev/D211101/fails/FAIL5/FAIL5.txt>
+   <https://orcmid.github.io/nfoTools/dev/D211101/f/FAIL5/FAIL5.txt>
 
 
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
- 0.0.3
+ 0.0.3 2023-05-07T20:02Z Reflect transposition to new location
  0.0.2 2023-04-21T19:57Z Manage TODOs, touch-ups
  0.0.1 2023-04-14-19:27Z Manage TODOs
  0.0.0 2023-04-14-04:04Z placeholder boilerplate from FAIL4.txt 0.0.0

@@ -1,11 +1,11 @@
-FAIL6.txt 0.0.3                     UTF-8                         2023-04-24
+FAIL6.txt 0.0.4                     UTF-8                         2023-05-07
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
                         nfoWare/nfoWorks nfoTools
                         =========================
 
-  <https://orcmid.github.io/nfoTools/dev/D211101/fails/FAIL4/FAIL4.txt>
+   <https://orcmid.github.io/nfoTools/dev/D211101/f/FAIL4/FAIL4.txt>
 
           VCRAYAPP FAILCODE6: RAYLIB NOT FOUND WHERE EXPECTED
           ---------------------------------------------------
@@ -25,7 +25,7 @@ MANIFEST
 
     FAIL6.txt   This synopsis and manifest
 
-    index.md    GitHub nfoTools/docs/dev/d211101/fails/FAIL6 index markdown
+    index.md    GitHub nfoTools/docs/dev/d211101/f/FAIL6 index markdown
                 This file does not appear at <orcmid.github.io/nfoTools>.
 
     index.html  (generated) web page for FAILCODE6 Explanation
@@ -60,12 +60,13 @@ TODOS:
  ATTRIBUTION
 
    Hamilton, Dennis E. VCrayApp FAILCODE6: RAYLIB NOT FOUND WHERE EXPECTED.
-   nfoTools development text file FAIL6.txt version 0.0.2 dated 2023-04-23,
+   nfoTools development text file FAIL6.txt version 0.0.4 dated 2023-05-07,
    available on the Internet as a version of
-   <https://orcmid.github.io/nfoTools/dev/D211101/fails/FAIL6/FAIL6.txt>
+   <https://orcmid.github.io/nfoTools/dev/D211101/f/FAIL6/FAIL6.txt>
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.4 2023-05-07T20:07Z Reflect transposition to new location
  0.0.3 2023-04-24T22:28Z Explain most-likely cause
  0.0.2 2023-04-23T20:18Z Current with completed draft
  0.0.1 2023-04-21T22:40Z Add screen capture

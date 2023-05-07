@@ -1,12 +1,12 @@
-<!-- index.md 0.0.17                UTF-8                          2023-05-06
+<!-- index.md 0.0.18                UTF-8                          2023-05-07
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                VCRAYAPP: VC/C++ COMMAND-LINE RAYLIB APP DEVKIT
      -->
 
-# [VCrayApp: VC/C++ Command-Line raylib App DevKit](.)
+# ***D211101** [VCrayApp: VC/C++ Command-Line raylib App DevKit](.)*
 
-| ***[nfoTools](../../)*** | [dev](../)[>D211101](.) | ***[index.html](index.html) 0.0.17 2023-05-06*** |
+| ***[nfoTools](../../)*** | [dev](../)[>D211101](.) | ***[index.html](index.html) 0.0.18 2023-05-07*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../../images/hardhat-logo.gif) |
 
@@ -67,7 +67,7 @@ Code examples, other projects, and related tutorials will further demonstrate
 the VCrayApp arrangement.
 
 Details of this organization and structure of the individual
-subfolders is provided in [D211101a: VCrayApp Setup](D211101a).
+subfolders is provided in [D211101a: VCrayApp Setup](a).
 
 ### 1.2 VCrayApp.bat
 
@@ -118,7 +118,7 @@ placed there.  It is possible to deploy a successfully-built application from
  `app\`.
 
 Further details of VCrayApp operation are provided in
-[D211101b: VCrayApp Operation](D211101b).
+[D211101b: VCrayApp Operation](b).
 
 ## 2. Prerequisites and Dependencies
 
@@ -164,9 +164,9 @@ tools along with confident use of C Language:
 
 The first seven are essential.  The remainder or equivalents are recommended.
 For further details on dependencies, see
-[VCrayApp Setup](D211101a/) and [VCrayApp Operation](D211101b/).  Additional
+[VCrayApp Setup](a/) and [VCrayApp Operation](b/).  Additional
 usage of VCrayApp is covered with
-[VCrayApp Verification/Deployment Lifecycle](D211101c).
+[VCrayApp Verification/Deployment Lifecycle](c).
 
 VCrayApp is designed to work with versions of Visual Studio that are free
 for personal use, including the Visual Studio Build Tools (recommended)
@@ -183,9 +183,9 @@ tips in the available materials.
 
 | **ID** | **Started** | **Status** | **Topic** |
 |   :-:   |   :-:   |  :-:   |  ---  |
-| [D211101a](D211101a/) | 2022-08-18 | placeholder | VCrayApp Setup |
-| [D211101b](D211101b/) | 2022-08-18 | placeholder | VCrayApp Operation |
-| [D211101c](D211101c/) | 2022-08-21 | placeholder | VCrayApp Verification/Deployment Lifecycle |
+| [D211101a](a/) | 2022-08-18 | placeholder | VCrayApp Setup |
+| [D211101b](b/) | 2022-08-18 | placeholder | VCrayApp Operation |
+| [D211101c](c/) | 2022-08-21 | placeholder | VCrayApp Verification/Deployment Lifecycle |
 |                       |            |                  |     |
 | [D211101d](D211101d/) | 2022-10-26 | 0.0.8 2023-03-30 | VCrayApp 0.0.0 (alpha)
 
@@ -229,6 +229,7 @@ from time to time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.18 2023-05-07T20:30Z Adjust to changes in subfolder locations
      0.0.17 2023-05-06T15:47Z Correct section numbering
      0.0.16 2023-04-30T17:42Z More Touch-ups
      0.0.15 2023-04-29T19:44Z Staging for 0.1.0 release

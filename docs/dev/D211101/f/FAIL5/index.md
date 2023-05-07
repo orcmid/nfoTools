@@ -1,4 +1,4 @@
-<!-- index.md 0.0.7                 UTF-8                          2023-04-23
+<!-- index.md 0.0.8                 UTF-8                          2023-05-07
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
               FAILCODE5: PRODUCING/OPERATING %VCEXE% FAILED
@@ -6,11 +6,11 @@
 
 # ***VCrayApp** [FAILCODE5: PRODUCING/OPERATING %VCEXE% FAILED](.)*
 
-| ***[nfoTools](../../../../)*** | [dev](../../../)[>D211101](../../)[>fails](../)[>FAIL5](.) | [index.html](index.html) ***0.0.7 2023-04-23*** |
+| ***[nfoTools](../../../../)*** | [dev](../../../)[>D211101](../../)[>](../)[>FAIL5](.) | [index.html](index.html) ***0.0.8 2023-05-07*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../../../../images/hardhat-logo.gif) |
 |              |                     |           |
-| This Version | since VCrayApp 0.1.0 | [D211101e](../../D211101e) |
+| This Version | since VCrayApp 0.1.0 | [D211101e](../../e) |
 
 `FAILCODE5`, and the companion [`FAILCODE4`](..\FAIL4), arise from a variety
 of build and operation failures in operation of `VCrayApp.bat`.  If operation
@@ -34,7 +34,7 @@ case
 
 ## %VCEXE% IS THE PROJECT EXECUTABLE (%VCAPPEXE% VALUE)
 
-If [initial setup of VCrayApp](../../D211101a) has been successful, with
+If [initial setup of VCrayApp](../../a) has been successful, with
 successful initialization/update of the VCrayApp cache,  error cases are
 typically when compiling the project source code (`%VCAPPSRC%` location).
 
@@ -96,7 +96,7 @@ VCrayApp project cache\ folder *.opt files.  If they have been altered,
 restore them to original form and determine if the problem remains.
 
 For better understanding of the link process, review
-[VCrayApp Operation](../../D211101b) as well as information on the
+[VCrayApp Operation](../../b) as well as information on the
 [VS Build Tools](https://orcmid.github.io/nfoTools/tools/T211002/).
 
 If the linking problem remains, consult the
@@ -117,6 +117,7 @@ from time to time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.8 2023-05-07T20:05Z Reflect transposition to new location
      0.0.7 2023-04-23T19:49Z Small touch-ups of current draft
      0.0.6 2023-04-21T20:07Z Touch-ups of this draft portion
      0.0.5 2023-04-19T16:58Z Cleaning up the likely cases
@@ -126,5 +127,5 @@ from time to time.
      0.0.1 2023-04-15T19:29Z Intermediate Review Draft
      0.0.0 2023-04-13T21:42Z Initial page from 0.0.0 FAIL3 boilerplate.
 
-               *** end D211101/fails/FAIL5/index.md ***
+               *** end D211101/f/FAIL5/index.md ***
      -->

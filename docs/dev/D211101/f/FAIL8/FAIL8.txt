@@ -1,11 +1,11 @@
-FAIL8.txt 0.0.1                     UTF-8                         2023-04-24
+FAIL8.txt 0.0.2                     UTF-8                         2023-05-07
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
                         nfoWare/nfoWorks nfoTools
                         =========================
 
-  <https://orcmid.github.io/nfoTools/dev/D211101/fails/FAIL4/FAIL4.txt>
+   <https://orcmid.github.io/nfoTools/dev/D211101/f/FAIL4/FAIL4.txt>
 
           VCRAYAPP FAILCODE8: RAYLIB %VCRAYVER% NOT SUPPORTED
           ---------------------------------------------------
@@ -21,7 +21,7 @@ MANIFEST
 
     FAIL8.txt   This synopsis and manifest
 
-    index.md    GitHub nfoTools/docs/dev/d211101/fails/FAIL8 index markdown
+    index.md    GitHub nfoTools/docs/dev/d211101/f/FAIL8 index markdown
                 This file does not appear at <orcmid.github.io/nfoTools>.
 
     index.html  (generated) web page for FAILCODE8 Explanation
@@ -55,12 +55,13 @@ TODOS:
  ATTRIBUTION
 
    Hamilton, Dennis E. VCrayApp FAILCODE8: RAYLIB %VCRAYVER% NOT SUPPORTED.
-   nfoTools development text file FAIL8.txt version 0.0.1 dated 2023-04-23,
+   nfoTools development text file FAIL8.txt version 0.0.2 dated 2023-05-07,
    available on the Internet as a version of
-   <https://orcmid.github.io/nfoTools/dev/D211101/fails/FAIL7/FAIL7.txt>
+   <https://orcmid.github.io/nfoTools/dev/D211101/f/FAIL7/FAIL7.txt>
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.2 2023-05-07T20:17Z Reflect transposition to new location
  0.0.1 2023-04-24T00:55Z Full Draft of text
  0.0.0 2023-04-20T22:14Z placeholder boilerplate from FAIL7.txt 0.0.0
 

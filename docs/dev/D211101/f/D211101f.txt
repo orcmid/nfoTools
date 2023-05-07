@@ -1,4 +1,4 @@
-D211101f.txt 0.0.15                 UTF-8                         2023-05-06
+D211101f.txt 0.0.16                 UTF-8                         2023-05-07
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -7,7 +7,7 @@ D211101f.txt 0.0.15                 UTF-8                         2023-05-06
 
      <https://orcmid.github.io/nfoTools/dev/D211101/f/D211101f.txt>
 
-            D211101F: VCRAYAPP FAILURE-MESSAGE EXPLANATIONS
+            D211101f: VCRAYAPP FAILURE-MESSAGE EXPLANATIONS
             -----------------------------------------------
 
    VCrayApp.bat produces a variety of identified FAILCODEs.  This folder
@@ -53,7 +53,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. D211101f: VCrayApp Failure-Message Explanations.
-   nfoTools development text file D211101f.txt version 0.0.15 dated
+   nfoTools development text file D211101f.txt version 0.0.16 dated
    2023-05-06 available on the Internet as a version of
    <https://orcmid.github.io/nfoTools/dev/D211101/f/D211101f.txt>
 
@@ -94,22 +94,9 @@ TODO
    raylib version, and then compiling of the cache and a confirmation program
    relying on that cache.
 
- * Adjust the individual FAIL folders to account for the renamings in the
-   D211101 folder structure. The images must be replaced with ones from the
-   updated VCrayApp-0.1.0 VCrayApp.bat operation.
-
-     o FAIL0
-     o FAIL1
-     o FAIL2
-     o FAIL3
-     o FAIL4
-     o FAIL5
-     o FAIL6
-     o FAIL7
-     o FAIL8
-
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.16 2023-05-07T20:22Z Complete the transpositions
  0.0.15 2023-05-06T22:41Z Transpose from 0.0.14 fails.txt with related TODOs
  0.0.14 2023-04-23T20:04Z Bring current
  0.0.13 2023-04-22T18:38Z Cleanup TODOs
