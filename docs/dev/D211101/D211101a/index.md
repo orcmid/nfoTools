@@ -1,18 +1,23 @@
-<!-- index.md 0.0.2                 UTF-8                          2023-05-07
+<!-- index.md 0.0.2                 UTF-8                          2023-05-09
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-                                VCRAYLIB SETUP
+                            VCRAYAPP SETUP [TOMBSTONE]
      -->
 
-# ***D211101a** [VCrayLib Setup](.)*
+# ***D211101a** [VCrayApp Setup (Tombstone)](.)*
 
-| ***[nfoTools](../../../)*** | [dev](../../)[>D211101](../)[>a](.) |[index.html](index.html) ***0.0.2 2023-05-07*** |
+| ***[nfoTools](../../../)*** | [dev](../../)[>D211101](../)[>D211101a](.) |[index.html](index.html) ***0.0.2 2023-05-07*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../../../images/hardhat-logo.gif) |
 
-# PLACEHOLDER: CONTENT TBD
+## TOMBSTONE
 
+This page is referenced in VCrayApp-0.0.0 material.  It is no longer the
+location for "VCrayApp Setup" information.
 
+The current material is at [D211101a: VCrayApp Setup](../a).  It may also
+be important to switch to VCrayApp-0.1.0 or later because of the breaking
+changes that have been made since VCrayApp-0.0.0 (alpha).
 
 ----
 
@@ -26,7 +31,7 @@ from time to time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-     0.0.2 2023-05-07T17:30Z Adjust for new location
+     0.0.2 2023-05-07T17:08Z Establish tombstone
      0.0.1 2023-01-12T03:08Z Clean up format and file location
      0.0.0 2022-08-18T18:02Z Create Initial Placeholder
 
