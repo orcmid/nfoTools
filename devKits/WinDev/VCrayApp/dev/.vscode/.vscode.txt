@@ -1,7 +1,7 @@
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA256
 
-VCrayApp-0.1.0 .vscode.txt 0.0.5    UTF-8                         2023-03-26
+VCrayApp-0.1.0 .vscode.txt 0.0.6    UTF-8                         2023-05-07
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
   * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
@@ -17,7 +17,7 @@ VCrayApp-0.1.0 .vscode.txt 0.0.5    UTF-8                         2023-03-26
   *    FOLDER. USE THE COMPANION src\ FOLDER OR ANOTHER FOLDER FOR YOUR   *
   *    OWN PROJECT.  SEE THE DESCRIPTION FOR THIS VCrayApp RELEASE        *
   *    (E.G., THE VCrayApp-0.1.0.txt FILE and the web pages at            *
-  *    <https://orcmid.github.io/nfoTools/dev/D211101/>).                 *                            *                                                     *
+  *    <https://orcmid.github.io/nfoTools/dev/D211101/e/>).               *                            *                                                     *
   *                                                                       *
   *    If VCrayApp is re-extracted or is updated and extracted, the       *
   *    files listed in this manifest will be replaced.  If any VS Code    *
@@ -36,7 +36,7 @@ USAGE WITH VS CODE
     the Windows SDK libraries. The benefit is having intellisense for all of
     the project source code, including standard headers and their libraries.
 
-    See <https://orcmid.github.io/nfoTools/dev/D211101/D211101b/> for further
+    See <https://orcmid.github.io/nfoTools/dev/D211101/b/> for further
     details on using VS Code with VCrayApp.  For additional information on
     usage of VS Code, see <https://orcmid.github.io/nfoTools/tools/T211001/>.
 
@@ -48,7 +48,7 @@ MANIFEST
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-                       Copyright 2022 Dennis E. Hamilton
+                     Copyright 2022-2023 Dennis E. Hamilton
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -64,6 +64,7 @@ MANIFEST
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+0.0.6 2023-05-07T21:09Z Adjust references to locations in dev/D211101
 0.0.5 2023-03-26T23:13Z Fixed rulers; ASCII-armor signed for VCrayApp 0.1.0.
 0.0.4 2023-03-26T19:28Z Complete links and advice for VCrayApp 0.1.0.
 0.0.3 2023-01-14T21:34Z Adjust for VCrayApp 0.1.0
@@ -74,12 +75,12 @@ MANIFEST
                       ** end of VCrayApp .vscode.txt **
 -----BEGIN PGP SIGNATURE-----
 
-iQFGBAEBCAAwFiEEBNBDIpebhN4QdwM0+W6J/9RWYooFAmQgw54SHG9yY21pZEBh
-cGFjaGUub3JnAAoJEPluif/UVmKKllAH/ius3E+gB7kpKughwdzGAoGuFxszwMrL
-8d4cHAwfWXyS/GDVHh7TpBZdNC5Xg7oHC/3aIL6zqvhwoluBKsKXNFg/uknqWC9L
-lGnpQa4xiTd/a4drFJkbYSshoIzaEKmhx2OaAVv1XERd4f2YVrF098wX+Sdpo7vL
-Xvsri0FcffgFG0QOu5qvw5Ks5qsgnaC7mPGv9EBChARM0uOErP0HNKHb/RQp0MgV
-7lL2D9LCRiVlR4DdE7DKWo33VLdDdm2X4vmHdDwgOUq7LlcwlC3RgoCPosP3Zc4k
-svqtMXSWz8g2Q4X8k347EvLucCa5l5H7jpzI3LhKQtFhnAy6hhgbgqQ=
-=LU0a
+iQFGBAEBCAAwFiEEBNBDIpebhN4QdwM0+W6J/9RWYooFAmRYFAYSHG9yY21pZEBh
+cGFjaGUub3JnAAoJEPluif/UVmKK094H+gNGdEEt2M7NMKSq409jxQPZvEIKnejh
+wFcnqNd1xDxEd+ZCnH0J7p5OCe4UiUzohiS3BPLe2mkUHxcreNdKyYXY0auO2U7b
+uKiohOU9OVGu+z8KlWk2GUfryoTkyAT435Aki7EUGsrKIVAbatu4XCGmQtli923s
+Q3v/RkBEHLvYOWYEG5peSoHsHHGx4qXAMZMf2UL0nBHjs5RlpJaO3MrefsdJxyue
+C4WB8njWrR+mbeuHMfQ+U4CWgY7QUN1tOlZLAT9jRxjjqAXE51RJql/FCbc2909C
+rfCKt2cPFAIqao9KmNgrPKxXLn1qwIlY8nCTeqD2T8zJpeTEjINPDio=
+=bNLc
 -----END PGP SIGNATURE-----
