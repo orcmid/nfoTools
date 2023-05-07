@@ -1,4 +1,4 @@
-D230501.txt 0.0.1                   UTF-8                         2023-05-06
+D230501.txt 0.0.2                   UTF-8                         2023-05-07
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -51,7 +51,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. VCrayMathStudio raymath Exploration Devkit.  nfoTools
-   nfoTools development text file D230501.txt version 0.0.1 dated 2023-05-06,
+   nfoTools development text file D230501.txt version 0.0.2 dated 2023-05-07,
    available on the Internet as a version of
    <https://orcmid.github.io/nfoTools/dev/D230501/D30501.txt>
 
@@ -86,8 +86,27 @@ TODO
     Turing Award recipients needs to be acknowledge around here also.  This
     project for VCrayMathStudio can serve some of this.
 
+  * The 1954-05-07 announcement of the IBM 704 is striking, as the first
+    computer to incorporate indexing and floating-point arithmetic.  Both
+    FORTRAN and LISP were first developed on the 704 according to an
+    anniversary announcement on the Official ACM Twitter.
+    <https://twitter.com/TheOfficialACM/status/1655197317576773635>.  The
+    photo is also fascinating.
+
+  * I am thinking about some preliminaries around integer arithmetic, the
+    problem with radix (i.e., decimal and binary) fraction notation, and then
+    the range versus precision problem with floating point.
+
+  * Need to look at Knuth vol.2 on Seminumerical algorithms and what that
+    choice signifies.
+
+  * Also remark on the nomenclature problem: integer and real as mathematical
+    versus int, float, double, long things, unsigned things, as about
+    arithmetics.  Likewise char.
+
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.2 2023-05-07T16:01Z TODOs on arithmetics, IBM 704, and math entities.
  0.0.1 2023-05-06T14:36Z Initial synopsis, manifest, and kick-off TODOs
  0.0.0 2023-05-05T23:54Z Placeholder derived from D211101.txt 0.0.19
 
