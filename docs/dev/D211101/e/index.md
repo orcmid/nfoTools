@@ -1,12 +1,12 @@
-<!-- index.md 0.0.0                 UTF-8                          2023-04-10
+<!-- index.md 0.0.1                 UTF-8                          2023-05-07
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                        VCRAYAPP 0.1.0 RELEASE (BETA)
      -->
 
-# ***D211101e VCrayApp** [0.1.0 Release (beta)](.)*
+# ***D211101e** [VCrayApp 0.1.0 Release (beta)](.)*
 
-| ***[nfoTools](../../../)*** | [dev](../../)[>D211101](../)[>D211101e](.) | [index.html](index.html) ***0.0.8 2023-03-30*** |
+| ***[nfoTools](../../../)*** | [dev](../../)[>D211101](../)[>e](.) | [index.html](index.html) ***0.0.1 2023-05-07*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../../../images/hardhat-logo.gif) |
 |              |                     |           |
@@ -15,7 +15,7 @@
 |              |                              |           |
 | **Downloads:** |                            |           |
 |   | **VCrayApp 0.1.0 Description and Manifest** | [VCrayApp-0.1.0.txt](VCrayApp-0.1.0.txt) |
-|   | **VCrayApp 0.1.0 Changes | [CHANGES-0.1.0.txt](CHANGES-0.1.0.txt) |
+|   | **VCrayApp 0.1.0 Changes** | [CHANGES-0.1.0.txt](CHANGES-0.1.0.txt) |
 |   | **VCrayApp 0.1.0 Zip Package** | [VCrayApp-0.1.0.zip](VCrayApp-0.1.0.zip) |
 |   | **VCrayApp 0.1.0 Digital Signature** | [VCrayApp-0.1.0.zip.asc](VCrayApp-0.1.0.zip.asc) |
 |   | **VCrayApp 0.1.0 Digital Hash Value** | [VCrayApp-0.1.0.zip.sha256](VCrayApp-0.1.0.zip.sha256) |
@@ -28,8 +28,8 @@ release is expected to consist of touch-ups for clarity and repair of defects.
 To determine whether VCrayApp 0.1.0 is useful without difficulty for you,
 please read the file [VCrayApp-0.1.0.txt](VCrayApp-0.1.0.txt).  Also consult
 the current main page [VCrayApp: VC/C++ Command-Line raylib App DevKit](..),
-information on [VCrayApp Setup](../D211101a), and information on
-[VCrayApp Operation](../D211101b).  These materials are in draft form for
+information on [VCrayApp Setup](../D211101/a), and information on
+[VCrayApp Operation](../D211101/b).  These materials are in draft form for
 review and improvement as part of stable release preparation.
 
 If VCrayApp 0.0.0 (alpha) has been used, please consult
@@ -57,6 +57,7 @@ from time to time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.1 2023-05-07T18:59Z Transposed to new location
      0.0.0 2023-04-10T17:18Z Placeholder with 0.0.8 D161101d boilerplate
 
                        *** end D161101e/index.md ***

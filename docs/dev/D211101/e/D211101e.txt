@@ -1,11 +1,11 @@
-D211101e.txt 0.0.12                  UTF-8                         2023-04-12
+D211101e.txt 0.0.13                 UTF-8                         2023-05-07
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
                         nfoWare/nfoWorks nfoTools
                         =========================
 
-   <https://orcmid.github.io/nfoTools/dev/D211101/D211101e/D211101e.txt>
+     <https://orcmid.github.io/nfoTools/dev/D211101/e/D211101e.txt>
 
                      D211101e: VCRAYAPP 0.1.0 (BETA)
                      -------------------------------
@@ -62,9 +62,9 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. D211101e: VCrayApp 0.1.0 (beta).  nfoTools development
-   documentation text file D211101e.txt version 0.0.12 dated 2023-04-12,
+   documentation text file D211101e.txt version 0.0.13 dated 2023-04-12,
    available on the Internet as a version of
-   <https://orcmid.github.io/nfoTools/dev/D211101/D211101e/D211101e.txt>
+   <https://orcmid.github.io/nfoTools/dev/D211101/e/D211101e.txt>
 
 TODO
 
@@ -77,10 +77,9 @@ TODO
  * Provide minimal information and a dummy VCrayApp-0.1.0.txt until the beta
    release is staged.
 
- * Correct text of "**VCrayAPp 0.1.0 Changes"
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
+ 0.0.13 2023-05-07T18:59Z Transposed to new location
  0.0.12 2023-04-12T00:21Z New TODO
  0.0.11 2023-04-10T17:30Z Touch-ups
  0.0.10 2023-02-10T00:28Z Draft Placeholder from 0.0.9 D211101d.txt being

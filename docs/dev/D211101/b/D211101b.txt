@@ -1,14 +1,13 @@
-D211101b.txt 0.0.2                  UTF-8                         2023-04-12
+D211101b.txt 0.0.3                  UTF-8                         2023-05-07
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
                         nfoWare/nfoWorks nfoTools
                         =========================
 
-<https://github.com/orcmid/nfoTools/blob/master/docs/dev/D211101/D211101.txt>
-    <https://orcmid.github.io/nfoTools/dev/D211101/D211101b/D211101b.txt>
+      <https://orcmid.github.io/nfoTools/dev/D211101/b/D211101b.txt>
 
-                      D211101a: VCRAYAPP OPERATION
+                      D211101b: VCRAYAPP OPERATION
                       ----------------------------
 
 SYNOPSIS [TBD]
@@ -17,7 +16,7 @@ MANIFEST
 
     D211101b.txt This synopsis and manifest file
 
-       index.md  Operation with VCrayApp
+       index.md  D211101b: VCrayApp Operation home page
 
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
@@ -41,17 +40,18 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. D211101b: VCrayApp Operation.  nfoTools development
-   documentation text file D211101b.txt version 0.0.2 dated 2023-04-12,
+   documentation text file D211101b.txt version 0.0.3 dated 2023-05-07,
    available on the Internet as a version of
-   <https://orcmid.github.io/nfoTools/dev/D211101/D211101b/D211101b.txt>
+   <https://orcmid.github.io/nfoTools/dev/D211101/b/D211101b.txt>
 
 TODO
 
- * Create an illustrated operation description sufficient for the alpha test.
+ * Complete illustrated and narratuve operation description starting with
+   VCrayApp-0.1.0.
 
- * Provide details for alpha usage by a careful novice or better
+ * Provide details fora usage by a careful novice or better
 
- * Create a placeholder index.htm
+ * Create a placeholder index.html
 
  * Upon 0.1.0 beta release
         o Indicate purpose of app\
@@ -62,10 +62,14 @@ TODO
         o Address single-use versus multiple-use installation
         o Provide orcmid.github.io/nfoTools location for the attribution
 
- * Fix title to be "VCrayApp Operation" in index.md
+ * Some of this might go with Lifecycle, Testing, Deployment
+
+ * Decide where advanced information, especially embedding is in reference
+   to this folio section.
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.3 2023-05-07T18:30Z Adjst TODOs and reflect new location
  0.0.2 2023-04-12T00:06Z New TODO
  0.0.1 2023-03-28T20:28Z Additional TODOs from 0.1.0 checklist items
  0.0.0 2022-08-18T17:57Z Placeholder morphed from D211101a.txt 0.0.0 and

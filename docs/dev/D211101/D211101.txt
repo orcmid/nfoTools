@@ -1,4 +1,4 @@
-D211101.txt 0.0.22                   UTF-8                         2023-05-06
+D211101.txt 0.0.23                   UTF-8                         2023-05-07
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -61,7 +61,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. VCrayApp: VC/C++ Command-Line raylib App devKit.
-   nfoTools development text file D211101.txt version 0.0.21 dated 2023-05-06,
+   nfoTools development text file D211101.txt version 0.0.23 dated 2023-05-07,
    available on the Internet as a version of
    <https://orcmid.github.io/nfoTools/dev/D211101/D211101.txt>
 
@@ -159,11 +159,6 @@ TODO
 
  * Revise the Folio Structure for each of the subfolders
 
-   D211101b\ becomes b\
-   D211101c\ becomes c\
-   D211101d\ becomes d\ stays put since it is known and already visible, and
-                        referenced fro VCrayApp-0.0.0.txt
-   D211101e\ becomes e\
    fails\    becomes f\ and this must be reconciled in VCrayApp-0.1.0 FAILs
 
    The point of all this is to have shorter URLs without cluttering the top
@@ -171,6 +166,7 @@ TODO
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.23 2023-05-07T19:04Z Complete D211101b/c/e transpositions
  0.0.22 2023-05-07T17:32Z Complete movement and tombstoning of D211101a.
  0.0.21 2023-05-07T01:21Z Expand TODOs with need for tombstones, preservation
  0.0.20 2023-05-06T18:52Z TODOs on Folio restructuring
