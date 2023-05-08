@@ -1,18 +1,21 @@
-CHANGES-0.1.0.txt 0.0.15            UTF-8                         2023-05-04
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+CHANGES-0.1.0.txt 0.0.16            UTF-8                         2023-05-08
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                        AN NFOTOOLS COMING ATTRACTION
                        =============================
 
-<https://github.com/orcmid/nfoTools/blob/master/devKits/WinDev/VCrayApp/dev/CHANGES-0.1.0.txt>
+     <https://orcmid.github.io/nfoTools/dev/D211101/e/CHANGES-0.1.0.txt>
 
                      CHANGES MADE FOR RAYLIB APP 0.1.0
                      ---------------------------------
 
     This file provides tracking of changes made to VCrayApp as part of
     developing VCrayApp 0.1.0 (beta) as the successor of VCrayApp 0.0.0
-    (alpha).  These changes will also be documented in the release information
-    at <https://orcmid.github.com/nfoTools/dev/D211101/D211101e/>.
+    (alpha).  These changes are documented in the release information at
+    <https://orcmid.github.com/nfoTools/dev/D211101/e/>.
 
     Further information on the development of VCrayApp 0.1.0 can be found
     at the GitHub project, <https://github.com/orcmid/nfoTools/projects/11>,
@@ -50,20 +53,20 @@ libraries for the standalone application should be handled by modification
 of the environment variables available for that purpose under the Visual
 Studio Native Command Prompt.  It may be valuable to use VCrayApp.bat from a
 command script that accomplishes that, embedding the use of VCrayApp. For
-examples, see <https://orcmid.github.io/dev/D211101/D211101b>.
+examples, see <https://orcmid.github.io/dev/D211101/b>.
 
 NEW FEATURES
 
 VCrayApp will detect and report the version of raylib and of VS Command Prompt
 being used each time the cache is built.  There is checking on known recent
-releases of raylib that fail with the Microsoft VC/C++ compiler.  Those won't
-be used.
+releases of raylib that fail with the Microsoft VC/C++ compiler.  Those raylib
+versions won't be used.
 
 VCrayApp detects and reports when in-progress -dev versions of raylib are
 being used, rather than recommended official releases.
 
 VCrayApp failure messages all have FAILCODE numbers and each message has links
-to details under <https://orcmid.github.io/nfoTools/dev/D211101/fails/>.
+to details under <https://orcmid.github.io/nfoTools/dev/D211101/f/>.
 
 CHANGES-0.1.0.txt is included in the VCrayApp-0.1.0.zip file and is also one
 of the release pages for consultation without downloading the full package.
@@ -76,15 +79,15 @@ information.
 
 CHANGES
 
+VCrayConfirm.c has been extended to report more about the VCrayApp settings
+and the readiness for use of the cache with particular VC and raylib versions.
+
 VCrayApp compiles and uses program cache\VCrayVerCheck.c every time the cache
 is about to be filled.  This assists in determination of the raylib version.
 
 VCrayApp will compile and run the cache\VCrayConfirm.c program every time the
 cache of raylib code is created, providing additional confirmation that the
 cache is built and operational with the version of raylib being used.
-
-VCrayConfirm.c has been extended to report more about the VCrayApp settings
-and the readiness for use of the cache with particular VC and raylib versions.
 
 Reporting by VCrayApp is abbreviated when "+" is set for embedded-operation.
 This should only be done when calling from another script that takes charge
@@ -100,8 +103,7 @@ for precompiled raylib components.
 
 In case of problems with unpredictable results related to population of the
 cache\, whether FAILCODE4 or FAILCODE5, VCrayApp will automatically attempt
-to rebuild the cache on the next usage, whether requested (option "-c") or
-not.
+to rebuild the cache on the next usage, with or without option "-c".
 
 CORRECTION: When executed as embedded (option "+"), VCrayApp.bat no longer
 sets LOCAL.  The caller must do so as appropriate.  This exposes variables set
@@ -131,21 +133,13 @@ script.  On any FAILCODE, VCrayApp does force EXIT.
  ATTRIBUTION
 
    Hamilton, Dennis E. Changes Made for VCrayApp 0.1.0.  nfoTools text file
-   version 0.0.15 dated 2023-05-04, available on the Internet as a version of
-   <https://orcmid.github.io/nfoTools/dev/D211101/D211101e/CHANGES-0.1.0.txt>
-
-TODO
-
- * Include CHANGES-0.1.0.txt in the delivered Zip.
-
- * Include CHANGES-0.1.0.txt alongside VCrayApp-0.1.0.txt at D211101e
-   downloads.
-
- * Clearsign the published CHANGES-0.1.0.txt.
+   version 0.0.16 dated 2023-05-08, available on the Internet as a version of
+   <https://orcmid.github.io/nfoTools/dev/D211101/e/CHANGES-0.1.0.txt>
 
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.16 2023-05-08T01:51Z Touch-ups aligned with releases candidate
  0.0.15 2023-05-04T16:38Z Touch-ups
  0.0.14 2023-05-03T16:46Z Adjust for the new VCrayApp-0.1.0 API.
  0.0.12 2023-04-28T19:19Z Touch-ups
@@ -166,3 +160,14 @@ TODO
 
 
                         ***** end of CHANGES.txt *****
+-----BEGIN PGP SIGNATURE-----
+
+iQFGBAEBCAAwFiEEBNBDIpebhN4QdwM0+W6J/9RWYooFAmRYVl8SHG9yY21pZEBh
+cGFjaGUub3JnAAoJEPluif/UVmKKRPsH/juGPNbuA5jdiw6fSw9PQVUqPtZiiD6U
+y6dTw0b2/sArsNnGtDcQM2YOLPknZn8PlcgO1iJjo4I0tbA/wjvMxD49ypWdfRJB
+zAGIjKTor8BOzz6eVl/A1SDAVojaamxmxR13SHfyHctrD1IlkO1qdYbtgOY8jjeO
+LEc7018TekRzwmUR5t1RM3BK+Tiy/wgq6S0D249xZOVFh2Z6TIOTpM5B/ihu1S8g
+PK/ByNjFMFNUQ8Mc0WOepDwjGWjnrZI0w18CPP0iETq5WYZHv6/Y5r6QN9lSwni2
+Wxw2/OGHM1A4sTU+qTI/DDWdFHG2fHhjz4KR9b7MaSPlT2Cq3Fastu0=
+=tj7U
+-----END PGP SIGNATURE-----
