@@ -1,5 +1,5 @@
 @echo off
-rem VCrayApp 0.1.0 VCrayApp.bat 0.0.63 UTF-8                       2023-05-08
+rem VCrayApp 0.1.0 VCrayApp.bat 0.0.64 UTF-8                       2023-05-08
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 rem                  BUILDING RAYLIB APP WITH VC/C++ TOOLS
@@ -13,8 +13,8 @@ rem
 rem In most cases of standalone usage, no changes are required to this file.
 rem Additional documentation of this procedure and its usage are found in the
 rem accompanying VCrayApp-0.1.0.txt file.  For further information, see
-rem ^<https://orcmid.github.io/nfoTools/dev/D211101^> and check for the latest
-rem version.
+rem ^<https://orcmid.github.io/nfoTools/dev/D211101/e^> and also check for the
+rem latest version.
 
 rem ***** NO CHANGES EVER NEEDED BELOW HERE FOR STANDARD USAGE **************
 
@@ -246,7 +246,7 @@ ECHO:            compilation of the project source code will be attempted.
 ECHO:            Source code will be taken from the default src\*.c or from
 ECHO:            the src parameter of the VCrayApp command.
 :MAYBEAPP
-ECHO:            See ^<https://orcmid.github.io/nfoTools/dev/D211101/^>.
+ECHO:            See ^<https://orcmid.github.io/nfoTools/dev/D211101/e/^>.
 ECHO: %VCterse%
 
 IF NOT "%VCrun%" == "1" GOTO :SUCCESS
@@ -406,10 +406,10 @@ ECHO:
 ECHO:    VCrayApp depends on VSCMD_VER being set by the VS Command Prompt
 ECHO:    with CMDEXTVERSION 2 or better available for operation.
 ECHO:    There is use/clearing of environment variables VCrayApp, VCfrom,
-ECHO:    and VCsplice.  Others are exposed when operating under another
-ECHO:    script (option "+").
+ECHO:    and VCsplice.  Others are exposed when operating embedded under
+ECHO:    another script (option "+").
 ECHO:
-ECHO:    See ^<https://orcmid.github.io/nfoTools/dev/D211101^> for details.
+ECHO:    See ^<https://orcmid.github.io/nfoTools/dev/D211101/e^> for details.
 ECHO:
 
 IF "%VCsplice%" == "+" GOTO :FALLOUT
@@ -450,6 +450,7 @@ rem For additional information, see the accompanying NOTICE.txt file.
 rem
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 rem
+rem 0.0.64 2023-05-08T16:22Z Touch-up references to D211101 a little.
 rem 0.0.63 2023-05-08T01:29Z Adjust Messages to D211101/f structure
 rem 0.0.62 2023-05-06T00:22Z Add VCrayApp Version to Usage Information
 rem 0.0.61 2023-05-03T04:33Z MAJOR REORGANIZATION AND USAGE CHANGES
