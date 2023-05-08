@@ -1,3 +1,6 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
 VCrayApp-0.1.0.txt 0.0.11            UTF-8                         2023-05-08
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
@@ -182,7 +185,7 @@ EXTRACTION AND RENAMING OF VCrayApp-0.1.0.zip CONTENT
 
 MANIFEST OF VCrayApp-0.1.0.zip
 
-    VCrayApp-0.1.0.txt 0.0.11 11,862 byte 2023-01-07T20:49 armor-signed
+    VCrayApp-0.1.0.txt 0.0.11 14,152 byte 2023-05-08T20:49 armor-signed
         version.  This description file on organization of the archive and use
         of its materials.
 
@@ -261,3 +264,14 @@ MANIFEST OF VCrayApp-0.1.0.zip
  0.0.0 2021-10-09T00:46Z Placeholder draft
 
                     ***** end of VCrayApp-0.1.0.txt *****
+-----BEGIN PGP SIGNATURE-----
+
+iQFGBAEBCAAwFiEEBNBDIpebhN4QdwM0+W6J/9RWYooFAmRZUyoSHG9yY21pZEBh
+cGFjaGUub3JnAAoJEPluif/UVmKK8MIH/jNUyOiuiaXRoxFkkDcxUUfOI1FtRzut
+VZDwuweKtAodN+FsKWvJTFErUES4ncnyFDrerb/tTtmkuAqrdxe3ufkeh8UYeH6c
+0dOFqouBDoTEcpA6Tl7jpbnpunnqsoTQL3UXIRXcieL7/CPJUGhBaNYj31kMPFdc
+t6Ppen006Uk6lBKpOOh4/kr0e1lIqrA1pxNfXiR4Ocw+wOKT+MyDw17BdPUGoQBS
+itKbO2gqyDo0udJH5xnAjhxV6cC9pvlIcd2KG6AzxKkW9eOIM1jBJA/NkNfWYhwr
+YcvZGB/R3N05i89iR4wU8TvD+0gMJsNjLI9MojI9mleTJtpdtQbqHH0=
+=2n9j
+-----END PGP SIGNATURE-----
