@@ -1,8 +1,5 @@
 /*
------BEGIN PGP SIGNED MESSAGE-----
-Hash: SHA256
-
-   VCrayConfirm.c 0.1.14               UTF-8                       2023-05-03
+   VCrayConfirm.c 0.1.15               UTF-8                       2023-05-08
    -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                     CONFIRMATION OF RAYLIB APP CACHE SETUP
@@ -33,7 +30,7 @@ Hash: SHA256
 
    */
 
-#define VCRAYCONFIRM "VCrayConfirm 0.1.14"
+#define VCRAYCONFIRM "VCrayConfirm 0.1.15"
 
 #include <stddef.h>   // for NULL
 #include <string.h>   // for strncat_s(), strncmp()
@@ -295,7 +292,7 @@ int main(void)
                              "should have a host.",
                              90, nextLine, 20, RED);
                    DrawText( "See <https://orcmid.github.io/nfoTools/"
-                             "dev/D211101/D211101b>",
+                             "dev/D211101/b/>",
                              140, nextLine+25, 20, GRAY );
                    }
 
@@ -316,6 +313,7 @@ int main(void)
 
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+   0.1.15 2023-05-08T19:14Z Correct URL in Embedded operation message
    0.1.14 2023-05-03T20:28z Align with revised VCrayApp.bat API
    0.1.13 2023-04-08T21:35Z Clearsign as release candidate now
    0.1.12 2023-04-08T21:22Z Provide link to further information
@@ -337,15 +335,4 @@ int main(void)
          raylib 3.7.0.zip release downloaded 2021-10-08T00:41
 
                         *** end of VCrayConfirm.c ***
------BEGIN PGP SIGNATURE-----
-
-iQFGBAEBCAAwFiEEBNBDIpebhN4QdwM0+W6J/9RWYooFAmRSx0wSHG9yY21pZEBh
-cGFjaGUub3JnAAoJEPluif/UVmKK68UH/3ngyixTkuLGw9qs0r92KD/6ZagaabXw
-99nKJETE2sk8Z/vs7iPc4mBt9FvsuFmtyVHrLSG7YW8w1TnEE3P+EQzxOm2TPEKx
-4uW5zD0WxktSMssuuuc7sC+H6WvKuxq4Ywb1DOijebRO8qK+be0k9A/qEHMa/2xQ
-NulR93+oeLL4DogebH/EreOgEBLBZgNnpOemTGhytbhPwrhrr80W8gzlm2UuGc4V
-olKnoQsUhrVrZbcC5Vl9WJ6ttpLV90Q3jlFUpy/degmCy+0QbUnIfYksLprh7Jg9
-vJ6UF68tofHMV7KfVsfNPLu7AcTIOo85tdzVYCewItaAbJNIo0sPjIM=
-=QpV3
------END PGP SIGNATURE-----
 */
