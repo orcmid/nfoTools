@@ -1,5 +1,5 @@
 @echo off
-rem VCrayApp 0.1.0 VCrayApp.bat 0.0.62 UTF-8                       2023-05-06
+rem VCrayApp 0.1.0 VCrayApp.bat 0.0.63 UTF-8                       2023-05-08
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 rem                  BUILDING RAYLIB APP WITH VC/C++ TOOLS
@@ -77,7 +77,7 @@ rem CONFIRM COMMAND-LINE ENVIRONMENT
 IF "%VSCMD_VER%" == "" GOTO FAIL3
 WHERE cl.exe >NUL 2>NUL
 IF ERRORLEVEL 1 goto FAIL3
-ECHO: [VCrayApp] %VCrayApp% BUILDING RAYLIB APP WITH VC/C++ %VSCMD_VER% TOOLS
+ECHO: [VCrayApp] %VCrayApp% OPERATING WITH VC/C++ %VSCMD_VER% TOOLS
 
 IF "%VCsplice%" == "+" GOTO :PARMCHECK
 ECHO:          %TIME% %DATE% on %USERNAME%'s %COMPUTERNAME%         %VCterse%
@@ -261,7 +261,7 @@ ECHO: [VCrayApp] **** NO APP TO RUN YET FOR %VCrayAppHost% ****    %VCterse%
 GOTO :SUCCESS
 
 :MUMBLED
-ECHO: [VCrayApp] NAMED HOST REQUIRED FOR EMBEDDED ("+") OPERATION  %VCterse%
+ECHO: [VCrayApp] NAMED HOST DESIRABLE FOR EMBEDDED ("+") OPERATION  %VCterse%
 GOTO :MAYBEAPP
 
 :APPBUILD
@@ -313,21 +313,21 @@ GOTO :FALLOUT
 ECHO: [VCrayApp] **** FAILCODE8: RAYLIB %VCRAYVER% NOT SUPPORTED ****
 ECHO:            USE 4.0 OR ONE LATER THAN 4.2 WITH VCrayApp        %VCterse%
 ECHO:            NO SIGNIFICANT ACTIONS HAVE BEEN PERFORMED         %VCterse%
-ECHO:            ^<https://orcmid.github.io/nfoTools/dev/D211101/fails/FAIL8^>
+ECHO:            ^<https://orcmid.github.io/nfoTools/dev/D211101/f/FAIL8^>
 GOTO :BAIL
 
 :FAIL7
 ECHO: [VCrayApp] **** FAILCODE7: RAYLIB VERSION NOT ^> 3.0.0 ****
 ECHO:            3.5.0/3.7.0 ARE ONLY PRE-4.0 SUPPORTED BY VCrayApp %VCterse%
 ECHO:            NO SIGNIFICANT ACTIONS HAVE BEEN PERFORMED         %VCterse%
-ECHO:            ^<https://orcmid.github.io/nfoTools/dev/D211101/fails/FAIL7^>
+ECHO:            ^<https://orcmid.github.io/nfoTools/dev/D211101/f/FAIL7^>
 GOTO :BAIL
 
 :FAIL6
 ECHO: [VCrayApp] **** FAILCODE6: RAYLIB NOT FOUND WHERE EXPECTED ****
 ECHO:            expected at "%VCraylib%\"
 ECHO:            NO ACTIONS HAVE BEEN PERFORMED
-ECHO:            ^<https://orcmid.github.io/nfoTools/dev/D211101/fails/FAIL6^>
+ECHO:            ^<https://orcmid.github.io/nfoTools/dev/D211101/f/FAIL6^>
 REM   XXXX ANOTHER DEPENDENCY ON raylib\ LOCATION
 GOTO :BAIL
 
@@ -338,7 +338,7 @@ ECHO: [VCrayApp] **** FAILCODE5: PRODUCING/OPERATING %VCEXE% FAILED ****
 ECHO:            Review any reported errors.                        %VCterse%
 ECHO:            Make repairs and reattempt.                        %VCterse%
 ECHO:            RESULTS ARE UNPREDICTABLE                          %VCterse%
-ECHO:            ^<https://orcmid.github.io/nfoTools/dev/D211101/fails/FAIL5^>
+ECHO:            ^<https://orcmid.github.io/nfoTools/dev/D211101/f/FAIL5^>
 GOTO :BAIL
 
 :FAIL4
@@ -348,7 +348,7 @@ ECHO: [VCrayApp] **** FAILCODE4: CACHING RAYLIB %VCRAYVER% FILES FAILED ****
 ECHO:            Review the errors reported for the compilation.    %VCterse%
 ECHO:            Make repairs and reattempt.                        %VCterse%
 ECHO:            RESULTS ARE UNPREDICTABLE.  REBUILD CACHE.         %VCterse%
-ECHO:            ^<https://orcmid.github.io/nfoTools/dev/D211101/fails/FAIL4^>
+ECHO:            ^<https://orcmid.github.io/nfoTools/dev/D211101/f/FAIL4^>
 
 GOTO :BAIL
 
@@ -356,16 +356,15 @@ GOTO :BAIL
 ECHO: [VCrayApp] **** FAILCODE3: NO VS NATIVE COMMAND-LINE ENVIRONMENT ****
 ECHO:            VCrayApp.bat requires command-line operation under %VCterse%
 ECHO:            the "x64 Native Tools Command Prompt" environment. %VCterse%
-ECHO:            ^<https://orcmid.github.io/nfoTools/dev/D211101c^>.%VCterse%
 ECHO:            NO ACTIONS HAVE BEEN PERFORMED                     %VCterse%
-ECHO:            ^<https://orcmid.github.io/nfoTools/dev/D211101/fails/FAIL3^>
+ECHO:            ^<https://orcmid.github.io/nfoTools/dev/D211101/f/FAIL3^>
 GOTO :BAIL
 
 :FAIL2
 ECHO: [VCrayApp] **** FAILCODE2: UNSUPPORTED VCRAYAPP.BAT PARAMETERS ****
 ECHO:            Invalid Here: %*
 ECHO:            NO ACTIONS HAVE BEEN TAKEN. For more information, %VCterse%
-ECHO:            ^<https://orcmid.github.io/nfoTools/dev/D211101/fails/FAIL2^>.
+ECHO:            ^<https://orcmid.github.io/nfoTools/dev/D211101/f/FAIL2^>.
 ECHO:            %VCterse%
 GOTO :USAGE
 
@@ -374,7 +373,7 @@ ECHO: [VCrayApp] **** FAILCODE1: INCORRECT VCrayApp FILES CONFIGURATION ****
 ECHO:            VCrayApp.bat must be in a folder that VCrayApp.zip %VCterse%
 ECHO:            is extracted into, along with the cache\ app\ and  %VCterse%
 ECHO:            src\ subfolders.  NO ACTIONS HAVE BEEN TAKEN.  See %VCterse%
-ECHO:            ^<https://orcmid.github.io/nfoTools/dev/D211101/fails/FAIL1^>.
+ECHO:            ^<https://orcmid.github.io/nfoTools/dev/D211101/f/FAIL1^>.
 GOTO :BAIL
 
 :FAIL0
@@ -382,7 +381,7 @@ ECHO: [VCrayApp] **** FAILCODE0: COMMAND SHELL EXTENSIONS REQUIRED ****
 ECHO:            VCrayApp.bat requires CMDEXTVERSION 2 or greater.
 ECHO:            This is available wherever VCrayApp.bat is usable.
 ECHO:            NO ACTIONS HAVE BEEN PERFORMED. For more information,
-ECHO:            ^<https://orcmid.github.io/nfoTools/dev/D211101/fails/FAIL0^>.
+ECHO:            ^<https://orcmid.github.io/nfoTools/dev/D211101/f/FAIL0^>.
 GOTO :BAIL
 
 :USAGE
@@ -451,6 +450,7 @@ rem For additional information, see the accompanying NOTICE.txt file.
 rem
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 rem
+rem 0.0.63 2023-05-08T01:29Z Adjust Messages to D211101/f structure
 rem 0.0.62 2023-05-06T00:22Z Add VCrayApp Version to Usage Information
 rem 0.0.61 2023-05-03T04:33Z MAJOR REORGANIZATION AND USAGE CHANGES
 rem 0.0.60 2023-04-23T20:24Z Always give verbose FAILCODE6 report
