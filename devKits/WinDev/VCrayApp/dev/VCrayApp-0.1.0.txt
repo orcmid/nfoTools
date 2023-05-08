@@ -1,4 +1,4 @@
-VCrayApp-0.1.0.txt 0.0.10            UTF-8                         2023-05-04
+VCrayApp-0.1.0.txt 0.0.11            UTF-8                         2023-05-08
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                       NFOTOOLS DEVKIT FOR RAYLIB APPS
@@ -62,7 +62,7 @@ VCrayApp-0.1.0.txt 0.0.10            UTF-8                         2023-05-04
   *    3.7.0, AND 3.5.0. CONFIRMATION WITH LATER RAYLIB RELEASES IS     *
   *    FUTURE WORK.                                                     *
   *                                                                     *
-  *    Ramon Santiago's raylib software is written in a clean-form of   *
+  *    Ramon Santamaria's raylib software is written in a clean-form of *
   *    the C Language (C99 standard).  Use of the raylib code, include  *
   *    files, and the API interfaces requires confidence in the use of  *
   *    the C or C++ languages with such libraries. VCrayApp is meant    *
@@ -71,9 +71,9 @@ VCrayApp-0.1.0.txt 0.0.10            UTF-8                         2023-05-04
   * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 
     The VCrayApp-0.1.0 distribution is available on the web at
-    <https://orcmid.github.io/nfoTools/dev/D211101/D211101e>.  Consult
-    that page for the latest status, links to useful related material,
-    and any more-recent version.  If there is concern for the authenticity
+    <https://orcmid.github.io/nfoTools/dev/D211101/e/>.  Consult that
+    page for the latest status, links to useful related material, and
+    any more-recent version.  If there is concern for the authenticity
     or correctness of any VCrayApp distribution, obtain a full replacement
     via <https://orcmid.github.io/nfoTools/dev/D211101>.
 
@@ -107,6 +107,10 @@ VCrayApp-0.1.0.txt 0.0.10            UTF-8                         2023-05-04
     For more information on dependencies, see
     <https://orcmid.github.io/nfoTools/dev/D211101>.
 
+    NOTE: VCrayApp does not work with raylib 4.2.  Releases 4.0 and 4.5 are
+    successful.  For versions later than 4.5, check at
+    <https://orcmid.github.io/nfoTools/dev/D211101/e/>.
+
 DOWNLOADS AND SETUP
 
     It is recommended that you have already installed Visual Studio Native
@@ -117,12 +121,12 @@ DOWNLOADS AND SETUP
     to have the raylib source code and your own adjacent projects.  See
     <https://orcmid.github.io/nfoTools/tools/T211101/> and also the setup
     arrangement described at <https://orcmid.github.io/nfoTools/dev/D211101>
-    and <https://orcmid.github.io/nfoTools/dev/D211101/D211101a>.
+    and <https://orcmid.github.io/nfoTools/dev/D211101/a>.
 
     raylib\ must be setup before VCrayApp can be used.
 
     Download VCrayApp from
-    <https://orcmid.github.io/nfoTools/dev/D211101/D211101e>.
+    <https://orcmid.github.io/nfoTools/dev/D211101/e/>.
     If a later version is available, consider using that version instead.
 
     It is useful to download VCrayApp-0.1.0.zip to a location that you can
@@ -164,11 +168,11 @@ EXTRACTION AND RENAMING OF VCrayApp-0.1.0.zip CONTENT
         VCrayApp
 
     This will compile some raylib components to the cache\ folder along with
-    some setup checks and the program VCrayConfir.exe.  That program will run,
-    confirming usability of the setup and the cache.
+    some setup checks and the program VCrayConfirm.exe.  That program will
+    run, confirming usability of the setup and the cache.
 
     If there are any failure messages, correct for them until this VCrayApp
-    succeeds.  See <https://orcmid.github.io/nfoTools/dev/D211101> for
+    succeeds.  See <https://orcmid.github.io/nfoTools/dev/D211101/b/> for
     additional information.
 
     You can now use the src\ folder of the new project for source code.
@@ -178,15 +182,15 @@ EXTRACTION AND RENAMING OF VCrayApp-0.1.0.zip CONTENT
 
 MANIFEST OF VCrayApp-0.1.0.zip
 
-    NOTICE.txt 1.0.2 2,056 byte 2023-01-02T22:09Z version
-        applicable NOTICE for VCrayApp-0.1.0.zip and its content
+    VCrayApp-0.1.0.txt 0.0.11 11,862 byte 2023-01-07T20:49 armor-signed
+        version.  This description file on organization of the archive and use
+        of its materials.
 
-    VCrayApp-0.1.0.txt 0.0.7 11,862 byte 2023-01-07T20:49 clearsigned version
-        This description file on organization of the archive and use of its
-        materials.
+    NOTICE.txt 1.0.5 2,671 byte 2023-05-05T17:43 armor-signed version
+        NOTICE applicable to VCrayApp-0.1.0.zip and its content
 
-    CHANGES-0.1.0.txt
-
+    CHANGES-0.1.0.txt 0.0.16 8,412 byte 2023-05-07T18:56 armor-signed version
+        identifying changes made from VCrayApp-0.0.0.
 
     VCrayApp.bat 0.0.18 10,901 byte 2022-12-31T20:30Z version
         Script that, when run, will confirm VC/C++ command-prompt settings,
@@ -237,12 +241,13 @@ MANIFEST OF VCrayApp-0.1.0.zip
  ATTRIBUTION
 
    Hamilton, Dennis E. Building raylib Apps with VS Developer Command Prompt.
-   nfoTools file VCrayApp-0.1.0.txt version 0.0.10 dated 2023-05-04 available
+   nfoTools file VCrayApp-0.1.0.txt version 0.0.11 dated 2023-05-08 available
    on the internet as a version of
-   <https://orcmid.github.io/dev/D211101/D211101e/VCrayApp-0.0.0.txt>
+   <https://orcmid.github.io/dev/D211101/e/VCrayApp-0.0.0.txt>
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.11 2023-05-08T19:47Z Touch-ups to make release candidate
  0.0.10 2023-05-04T17:14Z Touch-ups to align with changes to VCrayApp API
  0.0.9 2023-02-22T23:40Z Final draft for VCrayApp-0.1.0
  0.0.8 2023-02-09T23:37Z Rough-draft retargeting for VcrayApp-0.1.0.
@@ -254,6 +259,5 @@ MANIFEST OF VCrayApp-0.1.0.zip
  0.0.2 2022-07-13T17:24Z Draft Editing of Expanded Boilerplate.
  0.0.1 2022-06-07T22:27Z Include boilerplate from VCbind-0.1.0
  0.0.0 2021-10-09T00:46Z Placeholder draft
-
 
                     ***** end of VCrayApp-0.1.0.txt *****
