@@ -1,7 +1,4 @@
------BEGIN PGP SIGNED MESSAGE-----
-Hash: SHA256
-
-VCrayApp 0.1.0 src.txt 0.0.4        UTF-8                        2023-04-01
+VCrayApp 0.1.0 src.txt 0.0.5        UTF-8                        2023-05-08
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                   VCRAYAPP 0.1.0 APPLICATION-BUILD DEVKIT
@@ -24,16 +21,16 @@ VCrayApp 0.1.0 src.txt 0.0.4        UTF-8                        2023-04-01
   *    When this folder is used for the raylib application source code    *
   *    there are advantages in the use of Visual Studio Code for the      *
   *    project. See <http://orcmid.github.io/nfoTools/dev/D211101> on     *
-  *    VCrayApp Setup and VCrayApp Operation (D211101a and D211101b).     *                                                          *
+  *    VCrayApp Setup and VCrayApp Operation (D211101/a and D211101/b).   *                                                          *
   *                                                                       *
   *    It is recommended that the source code here be backed-up under     *
   *    a source-code management system such as Git and GitHub.  See       *
-  *    <http://orcmid.github.io/nfoTools/dev/D211101/D211101c> on         *
-  *    VCrayApp Verification/Deployment Lifecycle for the project.        *
+  *    <http://orcmid.github.io/nfoTools/dev/D211101/c/> on VCrayApp      *
+  *    Verification/Deployment Lifecycle for the VCrayAPP projects.       *
   *                                                                       *
   *    DO NOT COMPILE INTO THIS FOLDER.  SEE THE DESCRIPTION FOR THIS     *
   *    VCrayApp RELEASE (I.E, THE VCrayApp-0.1.0.txt FILE) available at   *
-  *    <https://orcmid.github.io/nfoTools/dev/D211101/D211101e>.          *                                                     *
+  *    <https://orcmid.github.io/nfoTools/dev/D211101/e/>.                *                                                     *
   *                                                                       *
   *    If VCrayApp is re-extracted or an update is extracted, this        *
   *    file will be restored/replaced.  Any other files already in this   *
@@ -62,12 +59,13 @@ VCrayApp 0.1.0 src.txt 0.0.4        UTF-8                        2023-04-01
  ATTRIBUTION
 
    Hamilton, Dennis E. Source Code Folder for a raylib Native Windows App.
-   File src.txt version 0.0.4 dated 2023-04-01 available on the Internet as a
+   File src.txt version 0.0.5 dated 2023-05-08 available on the Internet as a
    version of
    <https://github.com/orcmid/nfoTools/blob/master/devKits/WinDev/VCrayApp/dev/src/src.txt>.
 
 - ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.5 2023-05-08T20:19Z Adjusted as final release candidate
  0.0.4 2023-04-01T18:57Z Filled-in and ASCII-armor signed.
  0.0.3 2023-01-14T19:35Z Adjusted for VCrayApp 0.1.0 (beta)
  0.0.2 2022-07-10T22:29Z Completed information, pending addition of references
