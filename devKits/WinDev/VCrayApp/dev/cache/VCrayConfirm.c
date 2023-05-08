@@ -1,4 +1,7 @@
 /*
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
    VCrayConfirm.c 0.1.15               UTF-8                       2023-05-08
    -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
@@ -335,4 +338,15 @@ int main(void)
          raylib 3.7.0.zip release downloaded 2021-10-08T00:41
 
                         *** end of VCrayConfirm.c ***
+-----BEGIN PGP SIGNATURE-----
+
+iQFGBAEBCAAwFiEEBNBDIpebhN4QdwM0+W6J/9RWYooFAmRZTbgSHG9yY21pZEBh
+cGFjaGUub3JnAAoJEPluif/UVmKKV+0IAKkGgQn/OboW6pbgCzwGLDeeIGX+I0/7
+f8340bQmNIpOgDEDBwAJm8EVMM2uBU4dZesPt1U/1pfZQsEPur2RUt9SBRkAOrlb
+Ogn6vYSMwrwMUjgNIfGfd5qOndk7qA/P/XFBlgBX/yvlcmuBLypIZ7yXP/k1ZEp7
+JuLJ/JMKCMapFJ0AyUQ5Ksy4yRme4uNSndqOTKd9BSxp1sw90mz/z/q1fw76VxmH
+is44Mx+dCdOmzg3gQWlt3ZUnq33ggssm4AlnlhaXzCs1g45WSAAdBy5XkqHbVpfl
+3BqQ8I0MRb0WKt5U2mqQZ8im1E8Ils+0Ssc/JA1OvsZfm9WJFiRoxIw=
+=tHdt
+-----END PGP SIGNATURE-----
 */
