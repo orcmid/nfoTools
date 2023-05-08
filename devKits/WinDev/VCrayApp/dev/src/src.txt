@@ -1,3 +1,6 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
 VCrayApp 0.1.0 src.txt 0.0.5        UTF-8                        2023-05-08
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
@@ -63,7 +66,7 @@ VCrayApp 0.1.0 src.txt 0.0.5        UTF-8                        2023-05-08
    version of
    <https://github.com/orcmid/nfoTools/blob/master/devKits/WinDev/VCrayApp/dev/src/src.txt>.
 
-- ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+- - ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
  0.0.5 2023-05-08T20:19Z Adjusted as final release candidate
  0.0.4 2023-04-01T18:57Z Filled-in and ASCII-armor signed.
@@ -72,16 +75,15 @@ VCrayApp 0.1.0 src.txt 0.0.5        UTF-8                        2023-05-08
  0.0.1 2021-11-13T22:21Z The final format, needing only the tutorial URLs
  0.0.0 2021-11-11T20:54Z Recommendation and filler for a VCrayApp subdirectory
 
-
                           ***** end of src.txt *****
 -----BEGIN PGP SIGNATURE-----
 
-iQFGBAEBCAAwFiEEBNBDIpebhN4QdwM0+W6J/9RWYooFAmQofn8SHG9yY21pZEBh
-cGFjaGUub3JnAAoJEPluif/UVmKKCFkH/3ZiSooOlNWoPastPJHf6nrEvs+1b9VN
-njrv2BaTPMELCGoUuNFKl+ulPBo13ZH/n/4vPdMiIukrO5xAs+WfdWjbUc6qJI6w
-Vd+R8UrdCmtmWp7mtsZjRFg8sXfV5EeW0XIEcn17zzagwxSILYch8wvFNyKblgKc
-qI6OuWR6BNwnTa8thmV/iBKLtWeXll7BnjxS0pbiWXtAu+fqdIOT2UNOWEgFf563
-5baECtoLt1SxuVUpLMU0EPe3M0+fwR1EB5HRQsYmRO6j077NHhMEmFrebQpQvUqI
-Icf9+2IXxSGYmeyY4oXLm31GgB1F/8F6CipF1+jdB7NLG2rs8xQmhRk=
-=CYbN
+iQFGBAEBCAAwFiEEBNBDIpebhN4QdwM0+W6J/9RWYooFAmRZWicSHG9yY21pZEBh
+cGFjaGUub3JnAAoJEPluif/UVmKK8A0H/0b751tE58wZuYhNYnmB8qUkBh8IgExc
+kvgal/DM5yCfCeMg9j/rVa7a/NKss+tkm+HCXx6wUkccm7TPfV2Vzo0iwSAfQlcX
+m47lYj4De+yR7ZTURuREOqN34j0TOwFfxsLSq6of3TiL+S27wL80wyd5hZwDgNa5
+DJbkFAJOUIP88MeBjm1gPBQflJDqyZZuUvmCi6EsSTrSTx+pEIcOz2X/Xm8GfEPt
+/u3i4hx1qQpQm1uEGYeJIvhNWIOHB0u6CJSQCsXZdk9/oM9ZWviiG7xAFcnyY10s
+5vHUbg3kEzHI02beQgHZZFS86BuJkmYBVfO2fRKt4tJIQ+8GgdYnnJk=
+=yxZp
 -----END PGP SIGNATURE-----
