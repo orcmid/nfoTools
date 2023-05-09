@@ -1,5 +1,5 @@
-D211101e.txt 0.0.13                 UTF-8                         2023-05-07
-----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+D211101e.txt 0.1.0                  UTF-8                         2023-05-09
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
                         nfoWare/nfoWorks nfoTools
@@ -10,7 +10,10 @@ D211101e.txt 0.0.13                 UTF-8                         2023-05-07
                      D211101e: VCRAYAPP 0.1.0 (BETA)
                      -------------------------------
 
-SYNOPSIS [TBD]
+SYNOPSIS
+
+    This is the manifest of <https://orcmid.github.io/nfoTools/dev/D211101/e/>
+    for the release of VCrayApp-0.1.0 (beta).
 
 MANIFEST
 
@@ -18,28 +21,30 @@ MANIFEST
 
                index.md  The description for VCrayApp-0.1.0 (beta)
 
-**** THIS IS A PLACEHOLDER USING D211101d.txt FOR BOILERPLATE ****
+      VCrayApp-0.1.0.txt 14,152 byte file dated 2023-05-08T13:46-0700
+          Synopsis, summaries, and manifest for the VCrayApp-0.1.0 beta
+          release candidate.  The file is armor-signed and the same as the one
+          included in VCrayApp-0.1.0.zip.  Download and review of this file
+          is useful before deciding to download the additional files.
 
-      VCrayApp-0.0.0.txt 11,862byte file dated 2023-01-07T12:49-0800
-        Synopsis, summaries, and manifest for the VCrayApp-0.0.0 alpha
-        release candidate.  The file is clear-signed and the same as the one
-        included in VCrayApp-0.0.0.zip.  Download and review of this file
-        is useful before deciding to download the additional files.
+       CHANGES-0.1.0.txt 8,412 byte file dated 2023-05-08T13:46-0700
+          Account of changes, including breaking changes, made since the
+          VCrayApp-0.0.0 release at D211101d.
 
-      CHANGES-0.1.0.txt (details pending)
+      VCrayApp-0.1.0.zip 38,480 byte file dated 2023-05-08T13:46-0700
+          Package of the VCrayApp-0.1.0 release candidate with contents as
+          described by VCrayApp-0.1.0.txt (and also included therein).
 
-      VCrayApp-0.0.0.zip 2,120,473 byte file dated 2023-01-07T12:56-0800
-        Package of the VCrayApp-0.0.0 release candidate with contents as
-        described by VCrayApp-0.0.0.txt (and also included therein).
+  VCrayApp-0.1.0.zip.asc 532 byte file dated 2023-05-08T13:46-0700
+          Detached digital signature of VCrayApp-0.1.0.zip.  Verification of
+          this signature confirms the source and the integrity of the .zip.
 
-  VCrayApp-0.0.0.zip.asc 532 byte file dated 2023-01-07T13:18-0800
-        Detached digital signature of VCrayApp-0.0.0.zip.  Verification of
-        this signature confirms the source and the integrity of the .zip.
-
-  VCrayApp-0.0.0.zip.sha256 86 byte file dated 2023-01-07T14:29-0800
-        SHA 256 crypt ographic hash of file VCrayApp-0.0.0.zip.  Verification
-        of *this* hash value is evidence that the downloaded .zip (or .sha256)
-        have not been altered in the downloading/redistribution and usage.
+  VCrayApp-0.0.0.zip.sha256 129 byte file dated 2023-05-08T13:46-0700
+          Cryptographic hash of file VCrayApp-0.1.0.zip.  Verification
+          of *this* hash value is evidence that the downloaded .zip (or
+          .sha256) have not been altered in the downloading/redistribution
+          and usage.  This is unaltered output of the Microsoft Windows
+          certutil program.
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
@@ -62,27 +67,19 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. D211101e: VCrayApp 0.1.0 (beta).  nfoTools development
-   documentation text file D211101e.txt version 0.0.13 dated 2023-04-12,
+   documentation text file D211101e.txt version 0.0.0 dated 2023-05-09,
    available on the Internet as a version of
    <https://orcmid.github.io/nfoTools/dev/D211101/e/D211101e.txt>
 
 TODO
 
- * Add release progression to the top banner once there is more here.
-
  * Review all wordings
 
  * Download all files and confirm content, signatures, and hashes
 
- * Provide minimal information and a dummy VCrayApp-0.1.0.txt until the beta
-   release is staged.
-
   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
- 0.0.13 2023-05-07T18:59Z Transposed to new location
- 0.0.12 2023-04-12T00:21Z New TODO
- 0.0.11 2023-04-10T17:30Z Touch-ups
- 0.0.10 2023-02-10T00:28Z Draft Placeholder from 0.0.9 D211101d.txt being
-        take as boilerplate
+ 0.1.0 2023-05-09T14:48Z D211101e derived from 0.0.13 D211101d as boilerplate.
+
 
               ***** end of  D211101e.txt *****
