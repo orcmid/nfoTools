@@ -1,4 +1,4 @@
-D211101e.txt 0.1.0                  UTF-8                         2023-05-09
+D211101e.txt 0.1.1                  UTF-8                         2023-05-09
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -39,7 +39,7 @@ MANIFEST
           Detached digital signature of VCrayApp-0.1.0.zip.  Verification of
           this signature confirms the source and the integrity of the .zip.
 
-  VCrayApp-0.0.0.zip.sha256 129 byte file dated 2023-05-08T13:46-0700
+  VCrayApp-0.0.0.zip.sha256 155 byte file dated 2023-05-09T13:22-0700
           Cryptographic hash of file VCrayApp-0.1.0.zip.  Verification
           of *this* hash value is evidence that the downloaded .zip (or
           .sha256) have not been altered in the downloading/redistribution
@@ -67,7 +67,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. D211101e: VCrayApp 0.1.0 (beta).  nfoTools development
-   documentation text file D211101e.txt version 0.0.0 dated 2023-05-09,
+   documentation text file D211101e.txt version 0.1.1 dated 2023-05-09,
    available on the Internet as a version of
    <https://orcmid.github.io/nfoTools/dev/D211101/e/D211101e.txt>
 
@@ -79,6 +79,7 @@ TODO
 
   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.1.1 2023-05-09T20:24Z replace with corrected SHA256
  0.1.0 2023-05-09T14:48Z D211101e derived from 0.0.13 D211101d as boilerplate.
 
 
