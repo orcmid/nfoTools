@@ -15,8 +15,7 @@ VCrayApp-0.1.0-checklist.txt 0.0.*  UTF-8                         2023-05-04
     (such as for documentation).
 
    * VCrayApp-*semver*-checklist.txt
-        o Make a *semver* checklist copy and start working through it.
-        o Reflect changes/improvements noticed should be transposed into the
+        o Changes/improvements noticed should be transposed into the
           main checklist also.
 
     * .vscode\
@@ -37,65 +36,37 @@ VCrayApp-0.1.0-checklist.txt 0.0.*  UTF-8                         2023-05-04
         o Ensure that the cache components work with the version of raylib
           being used
 
-
     * cache\VCrayVerCheck.c
-        o Adjust version-specific information
-        o Adjust VCrayApp package identification
-        o Clear/armor sign the VCrayVerCheck.c
 
     * cache\VCrayConfirm.c
-        o Adjust version-specific information
-        o Adjust VCrayApp package identification
-        o Clear/armor sign the VCrayConfirm.c file
 
     * VCrayApp.bat
-        o Set the semantic version variable, VCrayApp
-        o Provide the <place-to-be-announced> as the location for VCrayApp
-          dev location
-        o Provide the <related-place-to-be-announced> as the location for
-          the latest VCrayApp download, etc.
-        o Determine PAUSE default for non-"+" compiles on success
-        o For FAIL6 provide a better indication of the location of raylib/src
-        o For FAIL6 provide a link to the requirement to check and also
-          consider the case where the location of raylib has been changed
-        o For FAIL5 provide information on how to check for compilation
-          errors and determine the nature of the failure
-        o For FAIL5 find a way to provoke this case to demonstrate it
-        o For FAIL4 do similar things - collect typical errors such as
-          misspellings and incompatibility with a raylib version
-        o For FAIL3 provide a link to <some nfoTools support information>
-          specifically on being under a developer Command Prompt session.
-        o For FAIL1 provide <other nfoTools support information. on the
-          correct unpacking and preservation of VCrayApp in a folder.
+        o Redo the capture of all the FAILCODEs for the documentation.
+        o Also ensure there are good captures of normal situations, with or
+          without warnings, with or without terse.
+        o Document all of the cases.
+        o Point to where the particular CMD command prompt customization
+          is documented.
+        o FAILCODE0
+        o FAILCODE1
+        o FAILCODE2
+        o FAILCODE3
+        o FAILCODE4
+        o FAILCODE5
+        o FAILCODE6
+        o FAILCODE7
+        o FAILCODE8
 
-    * VCrayApp-semver.txt
-        o Ensure place-holder under D211101x subfolder.
-
-    * Include CHANGES.txt and keep it current as development of a new
-      release is underway.  It will be included in the VCrayApp zip and be
-      downloadable separately via D211101.
-        o Clear/Armor sign CHANGES.txt
-
-    * Review the Notice to be current and complete
-        o Clear/Armor sign NOTICE.txt
+    * See if I can also compile C++ this way.  No, the /TC option interferes,
+      and so do the /SUBSYTEM /MAINENTRY options.
 
     * Ensure rational operation when VCrayApp is embedded in a project and
       hosted in a script of that project.  This is done with VCrayVerify but
       other cases might be needed.
 
-
 DEPLOYMENT
 
-    * Use the VCBind model
-    * For the manifest, do gpg --clear-sign --armor VCrayApp-*semver*.txt
-      To produce VCrayApp-*semver*.txt.asc.  Get this to correctly describe
-      itself as the *.txt file.  Then delete the *.txt file and rename the
-      *.txt.asc file to *.txt.  This should be checked in.
-    * Make the VCrayApp-*semver*.zip of everything but the dev.txt file.
-      Copy the two VCrayApp-*semver* files to the VCrayApp level.  Delete
-      the *.zip in the dev/ folder.
-    * Create the gpg --detach-sign --armor VCrayApp-*semver*.zip and that
-      will make VCrayApp-*semver*.zip.asc as the detached signature.
+
     *** TODO: The download for this needs to describe how to check the
       verify the signature, the clearsigned VCrayApp-*semver*.txt.
     * Create the SHA256 Hash of the VCrayApp-*semver*.zip for usage also.
@@ -105,18 +76,7 @@ DEPLOYMENT
       operation on current Windows 10/11.
 
     * The signature check works with gpg --verify naming either the .txt
-      version or the .asc detached signature.
-
-    * The hash can be checked by comparison, which is not much fun.  There
-      seems to be no check utility and that's just too bad.  THIS SHOULD BE
-      AN NFOTOOLS PROJECT.  It seems that Winget hash works a little better.
-      I could probably do a hash to a file and then do a file compare.  That
-      might be a lot better.
-
-    * Ensure that GIT and the site treat .asc and .sha256 as text/plain. That
-      is the default.  We need to figure out if clear-sign armor files check
-      properly whichever way line ends are encoded: CR/LF or just one or the
-      other.  XXX: THIS MAY BE A FRAGILE DEAL.
+      version or the .asc/.sig detached signature.
 
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
@@ -133,13 +93,7 @@ TODO
  * These aspects of trustworthy production need to be accounted for.  There
    should also be some integration with respect to confirmable experience.
 
- * In VCrayApp.bat, have places for error messages to link to that provide
-   more information on resolving a particular failure.
-
  * Resolve use of docs/dev connections back and forth on raylib at docs/tools.
-
- * Do alpha/beta availability and distribution once there is a docs/dev folder
-   for downloading, usage information, and gathering feedback.
 
  * .vscode/.vscode.txt needs further details including what happens with
    user *.h files in the src/ folder.  Intellisense will work for all of
