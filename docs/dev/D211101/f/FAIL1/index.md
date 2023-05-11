@@ -1,4 +1,4 @@
-<!-- index.md 0.0.5                 UTF-8                          2023-05-11
+<!-- index.md 0.0.6                 UTF-8                          2023-05-11
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
             FAILCODE1: INCORRECT VCrayApp FILES CONFIGURATION
@@ -6,7 +6,7 @@
 
 # ***VCrayApp** [FAILCODE1: INCORRECT VCrayApp FILES CONFIGURATION](.)*
 
-| ***[nfoTools](../../../../)*** | [dev](../../../)[>D211101](../../)[>f](../)[>FAIL1](.) | [index.html](index.html) ***0.0.5 2023-05-11*** |
+| ***[nfoTools](../../../../)*** | [dev](../../../)[>D211101](../../)[>f](../)[>FAIL1](.) | [index.html](index.html) ***0.0.6 2023-05-11*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../../../../images/hardhat-logo.gif) |
 |              |                     |           |
@@ -21,7 +21,7 @@ fail, with `FAILCODE1` reported.
 
 The check is for presence of the named files.  Removal or renaming of the
 VCrayApp-provided files, and folders, will cause the integrity check to fail.
-IN-place modification of the files is not detected directly; there may be
+In-place modification of the files is not detected directly; there may be
 other consequences however.
 
 To confirm the expected setup, consult the [D211101](../../)
@@ -32,7 +32,7 @@ carried out.
 The strict checking is by design.
 If confirmation fails in an unmodified VCrayApp setup, please report in
 an [nfoTools Discussion](https://github.com/orcmid/nfoTools/discussions)
-mentioning VCrayApp FAIL1.
+mentioning VCrayApp FAILCODE1.
 
 For more on the files and their usage, including modifications, see the
 [VCrayApp Operation](../../b/) and
@@ -50,6 +50,7 @@ from time to time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.6 2023-05-11T20:18Z Fix simple typos
      0.0.5 2023-05-11T18:47Z Update for VCrayApp-0.1.0 release demo
      0.0.4 2023-05-07T19:42Z Reflect transposition to new location
      0.0.3 2023-04-21T17:10Z Touch-ups
