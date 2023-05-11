@@ -74,31 +74,29 @@ VCrayApp-checklist.txt 0.0.9        UTF-8                         2023-05-03
 
     * VCrayApp.bat
         o Set the semantic version variable, VCrayApp
-        o Provide the <place-to-be-announced> as the location for VCrayApp
-          dev location
-        o Provide the <related-place-to-be-announced> as the location for
-          the latest VCrayApp download, etc.
-        o Determine PAUSE default for non-"+" compiles on success
-        o For FAIL6 provide a better indication of the location of raylib/src
-        o For FAIL6 provide a link to the requirement to check and also
-          consider the case where the location of raylib has been changed
-        o For FAIL5 provide information on how to check for compilation
-          errors and determine the nature of the failure
-        o For FAIL5 find a way to provoke this case to demonstrate it
-        o For FAIL4 do similar things - collect typical errors such as
-          misspellings and incompatibility with a raylib version
-        o For FAIL3 provide a link to <some nfoTools support information>
-          specifically on being under a developer Command Prompt session.
-        o For FAIL1 provide <other nfoTools support information. on the
-          correct unpacking and preservation of VCrayApp in a folder.
+         o Redo the capture of all the FAILCODEs for the documentation.
+        o Also ensure there are good captures of normal situations, with or
+          without warnings, with or without terse.
+        o Document all of the cases.
+        o Point to where the particular CMD command prompt customization
+          is documented.
+        o FAILCODE0
+        o FAILCODE1
+        o FAILCODE2
+        o FAILCODE3
+        o FAILCODE4
+        o FAILCODE5
+        o FAILCODE6
+        o FAILCODE7
+        o FAILCODE8
 
     * VCrayApp-semver.txt
         o Ensure place-holder under D211101x subfolder.
 
-    * Include CHANGES.txt and keep it current as development of a new
+    * Include CHANGES-*semver*.txt and keep it current as development of a new
       release is underway.  It will be included in the VCrayApp zip and be
       downloadable separately via D211101.
-        o Clear/Armor sign CHANGES.txt
+        o Clear/Armor sign CHANGES-*semver*.txt
 
     * Review the Notice to be current and complete
         o Clear/Armor sign NOTICE.txt
@@ -106,6 +104,9 @@ VCrayApp-checklist.txt 0.0.9        UTF-8                         2023-05-03
     * Ensure rational operation when VCrayApp is embedded in a project and
       hosted in a script of that project.  This is done with VCrayVerify but
       other cases might be needed.
+
+    * Review the tests\ for anything that needs to be replicated, especially
+      for confirming error behavior.
 
 
 DEPLOYMENT
@@ -129,18 +130,15 @@ DEPLOYMENT
       operation on current Windows 10/11.
 
     * The signature check works with gpg --verify naming either the .txt
-      version or the .asc detached signature.
+      version or the .asc/.sig detached signature.
 
     * The hash can be checked by comparison, which is not much fun.  There
       seems to be no check utility and that's just too bad.  THIS SHOULD BE
       AN NFOTOOLS PROJECT.  It seems that Winget hash works a little better.
       I could probably do a hash to a file and then do a file compare.  That
-      might be a lot better.
+      might be a lot better.  Running certUtil and matching against the view
+      of the hash file is not that difficult.
 
-    * Ensure that GIT and the site treat .asc and .sha256 as text/plain. That
-      is the default.  We need to figure out if clear-sign armor files check
-      properly whichever way line ends are encoded: CR/LF or just one or the
-      other.  XXX: THIS MAY BE A FRAGILE DEAL.
 
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*

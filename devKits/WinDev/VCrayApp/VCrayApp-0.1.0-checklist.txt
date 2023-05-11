@@ -64,6 +64,9 @@ VCrayApp-0.1.0-checklist.txt 0.0.*  UTF-8                         2023-05-04
       hosted in a script of that project.  This is done with VCrayVerify but
       other cases might be needed.
 
+    * Review the tests\ for anything that needs to be replicated, especially
+      for confirming error behavior.
+
 DEPLOYMENT
 
 
