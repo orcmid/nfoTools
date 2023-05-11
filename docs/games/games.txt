@@ -1,4 +1,4 @@
-games.txt 0.0.7                     UTF-8                         2023-05-05
+games.txt 0.0.8                     UTF-8                         2023-05-**
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -145,6 +145,19 @@ TODO
    languages with very simple (e.g., command-line) games.  The progression
    that Adv10 is part of could be informative but it is a bit large.
 
+ * <https://www.codecademy.com/resources/blog/5-ways-to-build-a-mini-game/>
+   although it misses raylib and probably others.  Some of the statements,
+   such as proximity of Python to English suggest a certain lack of competence
+   and reason to be cautious.
+
+ * <https://www.udemy.com/course/cpp-fundamentals/> C++ Fundamentals: Game
+   Programming For Beginners.  This course is not precisely about C++.  It
+   uses C Language for the basics and the first two sections of the course.
+   Trying out this course is what led me to raylib.  VCrayApp was inspired
+   to provide an alternative to the troubling installation/setup and other
+   oddities of this particular course.  You can use a VCrayApp setup to do
+   all of the initial programming in this course.  There are places where
+   C++ is needed and you can accomplish that too with simple adjustments.
 
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
