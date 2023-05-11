@@ -1,4 +1,4 @@
-tests.txt 0.0.11               UTF-8                              2023-04-17
+tests.txt 0.0.2               UTF-8                              2023-05-11
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                       RAYLIB APP DEVELOPMENT PROJECT
@@ -22,7 +22,13 @@ MANIFEST
         This manifest and job jar for the VCrayApp construction-kit
         development project
 
-    operator.c  Demonstration of error using C++ operator command in c
+    operator.c    Demonstration of error using C++ operator command in c
+
+       FAIL0.txt  Do an embedded call on VCrayApp that causes this error to
+                  occur.  This might only work for VCrayApp 1.0.0 and might
+                  not work at all for 0.1.0 unless I can force it off.
+
+       FAIL1.txt  monkey with one file so that the check fails
 
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
@@ -46,7 +52,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. Raylib App Construction-Kit Project. nfoTools Project
-   text file tests.txt 0.0.0 dated 2023-04-17, available on the Internet
+   text file tests.txt 0.0.2 dated 2023-05-11, available on the Internet
    as a version of
    <https://github.com/orcmid/nfoTools/blob/master/devKits/WinDev/VCrayApp/tests/tests.txt>
 
@@ -59,6 +65,7 @@ TODO
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
+ 0.0.2 2023-05-11T18:53Z Add FAIL0-FAIL1 notes
  0.0.1 2023-04-18T21:38Z Introduce operator.c
  0.0.0 2023-04-17T21:27Z Initial placeholder
 

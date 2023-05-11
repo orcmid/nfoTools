@@ -1,0 +1,7 @@
+FAIL1.txt 0.0.0                     UTF-8                         2023-05-11
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+                    VCRAYAPP FAILCODE1 DEMONSTRATION TEST
+
+
+I do this usually by renaming NOTICE.txt then naming it back.
