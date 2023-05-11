@@ -1,4 +1,4 @@
-FAIL0.txt 0.0.5                     UTF-8                         2023-05-07
+FAIL0.txt 0.0.6                     UTF-8                         2023-05-11
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -20,7 +20,7 @@ MANIFEST
 
     index.html  (generated) web page for FAILCODE0 Explanation
 
-    FAIL0-2023-04-12-1549-VCrayApp-0.1.0.png
+    FAIL0-2023-05-11-1112-VCrayApp-0.1.0.png
                 screen capture of session producing FAIL0 failure
 
 
@@ -46,7 +46,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. VCrayApp FAILCODE0: COMMAND SHELL EXTENSIONS REQUIRED.
-   nfoTools development text file fails.txt version 0.0.5 dated 2023-05-07,
+   nfoTools development text file fails.txt version 0.0.6 dated 2023-05-11,
    available on the Internet as a version of
    <https://orcmid.github.io/nfoTools/dev/D211101/f/FAIL0/FAIL0.txt>
 
@@ -56,6 +56,7 @@ TODO
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
+ 0.0.6 3034-05-22T18:23Z Replace image using VCrayApp-0.1.0 demo
  0.0.5 2023-05-07T19:34Z Transpose for new location under D211101f.
  0.0.4 2023-04-12T15:52Z Replace the image, clear TODOs
  0.0.3 2023-04-12T00:02Z More TODOs

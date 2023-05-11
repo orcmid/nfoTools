@@ -1,0 +1,18 @@
+FAIL0.txt 0.0.0                     UTF-8                         2023-05-11
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+                    VCRAYAPP FAILCODE0 DEMONSTRATION TEST
+
+
+Try cmd /y to disable command extensions for this session, /x enables
+<https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/cmd>
+indicates that /e:off is the ticket.
+I shall try
+    cmd /k /e:off VCrayApp + ?
+The way to tell if COMMAND EXTENSIONS are not set is to do a test on
+%CMDEXTVERSION%.  I think we want it to be 2.  Yes.
+
+We cannot do anything with this in VCrayApp-0.1.0, but for 1.0.0 we will
+Use the environment variable.
+
+For VCrayApp-0.1.0 we force this by jimmying VCrayApp.bat to always fail.
