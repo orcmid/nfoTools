@@ -1,5 +1,5 @@
-VCrayApp-0.1.0-checklist.txt 0.0.*  UTF-8                         2023-05-04
-----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+VCrayApp-0.1.0-checklist.txt 0.0.*  UTF-8                         2023-05-11
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                       RAYLIB APP DEVELOPMENT PROJECT
                       ==============================
@@ -47,10 +47,6 @@ VCrayApp-0.1.0-checklist.txt 0.0.*  UTF-8                         2023-05-04
         o Document all of the cases.
         o Point to where the particular CMD command prompt customization
           is documented.
-        o FAILCODE0
-        o FAILCODE1
-        o FAILCODE2
-        o FAILCODE3
         o FAILCODE4
         o FAILCODE5
         o FAILCODE6
@@ -82,7 +78,7 @@ DEPLOYMENT
       version or the .asc/.sig detached signature.
 
 
-----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
 TODO
@@ -117,7 +113,7 @@ TODO
    are multiple kinds of changes needed to D211101.
 
 
-----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
  0.0.* 2023-05-**        Incremental changes as the list is worked
  0.0.9 2023-05-03T15:53Z Add TODOs about documentation and CHANGES
