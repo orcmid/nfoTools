@@ -1,4 +1,4 @@
-<!-- index.md 0.0.5                 UTF-8                          2023-05-12
+<!-- index.md 0.0.6                 UTF-8                          2023-05-12
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
               FAILCODE3: NO VS NATIVE COMMAND-LINE ENVIRONMENT
@@ -6,7 +6,7 @@
 
 # ***VCrayApp** [FAILCODE3: NO VS NATIVE COMMAND-LINE ENVIRONMENT](.)*
 
-| ***[nfoTools](../../../../)*** | [dev](../../../)[>D211101](../../)[>f](../)[>FAIL3](.) | [index.html](index.html) ***0.0.5 2023-05-12*** |
+| ***[nfoTools](../../../../)*** | [dev](../../../)[>D211101](../../)[>f](../)[>FAIL3](.) | [index.html](index.html) ***0.0.6 2023-05-12*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../../../../images/hardhat-logo.gif) |
 |              |                     |           |
@@ -24,7 +24,7 @@ use "x64 Developer Command Prompt."
 
 ![no-failure in contrast](pretty-2023-05-12-1040-VCrayApp-0.1.0.png)
 
-Initiation of a command-line session with the x64 Nstive Tools Command Prompt
+Initiation of a command-line session with the x64 Native Tools Command Prompt
 is revealed in several ways.
 
 * The title bar of the command-line window reflects the initiation.
@@ -54,7 +54,8 @@ from time to time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-     0.0.5 2023-05-12T21:54Z Update to VCrayApp=0.1.0 release candidate
+     0.0.6 2023-05-12T20:32Z Fix typo
+     0.0.5 2023-05-12T19:54Z Update to VCrayApp=0.1.0 release candidate
      0.0.4 2023-05-07T19:52Z Reflect transposition to new location
      0.0.3 2023-04-21T19:04Z Touch-ups
      0.0.2 2023-04-14T17:44Z Fix simple typo
