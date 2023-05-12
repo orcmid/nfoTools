@@ -1,0 +1,8 @@
+FAIL2.txt 0.0.0                     UTF-8                         2023-05-12
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+                    VCRAYAPP FAILCODE2 DEMONSTRATION TEST
+
+
+It's easy to make a bad command line.  In some cases there is a weird
+result because the exe and src parameter positions might be completely off.
