@@ -47,7 +47,6 @@ VCrayApp-0.1.0-checklist.txt 0.0.*  UTF-8                         2023-05-11
         o Document all of the cases.
         o Point to where the particular CMD command prompt customization
           is documented.
-        o FAILCODE6
         o FAILCODE7
         o FAILCODE8
 

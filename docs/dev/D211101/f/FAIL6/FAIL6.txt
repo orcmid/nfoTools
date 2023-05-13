@@ -1,4 +1,4 @@
-FAIL6.txt 0.0.4                     UTF-8                         2023-05-07
+FAIL6.txt 0.0.5                     UTF-8                         2023-05-13
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -30,14 +30,15 @@ MANIFEST
 
     index.html  (generated) web page for FAILCODE6 Explanation
 
-    FAIL6-2023-04-21-1534-VCrayApp-0.1.0.png
-                screen capture of a causes FAILCODE6.
+    FAIL6-2023-05-13-1537-VCrayApp-0.1.0.png
+                screen capture of a setup that causes FAILCODE6.
 
+    FAIL6-2023-05-13-1554-raylibTreeTop.png
+                first part of a correct tree command output
 
-TODOS:
+    FAIL6-2023-05-13-1557-raylibTreeTip.png
+                the end of tree command output showing src\
 
- * Change the screen capture to a more-representative VCrayApp project
-   location.
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
@@ -60,12 +61,13 @@ TODOS:
  ATTRIBUTION
 
    Hamilton, Dennis E. VCrayApp FAILCODE6: RAYLIB NOT FOUND WHERE EXPECTED.
-   nfoTools development text file FAIL6.txt version 0.0.4 dated 2023-05-07,
+   nfoTools development text file FAIL6.txt version 0.0.5 dated 2023-05-13,
    available on the Internet as a version of
    <https://orcmid.github.io/nfoTools/dev/D211101/f/FAIL6/FAIL6.txt>
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.5 2023-05-13T23:15Z Expand explanation with VCrayApp-0.1.0 demo
  0.0.4 2023-05-07T20:07Z Reflect transposition to new location
  0.0.3 2023-04-24T22:28Z Explain most-likely cause
  0.0.2 2023-04-23T20:18Z Current with completed draft
