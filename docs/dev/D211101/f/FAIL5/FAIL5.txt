@@ -1,4 +1,4 @@
-FAIL5.txt 0.0.3                     UTF-8                         2023-05-07
+FAIL5.txt 0.0.4                     UTF-8                         2023-05-13
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -21,12 +21,12 @@ MANIFEST
 
     FAIL5.txt   This synopsis and manifest
 
-    index.md    GitHub nfoTools/docs/dev/d211101/fails/FAIL5 index markdown
+    index.md    GitHub nfoTools/docs/dev/d211101/f/FAIL5 index markdown
                 This file does not appear at <orcmid.github.io/nfoTools>.
 
     index.html  (generated) web page for FAILCODE5 Explanation
 
-    FAIL5 2023-04-13-1717-verboseErrors-VCrayApp-0.1.0.png
+    FAIL5 2023-05-13-0924-verboseErrors-VCrayApp-0.1.0.png
 
     FAIL5-2023-04-13-1719-operator.c-VCrayApp-0.1.0.png
 
@@ -39,12 +39,6 @@ TODOS:
     o VCrayVer.bat
     o FAILCODE4 possible here
     o VCrayConfirm.exe
-
- * Use a demo project location for the screen captures.
-
- * In the first paragraph on %VCEXE%, %VCEXE% is "operator.exe" not ".c".
-
- * Fix the typically statement also.
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
@@ -75,6 +69,7 @@ TODOS:
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.4 2023-05-14T16:42Z Align with VCrayApp-0.1.0 demo
  0.0.3 2023-05-07T20:02Z Reflect transposition to new location
  0.0.2 2023-04-21T19:57Z Manage TODOs, touch-ups
  0.0.1 2023-04-14-19:27Z Manage TODOs

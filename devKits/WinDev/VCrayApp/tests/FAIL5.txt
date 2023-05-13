@@ -1,0 +1,7 @@
+FAIL5.txt 0.0.0                     UTF-8                         2023-05-13
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+                    VCRAYAPP FAILCODE4 DEMONSTRATION TEST
+
+
+This one just moves operator.c into src\ and compiles operator.exe.

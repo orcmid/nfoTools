@@ -1,4 +1,4 @@
-<!-- index.md 0.0.8                 UTF-8                          2023-05-07
+<!-- index.md 0.0.9                 UTF-8                          2023-05-14
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
               FAILCODE5: PRODUCING/OPERATING %VCEXE% FAILED
@@ -6,7 +6,7 @@
 
 # ***VCrayApp** [FAILCODE5: PRODUCING/OPERATING %VCEXE% FAILED](.)*
 
-| ***[nfoTools](../../../../)*** | [dev](../../../)[>D211101](../../)[>](../)[>FAIL5](.) | [index.html](index.html) ***0.0.8 2023-05-07*** |
+| ***[nfoTools](../../../../)*** | [dev](../../../)[>D211101](../../)[>](../)[>FAIL5](.) | [index.html](index.html) ***0.0.9 2023-05-14*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../../../../images/hardhat-logo.gif) |
 |              |                     |           |
@@ -15,8 +15,8 @@
 `FAILCODE5`, and the companion [`FAILCODE4`](..\FAIL4), arise from a variety
 of build and operation failures in operation of `VCrayApp.bat`.  If operation
 is in terse (option `*`) mode, there is no helpful information about
-the failure.  In that case, rerun `VCrayApp.bat` in verbose mode, using the
-same parameters without the `*`.
+the failure.  In that case, rerun `VCrayApp.bat` directly in verbose mode,
+using the same parameters without the initial `*`.
 
 NOTE: If VCrayApp is embedded and operated under another script, VCrayApp
 should be rerun directly for trouble-shooting.  Follow the instructions
@@ -25,8 +25,8 @@ provided with the containing software (e.g., with
 
 The `%VCEXE%` value shown in an actual `FAILCODE5` report will be one of
 
-* The executable (`%VCAPPEXE%`) specified for the project -- the most likely
-case
+* The executable (`exe` parameter) specified for the project -- the most
+likely case
 * Different stages in building/refreshing the cache of raylib components
   * `VCrayVerCheck.exe`
   * `VCrayVer.bat`
@@ -36,7 +36,8 @@ case
 
 If [initial setup of VCrayApp](../../a) has been successful, with
 successful initialization/update of the VCrayApp cache,  error cases are
-typically when compiling the project source code (`%VCAPPSRC%` location).
+typically when compiling the project source code (`src` parameter or the
+`src\*.c` default location).
 
 That's the case for the demonstration project with `%VCEXE%` of
 `operator.exe`.
@@ -45,7 +46,7 @@ That's the case for the demonstration project with `%VCEXE%` of
 
 The following `FAILCODE5` incident provides simple-to-research diagnostics.
 
-![FAILCODE5 Verbose](FAIL5-2023-04-13-1717-verbose-VCrayApp-0.1.0.png)
+![FAILCODE5 Verbose](FAIL5-2023-05-13-0924-verbose-VCrayApp-0.1.0.png)
 
 Typically, the name of the file being compiled (here, `operator.c`) is named
 by VC/C++ and any diagnostic messages will follow that name, as shown above.
@@ -54,7 +55,7 @@ Diagnostic messages can be cryptic.  However, there is key information.  Each
 message indicates the file being processed (`operator.c`) and the number of
 the line in that file (`(9)`) along with an error code and some explanatory
 text.  These might not be particularly informative.  The diagnostics do
-identif places to look in the code that is being compiled.
+identify places to look in the code for which compilation is attempted.
 
 ![FAILCODE5 Located Source Error](FAIL5-2023-04-19-0844-operator.c-VCrayApp-0.1.0.png)
 
@@ -75,8 +76,8 @@ rely on its definitions.  The definition of `Vector3` is recognized and the
 C/C++ Intellisense feature finds nothing objectionable except the suspicious
 "+" on line 9.  It is valuable to notice that VS Code does not identify any
 other concern.  (Without that "+" the code appears to be a legitimate
-definition of a function named `operator`, although that usage is discouraged,
-but not forbidden in C Language because of its significance as a keyword in
+definition of a function named `operator`.  That usage is discouraged,
+but not forbidden, in C Language because of its significance as a keyword in
 C++.)
 
 ### Project Link Errors
@@ -117,6 +118,7 @@ from time to time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.9 2023-05-13T16:41Z Update with VCrayApp-0.1.0 demo example
      0.0.8 2023-05-07T20:05Z Reflect transposition to new location
      0.0.7 2023-04-23T19:49Z Small touch-ups of current draft
      0.0.6 2023-04-21T20:07Z Touch-ups of this draft portion
