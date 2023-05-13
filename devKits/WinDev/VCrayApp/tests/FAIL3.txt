@@ -1,0 +1,7 @@
+FAIL3.txt 0.0.0                     UTF-8                         2023-05-12
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+                    VCRAYAPP FAILCODE3 DEMONSTRATION TEST
+
+
+It's easy to start CMD without using a VS developer command prompt.

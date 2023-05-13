@@ -1,4 +1,4 @@
-<!-- index.md 0.0.4                 UTF-8                          2023-05-07
+<!-- index.md 0.0.5                 UTF-8                          2023-05-13
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
               FAILCODE4: COMPILING CACHE OF RAYLIB FILES FAILED
@@ -6,7 +6,7 @@
 
 # ***VCrayApp** [FAILCODE4: COMPILING CACHE OF RAYLIB FILES FAILED](.)*
 
-| ***[nfoTools](../../../../)*** | [dev](../../../)[>D211101](../../)[>f](../)[>FAIL4](.) | [index.html](index.html) ***0.0.4 2023-05-07*** |
+| ***[nfoTools](../../../../)*** | [dev](../../../)[>D211101](../../)[>f](../)[>FAIL4](.) | [index.html](index.html) ***0.0.5 2023-05-13*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../../../../images/hardhat-logo.gif) |
 |              |                     |           |
@@ -14,7 +14,7 @@
 
 ## PROBABLE DIAGNOSIS
 
-![FAILCODE4 Terse Message](FAIL4-terse-2023-04-13-1256-VCrayApp-0.1.0.png)
+![FAILCODE4 Terse Message](FAIL4-terse-2023-05-13-0749-VCrayApp-0.1.0.png)
 
 With all of the checks that have succeeded before this point in a run of VCrayApp, this FAILCODE is extremely unlikely.  It indicates that there has
 been some form of damage or defect-introduction into the VCrayApp setup.
@@ -38,7 +38,7 @@ prevent successful compilation of raylib components into the cache.
   * Restore the `cache\*.opt` files that are supplied with the version of
 VCrayApp being used.
 * Modifications to VCrayApp.bat have corrupted cache-creation/-update
-operation.  (That's how FAILCODE4 demonstration was forced for documentation.)
+operation.
   * Reinstallation of VCrayApp is advisable.
 
 ## TROUBLE-SHOOTING
@@ -49,25 +49,40 @@ this failure, it is important to repeat the operation using VCrayApp without any
 
 IMPORTANT: If VCrayApp is being operated embedded in a larger procedure, it
 is necessary to troubleshoot by operating VCrayApp.bat directly.  Building
-of the cache depends on VCrayApp alone.  A standalone use of VCrayApp.bat
+of the cache depends on VCrayApp alone.  A direct use of VCrayApp.bat
 is necessary to obtain details behind the FAILCODE4.  No modifications of
 VCrayApp.bat are required to accomplish this.  There will be no impact on
 returning to embedded use once the problem is resolved.
 
-![FAILCODE4 Verbose Message](FAIL4-verbose-2023-04-13-1259-VCrayApp-0.1.0.png)
+Repeat running of VCrayApp.bat in verbose mode.  The beginning of the report
+should have no special messages.
 
-On a verbose running of VCrayApp.bat, Any compiler messages that lead to
-`FAILCODE4` should be seen between the `[VCrayApp] Using version ...` message
-shown at the top of the screen capture above and the
-`[VCrayApp] **** FAILCODE4 ...` message line.  The lines before the first
-diagnostice message should be identical to the lines shown above, starting
-with the `cl /utf8 ...` line.  If there are differences, the differences may
-be a factor in the failure.
+![Expeced Verbose Startup](FAIL4-verbose-2023-05-13-0807-TroubleShooting.png)
+
+The troubleshooting startup should be similar to the the information in the
+screen capture above.  Fine details will differ with regard to time, location,
+and versions of tools.  It should all be uneventful until the FAILCODE4
+message and termination of the VCrayApp.bat script.
+
+![FAILCODE4 Verbose Message](FAIL4-verbose-2023-05-13-0807-VCrayApp-0.1.0.png)
+
+Scroll down in the command output to find the illustrated compile command.
+For a *successful* build of the cache, this is what will appear in verbose
+operation with a raylib version 4.x.
+
+Any compiler error messages should appear among the list of `raylib\src` files
+as they are compiled.  It could also be that files are not being found.
 
 Although `FAILCODE4` is specific to compilation of raylib components into the
 VCrayApp `cache\`, the analysis of diagnostic messages will be similar to the
-cases for [`FAILCODE5`](..\FAIL5).  Consult
-[VCrayApp Setup](../../D211101a) and [VCrayApp Operation](../../D211101b)
+cases for [`FAILCODE5`](..\FAIL5).  The complication is that
+the problem will not be with code for the VCrayApp project, but with raylib code if not obviously with the setup of the `raylib\` folder.
+
+In case the difficulty is with files not being found,
+it may be necessary to check with the
+[raylib project](https://github.com/raysan5/raylib/) for related issues.
+
+Consult [VCrayApp Setup](../../a) and [VCrayApp Operation](../../b)
 for further details.
 
 ----
@@ -82,6 +97,7 @@ from time to time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.5 2023-05-13T15:40Z Align with release candidate using demo project
      0.0.4 2023-05-07T19:57Z Reflect transposition to new location
      0.0.3 2023-04-21T19:28Z More touch-ups, final draft
      0.0.2 2023-04-20T23:35Z Draft touch-ups

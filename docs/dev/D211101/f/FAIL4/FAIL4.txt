@@ -1,4 +1,4 @@
-FAIL4.txt 0.0.5                     UTF-8                         2023-05-07
+FAIL4.txt 0.0.6                     UTF-8                         2023-05-13
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -38,9 +38,11 @@ MANIFEST
 
     index.html  (generated) web page from index.md
 
-    FAIL4-terse-2023-04-13-1256-VCrayApp-0.1.0.png
+    FAIL4-terse-2023-05-13-0749-VCrayApp-0.1.0.png
 
-    FAIL4-verbose-2023-04-13-1259-VCrayApp-0.1.1.png
+    FAIL4-verbose-2023-05-13-0807-TroubleShooting.png
+
+    FAIL4-verbose-2023-05-13-0755-VCrayApp-0.1.0.png
 
 TODOS:
 

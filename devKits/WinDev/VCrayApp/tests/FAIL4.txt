@@ -1,0 +1,13 @@
+FAIL4.txt 0.0.1                     UTF-8                         2023-05-13
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+                    VCRAYAPP FAILCODE4 DEMONSTRATION TEST
+
+
+Having the cache build fail is tricky.  It is about the specific operations
+for compiling the cache raylib *.obj files.
+
+I accomplish this by forcing the case in VCrayApp.bat.
+
+Then I do the 3 screen shots that go with the VCrayApp-0.1.0 correct cases
+to be checked.
