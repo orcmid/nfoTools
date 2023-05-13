@@ -1,4 +1,4 @@
-<!-- index.md 0.0.0                 UTF-8                          2023-05-05
+<!-- index.md 0.0.2                 UTF-8                          2023-05-13
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
               D230501 VCRAYMATHSTUDIO: RAYMATH EXPLORATION DEVKIT
@@ -6,7 +6,7 @@
 
 # [D230501: VCrayMathStudio: raymath Exploration Devkit](.)
 
-| ***[nfoTools](../../)*** | [dev](../)[>D230501](.) | ***[index.html](index.html) 0.0.1 2023-05-06*** |
+| ***[nfoTools](../../)*** | [dev](../)[>D230501](.) | ***[index.html](index.html) 0.0.2 2023-05-13*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../../images/hardhat-logo.gif) |
 
@@ -70,7 +70,7 @@ in mini-projects worked out using native Windows programs.
 * Fostering understanding and application of raymath functions in creation of
 raylib-based computer graphics.
 
- ### 4.2 Plan
+### 4.2 Plan
 
 * Use a spiraling development for gathering together related functions and
 covering them, lower-level functions first.  Populate progressively.
@@ -93,6 +93,7 @@ from time to time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.2 2023-05-13T20:06Z Fix 4.2 subtitle
      0.0.1 2023-05-06T21:54Z Initial sketch
      0.0.0 2023-05-05T23:58Z Placeholder with D211101/index.md 0.0.16
            boilerplate
