@@ -1,0 +1,8 @@
+FAIL6.txt 0.0.0                     UTF-8                         2023-05-14
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+                    VCRAYAPP FAILCODE6 DEMONSTRATION TEST
+
+
+I just rename the raylib\ folder to something else to provoke this response,
+then rename it back.
