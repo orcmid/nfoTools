@@ -6,7 +6,7 @@
 
 # ***D211101f** [VCrayApp FAILCODE MESSAGES](.)*
 
-| ***[nfoTools](../../../)*** | [dev](../../)[>D211101](../)[>f](.) | [index.html](index.html) ***0.0.7 2023-05-06*** |
+| ***[nfoTools](../../../)*** | [dev](../../)[>D211101](../)[>f](.) | [index.html](index.html) ***0.0.8 2023-05-15*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../../../images/hardhat-logo.gif) |
 |              |                     |           |
