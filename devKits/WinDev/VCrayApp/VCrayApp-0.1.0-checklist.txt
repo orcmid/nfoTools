@@ -47,10 +47,9 @@ VCrayApp-0.1.0-checklist.txt 0.0.*  UTF-8                         2023-05-11
         o Document all of the cases.
         o Point to where the particular CMD command prompt customization
           is documented.
-        o FAILCODE8
 
     * See if I can also compile C++ this way.  No, the /TC option interferes,
-      and so do the /SUBSYTEM /MAINENTRY options.
+      and so do the /SUBSYTEM /MAINENTRY options.  Add a test for that.
 
     * Ensure rational operation when VCrayApp is embedded in a project and
       hosted in a script of that project.  This is done with VCrayVerify but
