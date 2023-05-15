@@ -1,4 +1,4 @@
-<!-- index.md 0.0.10                UTF-8                          2023-05-13
+<!-- index.md 0.0.11                UTF-8                          2023-05-15
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
               FAILCODE5: PRODUCING/OPERATING %VCEXE% FAILED
@@ -106,6 +106,23 @@ if there is a known problem. Add an issue for your case if you are unable to
 resolve it first.   There may be relevant
 [raylib issues](https://github.com/raysan5/raylib/issues).
 
+## %VCEXE% IS ONE OF `VCrayVerCheck.exe`, `VCrayVer.bat`, `VCrayConfirm.exe`
+
+These are internal errors in the operation of VCrayApp.  The first two should
+not happen unless something has been corrupted in the `cache\` folder or the
+`VCrayApp.bat` script.
+
+The compilation and operation of `VCrayConfirm.exe` may fail if there is a
+problem with the version of raylib at the peer `raylib\` location. In this
+case, rerun the `VCrayApp` command in verbose mode (no "*" option) if not
+done already, and trouble-shoot any diagnostic messages that are provided.
+
+When the problem for `VCrayConfirm.exe` is with use of a raylib `-dev`
+version, check at the [raylib project](https://github.com/raysan5/raylib/). If
+the problem is with location of files for raylib version `4.6` or later, check
+at [D211101](..\..\) and also [VCrayApp Setup](..\..\a\) for any notifications
+on issues since the release of VCrayApp 0.1.0.
+
 ----
 
 Discussion about nfoTools is welcome at the
@@ -118,6 +135,7 @@ from time to time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+    0.0.11 2023-05-15T18:59Z Complete the description of all FAIL5 cases
     0.0.10 2023-05-13T18:49Z Correct a title
      0.0.9 2023-05-13T16:41Z Update with VCrayApp-0.1.0 demo example
      0.0.8 2023-05-07T20:05Z Reflect transposition to new location
