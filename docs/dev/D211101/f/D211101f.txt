@@ -1,4 +1,4 @@
-D211101f.txt 0.0.16                 UTF-8                         2023-05-07
+D211101f.txt 0.0.17                 UTF-8                         2023-05-15
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -31,6 +31,12 @@ MANIFEST
         FAIL6\     FAILCODE6: RAYLIB NOT FOUND WHERE EXPECTED
         FAIL7\     FAILCODE7: RAYLIB VERSION NOT > 3.0.0
         FAIL8\     FAILCODE8: RAYLIB %VCRAYVER% NOT SUPPORTED
+     VCrayDemo-2023-05-15-1214-FolderStructure.png
+                   Structure of VCrayDemo in Windows File Explorer
+     VCrayDemo-2023-05-15-1219-demo-VCrayAppSetup.png
+                   Structure of VCrayDemo/demo/ VCrayApp project
+     VCrayDemo-2023-05-15-1224-demo-Usage.png
+                   Demonstration of demo\VCrayApp ? command
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
@@ -53,8 +59,8 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. D211101f: VCrayApp Failure-Message Explanations.
-   nfoTools development text file D211101f.txt version 0.0.16 dated
-   2023-05-06 available on the Internet as a version of
+   nfoTools development text file D211101f.txt version 0.0.17 dated
+   2023-05-15 available on the Internet as a version of
    <https://orcmid.github.io/nfoTools/dev/D211101/f/D211101f.txt>
 
 TODO
@@ -62,40 +68,13 @@ TODO
  * There needs to be non-failure advisory-message explanations also.  Those
    might be under the individual D211101a-c pages.
 
- * Do not over-explain when there are generic matters, such as how to handle
-   compiler error and warning messages, what the parameters of builds are
-   about, and so on.  Generic/comprehensive materials may belong in other
-   places.  So there will be TODOs at other locations on required support of
-   a more-general nature.
-
- * Point out that the screen captures are verbose (or not) versions.
-   o Check FAIL1 and correct for this as needed
-
- * Should we show both flavors terse/verbose when they differ?  Sometimes.
-
- * Projects should link to the Classic Projects being used.
-   <https://github.com/orcmid/nfoTools/projects?type=classic>.
-   Propogate this to all other docs/ pages.
-
- * The screen captures may be confusing for novices because they are done
-   from within VCrayApp\dev\ for development.  When I've covered all the
-   cases, retake all of the screen shots.
-
  * The scheme will become complicated if there are any diagnostic message
    changes at all.  Need a way to finess that.  Or stabilize on 1.0.0 and
    then worry only if there need to be changes later.
 
- * The statement about FAILCODEs not being reused needs to be clearer.
-
- * Explain the categories of error messages.  There is only one message
-   pertaining to the project code itself.  All of the rest are related to
-   verification of the configuration of the VCrayApp project, to the
-   successful compilation of a simple C Language program to check the
-   raylib version, and then compiling of the cache and a confirmation program
-   relying on that cache.
-
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.17 2023-05-15T19:41Z Cleaning up, clearing TODOs
  0.0.16 2023-05-07T20:22Z Complete the transpositions
  0.0.15 2023-05-06T22:41Z Transpose from 0.0.14 fails.txt with related TODOs
  0.0.14 2023-04-23T20:04Z Bring current
