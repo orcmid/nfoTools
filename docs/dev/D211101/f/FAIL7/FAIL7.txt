@@ -1,4 +1,4 @@
-FAIL7.txt 0.0.1                     UTF-8                         2023-05-07
+FAIL7.txt 0.0.2                     UTF-8                         2023-05-15
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -32,13 +32,8 @@ MANIFEST
 
     index.html  (generated) web page for FAILCODE7 Explanation
 
-    FAIL7-2023-04-24-1648-VCrayApp-0.0.0.png
+    FAIL7-2023-05-14-1015-VCrayApp-0.1.0.png
         demonstration of FAILCODE7
-
-
-TODOS:
-
- * Explain it without much detail.
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
@@ -61,12 +56,13 @@ TODOS:
  ATTRIBUTION
 
    Hamilton, Dennis E. VCrayApp FAILCODE7: RAYLIB VERSION NOT > 3.0.0.
-   nfoTools development text file FAIL7.txt version 0.0.1 dated 2023-05-07,
+   nfoTools development text file FAIL7.txt version 0.0.2 dated 2023-05-15,
    available on the Internet as a version of
-   <https://orcmid.github.io/nfoTools/dev/D211101/fails/FAIL7/FAIL7.txt>
+   <https://orcmid.github.io/nfoTools/dev/D211101/f/FAIL7/FAIL7.txt>
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.2 2023-05-15T18:21Z Demonstrate for VCrayApp 0.1.0
  0.0.1 2023-04-24T20:12Z Reflect transposition to new location
  0.0.0 2023-04-20T22:15Z placeholder boilerplate from FAIL6.txt 0.0.0
 

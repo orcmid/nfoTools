@@ -1,4 +1,4 @@
-tests.txt 0.0.2               UTF-8                              2023-05-11
+tests.txt 0.0.3               UTF-8                              2023-05-15
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                       RAYLIB APP DEVELOPMENT PROJECT
@@ -29,6 +29,12 @@ MANIFEST
                   not work at all for 0.1.0 unless I can force it off.
 
        FAIL1.txt  monkey with one file so that the check fails
+       FAIL2.txt  demonstration notes
+       FAIL3.txt  demonstration notes
+       FAIL4.txt  demonstration notes
+       FAIL5.txt  demonstration noes
+       FAIL6.txt  demonsration notes
+       FAIL7.txt  demonstration notes
 
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
@@ -52,19 +58,20 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. Raylib App Construction-Kit Project. nfoTools Project
-   text file tests.txt 0.0.2 dated 2023-05-11, available on the Internet
+   text file tests.txt 0.0.3 dated 2023-05-15, available on the Internet
    as a version of
    <https://github.com/orcmid/nfoTools/blob/master/devKits/WinDev/VCrayApp/tests/tests.txt>
 
 TODO
 
- * Document a meaningful cause of a :FAIL4 case.
-
  * Document and support one or more causes of a :FAIL5 case.
+
+ * Complete with FAIL8.txt
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
+ 0.0.3 2023-05-15T16:28Z Current through FAIL7
  0.0.2 2023-05-11T18:53Z Add FAIL0-FAIL1 notes
  0.0.1 2023-04-18T21:38Z Introduce operator.c
  0.0.0 2023-04-17T21:27Z Initial placeholder

@@ -1,0 +1,7 @@
+FAIL7.txt 0.0.0                     UTF-8                         2023-05-15
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+                    VCRAYAPP FAILCODE7 DEMONSTRATION TEST
+
+I install raylib-3.0.0 to provoke this response, then reinstall the latest
+raylib release source.  (-dev versions are tested in dev/).
