@@ -1,4 +1,4 @@
-games.txt 0.0.8                     UTF-8                         2023-05-**
+games.txt 0.0.8                     UTF-8                         2023-05-15
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -48,7 +48,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. nfoTools Project Games.  nfoTools file docs/games.txt
-   version 0.0.7 dated 2023-05-05, available on the Internet as a version of
+   version 0.0.8 dated 2023-05-15, available on the Internet as a version of
    <https://orcmid.github.io/nfoTools/games/games.txt>
 
 TODO
@@ -159,9 +159,14 @@ TODO
    all of the initial programming in this course.  There are places where
    C++ is needed and you can accomplish that too with simple adjustments.
 
+ * I just learned about babylon.js, <https://doc.babylonjs.com/>, and I am
+   wondering how Babylon Native might work as a companion or alternative to
+   raylib.  There's nice new physics support for one.
+
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.8 2023-05-15T22:28Z Quick note about babylon.js
  0.0.7 2023-05-05T19:02Z More about gamedev.tv, with caution
  0.0.6 2023-02-17T21:38Z More Links
  0.0.5 2022-12-27T17:49Z Add more connections and my interest in computer
