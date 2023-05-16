@@ -188,6 +188,9 @@ TODO
    possibility here, and on Udemy, elsewhere, needs to be mentioned but with
    cautionary remarks.
 
+ * C: A Reference Manual. (2007). India: Pearson Education.  This appears to
+   be a reprint of the 2002 5th edition.  There is no good citation.
+
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
  0.0.12 2023-05-05T19:07Z Add cautionary note about gamedev.tv and Udemy too.

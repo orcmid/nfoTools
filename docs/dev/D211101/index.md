@@ -1,4 +1,4 @@
-<!-- index.md 0.0.18                UTF-8                          2023-05-07
+<!-- index.md 0.0.19                UTF-8                          2023-05-16
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                VCRAYAPP: VC/C++ COMMAND-LINE RAYLIB APP DEVKIT
@@ -6,7 +6,7 @@
 
 # ***D211101** [VCrayApp: VC/C++ Command-Line raylib App DevKit](.)*
 
-| ***[nfoTools](../../)*** | [dev](../)[>D211101](.) | ***[index.html](index.html) 0.0.18 2023-05-07*** |
+| ***[nfoTools](../../)*** | [dev](../)[>D211101](.) | ***[index.html](index.html) 0.0.19 2023-05-16*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../../images/hardhat-logo.gif) |
 
@@ -57,7 +57,7 @@ had *semver* 0.0.0 and was packaged in `VCrayApp-0.0.0.zip`.  Starting with
 *semver* 1.0.0 further breaking changes will require a change at the major
 level, with feature additions at 1.*x*.0 levels and fixes at 1.*x*.*y* levels.
 The subfolders, `.vscode`, `app\`, `cache\` and `src\` include explanatory
-`*.txt` files with regard to the VCrayApp purpose for them.
+`*.txt` files with regard to the VCrayApp purposes for them.
 
 It is recommended that  `src\` be for your own source code and `app\` include
 any resources that will be distributed with and accessed by the compiled
@@ -82,51 +82,20 @@ compiling and operating program `VCrayConfirm`.  This procedure will be
 performed each time the cache is rebuilt as well as after any failure in
 having a working cache of raylib components.
 
-After installation and operation is confirmed, `VCrayApp.bat`
-**must be modified** to be used for a stand-alone project.  The name of the
-projects executable file must be inserted in `VCrayApp.bat`.  VCrayApp
-messages and the initial lines of `VCrayApp.bat` direct the modifications.
-
 Performing command "`VCrayApp ?`" from a developer command prompt focused on
 your project folder will provide usage information.
 
-```text
-   _______________________________________________________________
-  | USAGE: VCrayApp [+] ?                                         |
-  |       VCrayApp [+] [*] [-c] [-r]                              |
-  | where  ? produces this usage information.                     |
-  |        + for operating non-stop without any screen clearing   |
-  |          and pausing.  Good for use called as a helper.       |
-  |        * selects terse output.  If operation fails, repeat    |
-  |          without this option for more details.                |
-  |       -c for a complete rebuild of any cache                  |
-  |       -r for running the app on successful build              |
-  |                                                               |
-  |  Exit code 0 is produced on all successful operations.        |
-  |  Exit codes greater than 1 are produced for any failure.      |
-  |_______________________________________________________________|
-```
-
-Without any parameters, `VCrayApp.bat` will provide a verbose
-compilation of the app after building any needed cache.  This is recommended
-to develop a sense of the stages and their details until predictable
-operation is confirmed.
-
-A successful compile of your source code will provide an executable in the
-`app\` subfolder for operation along with whatever assets that have been
-placed there.  It is possible to deploy a successfully-built application from
- `app\`.
+![VCrayApp-0.1.0 Usage](Usage-2023-05-16-0939-VCrayApp-0.1.0.png)
 
 Further details of VCrayApp operation are provided in
 [D211101b: VCrayApp Operation](b).
 
 ## 2. Prerequisites and Dependencies
 
-**NOTE:** Current materials are now at the *alpha* level, with the
-[VCrayApp 0.0.0](D211101d) release.  There is incomplete supporting material.
-This will change with progressive improvements in the next weeks until the
-*beta* release is feasible. The *beta* will be accompanied by more support for
-novice developers, including demonstration of raylib examples.
+**NOTE:** Current materials are now at the *beta* level, with the
+[VCrayApp 0.1.0](e/) release.  It is available for early usage while support
+materials are updated or added.  There will be improved support for novice
+developers, including demonstration of raylib examples.
 
 For novice developers, the creation of raylib applications can be carried out
 by compiling the many available `raylib\examples` and finding additional
@@ -186,7 +155,9 @@ tips in the available materials.
 | [D211101a](a/) | 2022-08-18 | placeholder | VCrayApp Setup |
 | [D211101b](b/) | 2022-08-18 | placeholder | VCrayApp Operation |
 | [D211101c](c/) | 2022-08-21 | placeholder | VCrayApp Verification/Deployment Lifecycle |
+| [D211101f](f/) | 2023-04-07 | 0.0.8 2023-05-15 | VCrayApp FAILCODE Messages |
 |                       |            |                  |     |
+| [D211101e](e/) | 2023-04-10 | 0.0.3 2023-05-09 | VCrayApp 0.1.0 (beta) |
 | [D211101d](D211101d/) | 2022-10-26 | 0.0.8 2023-03-30 | VCrayApp 0.0.0 (alpha)
 
 ## 4. Development
@@ -229,6 +200,7 @@ from time to time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.19 2023-05-16T16:48Z Pre-release VCrayApp-0.1.0
      0.0.18 2023-05-07T20:30Z Adjust to changes in subfolder locations
      0.0.17 2023-05-06T15:47Z Correct section numbering
      0.0.16 2023-04-30T17:42Z More Touch-ups

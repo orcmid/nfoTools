@@ -104,6 +104,18 @@ TODO
     versus int, float, double, long things, unsigned things, as about
     arithmetics.  Likewise char.
 
+  * <https://learn.microsoft.com/en-us/cpp/c-runtime-library/data-type-constants>
+    describes <limits.h> and <float.h> in the Microsoft SDK library.
+
+  * <https://learn.microsoft.com/en-us/cpp/c-runtime-library/math-constants>
+    is very interesting.  There are supplemental definitions obtained with the
+    USE_MATH_DEFINES before #include <math>.
+
+  * HUGE_VAL seems to be the largest representable double value and seems to
+    be defined in the standard for <math.h>.
+
+  * _matherr is also a thing.
+
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
  0.0.2 2023-05-07T16:01Z TODOs on arithmetics, IBM 704, and math entities.

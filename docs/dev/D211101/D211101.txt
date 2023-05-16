@@ -1,4 +1,4 @@
-D211101.txt 0.0.24                   UTF-8                         2023-05-07
+D211101.txt 0.0.25                   UTF-8                         2023-05-16
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -22,6 +22,9 @@ MANIFEST
      D211101.txt    this manifest and job-jar file
 
        index.md     the web front page to this D211101 folio.
+    Usage-2023-05-16-0939-VCrayApp-0.1.0.png
+                    latest Usage command result
+
            a/       D211101a: VCrayApp Setup
     D211101a/       D211101a: Tombstone (referenced from VCrayApp 0.0.0)
 
@@ -97,14 +100,6 @@ TODO
 
  * Update status on the docs/dev/index.md page.
 
- * Add D211101e to D211101 available materials when release is imminent and
-   the next official release (4.6?) is made for raylib and confirmed.
-
- * Emphasize that the "must be modified" applies to standalone project usage.
-
- * Set up D21101e for targetting by links from VCrayApp materials, including
-   explanation of error messages.
-
  * Determine whether there is a detached signature for VCrayApp.bat and also
    for anything in the cache.  This is probably unnecessary and we have to
    deal with the fact that many of the cache\*.opt files may be modified but
@@ -114,9 +109,6 @@ TODO
  * Embedded use should be an advanced topic related to lifecycle management
    and such considerations.  This is moderately acute when VCrayApp is
    embedded in a distribution, such as VCrayVerify.
-
- * Update the Usage message.  Maybe reflect that it is from 0.1.0.  Also,
-   use a screen capture.
 
  * Update the NOTE on section 2.
 
@@ -145,20 +137,16 @@ TODO
  * Establish that this material is effective as of, and applicable, to the
    0.1.0 (beta) release of VCrayApp.
 
- * Add fails/ to the Available Materials.
-
  * Mention libs as a prospect in the cache but not in src\*.c because we don't
    have a good way to parse that or any alternative %VCAPPSRC% value.  So the
    only place for foreign libs is cache, which rather makes sense.
-
- * Create a demo project that is at a higher place in the file hierarchy and
-   redo everything from there.  Use that for all of the screen captures.
 
  * The creation of shortcuts and customized properties for the Developer
    Command Prompt needs to be introduced in some manner.
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.25 2023-05-16T16:53Z Cleanup for VCrayApp-0.1.0 pre-release visibility
  0.0.24 2023-05-07T20:24Z Complete the transpositions to new subfolder URLs
  0.0.23 2023-05-07T19:04Z Complete D211101b/c/e transpositions
  0.0.22 2023-05-07T17:32Z Complete movement and tombstoning of D211101a.
