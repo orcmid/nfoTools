@@ -1,5 +1,5 @@
-games.txt 0.0.8                     UTF-8                         2023-05-15
-----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+games.txt 0.0.9                     UTF-8                         2023-05-17
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
                         nfoWare/nfoWorks nfoTools
@@ -27,7 +27,7 @@ MANIFEST
           the entrace and catalog for games material
 
 
-----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                     Copyright 2021-2022 Dennis E. Hamilton
 
@@ -43,12 +43,12 @@ MANIFEST
     See the License for the specific language governing permissions and
     limitations under the License.
 
-----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
  ATTRIBUTION
 
-   Hamilton, Dennis E. nfoTools Project Games.  nfoTools file docs/games.txt
-   version 0.0.8 dated 2023-05-15, available on the Internet as a version of
+   Hamilton, Dennis E. nfoTools Project Games.  nfoTools file games.txt
+   version 0.0.9 dated 2023-05-17, available on the Internet as a version of
    <https://orcmid.github.io/nfoTools/games/games.txt>
 
 TODO
@@ -163,9 +163,14 @@ TODO
    wondering how Babylon Native might work as a companion or alternative to
    raylib.  There's nice new physics support for one.
 
+ * <https://learn.microsoft.com/en-us/training/paths/gaming-accessibility-fundamentals/>
+   is one of many important presentations on accessibility, including for
+   gaming.
+
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.9 2023-05-17T19:12Z Note on gaming accessibility
  0.0.8 2023-05-15T22:28Z Quick note about babylon.js
  0.0.7 2023-05-05T19:02Z More about gamedev.tv, with caution
  0.0.6 2023-02-17T21:38Z More Links
