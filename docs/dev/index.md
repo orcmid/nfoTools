@@ -1,4 +1,4 @@
-<!-- index.md 0.0.17                 UTF-8                         2023-05-06
+<!-- index.md 0.0.18                 UTF-8                         2023-05-17
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                         NFOTOOLS DEVELOPMENT NOTES
@@ -22,7 +22,7 @@ construction of individual tools, their distribution, and demonstration.
 | [D230501](D230501)| 2023-05-06 | 0.0.1 2023-05-06 | VCrayMathStudio raymath Exploration |
 | [D230202](D230202) | 2023-02-18 | 0.0.0 placeholder | VCrayVerify Test Harness for Verifying raylib Examples |
 | [D230201](D230201) | 2023-02-14 | 0.0.3 2023-02-16 |  VCshowDefs: Show Preprocessor Defines in VC/C++ |
-| [D211101](D211101) | 2021-09-11 | 0.0.14  2023-03-30 | VCrayApp: VC/C++ Command-Line raylib App DevKit |
+| [D211101](D211101) | 2021-09-11 | 0.0.21  2023-05-17 | VCrayApp: VC/C++ Command-Line raylib App DevKit |
 | [D161101](D161101) | 2016-11-12 | 0.1.14 2021-06-11 | VCbind: VC/C++ Command-Line Setup Script|
 
 ----
@@ -37,6 +37,7 @@ from time to time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.18 2023-05-17T21:45Z 0.0.21 D211101
      0.0.17 2023-05-09T15:27Z Fix Catalog typo
      0.0.16 2023-05-06T21:59Z 0.0.1 D230501
      0.0.15 2023-03-30T19:00Z 0.0.14 D211101

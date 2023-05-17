@@ -1,4 +1,4 @@
-<!-- index.md 0.0.9                 UTF-8                          2023-05-17
+<!-- index.md 0.0.10                UTF-8                          2023-05-17
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                      VCRAYAPP 0.0.0 RELEASE (ALPHA)
@@ -6,11 +6,11 @@
 
 # ***VCrayApp** [0.0.0 Release (alpha)](.)*
 
-| ***[nfoTools](../../../)*** | [dev](../../)[>D211101](../)[>D211101d](.) | [index.html](index.html) ***0.0.9 2023-05-17*** |
+| ***[nfoTools](../../../)*** | [dev](../../)[>D211101](../)[>D211101d](.) | [index.html](index.html) ***0.0.10 2023-05-17*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../../../images/hardhat-logo.gif) |
 |              |                     |           |
-| Next Version | VCrayApp 0.1.0 beta release  } [D211101e](../e/) |
+| Next Version | VCrayApp 0.1.0 beta release  | [D211101e](../e/) |
 | This Version | VCrayApp 0.0.0 alpha release | [here (obsolete)](.) |
 |              |                              |           |
 | **Downloads:** |                            |           |
@@ -49,6 +49,7 @@ from time to time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+    0.0.10 2023-05-17T21:40Z Fix Next Version typo
      0.0.9 2023-05-17T17:56Z Make obsolete
      0.0.8 2023-03-30T18:53Z Correct title block header to use d211101d.
      0.0.7 2023-01-14T22:40Z Ditch "VCrayLib" mistakes, touch up
