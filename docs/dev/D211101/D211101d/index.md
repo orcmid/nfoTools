@@ -1,4 +1,4 @@
-<!-- index.md 0.0.8                 UTF-8                          2023-03-30
+<!-- index.md 0.0.9                 UTF-8                          2023-05-17
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                      VCRAYAPP 0.0.0 RELEASE (ALPHA)
@@ -6,11 +6,12 @@
 
 # ***VCrayApp** [0.0.0 Release (alpha)](.)*
 
-| ***[nfoTools](../../../)*** | [dev](../../)[>D211101](../)[>D211101d](.) | [index.html](index.html) ***0.0.8 2023-03-30*** |
+| ***[nfoTools](../../../)*** | [dev](../../)[>D211101](../)[>D211101d](.) | [index.html](index.html) ***0.0.9 2023-05-17*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../../../images/hardhat-logo.gif) |
 |              |                     |           |
-| This Version | VCrayApp 0.0.0 alpha release | [here](.) |
+| Next Version | VCrayApp 0.1.0 beta release  } [D211101e](../e/) |
+| This Version | VCrayApp 0.0.0 alpha release | [here (obsolete)](.) |
 |              |                              |           |
 | **Downloads:** |                            |           |
 |   | **VCrayApp 0.0.0 Description and Manifest** | [VCrayApp-0.0.0.txt](VCrayApp-0.0.0.txt) |
@@ -18,23 +19,22 @@
 |   | **VCrayApp 0.0.0 Digital Signature** | [VCrayApp-0.0.0.zip.asc](VCrayApp-0.0.0.zip.asc) |
 |   | **VCrayApp 0.0.0 Digital Hash Value** | [VCrayApp-0.0.0.zip.sha256](VCrayApp-0.0.0.zip.sha256) |
 
-This is an alpha release.  It is provided early in the development of VCrayApp
-in order to obtain confirmation and feedback prior to creation of a beta
-release for broader provisional usage.
+This is an alpha release.  It was provided early in the development of
+VCrayApp in order to obtain confirmation and feedback prior to creation of the
+beta release for broader provisional usage.
 
-To determine whether VCrayApp 0.0.0 is useful without difficulty for you,
-please read the file [VCrayApp-0.0.0.txt](VCrayApp-0.0.0.txt).  Also consult
-the current main page [VCrayApp: VC/C++ Command-Line raylib App DevKit](..),
-information on [VCrayApp Setup](../D211101a), and information on
-[VCrayApp Operation](../D211101b).  During the alpha-beta-release cycle, these
-and related materials will be expanded for support of a wider audience.
+THIS RELEASE IS NOW OBSOLETE.  PLEASE USE A LATER VERSION.  There are breaking
+changes and major improvements in later releases.
 
-Feedback and requests concerning this alpha release should be addressed to the
+This release is preserved for historical purposes and as a backup for those
+continuing to make use of VCrayApp-0.0.0 for any purpose.
+
+Support is now focused on later VCrayApp releases.  Any feedback and requests concerning this alpha release can be addressed to the
 [nfoTools GitHub Project](https://github.com/orcmid/nfoTools) with mention of
-D211101d in any headings.  Review [discussions](VCrayApp-0.0.0.txt),
+D211101d in any headings.  Keep in mind that this release is obsolete when
+reviewing [discussions](https://github.com/orcmid/nfoTools/discussions),
 [issues](https://github.com/orcmid/nfoTools/issues), and
-[projects](https://github.com/orcmid/nfoTools/projects?type=classic) for
-discussions and comments related to this VCrayApp 0.0.0 release.  All
+[projects](https://github.com/orcmid/nfoTools/projects?type=classic).  All
 questions and comments are appreciated.
 
 ----
@@ -49,6 +49,7 @@ from time to time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.9 2023-05-17T17:56Z Make obsolete
      0.0.8 2023-03-30T18:53Z Correct title block header to use d211101d.
      0.0.7 2023-01-14T22:40Z Ditch "VCrayLib" mistakes, touch up
      0.0.6 2023-01-13T01:31Z Repair header strip layout
