@@ -1,4 +1,4 @@
-<!-- index.md 0.0.2                 UTF-8                          2023-05-09
+<!-- index.md 0.0.3                 UTF-8                          2023-05-18
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                        VCRAYAPP 0.1.0 RELEASE (BETA)
@@ -6,7 +6,7 @@
 
 # ***D211101e** [VCrayApp 0.1.0 Release (beta)](.)*
 
-| ***[nfoTools](../../../)*** | [dev](../../)[>D211101](../)[>e](.) | [index.html](index.html) ***0.0.2 2023-05-09*** |
+| ***[nfoTools](../../../)*** | [dev](../../)[>D211101](../)[>e](.) | [index.html](index.html) ***0.0.3 2023-05-18*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../../../images/hardhat-logo.gif) |
 |              |                     |           |
@@ -30,13 +30,17 @@ please read the file [VCrayApp-0.1.0.txt](VCrayApp-0.1.0.txt).  Also consult
 the current main page [VCrayApp: VC/C++ Command-Line raylib App DevKit](..),
 information on [VCrayApp Setup](../a), and information on
 [VCrayApp Operation](../b).  These materials are in draft form for
-review and improvement as part of VCrayApp-1.0.0 stable release preparation.
+review and improvement as part of VCrayApp-1.0.0 stable-release preparation.
 
 If VCrayApp 0.0.0 (alpha) has been used, please consult
 [CHANGES-0.1.0.txt](CHANGES-0.1.0.txt) for information regarding changes that
 will be in effect upon installing VCrayApp-0.1.0 in place of VCrayApp-0.0.0.
 It is important to understand the breaking changes and some differences in
-operation.
+operation.  It may be more convenient to install VCrayApp-0.1.0 in a new
+folder at the same level as the existing project, moving your VCrayApp-0.0.0
+src\ content and any app\ resources to the new VCrayApp project.  (To use the
+same VCrayApp-project folder name, rename the existing folder to a variation,
+making the desired name reusable for the VCrayApp-0.1.0 extraction.)
 
 Feedback and requests concerning this beta release should be addressed to the
 [nfoTools GitHub Project](https://github.com/orcmid/nfoTools) with mention of
@@ -59,7 +63,8 @@ from time to time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-     0.0.3 2024-05-09T03:41Z Release candidate
+     0.0.3 2023-05-18T17:42Z Remarks on upgrading VCrayApp-0.0.0 projects
+     0.0.2 2023-05-09T03:41Z Release candidate
      0.0.1 2023-05-07T18:59Z Transposed to new location
      0.0.0 2023-04-10T17:18Z Placeholder with 0.0.8 D161101d boilerplate
 

@@ -41,7 +41,6 @@ VCrayApp-0.1.0-checklist.txt 0.0.*  UTF-8                         2023-05-11
     * cache\VCrayConfirm.c
 
     * VCrayApp.bat
-        o Redo the capture of all the FAILCODEs for the documentation.
         o Also ensure there are good captures of normal situations, with or
           without warnings, with or without terse.
         o Document all of the cases.
@@ -77,12 +76,6 @@ DEPLOYMENT
 
 
 TODO
-
- * The beta release, VCrayApp-0.1.0 should address the replacement of
-   one release by another and all the support there is for such changes.
-   Saving ones customizations, having the customizations already on the users
-   source control, etc.  This should be feature complete and post-beta changes
-   should not have breaking changes, though bug fixes are always a prospect.
 
  * These aspects of trustworthy production need to be accounted for.  There
    should also be some integration with respect to confirmable experience.
