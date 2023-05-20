@@ -1,4 +1,8 @@
-/* VCrayVerCheck.c 0.1.1            UTF-8                         2023-03-22
+/*
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+   VCrayVerCheck.c 0.1.4            UTF-8                         2023-04-27
    -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                         DETERMINATION OF RAYLIB VERSION
@@ -45,7 +49,11 @@
    */
 
 #define TV(X) #X ""
-      /* Turns pre-processor variables into string arguments */
+      /* Turns pre-processor variables into string arguments.
+         The extra "" works whether #X provides a quoted string
+         or provides nothing. This and the fputs() below rely on
+         the fact that string constants separated only by white
+         space are automatically concatenated into a single string. */
 
 #define SHOW(X) TV(X)
       /* Stringifies any defined value of the pre-processor argument.
@@ -64,14 +72,14 @@ int main(void)
 
        if (EOF ==
        # if !defined(RAYLIB_VERSION)
-              fputs( "ECHO [VCrayApp] Using unidentified"
-                          " version of raylib %VCterse%\n"
+              fputs( "ECHO: [VCrayApp] Using unidentified"
+                          " version of raylib\n"
                      "SET VCRAYVER=\"unidentified\"%VCterse%\n",
                      stdout )
        # else
-              fputs( "ECHO [VCrayApp] Using version "
+              fputs( "ECHO: [VCrayApp] Using version "
                            SHOW(RAYLIB_VERSION)
-                           " of raylib %VCterse%\n"
+                           " of raylib\n"
                      "SET VCRAYVER="SHOW(RAYLIB_VERSION)"%VCterse%\n",
                      stdout )
        # endif
@@ -82,6 +90,10 @@ int main(void)
     }
 
 /*
+   0.1.4  2023-04-27T17:15Z Correct spacing in the output ECHO commands,
+          always echo the version identification.
+   0.1.3  2023-04-03T19:40Z Clear armor sign for release
+   0.1.2  2023-04-02T17:35Z Touch up for release candidate
    0.1.1  2023-03-22T21:22Z Clean up spacing in the output SET commands
    0.1.0  2023-02-26T19:40Z Cleaned-up VCrayApp 0.1.0 release candidate
    0.0.13 2023-02-23T05:49Z Use "..." form on all VCRAYVER settings
@@ -102,4 +114,15 @@ int main(void)
    0.0.0 2023-02-12T05:53Z Stub providing default behavior
 
                       *** end of VCrayVerCheck.c ***
-   */
+-----BEGIN PGP SIGNATURE-----
+
+iQFGBAEBCAAwFiEEBNBDIpebhN4QdwM0+W6J/9RWYooFAmRSyvcSHG9yY21pZEBh
+cGFjaGUub3JnAAoJEPluif/UVmKKTkYH/A6E93J4/4dwPcxqbYGbz0YIqYNckqjj
+j019UyjZg6qGcveYs/DG7VKXdl4S94/yQmwktCH6kM5K4LjXr9F6IvBE/rpKzh8R
+E3j1ppDifatWJvLlB/DVUD0Nqez91G6jMbEWPeeSl3IicFy/+q0G8XhJAS7900wq
+bfVY/5N/+U5nZC6YD7frLSSvF2oa3gW4EYvkMY0Jg2HPWy924VrHtXRn9TQotD4x
+yGNQWVa4efSgG2eHKwJOo8FQUM5PMbnZqoOcygPqa1Jon40JMPq5gRJ4QsbrNJPB
+c7YQ5s4FmFEmJONI17WD+Y0dJBUTfs9kYcuzyUUXi4iAqlFyjuw7nxw=
+=PDD0
+-----END PGP SIGNATURE-----
+*/

@@ -1,4 +1,8 @@
-/* VCrayConfirm.c 0.1.9               UTF-8                       2023-03-10
+/*
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+   VCrayConfirm.c 0.1.15               UTF-8                       2023-05-08
    -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                     CONFIRMATION OF RAYLIB APP CACHE SETUP
@@ -29,7 +33,7 @@
 
    */
 
-#define VCRAYCONFIRM "VCrayConfirm 0.1.9"
+#define VCRAYCONFIRM "VCrayConfirm 0.1.15"
 
 #include <stddef.h>   // for NULL
 #include <string.h>   // for strncat_s(), strncmp()
@@ -53,12 +57,15 @@
 
 int main(void)
 {   // SETUP DISPLAYED TEXT LINES
-    // --------------------------
+    // **************************
+    // getenv() is used to snag environment variable values quickly into
+    // strings so that getenv() can then be reused for a different variable.
 
     #define LINE_MAX 200
-    // A length that should never be reached.
+    // A length that should never be reached in any of the built strings.
 
-    // INCORPORATE VSCMD_VER IN THE LINE1 MESSAGE.
+    // INCORPORATE VSCMD_VER IN THE line1[] TOP MESSAGE.
+    // -------------------------------------------------
 
     char *pVCcmdVer = getenv("VSCMD_VER");
     if (pVCcmdVer == NULL)
@@ -73,11 +80,12 @@ int main(void)
     strncat_s( line1, LINE_MAX,
                pVCcmdVer, _TRUNCATE);
 
-    // CAPTURE VCRAYVER FOR REPORTING AND ALSO SPECIAL CASES
+    // CAPTURE VCRAYVER verstring[] FOR REPORTING
+    // ------------------------------------------
 
     char *pVCrayVer = getenv("VCRAYVER");
     if (pVCrayVer == NULL)
-         pVCrayVer = "unknown";
+         pVCrayVer = "unidentified version";
 
     char verstring[LINE_MAX+1] = { '\0' };
 
@@ -85,7 +93,9 @@ int main(void)
                pVCrayVer, _TRUNCATE);
         // capturing VCRAYVER
 
-    // incorporate VCRAYVER in the line2 message.
+    // INCORPORATE verstring[] IN THE line2[] MESSAGE
+    // ----------------------------------------------
+
     char line2[LINE_MAX+1] = { '\0' };
 
     strncat_s( line2, LINE_MAX,
@@ -93,8 +103,17 @@ int main(void)
     strncat_s( line2, LINE_MAX,
                verstring, _TRUNCATE);
 
+
     // DETERMINE VARIABLE INFORMATION
-    // determine whether a Dev version is being used
+    // ******************************
+    // These determinations will govern subsequent messages
+    // in the confirmation display.
+
+
+    // DETERMINE IF A DEV VERSION IS BEING USED
+    // ----------------------------------------
+    // this will be false if VCRAYVER is unidentified
+
     bool isDev = false;
     int i = 0;
 
@@ -103,10 +122,10 @@ int main(void)
                { isDev = true;
                  break; }
 
-    // ADAPT TO HOSTING, APP_EXE, AND SRC CASES
+    // ADAPT TO VCAPPEXE, AND VCAPPSRC CASES
+    // -------------------------------------
 
-
-    // Determine isSRC and VCSRC[]
+    // DETERMINE isSRC, isDefault, AND VCSRC[]
     char VCSRC[LINE_MAX+1] = { '\0' };
 
     bool isSRC = true;
@@ -118,33 +137,38 @@ int main(void)
     strncat_s( VCSRC, LINE_MAX,
                pVCappSRC, _TRUNCATE );
 
-    // Determine isEXE, hasName, and VCEXE[]
+    bool isDefault = false;
+    if ( !strncmp(VCSRC, "src\\*.c", 10) )
+         { isDefault = true;
+           strncat_s( VCSRC, LINE_MAX,
+                      " (default)", _TRUNCATE );
+           }
+
+    // DETERMINE hasEXE AND VCEXE[]
     char VCEXE[LINE_MAX+1] = { '\0' };
 
-    bool isEXE = true;
+    bool hasEXE = true;
     char *pVCappEXE = getenv("VCAPPEXE");
     if ( pVCappEXE == NULL)
          { pVCappEXE = "not defined";
-           isEXE = false; }
+           hasEXE = false; }
 
      strncat_s( VCEXE, LINE_MAX,
                pVCappEXE, _TRUNCATE );
 
-    bool hasName = true;
-    if ( !strncmp(pVCappEXE, "RenameMe.exe", 12) )
-         { hasName = false;
-           strncat_s( VCEXE, LINE_MAX,
-                      " (needs replacing)", _TRUNCATE );
-           }
 
-    // Identify Source, defined or not
+    // IDENTIFY SOURCE IN line3[] DEFINED OR NOT
+    // -----------------------------------------
+
     char line3[LINE_MAX+1] = { '\0' };
     strncat_s( line3, LINE_MAX,
                "SRC is ", _TRUNCATE);
     strncat_s( line3, LINE_MAX,
                VCSRC, _TRUNCATE );
 
-    // Identify EXE, defined or not
+    // IDENTIFY EXE IN line4[], DEFINED OR NOT
+    // ---------------------------------------
+
     char line4[LINE_MAX+1] = { '\0' };
     strncat_s( line4, LINE_MAX,
                "EXE is ", _TRUNCATE);
@@ -152,47 +176,64 @@ int main(void)
                VCEXE, _TRUNCATE );
 
 
-    // Determine isHosted and VCrayAppHost[]
+    // DETERMINE hasHostName AND VCrayAppHost[]
+    // ----------------------------------------
+
     char VCrayAppHost[LINE_MAX+1] = { '\0' };
 
-    bool isHosted = true;
+    bool hasHostName = true;
     char *pVCrayAppHost = getenv("VCrayAppHost");
     if ( pVCrayAppHost == NULL )
-         {  pVCrayAppHost = "No identified host";
-            isHosted = false; }
+         {  pVCrayAppHost = "not defined";
+            hasHostName = false; }
 
     strncat_s( VCrayAppHost, LINE_MAX,
                pVCrayAppHost, _TRUNCATE);
 
-    // Determine hasURL and VCrayAppHostURL[]
+    // DETERMINE hasURL AND VCrayAppHostURL[]
+    // --------------------------------------
+
     char VCrayAppHostURL[LINE_MAX+1] = { '\0' };
 
     bool hasURL = true;
     char *pVCrayAppHostURL = getenv("VCrayAppHostURL");
     if (pVCrayAppHostURL == NULL)
-         { pVCrayAppHostURL = "https://example.com";
+         { pVCrayAppHostURL = "not defined";
            hasURL = false; }
 
     strncat_s( VCrayAppHostURL, LINE_MAX,
                pVCrayAppHostURL, _TRUNCATE);
 
-    // Identify Any Host
+    // DETERMINE isSpliced WHETHER HOST NAMED OR NOT
+    // ---------------------------------------------
+
+    char *pVCsplice = getenv("VCsplice");
+    if (pVCsplice == NULL)
+         pVCsplice = "";
+    bool isSpliced = !strncmp(pVCsplice, "+", 1);
+
+
+    // PREPARE IDENTIFICATION OF HOST AND URL IN CASE RELEVANT
+    // -------------------------------------------------------
+
     char line5[LINE_MAX+1] = { '\0' };
     strncat_s( line5, LINE_MAX,
-               VCrayAppHost, _TRUNCATE);
+               "Host ", _TRUNCATE);
     strncat_s( line5, LINE_MAX,
-               " is operating VCrayApp", _TRUNCATE);
+               VCrayAppHost, _TRUNCATE);
 
-    // Identify Any Host URL (used only if also isHosted)
+
     char line6[LINE_MAX+1] = { '\0' };
     strncat_s( line6, LINE_MAX,
-               "See ", _TRUNCATE );
+               "URL ", _TRUNCATE );
     strncat_s( line6, LINE_MAX,
                VCrayAppHostURL, _TRUNCATE );
 
 
-    // RAYLIB INITIALIZATION
-    //----------------------
+    // RAYLIB DISPLAY
+    // **************
+
+
     const int screenWidth = 800;
     const int screenHeight = 450;
 
@@ -201,8 +242,8 @@ int main(void)
 
     SetTargetFPS(60);
 
-    // MAIN RAYLIB GAME LOOP
-    // ---------------------
+    // MAIN DISPLAY LOOP
+    // -----------------
 
     while (!WindowShouldClose())    // Detect window close button or ESC key
     {
@@ -223,7 +264,10 @@ int main(void)
 
             DrawText(line2, // presumed raylib Version
                      90, 160, 20, BLUE);
+
             int nextLine = 185;
+                // used as something like a line counter
+
             if (isDev)
                  { DrawText("Thank you for testing with a -dev version.",
                             140, nextLine, 20, GRAY);
@@ -238,23 +282,22 @@ int main(void)
                      90, nextLine+25, 20, BLUE);
             nextLine += 60;
 
-            if (isHosted)
-                 { DrawText(line5, // Host Name
-                            90, nextLine, 20, BLUE );
-                   if (hasURL)
-                        { DrawText( line6, // URL only if Host
-                                    90, nextLine+25, 20, GRAY );
-                          nextLine += 50; }
-                   else nextLine +=30;
+            if (hasHostName || isSpliced)
+                 { DrawText( line5, // Host Name
+                             90, nextLine, 20, BLUE );
+                   DrawText( line6, // URL
+                             90, nextLine+25, 20, GRAY );
+                   nextLine += 50;
                    }
 
-            if (isHosted)
-                 DrawText( "Settings are controlled by the host.",
-                           140, nextLine, 20, GRAY );
-            else if (!hasName || !isSRC)
-                     DrawText( "Adjust the VCrayApp.bat settings"
-                               " to compile project code.",
-                               90, nextLine, 20, RED);
+            if (isSpliced && !hasHostName)
+                 { DrawText( "Embedded operation (option \"+\") "
+                             "should have a host.",
+                             90, nextLine, 20, RED);
+                   DrawText( "See <https://orcmid.github.io/nfoTools/"
+                             "dev/D211101/b/>",
+                             140, nextLine+25, 20, GRAY );
+                   }
 
             DrawText("Press ESC to Continue",
                      90, 400, 20, BLUE);
@@ -273,6 +316,12 @@ int main(void)
 
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+   0.1.15 2023-05-08T19:14Z Correct URL in Embedded operation message
+   0.1.14 2023-05-03T20:28z Align with revised VCrayApp.bat API
+   0.1.13 2023-04-08T21:35Z Clearsign as release candidate now
+   0.1.12 2023-04-08T21:22Z Provide link to further information
+   0.1.11 2023-04-05T17:42Z Clearsign as release candidate
+   0.1.10 2023-04-03T21:37Z Adjust to the embedding changes in VCrayApp.bat
    0.1.9 2023-03-10T02:16Z Complete draft beta candidate
    0.1.8 2023-03-02T21:08Z Capture VCrayAppHost and VCrayAppHostURL presence.
    0.1.7 2023-02-27T20:19Z Defend against getenv() NULL returns
@@ -289,4 +338,15 @@ int main(void)
          raylib 3.7.0.zip release downloaded 2021-10-08T00:41
 
                         *** end of VCrayConfirm.c ***
-   */
+-----BEGIN PGP SIGNATURE-----
+
+iQFGBAEBCAAwFiEEBNBDIpebhN4QdwM0+W6J/9RWYooFAmRZTbgSHG9yY21pZEBh
+cGFjaGUub3JnAAoJEPluif/UVmKKV+0IAKkGgQn/OboW6pbgCzwGLDeeIGX+I0/7
+f8340bQmNIpOgDEDBwAJm8EVMM2uBU4dZesPt1U/1pfZQsEPur2RUt9SBRkAOrlb
+Ogn6vYSMwrwMUjgNIfGfd5qOndk7qA/P/XFBlgBX/yvlcmuBLypIZ7yXP/k1ZEp7
+JuLJ/JMKCMapFJ0AyUQ5Ksy4yRme4uNSndqOTKd9BSxp1sw90mz/z/q1fw76VxmH
+is44Mx+dCdOmzg3gQWlt3ZUnq33ggssm4AlnlhaXzCs1g45WSAAdBy5XkqHbVpfl
+3BqQ8I0MRb0WKt5U2mqQZ8im1E8Ils+0Ssc/JA1OvsZfm9WJFiRoxIw=
+=tHdt
+-----END PGP SIGNATURE-----
+*/
