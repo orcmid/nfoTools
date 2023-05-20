@@ -1,4 +1,4 @@
-T060101.txt 0.0.13                  UTF-8                          2023-05-20
+T060101.txt 0.0.14                  UTF-8                          2023-05-20
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -44,7 +44,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. T060101: C/C++ Programming.  nfoTools project text
-   file T060101.txt version 0.0.13 dated 2023-05-20, available on the
+   file T060101.txt version 0.0.14 dated 2023-05-20, available on the
    Internet as a version of
    <https://orcmid.github.io/nfoTools/tools/T060101/T060101.txt>
 
@@ -212,8 +212,12 @@ TODO
 
  * Find more-current books.
 
+ * READING CODE, RUNNING CODE.  This is the experiemental and practical
+   art aspect of Computer Science.
+
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.14 2023-05-20T19:01Z Prepare for folio restructuring, more notes
  0.0.13 2023-05-20T16:34Z More notes on filling this folio in for support of
         VCrayApp and other dev\ and tools\ work.
  0.0.12 2023-05-05T19:07Z Add cautionary note about gamedev.tv and Udemy too.
