@@ -1,4 +1,4 @@
-<!-- T060101a.md 0.1.2              UTF-8                          2022-06-16
+<!-- index.md 0.2.0                 UTF-8                          2023-05-20
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                         T060101: C/C++ PROGRAMMING
@@ -6,11 +6,11 @@
                         T060101a: DIARY & JOB JAR
      -->
 
-# [Diary and Job Jar](T060101a.html) from nfoWare t060101a
+# [Diary and Job Jar](.) from nfoWare t060101a
 
-| ***[nfoTools](../../)*** | [tools](../)[>t060101](.)[>t060101a](T060101a.html) |  ***[T060101a.html](T060101a.html) 0.1.2 2022-06-16*** |
+| ***[nfoTools](../../../)*** | [tools](../../)[>t060101](../)[>a](.) |  ***[index.html](index.html) 0.2.0 2023-05-20*** |
 | :--                |       :-:          | --: |
-| ![nfotools](../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../../images/hardhat-logo.gif) |
+| ![nfotools](../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../../../images/hardhat-logo.gif) |
 
 These kinds of notes are now kept separately in TODO sections of text files.
 Those items are removed as they are resolved.  In previous, web-based folios,
@@ -61,11 +61,12 @@ from time to time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.2.0 2023-05-20T22:46Z Transpose to T050101/a/index.html
      0.1.2 2022-06-16T23:20Z Use preferred top header strip
      0.1.1 2021-11-16T20:53Z Formatting
      0.1.0 2021-11-16T17:02Z Transpose to nfoTools as boilerplate to curate
      0.0.20 2007-08-13T23:18Z Last update on nfoWare.com
      0.0.0 2005-09-08T19:41Z Create Initial Placeholder (on nfoWare.com)
 
-           *** end of docs/tools/T060101/T060101a.md ***
+                *** end of docs/tools/T060101/a/index.md ***
      -->

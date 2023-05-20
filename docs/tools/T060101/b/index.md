@@ -1,4 +1,4 @@
-<!-- T060101b.md 0.1.4              UTF-8                          2022-06-16
+<!-- T060101b.md 0.2.0              UTF-8                          2023-05-20
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                         T060101: C/C++ PROGRAMMING
@@ -6,11 +6,11 @@
                              T060101b: RESOURCES
      -->
 
-# T060101b: [C/C++ Programming Resources](T060101b.html)
+# T060101b: [C/C++ Programming Resources](.)
 
-| ***[nfoTools](../../)*** | [tools](../)[>T060101](.)[>T060101b](T060101a.html) | ***[T060101a.html](T060101a.html) 0.1.4 2022-06-16*** |
+| ***[nfoTools](../../../)*** | [tools](../../)[>T060101](../)[>b](.) | ***[index.html](index.html) 0.2.0 2023-05-20*** |
 | :--                |       :-:          | --: |
-| ![nfotools](../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../../images/hardhat-logo.gif) |
+| ![nfotools](../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../../../images/hardhat-logo.gif) |
 
 These resources are suitable for anyone who has personal use of a recent
 (Windows 10 or later) desktop PC system and wants to engage in self-study
@@ -315,6 +315,7 @@ from time to time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.2.0 2023-05-20T22:53Z Transpose to T060101/b/index.md
      0.1.4 2022-06-16T23:25Z Use preferred header title strip
      0.1.3 2021-11-18T04:51Z Provice a TOC and cross references
      0.1.2 2021-11-17T20:01Z Reorganize and begin updating the selections

@@ -1,0 +1,58 @@
+T060101b.txt 0.0.0                  UTF-8                         2023-05-20
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+
+                        nfoWare/nfoWorks nfoTools
+                        =========================
+
+<https://github.com/orcmid/nfoTools/blob/master/docs/tools/T060101/b/T060101b.txt>
+      <https://orcmid.github.io/nfoTools/tools/T060101/b/T060101b.txt>
+
+                          T060101b: RESOURCES
+                          -------------------
+
+[TB]
+
+
+MANIFEST
+
+    T060101b.txt  this manifest and job-jar file
+       index.md   front porch published as
+                  orcmid.github.io/nfoTools/T060101/b/
+
+
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+                       Copyright 2021 Dennis E. Hamilton
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+ ATTRIBUTION
+
+   Hamilton, Dennis E. T060101b: Resources, nfoTools project text
+   file T060101b.txt version 0.0.0 dated 2023-05-20, available on the
+   Internet as a version of
+   <https://orcmid.github.io/nfoTools/tools/T060101/b/T060101b.txt>
+
+TODO
+
+ * Organize better.  Focus on C Language materials and also with C/C++
+   compilers and libraries.
+
+  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+ 0.0.0 2023-05-20T23:38Z  Placeholder with 0.0.0 T060101a.txt boilerplate
+
+                     ***** end of T060101b.txt *****

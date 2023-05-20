@@ -1,4 +1,4 @@
-T060101.txt 0.0.14                  UTF-8                          2023-05-20
+T060101.txt 0.0.15                  UTF-8                          2023-05-20
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -19,9 +19,9 @@ MANIFEST
     T060101.txt  this manifest and job-jar file
       index.md   front porch published as orcmid.github.io/nfoTools/T060101/
 
-   T060101a.md   nfoWare t060101a Diary & Job Jar (legacy)
-   T060101b.md   Resources
-   T060101c/     Getting to "Hello"
+          a/     T060101a: nfoWare t060101a Diary & Job Jar (legacy)
+          b/     T060101b: Resources
+          c/     T060101c: Getting to "Hello"
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
@@ -44,7 +44,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. T060101: C/C++ Programming.  nfoTools project text
-   file T060101.txt version 0.0.14 dated 2023-05-20, available on the
+   file T060101.txt version 0.0.15 dated 2023-05-20, available on the
    Internet as a version of
    <https://orcmid.github.io/nfoTools/tools/T060101/T060101.txt>
 
@@ -215,8 +215,19 @@ TODO
  * READING CODE, RUNNING CODE.  This is the experiemental and practical
    art aspect of Computer Science.
 
+ * https://learn.microsoft.com/en-us/cpp/c-runtime-library/c-run-time-library-reference>
+   provides details of the Microsoft C runtime library (CRT) usable for
+   VC/C++ programs and their compilation.  There is a PDF available.
+
+ * To ensure that programs are standards compliant and portable with respect
+   to C Language standard(s), there are
+    o <https://learn.microsoft.com/en-us/cpp/cpp/c-cpp-language-and-standard-libraries>
+    o Others by searching on "C standard",
+      <https://learn.microsoft.com/en-us/search/?terms=C%20standard&scope=C%2B%2B>
+
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.15 2023-05-20T23:42Z Morph folio structure
  0.0.14 2023-05-20T19:01Z Prepare for folio restructuring, more notes
  0.0.13 2023-05-20T16:34Z More notes on filling this folio in for support of
         VCrayApp and other dev\ and tools\ work.

@@ -1,4 +1,4 @@
-<!-- index.md 0.1.3                UTF-8                          2022-06-16
+<!-- index.md 0.2.0                UTF-8                          2023-05-20
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                          T060101: C/C++ PROGRAMMING
@@ -6,7 +6,7 @@
 
 # T060101: [C/C++ Programming](.)
 
-| ***[nfoTools](../../)*** | [tools](../)[>t060101](.) | ***0.1.3 2022-06-16*** |
+| ***[nfoTools](../../)*** | [tools](../)[>t060101](.) | ***[index.html](index.html) 0.2.0 2023-05-20*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | C/C++ Programming | ![Hard Hat Area](../../images/hardhat-logo.gif) |
 
@@ -36,10 +36,10 @@ on this topic.  Recommended materials and language references are identified.
 
 | **ID** | **Started** | **Status** | **Topic** |
 |   :-:   |   :-:   |  :-:   |  ---  |
-| [T060101c](T060101c/) | 2021-11-25 | 0.0.1 2022-06-16 | Getting to "Hello" |
-| [T060101b](T060101b.html) | 2006-05-20 | 0.1.4 2022-06-16 | C/C++ Resources |
+| [T060101c](c/) | 2021-11-25 | 0.0.2 2023-05-20 | Getting to "Hello" |
+| [T060101b](b/) | 2006-05-20 | 0.2.0 2023-05-20 | C/C++ Resources |
 |                           |            |                   |           |
-| [T060101a](T060101a.html) | 2005-09-08 | 0.1.4 2022-06-16 | Legacy Diary \& Job Jar |
+| [T060101a](a/) | 2005-09-08 | 0.2.0 2023-05-20 | Legacy Diary \& Job Jar |
 
 ----
 
@@ -53,6 +53,7 @@ from time to time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.2.0 2023-05-20T23:15Z Folio re-organization
      0.1.3 2022-06-23T23:32Z Adopt improved title strip header
      0.1.2 2021-11-25T00:27Z T060101c
      0.1.1 2021-11-16T19:40Z Touch-ups

@@ -1,4 +1,4 @@
-<!-- index.md 0.0.1                UTF-8                          2022-06-16
+<!-- index.md 0.0.2                UTF-8                          2023-05-20
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                          T060101c: GETTING TO "HELLO"
@@ -6,7 +6,7 @@
 
 # ToolCraft: [C/C++ Programming](.)
 
-| ***[nfoTools](../../../)*** | [tools](../../)[>t060101](../)[>t060101c](.) | ***[index.md](index.md) 0.0.1 2022-06-16*** |
+| ***[nfoTools](../../../)*** | [tools](../../)[>t060101](../)[>t060101c](.) | ***[index.html](index.html) 0.0.2 2023-05-20*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Getting to "Hello" | ![Hard Hat Area](../../../images/hardhat-logo.gif) |
 
@@ -26,8 +26,9 @@ from time to time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.2 2023-05-20T23:05Z Touch-ups for T060101/c/ transposition
      0.0.1 2022-06-16T23:14Z improve title header strip
      0.0.0 2021-11-25T00:20Z bootstrap placeholder and boilerplate
 
-           *** end of docs/tools/T060101/T060101c/index.md ***
+               *** end of docs/tools/T060101/c/index.md ***
      -->
