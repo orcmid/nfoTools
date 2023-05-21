@@ -1,4 +1,4 @@
-T060101.txt 0.0.15                  UTF-8                          2023-05-20
+T060101.txt 0.0.16                  UTF-8                          2023-05-**
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -44,7 +44,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. T060101: C/C++ Programming.  nfoTools project text
-   file T060101.txt version 0.0.15 dated 2023-05-20, available on the
+   file T060101.txt version 0.0.16 dated 2023-05-**, available on the
    Internet as a version of
    <https://orcmid.github.io/nfoTools/tools/T060101/T060101.txt>
 
@@ -54,11 +54,11 @@ TODO
 
  * Deal with operation as part of Developer Command Prompt
 
- * Watch FC_CPP and ensure that supporting materials are appearing here on
-   nfoTools/docs.  Also related to the new devkits here and also the intro to
-   raylib usage.
+ * Watch FC_CPP Course videos and ensure that supporting materials are
+   appearing here on nfoTools/docs.  Also related to the new devkits here and
+   also the intro to raylib usage.
 
-  * There needs to be a good account of C vs C++ and then how to navigate the
+ * There needs to be a good account of C vs C++ and then how to navigate the
    dependencies.  And also what language to use.  When would we want C++ and
    for that matter, why when .NET?
 
@@ -224,6 +224,9 @@ TODO
     o <https://learn.microsoft.com/en-us/cpp/cpp/c-cpp-language-and-standard-libraries>
     o Others by searching on "C standard",
       <https://learn.microsoft.com/en-us/search/?terms=C%20standard&scope=C%2B%2B>
+
+ * For T060101b, Have permalinks so that they can be referenced from other
+   parts of the folio including here at the front porch.
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 

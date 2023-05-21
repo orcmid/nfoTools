@@ -1,4 +1,4 @@
-<!-- T060101b.md 0.2.0              UTF-8                          2023-05-20
+<!-- T060101b.md 0.2.1              UTF-8                          2023-05-21
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                         T060101: C/C++ PROGRAMMING
@@ -44,37 +44,14 @@ required.
 
 \[***Author Note: Needs Serious Updating and Separation of Historicals ***\]
 
-Clean forms of programming in C Language provide a common C/C++ foundation.
-These days, C++ is promoted yet the essentials of C are applicable in C++ as
-well.  There are many projects where staying at the C level is entirely
-appropriate.
-
-I recommend C as a foundation and introduction of some fundamental concepts
-without so many features to ponder at once.  It also helps in recognizing
-projects that are in C no matter how the programs are compiled.  C++ programs
-can and often do rely on existing code libraries written in C.
-
-There are some important inter-working situations with regard to mixing C
-and C++ components and those will be identified.
-
 The following sources are not all at the same level.  The commentary should
 reveal which are good as starters, which ones require more care and provide
 further riches in return.
 
-### Allison, Chuck (2000). Thinking in C: Foundations for C++ & Java
-
-MindView (La Mesa, CA).  A course including lectures, slides, exercises and
-solutions, which teaches the foundations of the C Language to prepare you to
-learn Java or C++.  Also available at
-[MindView](http://www.mindview.net/CDs/ThinkingInC-CD/ThinkingInC-CD.html).
-As explained on the web site, it is more-economical to purchase the print
-edition of ([Eckel 2000](#eckel-bruce-2000-thinking-in-c-second-edition)) with
-CD-ROM included.  That CD-ROM also includes electronic versions of *Thinking
-in C++*, *Thinking in Java*, and the code samples from *Thinking in C++*.
-
 ### Harbison, Samuel P. III., Steele, Guy L. Jr. (2002) C, A Reference Manual
 
-Ed.5.  Prentice-Hall (Englewood Cliffs, NJ: 2002).  ISBN 0-13-089592-X pbk.
+<a name="Harbison2002">[Harbison2002]</a>Ed.5.
+Prentice-Hall (Englewood Cliffs, NJ: 2002).  ISBN 0-13-089592-X pbk.
 I find this the most comprehensive and understandable reference available on
 the C Language.  Not written as a programming text, it is a reference manual
 that also has examples and exercises.  The exemplary material is non-trivial,
@@ -97,11 +74,24 @@ known as K&R, is a testament to the longevity of the C Language and how today
 Clean C is "unrecognizably different" to borrow a statement made about the
 evolution of FORTRAN.  Historically important, this book is supplanted as a
 reference by
-([Harbison & Steele](#harbison-samuel-p-iii-steele-guy-l-jr-2002-c-a-reference-manual)).
+[Harbison2002](#harbison-samuel-p-iii-steele-guy-l-jr-2002-c-a-reference-manual).
+
+### Allison, Chuck (2000). Thinking in C: Foundations for C++ & Java
+
+<a name="Allison2000">[Allison2000]</a> MindView (La Mesa, CA).  A course
+including lectures, slides, exercises and
+solutions, which teaches the foundations of the C Language to prepare you to
+learn Java or C++.  Also available at
+[MindView](http://www.mindview.net/CDs/ThinkingInC-CD/ThinkingInC-CD.html).
+As explained on the web site, it is more-economical to purchase the print
+edition of ([Eckel 2000](#eckel-bruce-2000-thinking-in-c-second-edition)) with
+CD-ROM included.  That CD-ROM also includes electronic versions of *Thinking
+in C++*, *Thinking in Java*, and the code samples from *Thinking in C++*.
 
 ### McGrath, Mike (2004).  C Programming in Easy Steps
 
-Learn the ANSI C standard in full color.  Computer Step, Southam,
+<a name="McGrath2004">[McGrath2004]</a>Learn the ANSI C standard in full
+color.  Computer Step, Southam,
 Warwickshire, UK.  ISBN 1-84078-203-X pbk.  Barnes & Noble edition for sale in
 the USA only, ISBN 0-7607-5504-3.  Book description and source-code downloads
 available at [In Easy Steps](http://www.ineasysteps.com/books/?184078203x).
@@ -114,7 +104,8 @@ C++ Toolkit 2003 compiler is easily made by following the recommended setup.
 
 ### Prinz, Peter., Kirch-Prinz, Ulla (2003).  C Pocket Reference
 
-Translated by Tony Crawford.  O'Reilly Media, Sebastopol, CA.  134pp.
+<a name="Prinz2003">[Prinz2003]</a> Translated by Tony Crawford.  O'Reilly
+Media, Sebastopol, CA.  134pp.
 ISBN 0-596-00436-2 pbk.  Originally published in German as "C kurz & gut"
 (short and good), I find this thumbnail convenient, with an organization that
 is easy for me to find material in.  Others may find different organizations
