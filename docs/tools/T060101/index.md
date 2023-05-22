@@ -1,4 +1,4 @@
-<!-- index.md 0.2.1                UTF-8                          2023-05-22
+<!-- index.md 0.2.2                UTF-8                          2023-05-22
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                          T060101: C/C++ PROGRAMMING
@@ -6,15 +6,20 @@
 
 # T060101: [C/C++ Programming](.)
 
-| ***[nfoTools](../../)*** | [tools](../)[>t060101](.) | ***[index.html](index.html) 0.2.1 2023-05-22*** |
+| ***[nfoTools](../../)*** | [tools](../)[>t060101](.) | ***[index.html](index.html) 0.2.2 2023-05-22*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | C/C++ Programming | ![Hard Hat Area](../../images/hardhat-logo.gif) |
-
-## C/C++ Programming for Beginners and the Curious
 
 The purpose of these materials is to provide an on-ramp and guard rails for
 exploration and use of the C Language in development and maintenance of
 computer software.
+
+- [T060101: C/C++ Programming](#t060101-cc-programming)
+  - [C/C++ Programming for Beginners and the Curious](#cc-programming-for-beginners-and-the-curious)
+  - [Historical Context](#historical-context)
+  - [Available Materials](#available-materials)
+
+## C/C++ Programming for Beginners and the Curious
 
 This material is intended to be supplemental to the extensive guidance
 [available elsewhere](b/) in books, web materials, and courses, especially
@@ -110,7 +115,7 @@ and may be implemented in C Language themselves.
 See also
 
 * [T211002](../T211002) VS Build Tools
-* [T060501](../T060502) Windows CMD Command-Line Environment
+* [T060501](../T060501) Windows CMD Command-Line Environment
 * [T211001](../T211001) Visual Studio Code for Windows
 
 ----
@@ -125,6 +130,7 @@ from time to time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.2.2 2023-05-22T22:41Z Touch-ups
      0.2.1 2023-05-22T21:54Z Cleaned-up and Explained
      0.2.0 2023-05-20T23:15Z Folio re-organization
      0.1.3 2022-06-23T23:32Z Adopt improved title strip header
