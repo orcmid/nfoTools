@@ -1,4 +1,4 @@
-<!-- index.md 0.2.2                UTF-8                          2023-05-22
+<!-- index.md 0.2.3                UTF-8                          2023-05-22
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                          T060101: C/C++ PROGRAMMING
@@ -18,12 +18,14 @@ computer software.
   - [C/C++ Programming for Beginners and the Curious](#cc-programming-for-beginners-and-the-curious)
   - [Historical Context](#historical-context)
   - [Available Materials](#available-materials)
+  - [Recommended Tools](#recommended-tools)
 
 ## C/C++ Programming for Beginners and the Curious
 
 This material is intended to be supplemental to the extensive guidance
 [available elsewhere](b/) in books, web materials, and courses, especially
-the many free and inexpensive on-line ones.
+the many free and inexpensive on-line ones.  It is designed to be used
+actively in study and practice using recommended tools or their equivalent.
 
 One of the most helpful avenues in learning to program is reading the
 exemplary work of others.  Learning to build, operate, modify, and exted the
@@ -68,7 +70,7 @@ is archaic, generally refering to the
 
 From the outset, the appeal of C Language has been its ability to be used
 to make hardware-close programs, first of all, and that can also be carried
-interoperably in their C Language form to multiple platforms, starting with
+portably in their C Language form to multiple platforms, starting with
 flavors of Unix, including the eventual Linux, as well as Windows PC desktops,
 Apple Macintosh, and newer forms of laptops, tablets, and other devices,
 including those powered by Android and iOS.
@@ -79,9 +81,9 @@ systems, such as Java and Python.  In the case of C++, that usability of
 Clean C modules and libraries is immediate.
 
 In concert with these varied applications, C has evolved over time, sometimes
-to strengthen its connection with C++, to improve interoperable use, and
+to strengthen its connection with C++, to improve portable use, and
 also to encourage dependable programming practices, including with respect to
-security-safe programming.  There will be close attention to those provisions
+programming secure code.  There will be close attention to those provisions
 and practices.
 
 An important shift
@@ -112,11 +114,11 @@ and may be implemented in C Language themselves.
 |                           |            |                   |           |
 | [T060101a](a/) | 2005-09-08 | 0.2.0 2023-05-20 | Legacy Diary \& Job Jar |
 
-See also
+## Recommended Tools
 
-* [T211002](../T211002) VS Build Tools
-* [T060501](../T060501) Windows CMD Command-Line Environment
-* [T211001](../T211001) Visual Studio Code for Windows
+- [T211002](../T211002) VS Build Tools
+- [T060501](../T060501) Windows CMD Command-Line Environment
+- [T211001](../T211001) Visual Studio Code for Windows
 
 ----
 
@@ -130,6 +132,7 @@ from time to time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.2.3 2023-05-22T23:39Z Improve wording about portability
      0.2.2 2023-05-22T22:41Z Touch-ups
      0.2.1 2023-05-22T21:54Z Cleaned-up and Explained
      0.2.0 2023-05-20T23:15Z Folio re-organization
