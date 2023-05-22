@@ -1,4 +1,4 @@
-<!-- index.md 0.2.1                UTF-8                          2023-05-**
+<!-- index.md 0.2.1                UTF-8                          2023-05-22
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                          T060101: C/C++ PROGRAMMING
@@ -6,45 +6,80 @@
 
 # T060101: [C/C++ Programming](.)
 
-| ***[nfoTools](../../)*** | [tools](../)[>t060101](.) | ***[index.html](index.html) 0.2.0 2023-05-20*** |
+| ***[nfoTools](../../)*** | [tools](../)[>t060101](.) | ***[index.html](index.html) 0.2.1 2023-05-22*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | C/C++ Programming | ![Hard Hat Area](../../images/hardhat-logo.gif) |
 
->> ***Ed.Note: This material is dated.  Extensive revision is called for.***
-
 ## C/C++ Programming for Beginners and the Curious
 
+The purpose of these materials is to provide an on-ramp and guard rails for
+exploration and use of the C Language in development and maintenance of
+computer software.
+
+This material is intended to be supplemental to the extensive guidance
+[available elsewhere](b/) in books, web materials, and courses, especially
+the many free and inexpensive on-line ones.
+
+One of the most helpful avenues in learning to program is reading the
+exemplary work of others.  Learning to build, operate, modify, and exted the
+work of others is important.  There are differences in styles and chosen tools
+to learn about as well.  Understanding those differences is preparation for
+adopting personal styles and also cooperating in the styles of projects where
+one is a participant.
+
+Here, worked examples and full projects using C Language will be narrowed to
+be definite and focused.  Code will be written and demonstrated using the
+Microsoft Windows Desktop PC as the instrument and as the target.  The
+programming-language tools will be the
+[Visual Studio Build Tools](../T211002/)
+and the VC/C++ compiler that is part of that suite of tools.  Usability of
+examples and projects with different C Language tools is likely but neither
+focus nor commitment.
+
 For nfoTools projects of all kinds, use of the C Programming Language
-will be in [Clean C](b/#Harbison2002), a form which can be compiled as "pure"
-C Language and also as C++ Language programs.  The use of "C/C++" emphasizes
+will be in
+[Clean C](b/#harbison-samuel-p-iii-steele-guy-l-jr-2002-c-a-reference-manual),
+a form which can be compiled as "pure"
+C Language and also as C++ Language.  The use of "C/C++" emphasizes
 that connection.  Modern compilers tend to be C/C++ compilers (at least) and
 will accept Clean C as either C or C++.
 
-Substantial software, especially open-source software, is being
-developed and maintained using C Language.  C++ programs
-can and often do rely on existing code libraries written in C.  Many other
-programming systems allow components authored in C Language to be added/used
-and may be implemented in C Language themselves.
-
-Here there will not be much attention on C++ features that are not acceptable
-in C Language.  The objective, instead, is to focus on the Clean C as a
-foundation on some valuable programming language principles and as a launching
-pad for future efforts, whether expanding into C++ or other programming
+Here there will not be much attention on C++ features that are unacceptable
+in C Language (and *vice versa*).  The approach, instead, is focus on Clean C
+to illustrate software-development principles and as a launching pad for
+further efforts, whether expanding into C++ or other programming
 languages/dialects.
 
 ## Historical Context
 
 C and C++ are two heavily-used programming languages.
 [C Programming Language](https://en.wikipedia.org/wiki/C_(programming_language))
- was introduced in the 1970s, evolved over time, and formalized in
- International  Standards, and spoken of as ISO Standard C.  (The term ANSI C
- is archaic, generally refering to the
- [C89 ISO counterpart](https://en.wikipedia.org/wiki/C_(programming_language)#History).  There are some
- variations defined in [POSIX](https://en.wikipedia.org/wiki/POSIX) that are
+was introduced in the 1970s, evolved over time, formalized in
+International  Standards, and spoken of as ISO Standard C.  (The term ANSI C
+is archaic, generally refering to the
+[C89 ISO counterpart](https://en.wikipedia.org/wiki/C_(programming_language)#History).  There are some variations defined in
+[POSIX](https://en.wikipedia.org/wiki/POSIX) that are
  not incorporated in the ISO Standards.)
 
-C has evolved over time, sometimes to strengthen its connection with C++, and
-also to encourage dependable programming practices.  An important shift
+From the outset, the appeal of C Language has been its ability to be used
+to make hardware-close programs, first of all, and that can also be carried
+interoperably in their C Language form to multiple platforms, starting with
+flavors of Unix, including the eventual Linux, as well as Windows PC desktops,
+Apple Macintosh, and newer forms of laptops, tablets, and other devices,
+including those powered by Android and iOS.
+
+It is not unusual for subsystems and libraries developed in C Language to be
+usable via "language bindings" in higher-level and alternative programming
+systems, such as Java and Python.  In the case of C++, that usability of
+Clean C modules and libraries is immediate.
+
+In concert with these varied applications, C has evolved over time, sometimes
+to strengthen its connection with C++, to improve interoperable use, and
+also to encourage dependable programming practices, including with respect to
+security-safe programming.  There will be close attention to those provisions
+and practices.
+
+An important shift
 occured between [C99](https://en.wikipedia.org/wiki/C99) (issued around 1999)
 and [C11](https://en.wikipedia.org/wiki/C11_(C_standard_revision)) (issued
 around 2011).  There are more features in C11, including some optional ones
@@ -57,15 +92,13 @@ maintenance release.  [C23](https://en.wikipedia.org/wiki/C2x) is imminent at
 this time.  C23 will provide some new extensions and deprecate or completely
 obsolete some older features that have been discouraged previously.
 
-## The Basics
+Substantial software, especially open-source software, is being
+developed and maintained using C Language.  C++ programs
+can and often do rely on existing code libraries written in C.  Many other
+programming systems allow components authored in C Language to be added/used
+and may be implemented in C Language themselves.
 
-\[TBD\]
-
-There is no intention to duplicate the extensive public materials and also
-the Windows-oriented Microsoft and MSDN materials that are freely available
-on this topic.  Recommended materials and language references are identified.
-
-## Available Materials [Boilerplate]
+## Available Materials
 
 | **ID** | **Started** | **Status** | **Topic** |
 |   :-:   |   :-:   |  :-:   |  ---  |
@@ -73,6 +106,12 @@ on this topic.  Recommended materials and language references are identified.
 | [T060101b](b/) | 2006-05-20 | 0.2.0 2023-05-20 | C/C++ Resources |
 |                           |            |                   |           |
 | [T060101a](a/) | 2005-09-08 | 0.2.0 2023-05-20 | Legacy Diary \& Job Jar |
+
+See also
+
+* [T211002](../T211002) VS Build Tools
+* [T060501](../T060502) Windows CMD Command-Line Environment
+* [T211001](../T211001) Visual Studio Code for Windows
 
 ----
 
@@ -86,7 +125,7 @@ from time to time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-     0.2.1 2023-05-**
+     0.2.1 2023-05-22T21:54Z Cleaned-up and Explained
      0.2.0 2023-05-20T23:15Z Folio re-organization
      0.1.3 2022-06-23T23:32Z Adopt improved title strip header
      0.1.2 2021-11-25T00:27Z T060101c
