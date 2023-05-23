@@ -58,10 +58,6 @@ TODO
    appearing here on nfoTools/docs.  Also related to the new devkits here and
    also the intro to raylib usage.
 
- * There needs to be a good account of C vs C++ and then how to navigate the
-   dependencies.  And also what language to use.  When would we want C++ and
-   for that matter, why when .NET?
-
   * Here is an useful statement about the .NET languages from Microsoft,
     <https://learn.microsoft.com/en-us/dotnet/fundamentals/languages>.
 

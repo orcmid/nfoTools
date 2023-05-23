@@ -1,4 +1,4 @@
-<!-- index.md 0.2.3                UTF-8                          2023-05-22
+<!-- index.md 0.2.4                UTF-8                          2023-05-23
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                          T060101: C/C++ PROGRAMMING
@@ -6,13 +6,18 @@
 
 # T060101: [C/C++ Programming](.)
 
-| ***[nfoTools](../../)*** | [tools](../)[>t060101](.) | ***[index.html](index.html) 0.2.2 2023-05-22*** |
+| ***[nfoTools](../../)*** | [tools](../)[>t060101](.) | ***[index.html](index.html) 0.2.3 2023-05-23*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | C/C++ Programming | ![Hard Hat Area](../../images/hardhat-logo.gif) |
 
-The purpose of these materials is to provide an on-ramp and guard rails for
+The purpose of this material is establishing an on-ramp and guard rails for
 exploration and use of the C Language in development and maintenance of
-computer software.
+computer software.  Setup and preparation for creation of C Language
+projects on Microsoft Windows is featured, providing the base for confident
+self-study toward mastery of C Language for challenging projects, including
+games and graphical applications.  Coverage is suitable for recreational
+computing as well as bridging to participation in cooperative and professional
+software-development efforts.
 
 - [T060101: C/C++ Programming](#t060101-cc-programming)
   - [C/C++ Programming for Beginners and the Curious](#cc-programming-for-beginners-and-the-curious)
@@ -24,24 +29,23 @@ computer software.
 
 This material is intended to be supplemental to the extensive guidance
 [available elsewhere](b/) in books, web materials, and courses, especially
-the many free and inexpensive on-line ones.  It is designed to be used
-actively in study and practice using recommended tools or their equivalent.
+the many free and inexpensive on-line ones.
 
 One of the most helpful avenues in learning to program is reading the
-exemplary work of others.  Learning to build, operate, modify, and exted the
-work of others is important.  There are differences in styles and chosen tools
-to learn about as well.  Understanding those differences is preparation for
-adopting personal styles and also cooperating in the styles of projects where
-one is a participant.
+exemplary work of others.  Learning to build, operate, modify, and extend
+interesting programs is valuable.  There are differences in styles and chosen
+tools to learn about as well.  Understanding those differences is preparation
+for adopting personal styles and also employing the styles of projects where
+one is participating.
 
-Here, worked examples and full projects using C Language will be narrowed to
-be definite and focused.  Code will be written and demonstrated using the
+Here, worked examples and full projects using C Language will be  written and
+demonstrated using the
 Microsoft Windows Desktop PC as the instrument and as the target.  The
 programming-language tools will be the
-[Visual Studio Build Tools](../T211002/)
-and the VC/C++ compiler that is part of that suite of tools.  Usability of
-examples and projects with different C Language tools is likely but neither
-focus nor commitment.
+[Visual Studio Build Tools](../T211002/) and the VC/C++ compiler that is part
+of that suite.  There are sample programs and demonstrations of their
+operation that can be replicated to confirm understanding and successful
+setup.
 
 For nfoTools projects of all kinds, use of the C Programming Language
 will be in
@@ -51,29 +55,42 @@ C Language and also as C++ Language.  The use of "C/C++" emphasizes
 that connection.  Modern compilers tend to be C/C++ compilers (at least) and
 will accept Clean C as either C or C++.
 
-Here there will not be much attention on C++ features that are unacceptable
-in C Language (and *vice versa*).  The approach, instead, is focus on Clean C
+There will be little attention to C++ features that are unacceptable
+in C Language (and *vice versa*).  Focus is on Clean C
 to illustrate software-development principles and as a launching pad for
 further efforts, whether expanding into C++ or other programming
-languages/dialects.
+languages/dialects.  Exploration of alternative platforms and tools can also
+be done using experience with achieved results here as a confident starting
+point.
 
 ## Historical Context
 
-C and C++ are two heavily-used programming languages.
+C and C++ are now heavily-used programming languages.  Substantial software,
+especially open-source software, is being
+developed and maintained using C Language.  C++ programs
+can and often do rely on existing code libraries written in C.  Many other
+programming systems allow components authored in C Language to be added/used
+and may be implemented in C Language themselves.
+
 [C Programming Language](https://en.wikipedia.org/wiki/C_(programming_language))
 was introduced in the 1970s, evolved over time, formalized in
-International  Standards, and spoken of as ISO Standard C.  (The term ANSI C
-is archaic, generally refering to the
-[C89 ISO counterpart](https://en.wikipedia.org/wiki/C_(programming_language)#History).  There are some variations defined in
+International  Standards, and now spoken of as ISO Standard C.  (The term ANSI
+C is archaic, generally refering to the
+[C89 ISO counterpart](https://en.wikipedia.org/wiki/C_(programming_language)#History).
+There are some variations defined in
 [POSIX](https://en.wikipedia.org/wiki/POSIX) that are
- not incorporated in the ISO Standards.)
+not incorporated in the ISO Standards.)
 
 From the outset, the appeal of C Language has been its ability to be used
-to make hardware-close programs, first of all, and that can also be carried
-portably in their C Language form to multiple platforms, starting with
-flavors of Unix, including the eventual Linux, as well as Windows PC desktops,
-Apple Macintosh, and newer forms of laptops, tablets, and other devices,
-including those powered by Android and iOS.
+to make hardware-close programs that can also be carried
+portably in their C Language form to multiple hardware/software platforms,
+starting with flavors of Unix, including the eventual Linux, as well as
+Windows PC desktops, Apple Macintosh, and newer forms of laptops, tablets, and
+other devices, including those powered by Google Android and Apple iOS. By
+virtue of its closeness to hardware, C Language was also popular on
+minicomputers and, later, microprocessors, along with
+[BASIC](https://en.wikipedia.org/wiki/BASIC) and
+[Fortran](https://en.wikipedia.org/wiki/Fortran).
 
 It is not unusual for subsystems and libraries developed in C Language to be
 usable via "language bindings" in higher-level and alternative programming
@@ -83,8 +100,7 @@ Clean C modules and libraries is immediate.
 In concert with these varied applications, C has evolved over time, sometimes
 to strengthen its connection with C++, to improve portable use, and
 also to encourage dependable programming practices, including with respect to
-programming secure code.  There will be close attention to those provisions
-and practices.
+programming secure code.
 
 An important shift
 occured between [C99](https://en.wikipedia.org/wiki/C99) (issued around 1999)
@@ -98,12 +114,6 @@ The current specification,
 maintenance release.  [C23](https://en.wikipedia.org/wiki/C2x) is imminent at
 this time.  C23 will provide some new extensions and deprecate or completely
 obsolete some older features that have been discouraged previously.
-
-Substantial software, especially open-source software, is being
-developed and maintained using C Language.  C++ programs
-can and often do rely on existing code libraries written in C.  Many other
-programming systems allow components authored in C Language to be added/used
-and may be implemented in C Language themselves.
 
 ## Available Materials
 
@@ -132,6 +142,7 @@ from time to time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.2.4 2023-05-23T15:49Z Wordsmithing and some elaboration
      0.2.3 2023-05-22T23:39Z Improve wording about portability
      0.2.2 2023-05-22T22:41Z Touch-ups
      0.2.1 2023-05-22T21:54Z Cleaned-up and Explained
