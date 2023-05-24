@@ -1,4 +1,4 @@
-<!-- index.md 0.0.17                UTF-8                          2023-05-23
+<!-- index.md 0.0.18                UTF-8                          2023-05-24
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                        NFOTOOLS TOOLCRAFT NOTEBOOK
@@ -6,7 +6,7 @@
 
 # ***nfoTools** [Toolcraft Notebook](.)*
 
-| ***[nfoTools](../)*** | [tools](.) | ***[index.html](index.html) 0.0.17 2023-05-23*** |
+| ***[nfoTools](../)*** | [tools](.) | ***[index.html](index.html) 0.0.18 2023-05-24*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | nfoTools Toolcraft Notebook | ![Hard Hat Area](../images/hardhat-logo.gif) |
 
@@ -41,7 +41,7 @@ open.***
 | [T211001](T211001) | 2021-10-20 | 0.0.3 2023-02-11 | Visual Studio Code for Windows |
 |                    |            |                  |          |
 | [T060501](T060501) | 2006-05-20 | 0.0.15 2022-06-19 | Windows CMD Command-Line Environment |
-| [T060101](T060101) | 2006-09-08 | 0.2.4 2023-05-23 | C/C++ Programming |
+| [T060101](T060101) | 2006-09-08 | 0.2.5 2023-05-24 | C/C++ Programming |
 |                    |            |                  |          |
 | [T000000](T000000.html) | 2005-12-25 | 0.0.5 2022-06-19 | Diary & Job Jar |
 
@@ -57,6 +57,7 @@ from time to time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.18 2023-05-24T16:25Z T060101 again
      0.0.17 2023-05-23T15:52Z T060101 Status
      0.0.16 2023-02-11T17:11Z T211001 Status
      0.0.15 2022-06-20T00:45Z Complete header-strip changes and touch-ups

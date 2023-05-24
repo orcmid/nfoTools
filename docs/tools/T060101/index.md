@@ -1,4 +1,4 @@
-<!-- index.md 0.2.4                UTF-8                          2023-05-23
+<!-- index.md 0.2.5                UTF-8                          2023-05-24
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                          T060101: C/C++ PROGRAMMING
@@ -6,7 +6,7 @@
 
 # T060101: [C/C++ Programming](.)
 
-| ***[nfoTools](../../)*** | [tools](../)[>t060101](.) | ***[index.html](index.html) 0.2.3 2023-05-23*** |
+| ***[nfoTools](../../)*** | [tools](../)[>t060101](.) | ***[index.html](index.html) 0.2.5 2023-05-24*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | C/C++ Programming | ![Hard Hat Area](../../images/hardhat-logo.gif) |
 
@@ -29,12 +29,13 @@ software-development efforts.
 
 This material is intended to be supplemental to the extensive guidance
 [available elsewhere](b/) in books, web materials, and courses, especially
-the many free and inexpensive on-line ones.
+the many free and inexpensive on-line ones.  Technical use, here, starts with
+"[Getting to Hello](#available-materials)."
 
 One of the most helpful avenues in learning to program is reading the
 exemplary work of others.  Learning to build, operate, modify, and extend
-interesting programs is valuable.  There are differences in styles and chosen
-tools to learn about as well.  Understanding those differences is preparation
+interesting programs is invaluable.  There are differences in styles and
+chosen tools to learn as well.  Understanding those differences is preparation
 for adopting personal styles and also employing the styles of projects where
 one is participating.
 
@@ -84,22 +85,23 @@ not incorporated in the ISO Standards.)
 From the outset, the appeal of C Language has been its ability to be used
 to make hardware-close programs that can also be carried
 portably in their C Language form to multiple hardware/software platforms,
-starting with flavors of Unix, including the eventual Linux, as well as
-Windows PC desktops, Apple Macintosh, and newer forms of laptops, tablets, and
-other devices, including those powered by Google Android and Apple iOS. By
-virtue of its closeness to hardware, C Language was also popular on
-minicomputers and, later, microprocessors, along with
+starting with flavors of Unix, including the eventual Linux. By virtue of its
+closeness to computer hardware, C Language became popular on minicomputers
+ and then microprocessors, along with
 [BASIC](https://en.wikipedia.org/wiki/BASIC) and
-[Fortran](https://en.wikipedia.org/wiki/Fortran).
+[Fortran](https://en.wikipedia.org/wiki/Fortran).  C was supported on MS-DOS
+as well as Windows PC desktops, the Apple Macintosh, and now the newer forms
+of laptops,tablets, and other devices, including those powered by Google
+Android and Apple iOS.
 
 It is not unusual for subsystems and libraries developed in C Language to be
 usable via "language bindings" in higher-level and alternative programming
-systems, such as Java and Python.  In the case of C++, that usability of
+systems, such as Java and Python.  In the case of C++, such usability of
 Clean C modules and libraries is immediate.
 
 In concert with these varied applications, C has evolved over time, sometimes
 to strengthen its connection with C++, to improve portable use, and
-also to encourage dependable programming practices, including with respect to
+to encourage dependable programming practices, including with respect to
 programming secure code.
 
 An important shift
@@ -113,7 +115,7 @@ The current specification,
 [C17](https://en.wikipedia.org/wiki/C17_(C_standard_revision)), is a
 maintenance release.  [C23](https://en.wikipedia.org/wiki/C2x) is imminent at
 this time.  C23 will provide some new extensions and deprecate or completely
-obsolete some older features that have been discouraged previously.
+obsolete some older features that are now discouraged.
 
 ## Available Materials
 
@@ -142,6 +144,7 @@ from time to time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.2.5 2023-05-24T16:23Z More worsmithing
      0.2.4 2023-05-23T15:49Z Wordsmithing and some elaboration
      0.2.3 2023-05-22T23:39Z Improve wording about portability
      0.2.2 2023-05-22T22:41Z Touch-ups
