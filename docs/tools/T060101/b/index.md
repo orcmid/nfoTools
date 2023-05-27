@@ -1,4 +1,4 @@
-<!-- T060101b.md 0.2.1              UTF-8                          2023-05-27
+<!-- T060101b.md 0.2.2              UTF-8                          2023-05-27
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                         T060101: C/C++ PROGRAMMING
@@ -8,7 +8,7 @@
 
 # T060101b: [C/C++ Programming Resources](.)
 
-| ***[nfoTools](../../../)*** | [tools](../../)[>T060101](../)[>b](.) | ***[index.html](index.html) 0.2.1 2023-05-27*** |
+| ***[nfoTools](../../../)*** | [tools](../../)[>T060101](../)[>b](.) | ***[index.html](index.html) 0.2.2 2023-05-27*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../../../images/hardhat-logo.gif) |
 
@@ -48,37 +48,39 @@ The following sources are not all at the same level.  The commentary should
 reveal which are good as starters, which ones require more care and provide
 further riches in return.
 
-### <a name="Harbison2002">[Harbison2002]</a> C, A Reference Manual
+### \[<a name="Harbison2002">Harbison2002</a>\] C, A Reference Manual
 
-Harbison, Samuel P. III., Steele, Guy L. Jr. C, A Reference Manual, Ed.5.
+Harbison, Samuel P. III., Steele, Guy L. Jr. *C, A Reference Manual*, Ed.5.
 Prentice-Hall (Englewood Cliffs, NJ: 2002).  ISBN 0-13-089592-X pbk.
 I find this the most comprehensive and understandable reference available on
 the C Language.  Not written as a programming text, it is a reference manual
 that also has examples and exercises.  The exemplary material is non-trivial,
 making nuances of the language more apparent and encouraging stronger
 understanding. This edition is current with ISO/IEC 9899:1999 (C99). It also
-explains and emphasizes Clean C for the quality it encourages and also for
+introduces and emphasizes Clean C for the quality it encourages and also for
 its consistency with C++.  The International Standard for C Language has
 continued to be updated, and compilers might also support the 2011 (C11) and
 2017 (C17) updates even as developers cling to C99 as the gold standard.  It
 is unfortunate that no supplement for those has been undertaken.
 
-### Kernighan, Brian W., Ritchie, Dennis M. (1988) The C Programming Language
+### \[<a name=Kernighan1988>Kernighan1988</a>\] The C Programming Language
 
-Second Edition.  Prentice-Hall (Englewood Cliffs NJ) ISBN 0-13-110362-8 pbk.
+Kernighan, Brian W., Ritchie, Dennis M. *The C Programming Language*, Second Edition.  Prentice-Hall (Englewood Cliffs NJ: 1988) ISBN 0-13-110362-8 pbk.
 This edition updates the original 1978 publication to be entirely in "ANSI C,"
 also known as C89 ANSI X3.159-1989 and the identical C90, ISO/IEC 9899:1990.
 The full progression is captured on Wikipedia
 [ANSI C](https://en.wikipedia.org/wiki/ANSI_C#C89). This book, affectionately
 known as K&R, is a testament to the longevity of the C Language and how today
 Clean C is "unrecognizably different" to borrow a statement made about the
-evolution of FORTRAN.  Historically important, this book is supplanted as a
+evolution of FORTRAN.   The examples can be adjusted to Clean C
+in most cases.  Historically important, this book is supplanted as a
 reference by
-[Harbison2002](#harbison-samuel-p-iii-steele-guy-l-jr-2002-c-a-reference-manual).
+\[[Harbison2002](#Harbison2002)\].
 
-### Allison, Chuck (2000). Thinking in C: Foundations for C++ & Java
+### \[<a name="Allison2000">Allison2000</a>\] Thinking in C
 
-<a name="Allison2000">[Allison2000]</a> MindView (La Mesa, CA).  A course
+Allison, Chuck. *Thinking in C: Foundations for C++ & Java*.
+MindView (La Mesa, CA: 2000).  A course
 including lectures, slides, exercises and
 solutions, which teaches the foundations of the C Language to prepare you to
 learn Java or C++.  Also available at
@@ -88,24 +90,25 @@ edition of ([Eckel 2000](#eckel-bruce-2000-thinking-in-c-second-edition)) with
 CD-ROM included.  That CD-ROM also includes electronic versions of *Thinking
 in C++*, *Thinking in Java*, and the code samples from *Thinking in C++*.
 
-### McGrath, Mike (2004).  C Programming in Easy Steps
+### \[<a name="McGrath2004">McGrath2004</a>\] C Programming in Easy Steps
 
-<a name="McGrath2004">[McGrath2004]</a>Learn the ANSI C standard in full
-color.  Computer Step, Southam,
-Warwickshire, UK.  ISBN 1-84078-203-X pbk.  Barnes & Noble edition for sale in
+McGrath, Mike. *C Programming in Easy Steps:*
+*Learn the ANSI C standard in full color*.  Computer Step (Southam,
+Warwickshire, UK: 2004).
+ISBN 1-84078-203-X pbk.  Barnes & Noble edition for sale in
 the USA only, ISBN 0-7607-5504-3.  Book description and source-code downloads
 available at [In Easy Steps](http://www.ineasysteps.com/books/?184078203x).
 This is a perfect book for getting started in C/C++ Programming.  There are
 examples to work every step of the way, focusing on the simpler C Language for
 learning the basic concepts.  With the experience gained here, the student can
 move on to the special features of C++ with greater confidence.  The examples
-are illustrated using the GCC compiler.  Adjustment for the Microsoft Visual
-C++ Toolkit 2003 compiler is easily made by following the recommended setup.
+are illustrated using the GCC compiler.  Adjustment for Microsoft Visual
+C/C++ is easily made.
 
-### Prinz, Peter., Kirch-Prinz, Ulla (2003).  C Pocket Reference
+### \[<a name="Prinz2003">Prinz2003</a>\] C Pocket Reference
 
-<a name="Prinz2003">[Prinz2003]</a> Translated by Tony Crawford.  O'Reilly
-Media, Sebastopol, CA.  134pp.
+Prinz, Peter., Kirch-Prinz, Ulla.  *C Pocket Reference*. Translated by Tony
+ Crawford.  O'Reilly Media (Sebastopol, CA: 2003).  134pp.
 ISBN 0-596-00436-2 pbk.  Originally published in German as "C kurz & gut"
 (short and good), I find this thumbnail convenient, with an organization that
 is easy for me to find material in.  Others may find different organizations
@@ -306,6 +309,7 @@ from time to time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.2.2 2023-05-27T16:50Z Continue adjusting title anchors
      0.2.1 2023-05-27T14:47Z Experimentation with title anchors
      0.2.0 2023-05-20T22:53Z Transpose to T060101/b/index.md
      0.1.4 2022-06-16T23:25Z Use preferred header title strip
