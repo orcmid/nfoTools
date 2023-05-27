@@ -1,4 +1,4 @@
-<!-- index.md 0.2.5                UTF-8                          2023-05-24
+<!-- index.md 0.2.6                UTF-8                          2023-05-27
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                          T060101: C/C++ PROGRAMMING
@@ -6,7 +6,7 @@
 
 # T060101: [C/C++ Programming](.)
 
-| ***[nfoTools](../../)*** | [tools](../)[>t060101](.) | ***[index.html](index.html) 0.2.5 2023-05-24*** |
+| ***[nfoTools](../../)*** | [tools](../)[>t060101](.) | ***[index.html](index.html) 0.2.6 2023-05-27*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | C/C++ Programming | ![Hard Hat Area](../../images/hardhat-logo.gif) |
 
@@ -21,16 +21,16 @@ software-development efforts.
 
 - [T060101: C/C++ Programming](#t060101-cc-programming)
   - [C/C++ Programming for Beginners and the Curious](#cc-programming-for-beginners-and-the-curious)
-  - [Historical Context](#historical-context)
   - [Available Materials](#available-materials)
   - [Recommended Tools](#recommended-tools)
+  - [Historical Context](#historical-context)
 
 ## C/C++ Programming for Beginners and the Curious
 
 This material is intended to be supplemental to the extensive guidance
 [available elsewhere](b/) in books, web materials, and courses, especially
 the many free and inexpensive on-line ones.  Technical use, here, starts with
-"[Getting to Hello](#available-materials)."
+"[Getting to Hello](c/)."
 
 One of the most helpful avenues in learning to program is reading the
 exemplary work of others.  Learning to build, operate, modify, and extend
@@ -50,7 +50,7 @@ setup.
 
 For nfoTools projects of all kinds, use of the C Programming Language
 will be in
-[Clean C](b/#harbison-samuel-p-iii-steele-guy-l-jr-2002-c-a-reference-manual),
+[Clean C](b/#Harbison2002),
 a form which can be compiled as "pure"
 C Language and also as C++ Language.  The use of "C/C++" emphasizes
 that connection.  Modern compilers tend to be C/C++ compilers (at least) and
@@ -63,6 +63,22 @@ further efforts, whether expanding into C++ or other programming
 languages/dialects.  Exploration of alternative platforms and tools can also
 be done using experience with achieved results here as a confident starting
 point.
+
+
+## Available Materials
+
+| **ID** | **Started** | **Status** | **Topic** |
+|   :-:   |   :-:   |  :-:   |  ---  |
+| [T060101c](c/) | 2021-11-25 | 0.0.2 2023-05-20 | Getting to "Hello" |
+| [T060101b](b/) | 2006-05-20 | 0.2.0 2023-05-20 | C/C++ Resources |
+|                           |            |                   |           |
+| [T060101a](a/) | 2005-09-08 | 0.2.0 2023-05-20 | Legacy Diary \& Job Jar |
+
+## Recommended Tools
+
+- [T211002](../T211002) VS Build Tools
+- [T060501](../T060501) Windows CMD Command-Line Environment
+- [T211001](../T211001) Visual Studio Code for Windows
 
 ## Historical Context
 
@@ -117,20 +133,6 @@ maintenance release.  [C23](https://en.wikipedia.org/wiki/C2x) is imminent at
 this time.  C23 will provide some new extensions and deprecate or completely
 obsolete some older features that are now discouraged.
 
-## Available Materials
-
-| **ID** | **Started** | **Status** | **Topic** |
-|   :-:   |   :-:   |  :-:   |  ---  |
-| [T060101c](c/) | 2021-11-25 | 0.0.2 2023-05-20 | Getting to "Hello" |
-| [T060101b](b/) | 2006-05-20 | 0.2.0 2023-05-20 | C/C++ Resources |
-|                           |            |                   |           |
-| [T060101a](a/) | 2005-09-08 | 0.2.0 2023-05-20 | Legacy Diary \& Job Jar |
-
-## Recommended Tools
-
-- [T211002](../T211002) VS Build Tools
-- [T060501](../T060501) Windows CMD Command-Line Environment
-- [T211001](../T211001) Visual Studio Code for Windows
 
 ----
 
@@ -144,7 +146,8 @@ from time to time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-     0.2.5 2023-05-24T16:23Z More worsmithing
+     0.2.6 2023-05-27T17:55Z Shuffle and also fix cross references
+     0.2.5 2023-05-24T16:23Z More wordsmithing
      0.2.4 2023-05-23T15:49Z Wordsmithing and some elaboration
      0.2.3 2023-05-22T23:39Z Improve wording about portability
      0.2.2 2023-05-22T22:41Z Touch-ups
