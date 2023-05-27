@@ -1,4 +1,4 @@
-T060101c.txt 0.0.3                  UTF-8                         2023-05-20
+T060101c.txt 0.0.4                  UTF-8                         2023-05-27
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -19,8 +19,13 @@ MANIFEST
     T060101c.txt  this manifest and job-jar file
        index.md   front porch published as
                   orcmid.github.io/nfoTools/T060101/c/
-           *.png  screen captures for the three ways to get to the same
-                  hello.c "hello"
+   T060101c1.png  myCleanC folder setup with hello.c
+   T060101c2.png  Notepad with the classic hello.c
+   T060101c3.png  All Programs start of x64 Native Tools Command Prompt
+   T060101c4.png  Command Line compilation and demonstration
+   T060101c5.png  Hello.c-0.2.1-compiled
+   T060101c6.png  Hello.c-0.2.2-VSCode
+
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
@@ -43,7 +48,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. T060101c: Getting to "Hello."  nfoTools project text
-   file T060101c.txt version 0.0.3 dated 2023-05-20, available on the
+   file T060101c.txt version 0.0.4 dated 2023-05-27, available on the
    Internet as a version of
    <https://orcmid.github.io/nfoTools/tools/T060101/c/T060101c.txt>
 
@@ -57,12 +62,6 @@ TODO
 
  * The next page will do the deconstruction/reconstruction and identify
    matters of form and substance with regard to the hello.c code.
-
- * Although I had favored puts, fputs is a better choice to deal with the use
-   of '/n' explicitly.
-
- * Changes of command prompt and shortcuts will not be done until hello.c is
-   all unfolded and we are ready for bigger things.
 
  * We will summarize what is important.  We can also take apart the CL.exe
    compilation at some point, with headers, preprocessor, creation of *.obj,
@@ -81,6 +80,7 @@ TODO
 
   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.4 2023-06-27T01:22Z Update images for classic versus hello.c 0.2.1.
  0.0.3 2023-05-20T23:02Z Reflect transposition to T060101/c/
  0.0.2 2022-04-15T16:41Z TODO on how the reader can branch out here
  0.0.1 2021-11-26T04:17Z Update manifest, reflect latest thoughts in TODO

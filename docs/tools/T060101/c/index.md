@@ -1,18 +1,28 @@
-<!-- index.md 0.0.2                UTF-8                          2023-05-20
+<!-- index.md 0.0.3                UTF-8                          2023-05-25
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                          T060101c: GETTING TO "HELLO"
      -->
 
-# ToolCraft: [C/C++ Programming](.)
+# ***T060101c** [Getting to "Hello"](.)
 
 | ***[nfoTools](../../../)*** | [tools](../../)[>t060101](../)[>t060101c](.) | ***[index.html](index.html) 0.0.2 2023-05-20*** |
 | :--                |       :-:          | --: |
-| ![nfotools](../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Getting to "Hello" | ![Hard Hat Area](../../../images/hardhat-logo.gif) |
+| ![nfotools](../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Getting to "Hello" | ![Hard Hat Area](../../../images/hardhat-logo.gif)[Construction Zone](T060101c.txt) |
 
->> ***This is a placeholder.***
+C Language has a famous first program.  Here creating that program is broken
+down for zooming-in where more detail as needed.
 
-[See the Construction Zone](T060101c.txt)
+## 1. Make a Folder for the Work
+
+Create a computer folder for holding your work.  It can be tentative for now.
+Have it in a place for personal data, not in any folder where software is
+installed.  For a Windows PC that is shared with others, the Documents folder
+of a personal account will work.
+
+
+
+
 
 ----
 
