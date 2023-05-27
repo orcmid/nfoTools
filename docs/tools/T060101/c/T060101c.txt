@@ -1,4 +1,4 @@
-T060101c.txt 0.0.5                  UTF-8                         2023-05-27
+T060101c.txt 0.0.6                  UTF-8                         2023-05-27
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -48,20 +48,13 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. T060101c: Getting to "Hello."  nfoTools project text
-   file T060101c.txt version 0.0.5 dated 2023-05-27, available on the
+   file T060101c.txt version 0.0.6 dated 2023-05-27, available on the
    Internet as a version of
    <https://orcmid.github.io/nfoTools/tools/T060101/c/T060101c.txt>
 
 TODO
 
  * Describe the initial steps and a little about why but mostly what.
-
- * We will take the original K&R hello.c first.  It passes with no complaints
-   from modern tools.  We will go through the construction that reaches the
-   "hello, world" achievement.
-
- * The next page will do the deconstruction/reconstruction and identify
-   matters of form and substance with regard to the hello.c code.
 
  * We will summarize what is important.  We can also take apart the CL.exe
    compilation at some point, with headers, preprocessor, creation of *.obj,
@@ -80,6 +73,7 @@ TODO
 
   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.6 2023-05-27T21:48Z Complete first partial sketch, manage the TODOs
  0.0.5 2023-05-27T15:38Z Update images for cleaner version hello.c 0.2.2.
  0.0.4 2023-05-27T01:22Z Update images for classic versus hello.c 0.2.1.
  0.0.3 2023-05-20T23:02Z Reflect transposition to T060101/c/
