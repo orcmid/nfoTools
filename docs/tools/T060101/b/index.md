@@ -1,4 +1,4 @@
-<!-- T060101b.md 0.2.1              UTF-8                          2023-05-21
+<!-- T060101b.md 0.2.1              UTF-8                          2023-05-27
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                         T060101: C/C++ PROGRAMMING
@@ -8,7 +8,7 @@
 
 # T060101b: [C/C++ Programming Resources](.)
 
-| ***[nfoTools](../../../)*** | [tools](../../)[>T060101](../)[>b](.) | ***[index.html](index.html) 0.2.0 2023-05-20*** |
+| ***[nfoTools](../../../)*** | [tools](../../)[>T060101](../)[>b](.) | ***[index.html](index.html) 0.2.1 2023-05-27*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../../../images/hardhat-logo.gif) |
 
@@ -48,9 +48,9 @@ The following sources are not all at the same level.  The commentary should
 reveal which are good as starters, which ones require more care and provide
 further riches in return.
 
-### Harbison, Samuel P. III., Steele, Guy L. Jr. (2002) C, A Reference Manual
+### <a name="Harbison2002">[Harbison2002]</a> C, A Reference Manual
 
-<a name="Harbison2002">[Harbison2002]</a>Ed.5.
+Harbison, Samuel P. III., Steele, Guy L. Jr. C, A Reference Manual, Ed.5.
 Prentice-Hall (Englewood Cliffs, NJ: 2002).  ISBN 0-13-089592-X pbk.
 I find this the most comprehensive and understandable reference available on
 the C Language.  Not written as a programming text, it is a reference manual
@@ -306,6 +306,7 @@ from time to time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.2.1 2023-05-27T14:47Z Experimentation with title anchors
      0.2.0 2023-05-20T22:53Z Transpose to T060101/b/index.md
      0.1.4 2022-06-16T23:25Z Use preferred header title strip
      0.1.3 2021-11-18T04:51Z Provice a TOC and cross references
