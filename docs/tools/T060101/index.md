@@ -1,4 +1,4 @@
-<!-- index.md 0.2.6                UTF-8                          2023-05-27
+<!-- index.md 0.2.7                UTF-8                          2023-05-27
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                          T060101: C/C++ PROGRAMMING
@@ -6,7 +6,7 @@
 
 # T060101: [C/C++ Programming](.)
 
-| ***[nfoTools](../../)*** | [tools](../)[>t060101](.) | ***[index.html](index.html) 0.2.6 2023-05-27*** |
+| ***[nfoTools](../../)*** | [tools](../)[>t060101](.) | ***[index.html](index.html) 0.2.7 2023-05-27*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | C/C++ Programming | ![Hard Hat Area](../../images/hardhat-logo.gif) |
 
@@ -42,7 +42,7 @@ one is participating.
 Here, worked examples and full projects using C Language will be  written and
 demonstrated using the
 Microsoft Windows Desktop PC as the instrument and as the target.  The
-programming-language tools will be the
+programming-language tools will be the freely-available
 [Visual Studio Build Tools](../T211002/) and the VC/C++ compiler that is part
 of that suite.  There are sample programs and demonstrations of their
 operation that can be replicated to confirm understanding and successful
@@ -72,7 +72,7 @@ point.
 | [T060101c](c/) | 2021-11-25 | 0.0.2 2023-05-20 | Getting to "Hello" |
 | [T060101b](b/) | 2006-05-20 | 0.2.0 2023-05-20 | C/C++ Resources |
 |                           |            |                   |           |
-| [T060101a](a/) | 2005-09-08 | 0.2.0 2023-05-20 | Legacy Diary \& Job Jar |
+| [T060101a](a/) | 2005-09-08 | 0.2.0 2023-05-20 | Legacy Diary & Job Jar |
 
 ## Recommended Tools
 
@@ -100,11 +100,11 @@ not incorporated in the ISO Standards.)
 
 From the outset, the appeal of C Language has been its ability to be used
 to make hardware-close programs that can also be carried
-portably in their C Language form to multiple hardware/software platforms,
-starting with flavors of Unix, including the eventual Linux. By virtue of its
-closeness to computer hardware, C Language became popular on minicomputers
- and then microprocessors, along with
-[BASIC](https://en.wikipedia.org/wiki/BASIC) and
+portably in their C Language form to multiple hardware/software platforms.
+Portability of C Language programs started with flavors of Unix, including the
+eventual Linux. By virtue of its closeness to computer hardware (and relative
+ease of compiling), C Language became popular on minicomputers and then on
+microprocessors, along with [BASIC](https://en.wikipedia.org/wiki/BASIC) and
 [Fortran](https://en.wikipedia.org/wiki/Fortran).  C was supported on MS-DOS
 as well as Windows PC desktops, the Apple Macintosh, and now the newer forms
 of laptops,tablets, and other devices, including those powered by Google
@@ -133,7 +133,6 @@ maintenance release.  [C23](https://en.wikipedia.org/wiki/C2x) is imminent at
 this time.  C23 will provide some new extensions and deprecate or completely
 obsolete some older features that are now discouraged.
 
-
 ----
 
 Discussion about nfoTools is welcome at the
@@ -146,6 +145,7 @@ from time to time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.2.7 2023-05-27T20:05Z Completed full draft.
      0.2.6 2023-05-27T17:55Z Shuffle and also fix cross references
      0.2.5 2023-05-24T16:23Z More wordsmithing
      0.2.4 2023-05-23T15:49Z Wordsmithing and some elaboration
