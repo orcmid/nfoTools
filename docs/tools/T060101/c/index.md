@@ -1,4 +1,4 @@
-<!-- index.md 0.0.4                UTF-8                          2023-05-28
+<!-- index.md 0.0.5                UTF-8                          2023-05-28
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                          T060101c: GETTING TO "HELLO"
@@ -6,26 +6,27 @@
 
 # T060101c: [Getting to "Hello"](.)
 
-| ***[nfoTools](../../../)*** | [tools](../../)[>t060101](../)[>c](.) | ***[index.html](index.html) 0.0.342023-05-28*** |
+| ***[nfoTools](../../../)*** | [tools](../../)[>t060101](../)[>c](.) | ***[index.html](index.html) 0.0.5 2023-05-28*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Getting to "Hello" | ![Hard Hat Area](../../../images/hardhat-logo.gif)[Construction Zone](T060101c.txt) |
 
-C Language has a famous first program.  Creating and operating that program is sketched, with links to expanded detail that may be needed.
+C Language has a famous first program.  Creating and operating that program is demonstrated, with links to expanded detail that may be needed.
 
-- 1. Install C/C++ Compiler Software
-- 2. Make a Folder for the Work
-- 3. Make the `hello.c` Code
-- 4. Initiate a Command Prompt
-- 5. Compile and Run the Program
-  - 5.1 Navigate to `myCleanC`
-  - 5.2 Compile `hello.c`
-  - 5.3 Observe the compilation
-  - 5.4 Execute the resulting Program
-  - 5.5 Look around in `myCleanC`
-- 6. Looking Down the Road
-  - 6.1 Improved project file organization
-  - 6.2 Customized Command Prompt operation
-  - 6.3 Incorporation of Visual Studio Code
+- [T060101c: Getting to "Hello"](#t060101c-getting-to-hello)
+  - [1. Install C/C++ Compiler Software](#1-install-cc-compiler-software)
+  - [2. Make a Folder for the Work](#2-make-a-folder-for-the-work)
+  - [3. Make the `hello.c` Code](#3-make-the-helloc-code)
+  - [4. Initiate a Command Prompt](#4-initiate-a-command-prompt)
+  - [5. Compile and Run the Program](#5-compile-and-run-the-program)
+    - [5.1 Navigate to `myCleanC`](#51-navigate-to-mycleanc)
+    - [5.2 Compile `hello.c`](#52-compile-helloc)
+    - [5.3 Observe the compilation](#53-observe-the-compilation)
+    - [5.4 Execute the resulting program](#54-execute-the-resulting-program)
+    - [5.5 Look around in `myCLeanC`](#55-look-around-in-mycleanc)
+  - [6. Looking Down the Road](#6-looking-down-the-road)
+    - [6.1 Improved project file organization](#61-improved-project-file-organization)
+    - [6.2 Customized Command Prompt operation](#62-customized-command-prompt-operation)
+    - [6.3 Incorporation of Visual Studio Code](#63-incorporation-of-visual-studio-code)
 
 ## 1. Install C/C++ Compiler Software
 
@@ -69,7 +70,7 @@ or equivalent wording.  The key element is "x64 Native."  Click that entry.
 
 ## 5. Compile and Run the Program
 
-A console window (sometimes calle a terminal) will be opened on the desktop.
+A console window (sometimes called a terminal) will be opened on the desktop.
 There is identification of initialization as a Command Prompt in this case.
 Commands are entered, step by step.
 
@@ -84,8 +85,7 @@ project is.  The command
 cd /D H:\Documents\myCleanC
 ```
 
-changes to the drive and directory where the `hello.c` example is stored in
-this example.
+changes to the drive and directory where the `hello.c` example is stored.
 
 ### 5.2 Compile `hello.c`
 
@@ -104,9 +104,10 @@ identification should be followed by the name of the program to compile
 and there should be nothing more before the Incremental Linker is
 identified.
 
-If there is anything else instead, there will be brief diagnostic messages
+If there is anything else instead, there will be some diagnostic messages
 identifying the difficulties.  Any difficulties must be resolved and the
-process begun anew, step by step.
+process begun anew, step by step from [4](#4-initiate-a-command-prompt),
+above.
 
 After the linker identification, there will be automatic determination to
 produce `hello.exe` from the file `hello.obj` that was produced by the
@@ -261,6 +262,7 @@ from time to time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.5 2023-05-28T23:17Z Touch-up cross-references
      0.0.4 2023-05-28T20:14Z First full draft
      0.0.3 2023-05-27T21:47Z First draft, sections 1-5
      0.0.2 2023-05-20T23:05Z Touch-ups for T060101/c/ transposition
