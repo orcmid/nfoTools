@@ -6,7 +6,7 @@
 
 # T060101c: [Getting to "Hello"](.)
 
-| ***[nfoTools](../../../)*** | [tools](../../)[>t060101](../)[>c](.) | ***[index.html](index.html) 0.0.5 2023-05-28*** |
+| ***[nfoTools](../../../)*** | [tools](../../)[>t060101](../)[>c](.) | ***[index.html](index.html) 0.0.6 2023-05-28*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Getting to "Hello" | ![Hard Hat Area](../../../images/hardhat-logo.gif)[Construction Zone](T060101c.txt) |
 
@@ -198,7 +198,7 @@ H:\Documents\MyCleanC\hello\exit
 
 The change in the directory reflects changes in the `hello.c` program, which
 have the file be more verbose.  Yet the `hello.obj` and `hello.exe` files are
-smaller than at [5.4], above.
+smaller than at [5](#5-compile-and-run-the-program), above.
 
 There is also a new component, the subdirectory `.vscode\`.  This is entirely
 for use in conjunction with Visual Studio Code and need not be of any concern.
@@ -242,13 +242,14 @@ H:\Documents\myCleanC\hello>code .
  environment.
  - The `int main(void)` is recognized as the beginning of a valid main
  function.
- - the fputs() matches with the definition in `stdio.h` and the two parameters
+ - the `fputs()` matches with the definition in `stdio.h` and the two parameters
  are of the proper form.
  - `stdout` is recognized as the indicator of the standard output stream,
  usually the Command Prompt output, also defined in `stdio.h`.
 
- All of this built-in checking will be valuable as more programs are
- developed.
+ All of this built-in checking, called
+ [IntelliSense](https://code.visualstudio.com/docs/editor/intellisense),
+ will be valuable as more programs are developed.
 
 ----
 
@@ -262,6 +263,7 @@ from time to time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.6 2023-05-28T23:56Z Draft completed after proof-checking
      0.0.5 2023-05-28T23:17Z Touch-up cross-references
      0.0.4 2023-05-28T20:14Z First full draft
      0.0.3 2023-05-27T21:47Z First draft, sections 1-5

@@ -1,4 +1,4 @@
-<!-- index.md 0.2.7                UTF-8                          2023-05-27
+<!-- index.md 0.2.8                UTF-8                          2023-05-28
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                          T060101: C/C++ PROGRAMMING
@@ -6,7 +6,7 @@
 
 # T060101: [C/C++ Programming](.)
 
-| ***[nfoTools](../../)*** | [tools](../)[>t060101](.) | ***[index.html](index.html) 0.2.7 2023-05-27*** |
+| ***[nfoTools](../../)*** | [tools](../)[>t060101](.) | ***[index.html](index.html) 0.2.8 2023-05-28*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | C/C++ Programming | ![Hard Hat Area](../../images/hardhat-logo.gif) |
 
@@ -69,7 +69,7 @@ point.
 
 | **ID** | **Started** | **Status** | **Topic** |
 |   :-:   |   :-:   |  :-:   |  ---  |
-| [T060101c](c/) | 2021-11-25 | 0.0.2 2023-05-20 | Getting to "Hello" |
+| [T060101c](c/) | 2021-11-25 | 0.0.6 2023-05-28 | Getting to "Hello" |
 | [T060101b](b/) | 2006-05-20 | 0.2.0 2023-05-20 | C/C++ Resources |
 |                           |            |                   |           |
 | [T060101a](a/) | 2005-09-08 | 0.2.0 2023-05-20 | Legacy Diary & Job Jar |
@@ -145,6 +145,7 @@ from time to time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.2.8 2023-05-28T23:59Z T060101c
      0.2.7 2023-05-27T20:05Z Completed full draft.
      0.2.6 2023-05-27T17:55Z Shuffle and also fix cross references
      0.2.5 2023-05-24T16:23Z More wordsmithing
