@@ -1,4 +1,4 @@
-<!-- index.md 0.0.5                UTF-8                          2023-05-28
+<!-- index.md 0.0.7                UTF-8                          2023-05-29
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                          T060101c: GETTING TO "HELLO"
@@ -6,9 +6,9 @@
 
 # T060101c: [Getting to "Hello"](.)
 
-| ***[nfoTools](../../../)*** | [tools](../../)[>t060101](../)[>c](.) | ***[index.html](index.html) 0.0.6 2023-05-28*** |
+| ***[nfoTools](../../../)*** | [tools](../../)[>t060101](../)[>c](.) | ***[index.html](index.html) 0.0.7 2023-05-29*** |
 | :--                |       :-:          | --: |
-| ![nfotools](../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Getting to "Hello" | ![Hard Hat Area](../../../images/hardhat-logo.gif)[Construction Zone](T060101c.txt) |
+| ![nfotools](../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | [Work in Progress](T060101c.txt) | ![Hard Hat Area](../../../images/hardhat-logo.gif) |
 
 C Language has a famous first program.  Creating and operating that program is demonstrated, with links to expanded detail that may be needed.
 
@@ -18,11 +18,13 @@ C Language has a famous first program.  Creating and operating that program is d
   - [3. Make the `hello.c` Code](#3-make-the-helloc-code)
   - [4. Initiate a Command Prompt](#4-initiate-a-command-prompt)
   - [5. Compile and Run the Program](#5-compile-and-run-the-program)
-    - [5.1 Navigate to `myCleanC`](#51-navigate-to-mycleanc)
-    - [5.2 Compile `hello.c`](#52-compile-helloc)
-    - [5.3 Observe the compilation](#53-observe-the-compilation)
-    - [5.4 Execute the resulting program](#54-execute-the-resulting-program)
-    - [5.5 Look around in `myCLeanC`](#55-look-around-in-mycleanc)
+    - [5.1 Get Situated](#51-get-situated)
+    - [5.2 Navigate to `myCleanC`](#52-navigate-to-mycleanc)
+    - [5.3 Compile `hello.c`](#53-compile-helloc)
+    - [5.4 Observe the compilation](#54-observe-the-compilation)
+    - [5.5 Execute the resulting program](#55-execute-the-resulting-program)
+    - [5.6 Look around in `myCLeanC`](#56-look-around-in-mycleanc)
+    - [5.7 `exit` command](#57-exit-command)
   - [6. Looking Down the Road](#6-looking-down-the-road)
     - [6.1 Improved project file organization](#61-improved-project-file-organization)
     - [6.2 Customized Command Prompt operation](#62-customized-command-prompt-operation)
@@ -76,32 +78,48 @@ Commands are entered, step by step.
 
 ![Compiling the my CleanC\hello.c Program](T060101c4.png)
 
-### 5.1 Navigate to `myCleanC`
+### 5.1 Get Situated
 
-The console session starts at the location of the build tools, not where the
-project is.  The command
+![Environment Intialized](T060101c4a.png)
 
-```CMD
-cd /D H:\Documents\myCleanC
-```
+Selecting `x64 Native Tools Command Prompt` brings up a console window and
+runs scripts that announce the tools and initialize the command session
+environment for building x64 programs.
 
-changes to the drive and directory where the `hello.c` example is stored.
+- The title in the console window reflects the established setup.  The `C:\_`
+identifies the built-in utility `CMD.exe` that provides Command Prompt
+operation.
+- The version of Visual Studio whose Build Tools are being employed is
+identified.
+- The flavor of environment initialized is reported and the first user
+command is solicited.
 
-### 5.2 Compile `hello.c`
+### 5.2 Navigate to `myCleanC`
 
-The command
+The default prompt format consists of the file-explorer location (the
+Current Directory or CD) followed by `>`.  Commands are typed after
+the `>` of a prompt from the computer.
 
-```CMD
-CL hello.c
-```
+![Changing CD](T060101c4b.png)
 
-instructs the VC/C++ command-line compiler (CL) to compile `hello.c`
+The Developer Command Prompt starts at the location of the build tools, not
+where the project is.  The command `cd /D H:\Documents\myCleanC` changes the
+CD to drive and directory where `hello.c` is stored.
 
-### 5.3 Observe the compilation
+### 5.3 Compile `hello.c`
 
-If your `hello.c` is **exactly** the version shown, the compiler
-identification should be followed by the name of the program to compile
-and there should be nothing more before the Incremental Linker is
+![Compiling `hello.c`](T060101c4c.png)
+
+The command `CL hello.c` instructs the VC/C++ Compiler-Linker (CL) to compile
+`hello.c`.  In this simple case, compilation of the one file and producing
+executable program `hello.exe` will be automatic.
+
+### 5.4 Observe the compilation
+
+If your `hello.c` is **exactly** the version shown in
+[3](#3-make-the-helloc-code) above, the compiler
+identification should be followed by the name of the file, `hello.c` to be
+compiled and there should be nothing more before the Incremental Linker is
 identified.
 
 If there is anything else instead, there will be some diagnostic messages
@@ -109,48 +127,50 @@ identifying the difficulties.  Any difficulties must be resolved and the
 process begun anew, step by step from [4](#4-initiate-a-command-prompt),
 above.
 
+![hello.exe linking](T060101c4d.png)
+
 After the linker identification, there will be automatic determination to
 produce `hello.exe` from the file `hello.obj` that was produced by the
 successful compile of `hello.c`.
 
-### 5.4 Execute the resulting program
+If there were diagnostic messages about linking problems, they would
+appear before the next prompt.  That's unlikely here.  It can be expected
+to happen in future situations.
+
+### 5.5 Execute the resulting program
 
 There being no misadventures, the file `hello.exe` is there in `myCleanC`.
 
-```CMD
-hello
-```
+![run hello](T060101c4e.png)
 
-typed at the prompt
+The `hello.exe` program becomes available as a new command.  The program is
+requested with command `hello` and Windows will detect `hello.exe` in the
+current directory and operate it there.
 
-```CMD
-H:\Dcouments\myCleanC>
-```
+In this case, the `hello.c` `printf()` output will be directed to the Command
+Prompt screen as a line of text.
 
-will product the expected output on the next line:
+### 5.6 Look around in `myCLeanC`
 
-```text
-hello, world
-```
+![the myCleanC dir](T060202c4f.png)
 
-### 5.5 Look around in `myCLeanC`
+Finally, command line `H:\Documents\myCleanC\dir` issues the command for
+listing the current content of the Current Directory.
 
-Finally, the command line
-
-```CMD
-H:\Documents\myCleanC\dir
-```
-
-reports the content of the `myCleanC` folder.  The file `hello.obj` is
-produced by the compiler processing of `hello.c`.  That `hello.obj`
-intermediate is taken by the linker and combined with needed library and
-setup code to produce `hello.exe` a complete program to carry out the
-operation of the `hello.c` C Language.
+The file `hello.obj` was produced by the compiler processing of `hello.c`.
+That `hello.obj` intermediate is taken by the linker and combined with needed
+library and setup code to produce `hello.exe`.  The `hello.exe` program is the complete native software for carrying out the operation specifed in the
+C Language of `hello.c`.
 
 The simple 67-character `hello.c` is compiled to a 2,367 byte `hello.obj` of
 native computer code and information on what libraries it depends on.  The
 final `hello.exe` is 137,728 bytes of complete executable-format
-code.  It is constructed to be run from a command prompt.
+code.  It is constructed to be run from a command prompt, just like a built-in
+command.
+
+### 5.7 `exit` command
+
+End the Command Prompt session with the command `exit`.
 
 ## 6. Looking Down the Road
 
@@ -181,24 +201,11 @@ directly at `myCleanC` and it is a short hop to the `hello` project.
 
 The change in appearance is accomplished by customizing the shortcut.  There
 are many choices available.  It is also possible to alter the prompt text,
-choosing something different than `H:\Documents\myCleanC>` and the like.
-
-Summarizing the commands that were entered,
-
-```CMD
-H:\Documents\myCleanC>cd hello
-H:\Documents\myCleanC\hello>CL hello.c
-H:\Documents\myCleanC\hello>hello
-Hello again, world
-
-H:\Documents\myCleanC\hello\dir
-H:\Documents\myCleanC\hello\code .
-H:\Documents\MyCleanC\hello\exit
-```
+choosing something different than `H:\Documents\myCleanC>`.
 
 The change in the directory reflects changes in the `hello.c` program, which
 have the file be more verbose.  Yet the `hello.obj` and `hello.exe` files are
-smaller than at [5](#5-compile-and-run-the-program), above.
+smaller than at [5.6](#56-look-around-in-mycleanc), above.
 
 There is also a new component, the subdirectory `.vscode\`.  This is entirely
 for use in conjunction with Visual Studio Code and need not be of any concern.
@@ -206,14 +213,13 @@ It only has effect when Visual Studio code is opened on the `hello\` folder.
 
 ### 6.3 Incorporation of Visual Studio Code
 
-The command entry
+![starting VS Code](T060101c5a.png)
 
-```CMD
-H:\Documents\myCleanC\hello>code .
-```
- causes [Visual Studio Code](../../T21001/) to be initiated from within the
- Command Prompt and oriented to where we are operating (established by the "."
- parameter).  The benefit of initiating VS Code in this manner is for its
+The command entry `code .` initiates [Visual Studio Code](../../T21001/) for
+operation in the Command Prompt environment and oriented to the Current
+Directory (established by the `.` parameter).
+
+ The benefit of initiating VS Code in this manner is for its
  recognition of the initialized environment, using it for review and
  annotation of files that are opened for review and possible editing.
 
@@ -245,7 +251,7 @@ H:\Documents\myCleanC\hello>code .
  - the `fputs()` matches with the definition in `stdio.h` and the two parameters
  are of the proper form.
  - `stdout` is recognized as the indicator of the standard output stream,
- usually the Command Prompt output, also defined in `stdio.h`.
+ usually the current Command Prompt position, also established in `stdio.h`.
 
  All of this built-in checking, called
  [IntelliSense](https://code.visualstudio.com/docs/editor/intellisense),
@@ -263,6 +269,7 @@ from time to time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.7 2023-05-29T21:45Z Improved point-by-point explanations
      0.0.6 2023-05-28T23:56Z Draft completed after proof-checking
      0.0.5 2023-05-28T23:17Z Touch-up cross-references
      0.0.4 2023-05-28T20:14Z First full draft

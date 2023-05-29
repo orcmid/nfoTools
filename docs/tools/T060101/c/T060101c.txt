@@ -1,4 +1,4 @@
-T060101c.txt 0.0.7                  UTF-8                         2023-05-28
+T060101c.txt 0.0.8                  UTF-8                         2023-05-29
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -23,7 +23,14 @@ MANIFEST
    T060101c2.png  Notepad with the classic hello.c
    T060101c3.png  All Programs start of x64 Native Tools Command Prompt
    T060101c4.png  Command Line compilation and demonstration
+  T060101c4a.png  Start-up of display of Developer Command Prompt
+  T060101c4b.png  Changing CD to myCleanC
+  T060101c4c.png  Compiling hello.c
+  T060101c4d.png  Linking hello.exe
+  T060101c4e.png  Running hello.exe
+  T060101c4f.png  myCleanC directory
    T060101c5.png  Hello.c-0.2.2-compiled
+  T060101c5a.png  Launching VS Code
    T060101c6.png  Hello.c-0.2.2-VSCode
    T060101c7.png  myCleanC\hello\ reorganization
 
@@ -48,7 +55,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. T060101c: Getting to "Hello."  nfoTools project text
-   file T060101c.txt version 0.0.7 dated 2023-05-28, available on the
+   file T060101c.txt version 0.0.8 dated 2023-05-29, available on the
    Internet as a version of
    <https://orcmid.github.io/nfoTools/tools/T060101/c/T060101c.txt>
 
@@ -71,6 +78,7 @@ TODO
 
   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.8 2023-05-29T22:00Z Improve the point-by-point explanations
  0.0.7 2023-05-28T15:59Z First restructuring of myCleanC.
  0.0.6 2023-05-27T21:48Z Complete first partial sketch, manage the TODOs
  0.0.5 2023-05-27T15:38Z Update images for cleaner version hello.c 0.2.2.
