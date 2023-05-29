@@ -1,4 +1,4 @@
-<!-- index.md 0.0.7                UTF-8                          2023-05-29
+<!-- index.md 0.0.8                UTF-8                          2023-05-29
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                          T060101c: GETTING TO "HELLO"
@@ -152,7 +152,7 @@ Prompt screen as a line of text.
 
 ### 5.6 Look around in `myCLeanC`
 
-![the myCleanC dir](T060202c4f.png)
+![the myCleanC dir](T060101c4f.png)
 
 Finally, command line `H:\Documents\myCleanC\dir` issues the command for
 listing the current content of the Current Directory.
@@ -269,6 +269,7 @@ from time to time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.8 2023-05-29T22:47Z Fix incorrect image link
      0.0.7 2023-05-29T21:45Z Improved point-by-point explanations
      0.0.6 2023-05-28T23:56Z Draft completed after proof-checking
      0.0.5 2023-05-28T23:17Z Touch-up cross-references
