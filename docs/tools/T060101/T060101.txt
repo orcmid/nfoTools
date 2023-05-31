@@ -1,4 +1,4 @@
-T060101.txt 0.0.16                  UTF-8                          2023-05-**
+T060101.txt 0.0.16                  UTF-8                          2023-05-31
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -44,7 +44,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. T060101: C/C++ Programming.  nfoTools project text
-   file T060101.txt version 0.0.16 dated 2023-05-**, available on the
+   file T060101.txt version 0.0.16 dated 2023-05-31, available on the
    Internet as a version of
    <https://orcmid.github.io/nfoTools/tools/T060101/T060101.txt>
 
@@ -61,27 +61,8 @@ TODO
   * Here is an useful statement about the .NET languages from Microsoft,
     <https://learn.microsoft.com/en-us/dotnet/fundamentals/languages>.
 
-  * Microsoft has good dccumentation on C++ and their deviations/extensions.
-    Not so much for the supported C Language.  There is mention only of C89
-    so the material must be seriously dated.
-
   * We need a tie-in to development lifecycle.  This may end up drawing on
     Git and GitHub too.
-
-  * T060101b: Review and Update with current materials, including more on-line
-    and also MOOCs of various kinds
-
-  * T060101c: Getting to Hello will be a folio on setting up and the forever
-    first program, also its take-apart.
-
-  * T060101b: Add
-    <https://www.classcentral.com/report/best-free-c-programming-courses/>
-
-  * T060101c: Also, for C++,
-    <https://www.classcentral.com/report/best-free-courses-to-learn-c/>
-
-  * For a CS background, after or before getting feet wet with C Language,
-    <https://www.classcentral.com/report/cs50-free-certificate/>.
 
   * Also, for game development, an area that is featured in nfoTools,
     <https://www.codecademy.com/resources/blog/programming-languages-for-game-development/>
@@ -114,22 +95,6 @@ TODO
     Introduction to Software Engineering from IBM
     <https://www.classcentral.com/course/introduction-to-software-engineering-104338>
 
-  * Coverage of the C, C++, C#, Objective-C language relationships
-    <https://www.codecademy.com/resources/blog/c-vs-cplusplus-vs-csharp-vs-objective-c/>
-
-  * Microsoft has reorganized their on-line documentation and learning
-    materials.  Getting started with C++ and C is at
-    <https://learn.microsoft.com/en-us/cpp/?view=msvc-170> and I recommend
-
-  * I recommend "Use the command-line tools" to Compile C code,
-    <https://learn.microsoft.com/en-us/cpp/build/walkthrough-compile-a-c-program-on-the-command-line>
-
-  * Also the Use C++ and C in Visual Studio Code.  This might be referenced
-    here and addressed more in the Visual Studio Code materials.  There needs
-    to be more emphasis on the use for C and also maybe some more gentle work
-    up to the VS Code integration with Intellisence, etc.
-    <https://code.visualstudio.com/docs/cpp/config-msvc>.
-
   * With respect to why learn C, it is possible to recommend the Microsoft
     Python Learning path, with the advantage that Visual Studio Code is
     employed.  This is a very different (and also quirky) programming language
@@ -137,20 +102,6 @@ TODO
     C Language "tradition" as are C++, Java, C#, and other languages (but not
     JavaScript and some others).
     <https://learn.microsoft.com/en-us/training/paths/beginner-python/>/
-
-  * Class Central has a great compilation on C Language programming with
-    guides to the various courses.
-    <https://www.classcentral.com/subject/c-programming>.
-
-  * An useful perspective, though not great as a generalization.
-    <https://twitter.com/Carnage4Life/status/1584190561787219968/photo/1>
-
-  * <https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines> is valuable
-    for C++ and sometimes for C.  It does not get at the difference between
-    what the code is versus what it is for.  It does help with connection
-    to what the code realizes an interpretation/representation of, though
-    comments are still required.  This also came up on ResearchGate with
-    respect to mechanized proofs and their checking.
 
   * There's another good page on Codecademy, with regard to finding out how
     your characteristics and interests fit into particular areas of software
@@ -162,14 +113,6 @@ TODO
     and satisfying.  I have been known for that throughout my long career.
     And, indeed, I have thrived in front-end web page work and use of the
     web for writing and documentation.  THIS SHOULD BE COVERED IN A NOTES.
-
-  * Cite <https://en.wikibooks.org/wiki/Portability_and_the_C_Language>,
-    Jaeschke, Rex.  Portability and the C Language, ed.2. Wikibooks edition
-    (January 2022)available on the Internet with editing history at
-    <https://en.wikibooks.org/w/index.php?title=Portability_and_the_C_Language&action=history>.
-    THIS DOES NOT COVER C LANGUAGE.  It covers portability matters and it
-    follows the outline of the C99 standard.  But it does not cover the
-    language and it is not designed as a tutorial or a reference on that.
 
   * For C++ that is undifferentiated from C, there are Codecademy selections,
     <https://www.codecademy.com/resources/blog/c-plus-plus-books/>.
@@ -183,9 +126,6 @@ TODO
    that Adv10 is part of could be informative but it is a bit large.  The
    possibility here, and on Udemy, elsewhere, needs to be mentioned but with
    cautionary remarks.
-
- * C: A Reference Manual. (2007). India: Pearson Education.  This appears to
-   be a reprint of the 2002 5th edition.  There is no good citation.
 
  * Switch to the latest folio pattern, that used for D211101 already.  Then
    address why learn C and what the benefit is if one is curious enough.
@@ -202,8 +142,6 @@ TODO
 
  * Maybe some of this in notes?
 
- * Explain focus and illustration with VC/C++.
-
  * Find better courses.
 
  * Find more-current books.
@@ -211,21 +149,9 @@ TODO
  * READING CODE, RUNNING CODE.  This is the experiemental and practical
    art aspect of Computer Science.
 
- * https://learn.microsoft.com/en-us/cpp/c-runtime-library/c-run-time-library-reference>
-   provides details of the Microsoft C runtime library (CRT) usable for
-   VC/C++ programs and their compilation.  There is a PDF available.
-
- * To ensure that programs are standards compliant and portable with respect
-   to C Language standard(s), there are
-    o <https://learn.microsoft.com/en-us/cpp/cpp/c-cpp-language-and-standard-libraries>
-    o Others by searching on "C standard",
-      <https://learn.microsoft.com/en-us/search/?terms=C%20standard&scope=C%2B%2B>
-
- * For T060101b, Have permalinks so that they can be referenced from other
-   parts of the folio including here at the front porch.
-
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.16 2023-05-31T20:13Z Distribute TODOs to T060101b
  0.0.15 2023-05-20T23:42Z Morph folio structure
  0.0.14 2023-05-20T19:01Z Prepare for folio restructuring, more notes
  0.0.13 2023-05-20T16:34Z More notes on filling this folio in for support of

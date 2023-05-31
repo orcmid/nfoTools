@@ -1,4 +1,4 @@
-T060101b.txt 0.0.1                  UTF-8                         2023-05-27
+T060101b.txt 0.0.2                  UTF-8                         2023-05-31
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -41,7 +41,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. T060101b: Resources, nfoTools project text
-   file T060101b.txt version 0.0.1 dated 2023-05-27, available on the
+   file T060101b.txt version 0.0.2 dated 2023-05-31, available on the
    Internet as a version of
    <https://orcmid.github.io/nfoTools/tools/T060101/b/T060101b.txt>
 
@@ -59,10 +59,72 @@ TODO
  * There will be cross-folio references to the bibliographic entries, so need
    the permalink anchors to be stable.
 
- * Experiment with anchors in titles.
+  * T060101b: Review and Update with current materials, including more on-line
+    and also MOOCs of various kinds
+
+  * T060101b: Add
+    <https://www.classcentral.com/report/best-free-c-programming-courses/>
+
+  * T060101c: Also, for C++,
+    <https://www.classcentral.com/report/best-free-courses-to-learn-c/>
+
+  * For a CS background, after or before getting feet wet with C Language,
+    <https://www.classcentral.com/report/cs50-free-certificate/>.
+
+  * Coverage of the C, C++, C#, Objective-C language relationships
+    <https://www.codecademy.com/resources/blog/c-vs-cplusplus-vs-csharp-vs-objective-c/>
+
+  * Microsoft has reorganized their on-line documentation and learning
+    materials.  Getting started with C++ and C is at
+    <https://learn.microsoft.com/en-us/cpp/?view=msvc-170> and I recommend
+
+  * I recommend "Use the command-line tools" to Compile C code,
+    <https://learn.microsoft.com/en-us/cpp/build/walkthrough-compile-a-c-program-on-the-command-line>
+
+  * Also the Use C++ and C in Visual Studio Code.  This might be referenced
+    here and addressed more in the Visual Studio Code materials.  There needs
+    to be more emphasis on the use for C and also maybe some more gentle work
+    up to the VS Code integration with Intellisence, etc.
+    <https://code.visualstudio.com/docs/cpp/config-msvc>.
+
+  * Class Central has a great compilation on C Language programming with
+    guides to the various courses.
+    <https://www.classcentral.com/subject/c-programming>.
+
+  * An useful perspective, though not great as a generalization.
+    <https://twitter.com/Carnage4Life/status/1584190561787219968/photo/1>
+
+  * <https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines> is valuable
+    for C++ and sometimes for C.  It does not get at the difference between
+    what the code is versus what it is for.  It does help with connection
+    to what the code realizes an interpretation/representation of, though
+    comments are still required.  This also came up on ResearchGate with
+    respect to mechanized proofs and their checking.
+
+  * Cite <https://en.wikibooks.org/wiki/Portability_and_the_C_Language>,
+    Jaeschke, Rex.  Portability and the C Language, ed.2. Wikibooks edition
+    (January 2022)available on the Internet with editing history at
+    <https://en.wikibooks.org/w/index.php?title=Portability_and_the_C_Language&action=history>.
+    THIS DOES NOT COVER C LANGUAGE.  It covers portability matters and it
+    follows the outline of the C99 standard.  But it does not cover the
+    language and it is not designed as a tutorial or a reference on that.
+
+ * https://learn.microsoft.com/en-us/cpp/c-runtime-library/c-run-time-library-reference>
+   provides details of the Microsoft C runtime library (CRT) usable for
+   VC/C++ programs and their compilation.  There is a PDF available.
+
+ * To ensure that programs are standards compliant and portable with respect
+   to C Language standard(s), there are
+    o <https://learn.microsoft.com/en-us/cpp/cpp/c-cpp-language-and-standard-libraries>
+    o Others by searching on "C standard",
+      <https://learn.microsoft.com/en-us/search/?terms=C%20standard&scope=C%2B%2B>
+
+ * For T060101b, Have permalinks so that they can be referenced from other
+   parts of the folio including here at the front porch.
 
   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.2 2023-05-31T20:12Z  Gather topics for action here
  0.0.1 2023-05-27T14:44Z  Experimenting with anchors in titles
  0.0.0 2023-05-20T23:38Z  Placeholder with 0.0.0 T060101a.txt boilerplate
 
