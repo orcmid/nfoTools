@@ -1,4 +1,4 @@
-<!-- T060101b.md 0.2.2              UTF-8                          2023-05-27
+<!-- T060101b.md 0.2.3              UTF-8                          2023-05-31
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                         T060101: C/C++ PROGRAMMING
@@ -10,7 +10,7 @@
 
 | ***[nfoTools](../../../)*** | [tools](../../)[>T060101](../)[>b](.) | ***[index.html](index.html) 0.2.2 2023-05-27*** |
 | :--                |       :-:          | --: |
-| ![nfotools](../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../../../images/hardhat-logo.gif) |
+| ![nfotools](../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | [Work-in-Progress](T060101b.txt) | ![Hard Hat Area](../../../images/hardhat-logo.gif) |
 
 These resources are suitable for anyone who has personal use of a recent
 (Windows 10 or later) desktop PC system and wants to engage in self-study
@@ -18,10 +18,9 @@ for C/C++ Programming.  This is an useful foundation for becoming involved in
 nfoWare projects and other open-source projects targeted to the Microsoft
 Windows platform.
 
-* [C Language Programming](#c-language-programming)
-* [C++ Language Programming](#c-language-programming-1)
-* [C/C++ Compilers](#cc-compilers)
-* [Editors and Development Environments](#editors-and-development-environments)
+- [1. Books](#1books)
+- [2. Online Resources](#2onlineresources)
+  -
 
 This is not a comprehensive selection. Some were created after a bookstore
 crawl.  The choices are based on suitability of the material for someone not
@@ -40,13 +39,16 @@ Model (COM) and building applications for the Microsoft Windows Graphical User
 Interface (GUI), cloud-based apps, etc.,  different specialized material is
 required.
 
-## C Language Programming
+## 1. Books
 
-\[***Author Note: Needs Serious Updating and Separation of Historicals ***\]
+The amount of printed material focused specifically on C Language has
+diminished along with the popularity of C++ and more-recent
+programming-language developments.
 
-The following sources are not all at the same level.  The commentary should
-reveal which are good as starters, which ones require more care and provide
-further riches in return.
+Printed books can still be found in libraries and also on sale as used books.
+The use of electronic versions other than PDF forms are not recommended.  The
+formulas and code examples are often transformed incorrectly to electronic
+editions.
 
 ### \[<a name="Harbison2002">Harbison2002</a>\] C, A Reference Manual
 
@@ -71,151 +73,73 @@ also known as C89 ANSI X3.159-1989 and the identical C90, ISO/IEC 9899:1990.
 The full progression is captured on Wikipedia
 [ANSI C](https://en.wikipedia.org/wiki/ANSI_C#C89). This book, affectionately
 known as K&R, is a testament to the longevity of the C Language and how today
-Clean C is "unrecognizably different" to borrow a statement made about the
-evolution of FORTRAN.   The examples can be adjusted to Clean C
+Clean C is "unrecognizably different" to borrow a prediction made about the
+evolution of FORTRAN language.   The examples can be adjusted to Clean C
 in most cases.  Historically important, this book is supplanted as a
-reference by
-\[[Harbison2002](#Harbison2002)\].
+reference by \[[Harbison2002](#Harbison2002)\].
 
-### \[<a name="Allison2000">Allison2000</a>\] Thinking in C
 
-Allison, Chuck. *Thinking in C: Foundations for C++ & Java*.
-MindView (La Mesa, CA: 2000).  A course
-including lectures, slides, exercises and
-solutions, which teaches the foundations of the C Language to prepare you to
-learn Java or C++.  Also available at
-[MindView](http://www.mindview.net/CDs/ThinkingInC-CD/ThinkingInC-CD.html).
-As explained on the web site, it is more-economical to purchase the print
-edition of ([Eckel 2000](#eckel-bruce-2000-thinking-in-c-second-edition)) with
-CD-ROM included.  That CD-ROM also includes electronic versions of *Thinking
-in C++*, *Thinking in Java*, and the code samples from *Thinking in C++*.
-
-### \[<a name="McGrath2004">McGrath2004</a>\] C Programming in Easy Steps
+### \[<a name="McGrath2018">McGrath2018</a>\] C Programming in Easy Steps
 
 McGrath, Mike. *C Programming in Easy Steps:*
-*Learn the ANSI C standard in full color*.  Computer Step (Southam,
-Warwickshire, UK: 2004).
-ISBN 1-84078-203-X pbk.  Barnes & Noble edition for sale in
-the USA only, ISBN 0-7607-5504-3.  Book description and source-code downloads
-available at [In Easy Steps](http://www.ineasysteps.com/books/?184078203x).
-This is a perfect book for getting started in C/C++ Programming.  There are
-examples to work every step of the way, focusing on the simpler C Language for
-learning the basic concepts.  With the experience gained here, the student can
-move on to the special features of C++ with greater confidence.  The examples
+*grasp the nuts and bolts of programming*, ed.5. In Easy Steps Limited
+(Warwickshire, UK: 2018).
+ISBN 978-1-84078-840-2 pbk.  Book description and source-code downloads
+available at
+[In Easy Steps](https://ineasysteps.com/products-page/c-programming-easy-steps-5th-edition-2/).
+Based on an earlier edition, this is a perfect book for getting started in C
+Programmng.  There are examples to work every step of the way, focusing on C Language for learning the basic concepts.  The examples
 are illustrated using the GCC compiler.  Adjustment for Microsoft Visual
 C/C++ is easily made.
+
+### \[<a name="Plauger1992">Plauger1992</a>\] The Standard C Library
+
+Plauger, P.J. *The Standard C Library*.  Prentice-Hall (Englewood Cliffs, NJ:
+1992) ISBN 0-13-131509-9 pbk. This is based on the C89 standard, quoting the
+standard as it unravels each C Language standard header file. That makes it
+comprehensive although not current with
+[the additions made](https://en.wikipedia.org/wiki/C_standard_library)
+in subsequent ISO Standards.
+
+### \[<a name="Prata2014">Prata2014</a>\] C Primer Plus
+
+Prata, Stephen. *C Primer Plus*, ed.6.  Addison-Wesley (Upper Saddle River,
+NJ: 2014).  A [Developer's Library](https://informit.com/devlibrary)
+reference.  ISBN 978-0-321-77640-2.  This extensive book is current with the
+ISO C11 Standard.  At over 1000 pages, this is a leisurely and extensive tour
+of C Language with numerous examples.  There are exercises with
+ back-of-the-book examples.  There is no explicit attention to Clean C,
+ although good practices are recommended and appied.  Appendix B is a 100 page
+ Reference Section with an useful account of the language, the libraries,
+ and coverage of the C99 and C11 enhancements.
 
 ### \[<a name="Prinz2003">Prinz2003</a>\] C Pocket Reference
 
 Prinz, Peter., Kirch-Prinz, Ulla.  *C Pocket Reference*. Translated by Tony
  Crawford.  O'Reilly Media (Sebastopol, CA: 2003).  134pp.
 ISBN 0-596-00436-2 pbk.  Originally published in German as "C kurz & gut"
-(short and good), I find this thumbnail convenient, with an organization that
-is easy for me to find material in.  Others may find different organizations
-to be more appealing.
+(short and good), I found this thumbnail convenient, with an organization that
+is easy for me to find material in.  Lately, I find myself using on-line
+materials.
 
-## C++ Language Programming
+### \[<a name="Shaw2016">Shaw2016</a>\] Learn C the Hard Way
 
-\[***Author Note: Needs Very Serious Updating and Review C++ Marches On***\]
+Shaw, Zed A.  *Learn C the Hard Way: Practical Exercises on the Computational
+Subjects You Keep Avoiding (Like C)*.  Addison-Wesley (New York: 2016)
+ISBN 0-321-88492-2 pbk with DVD-ROM.  I admire the emphasis on defensive
+programming and other ways to better understand what programs, and the
+programmer, are doing.  There are two aspects that give me pause.  First,
+There is C Language in use, but not with attention to the standards (other
+than dismay over the amount of unspecified behavior in those documents).
+Secondly, the focus is entirely on tools and the compilers for the *nix world,
+especially Linux. These can be worked around although I think `make` is
+introduced far too soon before the student can experience the problem that
+`make` helps solve.  In that respect, I share the attitude about debuggers
+and IDEs.
 
-### Cogswell, Jeff (2003).  C++ All-in-One Desk Reference for Dummies
 
-Wiley, New York.  ISBN 0-7645-1795-3 pbk + CD-ROM.  7 books in 1. Book
-description and errata at
-[Sams](http://www.samspublishing.com/title/0672324253).
-This is a consolidation of seven titles, beginning with a basic introduction
-and continuing through the main topics for C++ Language development on the
-Microsoft Windows platform, including .NET topics.  There's a variety of
-software packages on the CD-ROM, including a personal version of the Borland
-Builder compiler and IDE.  Although the book is densely printed, it provides
-wide coverage and some useful software for those who want a
-more-completely-integrated development setup.
+## 2. Online Resources
 
-### DePasquale, Peter J. (2006). Addison-Wesley's C++ Backpack Reference Guide
-
-Pearson Education, Boston.  80pp. ISBN 0-321-35013-8 pbk.  This reference does
-not attempt to summarize the language.  Instead, it is organized around the
-use of symbols and the reserved words of the language.  This may provide a
-different access to something that is being sought in comparison with
-([Loudon 2003](#loudon-kyle-2003--c-pocket-reference)).  I find that I am
-distrustful of this approach, although it makes some material very easy to
-locate.
-
-### Eckel, Bruce (2000). Thinking in C++ Second Edition
-
-Volume One: Introduction to Standard C++.  Prentice Hall
-(Upper Saddle River, NJ).  ISBN 0-13-979809-9 pbk + CD-ROM.
-Although this content is available on-line
-([Eckel 2004](#eckel-bruce-2004--thinking-in-c-2nd-edition)), I obtained the
-print edition in order to acquire the CD-ROM with its lectures and slides on
-*Thinking in C*.  There is a dense review of enough C Language to serve as a
-foundation for C++ in Chapter 3 of the book, but I wanted to make sure of the
-availability of a careful introduction to C Language fundamentals. The CD-ROM
-does the job.
-
-### Eckel, Bruce (2004).  Thinking in C++ 2nd Edition
-
-Free Electronic Book Volume 1 & Volume 2.  Web page at
-[Mindview](http://mindview.net/Books/TICPP/ThinkingInCPP2e.html) accessed on
-2005-10-06.  I love the approach taken here, with books available for on-line
-reading, downloading (as Adobe PDF), and purchase.   On this page the author
-describes the motivation and the value.  There are other tips and leads to
-further material here.  Newcomers might consider purchasing the hard copy of
-Volume 1 (second edition) with its bound-in CD-ROM with the *Thinking in C*
-CD-ROM designed for training and as preparation for moving on to C++ and for
-Java.  Reviewers recommend that you have some programming experience and
-Volume 1 starts out assuming familiarity with C Language (and the McGrath
-books might get you started).  You can also download the free edition and see
-how the material works for you.  The author's comments about the CD-ROM on
-this web page are also instructive for setting your level of expectations and
-calibrating your experience and readiness for C++.
-
-### Liberty, Jesse (2002).  Teach Yourself C++ in 10 Minutes
-
-Ed. 2.  Quick steps for fast results.  Sams Publishing, Indianapolis, IN.
-ISBN 0-672-32425-3 pbk.  Book description and source-code downloads available
-at [Sams Publishing](http://www.samspublishing.com/title/0672324253).  This is
-an useful introduction once the basics have been managed using a better
-starter text such as
-([McGrath 2004](#mcgrath-mike-2004--c-programming-in-easy-steps)).  This book
-is "tighter." The examples are more demanding.  Illustrations of error
-messages and debugging are based on the Borland C++ Builder 5 compiler.  It is
-assumed that you already have a compiler and know the basic procedures for
-editing, compiling, and executing programs.
-
-### Loudon, Kyle (2003).  C++ Pocket Reference
-
-O'Reilly Media, Sebastopol, CA.  130pp. ISBN 0-596-00496-6 pbk.  Although not
-advisable as a tutorial source, a pocket reference of this kind can provide an
-easy way to review and check on features of the language once the basic
-concepts have taken root.  Personally, I find the organization a little
-difficult and prefer to check in
-([Prinz & Kirch-Prinz 2003](#prinz-peter-kirch-prinz-ulla-2003--c-pocket-reference))
-first, and only using C++-specific material if I must.
-
-### McGrath, Mike (2005).  C++ Programming in Easy Steps
-
-Conforms to ANSI & ISO Standards, in full color.  Computer Step, Southam,
-Warwickshire, UK.  ISBN 1-84078-295-1 pbk.  Barnes & Noble edition for sale in
-the USA only, ISBN 0-7607-7138-3.  Book description and source-code downloads
-available at [In Easy Steps](http://www.ineasysteps.com/books/?1840782951).
-The advantage of this version, focusing only on C++, in addition to the "in
-Easy Steps" format, is use of the MinGW build of the GNU C++ compiler with its
-closer match to the Microsoft Windows environment.   If you use this compiler,
-I recommend that you employ batch files to set environment variables,
-including the Path variable, applying the technique described and used for the
-VC++ Toolkit 2003 and employed throughout this site for C and C++ projects.
-And, if you want to grow into development of programs for the Windows
-graphical user-interface, I think the Microsoft Visual C++ Toolkit 2003 or the
-new Visual C++ 2005 Express edition will provide an easier start.
-
-### Stroustrop, Bjarne (2000).  The C++ Programming Language
-
-Special Edition.  Addison-Wesley, Reading, MA.  ISBN 0-201-70073-5.
-This is not exactly a specification, although it is preferred by many as a
-reference.  It also provides some insight into the thinking around the
-invention of C++ by its inventor, including worked examples where Stroustrop
-walks the reader through the design principles that are being applied.
 
 ## C/C++ Compilers
 
@@ -309,6 +233,7 @@ from time to time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.2.3 2023-05-31T22:28Z More additions and reorganization in progress
      0.2.2 2023-05-27T16:50Z Continue adjusting title anchors
      0.2.1 2023-05-27T14:47Z Experimentation with title anchors
      0.2.0 2023-05-20T22:53Z Transpose to T060101/b/index.md
