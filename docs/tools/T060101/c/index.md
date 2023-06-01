@@ -1,4 +1,4 @@
-<!-- index.md 0.0.9                UTF-8                          2023-06-01
+<!-- index.md 0.1.0                 UTF-8                          2023-06-01
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                          T060101c: GETTING TO "HELLO"
@@ -6,7 +6,7 @@
 
 # T060101c: [Getting to "Hello"](.)
 
-| ***[nfoTools](../../../)*** | [tools](../../)[>t060101](../)[>c](.) | ***[index.html](index.html) 0.0.9 2023-06-01*** |
+| ***[nfoTools](../../../)*** | [tools](../../)[>t060101](../)[>c](.) | ***[index.html](index.html) 0.1.0 2023-06-01*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | [Work in Progress](T060101c.txt) | ![Hard Hat Area](../../../images/hardhat-logo.gif) |
 
@@ -29,6 +29,8 @@ C Language has a famous first program.  Creating and operating that program is d
     - [6.1 Improved project file organization](#61-improved-project-file-organization)
     - [6.2 Customized Command Prompt operation](#62-customized-command-prompt-operation)
     - [6.3 Incorporation of Visual Studio Code](#63-incorporation-of-visual-studio-code)
+    - [6.4 Quieting the Compilations](#64-quieting-the-compilations)
+  - [7. Fledgling Adventures](#7-fledgling-adventures)
 
 ## 1. Install C/C++ Compiler Software
 
@@ -47,8 +49,7 @@ installed.  On a Windows PC, the Documents folder of a personal account will
 
  The example `Documents\myCleanC` folder is established using a Windows 10
  File Explorer view that is handy when working on software projects. This name
- reflects the emphasis on [Clean C](../#keep-it-clean-c) here.  Make your
- own choice.
+ reflects the emphasis on [Clean C](../#keeping-it-clean-c) here.
 
  The file
  `hello.c` has already been created in the folder.  This is a text file with
@@ -232,33 +233,33 @@ The command entry `code .` initiates [Visual Studio Code](../../T21001/) for
 operation in the Command Prompt environment and oriented to the Current
 Directory (established by the `.` parameter).
 
- The benefit of initiating VS Code in this manner is for its
- recognition of the initialized environment, using it for review and
- annotation of files that are opened for review and possible editing.
+The benefit of initiating VS Code in this manner is for its
+recognition of the initialized environment, using it for review and
+annotation of files that are opened for review and possible editing.
 
- ![hello.c 0.2.2 in VS Code](T060101c6.png)
+![hello.c 0.2.2 in VS Code](T060101c6.png)
 
- All of the green text is commentary.  Only lines 11-16 provide the C Language
- code.
+All of the green text is commentary.  Only lines 11-16 provide the C Language
+code.
 
- The color highlighting is provided automatically as readability hints of the
- program's C Language structure.
+The color highlighting is provided automatically as readability hints of the
+program's C Language structure.
 
- The `hello.c` program is now in Clean C.  What makes the difference is the
- first line,
+The `hello.c` program is now in Clean C.  What makes the difference is the
+first line,
 
  ```C
  int main(void)
  ```
 
- Visual Studio Code will recognize various defects in a C Language program.
- For this `hello.c` none are identified.
+Visual Studio Code will recognize various defects in a C Language program.
+For this `hello.c` none are identified.
 
- What will become more important is coming to appreciate what is **not**
- provoking any VS Code commentary.
+What will become more important is coming to appreciate what is **not**
+provoking any VS Code commentary.
 
-- The ```include <stdio.h>``` has been resolved to a file in the VC/C++
- nvironment.
+- The ``#include <stdio.h>` has been resolved to a file in the VC/C++
+environment.
 - The `int main(void)` is recognized as beginning the definition of a
 required `main()` procedure.
 - the `fputs()` matches with the definition in `stdio.h` and the two
@@ -267,9 +268,46 @@ parameters are of the proper form.
 usually directed to the current Command Prompt position, also established
 in `stdio.h`.
 
- All of this built-in checking, called
- [IntelliSense](https://code.visualstudio.com/docs/editor/intellisense),
- will be valuable as more-elaborate programs are developed.
+All of this built-in checking, called
+[IntelliSense](https://code.visualstudio.com/docs/editor/intellisense),
+will be valuable as more-elaborate programs are developed.
+
+### 6.4 Quieting the Compilations
+
+After seeing it a few times, the details of compilation tend to clutter
+the work.  There are ways to have compiler operations produce terse output.
+
+![Terse Compilations](T060101c8.png)
+
+The previous compilation can be made terse in two ways.
+
+First, the command `CL hello.c >NUL` causes the outputs from CL to be
+directed to the `NUL` (nowhere) device.  The only visible output in the
+successful case is the identification of the C/C++ compiler.
+
+If there are any error messages, they will still appear.  The quiet operation
+indicates that there are no difficulties.  In the case of error messages and
+warnings, it is necessary to repeat the compilation without the `>NUL`.
+
+An alternative to sending the output to the `NUL` bit-bucket is to direct the
+output to a file.  The command `CL hello.c >hello.txt` accomplishes that.
+This way, if there are errors and warnings, the full output can be seen by
+viewing that file, accomplished with command `type hello.txt` in the example.
+
+## 7. Fledgling Adventures
+
+This progression of steps, and additional improvements in operation, are a
+foundation for creating many small programs made with single C Language
+files.  Examples found in [books and other resources](../b) can be compiled
+and operated.
+
+There will be more to learn about the stages of compilation and the use of
+standard libraries, code from other sources, and reusable code of your own.
+
+There will be more to practice and explore in using Command Prompts and also
+the Build Tools.
+
+Start slow, start with small steps, and most-of-all, enjoy the journey.
 
 ----
 
@@ -283,6 +321,7 @@ from time to time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.1.0 2023-06-01T19:59Z Cleanup as 0.1.0 full beta level
      0.0.9 2023-06-01T17:13Z Touch-ups, suggestions by Bill Anderson
      0.0.8 2023-05-29T22:47Z Fix incorrect image link
      0.0.7 2023-05-29T21:45Z Improved point-by-point explanations
