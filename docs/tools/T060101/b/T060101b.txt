@@ -101,13 +101,6 @@ TODO
     comments are still required.  This also came up on ResearchGate with
     respect to mechanized proofs and their checking.
 
-  * Cite <https://en.wikibooks.org/wiki/Portability_and_the_C_Language>,
-    Jaeschke, Rex.  Portability and the C Language, ed.2. Wikibooks edition
-    (January 2022)available on the Internet with editing history at
-    <https://en.wikibooks.org/w/index.php?title=Portability_and_the_C_Language&action=history>.
-    THIS DOES NOT COVER C LANGUAGE.  It covers portability matters and it
-    follows the outline of the C99 standard.  But it does not cover the
-    language and it is not designed as a tutorial or a reference on that.
 
  * https://learn.microsoft.com/en-us/cpp/c-runtime-library/c-run-time-library-reference>
    provides details of the Microsoft C runtime library (CRT) usable for
@@ -121,6 +114,9 @@ TODO
 
  * For T060101b, Have permalinks so that they can be referenced from other
    parts of the folio including here at the front porch.
+
+ * https://web.archive.org/web/20150118141700/http://www.acm.uiuc.edu/webmonkeys/book/c_guide/index.html
+   for an interesting library reference as of 1997.
 
   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
