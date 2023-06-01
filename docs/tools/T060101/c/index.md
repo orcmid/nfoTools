@@ -1,4 +1,4 @@
-<!-- index.md 0.0.8                UTF-8                          2023-05-29
+<!-- index.md 0.0.9                UTF-8                          2023-06-01
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                          T060101c: GETTING TO "HELLO"
@@ -6,7 +6,7 @@
 
 # T060101c: [Getting to "Hello"](.)
 
-| ***[nfoTools](../../../)*** | [tools](../../)[>t060101](../)[>c](.) | ***[index.html](index.html) 0.0.7 2023-05-29*** |
+| ***[nfoTools](../../../)*** | [tools](../../)[>t060101](../)[>c](.) | ***[index.html](index.html) 0.0.9 2023-06-01*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | [Work in Progress](T060101c.txt) | ![Hard Hat Area](../../../images/hardhat-logo.gif) |
 
@@ -23,7 +23,7 @@ C Language has a famous first program.  Creating and operating that program is d
     - [5.3 Compile `hello.c`](#53-compile-helloc)
     - [5.4 Observe the compilation](#54-observe-the-compilation)
     - [5.5 Execute the resulting program](#55-execute-the-resulting-program)
-    - [5.6 Look around in `myCLeanC`](#56-look-around-in-mycleanc)
+    - [5.6 Look around in `myCleanC`](#56-look-around-in-mycleanc)
     - [5.7 `exit` command](#57-exit-command)
   - [6. Looking Down the Road](#6-looking-down-the-road)
     - [6.1 Improved project file organization](#61-improved-project-file-organization)
@@ -32,8 +32,8 @@ C Language has a famous first program.  Creating and operating that program is d
 
 ## 1. Install C/C++ Compiler Software
 
-There is not far to get without having software that compiles C Language
-files into programs that run on the computer.  In this sketch,
+One of the first tools needed is software that compiles C Language files
+into programs that run on the computer.  In this sketch,
 [Visual Studio Build Tools](../../T211002/) are installed and ready for use.
 
 ## 2. Make a Folder for the Work
@@ -46,9 +46,13 @@ installed.  On a Windows PC, the Documents folder of a personal account will
  ![Initial myCleanC Folder](T060101c1.png)
 
  The example `Documents\myCleanC` folder is established using a Windows 10
- File Explorer view that is handy when working on software projects.  The file
- `hello.c` has already been created there.  This is a text file with extension
- `.c` instead of `.txt`.
+ File Explorer view that is handy when working on software projects. This name
+ reflects the emphasis on [Clean C](../#keep-it-clean-c) here.  Make your
+ own choice.
+
+ The file
+ `hello.c` has already been created in the folder.  This is a text file with
+ extension  `.c` instead of `.txt`.
 
 ## 3. Make the `hello.c` Code
 
@@ -56,11 +60,14 @@ installed.  On a Windows PC, the Documents folder of a personal account will
 
 This is the very first program presented in the
 \[[Kernighan1988](..\b\#Kernighan1988)\] book, *The C Programming Language*.
-This program should be typed exactly and saved as file `hello.c`.  Be exact, character-by-character, line-by-line.
+This program should be typed exactly and saved as file `hello.c`.  Be exact,
+character-by-character, line-by-line.
 
 There is
 [Hello World lore](https://en.wikipedia.org/wiki/%22Hello,_World!%22_program)
-on all of the ways this "first program" has been accomplished.
+on all of the ways this "first program" has been accomplished.  This program
+predates the prospect of [Clean C](..\#keeping-it-clean-c), to be
+remedied below ([6.3](#63-incorporation-of-visual-studio-code)).
 
 ## 4. Initiate a Command Prompt
 
@@ -78,20 +85,22 @@ Commands are entered, step by step.
 
 ![Compiling the my CleanC\hello.c Program](T060101c4.png)
 
+Breaking it down ...
+
 ### 5.1 Get Situated
 
 ![Environment Intialized](T060101c4a.png)
 
 Selecting `x64 Native Tools Command Prompt` brings up a console window and
-runs scripts that announce the tools and initialize the command session
+runs scripts that announce the tools and initialize the command-session
 environment for building x64 programs.
 
-- The title in the console window reflects the established setup.  The `C:\_`
-identifies the built-in utility `CMD.exe` that provides Command Prompt
-operation.
+- The title in the console window reflects the established setup.  The tiny
+`C:\_` icon identifies the built-in utility `CMD.exe` that provides
+Command Prompt operation.
 - The version of Visual Studio whose Build Tools are being employed is
 identified.
-- The flavor of environment initialized is reported and the first user
+- The flavor of environment is reported and the first user
 command is solicited.
 
 ### 5.2 Navigate to `myCleanC`
@@ -104,7 +113,7 @@ the `>` of a prompt from the computer.
 
 The Developer Command Prompt starts at the location of the build tools, not
 where the project is.  The command `cd /D H:\Documents\myCleanC` changes the
-CD to drive and directory where `hello.c` is stored.
+CD to the drive and directory where `hello.c` is stored.
 
 ### 5.3 Compile `hello.c`
 
@@ -150,7 +159,7 @@ current directory and operate it there.
 In this case, the `hello.c` `printf()` output will be directed to the Command
 Prompt screen as a line of text.
 
-### 5.6 Look around in `myCLeanC`
+### 5.6 Look around in `myCleanC`
 
 ![the myCleanC dir](T060101c4f.png)
 
@@ -187,8 +196,8 @@ with `myCLeanC\hello\`.
 ![myCLeanC Organization](T060101c7.png)
 
 Along with this, a shortcut is created for creation of the Command Prompt
-directly at `myCleanC\`.  This will be handy for workng on all of the projects
-that will be placed under `myCleanC\`.
+directly at `myCleanC\`.  This will be handy for working on all of the
+projects that will be placed under `myCleanC\`.
 
 A new Command Prompt right there is initiated by double-clicking the shortcut.
 
@@ -203,9 +212,13 @@ The change in appearance is accomplished by customizing the shortcut.  There
 are many choices available.  It is also possible to alter the prompt text,
 choosing something different than `H:\Documents\myCleanC>`.
 
-The change in the directory reflects changes in the `hello.c` program, which
+The change in the directory reflects changes in the `hello.c` program that
 have the file be more verbose.  Yet the `hello.obj` and `hello.exe` files are
-smaller than at [5.6](#56-look-around-in-mycleanc), above.
+smaller than at [5.6](#56-look-around-in-mycleanc), above.  The reduction of
+program size is not particularly significant.  The practice of simplifying
+to what's needed is an important practice, making dependencies on libraries
+and other code more precise.
+
 
 There is also a new component, the subdirectory `.vscode\`.  This is entirely
 for use in conjunction with Visual Studio Code and need not be of any concern.
@@ -244,18 +257,19 @@ Directory (established by the `.` parameter).
  What will become more important is coming to appreciate what is **not**
  provoking any VS Code commentary.
 
- - The ```include <stdio.h>``` has been resolved to a file in the VC/C++
- environment.
- - The `int main(void)` is recognized as the beginning of a valid main
- function.
- - the `fputs()` matches with the definition in `stdio.h` and the two parameters
- are of the proper form.
- - `stdout` is recognized as the indicator of the standard output stream,
- usually the current Command Prompt position, also established in `stdio.h`.
+- The ```include <stdio.h>``` has been resolved to a file in the VC/C++
+ nvironment.
+- The `int main(void)` is recognized as beginning the definition of a
+required `main()` procedure.
+- the `fputs()` matches with the definition in `stdio.h` and the two
+parameters are of the proper form.
+- `stdout` is recognized as the indicator of the standard output stream,
+usually directed to the current Command Prompt position, also established
+in `stdio.h`.
 
  All of this built-in checking, called
  [IntelliSense](https://code.visualstudio.com/docs/editor/intellisense),
- will be valuable as more programs are developed.
+ will be valuable as more-elaborate programs are developed.
 
 ----
 
@@ -269,6 +283,7 @@ from time to time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.9 2023-06-01T17:13Z Touch-ups, suggestions by Bill Anderson
      0.0.8 2023-05-29T22:47Z Fix incorrect image link
      0.0.7 2023-05-29T21:45Z Improved point-by-point explanations
      0.0.6 2023-05-28T23:56Z Draft completed after proof-checking

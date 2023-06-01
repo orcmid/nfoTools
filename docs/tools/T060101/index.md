@@ -1,4 +1,4 @@
-<!-- index.md 0.2.8                UTF-8                          2023-05-28
+<!-- index.md 0.2.9                UTF-8                          2023-06-01
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                          T060101: C/C++ PROGRAMMING
@@ -6,7 +6,7 @@
 
 # T060101: [C/C++ Programming](.)
 
-| ***[nfoTools](../../)*** | [tools](../)[>t060101](.) | ***[index.html](index.html) 0.2.8 2023-05-28*** |
+| ***[nfoTools](../../)*** | [tools](../)[>t060101](.) | ***[index.html](index.html) 0.2.9 2023-06-01*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | C/C++ Programming | ![Hard Hat Area](../../images/hardhat-logo.gif) |
 
@@ -21,6 +21,7 @@ software-development efforts.
 
 - [T060101: C/C++ Programming](#t060101-cc-programming)
   - [C/C++ Programming for Beginners and the Curious](#cc-programming-for-beginners-and-the-curious)
+  - [Keeping It Clean C](#keeping-it-clean-c)
   - [Available Materials](#available-materials)
   - [Recommended Tools](#recommended-tools)
   - [Historical Context](#historical-context)
@@ -48,6 +49,8 @@ of that suite.  There are sample programs and demonstrations of their
 operation that can be replicated to confirm understanding and successful
 setup.
 
+## Keeping It Clean C
+
 For nfoTools projects of all kinds, use of the C Programming Language
 will be in
 [Clean C](b/#Harbison2002),
@@ -64,12 +67,11 @@ languages/dialects.  Exploration of alternative platforms and tools can also
 be done using experience with achieved results here as a confident starting
 point.
 
-
 ## Available Materials
 
 | **ID** | **Started** | **Status** | **Topic** |
 |   :-:   |   :-:   |  :-:   |  ---  |
-| [T060101c](c/) | 2021-11-25 | 0.0.6 2023-05-28 | Getting to "Hello" |
+| [T060101c](c/) | 2021-11-25 | 0.0.9 2023-06-01 | Getting to "Hello" |
 | [T060101b](b/) | 2006-05-20 | 0.2.0 2023-05-20 | C/C++ Resources |
 |                           |            |                   |           |
 | [T060101a](a/) | 2005-09-08 | 0.2.0 2023-05-20 | Legacy Diary & Job Jar |
@@ -145,6 +147,7 @@ from time to time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.2.9 2023-06-01T17:15Z Emphasize Clean C more
      0.2.8 2023-05-28T23:59Z T060101c
      0.2.7 2023-05-27T20:05Z Completed full draft.
      0.2.6 2023-05-27T17:55Z Shuffle and also fix cross references
