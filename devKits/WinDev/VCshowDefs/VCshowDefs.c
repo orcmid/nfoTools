@@ -1,4 +1,4 @@
-/* VCshowDefs.c 1.1.1               UTF-8                         2023-02-15
+/* VCshowDefs.c 1.2.0               UTF-8                         2023-06-02
  * -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
  *
  *             SHOW PRESENCE OF VISUAL C/C++ PREPROCESSOR DEFINES
@@ -74,29 +74,48 @@ int main(void)
 
        char *tv;  /* pointer to the token value string */
 
-       fputs(  "VCshowDefs> 1.1.1 Check for documented pre-processor macros",
+       fputs(  "VCshowDefs> 1.1.2 Check for documented pre-processor macros",
               stdout);
        fputs("\n            that might be predefined in this compile.\n",
               stdout);
 
 
-       fputs("\n  Supported ANSI/ISO Definitions:\n", stdout);
+       fputs("\n  Required ISO C11 Definitions:\n", stdout);
 
        SHOW(__DATE__, "                ");
        SHOW(__FILE__, "                ");
        SHOW(__LINE__, "                ");
        SHOW(__STDC__, "                ");
        SHOW(__STDC_HOSTED__, "         ");
-       SHOW(__STDC_IEC_559__, "        ");
-       SHOW(__STDC_IEC_599_COMPLEX__, "");
-       SHOW(__STDC_ISO_10646__, "      ");
        SHOW(__STDC_VERSION__, "        ");
        SHOW(__TIME__, "                ");
 
-       fputs("\n  Supported (VC++?) reflection support:\n", stdout);
+       fputs("\n  Conditionally-definable ISO C11 Definitions:\n", stdout);
+       fputs(  "  Related to Unicode Support:\n", stdout);
+
+       SHOW(__STDC_ISO_10646__, "      "); // Unicode wchar_t support
+       SHOW(__STDC_MB_MIGHT_NEQ_W__, " "); // when values wchar_t, char differ
+       SHOW(__STDC_UTF_16__, "         "); // char16_t are UTF-16
+       SHOW(__STDC_UTF_32__, "         "); // char32_t are UTF-32
+
+       fputs(  "  Related to supported features:\n", stdout);
+
+       SHOW(__STDC_ANALYZABLE__, "     ");
+       SHOW(__STDC_IEC_559__, "        ");
+       SHOW(__STDC_IEC_599_COMPLEX__, "");
+       SHOW(__STDC_LIB_EXT1__, "       ");
+       SHOW(__STDC_NO_ATOMICS__, "     ");
+       SHOW(__STDC_NO_COMPLEX__, "     ");
+       SHOW(__STDC_NO_THREADS__, "     ");
+       SHOW(__STDC_NO_VLA__, "         ");
+
+       fputs("\n  Only when compiled as C++:\n", stdout);
+       SHOW(__cplusplus, "             ");
+       SHOW(_MSVC_LANG, "              "); // VC/C++ specific
+
+       fputs("\n  Supported (VC++) reflection support:\n", stdout);
 
        SHOW(__COUNTER__, "             ");
-       SHOW(__cplusplus, "             ");
        SHOW(__FSTREXP, "               ");
        SHOW(__FUNCTION__, "            ");
        SHOW(__FUNCDNAME__, "           ");
@@ -157,7 +176,9 @@ int main(void)
        } /* main() */
 
 
-/*  1.1.1  2023-02-15T20:39Z Touch-up and tie to D230201.
+/*
+ *  1.2.1  2023-06-02T20:50Z Tie in C11 definitions
+ *  1.1.1  2023-02-15T20:39Z Touch-up and tie to D230201.
  *  1.1.0  2023-02-12T22:48T Claw back from Maiko version as general utility
  *  1.0.26 2021-11-28T21:54Z Add Byte order checking
  *  1.0.25 2021-11-28T21:36Z Introduce in MAIKO windev branch
