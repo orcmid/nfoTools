@@ -1,4 +1,4 @@
-<!-- T060101b.md 0.2.3              UTF-8                          2023-05-31
+<!-- T060101b.md 0.2.4              UTF-8                          2023-06-03
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                         T060101: C/C++ PROGRAMMING
@@ -8,47 +8,53 @@
 
 # T060101b: [C/C++ Programming Resources](.)
 
-| ***[nfoTools](../../../)*** | [tools](../../)[>T060101](../)[>b](.) | ***[index.html](index.html) 0.2.2 2023-05-27*** |
+| ***[nfoTools](../../../)*** | [tools](../../)[>T060101](../)[>b](.) | ***[index.html](index.html) 0.2.4 2023-06-03*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | [Work-in-Progress](T060101b.txt) | ![Hard Hat Area](../../../images/hardhat-logo.gif) |
 
 These resources are suitable for anyone who has personal use of a recent
 (Windows 10 or later) desktop PC system and wants to engage in self-study
 for C/C++ Programming.  This is an useful foundation for becoming involved in
-nfoWare projects and other open-source projects targeted to the Microsoft
-Windows platform.
+commercial and open-source projects targeted to the Microsoft Windows
+platform.
 
-- [1. Books](#1books)
-- [2. Online Resources](#2onlineresources)
-  -
+An odd proclivity in books and courses is the extensive reliance on *nix
+(Unix and Linux) tools which seems to be out of balance with the overwhelming
+prevalence of Microsoft and Apple desktop personal computers.  For C Language
+and its portable application, crossing among platforms is not that difficult
+except for differences in nomenclature and operational details.  The overall principles are comparable.
+
+Reliance on freely-available Microsoft tools here is strictly a matter of
+the author's familiarity and preferences.  Focus on a single platform's
+technology is helpful in providing concrete focus.  There are no ideological
+claims.  With practice, one can adapt what is learned across technologies.
+Use what works for you.
+
+- [1. Books](#1-books)
+- [2. Online Resources](#2-online-resources)
+- [3. Courses](#3-courses)
+
 
 This is not a comprehensive selection. Some were created after a bookstore
-crawl.  The choices are based on suitability of the material for someone not
-familiar with programming and wanting to work their way into a reasonable
-working knowledge of C/C++.   This progression should be enough for
-confidently using C/C++ compilers and performing standard compilation
-procedures.
-
-I will add items from time to time as the come to my attention.
-If I have extended information to provide on how to use the material with a
-current compiler and other tips, I'll provide suitable links along with the
-references.
+crawl.  Others turn up in Internet searches.
 
 For more exotic topics, such as working with the Microsoft Component Object
 Model (COM) and building applications for the Microsoft Windows Graphical User
-Interface (GUI), cloud-based apps, etc.,  different specialized material is
-required.
+Interface (GUI), cloud-based apps, etc.,  specialized materials not covered
+here are required.  See material on [Tools](../../), [Dev](../../../dev),
+and [Skills](../../../skills) for additional coverage.
 
 ## 1. Books
 
 The amount of printed material focused specifically on C Language has
 diminished along with the popularity of C++ and more-recent
-programming-language developments.
+programming-language developments.  Some materials featuring C++ start with
+what counts as Clean C, although the C++ title gives popular emphasis.
 
 Printed books can still be found in libraries and also on sale as used books.
 The use of electronic versions other than PDF forms are not recommended.  The
-formulas and code examples are often transformed incorrectly to electronic
-editions.
+formulas and code examples have been reported to be transformed incorrectly
+in electronic editions.
 
 ### \[<a name="Harbison2002">Harbison2002</a>\] C, A Reference Manual
 
@@ -70,7 +76,7 @@ is unfortunate that no supplement for those has been undertaken.
 Kernighan, Brian W., Ritchie, Dennis M. *The C Programming Language*, Second Edition.  Prentice-Hall (Englewood Cliffs NJ: 1988) ISBN 0-13-110362-8 pbk.
 This edition updates the original 1978 publication to be entirely in "ANSI C,"
 also known as C89 ANSI X3.159-1989 and the identical C90, ISO/IEC 9899:1990.
-The full progression is captured on Wikipedia
+The full progression is captured on Wikipedia topic
 [ANSI C](https://en.wikipedia.org/wiki/ANSI_C#C89). This book, affectionately
 known as K&R, is a testament to the longevity of the C Language and how today
 Clean C is "unrecognizably different" to borrow a prediction made about the
@@ -122,104 +128,113 @@ ISBN 0-596-00436-2 pbk.  Originally published in German as "C kurz & gut"
 is easy for me to find material in.  Lately, I find myself using on-line
 materials.
 
+### \[<a name="SC22WG14N1570">SC22WG14N1570</a>\] ISO/IEC C11 Draft
+
+International Standard ISO/IEC 9899:201x Committee Draft N1570 (SC22 WG14:
+April 12, 2011). PDF available on the Internet at
+<https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf>, accessed
+2023-06-02. This is the draft for ISO Standard C11.  It is not the official
+standard.  At 701 pages, it provides an example of the complexity of the
+international standardization process and capture of so many fine details.
+Anything found here must be considered unofficial (though likely).  The
+advantage of the PDF format, in this case, is the ability to search the
+document using a standard PDF viewer.  You'll find answers aplenty to
+questions you didn't know you had.
+
 ### \[<a name="Shaw2016">Shaw2016</a>\] Learn C the Hard Way
 
 Shaw, Zed A.  *Learn C the Hard Way: Practical Exercises on the Computational
 Subjects You Keep Avoiding (Like C)*.  Addison-Wesley (New York: 2016)
 ISBN 0-321-88492-2 pbk with DVD-ROM.  I admire the emphasis on defensive
 programming and other ways to better understand what programs, and the
-programmer, are doing.  There are two aspects that give me pause.  First,
-There is C Language in use, but not with attention to the standards (other
-than dismay over the amount of unspecified behavior in those documents).
-Secondly, the focus is entirely on tools and the compilers for the *nix world,
-especially Linux. These can be worked around although I think `make` is
-introduced far too soon before the student can experience the problem that
-`make` helps solve.  In that respect, I share the attitude about debuggers
-and IDEs.
+programmer, are doing.  There are aspects that give me pause.
 
+- First,
+there is C Language in use, but not with attention to the standards (other
+than dismay over the amount of explicitly-unspecified behavior in
+specifications of those standards).
+
+- Secondly, the focus is entirely on tools and the compilers for the *nix
+world,
+especially Linux. These can be worked around.
+
+-  I think `make` is
+introduced far too soon before the student can experience the problem that
+`make` helps solve.  I do share the attitude about avoiding debuggers and IDEs
+while a beginner.
 
 ## 2. Online Resources
 
+### \[<a name="Jaeschke2022">Jaeschke2022</a>\] Portability and the C Language
 
-## C/C++ Compilers
+Jaeschke, Rex.  Portability and the C Language, ed.2. Wikibooks edition
+(January 2022).   Available on the Internet at
+<https://en.wikibooks.org/wiki/Portability_and_the_C_Language>, accessed on
+2023-06-01.  This book is entirely focused on portability considerations and
+much about how to achieve it in a given setting under particular conditions.
+As such, this is not a reference on C Language, although there is much that
+can be learned with respect to portability and where the C Language standards
+have something to say that requires understanding/consideration.  There are
+some nasty pitfalls, such as accidental use of sequences that happen to be
+recognized as trigraphs by some compilers.  There are many more identified
+here.
 
-For basic development of C and C++ Language programs, there are
-freely-available professional-level compilers that operate on current
-Microsoft Windows platforms.
+### \[<a name="Microsoft2021">Microsoft2021</a>\] C Language Reference
 
-### Microsoft® Visual C++® Toolkit 2003, version 1.01.0000, June 29, 2004.
+Microsoft Corporation.  C Language Reference.  Microsoft Learn Documentation,
+available on the Internet at
+<https://learn.microsoft.com/en-us/cpp/c-language/c-language-reference>,
+accessed on 2023-06-01.  This on-line material can also be downloaded in PDF
+format.  The description is specific to C89 as implemented by Microsoft with
+Microsoft extensions with a nod to Microsoft's support for C11 and C17.
 
-\[***Author Note: Rewrite in favor of Microsoft Build Tools***\]
+### \[<a name="Microsoft2022a">Microsoft2022a</a>\] Walkthrough: Compile a C Program on the Command Line
 
-Previously available for download at
-[MSDN](http://msdn.microsoft.com/visualc/vctoolkit2003/) (accessed 2005 March
-3), this compiler is no longer available.  It has been replaced by the Visual
-C++ 2005 Express Edition.
+Microsoft Corporation. Walkthrough: Compile a C Program on the Command Line.
+Microsoft Learn Documentation available on the Internet at
+<https://learn.microsoft.com/en-us/cpp/build/walkthrough-compile-a-c-program-on-the-command-line>,
+accessed on 2023-06-01.  This is anothere take on
+[Getting to Hello](../c) with a bit more Visual Studio lore in contrast.
 
-This is the optimizing compiler that was shipped as part of Visual Studio
-.NET 2003 Professional.  It is a command-line compiler that is also fully
-usable for study and experimentation in standard C and C++ command-line
-application development.  The compiler can also be used to build complete
-Microsoft Windows applications once additional libraries and development
-utilities are obtained.
+### \[<a name="Microsoft2022b">Microsoft2022b</a>\] C Language Documentation
 
-Although no longer available, some of the early nfoWare projects are verified
-with this compiler as well as more-recent VC++ editions.
+Microsoft Corporation.  C Language Documentation.  Microsoft Learn
+Documentation available on the Internet at
+<https://learn.microsoft.com/en-us/cpp/c-language/>, accessed on 2013-06-01.
+This is the overall coverage, including \[[Microsoft2021](#Microsoft2021)\]
+and \[[Microsoft2022a](Microsoft2022a)\].  There is extensive documentation
+of the Microsoft toolset for C Language, with corresponding material for C++.
 
-### Microsoft Visual Studio Community Edition
+## 3. Courses
 
-\[***Author Note: Rewrite in favor of VS Community Edition***\]
+For on-line courses, it is valuable to always look at the syllabus and any
+free videos that are provided with the course descriptions.
+I suggest the same for free courses as well.  It should be possible to
+determine what tools are required/featured, if any.
 
-The advantage of all of these versions is the inclusion of an integrated
-development environment and additional tools required for development of
-Microsoft Windows applications.
+### \[<a name="Nazif2022">Nazif2022</a>\] 10 Best Free C Programming Courses
 
-A key feature is inclusion of a version of the Visual Studio Integrated
-Development Environment for editing and building programs.  The tutorial and
-reference materials available with this version may make it appealing for
-usage in command-line compiling as well.
+Nazif, Elham.  10 Best Free C Programming Courses to Take in 2023.
+([Class Central](https://www.classcentral.com/): 2022-06-20),
+available on the Internet at
+<https://www.classcentral.com/report/best-free-c-programming-courses/>,
+accessed 2023-06-03.
 
-\[***Author Note: Recognize that VS 2022 can be used without the default
-approach to projects and solutions.  Something should be provided around
-that, just as for VS Code***\]
+### \[<a name="CC2023">CC2023</a>\] Free Online C Programmng Courses
 
-### GCC: GNU Compiler Collections and MingW
+[Class Central](https://www.classcentral.com/) Report, with 207 courses listed
+as of 2023-06-03.  Available on the Internet at
+<https://www.classcentral.com/subject/c-programming>.
 
-\[***Author Note: Rewrite for MingW case and that it is also used and
-encouraged with VS and VS Code, and oh yeah, WSL***\]
+### \[<a name="Udemy2023">Udemy2023</a>\] 10,000 results for "C Language"
 
-Windows versions available via
-[Gnu Project](http://gcc.gnu.org/install/binaries.html).
-These compilers are designed for operation on GNU/Linux.  Versions for Windows
-require installation of additional software for creation of a Unix-like
-environment.   Using these compilers on Windows is useful for someone
-interested in learning about and developing for the GNU/Linux environment.
-If the target for application is the Microsoft Windows platform, the Windows
-command-line environment for developing with VS Build Tools is pursued here.
-
-Those interested in compiler technology and digging farther into
-programming-language theory and compiling techniques may find taking an
-interest in GCC after becoming more adept at programming.
-
-## Editors and Development Environments
-
-\[***Author Note: Feature VS Code and lay out the levels of IDE strength ***\]
-
-For all programming projects, a text editor is required for creation and
-modification of program files, creation of batch files, and other utility
-operations involving text.  Initially, the Windows Notepad application is
-sufficient.
-
-For substantial programming work, a programming editor is recommended.
-These editors have special features that make it easier to write and modify
-programs.  Some support rapid switching between editing, compiling, and
-matching compiler error-messages to the source-program text.
-
-Integrated Development Environments provide even greater integration for an
-overall software-development process.
-
-\[***Author Note: Explain about not using Make, CMake, VS Solutions ***\]
-
+[Udemy](https://www.udemy.com/) search at
+<https://www.udemy.com/courses/search/?p=2&q=C+Language>, accessed on the
+Internet on 2023-06-03.  These are not free courses and the quality is
+highly variable.  There are
+almost always discounted offers (and the list prices are doubtful).  An
+advantage of these courses is subscriptions are perpetual and everything is
+self-paced, rather than on an academic-calendar basis.
 
 ----
 
@@ -233,6 +248,7 @@ from time to time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.2.4 2023-06-03T18:19Z First complete draft
      0.2.3 2023-05-31T22:28Z More additions and reorganization in progress
      0.2.2 2023-05-27T16:50Z Continue adjusting title anchors
      0.2.1 2023-05-27T14:47Z Experimentation with title anchors
