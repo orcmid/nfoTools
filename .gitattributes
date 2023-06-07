@@ -1,6 +1,6 @@
-# .gitattributes 0.0.1                                   UTF-8 dh:2016-10-04
+# .gitattributes 0.0.2             UTF-8                        dh:2021-02-14
 #
-#                GIT ATTRIBUTES FOR THE ADV10 GIT REPOSITORY
+#                GIT ATTRIBUTES FOR THE docEng GIT REPOSITORY
 
 # Set the default behavior in case people don't have core.autocrlf set.
 # This will automatically convert between line-ending style of the client
@@ -15,14 +15,27 @@
 # Some of these might also be .gitignored.  Better safe than sorry.
 
 *.bmp binary
+*.gif binary
 *.jpg binary
+*.jpeg binary
 *.png binary
 *.suo binary
 *.zip binary
 
-# 0.0.1 2016-10-04-11:23 Create Minimal .gitattributes
+*.odt binary
+*.ott binary
+*.ods binary
+*.ots binary
+*.odp binary
+*.otp binary
+*.odg binary
+*.otg binary
+*.odm binary
+*.odb binary
+
+# 0.0.2 2021-02-14T00:59Z Customize for docEng, with some known-binary files
+#       likely to appear in this repository
+# 0.0.1 2016-10-04-11:23 Create Minimal .gitattributes (Miser Project)
 #       The 2015-01-07 version from ShowDefs is captured just to have one
 #       in place.
 #                          *** end of .gitattributes ***
-
-
