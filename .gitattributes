@@ -1,6 +1,6 @@
-# .gitattributes 0.0.2             UTF-8                        dh:2021-02-14
+# .gitattributes 0.0.3             UTF-8                           2023-06-07
 #
-#                GIT ATTRIBUTES FOR THE docEng GIT REPOSITORY
+#             GIT ATTRIBUTES FOR THE nfoTools GIT REPOSITORY
 
 # Set the default behavior in case people don't have core.autocrlf set.
 # This will automatically convert between line-ending style of the client
@@ -22,6 +22,11 @@
 *.suo binary
 *.zip binary
 
+*.vsd binary
+*.vsdx binary
+*.vsdm binary
+*.vdx binary
+
 *.odt binary
 *.ott binary
 *.ods binary
@@ -33,6 +38,7 @@
 *.odm binary
 *.odb binary
 
+# 0.0.3 2023-06-07T23:32Z Add some binary files of drawing tools
 # 0.0.2 2021-02-14T00:59Z Customize for docEng, with some known-binary files
 #       likely to appear in this repository
 # 0.0.1 2016-10-04-11:23 Create Minimal .gitattributes (Miser Project)
