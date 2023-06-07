@@ -1,4 +1,4 @@
-T060101.txt 0.0.16                  UTF-8                          2023-05-31
+T060101.txt 0.0.17                  UTF-8                          2023-06-07
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -11,9 +11,6 @@ T060101.txt 0.0.16                  UTF-8                          2023-05-31
                        T060101: C/C++ PROGRAMMING
                        --------------------------
 
-[TB]
-
-
 MANIFEST
 
     T060101.txt  this manifest and job-jar file
@@ -22,6 +19,7 @@ MANIFEST
           a/     T060101a: nfoWare t060101a Diary & Job Jar (legacy)
           b/     T060101b: Resources
           c/     T060101c: Getting to "Hello"
+          d/     T060202d: Hello, What's Happening Here?
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
@@ -44,15 +42,13 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. T060101: C/C++ Programming.  nfoTools project text
-   file T060101.txt version 0.0.16 dated 2023-05-31, available on the
+   file T060101.txt version 0.0.17 dated 2023-06-07, available on the
    Internet as a version of
    <https://orcmid.github.io/nfoTools/tools/T060101/T060101.txt>
 
 TODO
 
  * Demonstrate the edit, save, compile, test, rinse-repeat
-
- * Deal with operation as part of Developer Command Prompt
 
  * Watch FC_CPP Course videos and ensure that supporting materials are
    appearing here on nfoTools/docs.  Also related to the new devkits here and
@@ -144,13 +140,14 @@ TODO
 
  * Find better courses.
 
- * Find more-current books.
-
  * READING CODE, RUNNING CODE.  This is the experiemental and practical
    art aspect of Computer Science.
 
+ * Fix index.md to have "Work in Progress" link
+
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.17 2023-06-07T19:54Z Introduct T060101d
  0.0.16 2023-05-31T20:13Z Distribute TODOs to T060101b
  0.0.15 2023-05-20T23:42Z Morph folio structure
  0.0.14 2023-05-20T19:01Z Prepare for folio restructuring, more notes
