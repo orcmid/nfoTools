@@ -1,4 +1,4 @@
-T060101c.txt 0.1.1                  UTF-8                         2023-06-06
+T060101c.txt 0.1.2                  UTF-8                         2023-06-08
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -57,7 +57,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. T060101c: Getting to "Hello."  nfoTools project text
-   file T060101c.txt version 0.1.1 dated 2023-06-06, available on the
+   file T060101c.txt version 0.1.2 dated 2023-06-08, available on the
    Internet as a version of
    <https://orcmid.github.io/nfoTools/tools/T060101/c/T060101c.txt>
 
@@ -66,7 +66,7 @@ TODO
  * We will summarize what is important.  We can also take apart the CL.exe
    compilation at some point, with headers, preprocessor, creation of *.obj,
    selection of libraries, and linking to make the *.exe.  This might be best
-   at Build Tools though.
+   at Build Tools though.  This is being handled in T060101d as an intro.
 
  * There will be placeholders, sketches in other tool folders to support this
    back and forth.
@@ -78,31 +78,23 @@ TODO
     - More about Visual Studio Build Tools and how employed (e.g., in
       construction sets)
 
- * Fix typo in 5.6 parotting of the dir command
-
  * Link 2 and 6.1 to place where organizing File Explorer for development is
    spelled out.
 
  * Link 6.1 and 6.2 to how command-prompt shortcuts and customizations are
    done.
 
- * Touch-up 6.2.  Also, see how to add setting of the PROMPT using ASCII
-   Terminal VT modes.  I.e., "PROMPT $E[30m$P$G$E[0m" setting the prompt to
-   Black so it stands out.  I need to figure out how to do that as part of
-   the Developer Command Prompt initiation.
-
  * I need to figure out some accessibility around this business with regard
    to color and also general vision.
 
  * In 6.3 add "Hint" about exiting VS Code before the session exit can be
-   done.  VERIFY THIS.
+   done.  VERIFY THIS. - No, don't do that here.
 
- * In 6.3 point out that the use of color and highlighting is customizable.
-
- * In the 6.3 list of what is not provoked, fix the #include term.
+ * Update again when there are more sources to cross-reference.
 
   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.1.2 2023-06-08T20:01Z Manage TODOs, upgrade index.md to 0.1.1.
  0.1.1 2023-06-06T15:21Z Manage TODOs and Verify PROMPT ASCII works
  0.1.0 2023-06-02T17:27Z Proof-reading at the beta-release level
  0.0.9 2023-06-01T21:39Z Expand the manifest, touch-up TODOs

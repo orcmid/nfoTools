@@ -1,4 +1,4 @@
-<!-- index.md 0.2.10                UTF-8                          2023-06-03
+<!-- index.md 0.2.11                UTF-8                          2023-06-08
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                          T060101: C/C++ PROGRAMMING
@@ -6,9 +6,9 @@
 
 # T060101: [C/C++ Programming](.)
 
-| ***[nfoTools](../../)*** | [tools](../)[>t060101](.) | ***[index.html](index.html) 0.2.9 2023-06-01*** |
+| ***[nfoTools](../../)*** | [tools](../)[>t060101](.) | ***[index.html](index.html) 0.2.11 2023-06-08*** |
 | :--                |       :-:          | --: |
-| ![nfotools](../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | C/C++ Programming | ![Hard Hat Area](../../images/hardhat-logo.gif) |
+| ![nfotools](../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | [Work in Progress](T60101.txt) | ![Hard Hat Area](../../images/hardhat-logo.gif) |
 
 The purpose of this material is establishing an on-ramp and guard rails for
 exploration and use of the C Language in development and maintenance of
@@ -71,7 +71,7 @@ point.
 
 | **ID** | **Started** | **Status** | **Topic** |
 |   :-:   |   :-:   |  :-:   |  ---  |
-| [T060101c](c/) | 2021-11-25 | 0.1.0 2023-06-01 | Getting to "Hello" |
+| [T060101c](c/) | 2021-11-25 | 0.1.1 2023-06-08 | Getting to "Hello" |
 | [T060101b](b/) | 2006-05-20 | 0.2.4 2023-06-03 | C/C++ Resources |
 |                           |            |                   |           |
 | [T060101a](a/) | 2005-09-08 | 0.2.0 2023-05-20 | Legacy Diary & Job Jar |
@@ -147,6 +147,7 @@ from time to time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.2.11 2023-06-08T20:04Z T060101c
      0.2.10 2023-06-03T18:41Z T060101b-c
      0.2.9 2023-06-01T17:15Z Emphasize Clean C more
      0.2.8 2023-05-28T23:59Z T060101c
