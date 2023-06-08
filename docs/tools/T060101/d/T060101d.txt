@@ -1,4 +1,4 @@
-T060101.txt 0.0.0                   UTF-8                          2023-06-07
+T060101.txt 0.0.1                   UTF-8                          2023-06-08
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -16,7 +16,14 @@ MANIFEST
    T060101d.txt  this manifest and job-jar file
       index.md   front porch published as orcmid.github.io/nfoTools/T060101/
 
+   T060101d1-2023-06-07-1501-CL-Hello.vsdx
+                 Visio diagram of the top-level CL Hello comilation
+   T060101d1-2023-06-07-1525-CL-Hello.png
+                 Visio diagram saved as magnified PNG for good display
 
+   T060101d1-Compiling-SalvageFile.vsdx
+                 Interim file used for salvaging components from an older
+                 diagram.
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
@@ -39,7 +46,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. T060101d: Hello, What's Happening Here?  nfoTools
-   project text file T060101d.txt version 0.0. dated 2023-06-07, available
+   project text file T060101d.txt version 0.0.1 dated 2023-06-08, available
    on the Internet as a version of
    <https://orcmid.github.io/nfoTools/tools/T060101/d/T060101d.txt>
 
@@ -52,6 +59,7 @@ TODO
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.1  2023-06-08T20:14Z Introduce initial top=level diagram
  0.0.0  2023-06-07T19:28Z Placeholder with 0.0.17 T060101.txt boilerplate
 
 
