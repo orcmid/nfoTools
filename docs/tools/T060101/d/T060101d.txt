@@ -1,4 +1,4 @@
-T060101.txt 0.0.2                   UTF-8                          2023-06-11
+T060101.txt 0.0.3                   UTF-8                          2023-06-11
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -21,6 +21,10 @@ MANIFEST
    T060101d1-2023-06-11-0919-CL-Hello.png
                  Visio diagram saved as magnified PNG to 144x144 for good
                  display
+   T060101d2-2023-06-11-1545-Compile+Link.vsdx
+                 Visio diagrammatic depiction of compiling + linking
+   T060101d2-2023-06-11-1545-Compile+Link.png
+                 Web formatted 144x144 resolution PNG of the diagram
 
    T060101d1-Compiling-SalvageFile.vsdx
                  Interim file used for salvaging components from an older
@@ -47,7 +51,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. T060101d: Hello, What's Happening Here?  nfoTools
-   project text file T060101d.txt version 0.0.2 dated 2023-06-11, available
+   project text file T060101d.txt version 0.0.3 dated 2023-06-11, available
    on the Internet as a version of
    <https://orcmid.github.io/nfoTools/tools/T060101/d/T060101d.txt>
 
@@ -61,8 +65,12 @@ TODO
  * Ensure a good treatment of this case in T060501, T211002 (Build Tools) and
    T211001 (VS Code), maybe.
 
+ * There will need to be better links to authoritative information on what
+   this is all about.
+
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.3  2023-06-11T23:06Z Add Compile+Link diagram
  0.0.2  2023-06-11T16:53Z Manage TODOs, update Manifest
  0.0.1  2023-06-08T20:14Z Introduce initial top=level diagram
  0.0.0  2023-06-07T19:28Z Placeholder with 0.0.17 T060101.txt boilerplate
