@@ -58,11 +58,11 @@ Later, there will be ways to have operation be accomplished more smoothly.
 
 The Build Tools program, `CL` operates as a precision multi-tool.  It has many
 options and stages of operation.  A fundamental pattern is separation of
-compiling into two stages, one of compiling from source code followrf by one
+compiling into two stages, one of compiling from source code followed by one
 that links modules of code from many sources into a single executable, such as
 `hello.exe`.
 
-![Compile+Link](T060101d2-2023-06-22-1545-Compile+Link.png)
+![Compile+Link](T060101d2-2023-06-11-1545-Compile+Link.png)
 
 ---
 
