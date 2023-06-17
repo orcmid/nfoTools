@@ -1,4 +1,4 @@
-<!-- T060101b.md 0.2.4              UTF-8                          2023-06-03
+<!-- T060101b.md 0.2.5              UTF-8                          2023-06-17
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                         T060101: C/C++ PROGRAMMING
@@ -8,7 +8,7 @@
 
 # T060101b: [C/C++ Programming Resources](.)
 
-| ***[nfoTools](../../../)*** | [tools](../../)[>T060101](../)[>b](.) | ***[index.html](index.html) 0.2.4 2023-06-03*** |
+| ***[nfoTools](../../../)*** | [tools](../../)[>T060101](../)[>b](.) | ***[index.html](index.html) 0.2.5 2023-06-17*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | [Work-in-Progress](T060101b.txt) | ![Hard Hat Area](../../../images/hardhat-logo.gif) |
 
@@ -49,7 +49,7 @@ and [Skills](../../../skills) for additional coverage.
 The amount of printed material focused specifically on C Language has
 diminished along with the popularity of C++ and more-recent
 programming-language developments.  Some materials featuring C++ start with
-what counts as Clean C, although the C++ title gives popular emphasis.
+what counts as Clean C, but appealing to the popular interest in C++.
 
 Printed books can still be found in libraries and also on sale as used books.
 The use of electronic versions other than PDF forms are not recommended.  The
@@ -69,7 +69,8 @@ introduces and emphasizes Clean C for the quality it encourages and also for
 its consistency with C++.  The International Standard for C Language has
 continued to be updated, and compilers might also support the 2011 (C11) and
 2017 (C17) updates even as developers cling to C99 as the gold standard.  It
-is unfortunate that no supplement for those has been undertaken.
+is unfortunate that no supplement for those has been undertaken for C11 and
+beyond.
 
 ### \[<a name=Kernighan1988>Kernighan1988</a>\] The C Programming Language
 
@@ -114,7 +115,7 @@ NJ: 2014).  A [Developer's Library](https://informit.com/devlibrary)
 reference.  ISBN 978-0-321-77640-2.  This extensive book is current with the
 ISO C11 Standard.  At over 1000 pages, this is a leisurely and extensive tour
 of C Language with numerous examples.  There are exercises with
- back-of-the-book examples.  There is no explicit attention to Clean C,
+ back-of-the-book solutions.  There is no explicit attention to Clean C,
  although good practices are recommended and appied.  Appendix B is a 100 page
  Reference Section with an useful account of the language, the libraries,
  and coverage of the C99 and C11 enhancements.
@@ -128,37 +129,24 @@ ISBN 0-596-00436-2 pbk.  Originally published in German as "C kurz & gut"
 is easy for me to find material in.  Lately, I find myself using on-line
 materials.
 
-### \[<a name="SC22WG14N1570">SC22WG14N1570</a>\] ISO/IEC C11 Draft
-
-International Standard ISO/IEC 9899:201x Committee Draft N1570 (SC22 WG14:
-April 12, 2011). PDF available on the Internet at
-<https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf>, accessed
-2023-06-02. This is the draft for ISO Standard C11.  It is not the official
-standard.  At 701 pages, it provides an example of the complexity of the
-international standardization process and capture of so many fine details.
-Anything found here must be considered unofficial (though likely).  The
-advantage of the PDF format, in this case, is the ability to search the
-document using a standard PDF viewer.  You'll find answers aplenty to
-questions you didn't know you had.
-
 ### \[<a name="Shaw2016">Shaw2016</a>\] Learn C the Hard Way
 
 Shaw, Zed A.  *Learn C the Hard Way: Practical Exercises on the Computational
 Subjects You Keep Avoiding (Like C)*.  Addison-Wesley (New York: 2016)
 ISBN 0-321-88492-2 pbk with DVD-ROM.  I admire the emphasis on defensive
 programming and other ways to better understand what programs, and the
-programmer, are doing.  There are aspects that give me pause.
+programmer, are doing.  There also are aspects that give me pause.
 
 - First,
-there is C Language in use, but not with attention to the standards (other
+there is C Language in use, but not with attention to the standards other
 than dismay over the amount of explicitly-unspecified behavior in
-specifications of those standards).
+specifications of those standards.
 
 - Secondly, the focus is entirely on tools and the compilers for the *nix
 world,
 especially Linux. These can be worked around.
 
--  I think `make` is
+- I think `make` is
 introduced far too soon before the student can experience the problem that
 `make` helps solve.  I do share the attitude about avoiding debuggers and IDEs
 while a beginner.
@@ -167,7 +155,7 @@ while a beginner.
 
 ### \[<a name="Jaeschke2022">Jaeschke2022</a>\] Portability and the C Language
 
-Jaeschke, Rex.  Portability and the C Language, ed.2. Wikibooks edition
+Jaeschke, Rex.  *Portability and the C Language*, ed.2. Wikibooks edition
 (January 2022).   Available on the Internet at
 <https://en.wikibooks.org/wiki/Portability_and_the_C_Language>, accessed on
 2023-06-01.  This book is entirely focused on portability considerations and
@@ -186,7 +174,7 @@ available on the Internet at
 <https://learn.microsoft.com/en-us/cpp/c-language/c-language-reference>,
 accessed on 2023-06-01.  This on-line material can also be downloaded in PDF
 format.  The description is specific to C89 as implemented by Microsoft with
-Microsoft extensions with a nod to Microsoft's support for C11 and C17.
+Microsoft extensions and with a nod to Microsoft's support for C11 and C17.
 
 ### \[<a name="Microsoft2022a">Microsoft2022a</a>\] Walkthrough: Compile a C Program on the Command Line
 
@@ -203,14 +191,27 @@ Documentation available on the Internet at
 <https://learn.microsoft.com/en-us/cpp/c-language/>, accessed on 2013-06-01.
 This is the overall coverage, including \[[Microsoft2021](#Microsoft2021)\]
 and \[[Microsoft2022a](Microsoft2022a)\].  There is extensive documentation
-of the Microsoft toolset for C Language, with corresponding material for C++.
+of the Microsoft toolset for C Language.
+
+### \[<a name="SC22N1570">SC23N1570</a>\] ISO/IEC C11 Draft
+
+International Standard ISO/IEC 9899:201x Committee Draft N1570 (SC22 WG14:
+April 12, 2011). PDF available on the Internet at
+<https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf>, accessed
+2023-06-02. This is the final draft for ISO Standard C11.  It is not the
+authoritative version of the standard.  At 701 pages, it exemplifies the
+complexity of the International Standards process and capture of so many fine
+details.  Anything found here must be considered unofficial (though likely).
+The advantage of the PDF format, in this case, is the ability to search the
+document using a standard PDF viewer.  You'll find answers aplenty to
+questions you didn't know you had.
 
 ## 3. Courses
 
 For on-line courses, it is valuable to always look at the syllabus and any
 free videos that are provided with the course descriptions.
-I suggest the same for free courses as well.  It should be possible to
-determine what tools are required/featured, if any.
+I suggest this for free courses and paid courses as well.  It should be
+possible to determine in advance what tools are required/featured, if any.
 
 ### \[<a name="Nazif2022">Nazif2022</a>\] 10 Best Free C Programming Courses
 
@@ -220,7 +221,7 @@ available on the Internet at
 <https://www.classcentral.com/report/best-free-c-programming-courses/>,
 accessed 2023-06-03.
 
-### \[<a name="CC2023">CC2023</a>\] Free Online C Programmng Courses
+### \[<a name="CC2023">CC2023</a>\] Free Online C Programming Courses
 
 [Class Central](https://www.classcentral.com/) Report, with 207 courses listed
 as of 2023-06-03.  Available on the Internet at
@@ -234,9 +235,50 @@ Internet on 2023-06-03.  These are not free courses and the quality is
 highly variable.  There are
 almost always discounted offers (and the list prices are doubtful).  An
 advantage of these courses is subscriptions are perpetual and everything is
-self-paced, rather than on an academic-calendar basis.
+self-paced, rather than on an academic-calendar basis. There's also no
+distinction between auditing and not.
 
-----
+## 4. Algorithms and Computer Science
+
+### \[<a name="Knuth1997">Knuth1997</a>\] The Art of Computer Programming, Volume 1: Fundamental Algorithms
+
+Knuth, Donald E. *The Art of Computer Programming, vol.1: Fundamental
+Algorithms*. ed.3.  Addison Wesley Longman (Reading, MA: 1968, 1973, 1997).
+ISBN 0-201-89683-4.
+When I was a freshman science major, the two volumes on calculus by Richard
+Courant were the must-have texts, although they weren't books used as the
+calculus class texts.  To some degree, the subsequent emergence of Computer
+Science had the Knuth volumes (now at vol.4A) in *The Art of Computer
+Programming* (a.k.a *TAoCP*) as must-haves and they were used as texts for a
+time.  I once asked why these, and especially this vol.1, were no longer used
+as the texts for courses any longer and I was told it was too
+difficult to teach from.  I continue to recommend these and other KnuthBooks.
+For beginners, keep in mind that this is a foundation volume of a larger
+sequence and some of the "preliminaries" here may be mathematically
+challenging.  It's not necessary to master all of that.  There are only two
+chapters in this book and the important sections for getting started are
+1.1 Algorithms, 1.2 Mathematical Preliminaries only enough to be familiar
+with what the understandable coverages are, and 1.3 MIX to understand the
+typical structure of computers via an easily-understood fictitious machine.
+Chapter 2, Information Structures, and subsequent volumes can be taken as
+references.  The developed algorithms are useful and independent of particular
+programming languages.  The Knuth formulations of algorithms are nicely
+adaptable to C Language implementations and are great resources for that
+purpose.
+
+### \[<a name="Knuth1998">Knuth1998</a>\] The Art of Computer Programming, Volume 2: Seminumerical Algorithms
+
+Knuth, Donald E.  *The Art of Computer Programming, vol.2: Seminumerical
+Algorithms*.  ed.3.  Addision Wesley Longman (Reading MA: 1973, 1998).  ISBN
+0-201-89685-0.
+This volume of *TAoCP* has two chapters: 3. Random Numbers and 4. Arithmetic.
+It will be applicable to understanding computer arithmetic and much more. Of
+great value is how one determines/confirms that a program-generated number
+might be "random" and how computer arithmetics are understandable and their
+limitations understood, an important concern for programming and also for
+understanding of the limitation of results in the use of computer software.
+
+---
 
 Discussion about nfoTools is welcome at the
 [Discussion section](https://github.com/orcmid/nfoTools/discussions).
@@ -248,6 +290,7 @@ from time to time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.2.5 2023-06-17T21:14Z Touch-ups, adding Section 4
      0.2.4 2023-06-03T18:19Z First complete draft
      0.2.3 2023-05-31T22:28Z More additions and reorganization in progress
      0.2.2 2023-05-27T16:50Z Continue adjusting title anchors
