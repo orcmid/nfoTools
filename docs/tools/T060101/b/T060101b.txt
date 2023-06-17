@@ -83,10 +83,18 @@ TODO
 
   * Include a section on learning other languages.
 
+  * I need to include materials on algorithms as well.  And point out that
+    a higher notion of algorithm is preferable, with it being convenient in
+    many cases to implement them in a working programming language.
+
+  * I wonder if I need to do something about the references and citations in
+    Orcmid's Lair Readings.  At the moment, GitHub seems more durable than
+    orcmid.com.
+
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
- 0.0.4 2023-06-17T16:02Z  More TODOs
+ 0.0.4 2023-06-17T16:33Z  More TODOs
  0.0.3 2023-06-03T18:37Z  Clean up TODOs with the Complete First Draft done.
  0.0.2 2023-05-31T20:12Z  Gather topics for action here
  0.0.1 2023-05-27T14:44Z  Experimenting with anchors in titles
