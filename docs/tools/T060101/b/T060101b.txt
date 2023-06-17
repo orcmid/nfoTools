@@ -1,4 +1,4 @@
-T060101b.txt 0.0.3                  UTF-8                         2023-06-03
+T060101b.txt 0.0.4                  UTF-8                         2023-06-17
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -41,7 +41,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. T060101b: Resources, nfoTools project text
-   file T060101b.txt version 0.0.3 dated 2023-06-03, available on the
+   file T060101b.txt version 0.0.4 dated 2023-06-17, available on the
    Internet as a version of
    <https://orcmid.github.io/nfoTools/tools/T060101/b/T060101b.txt>
 
@@ -69,11 +69,24 @@ TODO
     comments are still required.  This also came up on ResearchGate with
     respect to mechanized proofs and their checking.
 
- * https://web.archive.org/web/20150118141700/http://www.acm.uiuc.edu/webmonkeys/book/c_guide/index.html
-   for an interesting library reference as of 1997.
+  * https://web.archive.org/web/20150118141700/http://www.acm.uiuc.edu/webmonkeys/book/c_guide/index.html
+    for an interesting library reference as of 1997.
+
+  * Include TAoCP volumes 1-2 at least.  Or have these elsewhere but cite them
+   here?
+
+  * Include Knuth books on other things, such as Fun & Games, hat may also be
+    instructive.
+
+  * Include a section on lessons, maybe a different section on examples to
+    learn from.
+
+  * Include a section on learning other languages.
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+
+ 0.0.4 2023-06-17T16:02Z  More TODOs
  0.0.3 2023-06-03T18:37Z  Clean up TODOs with the Complete First Draft done.
  0.0.2 2023-05-31T20:12Z  Gather topics for action here
  0.0.1 2023-05-27T14:44Z  Experimenting with anchors in titles
