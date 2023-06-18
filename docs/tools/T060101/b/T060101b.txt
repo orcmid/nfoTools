@@ -1,4 +1,4 @@
-T060101b.txt 0.0.4                  UTF-8                         2023-06-17
+T060101b.txt 0.0.5                  UTF-8                         2023-06-18
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -9,9 +9,6 @@ T060101b.txt 0.0.4                  UTF-8                         2023-06-17
 
                           T060101b: RESOURCES
                           -------------------
-
-[TB]
-
 
 MANIFEST
 
@@ -41,7 +38,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. T060101b: Resources, nfoTools project text
-   file T060101b.txt version 0.0.4 dated 2023-06-17, available on the
+   file T060101b.txt version 0.0.5 dated 2023-06-18, available on the
    Internet as a version of
    <https://orcmid.github.io/nfoTools/tools/T060101/b/T060101b.txt>
 
@@ -72,8 +69,13 @@ TODO
   * https://web.archive.org/web/20150118141700/http://www.acm.uiuc.edu/webmonkeys/book/c_guide/index.html
     for an interesting library reference as of 1997.
 
-  * Include TAoCP volumes 1-2 at least.  Or have these elsewhere but cite them
-   here?
+  * Explain the interdependence of programming and software engineering and
+    Computer Science.
+
+  * Identify [Knuth2005] Facsicle 1 and explain how it is better than section
+    1.3 and 1.4 of [Knuth1997].
+
+  * Link to Knuth's web pages for other information.
 
   * Include Knuth books on other things, such as Fun & Games, hat may also be
     instructive.
@@ -91,9 +93,13 @@ TODO
     Orcmid's Lair Readings.  At the moment, GitHub seems more durable than
     orcmid.com.
 
+  * <http://www.lysator.liu.se/c/> is a "Programming in C" web page with many
+    historical links, even to some standards documents. Not all links are
+    fresh, so these should be gone through carefully.
+
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-
+ 0.0.5 2023-06-18T16:22Z  More TODOs
  0.0.4 2023-06-17T16:33Z  More TODOs
  0.0.3 2023-06-03T18:37Z  Clean up TODOs with the Complete First Draft done.
  0.0.2 2023-05-31T20:12Z  Gather topics for action here
