@@ -1,4 +1,4 @@
-T060101b.txt 0.0.5                  UTF-8                         2023-06-18
+T060101b.txt 0.0.6                  UTF-8                         2023-06-18
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -72,11 +72,6 @@ TODO
   * Explain the interdependence of programming and software engineering and
     Computer Science.
 
-  * Identify [Knuth2005] Facsicle 1 and explain how it is better than section
-    1.3 and 1.4 of [Knuth1997].
-
-  * Link to Knuth's web pages for other information.
-
   * Include Knuth books on other things, such as Fun & Games, hat may also be
     instructive.
 
@@ -93,12 +88,9 @@ TODO
     Orcmid's Lair Readings.  At the moment, GitHub seems more durable than
     orcmid.com.
 
-  * <http://www.lysator.liu.se/c/> is a "Programming in C" web page with many
-    historical links, even to some standards documents. Not all links are
-    fresh, so these should be gone through carefully.
-
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.6 2023-06-18T17:50Z  More TODOs
  0.0.5 2023-06-18T16:22Z  More TODOs
  0.0.4 2023-06-17T16:33Z  More TODOs
  0.0.3 2023-06-03T18:37Z  Clean up TODOs with the Complete First Draft done.

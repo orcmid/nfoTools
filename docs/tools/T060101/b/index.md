@@ -1,4 +1,4 @@
-<!-- T060101b.md 0.2.5              UTF-8                          2023-06-17
+<!-- T060101b.md 0.2.6              UTF-8                          2023-06-18
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                         T060101: C/C++ PROGRAMMING
@@ -8,7 +8,7 @@
 
 # T060101b: [C/C++ Programming Resources](.)
 
-| ***[nfoTools](../../../)*** | [tools](../../)[>T060101](../)[>b](.) | ***[index.html](index.html) 0.2.5 2023-06-17*** |
+| ***[nfoTools](../../../)*** | [tools](../../)[>T060101](../)[>b](.) | ***[index.html](index.html) 0.2.6 2023-06-18*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | [Work-in-Progress](T060101b.txt) | ![Hard Hat Area](../../../images/hardhat-logo.gif) |
 
@@ -33,6 +33,7 @@ Use what works for you.
 - [1. Books](#1-books)
 - [2. Online Resources](#2-online-resources)
 - [3. Courses](#3-courses)
+- [4. Algorithms and Computer Science](#4-algorithms-and-computer-science)
 
 
 This is not a comprehensive selection. Some were created after a bookstore
@@ -69,7 +70,7 @@ introduces and emphasizes Clean C for the quality it encourages and also for
 its consistency with C++.  The International Standard for C Language has
 continued to be updated, and compilers might also support the 2011 (C11) and
 2017 (C17) updates even as developers cling to C99 as the gold standard.  It
-is unfortunate that no supplement for those has been undertaken for C11 and
+is unfortunate that no supplement has been undertaken to address C11 and
 beyond.
 
 ### \[<a name=Kernighan1988>Kernighan1988</a>\] The C Programming Language
@@ -167,6 +168,14 @@ some nasty pitfalls, such as accidental use of sequences that happen to be
 recognized as trigraphs by some compilers.  There are many more identified
 here.
 
+### \[<a name="Lysator1999">Lysator1999</a>\] Programming in C
+
+Lysator.  Programming in C. Lysator Academic Computer Association, (Linköping
+University, Sweden: 1999 October 9).  Web page available on the Internet at
+<http://www.lysator.liu.se/c/> accessed on 2023-06-18.  This is an extensive
+compilation to web resources on C Language standards, programming, and the
+culture around it.
+
 ### \[<a name="Microsoft2021">Microsoft2021</a>\] C Language Reference
 
 Microsoft Corporation.  C Language Reference.  Microsoft Learn Documentation,
@@ -193,7 +202,7 @@ This is the overall coverage, including \[[Microsoft2021](#Microsoft2021)\]
 and \[[Microsoft2022a](Microsoft2022a)\].  There is extensive documentation
 of the Microsoft toolset for C Language.
 
-### \[<a name="SC22N1570">SC23N1570</a>\] ISO/IEC C11 Draft
+### \[<a name="SC22N1570">SC22N1570</a>\] ISO/IEC C11 Draft
 
 International Standard ISO/IEC 9899:201x Committee Draft N1570 (SC22 WG14:
 April 12, 2011). PDF available on the Internet at
@@ -240,6 +249,15 @@ distinction between auditing and not.
 
 ## 4. Algorithms and Computer Science
 
+Computer programs are not algorithms and computer programming is not, of
+itself, the essence of Computer Science or even Software Engineering. Yet
+neither field would exist in their modern form in the absence of computer
+programs and their programming.  That span is exhibited in a material way
+in the career and works of Donald Knuth.  Entry points are cited here as an
+available foundation with much about algorithms and programming based on them.
+For digging deeper and finding even greater variety of topics, consult
+<https://www-cs-faculty.stanford.edu/~knuth>.
+
 ### \[<a name="Knuth1997">Knuth1997</a>\] The Art of Computer Programming, Volume 1: Fundamental Algorithms
 
 Knuth, Donald E. *The Art of Computer Programming, vol.1: Fundamental
@@ -248,10 +266,10 @@ ISBN 0-201-89683-4.
 When I was a freshman science major, the two volumes on calculus by Richard
 Courant were the must-have texts, although they weren't books used as the
 calculus class texts.  To some degree, the subsequent emergence of Computer
-Science had the Knuth volumes (now at vol.4A) in *The Art of Computer
+Science had the Knuth volumes (now at vol.4B) in *The Art of Computer
 Programming* (a.k.a *TAoCP*) as must-haves and they were used as texts for a
-time.  I once asked why these, and especially this vol.1, were no longer used
-as the texts for courses any longer and I was told it was too
+time.  I once asked a computer scientist why these, and especially this vol.1,
+were no longer used as the texts for courses any longer; I was told it was too
 difficult to teach from.  I continue to recommend these and other KnuthBooks.
 For beginners, keep in mind that this is a foundation volume of a larger
 sequence and some of the "preliminaries" here may be mathematically
@@ -264,7 +282,9 @@ Chapter 2, Information Structures, and subsequent volumes can be taken as
 references.  The developed algorithms are useful and independent of particular
 programming languages.  The Knuth formulations of algorithms are nicely
 adaptable to C Language implementations and are great resources for that
-purpose.
+purpose.  MIX is now considered to be a little too simple, and some important
+advances in the principles of computer operation are addressed by an update
+contemplated with the exemplary-machine MMIX \[[Knuth2005](#Knuth2005)\].
 
 ### \[<a name="Knuth1998">Knuth1998</a>\] The Art of Computer Programming, Volume 2: Seminumerical Algorithms
 
@@ -278,6 +298,22 @@ might be "random" and how computer arithmetics are understandable and their
 limitations understood, an important concern for programming and also for
 understanding of the limitation of results in the use of computer software.
 
+### \[<a name="Knuth2005">Knuth2005</a>\] The Art of Computer Programming, Volume 1, Fascicle 1: MMIX
+
+Knuth, Donald E. *The Art of Computer Programming, vol.1, fascicle 1: MMIX a RISC Computer for the New Millennium*. ed.1. Addision Wesley Longman (Reading
+MA: 2005).  ISBN 0-201-85392-2 pbk.
+This supplement to [*TAoCP* vol.1](#Knuth1997) provides replacement sections
+1.3' and 1.4' (MMIX and Some Fundamental Programming Techniques) as part of an
+intended upgrading of computer architecture and programming techniques that
+reflect important changes since *TAoCP* effort commenced in 1962.  A
+significant change is how calling into, and returning from, subroutines is
+no longer accomplished by modification of the running code.  There is far more
+use of registers and pointers nowadays; MMIX reflects that.  At the same time,
+MMIX *feels* much more complicated.  For an initial understanding of
+machine-language (i.e., assembler language) programming and the underlying
+data and code structures, sections 1.3-1.4 of \[[Knuth1997](#Knuth1997)\] may
+be simpler as a starter where available.  Tackle MMIX a bit later later.
+
 ---
 
 Discussion about nfoTools is welcome at the
@@ -290,6 +326,7 @@ from time to time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.2.6 2023-06-18T17:48Z More for Touch-ups, Section 4
      0.2.5 2023-06-17T21:14Z Touch-ups, adding Section 4
      0.2.4 2023-06-03T18:19Z First complete draft
      0.2.3 2023-05-31T22:28Z More additions and reorganization in progress
