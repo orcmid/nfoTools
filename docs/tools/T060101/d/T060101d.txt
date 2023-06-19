@@ -1,4 +1,4 @@
-T060101.txt 0.0.4                   UTF-8                          2023-06-17
+T060101.txt 0.0.5                   UTF-8                          2023-06-19
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -51,7 +51,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. T060101d: Hello, What's Happening Here?  nfoTools
-   project text file T060101d.txt version 0.0.4 dated 2023-06-17, available
+   project text file T060101d.txt version 0.0.5 dated 2023-06-19, available
    on the Internet as a version of
    <https://orcmid.github.io/nfoTools/tools/T060101/d/T060101d.txt>
 
@@ -79,8 +79,30 @@ TODO
    necessary to swallow all of Chapter 1.  Start with 1.3 MIX for a general
    understanding of what organizing code and data in computer memor is about.
 
+ * A good reference on Computer Science that describes computer architecture
+   might be better.  Although I found some bad ones on-line, such as quibbling
+   about the Von Neumann architecture.  There is a decent account of the
+   bottleneck and how it is mitigated though.
+
+ * I need a way to explain that includes of header files from the standard
+   libraries does not so much include code (definitions) as identify how the
+   code is to be referenced (declarations).  The example with regard to
+   stdio.h and fputs() declaration and maybe stdout definition.  Although
+   stdout is actually a function call that returns a FILE*, so this could be
+   done simpler.  Maybe need to speak in terms of references as well.
+
+ * I need to explain the compile step a little more.
+
+ * I need to explain the *.obj perhaps a little better.
+
+ * I then need to deal with the idea of the exe as being loadable in the
+   machine perhaps shared with other things in a (virtual) memory.  I am
+   not certain how that works in a modern x64 computer, but I don't want to
+   cause any deep-ending about that.
+
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.5  2023-06-19T16:34Z More TODOs
  0.0.4  2023-06-17T16:28Z TODOs on dealing with computer memory and TAoCP
  0.0.3  2023-06-11T23:06Z Add Compile+Link diagram
  0.0.2  2023-06-11T16:53Z Manage TODOs, update Manifest
