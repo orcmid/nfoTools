@@ -1,4 +1,4 @@
-<!-- T060101b.md 0.2.6              UTF-8                          2023-06-18
+<!-- T060101b.md 0.2.7              UTF-8                          2023-06-20
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                         T060101: C/C++ PROGRAMMING
@@ -8,7 +8,7 @@
 
 # T060101b: [C/C++ Programming Resources](.)
 
-| ***[nfoTools](../../../)*** | [tools](../../)[>T060101](../)[>b](.) | ***[index.html](index.html) 0.2.6 2023-06-18*** |
+| ***[nfoTools](../../../)*** | [tools](../../)[>T060101](../)[>b](.) | ***[index.html](index.html) 0.2.7 2023-06-20*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | [Work-in-Progress](T060101b.txt) | ![Hard Hat Area](../../../images/hardhat-logo.gif) |
 
@@ -314,6 +314,16 @@ machine-language (i.e., assembler language) programming and the underlying
 data and code structures, sections 1.3-1.4 of \[[Knuth1997](#Knuth1997)\] may
 be simpler as a starter where available.  Tackle MMIX a bit later later.
 
+### \[<a name="Petzold2000">Petzold2000</a>\] Code
+
+Petzold, Charles. *Code: The Hidden Language of Computer Hardware and
+Software*.  Microsoft Press (Redmond, WA: 2000).  ISBN 0-7356-1131-9 pbk.
+This book starts with a leisurely and understandable progression from the
+wasy code is known apart from computing through the ways that we got to the
+computer chips that are increasingly powerful.  This book is not about
+programming.  It does get to the underpinnings from which programmable
+computers and programs for them arise.  It is often eye-opening to explore.
+
 ---
 
 Discussion about nfoTools is welcome at the
@@ -326,6 +336,7 @@ from time to time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.2.7 2023-06-20T20:03Z Add [Petzold2000]
      0.2.6 2023-06-18T17:48Z More for Touch-ups, Section 4
      0.2.5 2023-06-17T21:14Z Touch-ups, adding Section 4
      0.2.4 2023-06-03T18:19Z First complete draft
