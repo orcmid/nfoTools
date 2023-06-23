@@ -1,4 +1,4 @@
-T060101b.txt 0.0.6                  UTF-8                         2023-06-18
+T060101b.txt 0.0.8                  UTF-8                         2023-06-23
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -38,7 +38,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. T060101b: Resources, nfoTools project text
-   file T060101b.txt version 0.0.5 dated 2023-06-18, available on the
+   file T060101b.txt version 0.0.8 dated 2023-06-23, available on the
    Internet as a version of
    <https://orcmid.github.io/nfoTools/tools/T060101/b/T060101b.txt>
 
@@ -88,8 +88,25 @@ TODO
     Orcmid's Lair Readings.  At the moment, GitHub seems more durable than
     orcmid.com.
 
+  * Reference "A Little C Primer" on Wikibooks,
+    <https://en.wikibooks.org/wiki/A_Little_C_Primer/Print_version>
+    <https://en.wikibooks.org/wiki/A_Little_C_Primer>
+
+  * Reference "C Programming" on Wikibooks,
+    <https://en.wikibooks.org/wiki/C_Programming>.
+
+  * For <stdio.h> there are these descriptions:
+    <https://www.tutorialspoint.com/c_standard_library/stdio_h.htm>
+    <https://www.ibm.com/docs/en/zos/2.3.0?topic=files-stdioh-standard-input-output>
+    <https://www.tutorialspoint.com/c_standard_library/stdio_h.htm>
+
+  * Reference on C Standard Library
+    <https://en.wikipedia.org/wiki/C_standard_library>
+
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.8 2023-06-23T15L59Z  More references
+ 0.0.7 2023-06-22T03:53Z  Add references for C and stdio.h
  0.0.6 2023-06-18T17:50Z  More TODOs
  0.0.5 2023-06-18T16:22Z  More TODOs
  0.0.4 2023-06-17T16:33Z  More TODOs

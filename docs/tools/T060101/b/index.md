@@ -1,4 +1,4 @@
-<!-- T060101b.md 0.2.7              UTF-8                          2023-06-20
+<!-- T060101b.md 0.2.8              UTF-8                          2023-06-23
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                         T060101: C/C++ PROGRAMMING
@@ -8,7 +8,7 @@
 
 # T060101b: [C/C++ Programming Resources](.)
 
-| ***[nfoTools](../../../)*** | [tools](../../)[>T060101](../)[>b](.) | ***[index.html](index.html) 0.2.7 2023-06-20*** |
+| ***[nfoTools](../../../)*** | [tools](../../)[>T060101](../)[>b](.) | ***[index.html](index.html) 0.2.8 2023-06-23*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | [Work-in-Progress](T060101b.txt) | ![Hard Hat Area](../../../images/hardhat-logo.gif) |
 
@@ -154,6 +154,21 @@ while a beginner.
 
 ## 2. Online Resources
 
+### \[<a name="CProg2023">CProg2023</a>\] C Programming
+
+various authors.  "C Programming".  Wikibooks, version of 2023-04-22,
+Available on the Internet at
+<https://en.wikibooks.org/w/index.php?title=C_Programming&oldid=4282935>
+accessed on 2023-06-23.  This is more extensive and also more demanding
+than \[[LittleC2022](#LittleC2022)\].  Although intended to be comprehensive,
+this document completely misses the availability of free-to-use versions of
+Visual Studio and the Visual Studio Build Tools used throughout nfoTools.  All
+of the code development examples employ the GCC compiler and build tools.
+That is certainly an option.  I find there to be too much expected by way of
+tacit understanding of computer lore to have this material be easily
+understood.  Take a look.  It might work for you.  There is also the option
+of downloading a PDF that might be useful in conjunction with other materials.
+
 ### \[<a name="Jaeschke2022">Jaeschke2022</a>\] Portability and the C Language
 
 Jaeschke, Rex.  *Portability and the C Language*, ed.2. Wikibooks edition
@@ -167,6 +182,27 @@ have something to say that requires understanding/consideration.  There are
 some nasty pitfalls, such as accidental use of sequences that happen to be
 recognized as trigraphs by some compilers.  There are many more identified
 here.
+
+### \[<a name="LibC2023">LibC2023</a>\] C Standard Library
+
+various authors.  "C Standard Library".  Wikipedia, 2023-04-28 revision,
+Available on the Internet at
+<https://en.wikipedia.org/wiki/C_standard_library>, accessed on 2023-06-23.
+This is a handy account of the Standard C Library along with its evolution in
+the progression of ISO and POSIX specifications for the C Library. There is
+a fair amount of cross-referencing to other Wikipedia pages for details.
+
+### \[<a name="LittleC2022">LittleC2022</a>\] A Little C Primer
+
+various authors.  "A Little C Primer".  Wikibooks, version of 2022-05-16,
+accessed on the Internet on 2023-06-23 at
+<https://en.wikibooks.org/w/index.php?title=A_Little_C_Primer&stableid=4059232>.
+This is exactly what the title says.  The examples are not entirely in Clean C
+although they remain informative.  The approach should be considered casual,
+and there are some statements that might be misleading if taken literally.  In
+this and perhaps all cases, it is useful to have more than one source to check
+whether one answers some questions you are left with from another.  A PDF can
+be downloaded for convenience.
 
 ### \[<a name="Lysator1999">Lysator1999</a>\] Programming in C
 
@@ -214,6 +250,7 @@ details.  Anything found here must be considered unofficial (though likely).
 The advantage of the PDF format, in this case, is the ability to search the
 document using a standard PDF viewer.  You'll find answers aplenty to
 questions you didn't know you had.
+
 
 ## 3. Courses
 
@@ -336,6 +373,7 @@ from time to time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.2.8 2023-06-23T15:57Z More Wikipedia/Wikibooks references
      0.2.7 2023-06-20T20:03Z Add [Petzold2000]
      0.2.6 2023-06-18T17:48Z More for Touch-ups, Section 4
      0.2.5 2023-06-17T21:14Z Touch-ups, adding Section 4
