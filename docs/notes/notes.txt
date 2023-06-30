@@ -1,4 +1,4 @@
-notes.txt 0.0.10                   UTF-8                        dh:2022-11-29
+notes.txt 0.0.11                   UTF-8                        dh:2023-06-30
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -30,6 +30,8 @@ MANIFEST
   N070801/ The Craft of Toolcraft
   N210901/ Tacit Knowledge and the Beginner Mind
   N220201/ Beginner Mind Failures
+  N230601/ Seeking Confirmable Experiences
+  N230602/ Recognizing and Managing Abstraction
 
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
@@ -53,12 +55,10 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. nfoTools Project Notes.  nfoTools file docs/notes.txt
-   version 0.0.10 dated 2022-11-29 available on the Internet as a version of
+   version 0.0.11 dated 2023-06-30 available on the Internet as a version of
    <https://orcmid.github.io/nfoTools/notes/notes.txt>
 
 TODO
-
- * Replicate the nfoware.com/notes/ structure and purpose as well as possible.
 
  * Migrate some materials for here for preservation, maintaining the previous
    identifiers where appropriate.
@@ -73,18 +73,16 @@ TODO
  * Make a project about Notes migration and also refactoring between notes,
    dev, and tools.
 
- * Bring nfoWare/meaning here and massage into a not.  Recognizing abstraction
-   might also be an important skill.
+ * Bring nfoWare/meaning here and massage into a note.  Recognizing
+   abstraction might also be an important skill.  YESSSSSSS
 
  * The nfoWare/glossary is a kind of project.  I am uncertain where it goes.
    It is certainly nfoWare.
 
- * The games/ section here is about game implementations.  It is tools and
-   maybe notes that address gamedev.  Gaming and recreational computing are
-   yet another category, whether under one category or not.  Choose.
+ * Games as play as well as games to make needs to be covered over ther.
 
  * Bring over the nfoWare/notes/n000000 catalog and also look into
-   transposition of existing notes:
+   transposition of existing notes:  GET BACK INTO THIS
    o n040100 Bootstrapping Confirmable Experience (definitely here and also
      a skill maybe)
    o n040200 Situating Confirmable Experience - depending
@@ -107,7 +105,17 @@ TODO
    This is intended for LogTeach-22: LICS 2022 Workshop on Why and how to
    teach Logic for CS undergraduates?
    <https://www.cs.technion.ac.il/~janos/LogTeach-22/>.  A short position
-   paper is required by 2022-05-30.
+   paper is required by 2022-05-30.  I DON'T KNOW WHAT HAPPENED HERE.  I NEED
+   TO PUT MY POSITION MATERIAL ON-LINE AND ALSO TIE IT INTO OTHER THINGS,
+   SUCH AS SKILLS AS WELL AS INTRODUCTION OF BOOLEAN STUFF.
+
+ * THERE IS MUCH MORE TO SAY ABOUT COMPUTING, PROGRAMMING, AND THE DIFFERENCE
+   AMONG/WITHIN COMPUTER SCIENCE AND MATHEMATICS.
+
+ * "IN DEFENSE OF PHILOSOPHY"  Defense not really required, but appreciation
+   might be the actual issue.  And from appreciation of it being about good
+   questions, not particular answers, we can also consider more how we are
+   in unsafe territory when claiming refuge in the certainty of belief.
 
  * Change the folio-page header top bars to match the standard form exhibited
    on docs/dev/ now.
@@ -115,10 +123,13 @@ TODO
  * Bring over topics on what language and what kind of software development
    here.  Contrast with approaches here.   Sounds like two notes.  Then they
    can be usefully referenced from more focused tools and dev notes.  See
-   T060101.txt
+   T060101.txt for example.
 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.11 2023-06-30T21:37Z Inspired while recovering from an outpatient
+        surgery.  Hope it's relief from apprehension and not so much pain
+        killer intoxication.  Added N230601-0602.
  0.0.10 2022-11-29T17:11Z Marker for two notes on areas of development and
         choice of tools, and one on the path featured here.
  0.0.9 2022-06-12T23:30Z Manage TODOs, Initiate top header revision

@@ -1,4 +1,4 @@
-N220201.txt 0.0.4                   UTF-8                       dh:2022-06-12
+N220201.txt 0.0.5                   UTF-8                       dh:2023-06-30
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -52,10 +52,13 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. Beginner Mind Failures.  nfoTools file N220201.txt
-   version 0.0.4 dated 2022-06-12 available on the Internet as a version of
+   version 0.0.5 dated 2023-06-30 available on the Internet as a version of
    <https://orcmid.github.io/nfoTOols/notes/N220201/N220201.txt>
 
 TODO
+
+ * REFACTOR THIS PUPPY.  IT'S A MESS.  (Found while taking boilerplate from
+   here)
 
  * Complete the 4 "Not my" pages, their illustrations, and setup for more
    treatment under skills.
@@ -83,6 +86,7 @@ TODO
 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.5 2023-06-30T21:41Z Yellow Card TODO
  0.0.4 2022-06-12T23:14Z More TODOs
  0.0.3 2022-03-01T16:39Z Manage TODOs
  0.0.2 2022-02-27T23:31Z Flex in N220201a and manage TODOs

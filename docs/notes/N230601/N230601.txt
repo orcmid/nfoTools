@@ -1,0 +1,70 @@
+N230601.txt 0.0.0                   UTF-8                       dh:2023-06-30
+----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+
+                        nfoWare/nfoWorks nfoTools
+                        =========================
+
+<https://github.com/orcmid/nfoTools/blob/master/docs/notes/N230601/N230601.txt>
+       <https://orcmid.github.io/nfoTools/notes/N230601/N230601.txt>
+
+                N230601: SEEKING CONFIRMABLE EXPERIENCES
+                ----------------------------------------
+
+    Although "confirmable experiences" started out about how to report an
+    incident to others in a manner that could be assessed and perhaps
+    replicated, the idea of looking for them, and making experiences
+    confirmable is how we've landed here.
+
+MANIFEST
+
+    N230602.txt
+            this manifest and job-jar file
+
+
+
+
+----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+                   Copyright 2022 Dennis E. Hamilton
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+ ATTRIBUTION
+
+   Hamilton, Dennis E. Seeking Confirmable Experiences.  nfoTools file
+   N230601.txt version 0.0.0 dated 2023-06-30 available on the Internet as a
+   version of <https://orcmid.github.io/nfoTOols/notes/N230601/N230601.txt>
+
+TODO
+
+ * Make a placeholder index.md so this folio can be added to the notes/
+   front porch.
+
+ * This applies to teaching also.  We want the exercises and explanations
+   to be something the student can confirm.
+
+ * It also strikes me that, when someone asks what something does, one useful
+   response is "what happens when you try it?".
+
+ * Umm, and when someone argues for a feature or some course of action on
+   your part, maybe ask "and when will you be providing that?"
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+ 0.0.0 2023-06-30T22:11Z Placeholder for the initial content and future
+       editing.
+
+                     ***** end of N230601.txt *****
