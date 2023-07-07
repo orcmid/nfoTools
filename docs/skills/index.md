@@ -1,4 +1,4 @@
-<!-- index.md 0.0.4                 UTF-8                          2022-06-16
+<!-- index.md 0.0.5                 UTF-8                          2022-07-07
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                            NFOTOOLS SKILLS NOTEBOOK
@@ -6,9 +6,9 @@
 
 # ***nfoTools** [Skills Notebook](.)*
 
-| ***[nfoTools](../)*** | [skills](.) | ***[index.html](index.html) 0.0.4 2022-06-16*** |
+| ***[nfoTools](../)*** | [skills](.) | ***[index.html](index.html) 0.0.5 2023-07-07*** |
 | :--                |       :-:          | --: |
-| ![nfotools](../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../images/hardhat-logo.gif) |
+| ![nfotools](../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | [Work-in-Progress](skills.txt) | ![Hard Hat Area](../images/hardhat-logo.gif) |
 
 This topic is for identification of the various skills that software
 developers master before those skills become tacit abilities and invisible
@@ -39,6 +39,7 @@ and advancing to software engineering capabilities.
 |   :-:   |   :-:   |  :-:   |  ---  |
 | [S210901](S210901/S210901.txt) | 2021-09-04 | placeholder | Skills Inventory Notes |
 | [S210902](S210902/S210902.txt) | 2021-09-05 | placeholder | Keyboards and Keyboarding |
+| [S230701](S230701)             | 2023-07-01 | placeholder | Confirmable Experience |
 
 ----
 
@@ -52,6 +53,7 @@ from time to time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.5 2023-07-07T23:00Z Add S230701
      0.0.4 2022-06-16T22:40Z Correct top header strip
      0.0.3 2021-09-27T18:33Z Wordsmithing and identification of S210901 and
            S210902
