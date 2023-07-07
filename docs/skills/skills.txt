@@ -1,4 +1,4 @@
-skills.txt 0.0.15                   UTF-8                         2022-07-**
+skills.txt 0.0.15                   UTF-8                         2023-07-07
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -6,7 +6,7 @@ skills.txt 0.0.15                   UTF-8                         2022-07-**
                         =========================
 
    <https://github.com/orcmid/nfoTools/blob/master/docs/skills/skills.txt>
-            <https://orcmid.github.io/rayLab/tools/tools.txt>
+            <https://orcmid.github.io/nfoTools/skills/skills.txt>
 
                         NFOTOOLS SKILLS NOTEBOOK
                        --------------------------
@@ -45,11 +45,12 @@ MANIFEST
 
     S210901/ Skills Inventory Notes
     S210902/ Keyboards and Keyboarding
+    S230701/ Confirmable Experience
 
 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-                    Copyright 2021-2022 Dennis E. Hamilton
+                    Copyright 2021-2023 Dennis E. Hamilton
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -68,7 +69,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. nfoTools Skills Notebook.  nfoTools project text file
-   skills.txt version 0.0.14 dated 2022-06-16, available on the Internet as a
+   skills.txt version 0.0.15 dated 2023-07-07, available on the Internet as a
    version of <https://orcmid.github.io/nfoTools/skills/skills.txt>
 
 TODO
@@ -83,12 +84,6 @@ TODO
  * De-emphasize tacit knowledge and focus on skills pre-requisites and their
    satisfaction.  Add "on being a beginner."  Standard beginner mistakes.
    Introduce Confirmable Experience.
-
- * On Confirmable experience, and on providing mechanisms for encouraging it
-   with novices.  Identify ways for beginners to report their difficulties,
-   distinguish between requesting assistance and reporting a defect.  Also,
-   discussions versus "Issues" and gleaning UX problems out of reported
-   issues.
 
  * The home page should also help with this and maybe "About" too.
 
@@ -109,9 +104,6 @@ TODO
 
  * Need something on fear of failure and fear of ridicule, the ability to
    work in the open and with the scrutiny/contribution of others.
-
- * Elevate confirmable experience also, particularly in how to gain
-   assistance and conduct trouble-shooting.
 
  * Make a bullet list of skills that are the kind that beginners need to
    be aware of and to cultivate.  Include keyboarding, file explorer usage,
@@ -181,17 +173,11 @@ TODO
 
  * Some of the treatment on beginner mind needs to cross-pollinate with skills
 
- * Beginner Mind is a skill along with Confirmable Experience Capture.  So
-   screen capture and ways to make the captures useful matters.
-
  * The creation of issue reports versus discussion, questions, and reporting
    are different and it takes skills to know the difference and to provide
    sufficient information and a way to supply more as requested.
 
- * The idea of confirmable experience is relevant, both in regard to
-   explanation and also replication/confirmation of reports.
-
- * I don't know where all the ways to have text editors, and to create text
+  * I don't know where all the ways to have text editors, and to create text
    editing, belongs.  In one sense, a note would be good for coverage.  The
    same goes for command-line processors (i.e., shells) and differences
    between cmd.exe, bash, Power shell, etc., and the confusion that Terminal
@@ -250,7 +236,8 @@ TODO
 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
- 0.0.14 2022-06-16T22:43ZZ More TODOs, Establish folio header strip
+ 0.0.15 2023-07-07T15:53Z Spin out S230701 Confirmable Expeience place-holder
+ 0.0.14 2022-06-16T22:43Z More TODOs, Establish folio header strip
  0.0.13 2022-04-29T15:58Z More TODOs, considering logic, math, CS, and science
  0.0.12 2022-04-08T16:28Z Manage TODOs, more skills to address
  0.0.11 2022-03-15T14:44Z Manage TODOs, emphasize skills inventory.

@@ -1,0 +1,82 @@
+S230701.txt 0.0.0                   UTF-8                         2023-07-07
+----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+
+                        nfoWare/nfoWorks nfoTools
+                        =========================
+
+<https://github.com/orcmid/nfoTools/blob/master/docs/skills/S230701/S230701.txt>
+        <https://orcmid.github.io/nfoTools/skills/S230701/S230701.txt>
+
+                      CONFIRMABLE EXPERIENCE SKILLS
+                      -----------------------------
+
+    Placeholder.  Meaningful content TBA.
+
+MANIFEST
+
+    S230701.txt
+        this manifest and job-jar file
+    index.md
+        Markdown of the entrance page, "front porch" to this topic
+
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+                    Copyright 2023 Dennis E. Hamilton
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+ ATTRIBUTION
+
+   Hamilton, Dennis E. S230701: Confirmable Experience Skills.  nfoTools
+   project text file S230701.txt version 0.0.0 dated 2023-07-07, available on
+   the Internet as a version of
+   <https://orcmid.github.io/nfoTools/skills/S230701/S230701.txt>
+
+TODO
+
+ * On Confirmable experience, and on providing mechanisms for encouraging it
+   with novices.  Identify ways for beginners to report their difficulties,
+   distinguish between requesting assistance and reporting a defect.  Also,
+   discussions versus "Issues" and gleaning UX problems out of reported
+   issues.
+
+ * Elevate confirmable experience also, particularly in how to gain
+   assistance and conduct trouble-shooting.
+
+
+ * Drawing and also pen-and-ink are also great cases of skills and also
+   toolcraft.  Recommend <https://www.gamedev.tv/p/complete-drawing> and
+   maybe on Udemy?  Also point out that discounts become available.  Should
+   wait for one of those.
+
+ * Beginner Mind is a skill along with Confirmable Experience Capture.  So
+   screen capture and ways to make the captures useful matters.
+
+ * The creation of issue reports versus discussion, questions, and reporting
+   are different and it takes skills to know the difference and to provide
+   sufficient information and a way to supply more as requested.
+
+ * The idea of confirmable experience is relevant, both in regard to
+   explanation and also replication/confirmation of reports.
+
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+ 0.0.0 2023-07-07T15:47Z Placeholder from skills.txt 0.0.14 boilerplate.
+
+
+                    ***** end of S230701.txt *****
