@@ -1,4 +1,4 @@
-S230701.txt 0.0.1                   UTF-8                         2023-07-10
+S230701.txt 0.0.2                   UTF-8                         2023-07-10
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -19,7 +19,7 @@ MANIFEST
         this manifest and job-jar file
     index.md
         Markdown of the entrance page, "front porch" to this topic
-
+    also some scraps while fussing around for materials
 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -42,7 +42,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. S230701: Confirmable Experience Skills.  nfoTools
-   project text file S230701.txt version 0.0.1 dated 2023-07-10, available on
+   project text file S230701.txt version 0.0.2 dated 2023-07-10, available on
    the Internet as a version of
    <https://orcmid.github.io/nfoTools/skills/S230701/S230701.txt>
 
@@ -56,7 +56,6 @@ TODO
 
  * Elevate confirmable experience also, particularly in how to gain
    assistance and conduct trouble-shooting.
-
 
  * Drawing and also pen-and-ink are also great cases of skills and also
    toolcraft.  Recommend <https://www.gamedev.tv/p/complete-drawing> and
@@ -87,6 +86,11 @@ TODO
    into.
 
  * Trustworthiness and TROST figures in here also.
+
+ * PRESERVATION NEEDED.  I am finding many uses of Confirmable Experience
+   (CX) in materials going back to 2008.  I should preserve this cataloging
+   and also, in the case of web pages, the articles.  That will be tricky.
+            ******** HISTORICAL CAPTURE STARTS HERE ********
 
  * I mentioned that with regard to Jason's setup videos on Ableton Live (Lite)
    and how he didn't provide an experience users will see on their computers,
@@ -457,8 +461,69 @@ TODO
  * A big factor around confirmable experience is knowing what information to
    ask for, not just knowing what information to provide.
 
+ * 2010-04-08 Don't You Just Haite It When ...
+   <https://orcmid.com/blog/2010/04/dont-you-just-hate-it-when.asp>
+   [These blog posts are an interesting compilation labelled under
+   confirmable experience.  They take things back to around when the term
+   become standard currency for Band and Orcmid.]
+
+ * 2010-04-07 Blog Template Unification: Template Trickiness
+   <https://orcmid.com/blog/2010/04/blog-template-unification-template.asp>
+
+ * 2010-04-03 February Frights Redux: Unification for Creative Destruction
+ <https://orcmid.com/blog/2010/04/february-frights-redux-unification-for.asp>
+
+ * 2010-02-02 The February Frights Begin
+   <https://orcmid.com/blog/2010/02/february-frights-begin.asp>
+
+ * 2009-05-11 Monday Morning NaN: Confirmable Experience with my Coffee
+   <https://orcmid.com/blog/2009/05/monday-morning-nan-confirmable.asp>
+
+ * 2009-03-05 Social-Grid Identity: Please Enter Your Twitter Credentials Here
+  <https://orcmid.com/blog/2009/03/social-grid-identity-please-enter-your.asp>
+
+ * 2008-12-07 WTF: Umm, Flash 10 Detection Not So Simple
+   <https://orcmid.com/blog/2008/12/wtf-umm-flash-10-detection-not-so.asp>
+
+ * 2008-12-06 WTF: The Adobe Flash Version 1x Crisis
+   <https://orcmid.com/blog/2008/12/wtf-adobe-flash-version-1x-crisis.asp>
+
+ * 2008-10-24 Friday Cat Picture: Weez Ur Trckz n Treatz
+   <https://orcmid.com/blog/2008/10/friday-cat-picture-weez-ur-trickz-n.asp>
+
+ * 2008-10-08 Geek Dinner Collection: 2007-09-12 Hanselman Event
+   <https://orcmid.com/blog/2008/10/geek-dinner-collection-2007-09-12.asp>
+
+ * 2008-10-07 Confirmable Experience: What a Wideness Gains.
+ <https://orcmid.com/BlunderDome/clueless/2008/10/confirmable-experience-what-wideness.asp>
+ [Another cross-posting.  On Orcmid's Lair, there is a great comment.  It does
+ not consider different user comfort with cluttered screen real-estate and
+ also wanting to reduce the number of clicks while wanting good visibility.
+ <https://orcmid.com/blog/2008/10/confirmable-experience-what-wideness.asp>]
+
+ * 2008-10-05 Confirmable Experience: Consider the Real World
+ <https://orcmid.com/BlunderDome/clueless/2008/10/confirmable-experience-consider-real.asp>
+ A mention and connections.  Cross-posted from
+ <https://orcmid.com/blog/2008/10/confirmable-experience-consider-real.asp>
+
+ * 2008-09-07 Document Interoperability: The Web Lesson.
+ <https://orcmid.com/BlunderDome/clueless/labels/confirmable%20experience.asp>
+ more cross-posting to the BlunderDome.
+
+ * 2008-08-30 Interoperability: The IE 8.0 Disruption
+   <https://orcmid.com/blog/2008/08/interoperability-ie-80-disruption.asp>
+
+ * 2008-08-29 Cybersmith: The Confirmability of Confirmable Experience
+ Professor von Clueless blog post at
+ <https://orcmid.com/BlunderDome/clueless/2008/08/cybersmith-confirmability-of.asp>
+   [This is the earliest blog page using "confirmable experience" as a label.
+   There may be others but without such labeling.  Unless there is a clue in
+   the titles of earlier posts, I may be helpless on the matter.  Internet
+   search is not helpful, it seems.]
+
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.2 2023-07-10T16:19Z Addition of labelled blog posts
  0.0.1 2023-07-10T00:21Z Long scraping of "confirmable experience" usage
  0.0.0 2023-07-07T15:47Z Placeholder from skills.txt 0.0.14 boilerplate.
 
