@@ -1,4 +1,4 @@
-S230701.txt 0.0.0                   UTF-8                         2023-07-07
+S230701.txt 0.0.1                   UTF-8                         2023-07-10
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -42,7 +42,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. S230701: Confirmable Experience Skills.  nfoTools
-   project text file S230701.txt version 0.0.0 dated 2023-07-07, available on
+   project text file S230701.txt version 0.0.1 dated 2023-07-10, available on
    the Internet as a version of
    <https://orcmid.github.io/nfoTools/skills/S230701/S230701.txt>
 
@@ -61,7 +61,8 @@ TODO
  * Drawing and also pen-and-ink are also great cases of skills and also
    toolcraft.  Recommend <https://www.gamedev.tv/p/complete-drawing> and
    maybe on Udemy?  Also point out that discounts become available.  Should
-   wait for one of those.
+   wait for one of those.  This is relevant to being able to record and
+   report some things.
 
  * Beginner Mind is a skill along with Confirmable Experience Capture.  So
    screen capture and ways to make the captures useful matters.
@@ -73,9 +74,392 @@ TODO
  * The idea of confirmable experience is relevant, both in regard to
    explanation and also replication/confirmation of reports.
 
+ * Gather historical discussion I have had around confirmable experience
+
+ * Create a sub-folio for compilation of awesome CX failures.  Might need one
+   for CX winners too.
+
+ * The work of Alan Cooper expressed in "About Face" demonstrates a variety of
+   UX and Interaction Design defects.  For CX, the idea is a little different
+   but perhaps not orthogonal.  I have held onto "About Face 3."  I see such
+   things as Considerate Products there.  I would not use such notions of
+   computational agency, but we can all get the idea.  There's more to look
+   into.
+
+ * Trustworthiness and TROST figures in here also.
+
+ * I mentioned that with regard to Jason's setup videos on Ableton Live (Lite)
+   and how he didn't provide an experience users will see on their computers,
+   especially PCs.  Around 2022-06-21 I had offered to make a PDF that handled
+   the PC case.  I was interested in providing a confirmable experience, as
+   I remarked to band on a regular Tuesday call.
+
+ * 2022-02-15 Complete CX fail.  My failing at the Komplete Start Quickstart
+   of Native Instruments,
+   <https://www.native-instruments.com/en/komplete-start-quickstart/>.  This
+   was a failure for a beginner, in serious contrast with how Abington is
+   devoted to beginners.
+
+ * 2022-02-01 in Band's Buddy Call Notes.  Great note on CX fails:
+     1. confirmable experiences
+       - business licenses for dennis and vicki
+       - local filing: OK for dennis; vicki having problems
+       - consolidated biz identifier (2 different storefronts)
+    1.1. conceptual integrity is screwed up
+       - people making up rules; no communication
+       - conceptual model differs from customers; frontline people;
+         database (the operational ground truth) <-> the architects and
+         designers and coders
+    	 ( this deserves a diagram )
+    	 (the essence of software - concepts that matter for design)
+    	 (the view of the system and the design of the system)
+
+ * 2021-11-30 in a note to Amy J Ko,
+   I sometimes offer “SE4E” as a counterpart of “CS4E.”  And a theme around
+   that is “confirmable experience” and why screen capture is an important
+   tool.  It helps crack through “works for me” sometimes.
+
+ * 2021-03-30 buddy call notes
+   0. Confirmable experiences and things that we'd like to figure out and
+      don't want to take the time.
+
+ * 2019-12-19 Re: 20199-12-10 Buddy Call Notes (from Band)
+     5. Confirmable Experiences
+       - Susan and Bill trying to figure out Family Sharing with AppleIDs
+       (it's not pretty)
+       - Time Machine backups still failing for Bill
+         not clear what to do, yet
+
+ * 2019-11-05 Re: 2019-11-05 Buddy Call Notes (from Band)
+     2. Confirmable experience
+       DEH Wordperfect blog tracked on LinkedIn
+       Wanted to replace with blogger, but how to?
+       How did it happen earlier?
+       Gaming stuckness and how to move on?
+       - AI features generate environment and behavior of automated
+       characters
+    > 2. Software/Confirmable Experience: Dennis can't get to where he
+      specifies his blog site to LinkedIn, even though LinkedIn keeps linking
+      to new posts on his WordPress blog.  Dennis's character in a game also
+      got caught in an underground place from which there was no exit.
+
+ * 2019-10-22 Buddy Call Notes (from Band)
+     1. confirmable experience
+       emoticons do not always look the same to the sender and receiver
+    AWESOME, JUST AWESOME
+
+ * 2019-07-16 Buddly Call Notes (from Band)
+     3. confirmable experience
+       - how to make experience confirmable by someone else
+
+ * 2019-07-05 Confirmable Experiences++ (from Band)
+   Dennis, a couple of nice dog walks helped me sort out my thoughts from
+   yours re confirmable experiences (CE). Here is my current description:
+   2019-07-05: A CE is an experience that I have that I wish to convey to you
+   and to confirm that you can have an identical (or similar?) experience.
+   Technology breakdowns are good examples. When I run into a problem using a
+   piece of technology I often want to know that I am not the only one having
+   this particular problem. I wish to confirm that my breakdown is one that
+   someone else can also experience. Such a confirmation might result in a
+   software bug report and a subsequent software update. An inability for you
+   to confirm my experience might suggest that the breakdown is in my actions
+   or work practice or technology context or my understanding of how the
+   particular feature or system works. Of course, my adoption or constuction
+   of a misunderstanding of how an app or system works might also be viewed as
+   a defect in the system. Not every user error is a result of user
+   misunderstanding or knowledge or experience or competence; it might just be
+   bad signage or form layout.
+
+ * 2019-07-01 In reply to Band 2019-06-27 on McFadden paper.
+   I think confirmable experience is about the ability to confirm something.
+   For me, the classic example is mangling of a communication and the problem
+   of over-coming the sender's works-for-me versus the recipient's experience.
+   The challenge is how to make the experience of the recipient known to the
+   sender.  There is, in addition, the issue of that being something that is
+   actionable by the parties in some manner.
+      An example we hard recently was how I showed up tinted green in a Skype
+   video call.
+   This gets complicated because there are intermediaries in these
+   experiences, and we have no clue, generally, how they factor into the
+   situation.
+      I like the statement about mental models and Norman's perspective.   I
+   am unclear, myself, whether that is a case that involves confirmable
+   experience.  I suppose it might arise in the extent to which the system is
+   encouraging (or affords) arrival at adequate mental models, and there are
+   non-harmful ways for someone to test and confirm their mental model and
+   especially breakdowns in its application.
+      Oh, and not having you feel incompetent or frustrated when the system
+   doesn't conform to your model.  And how to tell the difference between a
+   system defect and a mental-model defect.
+      Hmm ...
+
+ * 2019-07-01 In reply to Band 2019-06-27 McFadden Paper ... experience 2
+   I think the question is always what to make of a breakdown, and keeping
+   systems workable for (most?) users.
+      I agree, more thinking, and my previous reply might be helpful.   Maybe
+   confirmable experience has to do with how one discerns the nature of the
+   breakdown, and how the system supports that.
+      I notice the examples we have tend to be around breakdowns.
+
+ * 2019-06-27 Buddy Call Notes (think actually 06-25), I note that
+   "BILL SENDS A NOTE about Confirmable Experience in the McFadden paper.
+   Pretenses.  Semblances.  Interfaces with Dennis."  Here's the subsequent
+   note.
+   2019-06-27 McFadden paper: confirmable experience examples (from Band)
+   "Dennis, here is one example of what I refer to as an example of a
+   'confirmable experience” in the McFadden paper.  p. 94, first paragraph
+   under “Good Models”, ends with this: '… the reasonable assumption that the
+   purpose of a mental model “is to allow the person to understand and to
+   anticipate the behavior of a physical system” (Norman, 1983, p.12).fn15.’
+   I think of the idea of ‘confirmable experience’ as one that fits with some
+   idea or expectation that I have of the behavior of a computer system in
+   response to an action of mine, such as an input of keyboard strokes or a
+   mouse button press or both. A breakdown occurs in my model (however fuzzy)
+   of what is behind the screen or keyboard when my expectations are not met.
+   I am not sure if this is how you use the phrase. Do we agree on this
+   concept?"
+   2019-06-27 McFadden paper: confirmable experience 2 (from Band) adds,
+   "Dennis, on page 99, in the second paragraph there is this: 'Borgman (1986)
+   has argued persuasively that users of complex interactive systems will, in
+   spite of themselves, try to construct some kind of model or analogy to help
+   them understand what is happen- ing to them. But they will not take the
+   time and effort to articulate a good model of the system,even if they know
+   what that might be; theyjust muddle along, never fitting the pieces
+   together (p. 48). I have argued that using a mistaken metaphor for a target
+   system will inevitably lead to incorrect conclusions about the current and
+   future behavior of the system.'  Is this 'trying to construct some kind of
+   model', but not making the 'effort to articulate a good model' also a
+   characteristic of 'confirmable experiences'?  Yeah, this is pretty fuzzy.
+   But maybe my experience is to come to some idea that, if it is confirmed by
+   a subsequent interaction, I take to be good enough. And I only put more
+   effort into coming up with a better idea when I have a breakdown. Hmmm ….
+   I need to think about this more.
+   [2023-07-09 On reviewing this material, I think there are two different
+   considerations here.  One is having a conceptual model, another is making
+   experiences confirmable, the latter also having different views between the
+   actors.  For me, conceptual model is related to conceptual integrity, a
+   term I have never forgotten since encountering it in the then-new Fred
+   Brooks book, "The Mythical Man-Month."  To continue,]
+
+ * 2018-08-23 Buddy Call note from Dennis.
+   0. Confused by Skype - It provides buttons and an "I'm not alone."
+   Problems about confirmable experience and successful screen capturing.
+
+ * 2018-08-14 Re: 2018-08-14 buddy call (from Band)
+   2. A's confirmable experience with printing an "untitled.pdf" shopping list
+	  - I have a better idea: just print one a bring it over
+   2.1. S's similar experience with doctor's patient portal to get blood test
+      results - please mail me a copy?
+
+  * 2017-12-06 RE: set theory & p->q (replying to Band)
+    For some reason, the resolution of the image (only 31kb is a clue) is so
+    low that I can't read it if I enlarge it to a readable size.  And if I use
+    "actual size" it is all too small to read.
+       Hey, a confirmable experience opportunity.
+    [2023-07-09 This is all about communicating images and either not knowing
+    or not checking how they will be viewable by a recipient with whom one
+    wants to confirm/check/verify something.  In the above case, a JPEG of a
+    book page came through as tiny and enlarging it in viewing software turned
+    it into pixels before legibility.  I see this all the time when someone
+    makes a screen capture which, including in an incident report, is actually
+    unreadable.  I also was reading a Wordpress page where the in-line images
+    were too small to be readable.  I usually provide blog page images in a
+    form where the inserted image is also a link that brings up a full-size
+    version of the image.  I did not know, until that incident, that I could
+    have my browser save the image (in its raw form) to my computer's disk,
+    and I could acess it in readable size from there.  That experience, and
+    my exchange with the web page's author had me realize that a treatment of
+    CX is overdue from me.]
+
+  * 2017-02-21 buddy call notes (from Dennis)
+    9. Bill's class and the confirmable experience of getting the video
+    projector to work for people in the room. [Getting AirMedia PC to connect
+    to conference room TV screen] Cool feature. Small documentation/UI
+    problem.  Dennis having a similar problem with Keybase.io.
+
+  * 2017-01-24 buddy call notes (by Band)
+    1. Bill's confirmable experience
+	   - macOS Apple Watch unlock computer - not so fast there buddy
+
+  * 2017-01-24 buddy call notes (by Dennis)
+    1. More Confirmable Experiences about what we have let ourselves in for.
+    Perhaps a Pattern & Practice to be found?
+
+  * 2016-11-29 buddy call notes (by Dennis)
+    4. Bill's Apache experience as a new committer.  Unconnected dots, tacit
+    understanding, and confirmable experience.
+
+  * 2016-11-17 buddy call notes (by Dennis)
+     5. Usability of Mac, availability of information.  No confirmable
+    experience the way MS thinks it is making things simple.
+
+ * 2016-06-14 buddy call notes (by Dennis)
+   Oh, bad confirmable experience.  Dennis applied for a replacement for an
+   expiring certificate and can't get it to install using any browser he has.
+
+ * 2016-06-07 buddy call notes (by Dennus)
+   1. Healthcare and confirmable experience.  Dennis has a UTI being treated
+   by antibiotics, etc.  Some provider systems are seriously on top of the
+   cycle of learning and improvement.
+
+ * 2016-02-12 Confirmable experience (by Dennis)
+   Having fun with being locked out of Twitter @orcmid because the SMS
+   verification code not receiving and other hiccups.
+
+ * 2016-02-09 Buddy Call Notes (by Dennis)
+   1. Confirmable Experience #1: Dennis with Visual Code, update can't find
+      something.  But it worked clean in his Hyper-V Windows 10 Guest.
+   2. Confirmable Experience #2: Meta-Drama: Getting sane Linux distributions
+      to actually do work in. Working at scale, problems of dev support versus
+      personal productivity usage.  Reach beyond the grasp and grasping the
+      wrong things anyhow. Wildness
+   3. Confirmable Experience #3: Generic Errors
+
+ * RE: 2016-01-26 Buddy Call Notes (by Dennis)
+   CONFIRMABLE EXPERIENCE
+      I have two Symantec Certs that are up for renewal.  I ignored all the
+   reminders until I was only a couple of days away.  I was careful to be
+   certain which email addresses they were.
+      Going to Symantec, I did the two ceremonies to obtain the two certs.
+   Then, when the emails came for going through the actual connection and key
+   generation, I did that.  In Internet Explorer 11, the key generation
+   process failed because they couldn't find a crypto provider on my machine
+   and I went through all kinds of things to allow ActiveX and it still didn't
+   work.
+      I finally quit and went back and did the process using Chrome instead.
+   Worked without incident and perfectly.
+      I then restored IE11 to my default security levels.
+
+ * 2016-01-23 Saving Education with Scanners (from Dennis)
+   Confirmable Experience Department: Because the file was downloaded from
+   the Internet, it wasn't syncing to my OneDrive in the cloud and I couldn't
+   request a link to it.  On the properties sheet for the file, I see there
+   was a note about that and the file not being safe.  There was a box to
+   check to unblock it.  The moment I did that, the file showed as
+   synchronized and I was able to get a sharing-link to my clipboard.  All
+   mystery meat.
+
+ * 2015-09-09 Win7 -> Win10 upgrade in a VM ... (from Band)
+   what a comedy of confirmable and irritating experiences.
+      Starting with some incompatibility between Win10 video validation tool
+   and VMware Fusion video emulation spec. From the knowledge bases it is some
+   SW incompatibility that will NOT be fixed. There is one workaround that I
+   am following. Complications ensue ....
+
+ * 2015-09-08 buddy call notes (by Band)
+   2. confirmable experience with self-learning textbooks
+
+ * 2015-03-03 buddy call notes (by Dennis)
+   2. Confirmable Experience -
+      Symantec no long has continuity among certificates, so doesn't know what
+      I may have already renewed.
+         Transferring domain DNS records around is a great mystery.  Dennis
+      turned in an A2 Hosting support ticket to get help on this.
+
+ * 2015-02-21 Confirmable Experiences Are Us (by Dennis) and long
+   I just realized that the 2.5 hours on the phone with Microsoft Office 365
+   support yesterday is a giant "confirmable experience" breakdown.  The
+   attention from the first-line supporter was great, although it took a while
+   for me to understand that to switch from Office 365 Small Business Premium
+   to Office 365 Business was by switching to Office 365 Business Essentials
+   and then upgrading from that one.  (The web dashboard does not provide a
+   direct switch and I was totally unwilling to renew a $150 subscription for
+   another year when the $99 one is now available to the public.)
+      I had to confirm my understanding all the way through the conversation
+   and I could have listened more and not kept putting in that I wanted to
+   keep continuity in my Office Desktop software, especially Outlook.  The
+   referral to 2nd-line support happened because the dashboard I had as a
+   result was not the same as the one she saw, or she simply failed to tell
+   me that I was supposed to click on a link to get to the one she was seeing.
+      The time with the 2nd-line support (at least an hour) might have been
+   shorter, but I declined to allow remote-assistance access and I am pretty
+   certain I have disabled the feature.  It turns out a plain uninstall of
+   Office is not good enough and there is a Fixit that must be downloaded and
+   run to do it.  Then the over-the-web install of the flavor of Office that
+   is registered for Office 365 Business works (and takes another long time).
+   It was a nail-biter until I saw that Outlook came up just the same as I had
+   left it before starting all of this over the phone.
+      I was reminded of the "confirmable experience" bit because
+   keybase.io/orcmid reported earlier this morning that it can no longer
+   verify the proof that I stored at http://worthiness.org.  I expected that,
+   since I no longer have a Sharepoint site in my new O365 subscription and
+   the domain no longer resolves.  Now I need to go do all the DNS magic to
+   point that domain name, which I own, to a place on my A2 Hosting web
+   service, where there are already pages waiting for it.  Then I can do
+   another proof.  Meanwhile, worthiness.org is no longer on my list of
+   confirmed sites at <http://keybase.io/orcmid>.  I think I'll put that off
+   a few days until I complete some other backlog items.
+
+ * RE: 2015-01-27 Call Notes (from Dennis)
+   Someday, we need to talk about end-to-end *confirmable* experience.
+
+ * 2015-01-07 Call Notes (by Dennis)
+   2. Confirmable experience with the UT Learning Management System, formerly
+      Blackboard which was adaptable.
+         Canvas, cloud-based, doesn't require same IT expense, popular, but
+      Bill finds it completely confusing.
+
+ * RE: 2014-10-21 Buddy Call Notes (by Dennis)
+   The ... problem is the fact that the Package Manager used by MSYS2 checks a
+   keyring and signatures on the packages it downloads to install.  But
+   apparently, my having gpg2 in my search path (set by GPG4Win) is causing a
+   conflict.  Unfortunately, I need that path entry for keybase.io when
+   running it under my local node.js.
+      Confirmable Experience.  We gots Confirmable Experience, yes we do.
+      Since MSYS2 runs native Windows console apps, I suspect there can be
+   more conflicts like this, between native utilities and ones of the same
+   names that are custom to MSYS2 and search-path problems.  I am asking for
+   where this is documented.  Also, the MSYS2 wiki page on installing MSYS2 is
+   not current and doesn't address these situations.
+
+ * 2014-08-25 Buddy Call Notes (by Dennis)
+   5. Confirmable Experience and Explanation.  Interoperability, e.e.cummings
+      poem layout.
+
+ * 2014-08-14 Re: your web (...) proof just succeeded!
+   ... SharePoint is one of those places where Microsoft violates the "no
+   simpler" part of "keep it as simple as possible, and no simpler."
+      My Office 365 Small Business Pro Admin Dashboard has a link for "Office"
+   to Download the latest version of Office, and other desktop, phone, and
+   tablet apps.  I went there for some other curious reason, and saw that
+   panel for controlling my installations of Office 2013 also included a link
+   for "Tools & add-ins."  I clicked that out of curiosity.  The only thing
+   listed there is a way to Install SharePoint Designer.  There is a one-line
+   description.  I installed it just to see what it was.  And, voila, nosing
+   around I realized it showed me the root of my SharePoint instance and it
+   let me add the keybase.txt file there.
+      ... This goes beyond confirmable experience to full-up "ick."  Ick, ick,
+   ick.
+
+ * 2014-06-03 Buddy Call Notes (by Dennis)
+   3. Keybase.io - some odd documentation about signature/hash chains in the
+   docs.  This stuff is tough.  I am still working around the care and feeding
+   of a key pair.  This other stuff is monstrously geeky.  I have had fun
+   explaining how to annotate a detached signature, though:
+<http://nfoworks.org/notes/2014/05/n140504-cache/n140504b4-OpenDocument-v1.2-os-schema.rng.txt.asc>.
+   More confirmable experience!
+   [2023-07-09 There is a thing here about how to check this stuff and also
+   how to create digitally-signed materials.  I did more on this I need to
+   recover and employ as part of a separate skill/tool treatment.  There is
+   also a trick beside annotation of detached signatures and I need to
+   recover that.  Also, the above URL may become defunct at some time and I
+   need to grab what is needed for the general topic and preservation via
+   Github.  I've parked a copy here for the time-being.]
+
+ * RE: 2012-10-09 buddy call notes (by Dennis)
+   Wowza, a Confirmable Experience tool!!  Who knew?
+<http://www.hanselman.com/blog/HelpYourUsersRecordAndReportBugsWithTheProblemStepsRecorder.aspx>
+   [2023-07-09 The Scott Hanselman blog page is still up and the three
+   articles this is part of are all supremely relevant to affording confirmed
+   experiences.  PSR, the Step Recorder is part of Windows 10 and I suspect
+   it is in Win11 too.]
+
+ * A big factor around confirmable experience is knowing what information to
+   ask for, not just knowing what information to provide.
 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.1 2023-07-10T00:21Z Long scraping of "confirmable experience" usage
  0.0.0 2023-07-07T15:47Z Placeholder from skills.txt 0.0.14 boilerplate.
 
 

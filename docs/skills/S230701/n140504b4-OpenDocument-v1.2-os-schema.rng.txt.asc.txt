@@ -1,0 +1,73 @@
+n140504b4-OpenDocument-v1.2-os-schema.rng.txt.asc 0.01          dh:2014-05-31
+
+         OpenDocument-v1.2-os-schema.rng DETACHED SIGNATURE
+         ==================================================
+
+    This file is a detached digital signature for the file with
+    the same name absent the *.asc suffix.
+
+    To verify this signature, place both files in a single
+    directory.  The file to be checked must not be altered
+    in any manner and it should be downloaded directly
+    from its source.
+
+    If the file to be checked has been renamed, rename this
+    signature file to match, with the addition of *.asc
+    suffix.
+
+    To verify the signature using GnuPG, import a copy of the
+    OpenPGP Public Key of the signer from <http://keybase.io/orcmid>,
+    from <https://people.apache.org/keys/committer/orcmid.asc>,
+    or from a PGP Key Server.  The fingerprint of the key is
+    04D0 4322 979B 84DE 1077  0334 F96E 89FF D456 628A.
+
+    Verification is by opening a console session in the same
+    directory as the pair of files.  Verify the signature by
+    simply executing the command
+
+    > gpg n140504b3-OpenDocument-v1.2-os-schema.rng.txt.asc
+
+    using the name given to this file if it has been renamed.
+
+    To verify that the signed replica is a faithful copy of the
+    official OASIS OpenDocument-v1.2-os-schema.rng file,
+    download a copy of that file from the OASIS soure at
+    <http://docs.oasis-open.org/office/v1.2/os/>.  Rename this
+    signature file to match the name of the downloaded file
+    and perform the gpg command using the renamed detached
+    signature file.
+
+    THE CLAIM:
+
+    File n140504b3-OpenDocument-v1.2-os-schema.rng.txt.asc
+    provided at <http://nfoworks.org/notes/2014/05/n140504-cache/>
+    is an accurate copy of the official OASIS file.  This claim
+    establishes a chain of custody with regard to the derivation
+    of annotated replicas of the official schema.
+
+    Demonstration of the claim is by confirmation that the same
+    OpenPGP signature file is verifiable against either source of
+    the signed file.
+
+                                             -- Dennis E. Hamilton
+                                                Seattle, Washington
+                                                2014-05-31
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v2.0.22 (MingW32)
+
+iQEcBAABAgAGBQJTiP3oAAoJEPluif/UVmKKKugH/1/eVDVdIq7QyUV7xPn2zxdm
+BuJyMV5L3qIAXaNZYs8CML8l9gbXWcNmuKNmEj/4C0xvKdhC+9AbGzGDdUVpKuV6
+jCEf6GB9Z6Xv5LNbzIfUzjgcnYj8DY0jP10wtt8wdFjlLhdayADIm8klywSzWB8p
+YohpdY4+monTqazrjFwCnQyucgs35BSRe7vrO19w40zTmfE0tYBXsRHs3LLyOIlo
+F5u+iN00Xf8WI4L5LXm3qaVPPXR170+nqg07Az1eJF9Y5LGjH3CajIdwEib5ZvNU
+LrCURPrNy8fokv+3GUD5oOiN5uXTDq3rgsjwUGKu5QJviJcuxJcArhQmKbJt49w=
+=DTob
+-----END PGP SIGNATURE-----
+
+0.01 2014-05-31-07:23 Add Explanatory Material
+     The benign description of what this file is and how to use it is
+     added around the ASCII-armored detatched signature itself.
+0.00 2014-05-30-14:53 Create the detached signature file using GPG4win
+
+      *** END OpenDOcument-v1.2-os-schema.rng DETACHED SIGNATURE ***
