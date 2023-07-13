@@ -1,4 +1,4 @@
-T060101.txt 0.0.17                  UTF-8                          2023-06-07
+T060101.txt 0.0.18                  UTF-8                          2023-07-13
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -42,7 +42,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. T060101: C/C++ Programming.  nfoTools project text
-   file T060101.txt version 0.0.17 dated 2023-06-07, available on the
+   file T060101.txt version 0.0.18 dated 2023-07-13, available on the
    Internet as a version of
    <https://orcmid.github.io/nfoTools/tools/T060101/T060101.txt>
 
@@ -145,8 +145,21 @@ TODO
 
  * Fix index.md to have "Work in Progress" link
 
+ * Explain that this folio is not for learning C programming, but for
+   exploring C programming and the related tools.  There will be a variety of
+   explorations with suggestions of experiments to conduct for building
+   confidence and understanding of the nature of C and its connection to
+   underlying hardware, however abstracted.
+
+ * Use the idea of minilabs for exploration and understanding of specific
+   elements of C Language and the standard libraries.
+
+ * Say something about how we are viewing abstraction above the machine.
+
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.18 2023-07-13T02:59Z More thoughts about what we are provided for
+        learning to use C Language
  0.0.17 2023-06-07T19:54Z Introduct T060101d
  0.0.16 2023-05-31T20:13Z Distribute TODOs to T060101b
  0.0.15 2023-05-20T23:42Z Morph folio structure
