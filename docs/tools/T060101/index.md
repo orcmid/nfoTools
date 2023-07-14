@@ -1,4 +1,4 @@
-<!-- index.md 0.2.12                UTF-8                          2023-06-15
+<!-- index.md 0.2.13                UTF-8                          2023-07-14
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                          T060101: C/C++ PROGRAMMING
@@ -18,6 +18,20 @@ self-study toward mastery of C Language for challenging projects, including
 games and graphical applications.  Coverage is suitable for recreational
 computing as well as bridging to participation in cooperative and professional
 software-development efforts.
+
+This is not an organized tutorial on C/C++.  Instead there is selective focus
+on minitopics, ones that that illustrate facets of C Language and its standard
+libraries.  The emphasis is on self-exploration and experimental confirmation
+of understanding.  Benefit of the material is gained by hands-on exploration
+and gradual mastery along with the mistakes and failures that the journey
+entails.  Learning from mistakes is indispensible and expected.
+
+If there is concern with respect to the relevance of C and its C++ connection,
+there is
+[current evidence (July 2023)](https://www.infoworld.com/article/3702350/rising-c-plus-plus-closes-in-on-c-language.html)
+that learning C Language remains worthwhile.  Some lessons of C Language
+explorations also apply, in altered form, to others of the most prominent
+programming languages of the day.
 
 - [T060101: C/C++ Programming](#t060101-cc-programming)
   - [C/C++ Programming for Beginners and the Curious](#cc-programming-for-beginners-and-the-curious)
@@ -148,6 +162,7 @@ from time to time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.2.13 2023-07-14T16:44Z Clean-up synopsis on emphasis and approach
      0.2.12 2023-06-15T13:23Z T060101d
      0.2.11 2023-06-08T20:04Z T060101c
      0.2.10 2023-06-03T18:41Z T060101b-c

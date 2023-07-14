@@ -1,4 +1,4 @@
-T060101.txt 0.0.18                  UTF-8                          2023-07-13
+T060101.txt 0.0.19                  UTF-8                          2023-07-14
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -42,7 +42,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. T060101: C/C++ Programming.  nfoTools project text
-   file T060101.txt version 0.0.18 dated 2023-07-13, available on the
+   file T060101.txt version 0.0.19 dated 2023-07-14, available on the
    Internet as a version of
    <https://orcmid.github.io/nfoTools/tools/T060101/T060101.txt>
 
@@ -123,18 +123,11 @@ TODO
    possibility here, and on Udemy, elsewhere, needs to be mentioned but with
    cautionary remarks.
 
- * Switch to the latest folio pattern, that used for D211101 already.  Then
-   address why learn C and what the benefit is if one is curious enough.
+ * Address why learn C and what the benefit is if one is curious enough.
     o the preprocessor, header, declaration, external reference, and library
       scheme.
     o How C libraries are workable in C++ programs.  The extern "C" business.
     o Keeping things straight with naming conventions.
-
- * Need better information on learning C programming and how to use C in a
-   C++-focused world.
-
- * Connections with other languages, such as scripting languages and also
-   object-oriented languages.
 
  * Maybe some of this in notes?
 
@@ -143,21 +136,11 @@ TODO
  * READING CODE, RUNNING CODE.  This is the experiemental and practical
    art aspect of Computer Science.
 
- * Fix index.md to have "Work in Progress" link
-
- * Explain that this folio is not for learning C programming, but for
-   exploring C programming and the related tools.  There will be a variety of
-   explorations with suggestions of experiments to conduct for building
-   confidence and understanding of the nature of C and its connection to
-   underlying hardware, however abstracted.
-
- * Use the idea of minilabs for exploration and understanding of specific
-   elements of C Language and the standard libraries.
-
  * Say something about how we are viewing abstraction above the machine.
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.19 2023-07-14T17:00Z Cleaning up TODOs
  0.0.18 2023-07-13T02:59Z More thoughts about what we are provided for
         learning to use C Language
  0.0.17 2023-06-07T19:54Z Introduct T060101d
