@@ -1,4 +1,4 @@
-<!-- index.md 0.0.5                 UTF-8                          2023-05-14
+<!-- index.md 0.0.6                 UTF-8                          2023-07-14
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                     FAILCODE7: RAYLIB VERSION NOT > 3.0.0
@@ -6,9 +6,9 @@
 
 # ***VCrayApp** [FAILCODE7: RAYLIB VERSION NOT > 3.0.0](.)*
 
-| ***[nfoTools](../../../../)*** | [dev](../../../)[>D211101](../../)[>f](../)[>FAIL7](.) | [index.html](index.html) ***0.0.5 2023-05-15*** |
+| ***[nfoTools](../../../../)*** | [dev](../../../)[>D211101](../../)[>f](../)[>FAIL7](.) | [index.html](index.html) ***0.0.6 2023-07-14*** |
 | :--                |       :-:          | --: |
-| ![nfotools](../../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../../../../images/hardhat-logo.gif) |
+| ![nfotools](../../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | [Work-in-Progress](FAIL7.txt) | ![Hard Hat Area](../../../../images/hardhat-logo.gif) |
 |              |                     |           |
 | This Version | since VCrayApp 0.1.0 | [D211101e](../../e) |
 
@@ -28,7 +28,7 @@ The small program `VCrayVerCheck.c` is compiled on the first run of VCrayApp
 and on every cache refresh.  It checks `raylib.h` for that preprocessor
 variable and its value.  If the value is not defined, `VCrayVerCheck` reports
 that the version is unidentified.  `VCrayApp.bat` acquires the result from
-execution of `VCrayVerCheck.exe'.
+execution of `VCrayVerCheck.exe`.
 
 In the unidentified (pre-raylib-4.0) case,
 `VCrayApp.bat` inspects for the presence and absence of some `raylib\` files
@@ -53,6 +53,7 @@ from time to time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.6 2023-07-14T20:35Z Touch-up
      0.0.5 2023-05-15T16:17Z Updated for 0.1.0 release
      0.0.4 2023-05-07T20:14Z Reflect transposition to new location
      0.0.3 2023-04-29T17:13Z Touch-ups
