@@ -1,14 +1,14 @@
-<!-- index.md 0.0.5                 UTF-8                          2023-05-07
+<!-- index.md 0.0.6                 UTF-8                          2023-07-14
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-                        OLD D21110c LOCATION TOMBSTONE
+                        OLD D211101c LOCATION TOMBSTONE
      -->
 
 # ***D211101c** [VCrayApp "LATEST VERSION" TOMBSTONE](.)*
 
-| ***[nfoTools](../../../)*** | [dev](../../)[>D211101](../)[>D211101c](.) | (index.html) ***0.0.5 2023-05-07*** |
+| ***[nfoTools](../../../)*** | [dev](../../)[>D211101](../)[>D211101c](.) | (index.html) ***0.0.6 2023-07-14*** |
 | :--                |       :-:          | --: |
-| ![nfotools](../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../../../images/hardhat-logo.gif) |
+| ![nfotools](../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | [Work-in-Progress](..\D211101.txt) | ![Hard Hat Area](../../../images/hardhat-logo.gif) |
 
 # TOMBSTONE
 
@@ -20,7 +20,7 @@ There is no such page in the structure of technical folios at
 
 To learn what the next and latest releases following a known one are,
 examine the version information block in the table at the heading of the
-page for a known releasse, such as for
+page for a known release, such as for
 [VCrayApp-0.0.0](https://orcmid.guthub.io/nfoTools/dev/D211101/D211101d).
 
 ----
@@ -35,6 +35,7 @@ from time to time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.6 2023-07-14T22:36Z Touch-up
      0.0.5 2023-05-07T19:17Z Tombstone at old D211101c location
      0.0.4 2023-05-07T18:47Z Transpose to shorter URL location
      0.0.3 2023-02-10T18:51Z Repurpose to Verification/Deployment Lifecycle

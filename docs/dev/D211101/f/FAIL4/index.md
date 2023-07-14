@@ -1,4 +1,4 @@
-<!-- index.md 0.0.6                 UTF-8                          2023-05-14
+<!-- index.md 0.0.7                 UTF-8                          2023-07-14
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
               FAILCODE4: COMPILING CACHE OF RAYLIB FILES FAILED
@@ -6,9 +6,9 @@
 
 # ***VCrayApp** [FAILCODE4: COMPILING CACHE OF RAYLIB FILES FAILED](.)*
 
-| ***[nfoTools](../../../../)*** | [dev](../../../)[>D211101](../../)[>f](../)[>FAIL4](.) | [index.html](index.html) ***0.0.6 2023-05-14*** |
+| ***[nfoTools](../../../../)*** | [dev](../../../)[>D211101](../../)[>f](../)[>FAIL4](.) | [index.html](index.html) ***0.0.7 2023-07-14*** |
 | :--                |       :-:          | --: |
-| ![nfotools](../../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../../../../images/hardhat-logo.gif) |
+| ![nfotools](../../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | [Work-in-Progress](FAIL4.txt) | ![Hard Hat Area](../../../../images/hardhat-logo.gif) |
 |              |                     |           |
 | This Version | since VCrayApp 0.1.0 | [D211101e](../../e) |
 
@@ -97,6 +97,7 @@ from time to time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.7 2023-07-14T22:16Z Touch-up
      0.0.6 2023-05-14T16:50Z Correct two image links
      0.0.5 2023-05-13T15:40Z Align with release candidate using demo project
      0.0.4 2023-05-07T19:57Z Reflect transposition to new location

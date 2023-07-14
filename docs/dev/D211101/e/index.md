@@ -1,4 +1,4 @@
-<!-- index.md 0.0.3                 UTF-8                          2023-05-18
+<!-- index.md 0.0.4                 UTF-8                          2023-07-14
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                        VCRAYAPP 0.1.0 RELEASE (BETA)
@@ -6,9 +6,9 @@
 
 # ***D211101e** [VCrayApp 0.1.0 Release (beta)](.)*
 
-| ***[nfoTools](../../../)*** | [dev](../../)[>D211101](../)[>e](.) | [index.html](index.html) ***0.0.3 2023-05-18*** |
+| ***[nfoTools](../../../)*** | [dev](../../)[>D211101](../)[>e](.) | [index.html](index.html) ***0.0.4 2023-07-14*** |
 | :--                |       :-:          | --: |
-| ![nfotools](../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../../../images/hardhat-logo.gif) |
+| ![nfotools](../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | [Work-in-Progress](D211101e.txt) | ![Hard Hat Area](../../../images/hardhat-logo.gif) |
 |              |                     |           |
 | This Version | VCrayApp 0.1.0 Release (beta) | [here](.) |
 | Previous     | VCrayApp 0.0.0 Release (alpha) | [D211101d](../D211101d) |
@@ -63,6 +63,7 @@ from time to time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.4 2023-07-14T22:30Z Touch-up
      0.0.3 2023-05-18T17:42Z Remarks on upgrading VCrayApp-0.0.0 projects
      0.0.2 2023-05-09T03:41Z Release candidate
      0.0.1 2023-05-07T18:59Z Transposed to new location

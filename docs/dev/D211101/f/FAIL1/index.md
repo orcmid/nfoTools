@@ -1,4 +1,4 @@
-<!-- index.md 0.0.6                 UTF-8                          2023-05-11
+<!-- index.md 0.0.7                 UTF-8                          2023-07-14
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
             FAILCODE1: INCORRECT VCrayApp FILES CONFIGURATION
@@ -6,9 +6,9 @@
 
 # ***VCrayApp** [FAILCODE1: INCORRECT VCrayApp FILES CONFIGURATION](.)*
 
-| ***[nfoTools](../../../../)*** | [dev](../../../)[>D211101](../../)[>f](../)[>FAIL1](.) | [index.html](index.html) ***0.0.6 2023-05-11*** |
+| ***[nfoTools](../../../../)*** | [dev](../../../)[>D211101](../../)[>f](../)[>FAIL1](.) | [index.html](index.html) ***0.0.7 2023-07-14*** |
 | :--                |       :-:          | --: |
-| ![nfotools](../../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../../../../images/hardhat-logo.gif) |
+| ![nfotools](../../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | [Work-in-Progress](FAIL1.txt) | ![Hard Hat Area](../../../../images/hardhat-logo.gif) |
 |              |                     |           |
 | This Version | since VCrayApp 0.1.0 | [D211101e](../../e) |
 
@@ -50,6 +50,7 @@ from time to time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.7 2023-07-14T22:20Z Touch-up
      0.0.6 2023-05-11T20:18Z Fix simple typos
      0.0.5 2023-05-11T18:47Z Update for VCrayApp-0.1.0 release demo
      0.0.4 2023-05-07T19:42Z Reflect transposition to new location

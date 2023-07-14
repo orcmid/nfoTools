@@ -1,4 +1,4 @@
-<!-- index.md 0.0.11                UTF-8                          2023-05-15
+<!-- index.md 0.0.12                UTF-8                          2023-07-14
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
               FAILCODE5: PRODUCING/OPERATING %VCEXE% FAILED
@@ -6,9 +6,9 @@
 
 # ***VCrayApp** [FAILCODE5: PRODUCING/OPERATING %VCEXE% FAILED](.)*
 
-| ***[nfoTools](../../../../)*** | [dev](../../../)[>D211101](../../)[>](../)[>FAIL5](.) | [index.html](index.html) ***0.0.10 2023-05-13*** |
+| ***[nfoTools](../../../../)*** | [dev](../../../)[>D211101](../../)[>](../)[>FAIL5](.) | [index.html](index.html) ***0.0.12 2023-07-14*** |
 | :--                |       :-:          | --: |
-| ![nfotools](../../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../../../../images/hardhat-logo.gif) |
+| ![nfotools](../../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | [Work-in-Progress](FAIL5.txt) | ![Hard Hat Area](../../../../images/hardhat-logo.gif) |
 |              |                     |           |
 | This Version | since VCrayApp 0.1.0 | [D211101e](../../e) |
 
@@ -135,6 +135,7 @@ from time to time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+    0.0.12 2023-07-14T22:14Z Touch-ups
     0.0.11 2023-05-15T18:59Z Complete the description of all FAIL5 cases
     0.0.10 2023-05-13T18:49Z Correct a title
      0.0.9 2023-05-13T16:41Z Update with VCrayApp-0.1.0 demo example

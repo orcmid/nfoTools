@@ -1,4 +1,4 @@
-<!-- index.md 0.0.8                 UTF-8                          2023-05-15
+<!-- index.md 0.0.9                 UTF-8                          2023-07-14
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                          VCRAYAPP FAILCODE MESSAGES
@@ -6,9 +6,9 @@
 
 # ***D211101f** [VCrayApp FAILCODE MESSAGES](.)*
 
-| ***[nfoTools](../../../)*** | [dev](../../)[>D211101](../)[>f](.) | [index.html](index.html) ***0.0.8 2023-05-15*** |
+| ***[nfoTools](../../../)*** | [dev](../../)[>D211101](../)[>f](.) | [index.html](index.html) ***0.0.9 2023-07-14*** |
 | :--                |       :-:          | --: |
-| ![nfotools](../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../../../images/hardhat-logo.gif) |
+| ![nfotools](../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | [Work-in-Progress](D211101f.txt) | ![Hard Hat Area](../../../images/hardhat-logo.gif) |
 |              |                     |           |
 | This Version | as of VCrayApp 0.1.0 beta release | [D211101e](../e) |
 
@@ -83,6 +83,7 @@ from time to time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.9 2023-07-14T22:24Z Touch-up
      0.0.8 2023-05-15T20:41Z Expand for VCrayApp-0.1.0 Release Candidate
      0.0.7 2023-05-06T22:47Z Transpose from D211101/fails 0.0.6
      0.0.6 2023-04-21T16:38Z Touch-ups and connection of FAIL6-FAIL8

@@ -1,4 +1,4 @@
-<!-- index.md 0.0.4                 UTF-8                          2023-05-15
+<!-- index.md 0.0.5                 UTF-8                          2023-07-14
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                     FAILCODE8: RAYLIB %VCRAYVER% NOT SUPPORTED
@@ -6,9 +6,9 @@
 
 # ***VCrayApp** [FAILCODE8: RAYLIB %VCRAYVER% NOT SUPPORTED](.)*
 
-| ***[nfoTools](../../../../)*** | [dev](../../../)[>D211101](../../)[>f](../)[>FAIL8](.) | [index.html](index.html) ***0.0.4 2023-05-15*** |
+| ***[nfoTools](../../../../)*** | [dev](../../../)[>D211101](../../)[>f](../)[>FAIL8](.) | [index.html](index.html) ***0.0.5 2023-07-14*** |
 | :--                |       :-:          | --: |
-| ![nfotools](../../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../../../../images/hardhat-logo.gif) |
+| ![nfotools](../../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | [Work-in-Progress](FAIL8.txt) | ![Hard Hat Area](../../../../images/hardhat-logo.gif) |
 |              |                     |           |
 | This Version | since VCrayApp 0.1.0 | [D211101e](../../e) |
 
@@ -48,6 +48,7 @@ from time to time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.5 2023-07-14T22:10Z Touch-up
      0.0.4 2023-05-15T16:51Z Update with improved VCrayApp-0.1.0 demo
      0.0.3 2023-05-07T20:20Z Reflect transposition to new location
      0.0.2 2023-04-24T22:55Z Touch-ups
