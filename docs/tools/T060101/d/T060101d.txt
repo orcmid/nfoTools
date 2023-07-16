@@ -1,4 +1,4 @@
-T060101.txt 0.0.5                   UTF-8                          2023-06-19
+T060101.txt 0.0.6                   UTF-8                          2023-07-16
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -51,7 +51,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. T060101d: Hello, What's Happening Here?  nfoTools
-   project text file T060101d.txt version 0.0.5 dated 2023-06-19, available
+   project text file T060101d.txt version 0.0.6 dated 2023-07-16, available
    on the Internet as a version of
    <https://orcmid.github.io/nfoTools/tools/T060101/d/T060101d.txt>
 
@@ -100,8 +100,17 @@ TODO
    not certain how that works in a modern x64 computer, but I don't want to
    cause any deep-ending about that.
 
+ * I need to setup this topic by first describing the loading and execution
+   environment, a bit like the oFrugal diagram.  I need to recover that VSD
+   and see how to adapt it.
+
+ * I also need to do the take-apart on the compile through linking better.
+   The diagrams for that stage are all right.  The narrative is clumsy.  I
+   will try subheadings (which also gives me permalinks to rely on).
+
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.6  2023-07-16T16:59Z More TODOs, fretting about the setup and progression
  0.0.5  2023-06-19T16:34Z More TODOs
  0.0.4  2023-06-17T16:28Z TODOs on dealing with computer memory and TAoCP
  0.0.3  2023-06-11T23:06Z Add Compile+Link diagram
