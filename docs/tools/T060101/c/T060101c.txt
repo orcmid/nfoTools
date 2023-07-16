@@ -1,4 +1,4 @@
-T060101c.txt 0.1.2                  UTF-8                         2023-06-08
+T060101c.txt 0.1.3                  UTF-8                         2023-07-16
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -57,7 +57,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. T060101c: Getting to "Hello."  nfoTools project text
-   file T060101c.txt version 0.1.2 dated 2023-06-08, available on the
+   file T060101c.txt version 0.1.3 dated 2023-07-16, available on the
    Internet as a version of
    <https://orcmid.github.io/nfoTools/tools/T060101/c/T060101c.txt>
 
@@ -92,8 +92,16 @@ TODO
 
  * Update again when there are more sources to cross-reference.
 
+  * Reference on fputs() is
+    <https://en.wikibooks.org/wiki/C_Programming/stdio.h/fputs>.
+
+  * Also,
+    <https://learn.microsoft.com/en-us/cpp/c-runtime-library/reference/fputs-fputws>
+
+
   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.1.3 2023-07-16T17:07Z Tidy up, collect more links
  0.1.2 2023-06-08T20:01Z Manage TODOs, upgrade index.md to 0.1.1.
  0.1.1 2023-06-06T15:21Z Manage TODOs and Verify PROMPT ASCII works
  0.1.0 2023-06-02T17:27Z Proof-reading at the beta-release level
