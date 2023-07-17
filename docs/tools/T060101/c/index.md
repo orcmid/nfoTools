@@ -1,4 +1,4 @@
-<!-- index.md 0.1.1                 UTF-8                          2023-06-08
+<!-- index.md 0.1.2                 UTF-8                          2023-07-17
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                          T060101c: GETTING TO "HELLO"
@@ -6,7 +6,7 @@
 
 # T060101c: [Getting to "Hello"](.)
 
-| ***[nfoTools](../../../)*** | [tools](../../)[>t060101](../)[>c](.) | ***[index.html](index.html) 0.1.1 2023-06-08*** |
+| ***[nfoTools](../../../)*** | [tools](../../)[>t060101](../)[>c](.) | ***[index.html](index.html) 0.1.2 2023-07-17*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | [Work in Progress](T060101c.txt) | ![Hard Hat Area](../../../images/hardhat-logo.gif) |
 
@@ -47,13 +47,10 @@ installed.  On a Windows PC, the Documents folder of a personal account will
 
  ![Initial myCleanC Folder](T060101c1.png)
 
- The example `Documents\myCleanC` folder is established using a Windows 10
- File Explorer view that is handy when working on software projects. This name
- reflects the emphasis on [Clean C](../#keeping-it-clean-c) here.
-
  The file
- `hello.c` has already been created in the folder.  This is a text file with
- extension  `.c` instead of `.txt`.
+ `hello.c` has already been created in the folder `Documents\myCleanC`.  The
+ file has extension `.c` instead of `.txt`, signifying that the text is in
+ C language by convention.
 
 ## 3. Make the `hello.c` Code
 
@@ -61,7 +58,7 @@ installed.  On a Windows PC, the Documents folder of a personal account will
 
 This is the very first program presented in the
 \[[Kernighan1988](..\b\#Kernighan1988)\] book, *The C Programming Language*.
-This program should be typed exactly and saved as file `hello.c`.  Be exact,
+Your program should be typed exactly and saved as file `hello.c`.  Be exact,
 character-by-character, line-by-line.
 
 There is
@@ -98,8 +95,8 @@ runs scripts that announce the tools and initialize the command-session
 environment for building x64 programs.
 
 - The title in the console window reflects the established setup.  The tiny
-`C:\_` icon identifies the built-in utility `CMD.exe` that provides
-Command Prompt operation.
+`C:\_` icon identifies the [built-in utility](..\..\T060501) `CMD.exe` that
+provides Command Prompt operation.
 - The version of Visual Studio whose Build Tools are being employed is
 identified.
 - The flavor of environment is reported and the first user
@@ -125,6 +122,8 @@ The command `CL hello.c` instructs the VC/C++ Compiler-Linker (CL) to compile
 `hello.c`.  In this simple case, compilation of the one file and producing
 executable program `hello.exe` will be automatic.
 
+The first step
+
 ### 5.4 Observe the compilation
 
 If your `hello.c` is **exactly** the version shown in
@@ -134,15 +133,18 @@ compiled and there should be nothing more before the Incremental Linker is
 identified.
 
 If there is anything else instead, there will be some diagnostic messages
-identifying the difficulties.  Any difficulties must be resolved and the
-process begun anew, step by step from [4](#4-initiate-a-command-prompt),
-above.
+identifying the difficulties and the compilation will end.  Any difficulties
+must be resolved and the process begun anew, step by step from
+[4](#4-initiate-a-command-prompt), above.
+
+When compilation of `hello.c` is successful in this initial stage, the file
+`hello.obj` is produced silently.  That intermediate result is then used by
+the incremental linker.
 
 ![hello.exe linking](T060101c4d.png)
 
 After the linker identification, there will be automatic determination to
-produce `hello.exe` from the file `hello.obj` that was produced by the
-successful compile of `hello.c`.
+produce `hello.exe` from the file `hello.obj`.
 
 If there were diagnostic messages about linking problems, they would
 appear before the next prompt.  That's unlikely here.  It can be expected
@@ -166,11 +168,12 @@ Prompt screen as a line of text.
 ![the myCleanC dir](T060101c4f.png)
 
 Finally, command line `H:\Documents\myCleanC>dir` issues the command for
-listing the current content of the Current Directory.
+listing the content of the Current Directory.
 
-The file `hello.obj` was produced by the compiler processing of `hello.c`.
-That `hello.obj` intermediate is taken by the linker and combined with needed
-library and setup code to produce `hello.exe`.  The `hello.exe` program is the complete native software for carrying out the operation specifed in the
+The file intermediate file `hello.obj` is present.  That `hello.obj`
+intermediate was taken by the linker and combined with needed
+library and setup code to produce `hello.exe`.  The `hello.exe` program is
+the complete native software for carrying out the operation specifed in the
 C Language of `hello.c`.
 
 The simple 67-character `hello.c` is compiled to a 2,367 byte `hello.obj` of
@@ -214,14 +217,13 @@ customizing the shortcut.  There are many choices available, impacting the
 overall color scheme of the display..
 
 To accentuate the appearance of command prompts in the display, `myPrompt`
-is the first command used in the fresh session.  This is used to customize
-the prompt text in a distinguishing black color.  Although not done here,
-It is also possible to alter the prompt text itself, choosing something
-different than `H:\Documents\myCleanC>` to confirm the Current Directory
-setting.
+is the first command used in the fresh session.  I'm using it to customize
+the prompt text in a different color.
 
-With the changes in startup, it is now a short hop to the `hello` project in
-its new directory.  Compilation is then carried out there.
+With the changes in setup and use of the shortcut, it is now a short hop to
+the `hello` project in its folder folder beneath `myCleanC\.`  Compilation is
+now done there.
+
 
 After compilation and confirmation of the revised `hello.c` program, the `dir`
 command listing of file sizes reflects changes in the `hello.c` program that
@@ -245,13 +247,12 @@ as demonstrated further next.
 
 ![starting VS Code](T060101c5a.png)
 
-The command entry `code .` initiates [Visual Studio Code](../../T21001/) for
-operation in the Command Prompt environment and oriented to the Current
-Directory (established by the `.` parameter).
+The command entry `code hello.c` initiates [Visual Studio Code](../../T21001/)
+for operation under the Command Prompt environment.  `hello.c` is named as a
+parameter to code, having it be opened directly in the VS Code editor.
 
-The benefit of initiating VS Code in this manner is for its
-recognition of the initialized environment, using it for review and
-annotation of files that are opened for review and possible editing.
+When VS Code is initiated under the developer Command Prompt, there is
+automatic recognition of the initialized environment.
 
 ![hello.c 0.2.2 in VS Code](T060101c6.png)
 
@@ -269,11 +270,12 @@ first line,
  int main(void)
  ```
 
-Visual Studio Code will recognize various defects in a C Language program.
-For this `hello.c` none are identified.
+When operated under the developer Command Prompt environment, Visual Studio
+Code will recognize various defects in a C Language program.  For this
+`hello.c` none are identified.
 
-What will become more important is coming to appreciate what is **not**
-provoking any VS Code commentary.
+It will become important to appreciate what is **not** provoking any VS Code
+commentary and warnings.
 
 - The `#include <stdio.h>` has been resolved to a file in the VC/C++
 environment.
@@ -282,7 +284,7 @@ required `main()` procedure.
 - the `fputs()` matches with the definition in `stdio.h` and the two
 parameters are of the proper form.
 - `stdout`, also established in `stdio.h` is recognized as the indicator
-of the standard output stream, her to be automatically directed to the Command
+of the standard output stream, here to be automatically directed to the Command
 Prompt window the program is operated from.
 
 All of this built-in checking, called
@@ -304,13 +306,13 @@ successful case is the identification of the C/C++ compiler.
 
 If there are any error messages, they will still appear.  The quiet operation
 indicates that there are no difficulties.  In the case of error messages and
-warnings, it is necessary to repeat the compilation without the `>NUL` to
+warnings, it may be necessary to repeat the compilation without the `>NUL` to
 observe further details.
 
 An alternative to sending the output to the `NUL` bit-bucket is to direct the
 output to a file.  The command `CL hello.c >hello.txt` accomplishes that.
-This way, if there are errors and warnings, the full output can be seen by
-viewing that file, accomplished with command `type hello.txt` in the example.
+Now if there are errors and warnings, the full output can be seen by
+viewing that file, accomplished with command `type hello.txt` in this example.
 
 ## 7. Fledgling Adventures
 
@@ -339,6 +341,7 @@ from time to time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.1.2 2023-07-17T00:32Z Many touch ups for clean draft
      0.1.1 2023-06-08T19:58Z Improved descriptions and myPrompt usage
      0.1.0 2023-06-01T19:59Z Cleanup as 0.1.0 full beta level
      0.0.9 2023-06-01T17:13Z Touch-ups, suggestions by Bill Anderson

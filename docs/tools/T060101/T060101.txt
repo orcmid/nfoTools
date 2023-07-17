@@ -1,4 +1,4 @@
-T060101.txt 0.0.19                  UTF-8                          2023-07-14
+T060101.txt 0.0.20                  UTF-8                          2023-07-16
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -19,7 +19,7 @@ MANIFEST
           a/     T060101a: nfoWare t060101a Diary & Job Jar (legacy)
           b/     T060101b: Resources
           c/     T060101c: Getting to "Hello"
-          d/     T060202d: Hello, What's Happening Here?
+          d/     T060101d: Hello, What's Happening Here?
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
@@ -42,7 +42,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. T060101: C/C++ Programming.  nfoTools project text
-   file T060101.txt version 0.0.19 dated 2023-07-14, available on the
+   file T060101.txt version 0.0.20 dated 2023-07-16, available on the
    Internet as a version of
    <https://orcmid.github.io/nfoTools/tools/T060101/T060101.txt>
 
@@ -140,6 +140,7 @@ TODO
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.20 2023-07-16T17:06Z Tidying Up
  0.0.19 2023-07-14T17:00Z Cleaning up TODOs
  0.0.18 2023-07-13T02:59Z More thoughts about what we are provided for
         learning to use C Language

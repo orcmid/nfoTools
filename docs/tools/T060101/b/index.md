@@ -1,4 +1,4 @@
-<!-- T060101b.md 0.2.8              UTF-8                          2023-06-23
+<!-- T060101b.md 0.2.9              UTF-8                          2023-07-16
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                         T060101: C/C++ PROGRAMMING
@@ -8,7 +8,7 @@
 
 # T060101b: [C/C++ Programming Resources](.)
 
-| ***[nfoTools](../../../)*** | [tools](../../)[>T060101](../)[>b](.) | ***[index.html](index.html) 0.2.8 2023-06-23*** |
+| ***[nfoTools](../../../)*** | [tools](../../)[>T060101](../)[>b](.) | ***[index.html](index.html) 0.2.9 2023-07-16*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | [Work-in-Progress](T060101b.txt) | ![Hard Hat Area](../../../images/hardhat-logo.gif) |
 
@@ -50,12 +50,13 @@ and [Skills](../../../skills) for additional coverage.
 The amount of printed material focused specifically on C Language has
 diminished along with the popularity of C++ and more-recent
 programming-language developments.  Some materials featuring C++ start with
-what counts as Clean C, but appealing to the popular interest in C++.
+what counts as Clean C, but appealing to the popular interest in C++ in the
+choice of title and nomenclature.
 
 Printed books can still be found in libraries and also on sale as used books.
 The use of electronic versions other than PDF forms are not recommended.  The
 formulas and code examples have been reported to be transformed incorrectly
-in electronic editions.
+in non-PDF electronic editions.
 
 ### \[<a name="Harbison2002">Harbison2002</a>\] C, A Reference Manual
 
@@ -70,8 +71,8 @@ introduces and emphasizes Clean C for the quality it encourages and also for
 its consistency with C++.  The International Standard for C Language has
 continued to be updated, and compilers might also support the 2011 (C11) and
 2017 (C17) updates even as developers cling to C99 as the gold standard.  It
-is unfortunate that no supplement has been undertaken to address C11 and
-beyond.
+is unfortunate that no supplement of this book has been undertaken to address
+C11 and beyond.
 
 ### \[<a name=Kernighan1988>Kernighan1988</a>\] The C Programming Language
 
@@ -178,10 +179,10 @@ Jaeschke, Rex.  *Portability and the C Language*, ed.2. Wikibooks edition
 much about how to achieve it in a given setting under particular conditions.
 As such, this is not a reference on C Language, although there is much that
 can be learned with respect to portability and where the C Language standards
-have something to say that requires understanding/consideration.  There are
-some nasty pitfalls, such as accidental use of sequences that happen to be
-recognized as trigraphs by some compilers.  There are many more identified
-here.
+have something to say that requires understanding/consideration.  There is
+identification of some nasty pitfalls, such as accidental use of sequences
+that happen to be recognized as trigraphs by some compilers.  There are many
+more identified here.
 
 ### \[<a name="LibC2023">LibC2023</a>\] C Standard Library
 
@@ -227,7 +228,7 @@ Microsoft Corporation. Walkthrough: Compile a C Program on the Command Line.
 Microsoft Learn Documentation available on the Internet at
 <https://learn.microsoft.com/en-us/cpp/build/walkthrough-compile-a-c-program-on-the-command-line>,
 accessed on 2023-06-01.  This is anothere take on
-[Getting to Hello](../c) with a bit more Visual Studio lore in contrast.
+[Getting to Hello](../c) with a bit more Visual Studio lore for contrast.
 
 ### \[<a name="Microsoft2022b">Microsoft2022b</a>\] C Language Documentation
 
@@ -349,19 +350,19 @@ use of registers and pointers nowadays; MMIX reflects that.  At the same time,
 MMIX *feels* much more complicated.  For an initial understanding of
 machine-language (i.e., assembler language) programming and the underlying
 data and code structures, sections 1.3-1.4 of \[[Knuth1997](#Knuth1997)\] may
-be simpler as a starter where available.  Tackle MMIX a bit later later.
+be simpler as a starter where available.  Tackle MMIX a bit later.
 
 ### \[<a name="Petzold2000">Petzold2000</a>\] Code
 
 Petzold, Charles. *Code: The Hidden Language of Computer Hardware and
 Software*.  Microsoft Press (Redmond, WA: 2000).  ISBN 0-7356-1131-9 pbk.
 This book starts with a leisurely and understandable progression from the
-wasy code is known apart from computing through the ways that we got to the
-computer chips that are increasingly powerful.  This book is not about
+way code is known apart from computing through the ways that we got to
+today's increasingly powerful computer chips.  This book is not about
 programming.  It does get to the underpinnings from which programmable
 computers and programs for them arise.  It is often eye-opening to explore.
 
----
+----
 
 Discussion about nfoTools is welcome at the
 [Discussion section](https://github.com/orcmid/nfoTools/discussions).
@@ -373,6 +374,7 @@ from time to time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.2.9 2023-07-16T17:20Z Touch-ups from proof-reading - improved draft
      0.2.8 2023-06-23T15:57Z More Wikipedia/Wikibooks references
      0.2.7 2023-06-20T20:03Z Add [Petzold2000]
      0.2.6 2023-06-18T17:48Z More for Touch-ups, Section 4
