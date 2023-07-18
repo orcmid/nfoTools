@@ -1,4 +1,4 @@
-T060101.txt 0.0.6                   UTF-8                          2023-07-16
+T060101.txt 0.0.7                   UTF-8                          2023-07-18
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -26,6 +26,13 @@ MANIFEST
    T060101d2-2023-06-11-1545-Compile+Link.png
                  Web formatted 144x144 resolution PNG of the diagram
 
+   T060101d3-2023-06-24-1535-hello.exe-layout.vsdx
+                 Visio diagram draft for EXE layout (diagrammatic)
+
+   T060202d4-2023-07018-0811-objective.vsdx
+                 Borrowed VSD diagram for morphing for how hello is
+                 arranged to be operated (highly, loosely diagrammatic)
+
    T060101d1-Compiling-SalvageFile.vsdx
                  Interim file used for salvaging components from an older
                  diagram.
@@ -51,7 +58,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. T060101d: Hello, What's Happening Here?  nfoTools
-   project text file T060101d.txt version 0.0.6 dated 2023-07-16, available
+   project text file T060101d.txt version 0.0.7 dated 2023-07-18, available
    on the Internet as a version of
    <https://orcmid.github.io/nfoTools/tools/T060101/d/T060101d.txt>
 
@@ -110,6 +117,7 @@ TODO
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.7  2023-07-18T15:43Z Experimental Visio diagrams for the troubling parts
  0.0.6  2023-07-16T16:59Z More TODOs, fretting about the setup and progression
  0.0.5  2023-06-19T16:34Z More TODOs
  0.0.4  2023-06-17T16:28Z TODOs on dealing with computer memory and TAoCP
