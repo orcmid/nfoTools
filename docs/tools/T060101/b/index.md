@@ -1,4 +1,4 @@
-<!-- T060101b.md 0.2.9              UTF-8                          2023-07-16
+<!-- T060101b.md 0.2.10             UTF-8                          2023-07-20
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                         T060101: C/C++ PROGRAMMING
@@ -8,7 +8,7 @@
 
 # T060101b: [C/C++ Programming Resources](.)
 
-| ***[nfoTools](../../../)*** | [tools](../../)[>T060101](../)[>b](.) | ***[index.html](index.html) 0.2.9 2023-07-16*** |
+| ***[nfoTools](../../../)*** | [tools](../../)[>T060101](../)[>b](.) | ***[index.html](index.html) 0.2.10 2023-07-??*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | [Work-in-Progress](T060101b.txt) | ![Hard Hat Area](../../../images/hardhat-logo.gif) |
 
@@ -41,8 +41,8 @@ crawl.  Others turn up in Internet searches.
 
 For more exotic topics, such as working with the Microsoft Component Object
 Model (COM) and building applications for the Microsoft Windows Graphical User
-Interface (GUI), cloud-based apps, etc.,  specialized materials not covered
-here are required.  See material on [Tools](../../), [Dev](../../../dev),
+Interface (GUI), cloud-based apps, etc.,  specialized materials, not covered
+here, are required.  See material on [Tools](../../), [Dev](../../../dev),
 and [Skills](../../../skills) for additional coverage.
 
 ## 1. Books
@@ -125,11 +125,38 @@ of C Language with numerous examples.  There are exercises with
 ### \[<a name="Prinz2003">Prinz2003</a>\] C Pocket Reference
 
 Prinz, Peter., Kirch-Prinz, Ulla.  *C Pocket Reference*. Translated by Tony
- Crawford.  O'Reilly Media (Sebastopol, CA: 2003).  134pp.
+Crawford.  O'Reilly Media (Sebastopol, CA: 2003).  134pp.
 ISBN 0-596-00436-2 pbk.  Originally published in German as "C kurz & gut"
 (short and good), I found this thumbnail convenient, with an organization that
 is easy for me to find material in.  Lately, I find myself using on-line
 materials.
+
+### \[<a name="Seacord2020">Seacord2020</a>\] Effective C
+
+Seacord, Robert C. *Effective C: An Introduction to Professional C
+Programming*.  No Starch Press (San Francisco: 2020). ISBN 1-7185-0104-8 pbk.
+Also described as "A detailed introduction to the C programming language for
+experience programmers," this book is offered as an introduction to the C
+language and meant to be accessible to anyone who wants to learn C programming
+without the bad habits that some introductory books might encourage.
+
+- The
+progression of chapters is somewhat aligned with what one might
+find in a beginning course.  There are also some intense details and
+comparisons that may befuddle neophytes.  This can be distracting.
+
+- The author is at home with the
+ISO Standards and this recent publication reflects the latest status as well
+as safe practices for making dependable software.
+
+- I am checking my coverage
+in minilabs here and around nfoTools against this material to assure
+consistency in my emphasis on the use of Visual Studio Build Tools.
+
+- It is often helpful
+to have more than one reference source, including on-line ones, finding useful
+clarity through multiple perspectives.  I am using this book in that practice.
+
 
 ### \[<a name="Shaw2016">Shaw2016</a>\] Learn C the Hard Way
 
@@ -210,7 +237,7 @@ be downloaded for convenience.
 Lysator.  Programming in C. Lysator Academic Computer Association, (Linköping
 University, Sweden: 1999 October 9).  Web page available on the Internet at
 <http://www.lysator.liu.se/c/> accessed on 2023-06-18.  This is an extensive
-compilation to web resources on C Language standards, programming, and the
+compilation of web resources on C Language standards, programming, and the
 culture around it.
 
 ### \[<a name="Microsoft2021">Microsoft2021</a>\] C Language Reference
@@ -287,9 +314,9 @@ distinction between auditing and not.
 
 ## 4. Algorithms and Computer Science
 
-Computer programs are not algorithms and computer programming is not, of
-itself, the essence of Computer Science or even Software Engineering. Yet
-neither field would exist in their modern form in the absence of computer
+Computer programs are not inherently algorithms and computer programming is
+not, of itself, the essence of Computer Science or even Software Engineering.
+Yet neither field would exist in their modern form in the absence of computer
 programs and their programming.  That span is exhibited in a material way
 in the career and works of Donald Knuth.  Entry points are cited here as an
 available foundation with much about algorithms and programming based on them.
@@ -357,7 +384,7 @@ be simpler as a starter where available.  Tackle MMIX a bit later.
 Petzold, Charles. *Code: The Hidden Language of Computer Hardware and
 Software*.  Microsoft Press (Redmond, WA: 2000).  ISBN 0-7356-1131-9 pbk.
 This book starts with a leisurely and understandable progression from the
-way code is known apart from computing through the ways that we got to
+way code is known apart from computing and on through the journey toward
 today's increasingly powerful computer chips.  This book is not about
 programming.  It does get to the underpinnings from which programmable
 computers and programs for them arise.  It is often eye-opening to explore.
@@ -374,6 +401,7 @@ from time to time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.2.10 2023-07-20T02:52Z Touch-ups plus [Seacord2020]
      0.2.9 2023-07-16T17:20Z Touch-ups from proof-reading - improved draft
      0.2.8 2023-06-23T15:57Z More Wikipedia/Wikibooks references
      0.2.7 2023-06-20T20:03Z Add [Petzold2000]
