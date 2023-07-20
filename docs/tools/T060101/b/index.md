@@ -1,4 +1,4 @@
-<!-- T060101b.md 0.2.10             UTF-8                          2023-07-20
+<!-- T060101b.md 0.2.11             UTF-8                          2023-07-20
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                         T060101: C/C++ PROGRAMMING
@@ -8,7 +8,7 @@
 
 # T060101b: [C/C++ Programming Resources](.)
 
-| ***[nfoTools](../../../)*** | [tools](../../)[>T060101](../)[>b](.) | ***[index.html](index.html) 0.2.10 2023-07-??*** |
+| ***[nfoTools](../../../)*** | [tools](../../)[>T060101](../)[>b](.) | ***[index.html](index.html) 0.2.11 2023-07-20*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | [Work-in-Progress](T060101b.txt) | ![Hard Hat Area](../../../images/hardhat-logo.gif) |
 
@@ -25,7 +25,7 @@ and its portable application, crossing among platforms is not that difficult
 except for differences in nomenclature and operational details.  The overall principles are comparable.
 
 Reliance on freely-available Microsoft tools here is strictly a matter of
-the author's familiarity and preferences.  Focus on a single platform's
+the author's familiarity and preferences.  Featuring a single platform's
 technology is helpful in providing concrete focus.  There are no ideological
 claims.  With practice, one can adapt what is learned across technologies.
 Use what works for you.
@@ -36,37 +36,41 @@ Use what works for you.
 - [4. Algorithms and Computer Science](#4-algorithms-and-computer-science)
 
 
-This is not a comprehensive selection. Some were created after a bookstore
+This is not a comprehensive selection. Some were selected after a bookstore
 crawl.  Others turn up in Internet searches.
 
 For more exotic topics, such as working with the Microsoft Component Object
 Model (COM) and building applications for the Microsoft Windows Graphical User
-Interface (GUI), cloud-based apps, etc.,  specialized materials, not covered
-here, are required.  See material on [Tools](../../), [Dev](../../../dev),
-and [Skills](../../../skills) for additional coverage.
+Interface (GUI), cloud-based apps, and specialized devices (including
+smartphones), advanced materials are required.  See material on
+[Tools](../../), [Dev](../../../dev), and [Skills](../../../skills) for
+additional coverage.
 
 ## 1. Books
 
 The amount of printed material focused specifically on C Language has
 diminished along with the popularity of C++ and more-recent
 programming-language developments.  Some materials featuring C++ start with
-what counts as Clean C, but appealing to the popular interest in C++ in the
-choice of title and nomenclature.
+what counts as Clean C, but appeal to the popular interest in C++ in the
+title and nomenclature.
 
-Printed books can still be found in libraries and also on sale as used books.
-The use of electronic versions other than PDF forms are not recommended.  The
-formulas and code examples have been reported to be transformed incorrectly
-in non-PDF electronic editions.
+Older printed books can still be found in libraries and also on sale as used
+books.  The use of electronic versions other than PDF forms is not
+recommended.  Formulas and code examples have been reported to be transformed
+incorrectly in non-PDF electronic editions.
 
 ### \[<a name="Harbison2002">Harbison2002</a>\] C, A Reference Manual
 
 Harbison, Samuel P. III., Steele, Guy L. Jr. *C, A Reference Manual*, Ed.5.
 Prentice-Hall (Englewood Cliffs, NJ: 2002).  ISBN 0-13-089592-X pbk.
+
 I find this the most comprehensive and understandable reference available on
 the C Language.  Not written as a programming text, it is a reference manual
 that also has examples and exercises.  The exemplary material is non-trivial,
 making nuances of the language more apparent and encouraging stronger
-understanding. This edition is current with ISO/IEC 9899:1999 (C99). It also
+understanding.
+
+This edition is current with ISO/IEC 9899:1999 (C99). It also
 introduces and emphasizes Clean C for the quality it encourages and also for
 its consistency with C++.  The International Standard for C Language has
 continued to be updated, and compilers might also support the 2011 (C11) and
@@ -77,10 +81,13 @@ C11 and beyond.
 ### \[<a name=Kernighan1988>Kernighan1988</a>\] The C Programming Language
 
 Kernighan, Brian W., Ritchie, Dennis M. *The C Programming Language*, Second Edition.  Prentice-Hall (Englewood Cliffs NJ: 1988) ISBN 0-13-110362-8 pbk.
+
 This edition updates the original 1978 publication to be entirely in "ANSI C,"
 also known as C89 ANSI X3.159-1989 and the identical C90, ISO/IEC 9899:1990.
 The full progression is captured on Wikipedia topic
-[ANSI C](https://en.wikipedia.org/wiki/ANSI_C#C89). This book, affectionately
+[ANSI C](https://en.wikipedia.org/wiki/ANSI_C#C89).
+
+This book, affectionately
 known as K&R, is a testament to the longevity of the C Language and how today
 Clean C is "unrecognizably different" to borrow a prediction made about the
 evolution of FORTRAN language.   The examples can be adjusted to Clean C
@@ -96,6 +103,7 @@ McGrath, Mike. *C Programming in Easy Steps:*
 ISBN 978-1-84078-840-2 pbk.  Book description and source-code downloads
 available at
 [In Easy Steps](https://ineasysteps.com/products-page/c-programming-easy-steps-5th-edition-2/).
+
 Based on an earlier edition, this is a perfect book for getting started in C
 Programmng.  There are examples to work every step of the way, focusing on C Language for learning the basic concepts.  The examples
 are illustrated using the GCC compiler.  Adjustment for Microsoft Visual
@@ -104,7 +112,9 @@ C/C++ is easily made.
 ### \[<a name="Plauger1992">Plauger1992</a>\] The Standard C Library
 
 Plauger, P.J. *The Standard C Library*.  Prentice-Hall (Englewood Cliffs, NJ:
-1992) ISBN 0-13-131509-9 pbk. This is based on the C89 standard, quoting the
+1992) ISBN 0-13-131509-9 pbk.
+
+This is based on the C89 standard, quoting the
 standard as it unravels each C Language standard header file. That makes it
 comprehensive although not current with
 [the additions made](https://en.wikipedia.org/wiki/C_standard_library)
@@ -114,12 +124,14 @@ in subsequent ISO Standards.
 
 Prata, Stephen. *C Primer Plus*, ed.6.  Addison-Wesley (Upper Saddle River,
 NJ: 2014).  A [Developer's Library](https://informit.com/devlibrary)
-reference.  ISBN 978-0-321-77640-2.  This extensive book is current with the
+reference.  ISBN 978-0-321-77640-2.
+
+This extensive book is current with the
 ISO C11 Standard.  At over 1000 pages, this is a leisurely and extensive tour
 of C Language with numerous examples.  There are exercises with
  back-of-the-book solutions.  There is no explicit attention to Clean C,
- although good practices are recommended and appied.  Appendix B is a 100 page
- Reference Section with an useful account of the language, the libraries,
+ although good practices are recommended and applied.  Appendix B is a 100
+ page Reference Section with an useful account of the language, the libraries,
  and coverage of the C99 and C11 enhancements.
 
 ### \[<a name="Prinz2003">Prinz2003</a>\] C Pocket Reference
@@ -135,6 +147,7 @@ materials.
 
 Seacord, Robert C. *Effective C: An Introduction to Professional C
 Programming*.  No Starch Press (San Francisco: 2020). ISBN 1-7185-0104-8 pbk.
+
 Also described as "A detailed introduction to the C programming language for
 experience programmers," this book is offered as an introduction to the C
 language and meant to be accessible to anyone who wants to learn C programming
@@ -142,21 +155,17 @@ without the bad habits that some introductory books might encourage.
 
 - The
 progression of chapters is somewhat aligned with what one might
-find in a beginning course.  There are also some intense details and
-comparisons that may befuddle neophytes.  This can be distracting.
+find in a beginning course.  However, the intermingled intensive details and
+implementation comparisons may confuse, befuddle and maybe even mislead
+neophytes.
 
 - The author is at home with the
 ISO Standards and this recent publication reflects the latest status as well
 as safe practices for making dependable software.
 
-- I am checking my coverage
-in minilabs here and around nfoTools against this material to assure
-consistency in my emphasis on the use of Visual Studio Build Tools.
-
-- It is often helpful
-to have more than one reference source, including on-line ones, finding useful
-clarity through multiple perspectives.  I am using this book in that practice.
-
+It is often helpful to have more than one reference source, including on-line
+ones, obtaining useful charity through multiple perspectives.  For example,
+there is a quite different approach to "Getting to Hello" in this book.
 
 ### \[<a name="Shaw2016">Shaw2016</a>\] Learn C the Hard Way
 
@@ -166,8 +175,7 @@ ISBN 0-321-88492-2 pbk with DVD-ROM.  I admire the emphasis on defensive
 programming and other ways to better understand what programs, and the
 programmer, are doing.  There also are aspects that give me pause.
 
-- First,
-there is C Language in use, but not with attention to the standards other
+- Presentation of C Language is without attention to the standards other
 than dismay over the amount of explicitly-unspecified behavior in
 specifications of those standards.
 
@@ -187,35 +195,53 @@ while a beginner.
 various authors.  "C Programming".  Wikibooks, version of 2023-04-22,
 Available on the Internet at
 <https://en.wikibooks.org/w/index.php?title=C_Programming&oldid=4282935>
-accessed on 2023-06-23.  This is more extensive and also more demanding
+accessed on 2023-06-23.
+
+This is more extensive and also more demanding
 than \[[LittleC2022](#LittleC2022)\].  Although intended to be comprehensive,
 this document completely misses the availability of free-to-use versions of
 Visual Studio and the Visual Studio Build Tools used throughout nfoTools.  All
 of the code development examples employ the GCC compiler and build tools.
-That is certainly an option.  I find there to be too much expected by way of
+That is certainly an option.
+
+I find there to be too much expected by way of
 tacit understanding of computer lore to have this material be easily
 understood.  Take a look.  It might work for you.  There is also the option
 of downloading a PDF that might be useful in conjunction with other materials.
+
+### \[<a name="Huss1997">Huss1997</a>\] The C Library Reference Guide
+
+Huss, Eric. The C Library Reference Guide.  Preserved on the Internet Archive
+at <https://web.archive.org/web/20150118141700/http://www.acm.uiuc.edu/webmonkeys/book/c_guide/index.html>
+accessed on 2023-07-20.  This is a summary of C Language in the C89 era.  With
+the nice table-of-content, it is a handy quick reference.
+
+Some of the statements are a bit iffy.  For example, 1.7.3 on `#include` is
+not eddifying.  It helps to double-check with another source if any doubt is
+raised or you find that the behavior you see in your own code doesn't agree.
 
 ### \[<a name="Jaeschke2022">Jaeschke2022</a>\] Portability and the C Language
 
 Jaeschke, Rex.  *Portability and the C Language*, ed.2. Wikibooks edition
 (January 2022).   Available on the Internet at
 <https://en.wikibooks.org/wiki/Portability_and_the_C_Language>, accessed on
-2023-06-01.  This book is entirely focused on portability considerations and
+2023-06-01.
+
+This book is entirely focused on portability considerations and
 much about how to achieve it in a given setting under particular conditions.
 As such, this is not a reference on C Language, although there is much that
 can be learned with respect to portability and where the C Language standards
 have something to say that requires understanding/consideration.  There is
 identification of some nasty pitfalls, such as accidental use of sequences
 that happen to be recognized as trigraphs by some compilers.  There are many
-more identified here.
+more hiccups identified here.
 
 ### \[<a name="LibC2023">LibC2023</a>\] C Standard Library
 
 various authors.  "C Standard Library".  Wikipedia, 2023-04-28 revision,
 Available on the Internet at
 <https://en.wikipedia.org/wiki/C_standard_library>, accessed on 2023-06-23.
+
 This is a handy account of the Standard C Library along with its evolution in
 the progression of ISO and POSIX specifications for the C Library. There is
 a fair amount of cross-referencing to other Wikipedia pages for details.
@@ -225,6 +251,7 @@ a fair amount of cross-referencing to other Wikipedia pages for details.
 various authors.  "A Little C Primer".  Wikibooks, version of 2022-05-16,
 accessed on the Internet on 2023-06-23 at
 <https://en.wikibooks.org/w/index.php?title=A_Little_C_Primer&stableid=4059232>.
+
 This is exactly what the title says.  The examples are not entirely in Clean C
 although they remain informative.  The approach should be considered casual,
 and there are some statements that might be misleading if taken literally.  In
@@ -236,7 +263,9 @@ be downloaded for convenience.
 
 Lysator.  Programming in C. Lysator Academic Computer Association, (Linköping
 University, Sweden: 1999 October 9).  Web page available on the Internet at
-<http://www.lysator.liu.se/c/> accessed on 2023-06-18.  This is an extensive
+<http://www.lysator.liu.se/c/> accessed on 2023-06-18.
+
+This is an extensive, though dated,
 compilation of web resources on C Language standards, programming, and the
 culture around it.
 
@@ -246,7 +275,9 @@ Microsoft Corporation.  C Language Reference.  Microsoft Learn Documentation,
 available on the Internet at
 <https://learn.microsoft.com/en-us/cpp/c-language/c-language-reference>,
 accessed on 2023-06-01.  This on-line material can also be downloaded in PDF
-format.  The description is specific to C89 as implemented by Microsoft with
+format.
+
+The description is specific to C89 as implemented by Microsoft with
 Microsoft extensions and with a nod to Microsoft's support for C11 and C17.
 
 ### \[<a name="Microsoft2022a">Microsoft2022a</a>\] Walkthrough: Compile a C Program on the Command Line
@@ -254,14 +285,18 @@ Microsoft extensions and with a nod to Microsoft's support for C11 and C17.
 Microsoft Corporation. Walkthrough: Compile a C Program on the Command Line.
 Microsoft Learn Documentation available on the Internet at
 <https://learn.microsoft.com/en-us/cpp/build/walkthrough-compile-a-c-program-on-the-command-line>,
-accessed on 2023-06-01.  This is anothere take on
-[Getting to Hello](../c) with a bit more Visual Studio lore for contrast.
+accessed on 2023-06-01.
+
+This is anothere take on
+[Getting to Hello](../c) with a bit more Visual Studio lore for contrast with
+the version here and also in \[[Seacord2020](#Seacord2020)\].
 
 ### \[<a name="Microsoft2022b">Microsoft2022b</a>\] C Language Documentation
 
 Microsoft Corporation.  C Language Documentation.  Microsoft Learn
 Documentation available on the Internet at
 <https://learn.microsoft.com/en-us/cpp/c-language/>, accessed on 2013-06-01.
+
 This is the overall coverage, including \[[Microsoft2021](#Microsoft2021)\]
 and \[[Microsoft2022a](Microsoft2022a)\].  There is extensive documentation
 of the Microsoft toolset for C Language.
@@ -271,7 +306,9 @@ of the Microsoft toolset for C Language.
 International Standard ISO/IEC 9899:201x Committee Draft N1570 (SC22 WG14:
 April 12, 2011). PDF available on the Internet at
 <https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf>, accessed
-2023-06-02. This is the final draft for ISO Standard C11.  It is not the
+2023-06-02.
+
+This is the final draft for ISO Standard C11.  It is not the
 authoritative version of the standard.  At 701 pages, it exemplifies the
 complexity of the International Standards process and capture of so many fine
 details.  Anything found here must be considered unofficial (though likely).
@@ -305,12 +342,15 @@ as of 2023-06-03.  Available on the Internet at
 
 [Udemy](https://www.udemy.com/) search at
 <https://www.udemy.com/courses/search/?p=2&q=C+Language>, accessed on the
-Internet on 2023-06-03.  These are not free courses and the quality is
+Internet on 2023-06-03.
+
+These are not free courses and the quality is
 highly variable.  There are
 almost always discounted offers (and the list prices are doubtful).  An
 advantage of these courses is subscriptions are perpetual and everything is
 self-paced, rather than on an academic-calendar basis. There's also no
-distinction between auditing and not.
+distinction between auditing and not, something to stumble on with "free"
+courses from academic institutions.
 
 ## 4. Algorithms and Computer Science
 
@@ -328,24 +368,36 @@ For digging deeper and finding even greater variety of topics, consult
 Knuth, Donald E. *The Art of Computer Programming, vol.1: Fundamental
 Algorithms*. ed.3.  Addison Wesley Longman (Reading, MA: 1968, 1973, 1997).
 ISBN 0-201-89683-4.
+
 When I was a freshman science major, the two volumes on calculus by Richard
 Courant were the must-have texts, although they weren't books used as the
-calculus class texts.  To some degree, the subsequent emergence of Computer
+calculus class texts.  The university bookstore did a brisk business in
+Courant though.
+
+To some degree, the subsequent emergence of Computer
 Science had the Knuth volumes (now at vol.4B) in *The Art of Computer
 Programming* (a.k.a *TAoCP*) as must-haves and they were used as texts for a
 time.  I once asked a computer scientist why these, and especially this vol.1,
 were no longer used as the texts for courses any longer; I was told it was too
-difficult to teach from.  I continue to recommend these and other KnuthBooks.
+difficult to teach from.
+
+I continue to recommend these and other KnuthBooks.
 For beginners, keep in mind that this is a foundation volume of a larger
 sequence and some of the "preliminaries" here may be mathematically
-challenging.  It's not necessary to master all of that.  There are only two
-chapters in this book and the important sections for getting started are
+challenging.  It's not necessary to master all of that.  Ise that material
+for reference later when math-essential understanding is important to your
+mastery of a alter topic being pursued.
+
+There are only two very-substantial
+chapters in this book and the important subsections for getting started are
 1.1 Algorithms, 1.2 Mathematical Preliminaries only enough to be familiar
 with what the understandable coverages are, and 1.3 MIX to understand the
 typical structure of computers via an easily-understood fictitious machine.
-Chapter 2, Information Structures, and subsequent volumes can be taken as
-references.  The developed algorithms are useful and independent of particular
-programming languages.  The Knuth formulations of algorithms are nicely
+Chapter 2, Information Structures, and subsequent volumes are indispensible as
+references.
+
+The developed algorithms are useful and independent of particular
+programming languages.  The Knuth formulations are nicely
 adaptable to C Language implementations and are great resources for that
 purpose.  MIX is now considered to be a little too simple, and some important
 advances in the principles of computer operation are addressed by an update
@@ -356,23 +408,29 @@ contemplated with the exemplary-machine MMIX \[[Knuth2005](#Knuth2005)\].
 Knuth, Donald E.  *The Art of Computer Programming, vol.2: Seminumerical
 Algorithms*.  ed.3.  Addision Wesley Longman (Reading MA: 1973, 1998).  ISBN
 0-201-89685-0.
+
 This volume of *TAoCP* has two chapters: 3. Random Numbers and 4. Arithmetic.
 It will be applicable to understanding computer arithmetic and much more. Of
-great value is how one determines/confirms that a program-generated number
+great value are how one determines/confirms that a program-generated number
 might be "random" and how computer arithmetics are understandable and their
-limitations understood, an important concern for programming and also for
-understanding of the limitation of results in the use of computer software.
+limitations understood and sometimes overcome, an important concern for
+programming and also for understanding of the limitation of results in the
+use of computer software.
 
 ### \[<a name="Knuth2005">Knuth2005</a>\] The Art of Computer Programming, Volume 1, Fascicle 1: MMIX
 
 Knuth, Donald E. *The Art of Computer Programming, vol.1, fascicle 1: MMIX a RISC Computer for the New Millennium*. ed.1. Addision Wesley Longman (Reading
 MA: 2005).  ISBN 0-201-85392-2 pbk.
+
 This supplement to [*TAoCP* vol.1](#Knuth1997) provides replacement sections
 1.3' and 1.4' (MMIX and Some Fundamental Programming Techniques) as part of an
 intended upgrading of computer architecture and programming techniques that
-reflect important changes since *TAoCP* effort commenced in 1962.  A
-significant change is how calling into, and returning from, subroutines is
-no longer accomplished by modification of the running code.  There is far more
+reflect important changes since *TAoCP* effort commenced in 1962.
+
+A significant change is how calling into, and returning from, subroutines is
+no longer accomplished by modification of the running code.
+
+There is far more
 use of registers and pointers nowadays; MMIX reflects that.  At the same time,
 MMIX *feels* much more complicated.  For an initial understanding of
 machine-language (i.e., assembler language) programming and the underlying
@@ -401,6 +459,7 @@ from time to time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.2.11 2023-07-20T20:32Z Full draft proofing changes
      0.2.10 2023-07-20T02:52Z Touch-ups plus [Seacord2020]
      0.2.9 2023-07-16T17:20Z Touch-ups from proof-reading - improved draft
      0.2.8 2023-06-23T15:57Z More Wikipedia/Wikibooks references
