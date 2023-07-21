@@ -1,4 +1,4 @@
-<!-- index.md 0.1.2                 UTF-8                          2023-07-17
+<!-- index.md 0.1.3                 UTF-8                          2023-07-21
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                          T060101c: GETTING TO "HELLO"
@@ -6,11 +6,11 @@
 
 # T060101c: [Getting to "Hello"](.)
 
-| ***[nfoTools](../../../)*** | [tools](../../)[>t060101](../)[>c](.) | ***[index.html](index.html) 0.1.2 2023-07-17*** |
+| ***[nfoTools](../../../)*** | [tools](../../)[>t060101](../)[>c](.) | ***[index.html](index.html) 0.1.3 2023-07-21*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | [Work in Progress](T060101c.txt) | ![Hard Hat Area](../../../images/hardhat-logo.gif) |
 
-C Language has a famous first program.  Creating and operating that program is demonstrated, with links to expanded detail that may be needed.
+C Language has a famous first program.  Creating and operating that program is demonstrated, with links to expanded detail.
 
 - [T060101c: Getting to "Hello"](#t060101c-getting-to-hello)
   - [1. Install C/C++ Compiler Software](#1-install-cc-compiler-software)
@@ -49,8 +49,9 @@ installed.  On a Windows PC, the Documents folder of a personal account will
 
  The file
  `hello.c` has already been created in the folder `Documents\myCleanC`.  The
- file has extension `.c` instead of `.txt`, signifying that the text is in
- C language by convention.
+ file has extension `.c` instead of `.txt`, signifying, by convention, that
+ the text is in  C language.  With Visual Studio Code installed, the
+ extension is so-registered with Windows.
 
 ## 3. Make the `hello.c` Code
 
@@ -90,12 +91,12 @@ Breaking it down ...
 
 ![Environment Intialized](T060101c4a.png)
 
-Selecting `x64 Native Tools Command Prompt` brings up a console window and
+Selecting "`x64 Native Tools Command Prompt`" brings up a console window and
 runs scripts that announce the tools and initialize the command-session
 environment for building x64 programs.
 
 - The title in the console window reflects the established setup.  The tiny
-`C:\_` icon identifies the [built-in utility](..\..\T060501) `CMD.exe` that
+"`C:\_`" icon identifies the [built-in utility](..\..\T060501) `CMD.exe` that
 provides Command Prompt operation.
 - The version of Visual Studio whose Build Tools are being employed is
 identified.
@@ -105,24 +106,26 @@ command is solicited.
 ### 5.2 Navigate to `myCleanC`
 
 The default prompt format consists of the file-explorer location (the
-Current Directory or CD) followed by `>`.  Commands are typed after
-the `>` of a prompt from the computer.
+Current Directory, CD) followed by `>`.  Commands are typed after
+the "`>`" of a prompt from the computer.
 
 ![Changing CD](T060101c4b.png)
 
 The Developer Command Prompt starts at the location of the build tools, not
-where the project is.  The command `cd /D H:\Documents\myCleanC` changes the
-CD to the drive and directory where `hello.c` is stored.
+where an project is.
+
+**WARNING: Do not use this location.  Navigate to your working location.**
+
+Here, the command "`cd /D H:\Documents\myCleanC`" changes the current
+directory to the drive and directory where `hello.c` is stored.
 
 ### 5.3 Compile `hello.c`
 
 ![Compiling `hello.c`](T060101c4c.png)
 
-The command `CL hello.c` instructs the VC/C++ Compiler-Linker (CL) to compile
+The command "`CL hello.c`" instructs the VC/C++ Compiler-Linker to compile
 `hello.c`.  In this simple case, compilation of the one file and producing
-executable program `hello.exe` will be automatic.
-
-The first step
+executable program "`hello.exe`" will be automatic.
 
 ### 5.4 Observe the compilation
 
@@ -138,7 +141,7 @@ must be resolved and the process begun anew, step by step from
 [4](#4-initiate-a-command-prompt), above.
 
 When compilation of `hello.c` is successful in this initial stage, the file
-`hello.obj` is produced silently.  That intermediate result is then used by
+`hello.obj` is silently produced.  That intermediate result is then used by
 the incremental linker.
 
 ![hello.exe linking](T060101c4d.png)
@@ -157,23 +160,23 @@ There being no misadventures, the file `hello.exe` is there in `myCleanC`.
 ![run hello](T060101c4e.png)
 
 The `hello.exe` program becomes available as a new command.  The program is
-requested with command `hello` and Windows will detect `hello.exe` in the
+requested with command "`hello`"; Windows will detect `hello.exe` in the
 current directory and operate it there.
 
 In this case, the `hello.c` `printf()` output will be directed to the Command
-Prompt screen as a line of text.
+Prompt window as a line of text.
 
 ### 5.6 Look around in `myCleanC`
 
 ![the myCleanC dir](T060101c4f.png)
 
-Finally, command line `H:\Documents\myCleanC>dir` issues the command for
+Finally, command line "`H:\Documents\myCleanC>dir`" issues the command for
 listing the content of the Current Directory.
 
-The file intermediate file `hello.obj` is present.  That `hello.obj`
-intermediate was taken by the linker and combined with needed
-library and setup code to produce `hello.exe`.  The `hello.exe` program is
-the complete native software for carrying out the operation specifed in the
+The intermediate file `hello.obj` is present.  That `hello.obj`
+intermediate is taken by the linker and combined with needed
+library and setup code to produce `hello.exe`.  The `hello.exe` file is
+the complete program for carrying out the operation specifed in the
 C Language of `hello.c`.
 
 The simple 67-character `hello.c` is compiled to a 2,367 byte `hello.obj` of
@@ -205,23 +208,21 @@ directly at `myCleanC\`.  This will be handy for working on all of the
 projects that will be placed under `myCleanC\`.  There is also a short batch
 script, `myPrompt.bat` that is used to customize the display of prompts.
 
-A new Command Prompt right there is initiated by double-clicking the shortcut.
-
 ### 6.2 Customized Command Prompt operation
 
 ![Compiling the new Hello](T060101c5.png)
 
 As can be seen in this session, the initialized Command Prompt starts
 directly at `myCleanC` and there is a change in appearance accomplished by
-customizing the shortcut.  There are many choices available, impacting the
-overall color scheme of the display..
+the customized shortcut.  There are many customizations available for the
+overall color scheme display.
 
 To accentuate the appearance of command prompts in the display, `myPrompt`
-is the first command used in the fresh session.  I'm using it to customize
-the prompt text in a different color.
+is the first command used in the fresh session.  I'm using it to hsve the
+prompt text be emphasized.
 
 With the changes in setup and use of the shortcut, it is now a short hop to
-the `hello` project in its folder folder beneath `myCleanC\.`  Compilation is
+the `hello` project in its new folder beneath `myCleanC\.`  Compilation is
 now done there.
 
 
@@ -241,18 +242,20 @@ The file `hello.txt` is a log created as part of the demonstrations in
 There is also a new component, the subdirectory `.vscode\`.  This is entirely
 for use in conjunction with Visual Studio Code and need not be of any concern.
 It only has effect when Visual Studio code is opened on the `hello\` folder
-as demonstrated further next.
+as demonstrated next.
 
 ### 6.3 Incorporation of Visual Studio Code
 
 ![starting VS Code](T060101c5a.png)
 
-The command entry `code hello.c` initiates [Visual Studio Code](../../T21001/)
-for operation under the Command Prompt environment.  `hello.c` is named as a
-parameter to code, having it be opened directly in the VS Code editor.
+The command entry "`code hello.c`" initiates
+[Visual Studio Code](../../T21001/)
+for operation under the Command Prompt environment.  File `hello.c` is named
+as a to `code`; `hello.c` will be opened directly in the VS Code editor.
 
 When VS Code is initiated under the developer Command Prompt, there is
-automatic recognition of the initialized environment.
+automatic recognition of the initialized environment.  This is a powerful
+benefit.
 
 ![hello.c 0.2.2 in VS Code](T060101c6.png)
 
@@ -266,9 +269,9 @@ collection of colorization schemes to choose from.
 The `hello.c` program is now in Clean C.  What makes the difference is the
 first line,
 
- ```C
- int main(void)
- ```
+```C
+int main(void)
+```
 
 When operated under the developer Command Prompt environment, Visual Studio
 Code will recognize various defects in a C Language program.  For this
@@ -300,19 +303,19 @@ the work.  There are ways to have compiler operations produce terse output.
 
 The previous compilation can be made terse in two ways.
 
-First, the command `CL hello.c >NUL` causes the outputs from CL to be
+First, the command "`CL hello.c >NUL`" causes the outputs from CL to be
 directed to the `NUL` (nowhere) device.  The only visible output in the
 successful case is the identification of the C/C++ compiler.
 
 If there are any error messages, they will still appear.  The quiet operation
-indicates that there are no difficulties.  In the case of error messages and
-warnings, it may be necessary to repeat the compilation without the `>NUL` to
-observe further details.
+indicates that no difficulties are detected.  In the case of error messages
+and warnings, it may be necessary to repeat the compilation without the
+"`>NUL`" to obtain further details.
 
 An alternative to sending the output to the `NUL` bit-bucket is to direct the
-output to a file.  The command `CL hello.c >hello.txt` accomplishes that.
-Now if there are errors and warnings, the full output can be seen by
-viewing that file, accomplished with command `type hello.txt` in this example.
+output to a file.  The command "`CL hello.c >hello.txt`" accomplishes that.
+Now if there are errors and warnings, the full output can be seen by viewing
+that file, accomplished with command "`type hello.txt`" in this example.
 
 ## 7. Fledgling Adventures
 
@@ -341,6 +344,7 @@ from time to time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.1.3 2023-07-21T19:38Z Touch ups for improved draft
      0.1.2 2023-07-17T00:32Z Many touch ups for clean draft
      0.1.1 2023-06-08T19:58Z Improved descriptions and myPrompt usage
      0.1.0 2023-06-01T19:59Z Cleanup as 0.1.0 full beta level
