@@ -1,4 +1,4 @@
-T060101b.txt 0.0.11                 UTF-8                         2023-07-28
+T060101b.txt 0.0.12                 UTF-8                         2023-07-31
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -71,10 +71,6 @@ TODO
 
   * Include a section on learning other languages.
 
-  * I need to include materials on algorithms as well.  And point out that
-    a higher notion of algorithm is preferable, with it being convenient in
-    many cases to implement them in a working programming language.
-
   * I wonder if I need to do something about the references and citations in
     Orcmid's Lair Readings.  At the moment, GitHub seems more durable than
     orcmid.com.
@@ -104,13 +100,16 @@ TODO
     routes to participation that are apparently not exactly equal.  I need to
     wrestle that to the ground and it seems like a giant distraction.
 
-  * Here's another lysator link
-    <http://www.lysator.liu.se/c/>.  Some of these links are stale.  Still ...
-    There seems to be no activity since 1999-10-09.  This is on the
-    "Programming in C" so maybe I just didn't realize how extensive this is?
+  * For a general treatment of on-line courses that provide achievements,
+    there is [ClassCentral2023] Ma, Rui., Ledwon, Heba., Mendez, Manual
+    Cortes., Patra, Suparn.  [2023] Massive List of Thousands of Free
+    Certificates and Badges.  Available on the Internet at
+    <https://www.classcentral.com/report/free-certificates/>.  Accessed on
+    2023-07-31.
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.12 2023-07-31T19:24Z Manage TODOs
  0.0.11 2023-07-28T18:32Z More ToDos
  0.0.10 2023-07-20T19:50Z Touch-ups.  More TODOs
  0.0.9 2023-07-20T02:59Z  Bring current, clear TODOs

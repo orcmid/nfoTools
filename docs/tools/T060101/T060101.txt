@@ -1,4 +1,4 @@
-T060101.txt 0.0.20                  UTF-8                          2023-07-16
+T060101.txt 0.0.21                  UTF-8                          2023-07-31
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -42,7 +42,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. T060101: C/C++ Programming.  nfoTools project text
-   file T060101.txt version 0.0.20 dated 2023-07-16, available on the
+   file T060101.txt version 0.0.21 dated 2023-07-31, available on the
    Internet as a version of
    <https://orcmid.github.io/nfoTools/tools/T060101/T060101.txt>
 
@@ -133,13 +133,40 @@ TODO
 
  * Find better courses.
 
- * READING CODE, RUNNING CODE.  This is the experiemental and practical
+ * READING CODE, RUNNING CODE.  This is the experimental and practical
    art aspect of Computer Science.
 
  * Say something about how we are viewing abstraction above the machine.
 
+ * I need to work through the c11 Portability issues and find all of the
+   macro-specified things that are part of the standard.
+
+ * Use the information about the optional security stuff and how it is known
+   and can be employed.  Annex K of C11.
+
+ * I need one of these just for C Language defines specified by the ISO
+   standard (i.e., C11).
+   o __STDC_IEC_559__ for whether or not there is conformance there
+   o tests to determine whether long double is the same as double or something
+     else.  And if something else, does it have more precision and at least
+     the range of double.
+   o Need to understand FENV_ACCESS (7.6.1) and when it comes into play
+
+ * Move this into T060101 and systematically go through all of the Appendix J
+   Portability issues and how to test for how J.1 Unspecified behaviors come
+   down.
+ * Some of these also require exercises to determine exactly what happens.
+
+ * I also need to check some C++-related things when a Clean C program is
+   compiled as C++ in some manner.  There seem to be differences such as the
+   type of 'x' between C (int) and C++ (char).  There may be other matters.
+
+ * The use of __STDC_LIB_EXT1___ by VS 17.x is interesting, as is setting
+   __STDC_WANT_LIB_EXT1__ = 1 of interest.
+
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.21 2023-07-31T19:26Z Manage TODOs
  0.0.20 2023-07-16T17:06Z Tidying Up
  0.0.19 2023-07-14T17:00Z Cleaning up TODOs
  0.0.18 2023-07-13T02:59Z More thoughts about what we are provided for
