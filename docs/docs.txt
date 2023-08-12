@@ -1,4 +1,4 @@
-docs.txt 0.0.18                     UTF-8                      dh:2023-05-06
+docs.txt 0.0.19                     UTF-8                      dh:2023-08-12
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                             nfoWare/nfoWorks nfoTools
@@ -87,40 +87,40 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. nfoTools Documentation-Authoring Construction
-   Structure.  nfoTools project text file docs.txt version 0.0.18 dated
-   2023-05-06, available on the Internet as a version of
+   Structure.  nfoTools project text file docs.txt version 0.0.19 dated
+   2023-08-12, available on the Internet as a version of
    <https://github.com/orcmid/nfoTools/blob/master/docs/docs.txt>
 
 TODO
 
-  * Explain how this folder is used to generate the GitHub pages, possibly
-    with additional folders that are about the scaffolding and construction
-    materials.  This should be under construction materials.  It shouuld be
-    thin enough to be linked to docEng rather than duplicate what should be
-    there for general application.
+  * Consider Hugo as an alternative authoring form. leading to many pages here
+    being generated from a separate authoring folder. LaTex formulas are not
+    crucial here, but other theming is desirable.  This is a docEng
+    consideration.  Also, Visual Studio extensions applicable to Markup might
+    figure i here also..
 
-  * Find another way (other than Jekyll) if there can be one.  MathJax is not
-    crucial here, but other theming is desirable.  Again, this is also a
-    docEng consideration.  And Miser could definitely benefit from MathJax.
-
-  * Jekyll and treating docs/ as a collaborative authoring point is not
-    desired.  Hugo and KaTeX are going to be explored and once docEng has
-    resolution for it, it will be used for construction here.  This may end
+  * Hugo and KaTeX are going to be explored and once docEng has
+    resolution for it, it may be used for construction here.  This may end
     up having authoring in a different folder and having generated HTML
-    uploaded to docs/
+    directed to docs/
 
   * Provide detailed connection to the docEng pattern documentation whenever.
 
   * Migrate all dependencies on nfoWare.com content to dependencies here that
     make sense.  This might need to tie into release cases, although we are
     talking about finer-grained releases than any kind of nfoTools "release."
-    There needs to be a software engineering patterm for this too?  The use of
+    There needs to be a software engineering pattern for this too?  The use of
     branches is being considered for this.
+
+  * Consider materials in nfoWorks.com that might apply here also, although
+    maybe most of those belong to docEng?  Maybe nfoLocker is a case?  Also
+    some tools that support crypto functions as well as others?
 
   * Add the usual arrangement by cribbing from nfoWare.com's construction-
     structure approach.
 
-  * Tuck away and re-use the "this page intentionally blank" image.
+  * Tuck away and re-use the "this page intentionally blank" image in the
+    DefaultPlacehoder here.
 
   * Add LICENSE and NOTICES, also place copyright symbol, etc. Add an
     explanation sort of like the Creative Commons simple deed.  Maybe in
@@ -135,7 +135,7 @@ TODO
 
   * Deal with prerequisites.  See the statement at rayLab on the subject.
     Here, we want to provide more and also find something gentle enough
-    for beginners.  This is what skills is intended to butress.  Need to
+    for beginners.  This is what skills is intended to buttress.  Need to
     get going on those and on the toolcraft too.
 
   * Find out if the GitHub desktop works all right without Git for Windows.
@@ -144,34 +144,18 @@ TODO
     would be great to avoid the whole Git for Windows forced-preferences
     cluster.
 
-  * Figure out the difference/connection between versions of these pages as
-    rendered and the sources from which those are published.  This is
-    different from when the source was version-controlled HTML.
-
-  * Some of these topics are on construction and scaffolding and now belong
-    under construction/
-
   * There need to be dev/, skills/, and tools/ around Numerical Analysis and
     all the techniques for high-performance computing, graphical computations,
     and such.  The contributions and historical position of Turing Award
     recipients needs to be acknowledge around here also.  The project for
     VCrayMathStudio can serve some of this.
 
-  * There needs to be something similar around audio and also around music
+  * Add an audio topic for digital audio operation and such.  There might
+    need to be one on graphics also, in this respect.  Consider music
     production and use of Digital Audio Workstations (DAWs).  Just like
     numerical analysis.  Also education topics with respect to this area.
 
   * Education and Learning are skills and might have some skills and devNotes.
-
-  * Repair the folio structure.  Eventually, the top link may be gone.  The
-    title strip should have the root connection with the nfoTools image, and
-    the mousetracks can be what we want.  The title should have the link to
-    the page (folder) being viewed.  Also, show that this is from an
-    index.html.  There needs to be some project identification of this effort.
-    I also need for this to be harmonious for other GitHub/orcmid projects.
-
-  * Add an audio topic for digital audio operation and such.  There might
-    need to be one on graphics also, in this respect.
 
   * We need something on the 3-y's: interoperability (i14y), accessibility
     (a11y), and internationalization (i18n).  Well, i18n is not a y but that's
@@ -203,19 +187,13 @@ TODO
     2022-05-24
     <https://learn.microsoft.com/en-us/events/build-2022/od62-developer-tools-enable-everyone-to-be-productive-microsoft-ability-summit>
 
-  * BIG REORGANIZATION CHANGE.  The use of subcoordinates, such as D230501a2
-    in the accession labelling of the folio scheme here has been too wordy.
-    While the names can be like this, there is no reason for the web pages
-    to carry the full burden.  We need D230501/a/2 and not the clumsy forms
-    used heretofore.
-
   * PUT THE URL CHANGES IN EFFECT WITH ALL NEW WORK.  RETROFIT AS QUICKLY AS
     POSSIBLE, ESPECIALLY WITH MATERIAL WE HOPE FOLKS WILL LINK INTO.  WE WILL
-    NEED TOMBSTONES AND REDIRECTS FOR URLS THAT BECOME OBSOLETED.  DO THIS
-    NOW FOR THE VCrayApp D211101 folio and fix VCrayApp-0.1.0 accordingly.
+    NEED TOMBSTONES AND REDIRECTS FOR URLS THAT BECOME OBSOLETED.
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.19 2023-08-12T20:28Z Manage TODOs, be more on-topic for here
  0.0.18 2023-05-06T14:45Z BIG TODO ON FOLIO ORGANIZATION
  0.0.17 2023-04-12T16:15Z Mass change of [projects] links
  0.0.16 2022-12-22T16:34Z Add a11n considerations, manage TODOs
