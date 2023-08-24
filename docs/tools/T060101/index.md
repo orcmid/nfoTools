@@ -1,4 +1,4 @@
-<!-- index.md 0.2.13                UTF-8                          2023-07-14
+<!-- index.md 0.2.14                UTF-8                          2023-08-24
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                          T060101: C/C++ PROGRAMMING
@@ -6,7 +6,7 @@
 
 # T060101: [C/C++ Programming](.)
 
-| ***[nfoTools](../../)*** | [tools](../)[>t060101](.) | ***[index.html](index.html) 0.2.12 2023-06-15*** |
+| ***[nfoTools](../../)*** | [tools](../)[>t060101](.) | ***[index.html](index.html) 0.2.14 2023-08-24*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | [Work in Progress](T60101.txt) | ![Hard Hat Area](../../images/hardhat-logo.gif) |
 
@@ -20,7 +20,7 @@ computing as well as bridging to participation in cooperative and professional
 software-development efforts.
 
 This is not an organized tutorial on C/C++.  Instead there is selective focus
-on minitopics, ones that that illustrate facets of C Language and its standard
+on minitopics, ones that illustrate facets of C Language and its standard
 libraries.  The emphasis is on self-exploration and experimental confirmation
 of understanding.  Benefit of the material is gained by hands-on exploration
 and gradual mastery along with the mistakes and failures that the journey
@@ -39,6 +39,7 @@ programming languages of the day.
   - [Available Materials](#available-materials)
   - [Recommended Tools](#recommended-tools)
   - [Historical Context](#historical-context)
+  - [Really, What's the Best Programming Language?](#really-whats-the-best-programming-language)
 
 ## C/C++ Programming for Beginners and the Curious
 
@@ -85,7 +86,7 @@ point.
 
 | **ID** | **Started** | **Status** | **Topic** |
 |   :-:   |   :-:   |  :-:   |  ---  |
-| [T060101b](b/) | 2006-05-20 | 0.2.4 2023-06-03 | C/C++ Resources |
+| [T060101b](b/) | 2006-05-20 | 0.2.12 2023-08-24 | C/C++ Resources |
 | [T060101c](c/) | 2021-11-25 | 0.1.1 2023-06-08 | Getting to "Hello" |
 | [T050101d](d/) | 2023-06-08 | 0.0.4 2023-06-13 | Hello, What's Happening Here? |
 |                           |            |                   |           |
@@ -150,6 +151,21 @@ maintenance release.  [C23](https://en.wikipedia.org/wiki/C2x) is imminent at
 this time.  C23 will provide some new extensions and deprecate or completely
 obsolete some older features that are now discouraged.
 
+## Really, What's the Best Programming Language?
+
+Before one is eligible to enter the great programming-language debate,
+qualifying rounds must be endured to answer two crucial questions:
+
+- What is the best vehicle, make and model?
+- What is the best electric guitar model for playing blues?  (Substitute any
+  instrument and genre of your choice.  Be convincing.)
+
+Be clear on why choice of programming-language matters to you.  If it is about
+choosing a career, read job postings and, most of all, talk to people who
+have achieved beyond-entry-level employment about what they are actually
+using, not what they claim to prefer.  Also pay attention to the diverse
+areas in which programming is done and how that factors in.
+
 ----
 
 Discussion about nfoTools is welcome at the
@@ -162,6 +178,7 @@ from time to time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.2.14 2023-08-24T16:10Z Touch-ups and Really, What's the Best?
      0.2.13 2023-07-14T16:44Z Clean-up synopsis on emphasis and approach
      0.2.12 2023-06-15T13:23Z T060101d
      0.2.11 2023-06-08T20:04Z T060101c
