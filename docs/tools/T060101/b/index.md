@@ -1,4 +1,4 @@
-<!-- T060101b.md 0.2.11             UTF-8                          2023-07-20
+<!-- T060101b.md 0.2.12             UTF-8                          2023-08-24
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                         T060101: C/C++ PROGRAMMING
@@ -8,7 +8,7 @@
 
 # T060101b: [C/C++ Programming Resources](.)
 
-| ***[nfoTools](../../../)*** | [tools](../../)[>T060101](../)[>b](.) | ***[index.html](index.html) 0.2.11 2023-07-20*** |
+| ***[nfoTools](../../../)*** | [tools](../../)[>T060101](../)[>b](.) | ***[index.html](index.html) 0.2.12 2023-08-24*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | [Work-in-Progress](T060101b.txt) | ![Hard Hat Area](../../../images/hardhat-logo.gif) |
 
@@ -80,7 +80,8 @@ C11 and beyond.
 
 ### \[<a name=Kernighan1988>Kernighan1988</a>\] The C Programming Language
 
-Kernighan, Brian W., Ritchie, Dennis M. *The C Programming Language*, Second Edition.  Prentice-Hall (Englewood Cliffs NJ: 1988) ISBN 0-13-110362-8 pbk.
+Kernighan, Brian W., Ritchie, Dennis M. *The C Programming Language*, Second
+Edition.  Prentice-Hall (Englewood Cliffs NJ: 1988) ISBN 0-13-110362-8 pbk.
 
 This edition updates the original 1978 publication to be entirely in "ANSI C,"
 also known as C89 ANSI X3.159-1989 and the identical C90, ISO/IEC 9899:1990.
@@ -105,7 +106,8 @@ available at
 [In Easy Steps](https://ineasysteps.com/products-page/c-programming-easy-steps-5th-edition-2/).
 
 Based on an earlier edition, this is a perfect book for getting started in C
-Programmng.  There are examples to work every step of the way, focusing on C Language for learning the basic concepts.  The examples
+Programmng.  There are examples to work every step of the way, focusing on C
+Language for learning the basic concepts.  The examples
 are illustrated using the GCC compiler.  Adjustment for Microsoft Visual
 C/C++ is easily made.
 
@@ -164,7 +166,7 @@ ISO Standards and this recent publication reflects the latest status as well
 as safe practices for making dependable software.
 
 It is often helpful to have more than one reference source, including on-line
-ones, obtaining useful charity through multiple perspectives.  For example,
+ones, obtaining useful clarity through multiple perspectives.  For example,
 there is a quite different approach to "Getting to Hello" in this book.
 
 ### \[<a name="Shaw2016">Shaw2016</a>\] Learn C the Hard Way
@@ -378,18 +380,18 @@ To some degree, the subsequent emergence of Computer
 Science had the Knuth volumes (now at vol.4B) in *The Art of Computer
 Programming* (a.k.a *TAoCP*) as must-haves and they were used as texts for a
 time.  I once asked a computer scientist why these, and especially this vol.1,
-were no longer used as the texts for courses any longer; I was told it was too
+were no longer used as the texts for courses; I was told it was too
 difficult to teach from.
 
 I continue to recommend these and other KnuthBooks.
 For beginners, keep in mind that this is a foundation volume of a larger
 sequence and some of the "preliminaries" here may be mathematically
-challenging.  It's not necessary to master all of that.  Ise that material
+challenging.  It's not necessary to master all of that.  Use that material
 for reference later when math-essential understanding is important to your
-mastery of a alter topic being pursued.
+mastery of a topic being pursued.
 
-There are only two very-substantial
-chapters in this book and the important subsections for getting started are
+There are two very-substantial
+chapters in this book.  The important subsections for getting started are
 1.1 Algorithms, 1.2 Mathematical Preliminaries only enough to be familiar
 with what the understandable coverages are, and 1.3 MIX to understand the
 typical structure of computers via an easily-understood fictitious machine.
@@ -409,13 +411,15 @@ Knuth, Donald E.  *The Art of Computer Programming, vol.2: Seminumerical
 Algorithms*.  ed.3.  Addision Wesley Longman (Reading MA: 1973, 1998).  ISBN
 0-201-89685-0.
 
-This volume of *TAoCP* has two chapters: 3. Random Numbers and 4. Arithmetic.
-It will be applicable to understanding computer arithmetic and much more. Of
-great value are how one determines/confirms that a program-generated number
-might be "random" and how computer arithmetics are understandable and their
-limitations understood and sometimes overcome, an important concern for
-programming and also for understanding of the limitation of results in the
-use of computer software.
+This volume of *TAoCP* provides two chapters of the series: 3. Random Numbers
+and 4. Arithmetic.  This volume is applicable to understanding computer
+arithmetic and much more. Of great value are how one determines/confirms that
+a program-generated number might be "random."  The book shows how computer
+arithmetics are understandable and their limitations recognized and sometimes
+overcome.  These are important concerns for
+programming and also for understanding the limitation of results in the
+use of computer arithmetic.  Techniques for extending the precision of
+arithmetic are also addressed.
 
 ### \[<a name="Knuth2005">Knuth2005</a>\] The Art of Computer Programming, Volume 1, Fascicle 1: MMIX
 
@@ -459,6 +463,7 @@ from time to time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.2.12 2023-08-24T15:47Z Touch-ups and typo fixes.
      0.2.11 2023-07-20T20:32Z Full draft proofing changes
      0.2.10 2023-07-20T02:52Z Touch-ups plus [Seacord2020]
      0.2.9 2023-07-16T17:20Z Touch-ups from proof-reading - improved draft
