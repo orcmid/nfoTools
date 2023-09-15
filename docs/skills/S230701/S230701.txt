@@ -1,4 +1,4 @@
-S230701.txt 0.0.3                   UTF-8                         2023-07-11
+S230701.txt 0.0.4                   UTF-8                         2023-07-**
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -44,7 +44,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. S230701: Confirmable Experience Skills.  nfoTools
-   project text file S230701.txt version 0.0.3 dated 2023-07-11, available on
+   project text file S230701.txt version 0.0.7 dated 2023-07-**, available on
    the Internet as a version of
    <https://orcmid.github.io/nfoTools/skills/S230701/S230701.txt>
 
@@ -89,9 +89,18 @@ TODO
 
  * Trustworthiness and TROST figures in here also.
 
+ * There's another aspect to CX, not unlike beginner mind, but perhaps
+   sharper.  That's in confirming statements and descriptions in materials,
+   such as those of on-line courses, web pages, and all manner of tutorial
+   materials claiming what something is and is not.  If it's about software
+   or programming or particular tools, a good CX attitude seems to be good
+   equipment for confirmation and verification of such matters/materials.
+   And ones observations should be expressed as confirmable experiences.
+
 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.4 2023-07-**
  0.0.3 2023-07-11T20:42Z Preserve material into S230701-CXnotes.txt
  0.0.2 2023-07-10T16:19Z Addition of labelled blog posts
  0.0.1 2023-07-10T00:21Z Long scraping of "confirmable experience" usage
