@@ -1,4 +1,4 @@
-docs.txt 0.0.19                     UTF-8                      dh:2023-08-12
+docs.txt 0.0.20                     UTF-8                      dh:2023-09-15
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                             nfoWare/nfoWorks nfoTools
@@ -19,8 +19,8 @@ docs.txt 0.0.19                     UTF-8                      dh:2023-08-12
     This file, doc.txt, is the entry to the site-authoring construction
     structure.  That structure is also conveyed into the web site where it
     is mirrored in the site itself.  The pattern for such site construction
-    is described under the Document Engineering Project (docEng), at
-    <https://github.com/orcmid/docEng> (https://orcmid.github.io/docEng/)
+    will be described under the Document Engineering Project (docEng), at
+    <https://github.com/orcmid/docEng>.
 
 MANIFEST
 
@@ -55,10 +55,11 @@ MANIFEST
 
     construction/
         material on construction and maintenance of the nfoTools Web
+
     images/
         conventional stash of images available to pages here
 
-    C000000-nfoWare.md   Salvaged Job Jar & Diary from nfoWare front-porch
+    c000000.htm   Salvaged Job Jar & Diary from nfoWare front-porch
 
    index.md-0.0.2-2021-02-07T1744Z.txt
         the version of index.md that was first used, as an example
@@ -87,8 +88,8 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. nfoTools Documentation-Authoring Construction
-   Structure.  nfoTools project text file docs.txt version 0.0.19 dated
-   2023-08-12, available on the Internet as a version of
+   Structure.  nfoTools project text file docs.txt version 0.0.20 dated
+   2023-09-15, available on the Internet as a version of
    <https://github.com/orcmid/nfoTools/blob/master/docs/docs.txt>
 
 TODO
@@ -191,8 +192,19 @@ TODO
     POSSIBLE, ESPECIALLY WITH MATERIAL WE HOPE FOLKS WILL LINK INTO.  WE WILL
     NEED TOMBSTONES AND REDIRECTS FOR URLS THAT BECOME OBSOLETED.
 
+  * Make this another FrontPage repository (perhaps using OrcmidsLair) and
+    look at redirects from nfoWare/nfoWorks as materials are brought over.
+
+  * This means bringing over templates, etc.  I need to think hard about this.
+    I am rather fond of the dev/ folder here, so far.  I need to determine
+    what is the most important for me and how it works best.
+
+  * Install FrontPage on Astraendo2.  I need to figure out where I stashed
+    the product key.
+
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.20 2023-09-15T16:46Z Musings about bringing under FrontPage
  0.0.19 2023-08-12T20:28Z Manage TODOs, be more on-topic for here
  0.0.18 2023-05-06T14:45Z BIG TODO ON FOLIO ORGANIZATION
  0.0.17 2023-04-12T16:15Z Mass change of [projects] links
