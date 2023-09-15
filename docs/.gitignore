@@ -1,0 +1,35 @@
+# .gitignore 0.0.1                    UTF-8                     dh:2023-08-29
+#
+#                          ORCMID/ORCMID.GITHUB.IO/ORCMID
+#                          ==============================
+#
+#      .GITIGNORE FOR KEEPING FRONTPAGE ARTIFACTS OUT OF REPOSITORY
+#
+#   This .gitignore file is designed to allow FrontPage (VerMeer) operation
+#   on this subfolder without their being committed to and carried in the
+#   repository on GitHub.
+
+## ELIMINATE AUTHORING ARTIFACTS
+## -----------------------------
+
+#   jEdit backup and working files
+*~
+*#
+
+#   FrontPage authoring artifacts
+_private/
+_vti_*/
+*.scc
+
+#   Windows authoring artifacts
+desktop.ini
+Thumbs.db
+
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+#
+# 0.0.1 2028-08-29T02:38Z Exclude Thumbs.db even though we don't see them
+# 0.0.0 2028-08-27T20:40Z Adapt from the Miser Project 0.0.8 .gitignore as
+#       boilerplate.
+#
+#                    *** end of .gitignore ***
