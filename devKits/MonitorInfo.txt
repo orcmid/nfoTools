@@ -1,0 +1,62 @@
+MonitorInfo.txt               UTF-8                       2023-09-24
+
+Here's what Bing chat came up with for getting the characteristics of all
+attached monitors.
+
+#include <vector>
+#include <Windows.h>
+
+struct MonitorInfo {
+    MONITORINFO m_moniforInfo;
+    UINT dpiX {};
+    UINT dpiY {};
+};
+
+static std::vector<MonitorInfo> monitors;
+
+BOOL EnumProc(HMONITOR monitor, HDC _, LPRECT __, LPARAM ___) {
+    MONITORINFO monitorInfo { sizeof(MONITORINFO) };
+    GetMonitorInfo(monitor, &monitorInfo);
+    UINT dpix;
+    UINT dpiy;
+    GetDpiForMonitor(monitor, MDT_RAW_DPI, &dpix, &dpiy);
+    monitors.push_back(MonitorInfo { monitorInfo, dpix, dpiy });
+    return true;
+}
+
+int main() {
+    SetProcessDpiAwareness(PROCESS_DPI_UNAWARE);
+    EnumDisplayMonitors(nullptr, nullptr, EnumProc, 0);
+
+    for (auto const& monitor : monitors) {
+        auto width = monitor.m_moniforInfo.rcMonitor.right - monitor.m_moniforInfo.rcMonitor.left;
+        auto height = monitor.m_moniforInfo.rcMonitor.bottom - monitor.m_moniforInfo.rcMonitor.top;
+        std::cout << width << " x " << height << '\t' << "dpix: " << monitor.dpiX << '\t' << monitor.dpiY << '\n';
+    }
+}
+
+This code snippet retrieves the real screen resolution for each of the
+ multiple screens without being affected by DPI settings. It prints the width
+ and height of each screen along with the DPI values.
+
+Please note that this is just one way to obtain the screen resolution using
+the Win32 API. There are other methods available as well.
+
+https://stackoverflow.com/questions/4631292/how-to-detect-the-current-screen-resolution
+
+https://stackoverflow.com/questions/2156212/how-to-get-the-monitor-screen-resolution-from-a-hwnd
+
+The discussions are useful.  We need to do this for the monitor the app is
+working on by default.  So there needs to be some sensitivity to being on a
+multi-monitor system.  The app needs to know which monitor it is on.  The
+app needs to know the resolution of that monitor.  The app needs to know the
+DPI of that monitor.  The app needs to know the physical size of that
+monitor.  The app needs to know the physical size of the pixels on that
+monitor.  The app needs to know the physical size of the pixels on that
+monitor in inches.  The app needs to know the physical size of the pixels on
+that monitor in millimeters.  The app needs to know the physical size of the
+pixels on that monitor in centimeters.  The app needs to know the physical
+size of the pixels on that monitor in points.  The app needs to know the
+physical size of the pixels on that monitor in picas.  The app needs to know
+the physical size of the pixels on that monitor in pixels.  [Co-pilot got a
+little carried away there.  I think you get the idea.]
