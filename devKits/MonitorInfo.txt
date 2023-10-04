@@ -1,5 +1,18 @@
-MonitorInfo.txt               UTF-8                       2023-09-24
+MonitorInfo.txt 0.0.1               UTF-8                         2023-09-24
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+I dug into the GetWindowScaleDIPI() and found out how it is derived for all
+of the platform variations.
+
+The result is a stub {1.0f, 1.0f} for everything but desktop and Windows,
+Apple, or *nix.  Those cases are handled by glfw via rlgfw.c.  For Windows 
+and *nix, the denominator is always 96 bpi.  Apple is different.  It would
+be good to document what the procedure is.
+
+For the analysis, below, in C++, I do not recall the origin.  It might have
+been on Stackoverflow, but I have been unable to find it again.
+
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 Here's what Bing chat came up with for getting the characteristics of all
 attached monitors.
 
@@ -60,3 +73,7 @@ size of the pixels on that monitor in points.  The app needs to know the
 physical size of the pixels on that monitor in picas.  The app needs to know
 the physical size of the pixels on that monitor in pixels.  [Co-pilot got a
 little carried away there.  I think you get the idea.]
+
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+0.0.1 2023-10-04T17:03Z Initial note
