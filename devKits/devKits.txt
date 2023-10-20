@@ -1,4 +1,4 @@
-devKits.txt 0.0.8                    UTF-8                      dh:2023-10-04
+devKits.txt 0.0.9                    UTF-8                      dh:2023-10-20
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
     <https://github.com/orcmid/nfoTools/blob/master/devKits/devKits.txt>
@@ -38,14 +38,18 @@ MANIFEST
         This description file on organization of the archive and use of its
         materials.
 
+    MonitorInfo.txt
+        Discussion of a Bing Chat demonstration about monitor characteristics
+        and what a raylib application may need to render graphics properly.
+
     WinDev/
         Construction kits and helpers for producing programs for Microsoft
         Windows using Microsoft Windows developer tools.
 
 
- *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-                      Copyright 2016-2023 Dennis E. Hamilton
+                 Copyright 2016, 2021, 2023 Dennis E. Hamilton
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -64,7 +68,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. devKits Construction Kits and Helpers.
-   nfoTools file devKits.txt version 0.0.8 dated 2023-10-04,
+   nfoTools file devKits.txt version 0.0.9 dated 2023-10-20,
    available on the Internet as a version of
    <https://github.com/orcmid/nfoTools/blob/master/devKits/devKits.txt>
 
@@ -85,9 +89,12 @@ TODO
  * The scaffolding/skeleton scheme used here is a thing also, but maybe not
    to go overboard with it.
 
- *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+ * The MonitorInfo.txt should be moved to raylab/projects/nfoPixels
 
- 0.0.8 2023-10-04T16:52Z Touch-up rulers
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+ 0.0.9 2023-10-20T22:24Z More MonitorInfo.txt fussing
+ 0.0.8 2023-10-06T03:40Z touch up, adding MonitorInfo.txt
  0.0.7 2021-09-10T21:41Z Add attribution
  0.0.6 2021-08-30T19:05Z add rulers
  0.0.5 2021-05-25T19:57Z Manage TODOs

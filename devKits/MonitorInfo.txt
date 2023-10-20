@@ -1,16 +1,52 @@
-MonitorInfo.txt 0.0.1               UTF-8                         2023-09-24
+MonitorInfo.txt 0.0.2               UTF-8                         2023-10-23
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 I dug into the GetWindowScaleDIPI() and found out how it is derived for all
 of the platform variations.
 
 The result is a stub {1.0f, 1.0f} for everything but desktop and Windows,
-Apple, or *nix.  Those cases are handled by glfw via rlgfw.c.  For Windows 
+Apple, or *nix.  Those cases are handled by glfw via rlgfw.c.  For Windows
 and *nix, the denominator is always 96 bpi.  Apple is different.  It would
 be good to document what the procedure is.
 
 For the analysis, below, in C++, I do not recall the origin.  It might have
 been on Stackoverflow, but I have been unable to find it again.
+
+Meanwhile, I learned this:
+
+There is a declaration for this in raylib.h.
+Vector2 GetWindowScaleDPI(void)
+
+The rather peculiar case for rcore_android, rcore_drm, and rcore_web all
+return {1.0, 1.0}:
+
+// Get window scale DPI factor for current monitor
+Vector2 GetWindowScaleDPI(void)
+{
+    return (Vector2){ 1.0f, 1.0f };
+}
+
+There is an implementation in rcore_desktop.c now.
+
+It depends on
+
+        glfwGetMonitorContentScale(monitors[i], &xdpi, &ydpi);
+
+and those values are returned for the monitor in which the cursor is
+currently placed.  That's done by getting the coordinates of each monitor
+and stopping when the cursor is in monitor[i].  If none, the default is to
+{1.0f, 1.0f}.
+
+digging farther I need to see where to find GLFW/glfw3native.h and
+GLFW/glfw3.h (all in external/glfw/include/).
+
+The scale-factors computed in GetWIndowScaleDPI() on Windows depend on a
+denominator of USER_DEFAULT_SCREEN_DPI.  This is apparently set in WinUser.h.
+https://learn.microsoft.com/en-us/windows/win32/learnwin32/dpi-and-device-independent-pixels
+explains a lot.  Also,
+https://learn.microsoft.com/en-us/windows/win32/hidpi/wm-dpichanged
+
+It is found in glfw/src/win32_platform.h which includes windows.h.
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 Here's what Bing chat came up with for getting the characteristics of all
@@ -76,4 +112,7 @@ little carried away there.  I think you get the idea.]
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+0.0.2 2023-10-20T22:20Z Touch up with some Windows research
 0.0.1 2023-10-04T17:03Z Initial note
+
+                      **** end of MonitorInfo.txt ****
