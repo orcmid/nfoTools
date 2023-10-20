@@ -1,4 +1,4 @@
-games.txt 0.0.12                    UTF-8                         2023-07-**
+games.txt 0.0.12                    UTF-8                         2023-10-20
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -29,7 +29,7 @@ MANIFEST
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-                    Copyright 2021-2022 Dennis E. Hamilton
+                    Copyright 2021-2023 Dennis E. Hamilton
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -48,7 +48,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. nfoTools Project Games.  nfoTools file games.txt
-   version 0.0.12 dated 2023-07-**, available on the Internet as a version of
+   version 0.0.12 dated 2023-10-20, available on the Internet as a version of
    <https://orcmid.github.io/nfoTools/games/games.txt>
 
 TODO
@@ -194,9 +194,20 @@ TODO
    are Kanban-similar in their use of cards and stages.  There is no mention
    at all of Github Projects, a free alternative.
 
+ * <https://www.youtube.com/watch?v=hAthT-r-HPs> and Blender Tutorials are
+   valuable.  Also, if I use raylib, I will need to have something here around
+   graphics and animations in particular.  There is a cross-over between
+   dev/ and raylab/ goodies and addressing games specifically, along with
+   blender and whatever else.
+
+ * This Udemy course was apparently gifted.  It looks great for the kinds of
+   things folks are talking about with regard to raylib.  "Blender Material
+   Nodes Master: Create Procedural 3D Textures."
+ <https://www.udemy.com/course/blender-material-nodes/learn/lecture/39493426>.
+
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-0.0.12 2023-07-**
+0.0.12 2023-10-20T22:07Z Pick up on some Blender Materials courses
 0.0.11 2023-05-20T00:54Z Gathering more notes on resources
 0.0.10 2023-05-18T16:56Z More notes, especially on animated graphics
  0.0.9 2023-05-17T19:12Z Note on gaming accessibility
