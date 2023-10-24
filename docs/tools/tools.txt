@@ -1,4 +1,4 @@
-tools.txt 0.0.25                   UTF-8                       dh:2022-11-17
+tools.txt 0.0.26                    UTF-8                       dh:2023-10-24
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -34,7 +34,7 @@ MANIFEST
 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-                    Copyright 2021-2022 Dennis E. Hamilton
+                    Copyright 2021-2023 Dennis E. Hamilton
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -53,11 +53,14 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. nfoTools Toolcraft Notebook.  nfoTools project text
-   file tools.txt version 0.0.25 dated 2022-11-17, available on the Internet
+   file tools.txt version 0.0.26 dated 2023-10-24, available on the Internet
    as a version of
    <https://orcmid.github.io/nfoTools/tools/tools.txt>
 
 TODO
+
+ * Now that I have FrontPage working on GitHub pages, restore the original
+   T000000.htm and blend it in.  See docs.txt also.
 
  * Figure out the situation with Git for Windows being so beginner painful
    to install.
@@ -208,6 +211,7 @@ TODO
 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.26 2023-10-24T15:39Z TODO Consideration for FrontPage T000000.htm
  0.0.25 2022-11-17T23:37Z Manage TODOs, musings
  0.0.24 2022-06-21T16:52Z Capture Ben from Gamedev.tv on how to learn
  0.0.23 2022-06-19T15:36Z Manage TODOs, track header construction
