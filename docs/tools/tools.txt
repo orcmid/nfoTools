@@ -1,4 +1,4 @@
-tools.txt 0.0.26                    UTF-8                       dh:2023-10-24
+tools.txt 0.0.27                    UTF-8                       dh:2023-10-24
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -28,9 +28,17 @@ MANIFEST
   T211001/ Visual Studio Code
 
   T060501/ Windows CMD Command-Line Environment
-  T060101 C/C++ Programming
+  T060101/ C/C++ Programming
 
-  T000000/ nfoWare Tool Notes Diary and Job Jar (preservation capture)
+  T000000.md nfoWare Tool Notes Diary and Job Jar (preservation capture)
+
+       c000000.htm nfoWare Tools Construction Zone
+  construction.htm nfoWare Tools Construction Zone
+       default.htm nfoWare Tools default page
+         index.htm nfoWare Tools Construction Structure
+       t000000.htm nfoWare Tools Job Jar
+       t000001.htm nfoWare Tools Catalog
+     toolcraft.htm nfoWare Toolcraft statement
 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -53,7 +61,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. nfoTools Toolcraft Notebook.  nfoTools project text
-   file tools.txt version 0.0.26 dated 2023-10-24, available on the Internet
+   file tools.txt version 0.0.27 dated 2023-10-24, available on the Internet
    as a version of
    <https://orcmid.github.io/nfoTools/tools/tools.txt>
 
@@ -61,6 +69,12 @@ TODO
 
  * Now that I have FrontPage working on GitHub pages, restore the original
    T000000.htm and blend it in.  See docs.txt also.
+
+ * Determine construction structure needed to preserve the Site Server pages
+   managed with FrontPage.
+
+ * Figure out what to preserve/repurpose of the scavenged nfoWare/tools/
+   top level
 
  * Figure out the situation with Git for Windows being so beginner painful
    to install.
@@ -211,6 +225,7 @@ TODO
 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.27 2023-10-24T16:38Z Scavenge nfoWare/tools scaffolding for repurposing
  0.0.26 2023-10-24T15:39Z TODO Consideration for FrontPage T000000.htm
  0.0.25 2022-11-17T23:37Z Manage TODOs, musings
  0.0.24 2022-06-21T16:52Z Capture Ben from Gamedev.tv on how to learn
