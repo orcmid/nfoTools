@@ -1,4 +1,4 @@
-games.txt 0.0.12                    UTF-8                         2023-10-20
+games.txt 0.0.13                    UTF-8                         2023-10-26
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -11,10 +11,14 @@ games.txt 0.0.12                    UTF-8                         2023-10-20
                           NFOTOOLS PROJECT GAMES
                           ----------------------
 
-    nfoTools docs/games/ is a collection of material on games.  Not so much
-    gamedev, but using games, finding games, finding gamers, and so on. Actual
-    game development surfaces under docs/dev/ and, for significant games,
-    under their own projects.  Well maybe, maybe not.
+    nfoTools docs/games/ is a collection of material on games. It is about
+    game development and the use of tools for that purpose in line with other
+    nfoTools efforts.  There may also be some information on using games,
+    finding games, finding gamers, and so on. GameDev, and the connection with
+    tools like Blender and raylib are important.
+
+    I now envision this in a manner similar to the material on C/C++ and that
+    will be a support for gaming activities in fairly direct fashion.
 
     The pattern of chronological cataloguing is on the same pattern as other
     documentation sections, using G-prefixed folios/pages.
@@ -48,20 +52,21 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. nfoTools Project Games.  nfoTools file games.txt
-   version 0.0.12 dated 2023-10-20, available on the Internet as a version of
+   version 0.0.13 dated 2023-10-26, available on the Internet as a version of
    <https://orcmid.github.io/nfoTools/games/games.txt>
 
 TODO
 
- * Migrate items on games here, although this is about finding and playing
-   them, generally not constructing them (unless that's the game).
-
- * What about other recreational computing?  Then it is like fun or fun &
-   games.  Think it over.
-
  * Inventory existing games material for potential treatment here.
 
- * Need to distinguish games and gaming and gamedev?
+ * Need to distinguish games and gaming and gamedev?  I am now thinking this
+   is about game development the same as an audio or music section is about
+   developing digital audio, not so much listening.  It is also akin to the
+   C/C++ material and can appeal to it as well as sources like raylib.
+
+ * The Resources can be similar to the setup for C/C++.  There will also need
+   to be eventual tie-ins with audio and also accessibility (a11y) and
+   internationalization (i18n).
 
  * Scrounge my OneNote collection on gaming and adventuring
 
@@ -73,7 +78,7 @@ TODO
    progression of Adv10.
 
  * So I am definitely crossed up about this being for games and also gamedev?
-   Follow my own advice and move gaming items to nfoTools/docs/dev.
+   Yes, I now think this is developer-related, not player-focused.
 
  * For beginners through advanced, gamedev.tv is a great resource.  Feature
    these two:
@@ -148,7 +153,7 @@ TODO
  * <https://www.codecademy.com/resources/blog/5-ways-to-build-a-mini-game/>
    although it misses raylib and probably others.  Some of the statements,
    such as proximity of Python to English suggest a certain lack of competence
-   and reason to be cautious.
+   and are reason to be cautious.
 
  * <https://www.udemy.com/course/cpp-fundamentals/> C++ Fundamentals: Game
    Programming For Beginners.  This course is not precisely about C++.  It
@@ -205,8 +210,15 @@ TODO
    Nodes Master: Create Procedural 3D Textures."
  <https://www.udemy.com/course/blender-material-nodes/learn/lecture/39493426>.
 
+ * Here's something that might blend (bad pun) with raylib.  This is about
+   using Blender for animations,
+   <https://www.gamedev.tv/p/blender-complete-animator>.  It's important to
+   get on the mailing list and received heavily-discounted introductory
+   offers.
+
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+0.0.13 2023-10-26T19:01Z Repurpose a bit and also add Blender Automation link
 0.0.12 2023-10-20T22:07Z Pick up on some Blender Materials courses
 0.0.11 2023-05-20T00:54Z Gathering more notes on resources
 0.0.10 2023-05-18T16:56Z More notes, especially on animated graphics
