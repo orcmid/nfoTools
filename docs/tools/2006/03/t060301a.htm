@@ -1,0 +1,925 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>t060301a: Computer Arithmetic Gotchas - Diary &amp; Job Jar </title>
+<!--$$Header: /nfoWareCompagno/toolcraft/2006/03/t060301a.htm 46    17-06-03 15:07 Orcmid $-->
+<!-- Customized from ODMA /faq/templates/00/Q000006a.htm 0.10 of 2005-07-05T20:50Z 
+     See http://ODMA.info/projects/2005/06/P050601c.htm -->
+<base target="_self">
+</head>
+
+<body stylesrc="../../../construction/templates/00/c000005e.htm" bgcolor="#FFFFFF" text="#000080" link="#0000FF" vlink="#800080" alink="#FF0000">
+<font face="Arial, Microsoft Sans Serif, Helvetica, Geneva, Swiss, Sans Serif">
+<table border="0" width="100%" height="3">
+  <tr>
+    
+    <td width="20%" height="6">
+
+<!--webbot bot="Include"
+      U-Include="../../../construction/templates/00/c000005b.htm" TAG="BODY" startspan -->
+<a href="http://nfoWare.com" target="_top">
+<img border="0" src="../../../images/nfoWareBits-thumb.gif" alt="nfoWare Hard Hat Stage" width="154" height="118">
+</a>
+<!-- Included from nfoWare /construction/templates/00/c000005b.htm of 2006-04-20-20:40 -0700 -->
+<!--webbot bot="Include" endspan i-checksum="1387" --></td>
+    
+    <td width="52%" height="6">
+      <p align="center">
+
+<font face="Arial, Microsoft Sans Serif, Helvetica, Geneva, Swiss, Sans Serif">
+		<strong><a href="../../t000001.htm"><font color="#990033">toolNote</font></a></strong><font color="#990033"><strong> </strong></font>
+<strong>
+		<font color="#990033" face="Arial, Microsoft Sans Serif, Helvetica, Geneva, Swiss, Sans Serif">
+<a href="../../t000001.htm#t060301"><font color="#990033">t060301</font></a></font></strong><strong><font color="#990033"><br>
+      </font></strong>
+</font>
+
+  <font color="#990033"><strong>&nbsp;<a href="t060301.htm"><font color="#990033">Computer 
+Arithmetic Gotchas</font></a><br>
+      <em><big><big>Diary &amp; Job Jar</big></big></em></strong></font></p>
+    </td>
+    
+    <td width="28%" height="6">
+
+<font face="Arial, Microsoft Sans Serif, Helvetica, Geneva, Swiss, Sans Serif">
+      <p align="right"><code><b><a target="_top" href="../../../">nfoWare</a></b></code><b><code>&gt;<a target="_top" href="../../">toolcraft</a>&gt;<br>
+      <a target="_top" href="../">2006</a>&gt;<a target="_top" href="./">03</a>&gt;</code></b></p>
+      <p align="right"><b><code><a target="_top" href="t060301a.htm">t060301a</a>&gt;</code></b><br>
+      <small><small><a href="#0.01">0.01</a>
+		<!--webbot bot="Timestamp" S-Type="REGENERATED" S-Format="%Y-%m-%d %H:%M %Z" startspan -->2017-06-03 15:07 -0700<!--webbot bot="Timestamp" endspan i-checksum="28798" --></small></small></p>
+</font>
+
+      </td>
+    
+  </tr>
+</table>
+</font>
+
+<div align="center">
+  <center>
+  
+  <table border="2" width="100%" bordercolor="#990033" bordercolorlight="#CC0066" bordercolordark="#800000" bgcolor="#FFFFFF">
+    <tr>
+    <big>
+      <td width="11%" align="center"><p><i><b>S<span style="font-variant: small-caps">tatus</span></b></i></p></td>
+      <td width="11%" align="center"><p><i><b>D<span style="font-variant: small-caps">ate</span></b></i></p></td>
+      <td width="78%" align="left">
+        <p align="center"><i><b>D<span style="font-variant: small-caps">escription</span></b></i></p>
+      </td>
+      </big>
+    </tr>
+    
+    <tr>
+      <td width="11%" align="center" valign="top">&nbsp;</td>
+    
+      <td width="11%" align="center" valign="top">&nbsp;</td>
+      <td width="78%" align="left" valign="top">
+        &nbsp;</td>
+    </tr>
+    
+    <tr>
+      <td width="11%" align="center" valign="top">&nbsp;</td>
+    
+      <td width="11%" align="center" valign="top">&nbsp;</td>
+      <td width="78%" align="left" valign="top">
+        &nbsp;</td>
+    </tr>
+    
+    <tr>
+      <td width="11%" align="center" valign="top">&nbsp;</td>
+    
+      <td width="11%" align="center" valign="top">&nbsp;</td>
+      <td width="78%" align="left" valign="top">
+        &nbsp;</td>
+    </tr>
+    
+    <tr>
+      <td width="11%" align="center" valign="top">&nbsp;</td>
+    
+      <td width="11%" align="center" valign="top">&nbsp;</td>
+      <td width="78%" align="left" valign="top">
+        &nbsp;</td>
+    </tr>
+    
+    <tr>
+      <td width="11%" align="center" valign="top">&nbsp;</td>
+    
+      <td width="11%" align="center" valign="top"><font size="2">2007-08-13</font></td>
+      <td width="78%" align="left" valign="top">
+        <font size="2">t060301c: version progression should include the 
+		downloads and then the text should talk about what is revealed.</font></td>
+    </tr>
+    
+    <tr>
+      <td width="11%" align="center" valign="top">&nbsp;</td>
+    
+      <td width="11%" align="center" valign="top"><font size="2">2007-08-13</font></td>
+      <td width="78%" align="left" valign="top">
+        <font size="2">t060301c.zip review this and the manifest for the latest 
+		and most-useful approach.</font></td>
+    </tr>
+    
+    <tr>
+      <td width="11%" align="center" valign="top">&nbsp;</td>
+    
+      <td width="11%" align="center" valign="top"><font size="2">2007-08-13</font></td>
+      <td width="78%" align="left" valign="top">
+        <font size="2">t060301: This ties very much into specified vs. 
+		intended/expected behavior, and what it does for people who are, these 
+		days, barely able to count out change and are not taught anything around 
+		being able to check our work.</font></td>
+    </tr>
+    
+    <tr>
+      <td width="11%" align="center" valign="top">&nbsp;</td>
+    
+      <td width="11%" align="center" valign="top"><font size="2">2007-08-13</font></td>
+      <td width="78%" align="left" valign="top">
+        <font size="2">t060301: We need an explanation about how untrustworthy 
+		computer arithmetic is (although it is exquisitely reliable at it), as a 
+		motivator, especially around how everything is designed for us to 
+		overlook that situation if we have any awareness of it at all.</font></td>
+    </tr>
+    
+    <tr>
+      <td width="11%" align="center" valign="top">&nbsp;</td>
+    
+      <td width="11%" align="center" valign="top"><font size="2">2007-08-13</font></td>
+      <td width="78%" align="left" valign="top">
+        <font size="2">We need a general note to place at the t060301b level and 
+		then links to examples and illustrations</font></td>
+    </tr>
+    
+    <tr>
+      <td width="11%" align="center" valign="top">&nbsp;</td>
+    
+      <td width="11%" align="center" valign="top"><font size="2">2007-08-13</font></td>
+      <td width="78%" align="left" valign="top">
+        <font size="2">We need a better organization and provision for gotchas 
+		beside floating point.&nbsp; There are integer arithmetic gotchas too.</font></td>
+    </tr>
+    
+    <tr>
+      <td width="11%" align="center" valign="top">&nbsp;</td>
+    
+      <td width="11%" align="center" valign="top"><font size="2">2006-03-25</font></td>
+      <td width="78%" align="left" valign="top">
+        <font size="2">float5.c: Provide a reference to the pre-defined 
+		preprocessor variables that arise with VC++ and that are relied on in 
+		this code.</font></td>
+    </tr>
+    
+    <tr>
+      <td width="11%" align="center" valign="top">&nbsp;</td>
+    
+      <td width="11%" align="center" valign="top"><font size="2">2006-03-25</font></td>
+      <td width="78%" align="left" valign="top">
+        <font size="2">Check for popular treatments: Wikipedia, elsewhere.</font></td>
+    </tr>
+    
+    <tr>
+      <td width="11%" align="center" valign="top">&nbsp;</td>
+    
+      <td width="11%" align="center" valign="top"><font size="2">2006-03-25</font></td>
+      <td width="78%" align="left" valign="top">
+        <font size="2">This situation around the use of computers and the 
+		verification of dependable operation also extends to trustworthiness.&nbsp; 
+		It would be all right to use the TROST discussion list and SourceForge 
+		project as a place to contribute about this.</font></td>
+    </tr>
+    
+    <tr>
+      <td width="11%" align="center" valign="top">&nbsp;</td>
+    
+      <td width="11%" align="center" valign="top"><font size="2">2006-03-25</font></td>
+      <td width="78%" align="left" valign="top">
+        <font size="2">T060301c.htm: Provide links to where there is more 
+		information on the Toolkit and Express Edition compilers as sources and 
+		also as discussed and supported under nfoWare toolcraft.</font></td>
+    </tr>
+    
+    <tr>
+      <td width="11%" align="center" valign="top">&nbsp;</td>
+    
+      <td width="11%" align="center" valign="top"><font size="2">2006-03-25</font></td>
+      <td width="78%" align="left" valign="top">
+        <font size="2">T060301c.txt: Provide links to where the Express Edition 
+		and the Toolkit compilers are available.</font></td>
+    </tr>
+    
+    <tr>
+      <td width="11%" align="center" valign="top">&nbsp;</td>
+    
+      <td width="11%" align="center" valign="top"><font size="2">2006-03-25</font></td>
+      <td width="78%" align="left" valign="top">
+        <font size="2">T060301c3.htm: Include an HTML form of the formatted 
+		listing.</font></td>
+    </tr>
+    
+    <tr>
+      <td width="11%" align="center" valign="top">&nbsp;</td>
+    
+      <td width="11%" align="center" valign="top"><font size="2">2006-03-25</font></td>
+      <td width="78%" align="left" valign="top">
+        <font size="2">float5.c: Include a reference to the #pragma and #error 
+		preprocessor directives in Microsoft C/C++ also.</font></td>
+    </tr>
+    
+    <tr>
+      <td width="11%" align="center" valign="top">&nbsp;</td>
+    
+      <td width="11%" align="center" valign="top"><font size="2">2006-03-25</font></td>
+      <td width="78%" align="left" valign="top">
+        <font size="2">T060301c: Include a reference to the #pragma and related 
+		information in MSDN on-line.</font></td>
+    </tr>
+    
+    <tr>
+      <td width="11%" align="center" valign="top">&nbsp;</td>
+    
+      <td width="11%" align="center" valign="top"><font size="2">2006-03-25</font></td>
+      <td width="78%" align="left" valign="top">
+        <font size="2">T060301c: Include the Fleegal reference and the Plauger 
+		reference</font></td>
+    </tr>
+    
+    <tr>
+      <td width="11%" align="center" valign="top">&nbsp;</td>
+    
+      <td width="11%" align="center" valign="top"><font size="2">2006-03-25</font></td>
+      <td width="78%" align="left" valign="top">
+        <font size="2">T060301c.txt Specify whether there are particular 
+		prerequisites, or do the required tools handle it?</font></td>
+    </tr>
+    
+    <tr>
+      <td width="11%" align="center" valign="top">&nbsp;</td>
+    
+      <td width="11%" align="center" valign="top"><font size="2">2006-03-25</font></td>
+      <td width="78%" align="left" valign="top">
+        <font size="2">T060301c.txt Specify the limitations on this program.</font></td>
+    </tr>
+    
+    <tr>
+      <td width="11%" align="center" valign="top">&nbsp;</td>
+    
+      <td width="11%" align="center" valign="top"><font size="2">2006-03-25</font></td>
+      <td width="78%" align="left" valign="top">
+        <font size="2">float5.c: Make showhex() static.</font></td>
+    </tr>
+    
+    <tr>
+      <td width="11%" align="center" valign="top">&nbsp;</td>
+    
+      <td width="11%" align="center" valign="top"><font size="2">2006-03-25</font></td>
+      <td width="78%" align="left" valign="top">
+        <font size="2">float5.c: The #error on processor model should perhaps 
+		say &quot;80x86&quot; instead of &quot;Ix86&quot; to be more understandable.</font></td>
+    </tr>
+    
+    <tr>
+      <td width="11%" align="center" valign="top">&nbsp;</td>
+    
+      <td width="11%" align="center" valign="top"><font size="2">2006-03-25</font></td>
+      <td width="78%" align="left" valign="top">
+        <font size="2">The complaint is not that these situations exist, but 
+		that they exist in programming systems that are intended for casual use, 
+		education, and application by non-specialists (especially 
+		non-numerical-analysts) in the development of software.&nbsp; The broad 
+		range of users and developers to whom these programming systems are 
+		promoted is not well-served by having to know about and be able to debug 
+		around problems of this kind.&nbsp;&nbsp; The avoidance of these 
+		pitfalls in programming instruction is revealing on this matter also.&nbsp; 
+		The distributed human cost (a kind of externality) is inconsistent with 
+		the perpetuation of these models as a default, everyday exposure and 
+		risk.&nbsp; That makes this habitual approach a false economy and we 
+		need a better way to allow for tight control where it is appropriate and 
+		provide safer and unsurprising default operations otherwise.&nbsp; 
+		[Since we can't impact the C/C++/Java/C# progression at this point, we 
+		need some fresh thinking.&nbsp; We probably can impact the CLI though.]</font></td>
+    </tr>
+    
+    <tr>
+      <td width="11%" align="center" valign="top">&nbsp;</td>
+    
+      <td width="11%" align="center" valign="top"><font size="2">2006-03-25</font></td>
+      <td width="78%" align="left" valign="top">
+        <font size="2">Remember to emphasize that these gotchas figure in all 
+		programming systems that employ non-decimal floating-point arithmetics.&nbsp; 
+		Incommensurality with decimal fractions (actually, 1/5) applies to java 
+		and C#, not just C/C++.&nbsp; The feature exists in older languages 
+		(Fortran) and also those languages that are more careful with their 
+		non-floating-point arithmetic (LISP, Scheme, Squeak/Smalltalk), 
+		scripting languages, and spreadsheet/office applications (Excel for 
+		non-decimal floating point, etc.)</font></td>
+    </tr>
+    
+    <tr>
+      <td width="11%" align="center" valign="top">&nbsp;</td>
+    
+      <td width="11%" align="center" valign="top"><font size="2">2006-03-25</font></td>
+      <td width="78%" align="left" valign="top">
+        <font size="2">Conduct an experiment to see if the binary floating-point 
+		input-output forms are supported in the VC++ versions I am using.&nbsp; 
+		(I wonder if those made it into the ISO specification.)&nbsp; If so, the 
+		use of these when (more-) reliable preservation/interchange of binary 
+		forms is involved.</font></td>
+    </tr>
+    
+    <tr>
+      <td width="11%" align="center" valign="top">&nbsp;</td>
+    
+      <td width="11%" align="center" valign="top"><font size="2">2006-03-25</font></td>
+      <td width="78%" align="left" valign="top">
+        <font size="2">This initial experiment suggests to me many ways that the 
+		material needs to be refactored for a treatment of computer arithmetic 
+		as part of toolcraft and as part of nfoWare at the informal level.</font></td>
+    </tr>
+    
+    <tr>
+      <td width="11%" align="center" valign="top">&nbsp;</td>
+    
+      <td width="11%" align="center" valign="top"><font size="2">2006-03-25</font></td>
+      <td width="78%" align="left" valign="top">
+        <font size="2">Move the items that are tangential to this initial 
+		treatment to the job jars or project ideas where they belong.</font></td>
+    </tr>
+    
+    <tr>
+      <td width="11%" align="center" valign="top">&nbsp;</td>
+    
+      <td width="11%" align="center" valign="top"><font size="2">2006-03-25</font></td>
+      <td width="78%" align="left" valign="top">
+        <font size="2">T060301b: When there's an 0.10 or better version of the 
+		T060301c material, include it as the latest even though there may be a 
+		different approach later.</font></td>
+    </tr>
+    
+    <tr>
+      <td width="11%" align="center" valign="top">&nbsp;</td>
+    
+      <td width="11%" align="center" valign="top"><font size="2">2006-03-25</font></td>
+      <td width="78%" align="left" valign="top">
+        <font size="2">The MSDN Online material on #pragma, #message, and #error 
+		is very useful for what it shows about dereferencing pre-processor 
+		variables.&nbsp; Look at that for an explanation of showdefs and 
+		possible generalization of that for &quot;command files&quot; (apparently the new 
+		name for &quot;response files&quot;).&nbsp;&nbsp; I will be using *.opt so I 
+		suppose they should be called &quot;[command] option files&quot; although they are 
+		really command parameters.&nbsp; The parameter file can be included in a 
+		source comment as a way of tying down this dependency better than we 
+		ordinarily do it. </font>
+    </td>
+    </tr>
+    
+    <tr>
+      <td width="11%" align="center" valign="top">&nbsp;</td>
+    
+      <td width="11%" align="center" valign="top"><font size="2">2006-03-25</font></td>
+      <td width="78%" align="left" valign="top">
+        <font size="2">float5.c: in the description in front of the 
+		pre-processor magic, it is the &quot;compiler-option settings and defaults&quot; 
+		that we can't tell at pre-processor time.&nbsp; We also haven't made any 
+		provision for run-time discovery, something that could be explored in a 
+		different way (and look at Plauger for possible sources of programs that 
+		do this).</font></td>
+    </tr>
+    
+    <tr>
+      <td width="11%" align="center" valign="top">&nbsp;</td>
+    
+      <td width="11%" align="center" valign="top"><font size="2">2006-03-25</font></td>
+      <td width="78%" align="left" valign="top">
+        <font size="2">float5.c: reword the beginning about variability of 
+		controls and targets.&nbsp; This is about compiler options and 
+		development/target platform dependencies to be said more clearly.</font></td>
+    </tr>
+    
+    <tr>
+      <td width="11%" align="center" valign="top">&nbsp;</td>
+    
+      <td width="11%" align="center" valign="top"><font size="2">2006-03-25</font></td>
+      <td width="78%" align="left" valign="top">
+        <font size="2">The incommensurate representation of rational fractions 
+		is an internal problem along with range and precision considerations.&nbsp;&nbsp; 
+		They all figure in in-out conversions too.&nbsp; A separate discussion 
+		and illustration is valuable at some point, along with tie-in to better 
+		treatments (e.g., Knuth).&nbsp; This isn't even getting to the notion of 
+		accuracy and the impact of the nature of the data and the setting in 
+		which it is applied, how it is interpreted (cf. comp.risks).</font></td>
+    </tr>
+    
+    <tr>
+      <td width="11%" align="center" valign="top">&nbsp;</td>
+    
+      <td width="11%" align="center" valign="top"><font size="2">2006-03-25</font></td>
+      <td width="78%" align="left" valign="top">
+        <font size="2">float5.c: should we illustrate incommensurate floats - 
+		maybe include description in T060301c also or instead (there really 
+		needs to be a better illustration of incommensurate floats and how these 
+		work in binary)?</font></td>
+    </tr>
+    
+    <tr>
+      <td width="11%" align="center" valign="top">&nbsp;</td>
+    
+      <td width="11%" align="center" valign="top"><font size="2">2006-03-25</font></td>
+      <td width="78%" align="left" valign="top">
+        <font size="2">float5.c Include Creative Commons Notice, with link to 
+		the package of which it is a part.</font></td>
+    </tr>
+    
+    <tr>
+      <td width="11%" align="center" valign="top">&nbsp;</td>
+    
+      <td width="11%" align="center" valign="top"><font size="2">2006-03-24</font></td>
+      <td width="78%" align="left" valign="top">
+        <font size="2">T060301c.txt: also mention that the manifest can be 
+		linked into the VC++ 2005 project too.</font></td>
+    </tr>
+    
+    <tr>
+      <td width="11%" align="center" valign="top">&nbsp;</td>
+    
+      <td width="11%" align="center" valign="top"><font size="2">2006-03-24</font></td>
+      <td width="78%" align="left" valign="top">
+        <font size="2">float5.c&quot; The top line of float5.c has 1.50 instead of the 1.60 
+		used elsewhere.&nbsp; Correct that some time when the package is being 
+		updated anyhow.&nbsp; It is not necessary to recompile the executables 
+		unless I want to be really fussy.</font></td>
+    </tr>
+    
+    <tr>
+      <td width="11%" align="center" valign="top">&nbsp;</td>
+    
+      <td width="11%" align="center" valign="top"><font size="2">2006-03-24</font></td>
+      <td width="78%" align="left" valign="top">
+        <font size="2">Describe how to compile float5 and other programs from 
+		the command line too.</font></td>
+    </tr>
+    
+    <tr>
+      <td width="11%" align="center" valign="top">&nbsp;</td>
+    
+      <td width="11%" align="center" valign="top"><font size="2">2006-03-23</font></td>
+      <td width="78%" align="left" valign="top">
+        <font size="2">The gist here is not to solve the numerical analysis 
+		problem but to give people an appreciation of there being one and that 
+		they have the means to explore the computer arithmetic to see what the 
+		limits and edges are like, all as kitchen-table science.</font></td>
+    </tr>
+    
+    <tr>
+      <td width="11%" align="center" valign="top">&nbsp;</td>
+    
+      <td width="11%" align="center" valign="top"><font size="2">2006-03-23</font></td>
+      <td width="78%" align="left" valign="top">
+        <font size="2">I need to find the David Matula references at some point.</font></td>
+    </tr>
+    
+    <tr>
+      <td width="11%" align="center" valign="top">&nbsp;</td>
+    
+      <td width="11%" align="center" valign="top"><font size="2">2006-03-23</font></td>
+      <td width="78%" align="left" valign="top">
+        <font size="2">Add Plauger reference to the source materials.&nbsp;
+		</font>
+    </td>
+    </tr>
+    
+    <tr>
+      <td width="11%" align="center" valign="top">&nbsp;</td>
+    
+      <td width="11%" align="center" valign="top"><font size="2">2006-03-23</font></td>
+      <td width="78%" align="left" valign="top">
+        <font size="2">Make version of the source code that refers to its source 
+		here on nfoWare.&nbsp; Rebuild the archive accordingly.</font></td>
+    </tr>
+    
+    <tr>
+      <td width="11%" align="center" valign="top">&nbsp;</td>
+    
+      <td width="11%" align="center" valign="top"><font size="2">2006-03-23</font></td>
+      <td width="78%" align="left" valign="top">
+        <font size="2">What's a model for characterizing calculations and 
+		input-outputs so one can be confident about the precision or that a 
+		given requirement of precision is achieved.</font></td>
+    </tr>
+    
+    <tr>
+      <td width="11%" align="center" valign="top">&nbsp;</td>
+    
+      <td width="11%" align="center" valign="top"><font size="2">2006-03-23</font></td>
+      <td width="78%" align="left" valign="top">
+        <font size="2">Learning to use scaling and control of intermediate 
+		values in precise calculations with inprecise representations.</font></td>
+    </tr>
+    
+    <tr>
+      <td width="11%" align="center" valign="top">&nbsp;</td>
+    
+      <td width="11%" align="center" valign="top"><font size="2">2006-03-23</font></td>
+      <td width="78%" align="left" valign="top">
+        <font size="2">Thinking of the editor classes for input and range 
+		control in Java and having the 
+		same kind of thing worked through there and in VC++ too.&nbsp; </font>
+    </td>
+    </tr>
+    
+    <tr>
+      <td width="11%" align="center" valign="top">&nbsp;</td>
+    
+      <td width="11%" align="center" valign="top"><font size="2">2006-03-23</font></td>
+      <td width="78%" align="left" valign="top">
+        <font size="2">Compare the Plauger, 2003, and 2005 versions of &lt;float.h&gt; 
+		and see what we can learn of that.</font></td>
+    </tr>
+    
+    <tr>
+      <td width="11%" align="center" valign="top">&nbsp;</td>
+    
+      <td width="11%" align="center" valign="top"><font size="2">2006-03-23</font></td>
+      <td width="78%" align="left" valign="top">
+        <font size="2">It would appear that the situation is always 
+		underspecified and it is not clear what context-free variations provide 
+		if they can't be easily related to what comes up in a given usage 
+		situation and tied to the requirements stated in the application domain.</font></td>
+    </tr>
+    
+    <tr>
+      <td width="11%" align="center" valign="top">&nbsp;</td>
+    
+      <td width="11%" align="center" valign="top"><font size="2">2006-03-23</font></td>
+      <td width="78%" align="left" valign="top">
+        <font size="2">There are two cases of preservation: input to output and 
+		output to input.&nbsp; Then there are what this says about the 
+		internal/external manipulations and how they are to be guarded.</font></td>
+    </tr>
+    
+    <tr>
+      <td width="11%" align="center" valign="top">&nbsp;</td>
+    
+      <td width="11%" align="center" valign="top"><font size="2">2006-03-23</font></td>
+      <td width="78%" align="left" valign="top">
+        <font size="2">And then there are the output cases and how that might 
+		make the numbers look better or not.</font></td>
+    </tr>
+    
+    <tr>
+      <td width="11%" align="center" valign="top">&nbsp;</td>
+    
+      <td width="11%" align="center" valign="top"><font size="2">2006-03-23</font></td>
+      <td width="78%" align="left" valign="top">
+        <font size="2">There are then the internal manipulations using 
+		floating-point arithmetic.</font></td>
+    </tr>
+    
+    <tr>
+      <td width="11%" align="center" valign="top">&nbsp;</td>
+    
+      <td width="11%" align="center" valign="top"><font size="2">2006-03-23</font></td>
+      <td width="78%" align="left" valign="top">
+        <font size="2">The floating point case starts with how numbers are 
+		input, whether as data or expressed as literals in the program.</font></td>
+    </tr>
+    
+    <tr>
+      <td width="11%" align="center" valign="top">&nbsp;</td>
+    
+      <td width="11%" align="center" valign="top"><font size="2">2006-03-23</font></td>
+      <td width="78%" align="left" valign="top">
+        <font size="2">Tie in the two compilers used to resources here under 
+		Toolcraft</font></td>
+    </tr>
+    
+    <tr>
+      <td width="11%" align="center" valign="top">&nbsp;</td>
+    
+      <td width="11%" align="center" valign="top"><font size="2">2006-03-23</font></td>
+      <td width="78%" align="left" valign="top">
+        <font size="2">Lessons around skill level and the clash of denominators: 
+		the lowest common denominator for use by a growing community of users 
+		and the specialized requirements of these simple cases, and the 
+		performance preoccupation, the lies of teachers, etc.</font></td>
+    </tr>
+    
+    <tr>
+      <td width="11%" align="center" valign="top">&nbsp;</td>
+    
+      <td width="11%" align="center" valign="top"><font size="2">2006-03-23</font></td>
+      <td width="78%" align="left" valign="top">
+        <font size="2">Lessons around input-output preservation, what goes on 
+		inside, etc.</font></td>
+    </tr>
+    
+    <tr>
+      <td width="11%" align="center" valign="top">&nbsp;</td>
+    
+      <td width="11%" align="center" valign="top"><font size="2">2006-03-23</font></td>
+      <td width="78%" align="left" valign="top">
+        <font size="2">I don't really want to open up this particular can of 
+		worms, but it is important 
+		for people to know it is there</font></td>
+    </tr>
+    
+    <tr>
+      <td width="11%" align="center" valign="top">&nbsp;</td>
+    
+      <td width="11%" align="center" valign="top"><font size="2">2006-03-23</font></td>
+      <td width="78%" align="left" valign="top">
+        <font size="2">Make a Prof. von Clueless post as a kind of continuation 
+		from the What You See Is Not What You Get.&nbsp; </font></td>
+    </tr>
+    
+    <tr>
+      <td width="11%" align="center" valign="top">&nbsp;</td>
+    
+      <td width="11%" align="center" valign="top"><font size="2">2006-03-23</font></td>
+      <td width="78%" align="left" valign="top">
+        <font size="2">Describe the situation in terms of what is revealed and 
+		what can be demonstrated and tested for</font></td>
+    </tr>
+    
+    <tr>
+      <td width="11%" align="center" valign="top">&nbsp;</td>
+    
+      <td width="11%" align="center" valign="top"><font size="2">2006-03-23</font></td>
+      <td width="78%" align="left" valign="top">
+        <font size="2">Acknowledge the contributor of the original question</font></td>
+    </tr>
+    
+    <tr>
+      <td width="11%" align="center" valign="top" bgcolor="#CCCCFF">
+		<font size="2"><b>done<br>
+		2007-08-13</b></font></td>
+    
+      <td width="11%" align="center" valign="top" bgcolor="#CCCCFF"><b>
+		<font size="2">2007-08-12</font></b></td>
+      <td width="78%" align="left" valign="top" bgcolor="#CCCCFF">
+        <div align="center">
+			<!--webbot bot="Include" U-Include="../../../construction/2007/08/c070801c3.htm" TAG="BODY" startspan -->
+		<table border="3" width="80%" bordercolor="#006600" id="table1">
+			<tr>
+				<td>
+				<blockquote><small>
+					<p align="left"><b><font color="#006600"><br>
+					The Content Material here was successfully repaved as part of the
+					</font><font color="#800000">
+					<a href="../../../construction/2007/08/c070801c.htm"><font color="#006600">2007-08-04</font></a></font><font color="#006600"> stage of the 
+					</font><font color="#800000">
+					<a href="../../../construction/2007/08/c070801.htm"><font color="#006600">Site Repaving Project</font></a></font><font color="#006600">.&nbsp; Check those
+					pages for additional details of the approach to correction and upgrade.&nbsp; </font> </b>
+					<font color="#006600"><b>Contact the
+					</b></font> <b> <a href="http://NuovoDoc.com/contact.htm">
+					<font color="#006600"><i>nfoWare</i> author</font></a></b><font color="#006600"><b> with questions and to 
+					report any subsequent defects that you notice.</b></font></p></small>
+				</blockquote>
+				</td>
+			</tr>
+			<!-- Included from nfoWare construction/2007/08/c070801c3.htm of 2007-08-11-20:21 -->
+		</table>
+	<!--webbot bot="Include" endspan i-checksum="58630" --></div>
+    </td>
+    </tr>
+	<tr>
+      <td width="11%" align="center" valign="top" bgcolor="#CCCCFF"><b><small>done</small></b></td>
+    
+      <td width="11%" align="center" valign="top" bgcolor="#CCCCFF"><b><font size="2">2007-08-13</font></b></td>
+      <td width="78%" align="left" valign="top" bgcolor="#CCCCFF">
+        <b>
+        <font size="2">Reflect the repaving in the Construction Structure and 
+		the toolNotes catalog</font></b></td>
+    </tr>
+	<tr>
+      <td width="11%" align="center" valign="top" bgcolor="#CCCCFF"><b><small>done<br>
+		2007-08-13</small></b></td>
+    
+      <td width="11%" align="center" valign="top" bgcolor="#CCCCFF"><b><font size="2">2007-08-12</font></b></td>
+      <td width="78%" align="left" valign="top" bgcolor="#CCCCFF">
+        <font size="2"><b>Repave the folio content: t060301, t060301a, t060301b, 
+		t060301c, t060301c.txt</b></font></td>
+    </tr>
+	<tr>
+      <td width="11%" align="center" valign="top" bgcolor="#CCCCFF"><b><small>done<br>
+		2007-08-13</small></b></td>
+    
+      <td width="11%" align="center" valign="top" bgcolor="#CCCCFF"><b><font size="2">2007-08-12</font></b></td>
+      <td width="78%" align="left" valign="top" bgcolor="#CCCCFF">
+        <font size="2"><b>Change to Construction Structure (Hard Hat Area): 
+		t060301, t060301a, t060301b, t060301c</b></font></td>
+    </tr>
+	<tr>
+      <td width="11%" align="center" valign="top" bgcolor="#CCCCFF"><b><small>done</small></b></td>
+    
+      <td width="11%" align="center" valign="top" bgcolor="#CCCCFF"><b><font size="2">2007-08-13</font></b></td>
+      <td width="78%" align="left" valign="top" bgcolor="#CCCCFF">
+        <b>
+        <font size="2">t060301c.txt: Update and change to UTF-8.&nbsp; Then add 
+		it into the zip file and update everything.</font></b></td>
+    </tr>
+	<tr>
+      <td width="11%" align="center" valign="top" bgcolor="#CCCCFF"><b><small>done</small></b></td>
+    
+      <td width="11%" align="center" valign="top" bgcolor="#CCCCFF"><b><font size="2">2007-08-13</font></b></td>
+      <td width="78%" align="left" valign="top" bgcolor="#CCCCFF">
+        <b>
+        <font size="2">t060301c.zip Update with corrected file names and the new 
+		manifest so that it is consistent with the repaving.</font></b></td>
+    </tr>
+    
+    <tr>
+      <td width="11%" align="center" valign="top" bgcolor="#CCCCFF"><b><small>done</small></b></td>
+    
+      <td width="11%" align="center" valign="top" bgcolor="#CCCCFF"><b><font size="2">2007-08-13</font></b></td>
+      <td width="78%" align="left" valign="top" bgcolor="#CCCCFF">
+        <b><font size="2">t060301b: The placeholder title becomes &quot;Untrustworthy 
+		Arithmetic.&quot;</font></b></td>
+    </tr>
+    
+    <tr>
+      <td width="11%" align="center" valign="top" bgcolor="#CCCCFF"><b><small>done 
+		0.00</small></b></td>
+    
+      <td width="11%" align="center" valign="top" bgcolor="#CCCCFF"><b><font size="2">2006-03-25</font></b></td>
+      <td width="78%" align="left" valign="top" bgcolor="#CCCCFF">
+        <b>
+        <font size="2">T060301.htm Splice in the Diary &amp; Job Jar and the first 
+		publishable level of T060301b/c into the front page of the folio so that 
+		it can stand alone better.</font></b></td>
+    </tr>
+	<tr>
+      <td width="11%" align="center" valign="top" bgcolor="#CCCCFF"><b><small>done</small></b></td>
+    
+      <td width="11%" align="center" valign="top" bgcolor="#CCCCFF"><b><font size="2">2006-03-25</font></b></td>
+      <td width="78%" align="left" valign="top" bgcolor="#CCCCFF">
+        <b>
+        <font size="2">Check the revision-history entries of these pages for 
+		proper formatting and indentation.</font></b></td>
+    </tr>
+    
+    <tr>
+      <td width="11%" align="center" valign="top" bgcolor="#CCCCFF"><b><small>done 
+		0.00<br>
+		2006-03-25</small></b></td>
+    
+      <td width="11%" align="center" valign="top" bgcolor="#CCCCFF"><b><font size="2">2006-03-23</font></b></td>
+      <td width="78%" align="left" valign="top" bgcolor="#CCCCFF">
+        <b>
+        <font size="2">Link to the thread on MSDN Forum for VC++ 2005 Express 
+		Edition</font></b></td>
+    </tr>
+    
+    <tr>
+      <td width="11%" align="center" valign="top" bgcolor="#CCCCFF"><b><small>done 
+		0.00</small></b></td>
+    
+      <td width="11%" align="center" valign="top" bgcolor="#CCCCFF"><b><font size="2">2006-03-25</font></b></td>
+      <td width="78%" align="left" valign="top" bgcolor="#CCCCFF">
+        <b><font size="2">T060301c: The links to the .txt and .zip are bogus.&nbsp; 
+		Correct both of them.</font></b></td>
+    </tr>
+    
+    <tr>
+      <td width="11%" align="center" valign="top" bgcolor="#CCCCFF"><b><small>done 
+		0.00</small></b></td>
+    
+      <td width="11%" align="center" valign="top" bgcolor="#CCCCFF"><b><font size="2">2006-03-24</font></b></td>
+      <td width="78%" align="left" valign="top" bgcolor="#CCCCFF">
+        <b><font size="2">T060301c: Include enough information so that the files 
+		can be found and it is clear how to download them.</font></b></td>
+    </tr>
+	<tr>
+      <td width="11%" align="center" valign="top" bgcolor="#CCCCFF"><b><small>done</small></b></td>
+    
+      <td width="11%" align="center" valign="top" bgcolor="#CCCCFF"><b><font size="2">2006-03-24</font></b></td>
+      <td width="78%" align="left" valign="top" bgcolor="#CCCCFF">
+        <b><font size="2">Move the images to the web site too.</font></b></td>
+    </tr>
+    
+    <tr>
+      <td width="11%" align="center" valign="top" bgcolor="#CCCCFF"><b><small>done<br>
+		2006-03-24</small></b></td>
+    
+      <td width="11%" align="center" valign="top" bgcolor="#CCCCFF"><b><font size="2">2006-03-23</font></b></td>
+      <td width="78%" align="left" valign="top" bgcolor="#CCCCFF">
+        <b>
+        <font size="2">Complete the Synchronized Manifest and Splice all to 
+		T060301c.zip</font></b></td>
+    </tr>
+    
+    <tr>
+      <td width="11%" align="center" valign="top" bgcolor="#CCCCFF"><b><small>done</small></b></td>
+    
+      <td width="11%" align="center" valign="top" bgcolor="#CCCCFF"><b><small>2006-03-23</small></b></td>
+      <td width="78%" align="left" valign="top" bgcolor="#CCCCFF">
+        <b>
+        <font size="2">Add T060301c.txt as the manifest for T060301c.zip</font></b></td>
+    </tr>
+    
+    <tr>
+      <td width="11%" align="center" valign="top" bgcolor="#CCCCFF"><b><small>done</small></b></td>
+    
+      <td width="11%" align="center" valign="top" bgcolor="#CCCCFF"><b><small>2006-03-23</small></b></td>
+      <td width="78%" align="left" valign="top" bgcolor="#CCCCFF">
+        <b>
+        <font size="2">Customize T060301b and T060301c as placeholders</font></b></td>
+    </tr>
+    
+  </center>
+  <center>
+   <small> 
+    </small>
+   <small> 
+    </small>
+   <small> 
+    </small>
+   <small> 
+    </small>
+   <small> 
+    </small>
+   <small> 
+    </small>
+  </center>
+  
+  <center>
+    <tr>
+      <td width="11%" align="center" valign="top" style="background-color: #CCCCFF"><b><small>done</small></b></td>
+      <td width="11%" align="center" valign="top" style="background-color: #CCCCFF"><b><small>2006-03-23</small></b></td>
+      <td width="78%" valign="top" style="background-color: #CCCCFF">
+		<p align="left"><b><small>
+		Create this page for immediate collection of action items and notes.</small></b></td>
+    </tr>
+  </table>
+  
+  </center>
+</div>
+
+<small>
+		<dl><dt><b><a name="RevisionHistory">Revision History:</a></b></dt>
+			<dt><b><a name="0.01">0.01</a> 2007-08-13-13:05 Repaving Project</b></dt>
+			<dd>The folio content is repaved to conform to current construction 
+			structure and case-sensitivity of URLs and links.&nbsp; Additional 
+			changes are initiated as part of the individual review.</dd>
+			<dt><b><a name="0.00">0.00</a> 2006-03-25-12:47 Create Initial Placeholder</b></dt>
+		<dd>Introduce an initial placeholder that serve as a target of links and 
+		provides a diary &amp; job jar that can be employed immediately.&nbsp; 
+		Create 0.00 placeholders and minimal content.</dd></dl>
+
+</small>
+
+  <hr color="#990033">
+
+<table border="0" cellspacing="3" width="100%">
+  <tr>
+    <td width="10%"><a href="index.htm" target="_top" rel="nofollow">
+	<img border="0" src="../../../images/hardhat-thumb.gif" alt="Construction Structure (Hard Hat Area)" width="80" height="60"></a></td>
+    <td width="66%" valign="middle" align="center">
+      <!--webbot bot="Include" U-Include="../../../construction/templates/00/c000005d.htm" 
+  TAG="BODY" startspan -->
+<div align="center"><font face="Arial, Microsoft Sans Serif, Helvetica, Geneva, Swiss, Sans Serif">
+<small><small>
+	<a rel="license" href="http://creativecommons.org/licenses/by/2.5/" target="_top">
+<img border="0" src="../../../images/ccSomeRights20.png" width="88" height="31" 
+     align="right" alt="Creative Commons License"></a>
+You are navigating 
+<!-- included from nfoWare /construction/C000005f.htm of 2006-01-11T16:37Z -->
+ 	<i><b><a href="../../../" target="_top">nfoWare</a></b></i>.<br />This work is 
+	<a rel="nofollow" href="../../../notes/2006/01/N060101c.htm" target="_top">licensed</a> under a <br />
+<!--
+
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+xmlns:dc="http://purl.org/dc/elements/1.1/"
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="">
+<license rdf:resource="http://creativecommons.org/licenses/by/2.5/" />
+</Work>
+
+<License rdf:about="http://creativecommons.org/licenses/by/2.5/">
+<permits rdf:resource="http://web.resource.org/cc/Reproduction" />
+<permits rdf:resource="http://web.resource.org/cc/Distribution" />
+<requires rdf:resource="http://web.resource.org/cc/Notice" />
+<requires rdf:resource="http://web.resource.org/cc/Attribution" />
+<permits rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
+</License>
+
+</rdf:RDF>
+
+--><a rel="license"    href="http://creativecommons.org/licenses/by/2.5/" target="_top">Creative Commons 
+   Attribution 2.5 License</a>.</small></small></font></div>
+<!--webbot bot="Include" endspan i-checksum="29578" --></td>
+    <td width="23%">
+      <p align="right"><font size="-2">created 2006-03-23-18:17 -0800 (pst) by
+		<a rel="nofollow" href="../../../construction/orcmid.htm">orcmid</a><br>
+      <em>$$Author: Orcmid $<br>
+      $$Date: 17-06-03 15:07 $<br>
+      $$Revision: 46 $</em></font></p>
+    </td>
+  </tr>
+</table>
+</body>
+</html>

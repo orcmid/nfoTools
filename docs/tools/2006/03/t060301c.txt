@@ -1,0 +1,209 @@
+﻿t060301c.txt 0.05                UTF-8 encoding                dh:2007-08-13
+
+                      CONTENT OF t060301c.zip ARCHIVE
+
+                  Float5 1.60 C/C++ FLOATING-POINT GOTCHAS
+                  ----------------------------------------
+
+        For the latest version of this material, consult web page
+        <http://nfoWare.com/toolcraft/2006/03/t060301c.htm>.
+        This material is part of the nfoWare site described at
+        <http://nfoWare.com>.
+
+   If there is any concern for the authenticity of the archive and its
+   content, obtain a full replacement copy from the nfoWare.com site.
+
+
+   CONTENT
+
+     1. Manifest
+     2. Tools Required
+     3. Installing the Material for Use
+     4. Using the Material
+     Copyright Notice
+     Revision History
+
+1. MANIFEST
+
+   Archive file t060301c.zip contains the following materials:
+
+        t060301c.txt  This file, providing a manifest and content descrip-
+                      tion.  It is also provided for separate on-line
+                      inspection.  This file is dated 2007-08-13-14:37
+                      and is 9,171 bytes in size.
+
+            float5.c  version 1.60 of the C Language program that shows
+                      differences between decimal numeric values and the
+                      internal floating-point values as stored and as
+                      produced during computations.  This file is dated
+                      2006-03-23-15:17 and is 9,832 bytes in size.
+
+         float5a.exe  version of float5.c compiled using the Visual C++
+                      2005 Express Edition optimizing compiler version
+                      14.00.50727.42 for 80x86.  This file is dated
+                      2006-03-23-15:21 and is 69,632 bytes in size.
+
+         float5b.exe  version of float5.c compiled using default options
+                      of the Visual C++ Toolkit 2003 compiler version
+                      13.10.3077 for 80x86.  This file is dated 2006-
+                      03-23-15:19 and is 45,056 bytes in size.
+
+         float5c.exe  version of float5.c compiled with the /Za option
+                      of the Visual C++ Toolkit 2003 compiler.  This
+                      file is dated 2006-03-23-15:20 and is 45,056 bytes
+                      in size.  It is different from float5b, even though
+                      the files are of identical size.
+
+       t060301c1.png  Snapshot of the Visual C++ 2005 Express Edition
+                      New Project dialog for creating the float5 project.
+                      This file is dated 2006-03-24-22:11 and is 25,526
+                      bytes in size.
+
+       t060301c2.png  Snapshot of the Visual C++ 2005 Express Edition
+                      context menu for adding an existing item to the
+                      float5 project.  This file is dated 2006-03-24-22:11
+                      and is 34,667 bytes in size.
+
+
+2. TOOLS REQUIRED
+
+   To access and use the material in this archive, the following resources
+   are required:
+
+       Internet Connection and Browser
+                      for access to the material and download of the
+                      t060301c.zip file.
+
+       Zip-format archive access utility
+                      The archive was produced with WinZip 9.0 SR-1 (6224)
+
+       Utility for viewing or editing simple text files
+                      Windows Notepad is sufficient.  No tabs are used
+                      and word wrap should not be used in viewing. The
+                      lines of text in the body are not wider than
+                      80 characters.  Some mechanically-introduced lines
+                      on the end may be wider; that is no barrier to
+                      readability of the file.
+
+       Microsoft Windows PC running Windows 98 SE or later.  This is
+                      sufficient for executing the sample programs.  To
+                      compile the sample program, the configuration
+                      requirements of a C Language compiler must also
+                      be met.
+
+       C Language Compiler for optional compilation and modification of
+                      the Float5.c demonstration program.  The program
+                      has been compiled with Visual C++ 2005 Express
+                      Edition and the Visual C++ Toolkit 2003 compilers.
+
+
+3. INSTALLING THE MATERIAL FOR USE
+
+   The programs are self-contained.  They are command-line programs.
+   Extract them individually for execution in command-prompt sessions.
+
+   The float5.c code can simply be viewed from the Zip file or moved to
+   a location where it can be used with a compiler.
+
+   An easy way to install the material is to place t060301c.zip in a
+   directory where you want to use the files.  For example, place the
+   Zip package in directory C:\MyProjects\float5\
+
+   Extract the contents of t060301c.zip into the same directory.  This
+   will make all of the files usable for demonstration and building
+   your own versions.
+
+
+4. USING THE MATERIAL
+
+   You can open the float5.c file in Windows Notepad or in the IDE of
+   a compiler system.
+
+   You can execute the float5a.exe, float5b.exe, and float5c.exe
+   programs from within a command prompt.  E.g., in Windows select
+
+       Start | All Programs | Accessories | Command Prompt
+
+   In the console window that opens, switch to the directory where
+   you have the programs and execute one by name.  E.g.,
+
+       C:\Documents and Settings\orcmid>cd C:\MyProjects\float5
+       C:\MyProjects\float5>float5b
+
+          [ the program runs ]
+
+          [and when you are done executing commands ...]
+
+       C:\MyProjects\float5>exit
+
+   You can also incorporate float5.c in a Visual C++ 2005 Express
+   Edition (or VS 2005) project:
+
+       In the VC++ 2005 IDE, select menu File | Project | New
+
+   On the New Project dialog (view t060301c1.png) select General project
+   type and the Empty Project template.  A good name is simply "float5".
+   Do not leave the check mark on "Create Directory for Solution."  This
+   will make an empty float5 project directory.
+
+   In the Solution Explorer pane, right-click on the Source Files folder
+   of the float5 project (view t060301c2.png).  Select Add | Existing
+   Item ... .  Browse to the location of your float5.c copy and select
+   it into your project.
+
+   VC++ 2005 uses the float5.c where you put it.  A copy is not actually
+   made.  It is shown as part of your project just the same.  You can
+   open float5.c in your VC++ 2005 IDE by double-clicking on the file
+   in the Solution Explorer window.
+
+   You can compile the program by using menu item Build | Build Solution
+   (or press F7).  There should be no problems.  You can demonstrate the
+   program using VC++ 2005 menu item Debug | Start Without Debugging
+   (or press Ctrl+F5).  You should see the same results produced by
+   program float5a.exe.
+
+   More information about the nature of the results and what they
+   demonstrate can be found by checking at web page
+   <http://nfoWare.com/toolcraft/2006/03/t060301c.htm>.  That page
+   and those linked from it may also provide additional tutorial
+   information on the toolcraft of C/C++ programming generally and
+   the Microsoft Visual C++ products in particular.
+
+
+ - - - - - - - - - - - - - - - - - - - | - - - - - - - - - - - - - - - - - -
+
+Questions, comments, discussion and feedback about nfoWare.com projects
+and materials are welcome. Contact <mailto:orcmid@users.sourceforge.net>.
+For further details, visit <http://nfoWare.com>.
+
+                Copyright © 2006, NuovoDoc <http://NuovoDoc.com>
+
+        This work is licensed under the Creative Commons Attribution
+        License.  To view a copy of this license, visit web site
+        http://creativecommons.org/licenses/by/2.5/ or send a letter
+        to Creative Commons, 559 Nathan Abbott Way, Stanford,
+        California 94305, USA.
+
+Attributions can be made in any suitable scholarly-citation format.  It is
+requested that the material be identified sufficiently for others to be able
+to locate it on their own.  For example,
+
+    Hamilton, Dennis E.  Float5 1.60 C/C++ Floating-Point Gotchas,
+        package version 0.05, nfoWare.com, 2007 August 13.  WinZip
+        software package t060301c.zip available for download at
+        <http://nfoWare.com/toolcraft/2006/03/t060301c.htm>.
+
+Although this material is considered stable, there may be minor adjustments
+from time to time.  For accuracy, you should also specify when you accessed
+the cited material.
+
+ - - - - - - - - - - - - - - - - - - - | - - - - - - - - - - - - - - - - - -
+
+0.05 2007-08-13-14:07 Update to provide correct case-sensitivity that
+     applies to the repaved nfoWare Toolcraft section.
+0.04 2006-03-24-21:57 ToolNote manifest bootstrapped by customization
+     of the TROST InfoNote Bootstrap Template 0.20.
+
+$Header: /MyProjects/Float5/t060301c.txt 11    07-08-13 14:47 Orcmid $
+
+                        *** END OF t060301c.txt ***

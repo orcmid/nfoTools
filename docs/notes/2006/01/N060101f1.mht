@@ -1,0 +1,283 @@
+From: <Saved by Microsoft Internet Explorer 5>
+Subject: web.resource.org/cc
+Date: Sun, 8 Jan 2006 11:06:56 -0800
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----=_NextPart_000_0000_01C61443.A3BA55A0"
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2900.2670
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0000_01C61443.A3BA55A0
+Content-Type: text/html;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://web.resource.org/cc/
+
+=EF=BB=BF<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML lang=3Den-US xml:lang=3D"en-US" =
+xmlns=3D"http://www.w3.org/1999/xhtml"=20
+xmlns:xlink =3D "http://www.w3.org/1999/xlink" xmlns:rddl =3D=20
+"http://www.rddl.org/"><HEAD><TITLE>web.resource.org/cc</TITLE>
+<META http-equiv=3DContent-Type content=3D"text/html; =
+charset=3Dutf-8"><LINK=20
+href=3D"http://web.resource.org/style.css" type=3Dtext/css =
+rel=3Dstylesheet>
+<META content=3D"MSHTML 6.00.2900.2802" name=3DGENERATOR></HEAD>
+<BODY>
+<DIV id=3Dbanner>
+<H1><A =
+href=3D"http://web.resource.org/cc/">web.resource.org/cc</A></H1><SPAN=20
+class=3Ddescription>describing copyright in RDF</SPAN> </DIV>
+<DIV class=3Dcontent>
+<P>The CC schema lets you describe copyright licenses in RDF. Here's a =
+summary=20
+of the included terms:</P>
+<DL>
+  <DT>cc:license=20
+  <DD>A copyright license for the resource, a structured=20
+  <STRONG>cc:License</STRONG>. If there are two =
+<STRONG>cc:license</STRONG>s,=20
+  then the licensee gets to pick which to use. </DD></DL>
+<P><STRONG>Agent</STRONG>s (people or things that do stuff) and=20
+<STRONG>License</STRONG>s, of course, can use the same structure to =
+provide=20
+their names, dates, etc.</P>
+<H2>Licenses</H2>
+<P>Licenses are described by their characteristics, which come in three=20
+types:</P>
+<H3>Permissions (rights granted by the license)</H3>
+<DL>
+  <DT>Reproduction=20
+  <DD>the work may be reproduced=20
+  <DT>Distribution=20
+  <DD>the work (and, if authorized, derivative works) may be =
+distributed,=20
+  publicly displayed, and publicly performed=20
+  <DT>DerivativeWorks=20
+  <DD>derivative works may be created and reproduced </DD></DL>
+<H3>Prohibitions (things prohibited by the license)</H3>
+<DL>
+  <DT>CommercialUse=20
+  <DD>rights may be exercised for commercial purposes </DD></DL>
+<H3>Requirements (restrictions imposed by the license)</H3>
+<DL>
+  <DT>Notice=20
+  <DD>copyright and license notices must be kept intact=20
+  <DT>Attribution=20
+  <DD>credit must be given to copyright holder and/or author=20
+  <DT>ShareAlike=20
+  <DD>derivative works must be licensed under the same terms as the =
+original=20
+  work=20
+  <DT>SourceCode=20
+  <DD>source code (the preferred form for making modifications) must be =
+provided=20
+  for all derivative works </DD></DL>
+<P><STRONG>Note:</STRONG> these characteristics are advisory only. They =
+are=20
+designed to describe the characteristics of a license; they are not =
+themselves a=20
+license. For the specific implementation of each characteristic, as well =
+as=20
+other details which may not be encoded in the RDF, you must consult the =
+text of=20
+the actual license. A license should always be linked from these =
+metadata=20
+terms.</P>
+<P>More details are on <A=20
+href=3D"http://creativecommons.org/learn/technology/metadata/">the =
+Creative=20
+Commons metadata project website</A>.</P><rddl:resource=20
+xlink:role=3D"http://www.w3.org/2000/01/rdf-schema#"=20
+xlink:title=3D"Creative Commons RDF Metadata Schema"=20
+xlink:href=3D"http://web.resource.org/cc/schema.rdf">
+<P>RDF users might be interested in our machine-readable <A=20
+href=3D"http://web.resource.org/cc/schema.rdf">RDF Schema</A>. A copy is =
+also=20
+embedded in this document.</P></rddl:resource></DIV>
+<DIV class=3Dfooter>[ part of <A=20
+href=3D"http://web.resource.org/">web.resource.org</A> | <A=20
+href=3D"mailto:webmaster@web.resource.org">webmaster@web.resource.org</A>=
+ for help=20
+] </DIV><!--=0A=
+<rdf:RDF xmlns=3D"http://web.resource.org/cc/"=0A=
+    xmlns:dc=3D"http://purl.org/dc/elements/1.1/"=0A=
+    xmlns:rdf=3D"http://www.w3.org/1999/02/22-rdf-syntax-ns#"=0A=
+    xmlns:rdfs=3D"http://www.w3.org/2000/01/rdf-schema#">=0A=
+=0A=
+    <rdfs:Class rdf:about=3D"http://web.resource.org/cc/Work">=0A=
+        <dc:title>work</dc:title>=0A=
+        <dc:description>a potentially copyrightable work</dc:description>=0A=
+        <rdfs:seeAlso =
+rdf:resource=3D"http://www.w3.org/2000/10/swap/pim/doc#Work"/>=0A=
+    </rdfs:Class>=0A=
+    <rdfs:Class rdf:about=3D"http://web.resource.org/cc/Agent">=0A=
+        <dc:title>agent</dc:title>=0A=
+        <dc:description>something (e.g. a person, corporation or =
+computer) capable of creating things</dc:description>=0A=
+    </rdfs:Class>=0A=
+    <rdfs:Class rdf:about=3D"http://web.resource.org/cc/License">=0A=
+        <dc:title>license</dc:title>=0A=
+        <dc:description>a set of requests/permissions to users of a =
+Work, e.g. a copyright license, the public domain, information for =
+distributors</dc:description>=0A=
+    </rdfs:Class>=0A=
+    <rdfs:Class rdf:about=3D"http://web.resource.org/cc/Permission">=0A=
+        <dc:title>permission</dc:title>=0A=
+        <dc:description>an action that may or may not be allowed or =
+desired</dc:description>=0A=
+    </rdfs:Class>=0A=
+    <rdfs:Class rdf:about=3D"http://web.resource.org/cc/Requirement">=0A=
+        <dc:title>requirement</dc:title>=0A=
+        <dc:description>an action that may or may not be requested of =
+you</dc:description>=0A=
+    </rdfs:Class>=0A=
+    <rdfs:Class rdf:about=3D"http://web.resource.org/cc/Prohibition">=0A=
+        <dc:title>prohibition</dc:title>=0A=
+        <dc:description>something you may be asked not to =
+do</dc:description>=0A=
+    </rdfs:Class>=0A=
+    =0A=
+    <License rdf:about=3D"http://web.resource.org/cc/PublicDomain">=0A=
+        <dc:title>public domain</dc:title>=0A=
+        <dc:description>no copyright; everything is permitted without =
+restriction</dc:description>=0A=
+    </License>=0A=
+=0A=
+    <Permission rdf:about=3D"http://web.resource.org/cc/Reproduction">=0A=
+        <dc:title>reproduction</dc:title>=0A=
+        <dc:description>making multiple copies</dc:description>=0A=
+    </Permission>=0A=
+    <Permission rdf:about=3D"http://web.resource.org/cc/Distribution">=0A=
+        <dc:title>distribution</dc:title>=0A=
+        <dc:description>distribution, public display, and publicly =
+performance</dc:description>=0A=
+    </Permission>=0A=
+    <Permission rdf:about=3D"http://web.resource.org/cc/DerivativeWorks">=0A=
+        <dc:title>derivative works</dc:title>=0A=
+        <dc:description>creation and distribution of derivative =
+works</dc:description>=0A=
+    </Permission>=0A=
+    =0A=
+    <Requirement rdf:about=3D"http://web.resource.org/cc/Notice">=0A=
+        <dc:title>copyright notices</dc:title>=0A=
+        <dc:description>copyright and license notices be kept =
+intact</dc:description>=0A=
+    </Requirement>=0A=
+    <Requirement rdf:about=3D"http://web.resource.org/cc/Attribution">=0A=
+        <dc:title>attribution</dc:title>=0A=
+        <dc:description>credit be given to copyright holder and/or =
+author</dc:description>=0A=
+    </Requirement>=0A=
+    <Requirement rdf:about=3D"http://web.resource.org/cc/ShareAlike">=0A=
+        <dc:title>share alike</dc:title>=0A=
+        <dc:description>derivative works be licensed under the same =
+terms as the original work</dc:description>=0A=
+    </Requirement>=0A=
+=0A=
+    <Prohibition rdf:about=3D"http://web.resource.org/cc/CommercialUse">=0A=
+        <dc:title>commercial use</dc:title>=0A=
+        <dc:description>exercising rights for commercial =
+purposes</dc:description>=0A=
+    </Prohibition>=0A=
+=0A=
+    <rdf:Property rdf:about=3D"http://web.resource.org/cc/license">=0A=
+        <dc:title>has license</dc:title>=0A=
+        <rdfs:domain rdf:resource=3D"http://web.resource.org/cc/Work"/>=0A=
+        <rdfs:range rdf:resource=3D"http://web.resource.org/cc/License"/>=0A=
+        <rdfs:seeAlso =
+rdf:resource=3D"http://www.w3.org/2000/10/swap/pim/doc#ipr"/>=0A=
+        <rdfs:subPropertyOf =
+rdf:resource=3D"http://purl.org/dc/elements/1.1/rights"/>=0A=
+    </rdf:Property>=0A=
+    <rdf:Property rdf:about=3D"http://web.resource.org/cc/permits">=0A=
+        <dc:title>permits</dc:title>=0A=
+        <rdfs:domain =
+rdf:resource=3D"http://web.resource.org/cc/License"/>=0A=
+        <rdfs:range =
+rdf:resource=3D"http://web.resource.org/cc/Permission"/>=0A=
+    </rdf:Property>=0A=
+    <rdf:Property rdf:about=3D"http://web.resource.org/cc/requires">=0A=
+        <dc:title>requires</dc:title>=0A=
+        <rdfs:domain =
+rdf:resource=3D"http://web.resource.org/cc/License"/>=0A=
+        <rdfs:range =
+rdf:resource=3D"http://web.resource.org/cc/Requirement"/>=0A=
+    </rdf:Property>=0A=
+    <rdf:Property rdf:about=3D"http://web.resource.org/cc/prohibits">=0A=
+        <dc:title>prohibits</dc:title>=0A=
+        <rdfs:domain =
+rdf:resource=3D"http://web.resource.org/cc/License"/>=0A=
+        <rdfs:range =
+rdf:resource=3D"http://web.resource.org/cc/Prohibition"/>=0A=
+    </rdf:Property>=0A=
+=0A=
+    <rdf:Property =
+rdf:about=3D"http://web.resource.org/cc/derivativeWork">=0A=
+        <dc:title>has a derivative work</dc:title>=0A=
+        <rdfs:domain rdf:resource=3D"http://web.resource.org/cc/Work" />=0A=
+        <rdfs:range rdf:resource=3D"http://web.resource.org/cc/Work" />=0A=
+        <rdfs:seeAlso =
+rdf:resource=3D"http://purl.org/dc/elements/1.1/source" />=0A=
+    </rdf:Property>=0A=
+</rdf:RDF>=0A=
+--></BODY></HTML>
+
+------=_NextPart_000_0000_01C61443.A3BA55A0
+Content-Type: text/css;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://web.resource.org/style.css
+
+BODY {
+	MARGIN: 1.7em; FONT-FAMILY: Georgia, sans-serif; BACKGROUND-COLOR: =
+#eef0f5
+}
+H1 {
+	FONT-SIZE: 1.7em; MARGIN: 0em; FONT-FAMILY: Verdana, Arial, sans-serif
+}
+#banner {
+	BORDER-RIGHT: #38d 2px ridge; PADDING-RIGHT: 0.8em; BORDER-TOP: #38d =
+2px ridge; PADDING-LEFT: 0.8em; MARGIN-BOTTOM: 1em; PADDING-BOTTOM: =
+0.8em; BORDER-LEFT: #38d 2px ridge; COLOR: #3f3f3f; PADDING-TOP: 0.8em; =
+BORDER-BOTTOM: #38d 2px ridge; BACKGROUND-COLOR: #fff; TEXT-ALIGN: =
+center
+}
+#banner  {
+	PADDING-RIGHT: 0.25em
+}
+.content {
+	BORDER-RIGHT: #38d 2px ridge; PADDING-RIGHT: 0.8em; BORDER-TOP: #38d =
+2px ridge; PADDING-LEFT: 0.8em; PADDING-BOTTOM: 0.8em; BORDER-LEFT: #38d =
+2px ridge; PADDING-TOP: 0.8em; BORDER-BOTTOM: #38d 2px ridge; =
+BACKGROUND-COLOR: #fff
+}
+.description {
+	FONT-STYLE: italic
+}
+H2 {
+	PADDING-RIGHT: 0.5em; BORDER-TOP: #000 1px solid; PADDING-LEFT: 0.5em; =
+PADDING-BOTTOM: 0em; WIDTH: 100%; COLOR: #fff; PADDING-TOP: 0em; =
+BORDER-BOTTOM: #000 1px solid; FONT-FAMILY: Arial, sans-serif; =
+BACKGROUND-COLOR: #38a
+}
+H3 {
+	COLOR: #059; FONT-FAMILY: Tahoma, Verdana, Arial, sans-serif
+}
+.footer {
+	BORDER-RIGHT: #ddf 1px solid; PADDING-RIGHT: 0.25em; BORDER-TOP: #ddf =
+1px solid; MARGIN-TOP: 1em; PADDING-LEFT: 0.25em; FONT-SIZE: 0.95em; =
+PADDING-BOTTOM: 0.25em; BORDER-LEFT: #ddf 1px solid; PADDING-TOP: =
+0.25em; BORDER-BOTTOM: #ddf 1px solid; BACKGROUND-COLOR: #fff; =
+TEXT-ALIGN: center
+}
+A:link {
+	COLOR: #00f
+}
+A:visited {
+	COLOR: #00a
+}
+
+------=_NextPart_000_0000_01C61443.A3BA55A0--
