@@ -1,5 +1,5 @@
-tools.txt 0.0.27                    UTF-8                       dh:2023-10-24
-----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+tools.txt 0.0.28                    UTF-8                       dh:2023-11-02
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
                         nfoWare/nfoWorks nfoTools
@@ -30,17 +30,20 @@ MANIFEST
   T060501/ Windows CMD Command-Line Environment
   T060101/ C/C++ Programming
 
-  T000000.md nfoWare Tool Notes Diary and Job Jar (preservation capture)
-
        c000000.htm nfoWare Tools Construction Zone
   construction.htm nfoWare Tools Construction Zone
        default.htm nfoWare Tools default page
          index.htm nfoWare Tools Construction Structure
-       t000000.htm nfoWare Tools Job Jar
-       t000001.htm nfoWare Tools Catalog
+       T000000.htm nfoWare Tools Job Jar
+       T000001.htm nfoWare Tools Catalog
      toolcraft.htm nfoWare Toolcraft statement
 
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+          2005/    nfoWare tools folios, in the process of
+          2006/    refactoring merge to nfoTools.  Triage
+          2007/    is required
+          2017/
+
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                     Copyright 2021-2023 Dennis E. Hamilton
 
@@ -56,12 +59,12 @@ MANIFEST
     See the License for the specific language governing permissions and
     limitations under the License.
 
-----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
  ATTRIBUTION
 
    Hamilton, Dennis E. nfoTools Toolcraft Notebook.  nfoTools project text
-   file tools.txt version 0.0.27 dated 2023-10-24, available on the Internet
+   file tools.txt version 0.0.28 dated 2023-11-02, available on the Internet
    as a version of
    <https://orcmid.github.io/nfoTools/tools/tools.txt>
 
@@ -225,6 +228,7 @@ TODO
 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.28 2023-11-02T18:19Z Reflect merged nfoWare content for refactoring
  0.0.27 2023-10-24T16:38Z Scavenge nfoWare/tools scaffolding for repurposing
  0.0.26 2023-10-24T15:39Z TODO Consideration for FrontPage T000000.htm
  0.0.25 2022-11-17T23:37Z Manage TODOs, musings
