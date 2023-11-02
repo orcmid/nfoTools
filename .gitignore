@@ -1,7 +1,7 @@
-# .gitignore 0.0.7                     UTF-8                    dh:2023-10-02
+# .gitignore 0.0.8                     UTF-8                    dh:2023-11-02
 #
-#                                  ORCMID/ADV10
-#                                  ============
+#                                ORCMID/NFOTOOLS
+#                                ===============
 #
 #              .GITIGNORE FOR KEEPING BUILDS OUT OF THE REPOSITORY
 #
@@ -19,6 +19,15 @@
 #   Eliminate local-specific helpers
 *.lnk
 myPrompt.bat
+
+#   FrontPage authoring artifacts
+_private/
+_vti_*/
+*.scc
+
+#   Windows authoring artifacts
+desktop.ini
+Thumbs.db
 
 ## ELIMINATION OF VISUAL STUDIO SOLUTIONS
 ## --------------------------------------
@@ -220,6 +229,7 @@ FakesAssemblies/
 
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# 0.0.8 2023-11-02T18:25Z Eliminate FrontPage and Windows artifacts
 # 0.0.7 2023-10-02T19:45Z Eliminate myPrompt.bat wherever it is introduced
 # 0.0.6 2023-02-19T22:42 Eliminate local-only helpers like .lnk
 # 0.0.5 2016-10-04-12:30 Transpose for the orcmid/Adv10 GitHub Project
