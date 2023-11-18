@@ -1,4 +1,4 @@
-games.txt 0.0.13                    UTF-8                         2023-10-26
+games.txt 0.0.14                    UTF-8                         2023-11-16
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -52,12 +52,30 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. nfoTools Project Games.  nfoTools file games.txt
-   version 0.0.13 dated 2023-10-26, available on the Internet as a version of
+   version 0.0.14 dated 2023-11-16 available on the Internet as a version of
    <https://orcmid.github.io/nfoTools/games/games.txt>
 
 TODO
 
  * Inventory existing games material for potential treatment here.
+
+ * I am thinking about the Unity and Unreal developments, the first featuring
+   C# and the second featuring C++.  There are gamedev.tv courses and some
+   great Black Friday bundles that I have taken even though that has some
+   duplication with Udemy courses I also have from the gamedev.tv folk.
+
+ * With regard to C#, the C# Dev Kit is now VS Code based and I am thinking
+   this is a good avenue along with the the command-line C# and similar tools.
+
+ * Getting Started with C# in VS Code:
+   <https://code.visualstudio.com/docs/csharp/get-started>.  There is a learn
+   C# Curriculum too.
+
+ * The C# Dev Kit is in the Visual Studio Marketplace (?!),
+   <https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit&ssr=false
+   There is also a .NET SDK required.  It is not compatible with VS earlier
+   than 2022. This is interesting because of Unity but also because of MAUI
+   and cross-platform, multiple device support.
 
  * Need to distinguish games and gaming and gamedev?  I am now thinking this
    is about game development the same as an audio or music section is about
@@ -218,6 +236,7 @@ TODO
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+0.0.14 2023-11-16T17:37Z More on games, gamedev.tv, and .NET
 0.0.13 2023-10-26T19:01Z Repurpose a bit and also add Blender Automation link
 0.0.12 2023-10-20T22:07Z Pick up on some Blender Materials courses
 0.0.11 2023-05-20T00:54Z Gathering more notes on resources
