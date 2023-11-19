@@ -1,4 +1,4 @@
-VCrayApp.txt 0.0.12                  UTF-8                         2023-09-22
+VCrayApp.txt 0.0.13                  UTF-8                         2023-11-19
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                       RAYLIB APP DEVELOPMENT PROJECT
@@ -73,11 +73,14 @@ MANIFEST
     raylib-4.5.0.zip
         The raylib 4.5.0 release zip also used for confirming VCrayApp
         operation with VCrayApp-0.1.0 development.
+    raylib-5.0.zip
+        The raylib 5.0.0 release zip for confirming VCrayApp 0.1.0 and 1.0.0
+        development.
 
     raylib\
         The Zipped raylib-x.x.0\ folder extracted to here and renamed
         raylib\ for consistent reference from a VCrayApp-organized project
-        (excluded from Git, extracted from the raylib release .zip under test.
+        (excluded from Git), extracted from the release .zip under test.
         This is at the same level as dev\ and any VCrayApp\ opened here for
         confirmation of a VCrayApp-*semver*.zip release candidate.
         When testing with the current raylib\ main (a -dev version), this
@@ -103,27 +106,27 @@ MANIFEST
         is to download all five of the files into the same folder.  Only the
         latest set is carried here.  Previous ones can be found at D211101.
 
-    VCrayApp-0.0.0.txt
-        Synopsis, summaries, and manifest for the VCrayApp-0.0.0 alpha
+    VCrayApp-0.1.0.txt
+        Synopsis, summaries, and manifest for the VCrayApp-0.1.0 alpha
         release candidate.  The file is clear-signed and the same as the one
-        included in VCrayApp-0.0.0.zip.  Download and review of this file
+        included in VCrayApp-0.1.0.zip.  Download and review of this file
         is useful before deciding to download the additional files.
 
-    CHANGES.txt
+    CHANGES-0.1.0.txt
         A file cataloging changes *since* the original 0.0.0 release.  These
         will also be clear-signed and availabel for download and review before
         downloading the latest package.  This should probably have a *semver*.
 
-    VCrayApp-0.0.0.zip
-        Package of the VCrayApp-0.0.0 release candidate with contents as
-        described by VCrayApp-0.0.0.txt (and also included therein).
+    VCrayApp-0.1.0.zip
+        Package of the VCrayApp-0.1.0 release candidate with contents as
+        described by VCrayApp-0.1.0.txt (and also included therein).
 
-    VCrayApp-0.0.0.zip.asc
-        Detached digital signature of VCrayApp-0.0.0.zip.  Verification of
+    VCrayApp-0.1.0.zip.asc
+        Detached digital signature of VCrayApp-0.1.0.zip.  Verification of
         this signature confirms the source and the integrity of the .zip.
 
-    VCrayApp-0.0.0.zip.sha256
-        SHA 256 cryptographic hash of file VCrayApp-0.0.0.zip.  Verification
+    VCrayApp-0.1.0.zip.sha256
+        SHA 256 cryptographic hash of file VCrayApp-0.1.0.zip.  Verification
         of *this* hash value is evidence that the downloaded .zip (or .sha256)
         have not been altered in the downloading/redistribution and usage.
 
@@ -148,14 +151,14 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. Raylib App Construction-Kit Project. nfoTools Project
-   text file VCrayApp.txt 0.0.12 dated 2023-09-22, available on the Internet
+   text file VCrayApp.txt 0.0.13 dated 2023-11-19, available on the Internet
    as a version of
    <https://github.com/orcmid/nfoTools/blob/master/devKits/WinDev/VCrayApp/VCrayApp.txt>
 
 TODO
 
  * There is a scaling problem when an application is run on an HD display.
-   This appears to apply to all units in VCrayConfirm.  This might be 
+   This appears to apply to all units in VCrayConfirm.  This might be
    a platform-specific problem.  It also needs to be resolved before the
    InitWindow() operation.  I need to ask about this on raylib.
 
@@ -205,6 +208,7 @@ TODO
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.13 2023-11-19T00:57Z Roll-up for VCrayApp 0.1.0 artifacts
  0.0.12 2023-09-22T16:15Z Add TODO on HD scaling issue.
  0.0.11 2023-04-17T16:51Z Manage TODOs
  0.0.10 2023-04-06T18:13Z Bring current with more annotation, touch-ups
