@@ -1,5 +1,5 @@
-D211101a.txt 0.0.3                  UTF-8                         2023-05-07
-----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+D211101a.txt 0.0.4                  UTF-8                         2023-11-22
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
                         nfoWare/nfoWorks nfoTools
@@ -19,7 +19,7 @@ MANIFEST
        index.md  The setup for VCrayApp
 
 
-----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                     Copyright 2022-2023 Dennis E. Hamilton
 
@@ -35,12 +35,12 @@ MANIFEST
     See the License for the specific language governing permissions and
     limitations under the License.
 
-----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
  ATTRIBUTION
 
    Hamilton, Dennis E. D211101a: VCrayApp Setup.  nfoTools development
-   documentation text file D211101a.txt version 0.0.3 dated 2023-05-07,
+   documentation text file D211101a.txt version 0.0.4 dated 2023-11-22,
    available on the Internet as a version of
    <https://orcmid.github.io/nfoTools/dev/D211101/a/D211101a.txt>
 
@@ -55,6 +55,10 @@ TODO
  * Demonstrate install of a raylib source and having VS Build Tools to run.
 
  * Demonstrate the verifications of VCrayApp-0.1.0.txt and VCrayApp-0.1.0.zip
+   This requires some toolcraft on the checking of digital signatures and the
+   checking of hashes.
+
+ * There needs to be a hash-check utility that works better.
 
  * Demonstrate the unzipping of VCrayApp with raylib\ nearby on the same drive
 
@@ -72,8 +76,9 @@ TODO
 
  * Identify the VCrayApp version that this information is current with.
 
-----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.4 2023-11-22T15:53Z Touch-ups
  0.0.3 2023-05-07T17:27Z Relocate and cleanup TODOs
  0.0.2 2023-04-07T15:59Z More TODOs
  0.0.1 2023-01-12T03:10Z Adjustment TODOs
