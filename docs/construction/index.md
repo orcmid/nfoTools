@@ -1,4 +1,4 @@
-<!-- index.md 0.0.4                 UTF-8                          2023-11-29
+<!-- index.md 0.0.5                 UTF-8                          2023-11-30
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                  NFOTOOLS DOCUMENTATION CONSTRUCTION MATERIAL
@@ -30,18 +30,21 @@
   </tr>
 </table>
 
-This Construction Material section consists of the tools and techniques by which nfoTools documentation pages on the web are create and maintained.
+This Construction Material section consists of the tools and techniques by
+which nfoTools documentation pages on the web are created and maintained.
 
 The Construction Material section has a
 [construction structure](index.htm) and a top-level
-[construction zone](construction.htm).  This is part of the scaffolding and organization that applies to the entire web presence for nfoTools.
+[construction zone](construction.htm).  This is part of the scaffolding and
+organization that applies to the entire web presence for nfoTools.
 
-## Catalog
-
-| **ID** | **Started** | **Status** | **Topic** |
-|   :-:   |   :-:   |  :-:   |  ---  |
-| _Cyymmnn_ | _YYYY-MM-DD_ | _semver YYYY-MM-DD_ | _whatever_ |
-
+Construction Structures, Construction Zones, and Construction Material are
+maintained directly in HTML; Microsoft FrontPage is used for the document
+engineering.  There are also hybrid pages that are prepared in Markdown and
+also published via GitHub Pages.  The hybrid elements consist of two HTML
+tables directly in the Markdown, supplying the top and bottom banners being
+introduced consistently on all `orcmid.github.io` pages, whether authored in
+HTML or Markdown.
 ----
 
 Discussion about nfoTools is welcome at the
@@ -63,13 +66,14 @@ from time to time.
     <td width="54%" valign="middle" align="center">
       You are navigating the <a href="./">nfoTools Project on Github</a></td>
     <td width="30%">
-      <p align="right"><font size="-2">created 2021-02-07 by
+      <p align="right"><font size="-2">created 2021-09-08 by
          <a target="_top" href="../../orcmid">orcmid</a> </font></p>
     </td>
   </tr>
 </table>
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.5 2023-11-30T21:04Z Polish and mention hybrid pages such as this
      0.0.4 2023-11-29T18:44Z Add standard top and bottom banners
      0.0.3 2022-06-16T22:54Z Use improved header strip
      0.0.2 2021-09-20T22:23Z Use current header strip
