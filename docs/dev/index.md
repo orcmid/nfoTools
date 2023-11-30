@@ -1,17 +1,39 @@
-<!-- index.md 0.0.18                 UTF-8                         2023-05-17
+<!-- index.md 0.1.0                 UTF-8                         2023-11-30
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-                        NFOTOOLS DEVELOPMENT NOTES
+                           NFOTOOLS DEVELOPMENT KITS
      -->
 
 # ***nfoTools** [Development Notes](.)*
+<table border="0" width="100%">
+  <tr>
+    <td width="25%" align="left" height="6">
+       <img src="../images/nfoWorks-2014-06-02-1702-LogoSmall.png">
+    </td>
+       <td width="48%" height="6"><p align="center"><font color="#990033"><strong>
+	<i>nfoTools</i><br /><i><big><big>nfoTools Development Kits</big></big></i></strong></font></p>
+    </td>
+    <td width="27%" height="6" valign="middle" align="right">
+      <b><code><a href="../../" target="top">orcmid.github.io</a>&gt;<br />
+	  <a href="../" target="_top">nfoTools</a>&gt;
+      <a href="./" target="_top">dev</a>&gt;
+      </code></b>
+      <br /><br />
+      <a href="https://clustrmaps.com/site/1bw9w" title="Visit tracker">
+            <img src="//www.clustrmaps.com/map_v2.png?d=3-2eQV4fOuelVHp_YtztZ0hl9Uj4ei9zLKw_nRgCgyM&cl=ffffff" />
+      </a>
+      <br /><br />
+      <b><code>
+         <a href="index.html" target="_top">index.html</a>&gt;</code></b>
+      <br />
+      <small><small>
+        0.1.0 2023-11-30T21:32Z<!-- MAINTAIN THIS MANUALLY -->
+      </small></small>
+      </td>
+  </tr>
+</table>
 
-| ***[nfoTools](../)*** | [dev](.)| ***[index.html](index.html) 0.0.17 2023-05-09*** |
-| :--                |       :-:          | --: |
-| ![nfotools](../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | Work-in-Progress | ![Hard Hat Area](../images/hardhat-logo.gif) |
-
-
-nfoTools [dev notes](.) provide documentation support for individual
+nfoTools [dev kits](.) provides documentation support for individual
 development efforts within the GitHub nfoTools project.  These are about the
 construction of individual tools, their distribution, and demonstration.
 
@@ -35,8 +57,25 @@ reported and addressed in the
 relevant [projects](https://github.com/orcmid/nfoTools/projects?type=classic)
 from time to time.
 
+<table border="0" cellspacing="3" width="100%">
+  <tr>
+    <td width="14%">
+	<a href="index.htm" target="_top">
+       <img border="0" src="../images/hardhat-thumb.gif" alt="Hard Hat Area"
+            align="left" width="80" height="57">
+       </a>
+    </td>
+    <td width="54%" valign="middle" align="center">
+      You are navigating the <a href="../">nfoTools Project on Github</a></td>
+    <td width="30%">
+      <p align="right"><font size="-2">created 2021-09-03 by
+         <a target="_top" href="../../orcmid">orcmid</a> </font></p>
+    </td>
+  </tr>
+</table>
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.1.0  2023-11-30T31:32Z Repave in Content Material hybrid format
      0.0.18 2023-05-17T21:45Z 0.0.21 D211101
      0.0.17 2023-05-09T15:27Z Fix Catalog typo
      0.0.16 2023-05-06T21:59Z 0.0.1 D230501
