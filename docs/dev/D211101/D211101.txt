@@ -1,4 +1,4 @@
-D211101.txt 0.0.25                   UTF-8                         2023-05-16
+D211101.txt 0.0.26                   UTF-8                         2023-12-05
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -64,11 +64,15 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. VCrayApp: VC/C++ Command-Line raylib App devKit.
-   nfoTools development text file D211101.txt version 0.0.23 dated 2023-05-07,
+   nfoTools development text file D211101.txt version 0.0.26 dated 2023-12-05,
    available on the Internet as a version of
    <https://orcmid.github.io/nfoTools/dev/D211101/D211101.txt>
 
 TODO
+
+ * I need to make clear that not only is this focused on VC/C++ use of raylib,
+   but until further notice we are sticking with plain-vanilla raylib with no
+   alternative backends and only Desktop compilation targets.
 
  * Dig into devKits/WinDev/VCrayApp for more material and explanations here.
 
@@ -146,6 +150,7 @@ TODO
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.26 2034-23-05T06:17Z TODO on confinement to plain DESKTOP raylib default.
  0.0.25 2023-05-16T16:53Z Cleanup for VCrayApp-0.1.0 pre-release visibility
  0.0.24 2023-05-07T20:24Z Complete the transpositions to new subfolder URLs
  0.0.23 2023-05-07T19:04Z Complete D211101b/c/e transpositions
