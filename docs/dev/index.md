@@ -8,7 +8,7 @@
 <table border="0" width="100%">
   <tr>
     <td width="25%" align="left" height="6">
-       <img src="../images/nfoWorks-2014-06-02-1702-LogoSmall.png">
+       <img src="../images/nfoWorks-2014-06-02-1702-LogoSmall.png" />
     </td>
        <td width="48%" height="6"><p align="center"><font color="#990033"><strong>
 	<i>nfoTools</i><br /><i><big><big>nfoTools Development Kits</big></big></i></strong></font></p>
