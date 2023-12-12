@@ -1,4 +1,4 @@
-notes.txt 0.0.11                   UTF-8                        dh:2023-06-30
+notes.txt 0.0.12                   UTF-8                        dh:2023-12-10
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -36,7 +36,7 @@ MANIFEST
 
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-                    Copyright 2021-2022 Dennis E. Hamilton
+                    Copyright 2021-2023 Dennis E. Hamilton
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -55,13 +55,43 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. nfoTools Project Notes.  nfoTools file docs/notes.txt
-   version 0.0.11 dated 2023-06-30 available on the Internet as a version of
+   version 0.0.12 dated 2023-12-10 available on the Internet as a version of
    <https://orcmid.github.io/nfoTools/notes/notes.txt>
 
 TODO
 
+ * I need to have a note on my dilletante ambitions with request to digital
+   music, the situation with wanting free tools to talk about, and the
+   difficulty with Ableton Live Lite 11 (soon to be 12?) and also the whole
+   challenge with Cakewalk up to SONAR and my fumbling with the changeover to
+   BandLab.
+
+ * Have been reinstalling SONAR where the legacy.cakewalk.com and the
+   Command Center are now operating.  Apparently, because of registry
+   settings, the re-installed Command Center indicated that a large variety
+   of components, including the core SONAR software, was already present.
+   I have re-installed some of them.  There are some product that, such as
+   Melodyne 2 Essentials and D-Pro that don't give me enough control over
+   where to install them.  That's Worrisome.
+
+ * I am going through the CbB Cakewalk by BandLab setup now.  We'll see how
+   it all goes.
+
+ * I want to have a folio on this subject.  I also want to have it on the
+   intended hybrid structure here under nfoTools Notes.  I am very baffled
+   with my efforts concerning Ableton Live Lite and Cakewalk SONAR.  I want
+   to focus on any free version of Cakewalk so long as BandLab supports it.
+   IMPORTANT: While I may have notes about this, and an audio section of
+   docs/, along with games/, I must get clear on
+
  * Migrate some materials for here for preservation, maintaining the previous
-   identifiers where appropriate.
+   identifiers where appropriate.  There are two situations here.  First,
+   putting in the Construction Structure and having it work.  There is also
+   a model here for how to do this in dev/ and other places.  That is, have
+   d000000.htm for Diary & Job Jar, d000001.htm if necessary.  This seems to
+   work better while not mushing everything into Construction Zones.  I need
+   to take that into other areas of Orcmid on GitHub to handle all this
+   better.
 
  * There is a little bit of Professor von Clueless in the Blunder Dome maybe?
    Or even Spanner Wingnut in the Muddleware Labs. No, I think that is under
@@ -117,8 +147,7 @@ TODO
    questions, not particular answers, we can also consider more how we are
    in unsafe territory when claiming refuge in the certainty of belief.
 
- * Change the folio-page header top bars to match the standard form exhibited
-   on docs/dev/ now.
+ * Change the current (nfoTools on GitHub) exposed notes to hybrid format.
 
  * Bring over topics on what language and what kind of software development
    here.  Contrast with approaches here.   Sounds like two notes.  Then they
@@ -127,6 +156,7 @@ TODO
 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.12 2023-12-10T17:18Z Hand-wringing about Cakewalk, repaving, hybrids.
  0.0.11 2023-06-30T21:37Z Inspired while recovering from an outpatient
         surgery.  Hope it's relief from apprehension and not so much pain
         killer intoxication.  Added N230601-0602.
