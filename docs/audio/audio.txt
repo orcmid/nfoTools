@@ -1,0 +1,72 @@
+audio.txt 0.0.0                   UTF-8                         2023-12-13
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+                            nfoWare/nfoWorks nfoTools
+                            =========================
+
+                      <https://github.com/orcmid/nfoTools>
+              <https://orcmid.github.io/nfoTools/audio/audio.txt>
+
+                       AUDIO: DIGITAL AUDIO PRODUCTION
+                       -------------------------------
+
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+                    Copyright 2023 Dennis E. Hamilton
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+ ATTRIBUTION
+
+   Hamilton, Dennis E. Audio: Digital Audio Production.  nfoTools project text
+   file audio.txt version 0.0.0 dated 2023-12-13, available on the Internet as
+   a version of <https://orcmid.github.io/nfoTools/audio/audio.txt>.
+
+     AUTHOR NOTE: THIS IS MATERIAL SCAVENGED FROM A231200.txt.
+            IT IS NOT FULLY REFACTORED/REPURPOSED YET.
+
+TODO
+
+ * I want emphasis on free or nearly-free decent quality tools for novices,
+   with ways to advance as desired.
+
+   - That may include CbB, Ableton Live Lite, and maybe Cakewalk.next.
+
+   - The focus is on Windows PC and the desktop, as usual for nfoTools.  There
+     may be a counterbalance in respect to materials and courses that assume
+     use of Macintosh software.
+
+   - Also, with VST64, etc., there are many supporting instruments and tools
+     to be had, including Komplete Starter, etc.
+
+ * It might be interesting to address Trackers, and maybe more on MIDI, but
+   not by much.
+
+ * Locating and arranging use of Windows organization will matter.  Also the
+   sharing of plug-in (VST3, etc.) locations for searching is also valuable.
+
+ * Operating side-by-side can be an issue and that may need to be understood
+   for all products addressed here.
+
+ * I remember the "beep" command-line tool.  It would be nice to replicate
+   that.  Also, one that uses audio clips would be cool also.
+
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+ 0.0.0 2023-12-13T17:00Z Scavenging a231200.txt 0.0.2 for higher-level
+       considerations.
+
+
+                      ***** end of audio.txt *****
