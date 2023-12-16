@@ -1,4 +1,4 @@
-<!-- index.md 0.0.0                 UTF-8                         2023-12-16
+<!-- index.md 0.0.1                 UTF-8                         2023-12-16
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                         AUDIO TECHNOLOGY, TOOLS AND KITS
@@ -8,10 +8,11 @@
   <tr>
     <td width="25%" align="left" height="6">
        <img src="../images/nfoWorks-2014-06-02-1702-LogoSmall.png" />
-    </td>
-       <td width="48%" height="6"><p align="center"><font color="#990033"><strong>
-	<i>nfoTools</i><br /><i><big><big></big></big></i></strong></font></p>
-    </td>
+       </td>
+    <td width="48%" height="6"><p align="center"><font color="#990033"><strong>
+	<i>audio</i><br /><i><big><big>Audio Technology, Tools & Kits</big>
+    </big></i></strong></font></p>
+       </td>
     <td width="27%" height="6" valign="middle" align="right">
       <b><code><a href="../../" target="top">orcmid.github.io</a>&gt;<br />
 	  <a href="../" target="_top">nfoTools</a>&gt;
@@ -26,13 +27,14 @@
          <a href="index.html" target="_top">index.html</a>&gt;</code></b>
       <br />
       <small><small>
-        0.0.0 2023-12-16T17:56Z<!-- MAINTAIN THIS MANUALLY -->
+        0.0.1 2023-12-16T23:33Z<!-- MAINTAIN THIS MANUALLY -->
       </small></small>
       </td>
   </tr>
 </table>
 
-nfoTools [dev kits](.) are aids to software projects and their development.
+nfoTools [audio](.) is focused on audio technology from simple recording and
+playback to the usage and mastery of Digital Audio Workstations.
 
 ## Catalog
 
@@ -68,6 +70,7 @@ from time to time.
 </table>
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.1  2023-12-16T23:34Z Fix the Title block
      0.0.0  2023-12-16T17:56Z Placeholder with docs/dev/index.md boilerplate
 
                     *** end of docs/audio/index.md ***
