@@ -1,4 +1,4 @@
-audio.txt 0.0.0                   UTF-8                         2023-12-13
+audio.txt 0.0.1                   UTF-8                         2023-12-16
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                             nfoWare/nfoWorks nfoTools
@@ -31,7 +31,7 @@ audio.txt 0.0.0                   UTF-8                         2023-12-13
  ATTRIBUTION
 
    Hamilton, Dennis E. Audio: Digital Audio Production.  nfoTools project text
-   file audio.txt version 0.0.0 dated 2023-12-13, available on the Internet as
+   file audio.txt version 0.0.1 dated 2023-12-16, available on the Internet as
    a version of <https://orcmid.github.io/nfoTools/audio/audio.txt>.
 
      AUTHOR NOTE: THIS IS MATERIAL SCAVENGED FROM A231200.txt.
@@ -63,8 +63,32 @@ TODO
  * I remember the "beep" command-line tool.  It would be nice to replicate
    that.  Also, one that uses audio clips would be cool also.
 
+ * There are also Trackers, and MIDI to ponder.  SoundForge too I suppose.
+   This goes back to when I had an E-MU audio card.
+
+ABOVE HERE: 0.0.0 2023-12-13
+
+ * There's also Minaudio and David Reid's work, not just Ramon on raylib.
+
+ * And all of the compression, packaging, bundling things.  That's not
+   exclusively here, so maybe there's another place for that than audio/
+   but it is an interesting, challenging area.  RIFF as well as Zip, but we
+   can go back to TAR files and other approaches to having bundles in file
+   systems (like at IBM and Univac).
+
+ * I need to determine how retro I want to get.  That is, do I want to do
+   much with CbB, even though I suspect it will be free for a while longer.
+   And I probably can leave Cakewalk SONAR Platinum alone until is is clear
+   what BandLab is going to do for SONAR.next.
+
+ * I also need to move this to c000000.htm and have a preserved diary.
+
+ * Then make this a tombstone that explains that and more.
+
+
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.1 2023-12-16T06:56Z Musing on how to continue here
  0.0.0 2023-12-13T17:00Z Scavenging a231200.txt 0.0.2 for higher-level
        considerations.
 
