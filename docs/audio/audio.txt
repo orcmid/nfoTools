@@ -61,7 +61,12 @@ TODO
    for all products addressed here.
 
  * I remember the "beep" command-line tool.  It would be nice to replicate
-   that.  Also, one that uses audio clips would be cool also.
+   that.  Also, one that uses audio clips would be cool as well.
+   https://www.codeproject.com/tips/1022207/make-buzzer-internal-speaker-sound-in-windows-bit
+   And of course, anything by Larry Osterman. It's great that blog is
+   preserved at learn.microsoft.com,
+   https://learn.microsoft.com/en-us/archive/blogs/larryosterman/
+   (ends in 2015)
 
  * There are also Trackers, and MIDI to ponder.  SoundForge too I suppose.
    This goes back to when I had an E-MU audio card.
