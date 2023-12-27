@@ -1,4 +1,4 @@
-a231200.txt 0.0.2                   UTF-8                         2023-12-12
+a231200.txt 0.0.3                   UTF-8                         2023-12-27
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                             nfoWare/nfoWorks nfoTools
@@ -31,7 +31,7 @@ a231200.txt 0.0.2                   UTF-8                         2023-12-12
  ATTRIBUTION
 
    Hamilton, Dennis E. a231200: CbB Digital Audio Workstation Exploration.
-   nfoTools project text file a231200.txt version 0.0.2 dated 2023-12-12,
+   nfoTools project text file a231200.txt version 0.0.3 dated 2023-12-27,
    available on the Internet as a version of
    <https://orcmid.github.io/nfoTools/audio/a231200/a231200.txt>
 
@@ -125,16 +125,20 @@ locked into C:\Program Files\ and nothing to be done for it.
  <https://www.bing.com/videos/search?q=cakewalk+tutorials>.  Many videos.
  I need to curate these.
 
+   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+ * Everything below here is about Cnext. I need to move that into another
+   folio.  So I guess there will be an a231201 here, at least to collect
+   material.  Because of the Cnext beta NDA, I need to keep the materials
+   sequestered until there is a stable release.  I am pondering how to do
+   that while still having some sort of backup of what I establish.
+
  * About Cakewalk Next (beta), <https://youtu.be/8E_PGhxbCe8> 258 page
    manual.  Almost 1,000 pages in Cakewalk manual (CbB?).
 
- * CXF is a new format that transfers between Cakewalk Next and Cakewalk
-   SONAR.  There may be Cakewalk Next for the Mac, and CXF will work with
-   those too.  Oh, this is by John Vere.  Old guy like me.  All of this is
-   about the UX and not so much about how to use it.
-
- * I need to get the beta of CWnext.  See how it works along with CbB.  Oh,
-   cool!  They are doing it with a Cakewalk Next server on Discord.
+ * CXF is a new format that transfers between Cakewalk Next and BandLab
+   Sonar.next.  There is also interchange of both CbB and Cnext with the
+   online BandLab Studio.
 
  * I am experimenting with side-by-side of the beta and CbB/Platinum.
    - I have installed it on H:\ to save on SSD.  It installed very quickly,
@@ -179,7 +183,8 @@ locked into C:\Program Files\ and nothing to be done for it.
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
- 0.0.2 2023012-12T16:53Z More Notes including package explorations.
+ 0.0.3 2023-12-27T19:55Z Adjust in anticipation of Cnext treatment
+ 0.0.2 2023-12-12T16:53Z More Notes including package explorations.
  0.0.1 2023-12-11T04:43Z First-experience notes on CWnext.
  0.0.0 2023-12-10T20:06Z Placeholder for notes on my experience pending the
        fleshing out of the audio/ section with hybrid-formatted pages.
