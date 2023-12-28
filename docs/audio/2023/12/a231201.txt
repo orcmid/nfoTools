@@ -1,0 +1,70 @@
+a231201.txt 0.0.0                   UTF-8                         2023-12-28
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+                            nfoWare/nfoWorks nfoTools
+                            =========================
+
+                      <https://github.com/orcmid/nfoTools>
+              <https://orcmid.github.io/nfoTools/audio/a231200>
+
+                    a231200: BANDLAB STUDIO EXPLORATION
+                    -----------------------------------
+
+I am looking into and capturing information on BandLab Studio, including how
+to use it, what is free, what requires an annual subscription, etc.  The fee
+is rather steep for the features it promotes, unless one wants to publish
+music at/via BandLab.
+
+The other reason is that Cakewalk.next might to be coupled to BandLab and
+the BandLab Studio in particular.
+
+
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+                    Copyright 2023 Dennis E. Hamilton
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+ ATTRIBUTION
+
+   Hamilton, Dennis E. a231201: BandLab Studio Exploration.  nfoTools project
+   text file a231201.txt version 0.0.0 dated 2023-12-28, available on the
+   Internet as a version of
+   <https://orcmid.github.io/nfoTools/audio/2023/12/a231200.txt>
+
+TODO
+
+ * I Installed BandLab Assistant.  I'm uncertain that it is worthwhile except
+   that's where update information might appear on various matters.
+
+ * Then get into the beginner usage cases.  Simple things from the very
+   beginning.
+
+ * Need to differentiate BandLab used for creation versus other aspects.  The
+   sharing and getting reviews might be nice, although I think SoundCloud
+   might do it better.
+
+ * One thing to mention is that registration/activation of BandLab products
+   might be involved.
+
+ * There is also the forum, and I wonder if the Cakewalk forum includes
+   BandLab Studio or there is another place for that?
+
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+ 0.0.0 2023-12-28T01:11Z Adopted from a231200.txt as boilerplate
+
+
+                      ***** end of a231201.txt *****
