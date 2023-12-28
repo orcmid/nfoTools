@@ -1,10 +1,9 @@
-<!-- index.md 0.1.1                 UTF-8                         2023-12-07
+<!-- index.md 0.1.2                 UTF-8                         2023-12-28
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                            NFOTOOLS DEVELOPMENT KITS
      -->
 
-# ***nfoTools** [Development Notes](.)*
 <table border="0" width="100%">
   <tr>
     <td width="25%" align="left" height="6">
@@ -27,7 +26,7 @@
          <a href="index.html" target="_top">index.html</a>&gt;</code></b>
       <br />
       <small><small>
-        0.1.1 2023-12-07T19:25Z<!-- MAINTAIN THIS MANUALLY -->
+        0.1.2 2023-12-28T20:31Z<!-- MAINTAIN THIS MANUALLY -->
       </small></small>
       </td>
   </tr>
@@ -37,13 +36,13 @@ nfoTools [dev kits](.) are aids to software projects and their development.
 
 ## Catalog
 
-| **ID** | **Started** | **Status** | **Topic** |
+| **ID** | **Status** | **Started** | **Topic** |
 |   :-:   |   :-:   |  :-:   |  ---  |
-| [D230501](D230501)| 2023-05-06 | 0.0.1 2023-05-06 | VCrayMathStudio raymath Exploration |
-| [D230202](D230202) | 2023-02-18 | 0.0.0 placeholder | VCrayVerify Test Harness for Verifying raylib Examples |
-| [D230201](D230201) | 2023-02-14 | 0.0.3 2023-02-16 |  VCshowDefs: Show Preprocessor Defines in VC/C++ |
-| [D211101](D211101) | 2021-09-11 | 0.0.21  2023-05-17 | VCrayApp: VC/C++ Command-Line raylib App DevKit |
-| [D161101](D161101) | 2016-11-12 | 0.1.14 2021-06-11 | VCbind: VC/C++ Command-Line Setup Script|
+| [D230501](D230501)| 0.0.1 2023-05-06 |2023-05-06 |  VCrayMathStudio raymath Exploration |
+| [D230202](D230202) | 0.0.0 placeholder | 2023-02-18 |  VCrayVerify Test Harness for Verifying raylib Examples |
+| [D230201](D230201) | 0.0.3 2023-02-16 | 2023-02-14 |  VCshowDefs: Show Preprocessor Defines in VC/C++ |
+| [D211101](D211101) | 0.0.21 2023-05-17 | 2021-09-11 | VCrayApp: VC/C++ Command-Line raylib App DevKit |
+| [D161101](D161101) | 0.1.14 2021-06-11 | 2016-11-12 | VCbind: VC/C++ Command-Line Setup Script|
 
 ----
 
@@ -73,6 +72,7 @@ from time to time.
 </table>
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.1.2  2023-12-28T20:31Z Restructure the Catalog format
      0.1.1  2023-12-07T19:25Z Simplify the summary for now
      0.1.0  2023-11-30T31:32Z Repave in Content Material hybrid format
      0.0.18 2023-05-17T21:45Z 0.0.21 D211101

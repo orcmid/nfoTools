@@ -1,14 +1,35 @@
-<!-- index.md 0.0.22                UTF-8                          2023-07-14
+<!-- index.md 0.0.23                UTF-8                          2023-12-28
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                VCRAYAPP: VC/C++ COMMAND-LINE RAYLIB APP DEVKIT
      -->
 
-# ***D211101** [VCrayApp: VC/C++ Command-Line raylib App DevKit](.)*
-
-| ***[nfoTools](../../)*** | [dev](../)[>D211101](.) | ***[index.html](index.html) 0.0.22 2023-07-14*** |
-| :--                |       :-:          | --: |
-| ![nfotools](../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | [Work-in-Progress](D211101.txt) | ![Hard Hat Area](../../images/hardhat-logo.gif) |
+<table border="0" width="100%">
+  <tr>
+    <td width="25%" align="left" height="6">
+       <img src="../../images/nfoWorks-2014-06-02-1702-LogoSmall.png" />
+    </td>
+       <td width="48%" height="6"><p align="center"><font color="#990033"><strong>
+	<i>nfoTools</i><br /><i><big><big>D211101: VCrayApp VC/C++ raylib App DevKit</big></big></i></strong></font></p>
+    </td>
+    <td width="27%" height="6" valign="middle" align="right">
+      <b><code><a href="../../" target="_top">nfoTools</a>&gt;<br />
+      <a href="../" target="_top">dev</a>&gt;<a href="./" target="_top">D211101</a>&gt;
+      </code></b>
+      <br /><br />
+      <a href="https://clustrmaps.com/site/1bw9w" title="Visit tracker">
+            <img src="//www.clustrmaps.com/map_v2.png?d=3-2eQV4fOuelVHp_YtztZ0hl9Uj4ei9zLKw_nRgCgyM&cl=ffffff" />
+      </a>
+      <br /><br />
+      <b><code>
+         <a href="index.html" target="_top">index.html</a>&gt;</code></b>
+      <br />
+      <small><small>
+        0.0.23 2023-12-28T20:45Z<!-- MAINTAIN THIS MANUALLY -->
+      </small></small>
+      </td>
+  </tr>
+</table>
 
 VCrayApp is a project-folder organization that is useful for creating
 Microsoft Windows programs using the
@@ -198,8 +219,25 @@ reported and addressed in the
 relevant [projects](https://github.com/orcmid/nfoTools/projects?type=classic)
 from time to time.
 
+<table border="0" cellspacing="3" width="100%">
+  <tr>
+    <td width="14%">
+	<a href="index.htm" target="_top">
+       <img border="0" src="../../images/hardhat-thumb.gif" alt="Hard Hat Area"
+            align="left" width="80" height="57">
+       </a>
+    </td>
+    <td width="54%" valign="middle" align="center">
+      You are navigating the <a href="../../">nfoTools Project on Github</a></td>
+    <td width="30%">
+      <p align="right"><font size="-2">created 2022-06-10 by
+         <a target="_top" href="../../../orcmid">orcmid</a> </font></p>
+    </td>
+  </tr>
+</table>
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.23 2023-12-28T20:45Z Switch to hybrid format
      0.0.22 2023-07-14T23:36Z Touch-up
      0.0.21 2023-05-17T21:43Z Reflect D211101d touch-up
      0.0.20 2023-05-17T18:11Z Final VCrayApp-0.0.0 change
