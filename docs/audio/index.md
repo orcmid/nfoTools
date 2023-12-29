@@ -1,4 +1,4 @@
-<!-- index.md 0.0.1                 UTF-8                         2023-12-16
+<!-- index.md 0.0.2                 UTF-8                         2023-12-29
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                         AUDIO TECHNOLOGY, TOOLS AND KITS
@@ -27,7 +27,7 @@
          <a href="index.html" target="_top">index.html</a>&gt;</code></b>
       <br />
       <small><small>
-        0.0.1 2023-12-16T23:33Z<!-- MAINTAIN THIS MANUALLY -->
+        0.0.2 2023-12-29T21:47Z<!-- MAINTAIN THIS MANUALLY -->
       </small></small>
       </td>
   </tr>
@@ -38,7 +38,7 @@ playback to the usage and mastery of Digital Audio Workstations.
 
 ## Catalog
 
-| **ID** | **Started** | **Status** | **Topic** |
+| **ID** | **Status** | **Started** | **Topic** |
 |   :-:   |   :-:   |  :-:   |  ---  |
 | not yet | soon | placeholder | Audio Technology, Tools, and Kits |
 
@@ -70,6 +70,7 @@ from time to time.
 </table>
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.2  2023-12-29T21:47Z Fix Contents column order
      0.0.1  2023-12-16T23:34Z Fix the Title block
      0.0.0  2023-12-16T17:56Z Placeholder with docs/dev/index.md boilerplate
 
