@@ -1,7 +1,7 @@
-# .gitignore 0.0.1                    UTF-8                     dh:2023-12-29
+# .gitignore 0.0.2                    UTF-8                     dh:2024-01-07
 #
-#                ORCMID/ORCMID.GITHUB.IO/NFOTOOLS/AUDIO/2023/12
-#                ==============================================
+#            ORCMID/ORCMID.GITHUB.IO/NFOTOOLS/AUDIO/2023/12/a231202
+#            ======================================================
 #
 #      .GITIGNORE FOR SEQUESTERED MATERIALS ON CAKEWALK.NEXT BETA
 #
@@ -9,12 +9,12 @@
 #   on this subfolder without their being committed to and carried in the
 #   repository on GitHub.
 
-a231202*.txt
 a231202*.png
 a231202*/
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 #
+# 0.0.2 2024-01-07T20:02Z Adjust for movement into a231202/ subfolder
 # 0.0.1 2023-12-29T21:32Z Ignore subfolders of any kind
 # 0.0.0 2023-12-28T01:47Z Sequestering Cakewalk.Next beta from GitHub
 #
