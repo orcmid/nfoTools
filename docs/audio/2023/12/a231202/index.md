@@ -1,4 +1,4 @@
-<!-- a231202.md 0.0.2               UTF-8                          2023-12-29
+<!-- a231202.md 0.0.3               UTF-8                          2024-01-07
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                  a231202: CAKEWALK.NEXT DAW EXPLORATION
@@ -7,16 +7,17 @@
 <table border="0" width="100%">
   <tr>
     <td width="25%" align="left" height="6">
-       <img src="../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png" />
+       <img src="../../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png" />
        </td>
     <td width="48%" height="6"><p align="center"><font color="#990033"><strong>
 	<big><big>a231202: Cakewalk.next DAW Exploration</big>
     </big></strong></font></p>
        </td>
     <td width="27%" height="6" valign="middle" align="right">
-      <b><code><a href="../../" target="top">audio</a>&gt;<br />
-	  <a href="../" target="_top">2023</a>&gt;
-      <a href="./" target="_top">12</a>&gt;
+      <b><code><a href="../../../" target="top">audio</a>&gt;<br />
+	  <a href="../../" target="_top">2023</a>&gt;
+      <a href="../" target="_top">12</a>&gt;<br />
+      <a href="./" target="_top">a231202</a>&gt;
       </code></b>
       <br /><br />
       <a href="https://clustrmaps.com/site/1bw9w" title="Visit tracker">
@@ -24,10 +25,10 @@
       </a>
       <br /><br />
       <b><code>
-         <a href="a231202.html" target="_top">a231202</a>&gt;</code></b>
+         <a href="index.html" target="_top">index</a>&gt;</code></b>
       <br />
       <small><small>
-        0.0.2 2023-12-29T21:30Z<!-- MAINTAIN THIS MANUALLY -->
+        0.0.3 2024-01-07T22:38Z<!-- MAINTAIN THIS MANUALLY -->
       </small></small>
       </td>
   </tr>
@@ -49,26 +50,27 @@ from time to time.
   <tr>
     <td width="14%">
 	<a href="index.htm" target="_top">
-       <img border="0" src="../../../images/hardhat-thumb.gif"
+       <img border="0" src="../../../../images/hardhat-thumb.gif"
             alt="Hard Hat Area"
             align="left" width="80" height="57">
        </a>
     </td>
     <td width="54%" valign="middle" align="center">
-      You are navigating the <a href="../../../">nfoTools Project on
+      You are navigating the <a href="../../../../">nfoTools Project on
       Github</a></td>
     <td width="30%">
       <p align="right"><font size="-2">created 2023-12-25 by
-         <a target="_top" href="../../../../orcmid">orcmid</a> </font></p>
+         <a target="_top" href="../../../../../orcmid">orcmid</a> </font></p>
     </td>
   </tr>
 </table>
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.3  2024-01-07T22:38Z Correct relative links
      0.0.2  2023-12-29T21:30Z Add Bottom Strips
      0.0.1  2023-12-29T21:12Z Correct mousetrack
      0.0.0  2023-12-25T01.16Z Placeholder with boilerplate from a231201.md
 
 
-                 *** end of docs/audio/2023/12/a231202.md ***
+            *** end of docs/audio/2023/12/a231202/index.md ***
      -->

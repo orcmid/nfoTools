@@ -1,4 +1,4 @@
-<!-- index.md 0.0.0               UTF-8                          2024-01-07
+<!-- index.md 0.0.1               UTF-8                          2024-01-07
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
               a231000: Boulder Creek Rhapsody Project
@@ -28,7 +28,7 @@
          <a href="index.html" target="_top">index</a>&gt;</code></b>
       <br />
       <small><small>
-        0.0.0 2024-01-07T19:33Z<!-- MAINTAIN THIS MANUALLY -->
+        0.0.1 2024-01-07T22:27Z<!-- MAINTAIN THIS MANUALLY -->
       </small></small>
       </td>
   </tr>
@@ -50,7 +50,7 @@ from time to time.
   <tr>
     <td width="14%">
 	<a href="index.htm" target="_top">
-       <img border="0" src="../../../images/hardhat-thumb.gif"
+       <img border="0" src="../../../../images/hardhat-thumb.gif"
             alt="Hard Hat Area"
             align="left" width="80" height="57">
        </a>
@@ -66,6 +66,7 @@ from time to time.
 </table>
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.1  2024-01-07T22:27Z Fix hard hat link
      0.0.0  2024-01-07T19:33Z Placeholder morphed from 2023/12 folio cover.
 
               *** end of docs/audio/2023/10/a231000/index.md ***
