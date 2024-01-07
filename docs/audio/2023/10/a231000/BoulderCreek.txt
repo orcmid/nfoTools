@@ -1,0 +1,104 @@
+BoulderCreek.txt 0.0.2              UTF-8                      dh:2024-01-07
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+                            BOULDER CREEK RHAPSODY
+                            ======================
+
+As an exercise in creating music with a Digital Audio Workstation and all of
+the digital tools and software that I have for that purpose, I am thinking of
+a Boulder Creek Rhapsody, based on the forest fire, mud and flood, and
+expected recovery.  I favor cinematic forms.
+
+I have had too many Digital Audio Workstations and am now down to using only
+Ableton Live 11 Lite, which is free for me.  I have tons of add-ons, including
+much from Native Instruments, the source of my computer's audio dock.
+
+I also have legacy Cakewalk SONAR Platinum and Cakewalk by BandLab.  I am
+keeping an eye on Cakewalk.next and BandLab Studio.  The Clegacy CakeWalk may
+be the best selection, since I can use all of the Native Instrument plug-ins
+and instruments with legacy Cakewalk.
+
+Ableton may have messed up the tutorials for Live Lite and I am waiting to see
+if there will be a Live 12 Lite update available.  We'll see.
+
+I am just getting started.
+
+MANIFEST
+
+    BoulderCreek.txt
+        This manifest and job jar.
+
+    Boulder-Creek-2024-01-02.txt
+        More from Co-Pilot on Sonata and Rhapsody forms.  I forgot where I
+        had ths material already and went on the Internet again.
+
+    BoulderCreekForm.txt
+        A text file of my research into symphonic forms, useful in the choice
+        of "rhapsody" and also useful in determining some of the details.
+
+    NativeInstruments-MelodicTechno-2024-01-07.htm
+    NativeInstruments-MelodicTechno-2024-01-07_files/
+        Capture of NI Tutorial on MelodicTechno with a lesson on building
+        such a song.  Some of the ideas may apply here, although this will
+        not be dance.  Umm, so far as I know.
+
+    Rhapsody-GeneratedWithAI-2023-10-08-0941.jfif
+        Bing-chat offered image along with explanation of Rhapsody.
+
+    TonePoem-GeneratedWithAI-2023-10-08-0927.jfif
+        A Bing-chat offered image along with explanation of Tone Poem
+
+    TonePoem-GeneratedWithAI-2023-10-08-0928.jfif
+        Another of the Big-chat offered images generated along with
+        explanation of Tone Poem.
+
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+                    Copyright 2023 Dennis E. Hamilton
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+ ATTRIBUTION
+
+   Hamilton, Dennis E. Boulder Creek Rhapsody.  myCleanC project file
+   BoulderCreek.txt version 0.0.2 dated 2024-01-07, available on the Internet
+   as a version of
+   <https://github.com/orcmid/myCleanC/blob/master/BoulderCreek/BoulderCreek.txt>
+
+TODO
+
+ * Listen to "Rhapsody in Blue" and the other Gerschwin I like for more
+   understanding of the form.
+
+ * Listen to the Liszt "Hungarian Rhapsodies" for understanding of the form.
+
+ * Listen to Rachmaninoff "Rhapsody on a Theme by Paganini" for more sense.
+
+ * Do the Native instruments Melodic Techno tutorial to see what I can do
+   to be more in a rhapsody form.
+
+ * THIS HAS NOTHING TO DO WITH MY CLEAN C.  This needs to go under Audio of
+   nfoTools.
+
+DONE
+
+ 2023-01-07 Nothing to See here.  Move Along.
+
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+0.0.2 2024-01-07T17:02Z Add Melodic Techno info, and expand on DAWs to use
+0.0.1 2023-10-08T18:00Z Initial synopsis and manifest.
+
+                       ***end of BoulderCreek.txt ***

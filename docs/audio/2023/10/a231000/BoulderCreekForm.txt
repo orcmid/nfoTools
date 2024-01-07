@@ -1,0 +1,170 @@
+BoulderCreekForm.txt 0.0.1          UTF-8                      dh:2023-10-08
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+                            BOULDER CREEK RHAPSODY
+                            ======================
+
+As an exercise in creating music with a Digital Audio Workstation and all of
+the digital tools and software that I have for that purpose, I am thinking of
+a Boulder Creek Homage, based on the forest fire, mud and flood, and expected
+recovery.  I favor cinematic forms.
+
+I am asking Bing Chat about the standard musical forms to help refine my
+ideas.  All if the quotations are Bing Chat results, edited for form here.
+
+RHAPSODY
+
+Ah, the best choice, although I am pleased for the additional information that
+I obtained first.
+
+"A rhapsody is a musical composition that is episodic yet integrated, free-
+flowing in structure, and features a range of highly contrasted moods, color,
+and tonality. The word 'rhapsody' is derived from the Greek word 'rhapsōidia',
+meaning 'recitation of selections from epic poetry'.
+
+"The rhapsody is a form of instrumental music that is characterized by its
+improvisatory character and its lack of formal structure. It is often composed
+for a solo instrument or for an orchestra and can be considered a type of tone
+poem.
+
+"Some examples of rhapsodies include:
+
+ - Hungarian Rhapsodies by Franz Liszt: A set of 19 piano pieces that are
+   based on Hungarian folk themes
+
+ - Rhapsody in Blue by George Gershwin: A piece for solo piano and jazz band
+   that combines elements of classical music with jazz
+
+ - Romanian Rhapsodies by George Enescu: Two orchestral works that are based
+   on Romanian folk music"
+
+OVERTURE
+
+Ahah!!!  It is OK to think of this as an overture.  I still need to think
+about form though.
+
+"A musical overture is a piece of music that is played at the beginning of an
+opera, ballet, or musical. It is usually an instrumental composition, but
+sometimes it can include vocal parts as well. The overture serves as an
+introduction to the work that follows and often contains the main musical
+themes of the work.
+
+"The overture originated in the 17th century as a short instrumental flourish
+or a sung prologue for operas, ballets, or oratorios. During the early
+Romantic era, composers such as Beethoven and Mendelssohn composed overtures
+which were independent, self-existing instrumental, programmatic works that
+foreshadowed genres such as the symphonic poem. These were 'at first
+undoubtedly intended to be played at the head of a programme'".
+
+"There are two main types of overtures: concert overtures and opera overtures.
+Concert overtures are independent works that are not associated with any
+particular drama or story. They are usually played at the beginning of a
+concert and are intended to stand alone as a complete composition. ..."
+
+SYMPHONIC POEM
+
+Following on "Overture" I asked about "tone poem"  This was even more fun:
+Bing Chat offered me some graphical images along with the explanation.
+
+"A tone poem is a piece of orchestral music that is usually in one movement
+and is based on a descriptive or rhapsodic theme. It is also known as a
+symphonic poem. The tone poem is intended to evoke the contents of a story,
+poem, painting, place, or other non-musical source. The term 'tone poem' was
+first used by the composer Carl Loewe in 1828.
+
+"The tone poem is different from traditional classical symphonic movements in
+that its music is intended to inspire listeners to imagine or consider scenes,
+images, specific ideas, or moods and not necessarily to focus on following
+traditional patterns of musical form such as sonata form. The tone poem was a
+direct consequence of Romanticism, which encouraged literary, pictorial, and
+dramatic associations in music.
+
+"While many tone poems may compare in size and scale to symphonic movements
+(or even reach the length of an entire symphony), they are unlike traditional
+classical symphonic movements in that their music is intended to inspire
+listeners to imagine or consider scenes, images, specific ideas or moods, and
+not (necessarily) to focus on following traditional patterns of musical form
+such as sonata form. According to the musicologist Hugh Macdonald, the tone
+poem met three 19th-century aesthetic goals: it related music to outside
+sources; it often combined or compressed multiple movements into a single
+principal section; and it elevated instrumental program music to an aesthetic
+level that could be regarded as equivalent to, or higher than opera".
+
+SONATA
+
+This has the correct number of parts (4):
+
+"A sonata is a type of musical composition that usually consists of two to four
+movements, each in a related key but with a unique musical character. The
+term evolved through the history of music, designating a variety of forms
+until the Classical era, when it took on increasing importance. Sonata is a
+vague term, with varying meanings depending on the context and time period.
+By the early 19th century, it came to represent a principle of composing
+large-scale works. It was applied to most instrumental genres and
+regarded—alongside the fugue—as one of two fundamental methods of organizing,
+interpreting and analyzing concert music.
+
+"The sonata is typically played by a solo instrument or a small instrumental
+ensemble. The Baroque period sonata was for one or more instruments almost
+always with continuo. After the Baroque period most works designated as
+sonatas specifically are performed by a solo instrument, most often a keyboard
+instrument, or by a solo instrument accompanied by a keyboard instrument.
+Sonatas for a solo instrument other than keyboard have been composed, as have
+sonatas for other combinations of instruments."
+
+CONCERTO
+
+Hmm ... I would bend the instruments idea here, but the 3-part form doesn't
+quite fit.
+
+"A concerto is a musical composition that features a solo instrument or
+instruments accompanied by an orchestra or other ensemble. The soloist and
+the ensemble are related to each other by alternation, competition, and
+combination. The concerto typically consists of three movements, with a slow
+movement (e.g., lento or adagio) sandwiched between two fast movements (e.g.,
+presto or allegro). The concerto originated as a genre of vocal music in the
+late 16th century, and the instrumental variant appeared around a century
+later. The first keyboard concertos were written around the same time, and in
+the second half of the 18th century, the piano became the most used keyboard
+instrument. Composers of the Classical Era such as Joseph Haydn, Wolfgang
+Amadeus Mozart, and Ludwig van Beethoven each wrote several piano concertos,
+and to a lesser extent, violin concertos and concertos for other instruments.
+In the Romantic Era, many composers continued to write solo concertos, and
+more exceptionally, concertos for more than one instrument. During the 20th
+century, concertos were written by many composers for orchestral instruments
+which had been neglected in the 19th century such as the clarinet, viola, and
+French horn. In the second half of the 20th century and onwards into the 21st
+century, a great many composers have continued to write concertos for less
+usual instruments, including orchestral ones such as the double bass and cor
+anglais, but also folk instruments."
+
+SYMPHONY
+
+"A symphony is a lengthy musical composition for an orchestra, usually
+consisting of several large sections or movements, at least one of which
+usually employs sonata form. The term 'symphony' has had many meanings from
+its origins in ancient Greek era, but by the late 18th century, it had taken
+on the meaning common today. The word 'symphony' is derived from the Greek
+word “sumphōnia”, meaning 'agreement or concord of sound', 'concert of vocal
+or instrumental music', from 'sumphōnos' meaning 'harmonious'.
+
+"Symphonies are almost always scored for an orchestra consisting of a group of
+musicians, which altogether number about 30 to 100 musicians. ... Some
+symphonies also contain vocal parts (e.g., Beethoven Ninth Symphony).
+
+"The symphony typically consists of three movements, with a slow movement
+(e.g., lento or adagio) sandwiched between two fast movements (e.g., presto or
+allegro). The first movement is usually in sonata form (also called first-
+movement form).
+
+"Symphonies are regarded as one of two fundamental methods of organizing,
+interpreting and analyzing concert music, alongside the fugue. The symphony is
+considered one of the most important genres of Western classical music and has
+been written by many composers throughout history."
+
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+0.0.1 2023-10-08T16:50Z Initial gathering of terminology for Boulder Creek
+      composition
+
+                       ***end of BoulderCreekForm ***
