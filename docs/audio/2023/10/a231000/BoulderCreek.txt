@@ -1,4 +1,4 @@
-BoulderCreek.txt 0.0.2              UTF-8                      dh:2024-01-07
+BoulderCreek.txt 0.0.3              UTF-8                      dh:2024-01-07
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                             BOULDER CREEK RHAPSODY
@@ -73,9 +73,9 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. Boulder Creek Rhapsody.  myCleanC project file
-   BoulderCreek.txt version 0.0.2 dated 2024-01-07, available on the Internet
+   BoulderCreek.txt version 0.0.3 dated 2024-01-07, available on the Internet
    as a version of
-   <https://github.com/orcmid/myCleanC/blob/master/BoulderCreek/BoulderCreek.txt>
+   <https://orcmid.github.io/nfoTools/audio/2023/10/a231000/BoulderCreek.txt>
 
 TODO
 
@@ -88,16 +88,25 @@ TODO
 
  * Do the Native instruments Melodic Techno tutorial to see what I can do
    to be more in a rhapsody form.
+   
+ * Ballet suites may also factor here, especially Stravinsky.  Firebird and
+   Rite of Spring for sure.
+   
+ * Bring construction structure here.  Add to the Audio catalog and job
+   jar.  There will be a job jar here at a231000a.htm in the usual manner.
+   
+ * Makt this a tombstone once the Construction Structure and local 
+   Diary and Job Jar are in place.
 
- * THIS HAS NOTHING TO DO WITH MY CLEAN C.  This needs to go under Audio of
-   nfoTools.
 
 DONE
 
- 2023-01-07 Nothing to See here.  Move Along.
+ 2023-01-07 Moved from MyCleanC projects to nfoTools Audio/2023/10/a231000/
+   as home of the Boulder Creek Rhapsody project.
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+0.0.3 2024-01-07T17:55Z Migrate to nfoTools audio a231000/
 0.0.2 2024-01-07T17:02Z Add Melodic Techno info, and expand on DAWs to use
 0.0.1 2023-10-08T18:00Z Initial synopsis and manifest.
 
