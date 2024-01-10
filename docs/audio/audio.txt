@@ -1,4 +1,4 @@
-audio.txt 0.0.1                   UTF-8                         2023-12-16
+audio.txt 0.0.2                   UTF-8                         2024-01-10
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                             nfoWare/nfoWorks nfoTools
@@ -12,7 +12,7 @@ audio.txt 0.0.1                   UTF-8                         2023-12-16
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-                    Copyright 2023 Dennis E. Hamilton
+                    Copyright 2023-2024 Dennis E. Hamilton
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -31,7 +31,7 @@ audio.txt 0.0.1                   UTF-8                         2023-12-16
  ATTRIBUTION
 
    Hamilton, Dennis E. Audio: Digital Audio Production.  nfoTools project text
-   file audio.txt version 0.0.1 dated 2023-12-16, available on the Internet as
+   file audio.txt version 0.0.2 dated 2024-01-10, available on the Internet as
    a version of <https://orcmid.github.io/nfoTools/audio/audio.txt>.
 
      AUTHOR NOTE: THIS IS MATERIAL SCAVENGED FROM A231200.txt.
@@ -90,9 +90,18 @@ ABOVE HERE: 0.0.0 2023-12-13
 
  * Then make this a tombstone that explains that and more.
 
+ ABOVE HERE 0.0.1 2023-12-16
+
+  * https://www.soundtrap.com/musicmakers seems to be advertised as a
+    challenger to Adobe Audition and Ableton.  It is all subscription based
+    with different levels for categories (including "All").  It also claims
+    to be a Protools Alternative.  There appear to be some great tutorials.
+    Needs more-careful scrutiny.
+
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.2 2024-01-10T23:44Z Note on Soundtrap
  0.0.1 2023-12-16T06:56Z Musing on how to continue here
  0.0.0 2023-12-13T17:00Z Scavenging a231200.txt 0.0.2 for higher-level
        considerations.
