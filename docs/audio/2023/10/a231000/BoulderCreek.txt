@@ -88,15 +88,18 @@ TODO
 
  * Do the Native instruments Melodic Techno tutorial to see what I can do
    to be more in a rhapsody form.
-   
+
  * Ballet suites may also factor here, especially Stravinsky.  Firebird and
    Rite of Spring for sure.
-   
+
  * Bring construction structure here.  Add to the Audio catalog and job
    jar.  There will be a job jar here at a231000a.htm in the usual manner.
-   
- * Makt this a tombstone once the Construction Structure and local 
+
+ * Makt this a tombstone once the Construction Structure and local
    Diary and Job Jar are in place.
+
+ * There are some related drum tracks to look at on NI Big Bams.
+   <https://www.native-instruments.com/en/catalog/nks-special-february-2024/>.
 
 
 DONE
