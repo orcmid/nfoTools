@@ -1,4 +1,4 @@
-T060101.txt 0.0.22                  UTF-8                          2023-09-22
+T060101.txt 0.0.23                  UTF-8                          2024-02-28
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -23,7 +23,7 @@ MANIFEST
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-                     Copyright 2021-2023 Dennis E. Hamilton
+                     Copyright 2021-2024 Dennis E. Hamilton
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -42,7 +42,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. T060101: C/C++ Programming.  nfoTools project text
-   file T060101.txt version 0.0.22 dated 2023-09-22, available on the
+   file T060101.txt version 0.0.23 dated 2024-02-28, available on the
    Internet as a version of
    <https://orcmid.github.io/nfoTools/tools/T060101/T060101.txt>
 
@@ -50,7 +50,7 @@ TODO
 
  * Restore the HTML version of T060101a.htm, take advantage of FrontPage for
    construction structures once again.
- 
+
  * Demonstrate the edit, save, compile, test, rinse-repeat
 
  * Watch FC_CPP Course videos and ensure that supporting materials are
@@ -132,6 +132,11 @@ TODO
     o How C libraries are workable in C++ programs.  The extern "C" business.
     o Keeping things straight with naming conventions.
 
+ * There are issues about code safety that developers need to understand.  The
+   use of C and C++ is being discouraged in favor of languages that do not
+   make it so easily to have unsafe/unprotected memory-use vulnerabilities.
+   See <https://www.infoworld.com/article/3713203/white-house-urges-developers-to-dump-c-and-c.html>
+
  * Maybe some of this in notes?
 
  * Find better courses.
@@ -169,6 +174,7 @@ TODO
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.23 2024-02-28T20:40Z Add note about code safety and C/C++ vulnerability.
  0.0.22 2023-09-22-16:01Z TODO on restoring T060101a.htm
  0.0.21 2023-07-31T19:26Z Manage TODOs
  0.0.20 2023-07-16T17:06Z Tidying Up
