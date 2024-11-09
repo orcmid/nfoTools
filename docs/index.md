@@ -1,4 +1,4 @@
-<!-- index.md 0.0.13                UTF-8                         2023-11-27
+<!-- index.md 0.0.14                UTF-8                         2024-11-09
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
      source <https://github.com/orcmid/nfoTools/blob/master/docs/index.md>
      construction structure, manifest, and job jar at
@@ -25,7 +25,7 @@
          <a href="index.html" target="_top">index.html</a>&gt;</code></b>
       <br />
       <small><small>
-        0.0.13 2023-11-27T21:02Z<!-- MAINTAIN THIS MANUALLY -->
+        0.0.13 2024-11-09T19:39Z<!-- MAINTAIN THIS MANUALLY -->
       </small></small>
       </td>
   </tr>
@@ -73,6 +73,7 @@ The nfoTools web is organized in topical sections.
 | [tools](tools/) | Toolcraft for Using and Developing with nfoTools |
 | | |
 | [construction](construction/) | nfoTools Web Construction Materials |
+| [security](https://github.com/orcmid/nfoTools/security) | Security Policy Statement |
 
 ----
 
@@ -101,6 +102,7 @@ from time to time.
   </tr>
 </table>
 <!--
+      0.0.14 2024-11-09T19:39Z Add Security Policy Statement link
       0.0.13 2023-11-27T21:02Z Switch to standard title and bottom blocks
       0.0.12 2023-08-12T20:42Z Touch-ups
       0.0.11 2023-04-12T16:12Z Mass change of [projects] links
