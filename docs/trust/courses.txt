@@ -1,4 +1,4 @@
-courses.txt 0.0.0                   UTF-8                          2024-11-10
+courses.txt 0.0.1                   UTF-8                          2024-11-10
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                             nfoWare/nfoWorks nfoTools
@@ -11,10 +11,38 @@ courses.txt 0.0.0                   UTF-8                          2024-11-10
               -------------------------------------------------
 
     These are on-line course and other clippings that need to be triaged
-    as resources for trust topics.
+    as resources for trust topics.  Links also lead to indicators of
+    related courses and materials.
 
+50 brand new courses from Coursera (via class central, 2024-11-10)
+------------------------------------------------------------------
 
+These extracted links tend to be about business IT operations, although there
+are applicable concepts to elements of Software Engineering and SE4E.  These
+might be more tangential than directly applicable. The conceptual levels may
+be useful, as ones on Project Management Risk Management will be.
 
+ * Governance and Risk Management Concepts, Packt
+   <https://www.classcentral.com/course/coursera-packt-governance-and-risk-management-concepts-djieq-353879>
+
+ * Cybersecurity: Protecting your Information at Home, University System of
+   Georgia
+   <https://www.classcentral.com/course/coursera-csafe-protecting-your-information-at-home-353857>
+
+ * Data Privacy, Security, Governance, Risk and Compliance.  SkillUp EdTech
+   <https://www.classcentral.com/course/coursera-data-privacy-security-governance-risk-and-compliance-352801>
+
+ * Advanced Risk Management, Security Controls & Monitoring.  Packt
+   <https://www.classcentral.com/course/coursera-packt-advanced-risk-management-security-controls-monitoring-q3ofr-353838>
+
+ * IT Risk Assessment Practices.  Packt
+   <https://www.classcentral.com/course/coursera-packt-it-risk-assessment-practices-f1sc1-353882>
+
+ * Information Technology and Security Principles.  Packt
+   <https://www.classcentral.com/course/coursera-packt-information-technology-and-security-principles-djieq-353887>
+
+ * Security Operations. Kackt
+   <https://www.classcentral.com/course/coursera-packt-security-operations-mrcgl-353918>
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
@@ -47,7 +75,7 @@ TODO
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-
+ 0.0.1  2024-11-10T19:14Z Clips from a Class Central 2024-11-10 notice.
  0.0.0  2024-11-10T18:07Z Placeholder for initial development (from 0.0.0
         trust.txt)
 

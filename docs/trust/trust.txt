@@ -1,4 +1,4 @@
-trust.txt 0.0.0                     UTF-8                          2024-11-10
+trust.txt 0.0.1                     UTF-8                          2024-11-10
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                             nfoWare/nfoWorks nfoTools
@@ -23,6 +23,8 @@ MANIFEST
 
         trust.txt  this manifest and job-jar file
 
+      courses.txt  clipping of potentially-useful links on Trust Topics
+
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
@@ -45,7 +47,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. nfoTools Trust Topics: Trustworthiness Practices.
-   nfoTools project text file trust.txt version 0.0.0 dated 2024-11-10,
+   nfoTools project text file trust.txt version 0.0.1 dated 2024-11-10,
    available on the Internet as a version of
    <https://orcmid.github.io/nfoTools/trust/trust.txt>.
 
@@ -56,7 +58,7 @@ TODO
 
   * Add Construction Zone.
 
-  * Start collecting course materials and other materials on cybersecurity,
+  * Continue collecting course materials and other materials on cybersecurity,
     risk management, SE4E, and trustworthiness.
 
   * Consider what goes here versus what goes at <https://orcmid.github.io/bib>
@@ -71,6 +73,7 @@ TODO
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
+ 0.0.1  2024-11-10T19:16Z Add courses.txt, manage TODOs
  0.0.0  2024-11-10T17:57Z Placeholder for initial development (from 0.0.24
         docs.txt)
 
