@@ -1,4 +1,4 @@
-/* nfoFlip.c 0.0.0                  UTF-8                       2025-10-07
+/* nfoFlip.c 0.0.1                  UTF-8                       2025-10-07
 * --|----1----|----2----|----3----|----4----|----5----|----6----|----7----*
 *
 *             nfoFlip LAGGED-FIBONACCI PSEUDO-RANDOM NUMBERS
@@ -14,20 +14,21 @@
 
 #include "nfoFlip.h"
 
-static long A[56] = { -1 };  // {4}
+static long A[56] = { -1 };  // {§4}
    // Elements A[55] to A[1] are values of the current state from which
    // numbers are taken, in decreasing index order. A[0] is always -1 to force
    // detection that the list has been exhausted and a new cycle must be
    // generated.
 
-extern long *nfo_fptr = &A[0];  // {6}
+extern long *nfo_pFS = &A[0];  // {§6}
    // Pointer at the A[i] having the next generated number to be used.
    // When *nfo_fptr is -1, the list is exhausted and a new cycle must be
    // generated.
 
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-   0.0.0 2025-10-07T05:20Z Starting up.
+0.0.1 2025-10-07T21:52Z Use nfo_pFS instead of nfo_fptr. Use § section ids
+0.0.0 2025-10-07T05:20Z Starting up.
 
                             *** end of nfoFlip.c ***
 
