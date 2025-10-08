@@ -1,4 +1,4 @@
-/* testFlip.c 0.0.1                 UTF-8                       2025-10-07
+/* testFlip.c 0.0.2                 UTF-8                       2025-10-08
 * --|----1----|----2----|----3----|----4----|----5----|----6----|----7----*
 *
 *                 nfoFlip IMPLEMENTATION CONFIRMATION TEST
@@ -35,7 +35,7 @@ int main(void)
            exit(-2);
            }
 
-    fputs(stderr, "OK, the nfoFlip routines seem to work.\n");
+    fputs(stderr, "testFlip: OK, the nfoFlip routines seem to work.\n");
 
     exit(EXIT_SUCCESS);
 
@@ -43,6 +43,7 @@ int main(void)
 
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+0.0.2 2025-20-08T23:04Z Makes the messages all of the same format
 0.0.1 2025-10-07T21:31Z Added § for citing locations in GB_FLIP description.
 0.0.0 2025-10-06-13:17Z Initial transposition based on Knuth's test_flip.c
 
