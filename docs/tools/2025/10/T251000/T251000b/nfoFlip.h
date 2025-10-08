@@ -1,39 +1,49 @@
-/* nfoFlip.h 0.0.3                  UTF-8                       2025-10-07
+/* nfoFlip.h 0.0.4                  UTF-8                       2025-10-08
 * --|----1----|----2----|----3----|----4----|----5----|----6----|----7----*
 *
-*              nfoFlip LAGGED-FIBONACCI PSEUDO-RANDOM NUMBER
-*              ---------------------------------------------
+*              nfoFlip LAGGED-FIBONACCI PSEUDO-RANDOM NUMBERS
+*              ----------------------------------------------
 *
-* nfoFlip is a transposition of the gbflip.c program published by Donald
-* Knuth in the Literate Programming description of GB_FLIP, pp. 216-221 in
-* "The Stanford GraphBase: A Platform for Combinatorial Computing".  See
-* https://www-cs-faculty.stanford.edu/~knuth/sgb.html.
+* nfoFlip is a transposition of the Literate Programming GB_FLIP program
+* by Donald Knuth in pp. 216-221 of "The Stanford GraphBase: A Platform for
+* Combinatorial Computing", Addison-Wesley (Reading MA, 1993).  See
+* <https://www-cs-faculty.stanford.edu/~knuth/sgb.html>.
+*
+* XXX: Explain that nfoFlip functions are not thread-safe and also say a
+* little bit about reproducibility.
+*
+* The §-numbers refer to sections in the GB_FLIP text from which the code is
+* derived.
 */
-
 
 void nfoInitRand(long seed); // §11
 
-extern long * nfo_pFS;  // pointer into the nfoFlipState array §6
-// XXX Explain how this pointer is always to the next random number in
-//     the array, the generated numbers are always non-negative, and
-//     the first element is always -1 to cause a new cycle to be
-//     generated.  Elements are always consumed backwards from the
-//     end of the array.
+extern long * _nfo_pFS;  // pointer into the nfoFlip state array FS[] §6
+/* _nfo_pFS is managed privately by nfoFlip.c in support of the high-
+   performance macro nfoNextRand() defined below. It is initialized by
+   nfoInitRand and updated in operation of nfoNextRand, nfoFlipCycle, and
+   nfoUniformRand.  It must not be accessed directly by user code.
+   */
 
-#define nfoNextRand( ) (*nfo_pFS >= 0 ? *nfo_pFS-- : nfoFlipCycle( ))
+#define nfoNextRand( ) (*_nfo_pFS >= 0 ? *_nfo_pFS-- : nfoFlipCycle( ))
+/* nfoNextRand is a high-performance macro for delivering the next number
+   from a pre-computed array or, if necessary, from a new cycle of the array.
+   */
 
-long nfoFlipCycle(void); // §6
-// XXX To avoid failing the birthday spacing test, this function should
-// be called twice in nfoNextRand().  See GB_FLIP §6.
-
+long nfoFlipCycle(void); // used to advance FS[] to a fresh set of values §6
+/* nfoFlipCycle is used automatically by nfoNextRand and other operations
+   of nfoFlip.  It can also be used to "stir the pot", generating a fresh
+   block of values and delivering the first of them.
+   */
 
 long nfoUniformRand(long n); // §13
-// Generate a uniformly distributed random number in the range [0, n-1).
+// Generate a uniformly distributed random number in the range [0, n-1].
 
 
 
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+0.0.4 2025-10-08T23:32Z Switch to _nfo_pFS and rework comments.
 0.0.3 2025-10-07T23:35Z Add §s and describe nfoUniformRand( ).
 0.0.2 2025-10-07T23:06Z Touch-up
 0.0.1 2025-10-07-21:48Z Use nfo_pFS instead of nfo_fptr.
