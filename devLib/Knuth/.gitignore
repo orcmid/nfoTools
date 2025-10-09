@@ -1,0 +1,27 @@
+# .gitignore 0.0.18                 UTF-8                       dh:2025-10-09
+#---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+#
+#                      NFOTOOLS KNUTH DEVLIB PROJECT
+#                      =============================
+#
+#            .GITIGNORE FOR KEEPING SGB OUT OF THE REPOSITORY
+#
+## ELIMINATE INCORPORATED SGB ARTIFACTS
+## The fork of the Stanford GraphBase (SGB) is not included under the devLib
+## Knuth repository. The SGB is a separate project with its own license and
+## distribution requirements. An SGB clone is kept in Orcmid's nfoTools/devLib
+## working version for easy reference and use. The SGG is not altered in any
+## form here.
+
+SGB/
+
+#---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+# 0.0.18 2024-10-09T22:15Z Transfomed for devLib/Knuth/
+# 0.0.17 2023-01-08T19:26Z Ignore VCrayApp/ of release for confirmation
+# 0.0.16 2021-11-13T00:33Z Stripped down from 0.0.15 at orcmid/FC_CPP.
+# 0.00 2014-12-03-16:11 Initial .gitignore from GitHub
+#      As part of creation of the repositiory, the GitHub provision for
+#      ignoring Visual Studio build artifacts was created automatically.
+
+#                    *** end of .gitignore ***
