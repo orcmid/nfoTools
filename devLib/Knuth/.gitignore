@@ -1,4 +1,4 @@
-# .gitignore 0.0.18                 UTF-8                       dh:2025-10-09
+# .gitignore 0.0.19                 UTF-8                       dh:2025-10-10
 #---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 #
 #                      NFOTOOLS KNUTH DEVLIB PROJECT
@@ -15,8 +15,13 @@
 
 SGB/
 
+## ELIMINATE EXECUTABLES, OBJECTS, AND OTHER BUILD ARTIFACTS
+
+
+
 #---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+# 0.0.19 2025-10-10T22:18Z Add *.exe to exclusions not handled at higher level
 # 0.0.18 2024-10-09T22:15Z Transfomed for devLib/Knuth/
 # 0.0.17 2023-01-08T19:26Z Ignore VCrayApp/ of release for confirmation
 # 0.0.16 2021-11-13T00:33Z Stripped down from 0.0.15 at orcmid/FC_CPP.

@@ -1,0 +1,74 @@
+nfoFlip.txt 0.0.0                   UTF-8                         2024-10-10
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+                           nfoWare/nfoWorks nfoTools
+                           =========================
+
+               NFOFLIP: TRANSPOSED CB_FLIP DEVELOPMENT MATERIALS
+               -------------------------------------------------
+
+          <https://github.com/orcmid/nfoTools/devLib/Knuth/nfoFlip/>
+
+    nfoFlip is a generator of pseudo-random numbers modelled after the
+    Stanford GraphBase (SGB) GB_FLIP program, one of the four kernel
+    programs of the SGB system.  nfoFlip is separated and refactored
+    for general use along with other SGB materials and derivatives.
+
+    MANIFEST
+
+    nfoText.txt
+        this manifest and job-jar file
+
+    nfoFlip.c
+        C Language code for the nfoFlip functions and data that provide a
+        lax-Fibonacci deterministic pseudo-random number generator for use
+        in SGB-based programs and and others
+
+    nfoFlip.h
+        C Language header needed in programs that include use of nfoFlip
+
+    testFlip.c
+        C Language program for verifying correct operation of nfoFlip.c
+
+
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+                  Copyright 2025 Dennis E. Hamilton
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+ ATTRIBUTION
+
+   Hamilton, Dennis E. nfoFlip: Transposed CB_FLIP Development Materials.
+   Text file nfoFlip.txt version 0.0.0 dated 2024-10-10, availabe on the
+   Internet as a version of
+   <https://github.com/orcmid/nfoTools/devLib/Knuth/nfoFlip/nfoFlip.txt>
+
+TODO
+
+  * Move the development material into a dev/ subfolder, using the VCrayApp
+    model.
+
+  * Add a small batch file for compiling testFlip.
+
+  * At this level develop nfoFlip-1.0.0.txt and packaging as well as
+    authentication materials.
+
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+ 0.0.0 2016-11-30-09:11 Placeholder for expanded development arrangement
+
+
+                      ***** end of nfoFlip.txt *****
