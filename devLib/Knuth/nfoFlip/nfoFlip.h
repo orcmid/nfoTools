@@ -1,4 +1,4 @@
-/* nfoFlip.h 0.0.4                  UTF-8                       2025-10-08
+/* nfoFlip.h 0.0.5                  UTF-8                       2025-10-08
 * --|----1----|----2----|----3----|----4----|----5----|----6----|----7----*
 *
 *              nfoFlip LAGGED-FIBONACCI PSEUDO-RANDOM NUMBERS
@@ -16,33 +16,34 @@
 * derived.
 */
 
-void nfoInitRand(long seed); // §11
+void nfoFlipInit(long seed); // §11
 
 extern long * _nfo_pFS;  // pointer into the nfoFlip state array FS[] §6
 /* _nfo_pFS is managed privately by nfoFlip.c in support of the high-
-   performance macro nfoNextRand() defined below. It is initialized by
-   nfoInitRand and updated in operation of nfoNextRand, nfoFlipCycle, and
-   nfoUniformRand.  It must not be accessed directly by user code.
+   performance macro nfoNextFlip() defined below. It is initialized by
+   nfoFlipInit and updated in operation of nfoNextFlip, nfoFlipCycle, and
+   nfoUniformFlip.  It must not be accessed directly by user code.
    */
 
-#define nfoNextRand( ) (*_nfo_pFS >= 0 ? *_nfo_pFS-- : nfoFlipCycle( ))
-/* nfoNextRand is a high-performance macro for delivering the next number
+#define nfoNextFlip( ) (*_nfo_pFS >= 0 ? *_nfo_pFS-- : nfoFlipCycle( ))
+/* nfoNextFlip is a high-performance macro for delivering the next number
    from a pre-computed array or, if necessary, from a new cycle of the array.
    */
 
 long nfoFlipCycle(void); // used to advance FS[] to a fresh set of values §6
-/* nfoFlipCycle is used automatically by nfoNextRand and other operations
+/* nfoFlipCycle is used automatically by nfoNextFlip and other operations
    of nfoFlip.  It can also be used to "stir the pot", generating a fresh
    block of values and delivering the first of them.
    */
 
-long nfoUniformRand(long n); // §13
+long nfoUniformFlip(long n); // §13
 // Generate a uniformly distributed random number in the range [0, n-1].
 
 
 
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+0.1.0 2025-10-09T23:41Z Rename to consistent nfoFlipInit( ) and nfoNextFlip( )
 0.0.4 2025-10-08T23:32Z Switch to _nfo_pFS and rework comments.
 0.0.3 2025-10-07T23:35Z Add §s and describe nfoUniformRand( ).
 0.0.2 2025-10-07T23:06Z Touch-up

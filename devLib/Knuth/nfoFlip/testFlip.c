@@ -1,4 +1,4 @@
-/* testFlip.c 0.0.2                 UTF-8                       2025-10-08
+/* testFlip.c 0.1.1                 UTF-8                       2025-10-10
 * --|----1----|----2----|----3----|----4----|----5----|----6----|----7----*
 *
 *                 nfoFlip IMPLEMENTATION CONFIRMATION TEST
@@ -21,21 +21,22 @@
 
 int main(void)
 {
-    nfoInitRand(-314159L);
+    nfoInitFlip(-314159L);
 
-    if (nfoNextRand() != 119318998)
-         { fputs(stderr, "testFlip: Failure on the first try!\n");
+    long first = nfoNextFlip();
+    if (first != 119318998)
+         { fputs("testFlip: Failure on the first try!\n", stderr);
            exit(-1);
            }
 
-    for (int j = 1; j <= 133; j++) nfoNextRand();
+    for (int j = 1; j <= 133; j++) nfoNextFlip();
 
-    if (nfoUniformRand(0x55555555L) != 748103812)
-         { fputs(stderr, "testFlip: Failure on the second try!\n");
+    if (nfoUniformFlip(0x55555555L) != 748103812)
+         { fputs("testFlip: Failure on the second try!\n", stderr);
            exit(-2);
            }
 
-    fputs(stderr, "testFlip: OK, the nfoFlip routines seem to work.\n");
+    fputs("testFlip: OK, the nfoFlip routines seem to work.\n", stderr);
 
     exit(EXIT_SUCCESS);
 
@@ -43,6 +44,8 @@ int main(void)
 
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+0.1.1 2025-10-10T01:40Z Write fputs operands in correct order
+0.1.0 2025-10-09T23:48Z Rename to the adjusted nfoFlip.h/c names
 0.0.2 2025-20-08T23:04Z Makes the messages all of the same format
 0.0.1 2025-10-07T21:31Z Added § for citing locations in GB_FLIP description.
 0.0.0 2025-10-06-13:17Z Initial transposition based on Knuth's test_flip.c

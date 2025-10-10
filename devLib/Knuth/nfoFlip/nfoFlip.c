@@ -1,4 +1,4 @@
-/* nfoFlip.c 0.0.4                  UTF-8                       2025-10-09
+/* nfoFlip.c 0.2.0                  UTF-8                       2025-10-10
 * --|----1----|----2----|----3----|----4----|----5----|----6----|----7----*
 *
 *             nfoFlip LAGGED-FIBONACCI PSEUDO-RANDOM NUMBERS
@@ -30,23 +30,24 @@ extern long *_nfo_pFS = &FS[0];  // {§5 §6}
    // XXX: This version presumes 2's complement arithmetic. For a more general
    //      solution, see GB_FLIP §7.
 
+
 long nfoFlipCycle(void)  // {§7}
 {  // Generate a new cycle of 55 pseudo-random numbers in the FS[] array
    // using the lagged-Fibonacci method.  Return FS[55], the first of the
    // new cycle.
 
    for (int i = 1; i <= 24; i++)
-      FS[i] = mod_diff(FS[i + 31], FS[i]);
-
+      FS[i] = mod_diff(FS[i], FS[i+31]);
    for (int i = 25; i <= 55; i++)
-      FS[i] = mod_diff(FS[i - 24], FS[i]);
+      FS[i] = mod_diff(FS[i], FS[i-24]);
+        // Eliminating pointer tricks in favor of compiler optimization.
 
    _nfo_pFS = &FS[54];       // Designate the second of the new cycle.
 
    return (FS[55]);          // Return the first of the new cycle.
    }
 
-void nfoFlipInit(long seed)  // {§8}
+void nfoInitFlip(long seed)  // {§8}
 {  // Initialize the FS[] array using the given seed.
 
    long prev, next = 1;
@@ -72,32 +73,34 @@ void nfoFlipInit(long seed)  // {§8}
    nfoFlipCycle( );
    nfoFlipCycle( );  // ending with _nfo_pFS = &FS[54]
 
-   } /* nfoFlipInit */
+   } /* nfoInitFlip */
 
-long nfoUniformRand(long n)  // {§12}
-{  // Generate a uniformly distributed random number in the range [0, n-1].
 
-/* XXX: REVIEW THIS CO_OP SUGGESTION AGAINST {§12}
+long nfoUniformFlip(long m)  // {§12}
+{  // Generate a uniformly distributed random number in the range [0, m-1].
 
-   long limit, x;
+   #define twoTo31 ((unsigned long) 0x80000000)
 
-   if (n <= 1)
-      return 0;  // trivial case
+   unsigned long t = twoTo31 - (twoTo31 % m);
+      // the largest multiple of m not exceeding 2**31, a uniform block of
+      // m cases
 
-   limit = (0x7fffffff / n) * n; // largest limit < 2**31 that is a
-                                  // multiple of n
+   long r;
 
-   do
-      x = nfoNextRand( );
-   while (x >= limit);
+   if (m < 1) return 0; // avoid nonsense
 
-   return (x % n);
-*/
+   do { r = nfoNextFlip(); }
+      while (t <= (unsigned long) r);
+
+   return (r % m);
    }
-
 
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+0.2.0 2025-10-10T01:37Z Repair nfoFlipCycle() to match GB_FLIP correctly
+0.1.2 2025-10-09T23:53Z Correct to nfoNextFlip() in nfoUniformFlip()
+0.1.1 2025-10-09T23:44Z Rename to nfoInitFlip() for some consistency
+0.1.0 2025-10-09T23:23Z Add nfoUniformRand(),complete GB_FLIP transposition.
 0.0.4 2025-10-09T03:54Z Introduce nfoRandomInit(), skeleton nfUniformRand().
 0.0.3 2025-10-08T23:31Z Switch to _nfo_pfs and smooth nfoFlipCycle a bit.
 0.0.2 2025-10-07T22:45Z Add mod_diff and nfoFlipCycle aided by Co-Pilot.
