@@ -1,4 +1,4 @@
-dev.txt 0.0.2                  UTF-8                              2024-10-12
+dev.txt 0.0.3                  UTF-8                              2025-10-12
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                            nfoWare/nfoWorks nfoTools
@@ -36,6 +36,9 @@ dev.txt 0.0.2                  UTF-8                              2024-10-12
     NOTICE.txt
         Notice of license and permissions applicable to the nfoFlip code.
 
+    CHANGES-0.0.0.txt
+        Boilerplate for changes in distributions after the first one
+
     This is a working folder.  In the process of development and testing,
     ephemeral materials will be produced here.  They are excluded from the
     GitHub repository.
@@ -62,7 +65,7 @@ dev.txt 0.0.2                  UTF-8                              2024-10-12
  ATTRIBUTION
 
    Hamilton, Dennis E. nfoFlip: Transposed CB_FLIP Development Materials.
-   Text file dev.txt version 0.0.2 dated 2025-10-12, availabe on the
+   Text file dev.txt version 0.0.3 dated 2025-10-12, availabe on the
    Internet as a version of
    <https://github.com/orcmid/nfoTools/devLib/Knuth/nfoFlip/dev/dev.txt>
 
@@ -90,8 +93,16 @@ NOTES AND TODO
   * The public functions need to be consistently named all beginning with
     nfoFlip.
 
+  * Confirm that the URLs given for this repository file work.
+
+  * Figure out where the distribution of nfoFlip 1.0.0 will be provided.
+
+  * Decide how much of the distribution-included files will be digitally
+    signed.
+
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.3 2025-10-12T22:23Z Add CHANGES-0.0.0.txt, update TODOs
  0.0.2 2025-10-12T04:41Z Add TODOs
  0.0.1 2025-10-12T01:59Z Customization for nfoFlip
  0.0.0 2025-10-10T23:45Z Initial text
