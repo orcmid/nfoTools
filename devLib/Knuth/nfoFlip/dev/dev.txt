@@ -1,4 +1,4 @@
-dev.txt 0.0.1                  UTF-8                              2024-10-12
+dev.txt 0.0.2                  UTF-8                              2024-10-12
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                            nfoWare/nfoWorks nfoTools
@@ -62,19 +62,37 @@ dev.txt 0.0.1                  UTF-8                              2024-10-12
  ATTRIBUTION
 
    Hamilton, Dennis E. nfoFlip: Transposed CB_FLIP Development Materials.
-   Text file dev.txt version 0.0.0 dated 2025-10-10, availabe on the
+   Text file dev.txt version 0.0.2 dated 2025-10-12, availabe on the
    Internet as a version of
    <https://github.com/orcmid/nfoTools/devLib/Knuth/nfoFlip/dev/dev.txt>
 
-TODO
+NOTES AND TODO
 
   * Add a small batch file for compiling testFlip.
 
   * At this level develop nfoFlip-1.0.0.txt and packaging as well as
     authentication materials.
 
+  * Create an app to do timing of nfoFlip with a large number of generations.
+    Do the same for nfoUniformFlip
+
+  * Consider adding B-suffixed nfoNextFlipB and nfoUniformFlipB for versions
+    that don't have the birthday separation problem.
+
+  * Find the differences between timings of the B-suffixed and non-suffixed
+    versions.
+
+  * There needs to be an account of the theory behind CB_FLIP and likewise
+    the B-suffixed versions, accounted for in the CB_FLIP Literate Program
+    and the account in TAoCP v.2 section on the end of random number treat-
+    ment and related exercises.
+
+  * The public functions need to be consistently named all beginning with
+    nfoFlip.
+
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.2 2025-10-12T04:41Z Add TODOs
  0.0.1 2025-10-12T01:59Z Customization for nfoFlip
  0.0.0 2025-10-10T23:45Z Initial text
 
