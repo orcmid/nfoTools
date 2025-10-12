@@ -1,4 +1,4 @@
-dev.txt 0.0.0                  UTF-8                              2024-10-10
+dev.txt 0.0.1                  UTF-8                              2024-10-12
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                            nfoWare/nfoWorks nfoTools
@@ -12,7 +12,7 @@ dev.txt 0.0.0                  UTF-8                              2024-10-10
     nfoFlip is a generator of pseudo-random numbers modelled after the
     Stanford GraphBase (SGB) GB_FLIP program, one of the four kernel
     programs of the SGB system.  nfoFlip is separated and refactored
-    for general use along with other SGB materials and derivatives.
+    for general use as well as with other SGB materials and derivatives.
 
     This folder is where the materials of a release are developed and
     tested, followed by packaging in a distribution.
@@ -32,6 +32,9 @@ dev.txt 0.0.0                  UTF-8                              2024-10-10
 
     testFlip.c
         C Language program for verifying correct operation of nfoFlip.c
+
+    NOTICE.txt
+        Notice of license and permissions applicable to the nfoFlip code.
 
     This is a working folder.  In the process of development and testing,
     ephemeral materials will be produced here.  They are excluded from the
@@ -59,9 +62,9 @@ dev.txt 0.0.0                  UTF-8                              2024-10-10
  ATTRIBUTION
 
    Hamilton, Dennis E. nfoFlip: Transposed CB_FLIP Development Materials.
-   Text file nfoFlip.txt version 0.0.1 dated 2024-10-10, availabe on the
+   Text file dev.txt version 0.0.0 dated 2025-10-10, availabe on the
    Internet as a version of
-   <https://github.com/orcmid/nfoTools/devLib/Knuth/nfoFlip/nfoFlip.txt>
+   <https://github.com/orcmid/nfoTools/devLib/Knuth/nfoFlip/dev/dev.txt>
 
 TODO
 
@@ -72,7 +75,8 @@ TODO
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
- 0.0.1 2025-10-10T23:45Z Initial text
+ 0.0.1 2025-10-12T01:59Z Customization for nfoFlip
+ 0.0.0 2025-10-10T23:45Z Initial text
 
 
                         ***** end of dev.txt *****

@@ -1,0 +1,47 @@
+NOTICE.txt 1.0.0                      UTF-8                       2025-10-11
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+                                  nfoFlip NOTICE
+                                  ==============
+
+This work is licensed to you under the Apache License, Version 2.0 (the
+"License"); you may not use this work except in compliance with the License.
+You may obtain a copy of the license at
+
+    <http://www.apache.org/licenses/LICENSE-2.0>.
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+WARRANTIES OR CONDITIONS OF ANY KIND, either expressed or implied.  See
+the License for the specific language governing permission and limitations
+under the License.
+
+THIRD-PARTY ACKNOWLEDGMENT
+
+    nfoFlip is a derivative of Donalde E. Knuth's GB_FLIP program defined on
+    pp.216-221 of "The Stanford GraphBase: A Platform for Combinatorial
+    Computing," Addison-Wesley (Reading MA: 1993) ISBN 978-0-321-60632-7.
+    GB_FLIP is © 1993 Stanford University with derivatives permissible only
+    if the modification is clearly identified as not being part of the
+    GraphBase and is given a different name.  Usage in derived works is
+    otherwise unrestricted.
+
+INFORMAL SUMMARY
+
+    This notification applies only to the materials distributed in the
+    nfoFlip-0.1.0.zip package and not to any content from other sources
+    apart from the unzipped materials.
+
+    You can use and redistribute releases of nfoFlip without limitation.
+    If you modify and/or incorporate nfoFlip in a distribution of your own,
+    you should provide attribution to the origin of nfoFlip and also assert
+    that the locatable original forms are available under the Apache License
+    at <https://orcmid.github.io/nfoTools/dev/D251000>.
+
+    You can provide a different license of your own choosing.  That does not
+    alter the copyright status and license over the portions that do not
+    comprise your original authorship.
+
+    For specific details, consult the complete Apache License.
+
+                     *** end of nfoFlip NOTICE.txt ***
