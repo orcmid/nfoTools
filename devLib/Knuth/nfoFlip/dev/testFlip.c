@@ -1,4 +1,4 @@
-/* testFlip.c 0.1.1                 UTF-8                       2025-10-10
+/* testFlip.c 0.2.0                 UTF-8                       2025-10-13
 * --|----1----|----2----|----3----|----4----|----5----|----6----|----7----*
 *
 *                 nfoFlip IMPLEMENTATION CONFIRMATION TEST
@@ -21,22 +21,22 @@
 
 int main(void)
 {
-    nfoInitFlip(-314159L);
+    nfoFlipInit(-314159L);
 
-    long first = nfoNextFlip();
+    long first = nfoFlipNextRand();
     if (first != 119318998)
          { fputs("testFlip: Failure on the first try!\n", stderr);
            exit(-1);
            }
 
-    for (int j = 1; j <= 133; j++) nfoNextFlip();
+    for (int j = 1; j <= 133; j++) nfoFlipNextRand();
 
-    if (nfoUniformFlip(0x55555555L) != 748103812)
+    if (nfoFlipUniformRand(0x55555555L) != 748103812)
          { fputs("testFlip: Failure on the second try!\n", stderr);
            exit(-2);
            }
 
-    fputs("testFlip: OK, the nfoFlip routines seem to work.\n", stderr);
+    fputs("testFlip: OK, the nfoFlip routines seem to work.\n", stdout);
 
     exit(EXIT_SUCCESS);
 
@@ -44,6 +44,7 @@ int main(void)
 
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+0.2.0 2025-10-13T22:15Z Adjust to current nfoFlip function names
 0.1.1 2025-10-10T01:40Z Write fputs operands in correct order
 0.1.0 2025-10-09T23:48Z Rename to the adjusted nfoFlip.h/c names
 0.0.2 2025-20-08T23:04Z Makes the messages all of the same format

@@ -1,35 +1,37 @@
-/* nfoFlip.c 0.2.0                  UTF-8                       2025-10-10
+/* nfoFlip.c 0.3.0                  UTF-8                       2025-10-13
 * --|----1----|----2----|----3----|----4----|----5----|----6----|----7----*
 *
 *             nfoFlip LAGGED-FIBONACCI PSEUDO-RANDOM NUMBERS
 *             ----------------------------------------------
 *
-* nfoFlip is a transposition of the CB_FLIP.c routine published as a Literate
-* Programming module on pp. 216-221 of "Stanford GraphBase: A Platform for
-* Combinatorial Computing" Addison-Wesley (Reading,MA: 1993).
-* See [Knuth1993b](https://orcmid.github.io/bib/compsci.htm#Knuth1993b)
-* and also <https://www-cs-faculty.stanford.edu/~knuth/sgb.html>.
+* nfoFlip is a transposition of the Literate Program GB_FLIP presented by
+* Donald Knuth in pp. 216-221 of "The Stanford GraphBase: A Platform for
+* Combinatorial Computing", Addison-Wesley (Reading MA, 1993).  See
+* <https://www-cs-faculty.stanford.edu/~knuth/sgb.html> where the original
+* CWEB code is available.  <https://github.com/ascherer/sgb> is a GitHub
+* repository of that source provided and maintained by Andreas Scherer.
 *
+* The §n section numbers refer to sections in the GB_FLIP text from which
+* nfoFlip is derived.
 */
 
 #include "nfoFlip.h"
 
 static long FS[56] = { -1 };  // {§4}
    // Elements FS[55] to FS[1] are values of the current state from which
-   // numbers are taken, in decreasing index order. FS[0] is always -1 to
+   // numbers are taken in decreasing index order. FS[0] is always -1 to
    // force detection that the list has been exhausted and a new cycle must be
    // generated.
 
 extern long *_nfo_pFS = &FS[0];  // {§5 §6}
    // Pointer at the FS[i] having the next generated number to be used.
    // When *_nfo_pFS is -1, the list is exhausted and a new cycle must be
-   // generated.
+   // generated.  See nfoFlipNextRand() in nfoFlip.h.
 
 #define mod_diff(x,y) (((x)-(y)) & 0x7fffffff)
    // Compute (x - y) mod 2**31 for new elements of the FS[] array.
    // XXX: This version presumes 2's complement arithmetic. For a more general
    //      solution, see GB_FLIP §7.
-
 
 long nfoFlipCycle(void)  // {§7}
 {  // Generate a new cycle of 55 pseudo-random numbers in the FS[] array
@@ -40,19 +42,19 @@ long nfoFlipCycle(void)  // {§7}
       FS[i] = mod_diff(FS[i], FS[i+31]);
    for (int i = 25; i <= 55; i++)
       FS[i] = mod_diff(FS[i], FS[i-24]);
-        // Eliminating pointer tricks in favor of compiler optimization.
+        // XXX Delegating GB_FLIP pointer tricks to compiler optimization.
 
    _nfo_pFS = &FS[54];       // Designate the second of the new cycle.
 
    return (FS[55]);          // Return the first of the new cycle.
    }
 
-void nfoInitFlip(long seed)  // {§8}
+void nfoFlipInit(long seed)  // {§8}
 {  // Initialize the FS[] array using the given seed.
 
    long prev, next = 1;
 
-   seed = prev = mod_diff(seed, 0); // Strip off 2's complement sign bit
+   seed = prev = mod_diff(seed, 0); // XXX: Strip off 2's complement sign bit
 
    FS[55] = prev;
    for (int i = 21; i; i = (i + 21) % 55)
@@ -76,7 +78,7 @@ void nfoInitFlip(long seed)  // {§8}
    } /* nfoInitFlip */
 
 
-long nfoUniformFlip(long m)  // {§12}
+long nfoFlipUniformRand(long m)  // {§12}
 {  // Generate a uniformly distributed random number in the range [0, m-1].
 
    #define twoTo31 ((unsigned long) 0x80000000)
@@ -84,12 +86,13 @@ long nfoUniformFlip(long m)  // {§12}
    unsigned long t = twoTo31 - (twoTo31 % m);
       // the largest multiple of m not exceeding 2**31, a uniform block of
       // m cases
+      // TODO: AVOID m < 1 here.
 
    long r;
 
    if (m < 1) return 0; // avoid nonsense
 
-   do { r = nfoNextFlip(); }
+   do { r = nfoFlipNextRand(); }
       while (t <= (unsigned long) r);
 
    return (r % m);
@@ -97,6 +100,7 @@ long nfoUniformFlip(long m)  // {§12}
 
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+0.3.0 2025-10-13T22:10Z Use consistent nfoFlipForm naming, smooth comments.
 0.2.0 2025-10-10T01:37Z Repair nfoFlipCycle() to match GB_FLIP correctly
 0.1.2 2025-10-09T23:53Z Correct to nfoNextFlip() in nfoUniformFlip()
 0.1.1 2025-10-09T23:44Z Rename to nfoInitFlip() for some consistency
