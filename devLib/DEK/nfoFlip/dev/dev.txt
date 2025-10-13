@@ -1,4 +1,4 @@
-dev.txt 0.0.3                  UTF-8                              2025-10-12
+dev.txt 0.0.4                  UTF-8                              2025-10-13
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                            nfoWare/nfoWorks nfoTools
@@ -7,7 +7,7 @@ dev.txt 0.0.3                  UTF-8                              2025-10-12
                NFOFLIP: TRANSPOSED CB_FLIP DEVELOPMENT MATERIALS
                -------------------------------------------------
 
-        <https://github.com/orcmid/nfoTools/devLib/Knuth/nfoFlip/dev/>
+        <https://github.com/orcmid/nfoTools/devLib/DEK/nfoFlip/dev/>
 
     nfoFlip is a generator of pseudo-random numbers modelled after the
     Stanford GraphBase (SGB) GB_FLIP program, one of the four kernel
@@ -65,9 +65,9 @@ dev.txt 0.0.3                  UTF-8                              2025-10-12
  ATTRIBUTION
 
    Hamilton, Dennis E. nfoFlip: Transposed CB_FLIP Development Materials.
-   Text file dev.txt version 0.0.3 dated 2025-10-12, availabe on the
+   Text file dev.txt version 0.0.4 dated 2025-10-13, available on the
    Internet as a version of
-   <https://github.com/orcmid/nfoTools/devLib/Knuth/nfoFlip/dev/dev.txt>
+   <https://github.com/orcmid/nfoTools/devLib/DEK/nfoFlip/dev/dev.txt>
 
 NOTES AND TODO
 
@@ -102,6 +102,7 @@ NOTES AND TODO
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.4 2025-10-13T23:42Z Relocated to devLib/DEK/nfoFlip/dev.txt
  0.0.3 2025-10-12T22:23Z Add CHANGES-0.0.0.txt, update TODOs
  0.0.2 2025-10-12T04:41Z Add TODOs
  0.0.1 2025-10-12T01:59Z Customization for nfoFlip
