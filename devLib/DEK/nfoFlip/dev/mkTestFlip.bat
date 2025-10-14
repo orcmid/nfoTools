@@ -1,15 +1,16 @@
 @echo off
-REM mkTestFlip.bat 0.0.0            UTF-8                         2025-10-13
+REM mkTestFlip.bat 0.0.2            UTF-8                         2025-10-14
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 rem
 rem                          COMPILING testFlip
 rem
 rem    Compile testFlip.exe with optionization for maximum speed.
 
-CL /Fe:testFlip.exe testFlip.c nfoFlip.c @VCflip.opt
+CL /Fe:testFlip.exe testFlip.c nfoFlip.c @VCnfoFlip.opt
 
 rem |----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 rem
+rem 0.0.2  2025-10-14T15:27Z Change options file name to VCnfoFlip.opt.
 rem 0.0.1  2025-10-14T14:48Z Add @VCflip.opt for optimization options.
 rem 0.0.0  2023-06-14T01:35Z Initial version.
 rem
