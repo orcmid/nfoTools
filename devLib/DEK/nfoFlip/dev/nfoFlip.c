@@ -1,4 +1,4 @@
-/* nfoFlip.c 0.3.1                  UTF-8                       2025-10-14
+/* nfoFlipX.c 0.3.3                  UTF-8                       2025-10-15
 * --|----1----|----2----|----3----|----4----|----5----|----6----|----7----*
 *
 *             nfoFlip LAGGED-FIBONACCI PSEUDO-RANDOM NUMBERS
@@ -16,6 +16,8 @@
 */
 
 #include "nfoFlip.h"
+
+extern const char * const nfoFlipVersion = "nfoFlip-0.3.3X";
 
 static long FS[56] = { -1 };  // {§4}
    // Elements FS[55] to FS[1] are values of the current state from which
@@ -108,6 +110,8 @@ long nfoFlipUniformRand(long m)  // {§12}
 
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+0.3.3 2025-10-15T22:31Z Incorporate nfoFlipVersion
+0.3.2 2025-10-15T17:30Z Make experimental version for performance improvement.
 0.3.1 2025-10-14T05:06Z Adjust TODOs based on speedFlip results.
 0.3.0 2025-10-13T22:10Z Use consistent nfoFlipForm naming, smooth comments.
 0.2.0 2025-10-10T01:37Z Repair nfoFlipCycle() to match GB_FLIP correctly
@@ -120,6 +124,6 @@ long nfoFlipUniformRand(long m)  // {§12}
 0.0.1 2025-10-07T21:52Z Use nfo_pFS instead of nfo_fptr. Use § section ids
 0.0.0 2025-10-07T05:20Z Starting up.
 
-                            *** end of nfoFlip.c ***
+                            *** end of nfoFlipX.c ***
 
 */
