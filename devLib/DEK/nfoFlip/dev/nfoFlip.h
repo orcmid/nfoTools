@@ -1,4 +1,4 @@
-/* nfoFlip.h 0.1.4                  UTF-8                       2025-10-15
+/* nfoFlip.h 0.1.5                  UTF-8                       2025-10-15
 * --|----1----|----2----|----3----|----4----|----5----|----6----|----7----*
 *
 *              nfoFlip LAGGED-FIBONACCI PSEUDO-RANDOM NUMBERS
@@ -27,7 +27,7 @@
 *        sequence of results.
 */
 
-#define nfoFlipVersion "nfoFlip-0.3.2X" // pre-release experimental version
+extern const char * const nfoFlipVersion;
 
 void nfoFlipInit(long seed); // §11
 /* TODO: Recommend seed choices, and using the same seed for reproducibility
@@ -50,13 +50,13 @@ long nfoFlipCycle(void); // used to advance FS[] to a fresh set of values §6
    */
 
 long nfoFlipUniformRand(long n); // §13
-// Generate a uniformly distributed random number in the range [0, n-1].
-// When n < 1, 0 is returned.
-
-
+/* Generate a uniformly distributed random number in the range [0, n-1].
+   When n < 1, 0 is returned.
+   */
 
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+0.1.5 2025-10-15T23:19Z Make nfoFlipVersion external
 0.1.4 2025-10-15T18:58Z Correct nfoFlipVersion to match nfoFlipX.c
 0.1.3 2025-10-15T17:26Z Reflect experimental modifications in nfoFlipX.c
 0.1.2 2025-10-14T15:21Z Add nfoFlipVersion, smooth some comments.
