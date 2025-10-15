@@ -1,4 +1,4 @@
-/* speedFlip.c 0.0.5                 UTF-8                       2025-10-15
+/* speedFlip.c 0.0.7                 UTF-8                       2025-10-15
 * --|----1----|----2----|----3----|----4----|----5----|----6----|----7----*
 *
 *                          nfoFlip SPEED TESTING
@@ -24,8 +24,9 @@ int main(int argc, char *argv[])
 
     long lastRand;                 /* final random number obtained */
 
-    fputs("\n[speedFlip] 0.0.0 Performance checking " nfoFlipVersion "\n",
-          stdout);
+    printf("\n[speedFlip] 0.0.0 Performance checking %s\n",
+           nfoFlipVersion);
+
 
     if (argc > 1) reps = strtoull(argv[1], NULL, 10);
     if (reps == 0) reps = defaultReps;
@@ -38,7 +39,7 @@ int main(int argc, char *argv[])
     finishTime = time(NULL);
     elapsed = difftime(finishTime, startTime);
 
-    printf( "\n            %llu nfoFlipNextRand()s took %.2f seconds",
+    printf( "\n            %llu nfoFlipNextRand()s took %.0f seconds",
             reps, elapsed);
     printf( "\n            ending with  %ld\n", lastRand);
 
@@ -48,7 +49,7 @@ int main(int argc, char *argv[])
     finishTime = time(NULL);
     elapsed = difftime(finishTime, startTime);
 
-    printf( "\n            %llu nfoFlipUniformRand()s more took %.2f seconds",
+    printf( "\n            %llu nfoFlipUniformRand()s more took %.0f seconds",
             reps, elapsed);
     printf( "\n            ending with  %ld\n\n", lastRand);
 
@@ -57,12 +58,15 @@ int main(int argc, char *argv[])
 
     } /* main */
 
-/* TODO: Find a better way to enter durations as powers of ten.
-   */
+/* TODO: Find a better way to enter durations as powers of ten.*/
 /* TODO: Have a Help option */
+
+/* TODO: Report repetitions in comma-form numbers */
 
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+0.0.7 2025-10-15T22:59Z Omit decimal places, add TODO
+0.0.6 2025-10-15T22:43Z Use external nfoFlipVersion
 0.0.5 2025-10-15T05:17Z Add TODOs
 0.0.4 2025-10-15T01:16Z Use %llu format for unsigned long long
 0.0.3 2025-10-15T01:11Z Make long long reps count because we need it
