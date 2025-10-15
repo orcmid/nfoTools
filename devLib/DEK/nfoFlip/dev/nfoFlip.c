@@ -1,4 +1,4 @@
-/* nfoFlip.c 0.3.0                  UTF-8                       2025-10-13
+/* nfoFlip.c 0.3.1                  UTF-8                       2025-10-14
 * --|----1----|----2----|----3----|----4----|----5----|----6----|----7----*
 *
 *             nfoFlip LAGGED-FIBONACCI PSEUDO-RANDOM NUMBERS
@@ -86,7 +86,7 @@ long nfoFlipUniformRand(long m)  // {§12}
    unsigned long t = twoTo31 - (twoTo31 % m);
       // the largest multiple of m not exceeding 2**31, a uniform block of
       // m cases
-      // TODO: AVOID m < 1 here.
+
 
    long r;
 
@@ -98,8 +98,17 @@ long nfoFlipUniformRand(long m)  // {§12}
    return (r % m);
    }
 
+/* TODO Improve when the same m is used repeatedly. See how much better
+        speedFlip works.
+        */
+
+/* TODO See if can improve the need to do casts and still get the loop to
+   work properly.
+   */
+
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+0.3.1 2025-10-14T05:06Z Adjust TODOs based on speedFlip results.
 0.3.0 2025-10-13T22:10Z Use consistent nfoFlipForm naming, smooth comments.
 0.2.0 2025-10-10T01:37Z Repair nfoFlipCycle() to match GB_FLIP correctly
 0.1.2 2025-10-09T23:53Z Correct to nfoNextFlip() in nfoUniformFlip()
