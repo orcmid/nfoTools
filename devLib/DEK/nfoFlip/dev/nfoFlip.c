@@ -1,4 +1,4 @@
-/* nfoFlipX.c 0.3.3                  UTF-8                       2025-10-15
+/* nfoFlip.c 0.3.4                  UTF-8                       2025-10-16
 * --|----1----|----2----|----3----|----4----|----5----|----6----|----7----*
 *
 *             nfoFlip LAGGED-FIBONACCI PSEUDO-RANDOM NUMBERS
@@ -17,7 +17,7 @@
 
 #include "nfoFlip.h"
 
-extern const char * const nfoFlipVersion = "nfoFlip-0.3.3X";
+extern const char * const nfoFlipVersion = "nfoFlip-0.3.4";
 
 static long FS[56] = { -1 };  // {§4}
    // Elements FS[55] to FS[1] are values of the current state from which
@@ -100,9 +100,6 @@ long nfoFlipUniformRand(long m)  // {§12}
    return (r % m);
    }
 
-/* TODO Improve when the same m is used repeatedly. See how much better
-        speedFlip works.
-        */
 
 /* TODO See if can improve the need to do casts and still get the loop to
    work properly.
@@ -110,6 +107,7 @@ long nfoFlipUniformRand(long m)  // {§12}
 
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+0.3.4 2025-10-16T04:07Z Revert nfoFlipX to the working nfoFlip.c
 0.3.3 2025-10-15T22:31Z Incorporate nfoFlipVersion
 0.3.2 2025-10-15T17:30Z Make experimental version for performance improvement.
 0.3.1 2025-10-14T05:06Z Adjust TODOs based on speedFlip results.
