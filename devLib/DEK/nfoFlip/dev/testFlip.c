@@ -1,4 +1,4 @@
-/* testFlip.c 0.3.0                 UTF-8                       2025-10-14
+/* testFlip.c 0.3.1                 UTF-8                       2025-10-16
 * --|----1----|----2----|----3----|----4----|----5----|----6----|----7----*
 *
 *                 nfoFlip IMPLEMENTATION CONFIRMATION TEST
@@ -21,7 +21,7 @@
 
 int main(void)
 {
-    fputs("\n[testFlip] 0.3.0 Confirmation of " nfoFlipVersion "\n", stdout);
+    printf("\n[testFlip] 0.3.1 Confirmation of %s\n\n",nfoFlipVersion);
 
     nfoFlipInit(-314159L);
 
@@ -46,6 +46,7 @@ int main(void)
 
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+0.3.1 2025-10-16T04:19Z Get version from nfoFlip.c string
 0.3.0 2025-10-14T15:56Z Update to Report nfoFlip version in nfoTools style
 0.2.0 2025-10-13T22:15Z Adjust to current nfoFlip function names
 0.1.1 2025-10-10T01:40Z Write fputs operands in correct order
