@@ -1,0 +1,82 @@
+DieHarder.txt 0.0.1                 UTF-8                      dh:2025-10-18
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+<https://github.com/orcmid/nfoTools/blob/master/devLib/DieHarder/DieHarder.txt>
+
+           DIEHARDER RANDOM GENERATOR TESTS AND REFERENCE MATERIALS
+           ========================================================
+
+    Dieharder is a random number generator (rng) testing suite. ...
+    Perfect random number generators produce "unlikely" sequences of random
+    numbers -- at exactly the right average rate. Testing a rng is therefore
+    quite subtle.
+      -- from the home page crediting Robert G. Brown, Dirk Eddelbuettel,
+         and David Bauer
+
+MANIFEST
+
+    DieHarder.txt
+        This description file on organization of the archive and use of its
+        materials.
+
+    diehard-fortran/
+       Individual Fortran-77 programs provided by George Marsaglia.  These
+       are the programs of the original diehard tests, along with a specimen
+       data file for exercising the tests.
+
+    dieharder-rgb/
+       This separately-cloned folder is for a fork of the GitHub repository
+       eddelbuettel/dieharder-rgb maintained by Dirk Eddelbuettel on GitHub.
+       It appears to be more current than the dieharder-3.31.1.tgz.
+
+    dieharder-3.31.1.tgz
+       compressed tar file of the dieharder-3.31.1 release files
+
+    dieharder-3.31.1-README.txt
+        from the 3.31.1 release
+
+    dieharder-3.31.1-RGB-abstract.pdf
+        from the web page of Robert G. Brown's Dieharder page at
+        <https://webhome.phy.duke.edu/~rgb/General/dieharder.php>
+
+
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+                      Copyright 2025 Dennis E. Hamilton
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+ ATTRIBUTION
+
+   Hamilton, Dennis E. Dieharder Random Generator Tests and Reference
+   Materials.  nfoTools file DieHarder.txt version 0.0.0 dated 2025-10-18,
+   available on the Internet as a version of
+   <https://github.com/orcmid/nfoTools/blob/master/devLib/DieHarder/DieHarder.txt>
+
+NOTES AND TODO
+
+  * Move diehard-fortran and diehard materials to devLib/DieHard.
+
+  * Get attributions and sources.
+
+  * Perpetuate GPL warnings (as used for GSL) and link to the alternative.
+
+
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+ 0.0.1 2025-10-18T19:05Z Fix run-on line in the manifest
+ 0.0.0 2025-10-18T11:48Z First draft based on devLib.txt boilerplate
+
+                         *** end of DieHarder.txt ***
