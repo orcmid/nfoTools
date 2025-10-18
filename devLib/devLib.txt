@@ -1,4 +1,4 @@
-devLib.txt 0.0.2                    UTF-8                      dh:2025-10-13
+devLib.txt 0.0.3                    UTF-8                      dh:2025-10-17
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
     <https://github.com/orcmid/nfoTools/blob/master/devLib/devLib.txt>
@@ -34,6 +34,11 @@ MANIFEST
        including in volumes of The Art of Computer Programming as well as
        many other sources.
 
+    DieHarder/
+       Materials on the Diehard/Dieharder libraries of tests for random number
+       generators developed by Robert G. Brown (RGB), inspired by the included
+       Diehard battery of tests developed by George Marsaglia.
+
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
@@ -56,7 +61,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. DevLib Algorithms, Utilities and Tools Library
-   Development.  nfoTools file devLib.txt version 0.0.2 dated 2025-10-13,
+   Development.  nfoTools file devLib.txt version 0.0.3 dated 2025-10-17,
    available on the Internet as a version of
    <https://github.com/orcmid/nfoTools/blob/master/devKits/devKits.txt>
 
@@ -77,9 +82,14 @@ NOTES AND TODO
     collisions.  I am looking for whatever help I can find in SGB and in
     The Art of Computer Programming (TAoCP).
 
+  * Arrange a test of nfoFlip with the DieHard/DieHarder tests that are
+    relevant to nfoFlip, focusing on the Birthdate and Birthdate1 tests
+    that nfoFlip fails if not adjusted for.
+
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.3 2025-10-17T22:24Z Add DieHarder/
  0.0.2 2025-10-13T23:45Z Replace /Knuth with /DEK in the manifest
  0.0.1 2025-10-11T22:07Z Use nfoTools/devKits/devKits.txt as boilerplate
        edited for devLib.txt.
