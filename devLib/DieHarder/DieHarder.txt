@@ -1,4 +1,4 @@
-DieHarder.txt 0.0.1                 UTF-8                      dh:2025-10-18
+DieHarder.txt 0.0.2                 UTF-8                      dh:2025-10-18
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 <https://github.com/orcmid/nfoTools/blob/master/devLib/DieHarder/DieHarder.txt>
@@ -28,6 +28,10 @@ MANIFEST
        This separately-cloned folder is for a fork of the GitHub repository
        eddelbuettel/dieharder-rgb maintained by Dirk Eddelbuettel on GitHub.
        It appears to be more current than the dieharder-3.31.1.tgz.
+          Note: a later version of dieharder supported by Dirk Eddelbuettel
+       is at <https://github.com/eddelbuettel/dieharder>.  The ChangeLog file
+       is unchanged but there have been 20 merged changes.  For nfoTools
+       purposes there appears no reason for concern at this time.
 
     dieharder-3.31.1.tgz
        compressed tar file of the dieharder-3.31.1 release files
@@ -76,6 +80,8 @@ NOTES AND TODO
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.2 2025-10-18T21:56Z Point out there is a more-current dieharder
+       repository with a few fixes
  0.0.1 2025-10-18T19:05Z Fix run-on line in the manifest
  0.0.0 2025-10-18T11:48Z First draft based on devLib.txt boilerplate
 
