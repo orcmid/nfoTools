@@ -1,4 +1,4 @@
-# .gitattributes 0.0.4             UTF-8                           2025-10-17
+# .gitattributes 0.0.5             UTF-8                           2025-10-18
 #
 #             GIT ATTRIBUTES FOR THE nfoTools GIT REPOSITORY
 
@@ -14,9 +14,11 @@
 # Denote all files that are truly binary and must not be scanned for line-end.
 # Some of these might also be .gitignored.  Better safe than sorry.
 
+*.txt text
+
 *.bin binary
 *.dat binary
-* ata binary
+*.ata binary
 *.bak binary
 
 *.obj binary
@@ -56,6 +58,7 @@
 *.odm binary
 *.odb binary
 
+# 0.0.5 2025-10-18T19:01Z Make .txt explicitly text
 # 0.0.4 2025-10-17T23:40Z Add MS Office, diehard, and compiler binary files
 # 0.0.3 2023-06-07T23:32Z Add some binary files of drawing tools
 # 0.0.2 2021-02-14T00:59Z Customize for docEng, with some known-binary files
