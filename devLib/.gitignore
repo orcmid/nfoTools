@@ -1,0 +1,20 @@
+# .gitignore 0.0.9                     UTF-8                    dh:2025-10-13
+#
+#                         ORCMID/NFOTOOLS/DEVLIB EXCLUSIONS
+#                         =================================
+#
+#         .GITIGNORE FOR KEEPING GSL LIBRARIES OUT OF THE REPOSITORY
+#
+#   This .gitignore file is designed to eliminate incorporation of GPL-
+#   licensed code from maintenance distribution under the nfoTools
+#   repository on GitHub.  Such materials are generally used in working
+#   libraries for reference and confirmation but not as dependencies of
+#   nfoTools software distributions.
+
+## LIMIT INCOMPATIBLY-LICENSED ARTIFACTS IN THE NFOTOOLS/DEVLIB GITHUB
+## -------------------------------------------------------------------
+
+GSL/gsl-2.8/
+DieHarder/dieharder-rgb/
+
+#                    *** end of .gitignore ***
