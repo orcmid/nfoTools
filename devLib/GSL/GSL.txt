@@ -1,0 +1,80 @@
+GSL.txt 0.0.0                       UTF-8                      dh:2025-10-18
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+    <https://github.com/orcmid/nfoTools/blob/master/devLib/devLib.txt>
+
+                GNU SCIENTIFIC LIBRARY (GSL) DEPENDENCY
+                =======================================
+
+    The latest release of GSL, the GNU Scientific Library, is employed here
+    for reference purposes and confirmation of software that depends on it.
+    The library is a collection of numerical routines for scientific
+    computing.
+
+    GSL is described as free software that can be redistributed and/or
+    modified if under the terms of the GNU General Public License. It is
+    unfortunated that LGPL, the license for libraries was not applied.
+
+    It is asserted in the library that The GNU General Public License does
+    not permit the software to be redistributed in proprietary programs.
+
+    ********************************************************************
+    *                                                                  *
+    *  WARNING: Reliance on this library in other programs requires    *
+    *  those programs to be licensed under the same terms, including   *
+    *  making the source code of those programs freely available.      *
+    *                                                                  *
+    ********************************************************************
+
+    Files of the GSL are employed here for the purpose of reviewing and
+    verifying other software, such as dieharder, that rely on the GSL
+    and are licensed accordingly.  There is no intention of producing
+    new/alternative software that has any such GSL dependency.
+
+    IMPORTANT: The GSL library is not incorporated in the nfoTools GitHub
+    repository.  It is extracted into the nfoTools working set, but not
+    preserved in the nfoTools repository on GitHub.
+
+MANIFEST
+
+gsl-2.8/
+
+
+
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+                      Copyright 2025 Dennis E. Hamilton
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+ ATTRIBUTION
+
+   Hamilton, Dennis E. GNU Scientific Library (GSL) Dependency.  nfoTools file
+   gsl.txt version 0.0.0 dated 2025-10-18, available on the Internet as a
+   version of
+   <https://github.com/orcmid/nfoTools/blob/master/devLib/GSL/gsl.txt>
+
+NOTES AND TODO
+
+  * Add source for obtaining GSL on the Internet
+
+
+
+
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+ 0.0.0 2025-10-18T16:56Z Explanation of GSL Dependencies
+
+                         *** end of GSL.txt ***
