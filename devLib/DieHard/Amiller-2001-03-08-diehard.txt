@@ -1,0 +1,40 @@
+DIEHARD
+-------
+
+Diehard is George Marsaglia's set of 15 tests of generators of random
+INTEGERS.   Most of the tests are not suitable for tesing generators
+of floating-point numbers between 0 and 1; they concentrate on testing
+the randomness of bits within integers.
+
+DIEHARD.F90 has been developed from Fortran code downloaded from:
+http://stat.fsu.edu/pub/diehard
+by Alan Miller (amiller @ bigpond.net.au).
+
+The Fortran code at the above site is NOT in standard Fortran and
+will not compile using any compiler known to the author of this note.
+
+DIEHARD.F90 is in standard Fortran - it will even compile using Lahey's
+ELF90 compiler which only supports a subset of Fortran.
+
+To use this version of Diehard:
+1. Compile the file DIEHARD.F90
+   It contains a main module with all of the tests, followed by a driver
+   program.
+
+2. Generate a binary file of random 32-bit integers using the random
+   number generator which you want to test.   This file should contain
+   4096 blocks of 4096 integers in an unformatted direct access file.
+   See the file t_taus88.f90 for an example.
+
+3. Make sure that the file 'tests.txt' is in the same directory as your
+   executable file.
+
+4. When you run the program DIEHARD.EXE, you will be asked for the name
+   of a file.   Enter the name of the binary file containing the random
+   integers.   You will then be asked to enter a string of 15 1's indicating
+   which tests you want to be run.   e.g. If you enter 101010101010101,
+   tests 1, 3, 5, 7, 9, 11, 13, 15 will be run.
+   You will be asked to enter the name of a file to receive the report.
+
+Alan Miller
+8 March 2001

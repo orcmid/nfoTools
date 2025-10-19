@@ -1,4 +1,4 @@
-DieHard.txt 0.0.1                   UTF-8                      dh:2025-10-19
+DieHard.txt 0.1.0                   UTF-8                      dh:2025-10-19
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 <https://github.com/orcmid/nfoTools/blob/master/devLib/DieHard/DieHard.txt>
@@ -22,12 +22,36 @@ MANIFEST
     diehard-fortran/
        Individual Fortran-77 programs provided by George Marsaglia.  These
        are the programs of the original diehard tests, along with a specimen
-       data file for exercising the tests.
+       data file for exercising the tests, extracted from diehard-fortran.tgz.
+
+    diehard.doc.pdf
+       PDF derived from the diehard.doc Microsoft Word file included in
+       diehard-fortran/.  Created for preservation and viewing in the absence
+       of Microsoft Word or equivalent application for files of that vintage.
 
     diehard-fortran.tgz
        package of the diehard-fortran files that are extracted into the
-       diehard-fortran/ folder
+       diehard-fortran/ folder.  diehard-fortran.tar.gz file available from
+       <https://ftpmirror.your.org/pub/misc/diehard/> and also from
+       <https://web.archive.org/web/20110716052458/http://stat.fsu.edu/pub/diehard/>
 
+    Marsaglia-CDROM-Title.pdf
+       capture of the title of the CD carrying George Marsaglia's giant set of
+       random numbers and the diehard software. Web page for the sources used
+       to access diehard-fortran.tar.gz
+
+    Amiller-2001-03-08-diehard.txt
+       Alan J. Miller's description on use of Amiller-2004-01-14-diehard.f90
+       along with a critique of the Fortran language in diehard-fortran.tgz.
+       See DIEHARD in the list at <https://wp.csiro.au/alanmiller/#misc>.
+
+    Amiller-2004-01-14-diehard.F90
+       Alan J. Miller's transposition of Marsaglia Fortran into a single-file
+       source in Fortran-90 language.
+
+    Amiller-t_taus88.f90
+       Alan J. Miller's program for generating a large file to run through the
+       DieHard tests.  An example for generating files from other generators.
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
@@ -50,17 +74,18 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. Diehard Random-Generator Tests and Reference
-   Materials.  nfoTools file DieHard.txt version 0.0.1 dated 2025-10-19,
+   Materials.  nfoTools file DieHard.txt version 0.1.0 dated 2025-10-19,
    available on the Internet as a version of
    <https://github.com/orcmid/nfoTools/blob/master/devLib/DieHarder/DieHarder.txt>
 
 NOTES AND TODO
 
-   * Get attributions and sources.
+   * Assess for factoring out for development of individual tests.
 
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.1.0 2025-10-19T04:56Z Complete collection of all materials for now.
  0.0.1 2025-10-19T19:12Z Migration of materials from DieHearder/
 
 
