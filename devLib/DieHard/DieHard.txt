@@ -1,9 +1,9 @@
-DieHard.txt 0.0.0                   UTF-8                      dh:2025-10-18
+DieHard.txt 0.0.1                   UTF-8                      dh:2025-10-19
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 <https://github.com/orcmid/nfoTools/blob/master/devLib/DieHard/DieHard.txt>
 
-            DIEHARD RANDOM GENERATOR TESTS AND REFERENCE MATERIALS
+            DIEHARD RANDOM-GENERATOR TESTS AND REFERENCE MATERIALS
             ======================================================
 
     Dieharder is a random number generator (rng) testing suite. ...
@@ -24,7 +24,9 @@ MANIFEST
        are the programs of the original diehard tests, along with a specimen
        data file for exercising the tests.
 
-
+    diehard-fortran.tgz
+       package of the diehard-fortran files that are extracted into the
+       diehard-fortran/ folder
 
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
@@ -47,23 +49,19 @@ MANIFEST
 
  ATTRIBUTION
 
-   Hamilton, Dennis E. Dieharder Random Generator Tests and Reference
-   Materials.  nfoTools file DieHarder.txt version 0.0.0 dated 2025-10-18,
+   Hamilton, Dennis E. Diehard Random-Generator Tests and Reference
+   Materials.  nfoTools file DieHard.txt version 0.0.1 dated 2025-10-19,
    available on the Internet as a version of
    <https://github.com/orcmid/nfoTools/blob/master/devLib/DieHarder/DieHarder.txt>
 
 NOTES AND TODO
 
-  * Move diehard-fortran and diehard materials to devLib/DieHard.
-
-  * Get attributions and sources.
-
-  * Perpetuate GPL warnings (as used for GSL) and link to the alternative.
+   * Get attributions and sources.
 
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
- 0.0.1 2025-10-18T19:05Z Fix run-on line in the manifest
- 0.0.0 2025-10-18T11:48Z First draft based on devLib.txt boilerplate
+ 0.0.1 2025-10-19T19:12Z Migration of materials from DieHearder/
 
-                         *** end of DieHarder.txt ***
+
+                         *** end of DieHard.txt ***
