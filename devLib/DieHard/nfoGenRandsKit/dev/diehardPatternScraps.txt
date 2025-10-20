@@ -1,0 +1,39 @@
+diehardPattern.txt
+
+       subroutine makecmbo
+c****Simple combo, period> 2^60.5
+c***x(n)=x(n-1)*x(n-2) mod 2^32 added to
+c*****period of x(n)=x(n-1)*x(n-2) is 3*2^29 if seeds odd, and one is +or-3 mod
+c*****easy to ensure: replace seed x with 3*x*x.
+c****mwc z=30903*iand(z,65535)+ishft(z,-16)
+        implicit integer(a-z)
+        integer b(4096)
+        character*80 text(16),dum
+        read(4,845) (dum,j=1,104)
+        read(4,845) text
+845     format(a78)
+        print 845,text
+        print*,'              '
+        print*,'  Enter three seed integers:'
+        read*,x,y,z
+        x=x+x+1
+        x=3*x*x
+        y=y+y+1
+       open(1,file='combo.32',form='unformatted',access='direct',
+     & recl=16384)
+         print*,'   Please wait..................'
+        jk=0
+        do 3 i=1,700
+        jk=jk+1
+        do 2 j=1,4096
+        v=x*y
+        x=y
+        y=v
+        z=30903*and(z,65535)+rshift(z,16)
+2       b(j)=y+z
+3       write(1,rec=jk) b
+        print*,'            FINISHED'
+        print*,'  2,867,200 32-bit random integers (11,468,800 bytes)'
+        print*,'  have been written to the file combo.32          '
+        return
+        end
