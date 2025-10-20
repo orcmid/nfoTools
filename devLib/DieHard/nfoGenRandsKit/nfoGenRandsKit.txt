@@ -1,4 +1,4 @@
-nfoGenRandsKit.txt 0.0.0                 UTF-8                  dh:2025-10-20
+nfoGenRandsKit.txt 0.0.1                 UTF-8                  dh:2025-10-20
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 <https://github.com/orcmid/nfoTools/blob/master/devLib/DieHard/nfoGenRandsKit/nfoGenRandsKit.txt>
@@ -20,8 +20,14 @@ MANIFEST
         custom test-file generators for a supplied random number generator.
 
     diehardPattern.txt
-        Extract from diehard-fortran file makewhat.f to scavenge for the
+        copy of diehard-fortran file makewhat.f to scavenge for the
         basic generation pattern
+
+    dev/
+       development of nfoGenRandsKit releases
+
+    test/
+       testing and confirmation of nfoGenRandsKit releases
 
 
 
@@ -54,9 +60,24 @@ NOTES AND TODO
 
    * Assess for factoring out for development of individual tests.
 
+   * I am reluctant to use the diehard binary files because of the problem
+     of numerical byte order and also difficulty detecting damage or
+     corruption in storage.  Also binary piping is not necessarily very
+     reliable.
+
+   * Work variations on binary output, ASCII format, and also possibly
+     base64 encoding of files.  My suspicion is that these operations are
+     input-output bound and better encoding will work just fine.
+
+   * It would be interesting to run compression algorithms on these files.
+     They should not be compressible.
+
+   * Use the VCrayApp model for kit development here.
+
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.1 2025-10-20T23:12Z Expand kit model and add Notes/TODs
  0.0.0 2025-10-20T03:29Z Initial boilerplate for getting started
 
 
