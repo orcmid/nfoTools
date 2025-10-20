@@ -1,4 +1,4 @@
-diehard-fortran.txt 0.0.0           UTF-8                      dh:2025-10-20
+diehard-fortran.txt 0.0.1           UTF-8                      dh:2025-10-20
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 <https://github.com/orcmid/nfoTools/blob/master/devLib/DieHard/diehard-fortran/diehard-fortran.txt>
@@ -13,6 +13,10 @@ MANIFEST
         materials.  Files identified as additional, such as this one,
         are not part of the original distribution.  They are provided
         for purposes of explanation and convenience.
+
+    diehard.doc.pdf (additional)
+        PDF created from diehard.doc using the Windows Print to PDF from
+        the current Microsoft Word of Microsoft 365
 
 
 
@@ -43,14 +47,13 @@ MANIFEST
 
 NOTES AND TODO
 
-   * Bring the diehard.doc.pdf back here.
-
    * Expand the manifest to provide explanations of all the files.
 
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
+ 0.0.1 2025-10-20T17:30Z Bring diehard.doc.pdf to here for preservation
  0.0.0 2025-10-20T16:32Z Initial place-holder
 
 
