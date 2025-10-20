@@ -1,4 +1,4 @@
-diehard-fortran.txt 0.0.1           UTF-8                      dh:2025-10-20
+diehard-fortran.txt 0.0.2           UTF-8                      dh:2025-10-20
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 <https://github.com/orcmid/nfoTools/blob/master/devLib/DieHard/diehard-fortran/diehard-fortran.txt>
@@ -53,6 +53,7 @@ NOTES AND TODO
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
+ 0.0.2 2024-10-20T17:34Z Correct this file's name in diehard-fortran/
  0.0.1 2025-10-20T17:30Z Bring diehard.doc.pdf to here for preservation
  0.0.0 2025-10-20T16:32Z Initial place-holder
 
