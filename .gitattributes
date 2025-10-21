@@ -1,4 +1,4 @@
-# .gitattributes 0.0.5             UTF-8                           2025-10-18
+# .gitattributes 0.0.6             UTF-8                           2025-10-21
 #
 #             GIT ATTRIBUTES FOR THE nfoTools GIT REPOSITORY
 
@@ -18,7 +18,6 @@
 
 *.bin binary
 *.dat binary
-*.ata binary
 *.bak binary
 
 *.obj binary
@@ -58,6 +57,7 @@
 *.odm binary
 *.odb binary
 
+# 0.0.6 2025-10-21T15:34Z Remove .ata from binary files
 # 0.0.5 2025-10-18T19:01Z Make .txt explicitly text
 # 0.0.4 2025-10-17T23:40Z Add MS Office, diehard, and compiler binary files
 # 0.0.3 2023-06-07T23:32Z Add some binary files of drawing tools
