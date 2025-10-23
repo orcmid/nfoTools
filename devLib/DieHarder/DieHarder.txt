@@ -1,4 +1,4 @@
-DieHarder.txt 0.0.3                 UTF-8                      dh:2025-10-19
+DieHarder.txt 0.0.4                 UTF-8                      dh:2025-10-23
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 <https://github.com/orcmid/nfoTools/blob/master/devLib/DieHarder/DieHarder.txt>
@@ -19,11 +19,6 @@ MANIFEST
         This description file on organization of the archive and use of its
         materials.
 
-    diehard-fortran/
-       Individual Fortran-77 programs provided by George Marsaglia.  These
-       are the programs of the original diehard tests, along with a specimen
-       data file for exercising the tests.
-
     dieharder-rgb/
        This separately-cloned folder is for a fork of the GitHub repository
        eddelbuettel/dieharder-rgb maintained by Dirk Eddelbuettel on GitHub.
@@ -42,6 +37,10 @@ MANIFEST
     dieharder-3.31.1-RGB-abstract.pdf
         from the web page of Robert G. Brown's Dieharder page at
         <https://webhome.phy.duke.edu/~rgb/General/dieharder.php>
+
+    DieHarder-Usage+Results-rgbrown.pdf
+        Capture of a web page by Robert G. Brown describing tests run on an
+        RNG that is unacceptable and how to confirm that
 
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
@@ -78,6 +77,8 @@ NOTES AND TODO
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.4 2025-10-23T22:29Z Remove diehard-fortran, adding
+       dieharder-3.31.1-RGB-abstract.pdf
  0.0.3 2025-10-19T00:01Z Moved diehard materials to devLib/DieHeard
  0.0.2 2025-10-18T21:56Z Point out there is a more-current dieharder
        repository with a few fixes
