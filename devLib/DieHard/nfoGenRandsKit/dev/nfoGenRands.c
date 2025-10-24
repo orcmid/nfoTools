@@ -1,4 +1,4 @@
-/* nfoGenRands.c 0.0.4              UTF-8                         2025-10-24
+/* nfoGenRands.c 0.0.5              UTF-8                         2025-10-24
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 *
 *        PRODUCE 2,867,200 RANDOM NUMBERS WITH A SPECIFIED GENERATOR
@@ -6,22 +6,22 @@
 *
 * nfoGenRands.c and the associated nfoGenRands.h header file are templates.
 * Creation of a program to work with a specific random number generator is
-* accomplished by making a renamed and customized copy of nfoGenRands.
-
+* accomplished by making a renamed and customized copy of nfoGenRands.h and
+* compiling with mkGenRands.bat.
 *
 * APPROACH TO CUSTOMIZATION:
 *
 *   customize nfoGenRands.h and save the customization with a name that
 *   distinguishes the generator to be tested.  See nfoGenRands.h for guidance.
-
-*   There is also an example customization, GenStdRand.h, provided to generate
+*
+*   There is an example customization, GenStdRand.h, provided to generate
 *   test streams from the Standard C library random number generator.  See
 *   how that is used along with mkGenRands.bat to produce an executable file
 *   named GenStdRand.exe.
 *
 * BACKGROUND:
 *
-*   nfoGenRands is derived from the 1995 diehard generator makecmbo.f of
+*   nfoGenRands is derived from the 1995 diehard generator makecmbo.f by
 *   George Marsaglia.  The details of a generator to be tested are now
 *   obtained from a customized copy of the header template nfoGenRands.h
 *   rather than being hard-coded into this file.
@@ -31,12 +31,9 @@
 #include <stdlib.h>
 
 #include "mkGenRands.h"
-/* This file is responsible for generating random numbers using a specified
-   algorithm via a customized nfoGenRands.c.  That file, with its distinctive
-   name, is copied to mkGenRands.h by mkGenRands.bat. It can also be done
-   manually as part of a different build procedure.  The rationale is to not
-   have to touch this file, nfoGenRands.c, and to produce generator .exe
-   files having names based on the generator being tested.
+/* A customization of nfoGenRands.h is copied to mkGenRands.h by the script
+   mkGenRands.bat. It will provide all of the definitions for the macros
+   referenced in the program code, below.
    */
 
 int main(int argc, char *argv[])
@@ -84,6 +81,7 @@ int main(int argc, char *argv[])
 
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+   0.0.5  2025-10-24T21:49Z Simplify the initial comments
    0.0.4  2025-10-24T20:21Z More TODOs
    0.0.3  2025-10-23T21:48Z Fix the top-line ruler
    0.0.2  2025-10-23T17:11Z Improved header handling and explanation
