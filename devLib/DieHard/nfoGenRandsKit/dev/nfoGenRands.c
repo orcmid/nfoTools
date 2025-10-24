@@ -1,4 +1,4 @@
-/* nfoGenRands.c 0.0.2              UTF-8                       2025-10-23
+/* nfoGenRands.c 0.0.4              UTF-8                         2025-10-24
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 *
 *        PRODUCE 2,867,200 RANDOM NUMBERS WITH A SPECIFIED GENERATOR
@@ -61,10 +61,30 @@ int main(int argc, char *argv[])
     } /* main */
 
 /* TODO Plenty
+   * Add a title line that includes the nfoGenRands.c and generator versions
+
+   * Add a command-line option to specify the output formatting (default A)
+
+   * Consider base64 output option, which gets 15 longs into 80 characters
+     instead of 10 for the ASCII option.
+
+   * The binary file case is difficult because of endianness issues.  If
+     we consider that the output streams are transient and not used cross-
+     platforms, binary file transfers are OK, but not so easy.
+
+   * We need to know the performance differences among the formats, both
+     for output and for subsequent input.  Input would seem to be more
+     telling when multiple tests are run on the same data.
+
+   * We need utilities to go the reverse directions and provide a basis
+     for checking the results.  I think the ASCII format is the most easy
+     to work with for that purpose.
+
    */
 
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+   0.0.4  2025-10-24T20:21Z More TODOs
    0.0.3  2025-10-23T21:48Z Fix the top-line ruler
    0.0.2  2025-10-23T17:11Z Improved header handling and explanation
    0.0.1  2025-10-22T22:24Z First draft looking like pseudo-code
