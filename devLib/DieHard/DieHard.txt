@@ -1,4 +1,4 @@
-DieHard.txt 0.1.2                   UTF-8                      dh:2025-10-20
+DieHard.txt 0.1.3                   UTF-8                      dh:2025-10-20
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 <https://github.com/orcmid/nfoTools/blob/master/devLib/DieHard/DieHard.txt>
@@ -21,8 +21,7 @@ MANIFEST
 
     diehard-fortran/
        Individual Fortran-77 programs provided by George Marsaglia.  These
-       are the programs of the original diehard tests, along with a specimen
-       data file for exercising the tests, extracted from diehard-fortran.tgz.
+       are the programs extracted from diehard-fortran.tgz.
 
     nfoGenRandsKit/
        Project for constructing diehard-acceptable generators of files to be
@@ -73,7 +72,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. Diehard Random-Generator Tests and Reference
-   Materials.  nfoTools file DieHard.txt version 0.1.2 dated 2025-10-20,
+   Materials.  nfoTools file DieHard.txt version 0.1.3 dated 2025-10-25,
    available on the Internet as a version of
    <https://github.com/orcmid/nfoTools/blob/master/devLib/DieHarder/DieHarder.txt>
 
@@ -84,6 +83,7 @@ NOTES AND TODO
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.1.3 2025-10-25T15:10Z Simplify description of diehard-fortran/
  0.1.2 2025-10-20R17:27Z Move diehard.doc.pdf to diehard-fortran
  0.1.1 2025-10-20T03:33Z Add nfoGenRandKit/
  0.1.0 2025-10-19T04:56Z Complete collection of all materials for now.
