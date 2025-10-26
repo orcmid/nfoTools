@@ -1,4 +1,4 @@
-/* nfoGenRands.c 0.0.5              UTF-8                         2025-10-24
+/* nfoGenRands.c 0.0.6              UTF-8                         2025-10-26
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 *
 *        PRODUCE 2,867,200 RANDOM NUMBERS WITH A SPECIFIED GENERATOR
@@ -13,11 +13,14 @@
 *
 *   customize nfoGenRands.h and save the customization with a name that
 *   distinguishes the generator to be tested.  See nfoGenRands.h for guidance.
+
+*   See combo.h for an example customization using the Marsaglia COMBO
+*   generator.
 *
-*   There is an example customization, GenStdRand.h, provided to generate
-*   test streams from the Standard C library random number generator.  See
-*   how that is used along with mkGenRands.bat to produce an executable file
-*   named GenStdRand.exe.
+*   Another example , GenStdRand.h, is provided to generate test streams
+*   using the Standard C library random number generator.  See how that is
+*   used along with mkGenRands.bat to produce an executable file named
+*   GenStdRand.exe.
 *
 * BACKGROUND:
 *
@@ -81,6 +84,7 @@ int main(int argc, char *argv[])
 
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+   0.0.6  2025-10-26T16:57Z More noodling of comments
    0.0.5  2025-10-24T21:49Z Simplify the initial comments
    0.0.4  2025-10-24T20:21Z More TODOs
    0.0.3  2025-10-23T21:48Z Fix the top-line ruler

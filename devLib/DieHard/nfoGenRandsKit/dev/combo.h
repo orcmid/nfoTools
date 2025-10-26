@@ -1,12 +1,12 @@
-/* combo.h 0.0.1                    UTF-8                         2025-10-23
+/* combo.h 0.0.2                    UTF-8                         2025-10-23
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 *
 *        COMBO RANDOM NUMBER GENERATOR NFOGENRANDS CUSTOMIZATION
 *        -------------------------------------------------------
 *
-*   combo.h is a customization of the nfoGenRands.h template header file to
-*   produce random numbers using the COMBO algorithm of George Marsaglia.
-*
+*   combo.h is a customization of nfoGenRands.h. It is based on George
+*   Marsaglia's COMBO RNG included in the original DIEHARD software.
+
 *   period> 2^60.5
 *   x(n)=x(n-1)*x(n-2) mod 2^32 period is 3*2^29 if seeds odd and one is +or-3
 *   mod
@@ -31,7 +31,13 @@
      :: cing  x1 by 3*(x1+x1+1)^2 and x2 by 2*x2+1.
 */
 
+#define NFOGENVERSION "combo-0.0.2"
+
     long Xcombo, Ycombo, Zcombo;
+        /* Wonky names for x, y, z to avoid possible name clashes
+           where combo.h might be included.  Theses are going to be
+           static variables in the program that includes combo.h
+           */
 
     void combo_init(long x, long y, long z)
         { Xcombo = x + x + 1;
@@ -45,6 +51,7 @@
           Xcombo = Ycombo;
           Ycombo = v;
           Zcombo = 30903 * (Zcombo & 65535) + (Zcombo >> 16);
+            /* TODO: Ensure Zcombo >> 16 matches the Fortran right-shift. */
           return Ycombo + Zcombo;
           }
 
@@ -57,7 +64,8 @@
 
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-   0.0.1  2025-10-29T21:52Z Paste in description from diehard makef.txt.
+   0.0.2  2025-10-26T16:55Z Keep noodling
+   0.0.1  2025-10-25T21:52Z Paste in description from diehard makef.txt.
    0.0.0  2025-10-23T19:25Z Starting up.
 
                            *** end of combo.h ***
