@@ -1,4 +1,4 @@
-DieHarder.txt 0.0.4                 UTF-8                      dh:2025-10-23
+DieHarder.txt 0.0.5                 UTF-8                      dh:2025-10-27
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 <https://github.com/orcmid/nfoTools/blob/master/devLib/DieHarder/DieHarder.txt>
@@ -18,6 +18,11 @@ MANIFEST
     DieHarder.txt
         This description file on organization of the archive and use of its
         materials.
+
+    dieharder.pdf
+        dieharder manual published by Reini Urban on the GitHub Pages at
+        <https://rurban.github.io/dieharder/manual/dieharder.pdf>. That work
+        is a fork of Jochen Voss's <https://github.com/seehuhn/dieharder>.
 
     dieharder-rgb/
        This separately-cloned folder is for a fork of the GitHub repository
@@ -64,7 +69,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. Dieharder Random Generator Tests and Reference
-   Materials.  nfoTools file DieHarder.txt version 0.0.3 dated 2025-10-19,
+   Materials.  nfoTools file DieHarder.txt version 0.0.5 dated 2025-10-27,
    available on the Internet as a version of
    <https://github.com/orcmid/nfoTools/blob/master/devLib/DieHarder/DieHarder.txt>
 
@@ -77,6 +82,7 @@ NOTES AND TODO
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.5 2025-10-27T21:11Z Add dieharder.pdf
  0.0.4 2025-10-23T22:29Z Remove diehard-fortran, adding
        dieharder-3.31.1-RGB-abstract.pdf
  0.0.3 2025-10-19T00:01Z Moved diehard materials to devLib/DieHeard
