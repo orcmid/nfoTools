@@ -1,0 +1,67 @@
+nfoCPUID.txt 0.0.0                  UTF-8                      dh:2025-10-29
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+    <https://github.com/orcmid/nfoTools/blob/master/devLib/nfoCPUID/CPUID.txt>
+
+                     nfoCPUID: DETECTING PROCESSOR FEATURES
+                     ======================================
+
+    A utility function to determine features of the CPU on which a program
+    is running.
+
+    A key purpose is to determine the presence or absence of special features
+    on which a program may depend.  If a program requires a special feature,
+    using nfoCPUID will help determine if requirements are not satisfied
+    and perform some appropriate, user-friendly way to shut down.
+
+MANIFEST
+
+    nfoCPUID.txt
+        This description file with a manifest and supporting Notes and TODOs
+
+
+
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+                      Copyright 2025 Dennis E. Hamilton
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+ ATTRIBUTION
+
+   Hamilton, Dennis E. nfoCPUID: Detecting Processor Features.  nfoTools file
+   nfoCPUID.txt version 0.0.0 dated 2025-10-30, available on the Internet as a
+   version of
+   <https://github.com/orcmid/nfoTools/blob/master/devLib/nfoCPUID/CPUID.txt>
+
+NOTES AND TODO
+
+  * From <https://benlevinson.com/projects/systemInfo> we get that the
+    Hardware cpuid instruction (in assembler) returns 4 32-bit words from
+    registers.
+
+  * From <https://learn.microsoft.com/en-us/cpp/intrinsics/cpuid-cpuidex>
+    we get MSVC-170 description of the two functions __cpuid() and
+    __cpuidEx().  The first parameter is an int cpuInfo[4], the second is
+    an int function_id, and, for __cpuidex, an int subfuction_id.  These
+    are "intrinsics" and the header file is <intrin.h> on Windows.  The
+    example is inscrutible C++.  The details are in reference manuals from
+    Intel and AMD.
+
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+ 0.0.0 2025-10-30T20:25Z Initial placeholder for information gathering.
+
+                          *** end of nfoCPUID.txt ***
