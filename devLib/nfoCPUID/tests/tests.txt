@@ -1,0 +1,62 @@
+tests.txt 0.0.0                     UTF-8                      dh:2025-10-21
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+<https://github.com/orcmid/nfoTools/blob/master/devLib/nfoCPUID/tests/tests.txt>
+
+                   nfoCPUID LIBRARY ROUTINES CONFIRMATION TESTS
+                   ============================================
+
+    Demonstrable tests and examples of constructions and operation with
+    nfoCPUID modules are developed to confirm proper operation of the code.
+
+MANIFEST
+
+    tests.txt
+        This description file on tests for proper operation of nfoCPUID
+        modules and demonstration releases
+
+
+
+
+
+
+
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+                      Copyright 2025 Dennis E. Hamilton
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+ ATTRIBUTION
+
+   Hamilton, Dennis E. nfoCPUID Library Routines Confirmation Tests.  nfoTools
+   file tests.txt version 0.0.0 dated 2025-10-30,available on the Internet as
+   a version of
+   <https://github.com/orcmid/nfoTools/blob/master/devLib/nfoCPUID/tests/tests.txt>
+
+NOTES AND TODO
+
+   * Get the Microsoft C++ example working in Clean C.
+
+   * Find descriptions of the features that make understanding them and
+     exploiting them as understandable as possible.
+
+
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+ 0.0.0 2025-10-30T23:22Z Initial placeholder for getting started
+
+
+                         *** end of tests.txt ***

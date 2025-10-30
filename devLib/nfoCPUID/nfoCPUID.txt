@@ -1,4 +1,4 @@
-nfoCPUID.txt 0.0.0                  UTF-8                      dh:2025-10-29
+nfoCPUID.txt 0.0.1                  UTF-8                      dh:2025-10-30
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
     <https://github.com/orcmid/nfoTools/blob/master/devLib/nfoCPUID/CPUID.txt>
@@ -7,17 +7,27 @@ nfoCPUID.txt 0.0.0                  UTF-8                      dh:2025-10-29
                      ======================================
 
     A utility function to determine features of the CPU on which a program
-    is running.
+    is running.  CPUID is the name of the processor instruction that
+    reports processor features to running programs.
 
     A key purpose is to determine the presence or absence of special features
     on which a program may depend.  If a program requires a special feature,
     using nfoCPUID will help determine if requirements are not satisfied
-    and perform some appropriate, user-friendly way to shut down.
+    and whether any remediation is available.  If an unavailable feature is
+    essential, there should be user-understandable explanation that the
+    program cannot operate and employment of the particular processor is not
+    supported.
 
 MANIFEST
 
     nfoCPUID.txt
         This description file with a manifest and supporting Notes and TODOs
+
+    dev/
+        Development of utility function(s) releases
+
+    tests/
+        test cases for confirmation of operation
 
 
 
@@ -55,13 +65,14 @@ NOTES AND TODO
   * From <https://learn.microsoft.com/en-us/cpp/intrinsics/cpuid-cpuidex>
     we get MSVC-170 description of the two functions __cpuid() and
     __cpuidEx().  The first parameter is an int cpuInfo[4], the second is
-    an int function_id, and, for __cpuidex, an int subfuction_id.  These
+    an int function_id, and, for __cpuidex, an int subfunction_id.  These
     are "intrinsics" and the header file is <intrin.h> on Windows.  The
     example is inscrutible C++.  The details are in reference manuals from
     Intel and AMD.
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.1 2025-10-30T23:01Z Touch up, adding dev/ and tests/ sub-folders
  0.0.0 2025-10-30T20:25Z Initial placeholder for information gathering.
 
                           *** end of nfoCPUID.txt ***
