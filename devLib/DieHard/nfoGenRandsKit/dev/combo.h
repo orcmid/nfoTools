@@ -1,4 +1,4 @@
-/* combo.h 0.0.2                    UTF-8                         2025-10-23
+/* combo.h 0.0.3                    UTF-8                         2025-10-30
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 *
 *        COMBO RANDOM NUMBER GENERATOR NFOGENRANDS CUSTOMIZATION
@@ -40,9 +40,9 @@
            */
 
     void combo_init(long x, long y, long z)
-        { Xcombo = x + x + 1;
-          Xcombo = 3 * Xcombo * Xcombo;
-          Ycombo = y + y + 1;
+        { Xcombo = x + x + 1;            // make odd, 2*x + 1
+          Xcombo = 3 * Xcombo * Xcombo;  // why is this 3 or 5 mod 8?
+          Ycombo = y + y + 1;            // make odd also
           Zcombo = z;
           }
 
@@ -51,7 +51,9 @@
           Xcombo = Ycombo;
           Ycombo = v;
           Zcombo = 30903 * (Zcombo & 65535) + (Zcombo >> 16);
-            /* TODO: Ensure Zcombo >> 16 matches the Fortran right-shift. */
+            /* TODO: Ensure Zcombo >> 16 matches the Fortran right-shift.
+               In the Fortran ishift(), 0 is shifted in on the left,
+               but in Standard C that is assured only for unsigned types. */
           return Ycombo + Zcombo;
           }
 
@@ -64,6 +66,7 @@
 
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+   0.0.3  2025-10-30T20:22Z Hand wring about range and unsigned values
    0.0.2  2025-10-26T16:55Z Keep noodling
    0.0.1  2025-10-25T21:52Z Paste in description from diehard makef.txt.
    0.0.0  2025-10-23T19:25Z Starting up.
