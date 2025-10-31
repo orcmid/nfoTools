@@ -1,4 +1,4 @@
-tests.txt 0.0.0                     UTF-8                      dh:2025-10-21
+tests.txt 0.0.1                     UTF-8                      dh:2025-10-31
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 <https://github.com/orcmid/nfoTools/blob/master/devLib/nfoCPUID/tests/tests.txt>
@@ -14,6 +14,12 @@ MANIFEST
     tests.txt
         This description file on tests for proper operation of nfoCPUID
         modules and demonstration releases
+
+   InstructionSet.cpp
+        The Microsoft Learn program to provide a print-out of CPUID results.
+        This is the source for which a Clean C counterpart is derived to
+        demonstrate that the features are accessed successfully. The code is
+        from <https://learn.microsoft.com/en-us/cpp/intrinsics/cpuid-cpuidex>.
 
 
 
@@ -42,7 +48,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. nfoCPUID Library Routines Confirmation Tests.  nfoTools
-   file tests.txt version 0.0.0 dated 2025-10-30,available on the Internet as
+   file tests.txt version 0.0.1 dated 2025-10-31,available on the Internet as
    a version of
    <https://github.com/orcmid/nfoTools/blob/master/devLib/nfoCPUID/tests/tests.txt>
 
@@ -56,6 +62,7 @@ NOTES AND TODO
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.1 2025-10-31T18:56Z Move InstructionSet.cpp here from dev/
  0.0.0 2025-10-30T23:22Z Initial placeholder for getting started
 
 
