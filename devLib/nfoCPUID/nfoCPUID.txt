@@ -1,4 +1,4 @@
-nfoCPUID.txt 0.0.1                  UTF-8                      dh:2025-10-30
+nfoCPUID.txt 0.0.2                  UTF-8                      dh:2025-10-31
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
     <https://github.com/orcmid/nfoTools/blob/master/devLib/nfoCPUID/CPUID.txt>
@@ -52,7 +52,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. nfoCPUID: Detecting Processor Features.  nfoTools file
-   nfoCPUID.txt version 0.0.0 dated 2025-10-30, available on the Internet as a
+   nfoCPUID.txt version 0.0.2 dated 2025-10-31, available on the Internet as a
    version of
    <https://github.com/orcmid/nfoTools/blob/master/devLib/nfoCPUID/CPUID.txt>
 
@@ -68,10 +68,27 @@ NOTES AND TODO
     an int function_id, and, for __cpuidex, an int subfunction_id.  These
     are "intrinsics" and the header file is <intrin.h> on Windows.  The
     example is inscrutible C++.  The details are in reference manuals from
-    Intel and AMD.
+    Intel and AMD. IT IS IMPORTANT TO GET THIS WORKING IN CLEAN C.
+
+  * There is information on detecting the presence of CPUID support at
+    <https://www.freecodecamp.org/news/retrieve-system-information-using-cpuid/>.
+    This is all in assembler but there is a nice list of the features and how
+    to tell that CPUID is supported and then one can dig out all of the
+    feature settings.
+
+  * This article suggests that CPUID is tricky when running in a VM, and there
+    can be an exit because of it.
+    <https://learn.microsoft.com/en-us/virtualization/api/hypervisor-platform/funcs/whvrunvirtualprocessor>
+
+  * <https://en.wikipedia.org/wiki/CPUID> is helpful, especially in reporting
+    that the feature is supported on Pentiums and others since 1993.  This is
+    enormous.  One saving grace is the examples of Wrapper functions,
+    including the Visual Studio <cpuid.h> and __cpuid() intrinsic. See
+    <https://en.wikipedia.org/wiki/CPUID#CPUID_usage_from_high-level_languages>.
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.2 2025-10-31T00:48Z Expanded TODOs
  0.0.1 2025-10-30T23:01Z Touch up, adding dev/ and tests/ sub-folders
  0.0.0 2025-10-30T20:25Z Initial placeholder for information gathering.
 
