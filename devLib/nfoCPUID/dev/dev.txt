@@ -1,4 +1,4 @@
-dev.txt 0.0.0                       UTF-8                       dh:2025-10-30
+dev.txt 0.0.1                       UTF-8                       dh:2025-10-31
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -13,10 +13,10 @@ MANIFEST
         This description file with manifest, NOTES, and TODOs of code
         organized for production of nfoCPUID library and utility software.
 
-
-
-
-
+    InstructionSet.cpp
+        The Microsoft Learn program to provide a print-out of CPUID results.
+        This is the source for which a Clean C counterpart is derived to
+        demonstrate that the features are accessed successfully.
 
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
@@ -56,6 +56,7 @@ NOTES AND TODO
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.1 2025-10-31T01:00Z Add InstructionSet.cpp from Microsoft Learn
  0.0.0 2025-10-30T23:11Z Initial placeholder for getting started
 
 
