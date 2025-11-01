@@ -1,4 +1,4 @@
-tests.txt 0.0.2                     UTF-8                      dh:2025-10-31
+tests.txt 0.0.3                     UTF-8                      dh:2025-11-01
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 <https://github.com/orcmid/nfoTools/blob/master/devLib/nfoCPUID/tests/tests.txt>
@@ -25,8 +25,12 @@ MANIFEST
         Result of executing compiled InstructionSet.exe on Astraend2, a PC
         with the identifed Intel CPU chip version
 
-
-
+    Ignored Files
+        There are additional files in the working set that are ignored in the
+        GitHub repository.  These are any *.obj and *.exe files created as
+        parts of testing, and an `x64 CMD VS2022` shortcut that launches
+        a Visual Studio x64 Development session with tests/ as the "home"
+        location.
 
 
 
@@ -52,20 +56,29 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. nfoCPUID Library Routines Confirmation Tests.  nfoTools
-   file tests.txt version 0.0.2 dated 2025-10-31,available on the Internet as
+   file tests.txt version 0.0.3 dated 2025-11-01,available on the Internet as
    a version of
    <https://github.com/orcmid/nfoTools/blob/master/devLib/nfoCPUID/tests/tests.txt>
 
 NOTES AND TODO
 
-   * Get the Microsoft C++ example working in Clean C.
-
    * Find descriptions of the features that make understanding them and
      exploiting them as understandable as possible.
 
+   * The VC/C++ intrinsics are described at
+     <https://learn.microsoft.com/en-us/cpp/intrinsics/compiler-intrinsics>.
+     Understanding of these requires examination of platform-provider
+     documentation.
+
+   * VC/C++ compiler option /Oi permits the compiler and optimizer to use
+     intrinsics for many common functions, including ones in the `math.h`
+     library.  An important feature of using intrinsics is that the
+     optimizer can work with them in ways not available when a function is
+     called.
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.3 2025-11-01T19:22Z Add Notes on intrinsics
  0.0.2 2025-10-31T19:56Z Add Astraendo2-InstructionSet.txt
  0.0.1 2025-10-31T18:56Z Move InstructionSet.cpp here from dev/
  0.0.0 2025-10-30T23:22Z Initial placeholder for getting started
