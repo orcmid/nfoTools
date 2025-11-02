@@ -1,4 +1,4 @@
-nfoCPUID.txt 0.0.2                  UTF-8                      dh:2025-10-31
+nfoCPUID.txt 0.0.3                  UTF-8                      dh:2025-11-02
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
     <https://github.com/orcmid/nfoTools/blob/master/devLib/nfoCPUID/CPUID.txt>
@@ -52,7 +52,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. nfoCPUID: Detecting Processor Features.  nfoTools file
-   nfoCPUID.txt version 0.0.2 dated 2025-10-31, available on the Internet as a
+   nfoCPUID.txt version 0.0.3 dated 2025-11-02, available on the Internet as a
    version of
    <https://github.com/orcmid/nfoTools/blob/master/devLib/nfoCPUID/CPUID.txt>
 
@@ -86,8 +86,37 @@ NOTES AND TODO
     including the Visual Studio <cpuid.h> and __cpuid() intrinsic. See
     <https://en.wikipedia.org/wiki/CPUID#CPUID_usage_from_high-level_languages>.
 
+  * My interest is in how to have run-time detection and switching to use of
+    special instructions and, if not, simulate them.  This might not be very
+    effective in gthe simulation case - an alternative approach at a higher
+    level may be required.
+
+  * The general idea, however, is to have external pointers for certain
+    functions and to have the initial setting be one that determines which
+    code to use, switching the pointer so subsequent calls are directly into
+    the use of special instructions or into a simulating procedure.  This
+    does mean the linker needs to include both options, but that should
+    work, since the switcher-procedure refers to both of them.
+
+  * What we don't know is what ones are worth doing this for.  We have to
+    look at the Intel and AMD descriptions, try sticking to common features,
+    and not get excited about intrinsics that are not too useful for this.
+
+  * With regard to raymath, where this might be considered, it is not clear
+    how accerators might be meaningful.  It depends on whether or not the
+    matrix-handling operations are oriented in ways that work.  I also
+    suspect switching has to be at the highest-level possible.
+
+  * I have already suggested creation of a separate raymathX.h and platform-
+    specific raymathX-win32.c etc.
+
+  * There need to be separate MathX-has-feature() calls on specific supported
+    features.  There are used in switchers and can be used by an application
+    to decide among alternatives at a higher level.
+
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.3 2025-11-02T19:22Z Expanded Notes on how this might be usable
  0.0.2 2025-10-31T00:48Z Expanded TODOs
  0.0.1 2025-10-30T23:01Z Touch up, adding dev/ and tests/ sub-folders
  0.0.0 2025-10-30T20:25Z Initial placeholder for information gathering.
