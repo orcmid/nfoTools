@@ -1,4 +1,4 @@
-dev.txt 0.0.1                       UTF-8                     dh:2025-10-21
+dev.txt 0.0.2                       UTF-8                     dh:2025-11-04
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 <https://github.com/orcmid/nfoTools/blob/master/devLib/DieHard/nfoGenRandsKit/dev/dev.txt>
@@ -17,6 +17,19 @@ MANIFEST
     diehardPatternScraps.txt
         Copy of diehardPattern from nfoGenRandsKit that is scavenged for
         C Language code and the header file.
+
+    nfoGenRands.c
+        Program to produce 2,867,200 Random Numbers with a Specified
+        Generator.  The generator inclusion is accomplished with a
+        customization of nfoGenRands.h.
+
+    nfoGenRands.h
+        "Template" header file for incorporating an RNG in a manner for
+        generating sets of random number via nfoGenRands.c for diehard-style
+        testing.
+
+    combo.h
+        Header-only file for the Marsaglia COMBO RNG
 
 
 
@@ -43,7 +56,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. nfoGenRandsKit Development.  nfoTools file dev.txt
-   version 0.0.1 dated 2025-10-21,available on the Internet as a version of
+   version 0.0.2 dated 2025-11-04,available on the Internet as a version of
    <https://github.com/orcmid/nfoTools/blob/master/devLib/DieHard/nfoGenRandsKit/tests/tests.txt>
 
 NOTES AND TODO
@@ -65,6 +78,7 @@ NOTES AND TODO
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.2 2025-11-04T16:34Z Expand Manifest, adjust nature of combo.h
  0.0.1 2025-10-21T15:03Z Add Note on have 3 output options, ASCII hex default
  0.0.0 2025-10-20T23:46Z Initial placeholder for getting started
 
