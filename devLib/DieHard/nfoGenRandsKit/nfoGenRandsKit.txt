@@ -1,4 +1,4 @@
-nfoGenRandsKit.txt 0.0.2                 UTF-8                  dh:2025-10-25
+nfoGenRandsKit.txt 0.1.0                 UTF-8                  dh:2025-11-26
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 <https://github.com/orcmid/nfoTools/blob/master/devLib/DieHard/nfoGenRandsKit/nfoGenRandsKit.txt>
@@ -13,6 +13,28 @@ nfoGenRandsKit.txt 0.0.2                 UTF-8                  dh:2025-10-25
       -- from the home page crediting Robert G. Brown, Dirk Eddelbuettel,
          and David Bauer
 
+    The development of an nfoGenRands for a particular RNG of interest
+    involves three components:
+
+     1. A C Language implementation of a random number generator with
+        expected <rng-name>.c and <rng-name>.h files.
+
+     2. The nfoGenRand fixture, nfoGenRand.c and its customization script,
+        nfoGenRand.bat.
+
+     3. Adapter code, typically <rng-name>Gen.h, that will fit the RNG into
+        the nfoGenRand fixture, providing details for describing the RNG
+        and its utilization as part of nfoGenRand operation.
+
+    The resulting <rng-name>Gen.exe can be used to generate streams of
+    random number by exercising the subject <rnge-name> RNG.  There will also
+    be alternative forms of the output stream.
+
+    Output test streams can be in an ASCII format and optionally a raw binary
+    format and a base64 format.  Testing will confirm the reliability of each
+    and settle on (at least) one of them in the porting of DieHard tests of
+    interest.
+
 MANIFEST
 
     nfoGenRandsKit.txt
@@ -20,7 +42,7 @@ MANIFEST
         custom test-file generators for a supplied random number generator.
 
     dev/
-       development of nfoGenRandsKit releases
+       development of nfoGenRandsKit releases, along with selected RNGs
 
     test/
        testing and confirmation of nfoGenRandsKit releases
@@ -48,8 +70,8 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. Kit for generating diehard-acceptable test files.
-   Materials.  nfoTools file nfoGenRandsKit.txt version 0.0.1 dated
-   2025-10-25,available on the Internet as a version of
+   Materials.  nfoTools file nfoGenRandsKit.txt version 0.1.0 dated
+   2025-11-26,available on the Internet as a version of
    <https://github.com/orcmid/nfoTools/blob/master/devLib/DieHard/nfoGenRandsKit/nfoGenRandsKit.txt>
 
 NOTES AND TODO
@@ -79,9 +101,10 @@ NOTES AND TODO
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.1.0 2025-11-26T00:13Z Add description of the basic scheme for generators
  0.0.2 2025-10-25T15:24Z Touch-ups, more Notes
  0.0.1 2025-10-20T23:12Z Expand kit model and add Notes/TODs
  0.0.0 2025-10-20T03:29Z Initial boilerplate for getting started
 
 
-                         *** end of DieHard.txt ***
+                  *** end of nfoGenRandsKit.txt ***
