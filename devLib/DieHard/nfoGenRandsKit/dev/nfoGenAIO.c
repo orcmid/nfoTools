@@ -1,4 +1,4 @@
-/* nfoGenAIO.c 0.0.3                UTF-8                         2025-11-29
+/* nfoGenAIO.c 0.0.4                UTF-8                         2025-11-29
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 *
 *                 nfoGenAIO ASCII Input/Output Data Files
@@ -71,38 +71,38 @@ size_t nfoGenAIO_write(uint32_t *buf, size_t nwords, FILE *fp);
     return nwords - wordsLeft;
     }
 
-const char nibbles[]  /* HEX DIGITS FILTER FOR THE 128 BASIC ASCII CODES */
+const int8_t nibbles[]  /* HEX DIGITS FILTER FOR THE 128 BASIC ASCII CODES */
 
         /* NUL SOH STX ETX EOT ENQ ACK BEL BS  HT  LF  VT  FF  CR  SO  SI  */
-    = {    19, 17, 17, 17, 17, 17, 17, 17, 17, 16, 16, 16, 16, 16, 17, 17,
+    = {    -4, -2, -2, -2, -2, -2, -2, -2, -2, -1, -1, -1, -1, -1, -2, -2,
 
         /* DLE DC1 DC2 DC3 DC4 NAK SYN ETB CAN EM  SUB ESC FS  GS  RS  US  */
-           17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17,
+           -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2,
 
         /* ' ' '!' '"' '#' '$' '%' '&' ''' '(' ')' '*' '+' ',' '-' '.' '/' */
-           16, 17, 17, 18, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17,
+           -1, -2, -2, -3, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2,
 
         /* '0' '1' '2' '3' '4' '5' '6' '7' '8' '9' ':' ';' '<' '=' '>' '?' */
-            0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 17, 17, 17, 17, 17, 17,
+            0,  1,  2,  3,  4,  5,  6,  7,  8,  9, -2, -2, -2, -2, -2, -2,
 
         /* '@' 'A' 'B' 'C' 'D' 'E' 'F' 'G' 'H' 'I' 'J' 'K' 'L' 'M' 'N' 'O' */
-           17, 10, 11, 12, 13, 14, 15, 17, 17, 17, 17, 17, 17, 17, 17, 17,
+           -2, 10, 11, 12, 13, 14, 15, -2, -2, -2, -2, -2, -2, -2, -2, -2,
 
         /* 'P' 'Q' 'R' 'S' 'T' 'U' 'V' 'W' 'X' 'Y' 'Z' '[' '\' ']' '^' '_' */
-           17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17,
+           -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2,
 
         /* '`' 'a' 'b' 'c' 'd' 'e' 'f' 'g' 'h' 'i' 'j' 'k' 'l' 'm' 'n' 'o' */
-           17, 10, 11, 12, 13, 14, 15, 17, 17, 17, 17, 17, 17, 17, 17, 17,
+           -2, 10, 11, 12, 13, 14, 15, -2, -2, -2, -2, -2, -2, -2, -2, -2,
 
         /* 'p' 'q' 'r' 's' 't' 'u' 'v' 'w' 'x' 'y' 'z' '{' '|' '}' '~' DEL */
-           17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17, 17
+           -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2
         };
 
         /*  The values 0 - 15 are those for the valid hexadecimal digits.
-            Value 16 indicates whitespace characters.
-            Value 17 indicates invalid characters.
-            Value 18 indicates '#' and may be a misplaced comment starter.
-            Value 19 indicates `\0` and may be a stray end-of-string.
+            Value -1 indicates whitespace characters.
+            Value -2 indicates invalid characters.
+            Value -3 indicates '#' and may be a misplaced comment starter.
+            Value -4 indicates `\0` and may be a stray end-of-string.
             */
 
 size_t nfoGenAIO_read(uint32_t *buf, size_t nwords, FILE *fp);
@@ -129,6 +129,7 @@ size_t nfoGenAIO_read(uint32_t *buf, size_t nwords, FILE *fp);
 
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+   0.0.4  2025-11-29T20:52Z Clean up nibbles[] to use int8_t cases
    0.0.3  2025-11-29T02:40Z Work up the nibbles[] table for hex digit decoding
    0.0.2  2025-11-28T23:47Z Improve error cases
    0.0.1  2025-11-28T22:48Z First complete nfoGenAIO_write()
