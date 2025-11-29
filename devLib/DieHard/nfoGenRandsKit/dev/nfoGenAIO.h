@@ -1,4 +1,4 @@
-/* nfoGenAIO.h 0.0.2                UTF-8                         2025-11-28
+/* nfoGenAIO.h 0.1.0                UTF-8                         2025-11-29
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 *
 *                 nfoGenAIO ASCII Input/Output Data Files
@@ -53,6 +53,9 @@ size_t nfoGenAIO_read(uint32_t *buf, size_t nwords, FILE *fp);
     /* reads up to nwords values encoded in ASCII hexadecimal format into
      * buf[].
      *
+     * nfoGenAIO_read() accepts input formatted in the form produced by the
+     * same nwords output via nfoGenAIO_write().
+     *
      * The return value is the number of words actually read.  It
      * may be less than nwords if end-of-file is reached before nwords
      * values are read.
@@ -62,25 +65,37 @@ size_t nfoGenAIO_read(uint32_t *buf, size_t nwords, FILE *fp);
      * Use feof(fp) to check for end-of-file, and ferror(fp) to check
      * for read errors.
      *
-     * the file *fp must be opened for reading before calling this function.
-     *
-     * standard inputs (stdin) may also be used, whether or not being
+     * The file *fp must be opened for reading before calling this function.
+     * Any subsequent closing of file *fp is the responsibility of the caller.
+     * standard input (stdin) may also be used, whether or not being
      * redirected from a file.
      *
-     * nfoGenAIO_read() accepts input formatted in the form produced by the
-     * same nwords output via nfoGenAIO_write().  The procedure is forgiving
-     * of whitespace.  Any spaces and line breaks between the hexadecimal word
-     * values are simply ignored. The number of words per line also doesn't
-     * matter.  nfoGenAIO read() also ignores blank lines and lines beginning
+     * IMPORTANT: **********************************************************
+     *    nfoGenAIO_read() operations must all be performed with the
+     *    same FILE *fp parameter. And no other use of that source should be
+     *    made until nfoGenAIO_read() usage has completed. Otherwise, buffered
+     *    data in nfoGenAIO_read() may be lost and further operation
+     *    interfered with.
+     * *********************************************************************
+     *
+     * nfoGenAIO_read is forgiving of whitespace.  Any spaces and line breaks
+     * breaks between hexadecimal word values are simply ignored.
+     *
+     * The number of words per line also doesn't matter, so long as lines are
+     * no longer than around 128 characters.
+     *
+     * nfoGenAIO_read() also ignores blank lines and lines beginning
      * with "#".
      *
-     * If the last line read from has additional hexadecimal words, they
-     * will be read on the next call to nfoGenAIO_read().
+     * If the last line read from has additional hexadecimal words beyond the
+     * nwords amount successful read, they will be included on the next call
+     * to nfoGenAIO_read().
      */
 
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
+0.1.0  2025-11-29T22:11Z Clean up nfoGenAIO_read() description.
 0.0.2  2025-11-28:23:50Z Fix words per line and revise write error return
 0.0.1  2025-11-28T18:03Z Tighten/touch-up descriptions
 0.0.0  2025-11-26T03:11Z Initial version.
