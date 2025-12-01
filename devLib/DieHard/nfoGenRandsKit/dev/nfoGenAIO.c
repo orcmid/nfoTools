@@ -1,4 +1,4 @@
-/* nfoGenAIO.c 0.0.6                UTF-8                         2025-12-01
+/* nfoGenAIO.c 0.0.7                UTF-8                         2025-12-01
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 *
 *                 nfoGenAIO ASCII Input/Output Data Files
@@ -7,9 +7,9 @@
 *   The nfoGenAIO Utility Procedures provide input and output of binary data
 *   streams in ASCII format.  Data is read and written in hexadecimal format.
 *
-*   The streams conform to the format employed in George Marsaglia's DieHard
-*   battery of RNG tests.  Those streams have chunks of 4096 32-bit words,
-*   10 words per line, 8 hexadecimal digits per word.
+*   The functions produce and accept the format employed in George Marsaglia's
+*   DieHard battery of RNG tests.  Those streams have chunks of 4096 32-bit
+*   words, 10 words per line, 8 hexadecimal digits per word.
 *
 *   The interface contract and behaviours are defined in nfoGenAIO.h
 */
@@ -21,27 +21,29 @@
 #include "nfoGenAIO.h"
 
 
-size_t nfoGenAIO_write(uint32_t *buf, size_t nwords, FILE *fp);
-  {    /* write nwords values from from buf[] to fp in ASCII hexadecimal
-        * format, up to 10 words per line, always starting at the beginning of
-        * a line.
+int nfoGenAIO_write(uint32_t *buf, int nwords, FILE *fp);
+  {    /* write nwords values from buf[] to fp in ASCII hexadecimal format,
+        * up to 10 words per line, always starting at the beginning of
+        * a line with no spaces before any of the encoded words.
         *
-        * The return value is the number of words written.  It will
-        * be the same as nwords unless an error occurs, in which case EOF
-        * is returned in this implementation.
+        * The return value is the number of words written.  It will be 0 if
+        * no words could be written.  If it is EOF there has been an error and
+        * the number of words written is unpredictable; feof(fp) and
+        * ferror(fp) should be checked for details.
         */
 
     const char hex[] = "0123456789ABCDEF";
 
     /* Defend ourselves a little */
        if (buf == NULL) return 0; if (fp == NULL) return 0;
+       if (nwords < 0) nwords = 0;
 
     size_t nWordsLeft = nwords;  // precondition:
     size_t iWordNext = 0;        //    nWordsLeft + iWordNext == nwords
 
     while (nWordsLeft)
           {  size_t nNextChunk = (10 < nWordsLeft) ? 10 : nWordsLeft;
-                             // the number of words to fit on the next line
+                               // the number of words to fit on the next line
 
              while (nNextChunk--)
                    {  /* Advance one word */
@@ -62,9 +64,9 @@ size_t nfoGenAIO_write(uint32_t *buf, size_t nwords, FILE *fp);
                          if( fputs(hexChars, fp) == EOF ) return EOF;
                          }
 
-            /* End the one-chunk line*/
-               if (fputs("\n", fp) == EOF) return EOF;
-            }
+             /* End the one-chunk line*/
+                if (fputs("\n", fp) == EOF) return EOF;
+             }
 
     return nwords - nWordsLeft;
 
@@ -106,7 +108,7 @@ const int8_t nibbles[]  /* HEX DIGITS FILTER FOR THE 128 BASIC ASCII CODES */
             */
 
 
-size_t nfoGenAIO_read(uint32_t *buf, size_t nwords, FILE *fp);
+int nfoGenAIO_read(uint32_t *buf, int nwords, FILE *fp);
   {    /* reads up to nwords values encoded in ASCII hexadecimal format into
         * buf[].  Each value must be represented by 8 hexadecimal digits.
         *
@@ -122,9 +124,9 @@ size_t nfoGenAIO_read(uint32_t *buf, size_t nwords, FILE *fp);
         * Details of operations are specified in nfoGenAIO.h.
         */
 
-    static char textLine[257] = { '\0' };  // extra-safe for one input line
+    static char textLine[NFOGENAIO_MAX_LINE+1] = { '\0' };  // safety margin
+    static bool bTextLineEmpty = true;     // nothing there to process yet
     static int iTextLineNext = 0;          // next char to process
-    static bool bTextLineEmpty = true;     // nothing there to process
 
         /* Initial conditions are as if the buffer is empty and it's ready
            to be filled.  In future calls there may be some data still in
@@ -176,13 +178,17 @@ size_t nfoGenAIO_read(uint32_t *buf, size_t nwords, FILE *fp);
                       continue; /* skip only leading white-space */
                  whiteSpaceOK = false;
 
-                 if (cNibbleType = -4 && nNibblesNeeded == 8)
+                 if (cNibbleType == -4)
                       { bTextLineEmpty = true;
-                        break; /* line ended before any data */
+                        if (nNibblesNeeded == 8)
+                             break;    /* no word data broken up */
+                        else return 0; /* error - incomplete word */
                         }
 
-                  if ( cNibbleType < 0)
-                        return 0; /* error - invalid character */
+                 if ( cNibbleType < 0)
+                       ( bTextLineEmpty = true;
+                         return 0; /* error - invalid character/end */
+                         )
 
                   wordNow = (wordNow << 4) | (uint32_t)cNibbleType;
                   }
@@ -205,6 +211,7 @@ size_t nfoGenAIO_read(uint32_t *buf, size_t nwords, FILE *fp);
 
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+   0.0.7  2025-12-01T23:48Z Smooth error cases, especially in nfoGenAIO_read()
    0.0.6  2025-12-01T16:56Z Touch up nfoGenAIO_write()
    0.0.5  2025-12-01T04:18Z Complete nfoGenAIO_read()
    0.0.4  2025-11-29T20:52Z Clean up nibbles[] to use int8_t cases
