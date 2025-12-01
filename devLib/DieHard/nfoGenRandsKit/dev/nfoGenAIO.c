@@ -1,4 +1,4 @@
-/* nfoGenAIO.c 0.0.5                UTF-8                         2025-12-01
+/* nfoGenAIO.c 0.0.6                UTF-8                         2025-12-01
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 *
 *                 nfoGenAIO ASCII Input/Output Data Files
@@ -13,13 +13,10 @@
 *
 *   The interface contract and behaviours are defined in nfoGenAIO.h
 */
-#include <stdlib.h>
-
-#include <stdio.h>
-
-#include <stdint.h>
-
 #include <stdbool.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 #include "nfoGenAIO.h"
 
@@ -31,7 +28,7 @@ size_t nfoGenAIO_write(uint32_t *buf, size_t nwords, FILE *fp);
         *
         * The return value is the number of words written.  It will
         * be the same as nwords unless an error occurs, in which case EOF
-        * is returned.
+        * is returned in this implementation.
         */
 
     const char hex[] = "0123456789ABCDEF";
@@ -69,7 +66,7 @@ size_t nfoGenAIO_write(uint32_t *buf, size_t nwords, FILE *fp);
                if (fputs("\n", fp) == EOF) return EOF;
             }
 
-    return nwords - wordsLeft;
+    return nwords - nWordsLeft;
 
     } /* nfoGenAIO_write */
 
@@ -208,7 +205,8 @@ size_t nfoGenAIO_read(uint32_t *buf, size_t nwords, FILE *fp);
 
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-   0.0.5  2025-12-01T04:18Z  Complete nfoGenAIO_read()
+   0.0.6  2025-12-01T16:56Z Touch up nfoGenAIO_write()
+   0.0.5  2025-12-01T04:18Z Complete nfoGenAIO_read()
    0.0.4  2025-11-29T20:52Z Clean up nibbles[] to use int8_t cases
    0.0.3  2025-11-29T02:40Z Work up the nibbles[] table for hex digit decoding
    0.0.2  2025-11-28T23:47Z Improve error cases
