@@ -1,43 +1,48 @@
-/* nfoGenAIO.h 0.1.0                UTF-8                         2025-11-29
+/* nfoGenAIO.h 0.2.0                UTF-8                         2025-12-01
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 *
 *                 nfoGenAIO ASCII Input/Output Data Files
 *                 ---------------------------------------
 *
 *   The nfoGenAIO Utility Procedures provide input and output of binary data
-*   streams in ASCII format.  Data is read and written in hexadecimal format.
+*   streams in ASCII format.  Data is read and written in 32-bit words each
+*   coded in 8 hexadecimal digits.
 *
-*   The streams conform to the format employed in George Marsaglia's DieHard
-*   battery of RNG tests.  Those streams have chunks of 4096 32-bit words,
-*   10 words per line, 8 hexadecimal digits per word.  (Note that the last
-*   line has only 6 words.)  nfoGenAIO.h provides procedures to read and
-*   write such streams.
+*   The output streams conform to the format employed in George Marsaglia's
+*   DieHard battery of RNG tests.  Those streams have chunks of 4096 32-bit
+*   words, written with 10 consecutive 8-digit hexadecimal words in each full
+*   line.  (The last line has only 6 words.)
 *
 *   This implementation provides any size of data stream blocks, in any
 *   mixture, not just ones of 4096 words.  For compatibility with DieHard,
 *   however, blocks of 4096 words should be used with no variation.
+*
+*   Input streams are accepted in the same format as output streams.  In
+*   addition, nfoGenAIO_read() is more forgiving, allowing spacing and
+*   other format variations that may be present.
 */
 
+#include <stdint.h>
 #include <stdio.h>
 
-#include <stdint.h>
+#define NFOGENAIO_MAX_LINE 255
+    /* maximum length of an input line, including '\n' and '\0'
+       This must be a value that will never be reached in practical operation.
+       */
 
-
-size_t nfoGenAIO_write(uint32_t *buf, size_t nwords, FILE *fp);
-   /* writes nwords values from from buf[] to fp in ASCII hexadecimal
-    * format, up to 10 words per line, always starting at the beginning of a
-    * line.
+int nfoGenAIO_write(uint32_t *buf, int nwords, FILE *fp);
+   /* writes nwords values from buf[] to fp in ASCII hexadecimal format,
+    * up to 10 words per line, always starting at the beginning of a line
     *
-    * The return value is the number of words written.  It will
-    * be the same as nwords unless an error occurs.
-    *
-    * When the return value does not match nwords, an error has occurred
-    * and EOF is returned.
+    * The return value is the number of words written.  It will be 0
+    * if no words could be written.  If it is EOF there has been an error and
+    * the number of words written is unpredictable; feof(fp) and ferror(fp)
+    * should be checked for details.
     *
     * nfoGenAIO_write() always writes 10 words per line so long as there
-    * are enough, producing a partial line only if necessary  There are
-    * no spaces between the ASCII of successive hexadecimal words.  The
-    * dense formatting preserves compatibility with DieHard format.
+    * are enough, producing a partial line only if necessary.  There are
+    * no spaces before the ASCII of the hexadecimal words.  The dense
+    * formatting preserves compatibility with DieHard format.
     *
     * The file *fp must be opened for writing before calling this function.
     *
@@ -45,12 +50,12 @@ size_t nfoGenAIO_write(uint32_t *buf, size_t nwords, FILE *fp);
     * redirected to a file.  When not expected to be redirected, as when
     * testing small streams, nwords should not be large.
     *
-    * for non-standard outputs, remember to fclose(fp) when done writing.
+    * for non-standard outputs, perform fclose(fp) when done with all writing.
    */
 
 
-size_t nfoGenAIO_read(uint32_t *buf, size_t nwords, FILE *fp);
-    /* reads up to nwords values encoded in ASCII hexadecimal format into
+int nfoGenAIO_read(uint32_t *buf, int nwords, FILE *fp);
+    /* reads up to nwords values decoded from ASCII hexadecimal format into
      * buf[].
      *
      * nfoGenAIO_read() accepts input formatted in the form produced by the
@@ -78,23 +83,23 @@ size_t nfoGenAIO_read(uint32_t *buf, size_t nwords, FILE *fp);
      *    interfered with.
      * *********************************************************************
      *
-     * nfoGenAIO_read is forgiving of whitespace.  Any spaces and line breaks
-     * breaks between hexadecimal word values are simply ignored.
+     * nfoGenAIO_read() is forgiving of whitespace.  Any spaces and line
+     * breaks between hexadecimal word values and at the beginning and ends
+     * of lines are simply ignored.
+     *
+     * nfoGenAIO_read() also ignores blank lines and lines beginning with "#".
      *
      * The number of words per line also doesn't matter, so long as lines are
-     * no longer than around 128 characters.
-     *
-     * nfoGenAIO_read() also ignores blank lines and lines beginning
-     * with "#".
+     * never close to NFOGENAIO_MAX_LINE characters.
      *
      * If the last line read from has additional hexadecimal words beyond the
-     * nwords amount successful read, they will be included on the next call
+     * nwords amount successfully read, they will be included on the next call
      * to nfoGenAIO_read().
      */
 
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-
+0.2.0  2025-12-01T23:45Z Introduce NFOGENAIO_MAX_LINE and smooth descriptions
 0.1.0  2025-11-29T22:11Z Clean up nfoGenAIO_read() description.
 0.0.2  2025-11-28:23:50Z Fix words per line and revise write error return
 0.0.1  2025-11-28T18:03Z Tighten/touch-up descriptions
