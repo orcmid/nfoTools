@@ -1,4 +1,4 @@
-/* nfoGenAIO.c 0.1.0                UTF-8                         2025-12-02
+/* nfoGenAIO.c 0.2.1                UTF-8                         2025-12-02
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 *
 *                 nfoGenAIO ASCII Input/Output Data Files
@@ -21,7 +21,7 @@
 #include "nfoGenAIO.h"
 
 
-int nfoGenAIO_write(uint32_t *buf, int nwords, FILE *fp);
+int nfoGenAIO_write(uint32_t *buf, int nwords, FILE *fp)
   {    /* write nwords values from buf[] to fp in ASCII hexadecimal format,
         * up to 10 words per line, always starting at the beginning of
         * a line with no spaces before any of the encoded words.
@@ -115,7 +115,7 @@ static int iTextLineNext = 0;          // next char to process
            to be filled.  In future calls there may be some data still in
            the buffer and continuation will be from that point.*/
 
-int nfoGenAIO_read(uint32_t *buf, int nwords, FILE *fp);
+int nfoGenAIO_read(uint32_t *buf, int nwords, FILE *fp)
   {    /* reads up to nwords values encoded in ASCII hexadecimal format into
         * buf[].  Each value must be represented by 8 hexadecimal digits.
         *
@@ -199,10 +199,10 @@ int nfoGenAIO_read(uint32_t *buf, int nwords, FILE *fp);
 
                  /* cNibbleType must be -1 */
                  }
-               while true;
+               while (true);
 
          }
-    while true;
+    while (true);
 
   } /* nfoGenAIO_read */
 
@@ -210,6 +210,8 @@ int nfoGenAIO_read(uint32_t *buf, int nwords, FILE *fp);
 
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+   0.2.1  2025-12-02T21:03Z Aligh with nfoGenAIO.h NFOGENAIO_VERSION
+   0.1.1  2025-12-02T20:52Z Fix VS Code lint warnings
    0.1.0  2025-12-02T06:52Z Refactor nfoGenAIO_read() to favor hex word items.
    0.0.7  2025-12-01T23:48Z Smooth error cases, especially in nfoGenAIO_read()
    0.0.6  2025-12-01T16:56Z Touch up nfoGenAIO_write()
