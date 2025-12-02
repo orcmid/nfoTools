@@ -1,4 +1,4 @@
-/* nfoGenAIO.c 0.0.7                UTF-8                         2025-12-01
+/* nfoGenAIO.c 0.1.0                UTF-8                         2025-12-02
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 *
 *                 nfoGenAIO ASCII Input/Output Data Files
@@ -76,37 +76,44 @@ int nfoGenAIO_write(uint32_t *buf, int nwords, FILE *fp);
 const int8_t nibbles[]  /* HEX DIGITS FILTER FOR THE 128 BASIC ASCII CODES */
 
         /* NUL SOH STX ETX EOT ENQ ACK BEL BS  HT  LF  VT  FF  CR  SO  SI  */
-    = {    -4, -2, -2, -2, -2, -2, -2, -2, -2, -1, -4, -1, -1, -1, -2, -2,
+    = {    -2, -3, -3, -3, -3, -3, -3, -3, -3, -1, -2, -1, -1, -1, -3, -3,
 
         /* DLE DC1 DC2 DC3 DC4 NAK SYN ETB CAN EM  SUB ESC FS  GS  RS  US  */
-           -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2,
+           -3, -3, -3, -3, -3, -3, -3, -3, -3, -3, -3, -3, -3, -3, -3, -3,
 
         /* ' ' '!' '"' '#' '$' '%' '&' ''' '(' ')' '*' '+' ',' '-' '.' '/' */
-           -1, -2, -2, -3, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2,
+           -1, -3, -3, -3, -3, -3, -3, -3, -3, -3, -3, -3, -3, -3, -3, -3,
 
         /* '0' '1' '2' '3' '4' '5' '6' '7' '8' '9' ':' ';' '<' '=' '>' '?' */
-            0,  1,  2,  3,  4,  5,  6,  7,  8,  9, -2, -2, -2, -2, -2, -2,
+            0,  1,  2,  3,  4,  5,  6,  7,  8,  9, -3, -3, -3, -3, -3, -3,
 
         /* '@' 'A' 'B' 'C' 'D' 'E' 'F' 'G' 'H' 'I' 'J' 'K' 'L' 'M' 'N' 'O' */
-           -2, 10, 11, 12, 13, 14, 15, -2, -2, -2, -2, -2, -2, -2, -2, -2,
+           -3, 10, 11, 12, 13, 14, 15, -3, -3, -3, -3, -3, -3, -3, -3, -3,
 
         /* 'P' 'Q' 'R' 'S' 'T' 'U' 'V' 'W' 'X' 'Y' 'Z' '[' '\' ']' '^' '_' */
-           -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2,
+           -3, -3, -3, -3, -3, -3, -3, -3, -3, -3, -3, -3, -3, -3, -3, -3,
 
         /* '`' 'a' 'b' 'c' 'd' 'e' 'f' 'g' 'h' 'i' 'j' 'k' 'l' 'm' 'n' 'o' */
-           -2, 10, 11, 12, 13, 14, 15, -2, -2, -2, -2, -2, -2, -2, -2, -2,
+           -3, 10, 11, 12, 13, 14, 15, -3, -3, -3, -3, -3, -3, -3, -3, -3,
 
         /* 'p' 'q' 'r' 's' 't' 'u' 'v' 'w' 'x' 'y' 'z' '{' '|' '}' '~' DEL */
-           -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2
+           -3, -3, -3, -3, -3, -3, -3, -3, -3, -3, -3, -3, -3, -3, -3, -3,
         };
 
         /*  The values 0 - 15 are those for the valid hexadecimal digits.
             Value -1 indicates whitespace characters.
-            Value -2 indicates invalid characters.
-            Value -3 indicates '#' and may be a misplaced comment starter.
-            Value -4 indicates `\0` or `\n`and assume line has ended.
+            Value -2 indicates `\0` or `\n`and assume line has ended.
+            Value -3 indicates invalid characters.
+
             */
 
+static char textLine[NFOGENAIO_MAX_LINE+9] = { '\0' };  // with safety margin
+static bool bTextLineEmpty = true;     // nothing there to process yet
+static int iTextLineNext = 0;          // next char to process
+
+        /* Initial conditions are as if the buffer is empty and it's ready
+           to be filled.  In future calls there may be some data still in
+           the buffer and continuation will be from that point.*/
 
 int nfoGenAIO_read(uint32_t *buf, int nwords, FILE *fp);
   {    /* reads up to nwords values encoded in ASCII hexadecimal format into
@@ -124,14 +131,6 @@ int nfoGenAIO_read(uint32_t *buf, int nwords, FILE *fp);
         * Details of operations are specified in nfoGenAIO.h.
         */
 
-    static char textLine[NFOGENAIO_MAX_LINE+1] = { '\0' };  // safety margin
-    static bool bTextLineEmpty = true;     // nothing there to process yet
-    static int iTextLineNext = 0;          // next char to process
-
-        /* Initial conditions are as if the buffer is empty and it's ready
-           to be filled.  In future calls there may be some data still in
-           the buffer and continuation will be from that point.*/
-
     /* Defend ourselves a little */
        if (buf == NULL) return 0; if (fp == NULL) return 0;
        if (nwords < 0) nwords = 0;
@@ -139,78 +138,79 @@ int nfoGenAIO_read(uint32_t *buf, int nwords, FILE *fp);
     size_t nWordsLeft = nwords;           // precondition:
     size_t iWordNext = 0;                 // nWordsLeft + iWordNext == nwords
 
-    while (nWordsLeft)
-          { if (bTextLineEmpty)
-                { /* it's time to read a line of input. */
-                  if (fgets(textLine, sizeof(textLine)-1, fp) == NULL )
-                       /* EOF or error */
-                       return nwords - nWordsLeft;
-                            /* delivering any data read so far under the
-                               assumption that a future request will get
-                               nothing and report 0 for certain
-                               */
+    do { if (bTextLineEmpty)
+              { /* it's time to read a line of input. */
+                   if (fgets(textLine, sizeof(textLine)-9, fp) == NULL )
+                        /* EOF or error */
+                           return nwords - nWordsLeft;
+                                /* delivering any data read so far under the
+                                   assumption that a future request will get
+                                   nothing and report 0 for certain
+                                   */
 
-                  if (    textLine[0] == '\0'
-                       || textLine[0] == '\n'
-                       || textLine[0] == '#'
-                       )
-                       continue; /* skipping empty and #-comment lines */
+                   if (    textLine[0] == '\0'
+                        || textLine[0] == '\n'
+                        || textLine[0] == '#'
+                        )
+                        continue; /* skipping empty and #-comment lines */
 
-                  iTextLineNext = 0;
-                  bTextLineEmpty = false;
-                  }
+                   iTextLineNext = 0;
+                   bTextLineEmpty = false;
+                   }
 
-            /* Gobble any word that's here now */
+         /* Gobble any words that are here now */
 
-            uint32_t wordNow = 0;
-            int nNibblesNeeded = 8;
-            char cNibbleNow ;
-            int8_t cNibbleType;
-            bool whiteSpaceOK = true;
-
-            do { cNibbleNow = textLine[iTextLineNext++];
+            do { char cNibbleNow = textLine[iTextLineNext++];
                  if (cNibbleNow & 0x80 != 0)
                      return 0; /* error - non-ASCII character */
 
-                 cNibbleType = nibbles[(size_t)cNibbleNow];
+                 int8_t cNibbleType = nibbles[(size_t)cNibbleNow];
 
-                 if (cNibleType == -1 && whiteSpaceOK)
-                      continue; /* skip only leading white-space */
-                 whiteSpaceOK = false;
+                 if (cNibbleType >= 0)
+                      { /* valid hex digit */
 
-                 if (cNibbleType == -4)
-                      { bTextLineEmpty = true;
-                        if (nNibblesNeeded == 8)
-                             break;    /* no word data broken up */
-                        else return 0; /* error - incomplete word */
+                        uint32_t wordNow = 0;
+                        int nNibblesNeeded = 8;
+
+                        do { wordNow = (wordNow << 4) | (uint32_t)cNibbleType;
+
+                             cNibbleNow = textLine[iTextLineNext++];
+                             if (cNibbleNow & 0x80 != 0)
+                                  return 0; /* error - non-ASCII character */
+
+                             cNibbleType = nibbles[(size_t)cNibbleNow];
+                             if (cNibbleType < 0)
+                                  return 0; /* error - incomplete word */
+                             }
+                           while (--nNibblesNeeded);
+
+                        buf[iWordNext++] = wordNow;
+
+                        if (--nWordsLeft == 0)
+                            return nwords; /* success */
+
+                        continue; /* for more words */
                         }
 
-                 if ( cNibbleType < 0)
-                       ( bTextLineEmpty = true;
-                         return 0; /* error - invalid character/end */
-                         )
+                 if (cNibbleType == -2)
+                      { bTextLineEmpty = true;
+                        break;    /* no more line */
+                        }
 
-                  wordNow = (wordNow << 4) | (uint32_t)cNibbleType;
-                  }
+                 /* cNibbleType must be -1 */
+                 }
+               while true;
 
-               while (--nNibblesNeeded);
+         }
+    while true;
 
-            if (!nNibblesNeeded)
-                 { /* got a full word */
-                      buf[iWordNext++] = wordNow;
-                      --nWordsLeft;
-                      }
-
-            }
-
-        return nwords - nWordsLeft;
-
-        } /* nfoGenAIO_read */
+  } /* nfoGenAIO_read */
 
 
 
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+   0.1.0  2025-12-02T06:52Z Refactor nfoGenAIO_read() to favor hex word items.
    0.0.7  2025-12-01T23:48Z Smooth error cases, especially in nfoGenAIO_read()
    0.0.6  2025-12-01T16:56Z Touch up nfoGenAIO_write()
    0.0.5  2025-12-01T04:18Z Complete nfoGenAIO_read()
