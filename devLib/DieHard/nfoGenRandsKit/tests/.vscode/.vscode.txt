@@ -1,4 +1,4 @@
-nfoGenRandsKIt/tests/.vscode.txt 0.0.1 UTF-8                       2023-05-07
+nfoGenRandsKIt/tests/.vscode.txt 0.0.3 UTF-8                       2025-12-03
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
   * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
@@ -50,6 +50,7 @@ MANIFEST
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+0.0.3 2025-12-03T02:10Z Touch up for nfoGenRandsKit/tests/.vscode
 0.0.2 2025-12-02T23:23Z Fix some typos
 0.0.1 2025-12-02T23:18Z Simplified for use in nfoGenRandsKit/tests/
 0.0.0 2025-12-02T23:06Z Cloned from 0.0.6 VCrayApp .vscode.txt
