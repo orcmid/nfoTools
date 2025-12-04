@@ -1,4 +1,4 @@
-/* nfoGenAIO.c 0.2.1                UTF-8                         2025-12-02
+/* nfoGenAIO.c 0.2.2                UTF-8                         2025-12-04
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 *
 *                 nfoGenAIO ASCII Input/Output Data Files
@@ -187,7 +187,7 @@ int nfoGenAIO_read(uint32_t *buf, int nwords, FILE *fp)
                         buf[iWordNext++] = wordNow;
 
                         if (--nWordsLeft == 0)
-                            return nwords; /* success */
+                            return iWordNext; /* success */
 
                         continue; /* for more words */
                         }
@@ -210,6 +210,7 @@ int nfoGenAIO_read(uint32_t *buf, int nwords, FILE *fp)
 
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+   0.2.2  2025-12-04T01:23Z Correct return of words read on success
    0.2.1  2025-12-02T21:03Z Aligh with nfoGenAIO.h NFOGENAIO_VERSION
    0.1.1  2025-12-02T20:52Z Fix VS Code lint warnings
    0.1.0  2025-12-02T06:52Z Refactor nfoGenAIO_read() to favor hex word items.
