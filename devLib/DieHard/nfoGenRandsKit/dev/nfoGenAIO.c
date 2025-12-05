@@ -1,4 +1,4 @@
-/* nfoGenAIO.c 0.2.3                UTF-8                         2025-12-04
+/* nfoGenAIO.c 0.3.0                UTF-8                         2025-12-05
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 *
 *                 nfoGenAIO ASCII Input/Output Data Files
@@ -107,6 +107,11 @@ const int8_t nibbles[]  /* HEX DIGITS FILTER FOR THE 128 BASIC ASCII CODES */
 
             */
 
+#define NFOGENAIO_MAX_LINE 255
+    /* maximum length of an input line, including '\n' and '\0'
+       This must be a value that will never be reached in practical operation.
+       */
+
 static char textLine[NFOGENAIO_MAX_LINE+9] = { '\0' };  // with safety margin
 static bool bTextLineEmpty = true;     // nothing there to process yet
 static int iTextLineNext = 0;          // next char to process
@@ -140,7 +145,7 @@ int nfoGenAIO_read(uint32_t *buf, int nwords, FILE *fp)
 
     do { if (bTextLineEmpty)
               { /* it's time to read a line of input. */
-                   if (fgets(textLine, sizeof(textLine)-9, fp) == NULL )
+                   if (fgets(textLine, NFOGENAIO_MAX_LINE, fp) == NULL )
                         /* EOF or error */
                            return (int)iWordNext;
                                 /* delivering any data read so far under the
@@ -166,7 +171,7 @@ int nfoGenAIO_read(uint32_t *buf, int nwords, FILE *fp)
 
                  int8_t cNibbleType = nibbles[(size_t)cNibbleNow];
 
-                 if (cNibbleType >= 0)
+                 if (cNibbleType > -1)
                       { /* valid hex digit */
 
                         uint32_t wordNow = (uint32_t)cNibbleType;
@@ -174,16 +179,18 @@ int nfoGenAIO_read(uint32_t *buf, int nwords, FILE *fp)
 
                         while (nNibblesNeeded--)
                               { cNibbleNow = textLine[iTextLineNext++];
-                                if (cNibbleNow & 0x80 != 0)
-                                     return 0; /* error - non-ASCII */
+                                if ((cNibbleNow & 0x80) != 0)
+                                      return 0; /* error - non-ASCII */
 
                                 cNibbleType = nibbles[(size_t)cNibbleNow];
+
                                 if (cNibbleType < 0)
                                   return 0; /* error - incomplete word */
 
                                 wordNow = (wordNow << 4)
                                           | (uint32_t)cNibbleType;
                                }
+
 
                         buf[iWordNext++] = wordNow;
 
@@ -211,6 +218,7 @@ int nfoGenAIO_read(uint32_t *buf, int nwords, FILE *fp)
 
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+   0.3.0  2025-12-05T02:56Z Fix erroneous check on non-ASCII characters
    0.2.3  2025-12-04T05:50Z Correct gathering of words exact hex digits
    0.2.2  2025-12-04T01:23Z Correct return of words read on success
    0.2.1  2025-12-02T21:03Z Aligh with nfoGenAIO.h NFOGENAIO_VERSION
