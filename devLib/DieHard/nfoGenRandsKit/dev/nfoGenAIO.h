@@ -1,4 +1,4 @@
-/* nfoGenAIO.h 0.2.1                UTF-8                         2025-12-02
+/* nfoGenAIO.h 0.2.3                UTF-8                         2025-12-05
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 *
 *                 nfoGenAIO ASCII Input/Output Data Files
@@ -22,7 +22,11 @@
 *   other format variations that may be present.
 */
 
-#define NFOGENAIO_VERSION "nfoGenAIO-0.2.1"
+#define NFOGENAIO_VERSION "nfoGenAIO-0.2.3"
+   /* Version string for nfoGenAIO module.  This is updated whenever
+      nfoGenAIO.c and nfoGenAIO.h are changed in any way.  The versions
+      are now synchronized between the two files.
+      */
 
 #include <stdint.h>
 #include <stdio.h>
@@ -101,6 +105,7 @@ int nfoGenAIO_read(uint32_t *buf, int nwords, FILE *fp);
 
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+0.2.3  2025-12-05T00:31Z Align nfoGenAIO.h and nfoGenAIO.c version numbers
 0.2.1  2025-12-02T21:01Z Add and align NFOGENAIO_VERSION with nfoGenAIO.c
 0.2.0  2025-12-01T23:45Z Introduce NFOGENAIO_MAX_LINE and smooth descriptions
 0.1.0  2025-11-29T22:11Z Clean up nfoGenAIO_read() description.
