@@ -1,0 +1,14 @@
+#test2.txt 0.0.1                    UTF-8                         2025-12-11
+#---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+# This file has the same data as test1.txt but with variations, such as blank
+# lines, lines starting with #, and also spaces everywhere but always with
+# correct data values.  The result with nfoGENAI-test2 should be the same as
+# when test1.txt is used.
+
+     00000000
+11111111   22222222  33333333444444445555555566666666777777778888888899999999
+AAAAAAAABBBBBBBBCCCCCCCCDDDDDDDDEEEEEEEEFFFFFFFF800000007FFFFFFF
+01234567 89ABCDEF FEDCBA98 76543210
+
+#                        *** end of test2.txt ***

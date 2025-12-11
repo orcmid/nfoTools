@@ -1,4 +1,4 @@
-tests.txt 0.1.1                     UTF-8                      dh:2025-12-08
+tests.txt 0.1.2                     UTF-8                      dh:2025-12-11
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 <https://github.com/orcmid/nfoTools/blob/master/devLib/DieHard/nfoGenRandsKit/tests/tests.txt>
@@ -28,16 +28,22 @@ MANIFEST
     nfoGenAIO-test1.c
         nfoGenAIO_write( ) function test
     nfoGenAIO-0.2.1-test1-success-2025-12-03-png
-        Output of successful ngoGenAIO-test1
+        Output of successful nfoGenAIO-test1
+
 
     test1.txt
         Correct output from test1 used as input to test2
+    test2.txt
+        A still-correct version of test1 with many of the nfoGenAIO_read( )
+        allowances also exploited
 
     mkGenAIO-test2.bat
         Script for compiling nfoGenAIO-test2.c with VC/C++ CL.exe
     nfoGenAIO-test2.c
         nfoGenAIO_read( ) function test
     nfoGenAIO-0.2.1-test2-success-2025-12-04-1905.png
+    nfoGenAIO-0.3.0-test2-read-success-2025-12-11-1516.png
+       Output of successful nfoGenAIO-test2 with test2.txt input
 
     VCoptions.opt
         @VCoptions.opt options for CL.exe VC/C++ x64 compiles, used by the
@@ -68,14 +74,11 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. nfoGenRandsKit Confirmation Tests.  nfoTools file
-   tests.txt version 0.1.1 dated 2025-12-08,available on the Internet as a
+   tests.txt version 0.1.2 dated 2025-12-11,available on the Internet as a
    version of
    <https://github.com/orcmid/nfoTools/blob/master/devLib/DieHard/nfoGenRandsKit/tests/tests.txt>
 
 NOTES AND TODO
-
-   * Make simple cases for generating fixed values and also data from some
-     known software RNGs.
 
    * Work variations on kit output options: ASCII format (default), and also
      possibly base64 encoding and pur binary output.  My suspision is that
@@ -83,9 +86,13 @@ NOTES AND TODO
      just fine.  ASCII default is to have something readable where particular
      values can be checked.
 
+   * Although nfoGenAIO_read( ) has been confirmed with correct inputs,
+     the detecting and handling of defects in the input has not been
+     exercised.
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.1.2 2025-12-11T23:23Z Add test2.txt file and test results
  0.1.1 2025-12-08T22:41Z Update the manifest to include all current tests
  0.1.0 2025-12-03T02:07Z Inclusion of nfoGenAIO-test1.c materials
  0.0.0 2025-10-21T15:26Z Initial placeholder for getting started
