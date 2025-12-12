@@ -1,4 +1,4 @@
-dev.txt 0.0.3                       UTF-8                     dh:2025-12-01
+dev.txt 0.0.4                       UTF-8                     dh:2025-12-12
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 <https://github.com/orcmid/nfoTools/blob/master/devLib/DieHard/nfoGenRandsKit/dev/dev.txt>
@@ -27,6 +27,10 @@ MANIFEST
     nfoGenAIO.h
         header file for use of nfoGenAIO.c procedures with DieHard and other
         utilities for which hex recording of 32-bit word data is useful.
+
+    nfoGenBIO.h
+        header file for use of nfoGenBIO.c procedures with DieHard and other
+        utilities for which binary recording of 32-bit word data is useful.
 
     nfoGenRands.c
         Program to produce 2,867,200 Random Numbers with a Specified
@@ -66,7 +70,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. nfoGenRandsKit Development.  nfoTools file dev.txt
-   version 0.0.3 dated 2025-12-01,available on the Internet as a version of
+   version 0.0.4 dated 2025-12-12,available on the Internet as a version of
    <https://github.com/orcmid/nfoTools/blob/master/devLib/DieHard/nfoGenRandsKit/tests/tests.txt>
 
 NOTES AND TODO
@@ -99,6 +103,7 @@ NOTES AND TODO
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.4 2025-12-12T01:37Z Manifest nfoGenaaaabio.h
  0.0.3 2025-12-01T22:58Z Update Manifest, add nfoGenAIO TODOs.
  0.0.2 2025-11-04T16:34Z Expand Manifest, adjust nature of combo.h
  0.0.1 2025-10-21T15:03Z Add Note on have 3 output options, ASCII hex default
