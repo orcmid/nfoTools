@@ -1,0 +1,54 @@
+/* nfoGenBIO-Win32.c 0.0.0          UTF-8                         2025-12-13
+** -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+*
+*                   nfoGenBIO Binary Transfer File Setup
+*                   ------------------------------------
+*
+*   nfoGenBIO-Win32.c is a *platform-specific* component for nfoGenBIO.  The
+*   name identifies its encapsulation of Windows-specific functionality for
+*   handling binary transfer files via the nfoGenBIO.h procedures.
+*
+*   The intention is accomodation of other platforms by distinctly-suffixed
+*   file names on the same pattern, with compilation and linking done using
+*   the appropriate nfoGenBIO-*.c file.
+*/
+
+#include <stdint.h>
+#include <stdio.h>
+
+#include <windows.h>
+
+/* XXX: Provisionally: Use L_tmpnam as the size of string to get a generated
+        temporary filename.
+        Following the last read and closing of an input file, a remove
+        operation might be performed.  This should be the case if the name
+        is obtained via piping.  This could be confusing.  Think this through.
+        Maybe need L_tmpnam_s and tmpnam_s( ).
+          In C11, these are part of an Extended Library.  I need to know if
+        that changes for later versions of the ISO C Language Standard.
+        It appears that the changes have been permanent since
+          One problem is I want temporary files to be in the current working
+        directory, not the global TMP or TEMP locations.
+          The examples on Windows show complete paths into AppData.  That's
+        undesirable because of file sizes and limited C:\ capacity.
+          On Windows is it possible to fudge the TMP environment variable
+        and then fudge it back to the TEMP value ???
+
+           The descriptions of these for the VC/C++ Windows run-time library
+        are pretty awful and also unclear.
+
+        There may be some help in the use of <direct.h> and using _chdir.
+        There's also _getcwd.
+        */>
+
+
+
+
+/* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+
+0.0.0  2025-12-13T21:13Z Initial placeholder.
+
+                       *** end of nfoGenBIO-Win32.c ***
+
+   */
