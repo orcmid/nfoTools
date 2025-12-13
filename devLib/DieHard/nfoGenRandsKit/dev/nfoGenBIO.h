@@ -26,6 +26,10 @@
 *   text-based formats. It is also not suitable for interchange from one
 *   computer to another because of differences in internal representations and
 *   their communication in binary formats.
+*
+*   Note: These files are not appropriate for piping/redirecting because the
+*         do not have text formatting and may be misinterpreted.  However,
+*         it can be useful to pipe the names of the files.
 */
 
 #define NFOGENBIO_VERSION "nfoGenBIO-0.0.1"
@@ -35,6 +39,21 @@
 #include <stdint.h>
 #include <stdio.h>
 
+/* XXX: Use L_tmpnam as the size of string to get a generated temporary
+        filename.
+        Following the last read and closing of an input file, a remove
+        operation might be performed.  This should be the case if the name
+        is obtained via piping.  This could be confusing.  Think this through.
+        Maybe need L_tmpnam_s and tmpnam_s( ).
+          In C11, these are part of an Extended Library.  I need to know if
+        that changes for later versions of the ISO C Language Standard.
+          One problem is I want temporary files to be in the current working
+        directory, not the global TMP or TEMP locations.
+          The examples on Windows show complete paths into AppData.  That's
+        undesirable because of file sizes and limited C:\ capacity.
+          On Windows it is possible to fudge the TMP environment variable
+        and then fudge it back to the TEMP value ???
+        */
 
 size_t nfoGenBIO_write(uint32_t *buf, size_t nwords, FILE *fp)
   { /* writes nwords values from buf[0] to buf[nwords-1] out to fp in direct

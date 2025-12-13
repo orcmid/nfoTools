@@ -1,4 +1,4 @@
-dev.txt 0.0.4                       UTF-8                     dh:2025-12-12
+dev.txt 0.0.5                       UTF-8                     dh:2025-12-13
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 <https://github.com/orcmid/nfoTools/blob/master/devLib/DieHard/nfoGenRandsKit/dev/dev.txt>
@@ -70,7 +70,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. nfoGenRandsKit Development.  nfoTools file dev.txt
-   version 0.0.4 dated 2025-12-12,available on the Internet as a version of
+   version 0.0.5 dated 2025-12-13,available on the Internet as a version of
    <https://github.com/orcmid/nfoTools/blob/master/devLib/DieHard/nfoGenRandsKit/tests/tests.txt>
 
 NOTES AND TODO
@@ -100,10 +100,28 @@ NOTES AND TODO
    * nfoGenAIO_read() should be factored to perform best in favor of the
      default format created with nfoGenAIO_write.
 
+   * nfoGenBIO.h needs an nfoGenBIO-Win32.c to deal with opening of a
+     temporary file in the current working directory (typically where the
+     .exe is on my PC).  The idea is to have the files be on a SSD and be
+     where there is much room for development and data purposes.  So
+     particularly where DieHard (or DieQuick) are operated.  It looks like
+     this is platform specific.
+
+   * So the temp creation might need to be optional.  The application can
+     be built to always supply the FILE* to use.
+
+   * Have to rationalize this with the consumption of BIO files in RNG
+     assessments as well.  How the RNG test set will learn of and use the
+     appropriate file.
+
+   * I wonder if the consumer should specify where the test file should be
+     produced.  It's late and I think I will come at this more clear-headed.
+
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
- 0.0.4 2025-12-12T01:37Z Manifest nfoGenaaaabio.h
+ 0.0.5 2025-12-13T05:46Z Elaborate on using a temporary file.
+ 0.0.4 2025-12-12T01:37Z Manifest nfoGenBIO.h
  0.0.3 2025-12-01T22:58Z Update Manifest, add nfoGenAIO TODOs.
  0.0.2 2025-11-04T16:34Z Expand Manifest, adjust nature of combo.h
  0.0.1 2025-10-21T15:03Z Add Note on have 3 output options, ASCII hex default
