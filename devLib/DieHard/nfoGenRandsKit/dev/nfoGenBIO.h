@@ -1,10 +1,10 @@
-/* nfoGenBIO.h 0.0.1                UTF-8                         2025-12-12
+/* nfoGenBIO.h 0.0.2                UTF-8                         2025-12-12
 ** -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 *
 *                 nfoGenBIO Binary Input/Output Data Files
 *                 ----------------------------------------
 *
-*   nfoGenBIO is a header-only file.  The procedures are simple and will
+*   nfoGenBIO is a mostly-header library.  Mostprocedures are simple and will
 *   likely be expanded inline by optimizing compilers.
 *
 *   nfoGenBIO procedures provide utility input and output of binary data
