@@ -1,4 +1,4 @@
-dev.txt 0.0.6                       UTF-8                     dh:2025-12-13
+dev.txt 0.0.7                       UTF-8                     dh:2025-12-14
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 <https://github.com/orcmid/nfoTools/blob/master/devLib/DieHard/nfoGenRandsKit/dev/dev.txt>
@@ -73,7 +73,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. nfoGenRandsKit Development.  nfoTools file dev.txt
-   version 0.0.6 dated 2025-12-13,available on the Internet as a version of
+   version 0.0.7 dated 2025-12-14,available on the Internet as a version of
    <https://github.com/orcmid/nfoTools/blob/master/devLib/DieHard/nfoGenRandsKit/tests/tests.txt>
 
 NOTES AND TODO
@@ -92,16 +92,9 @@ NOTES AND TODO
      default.  I want performance comparisons between the 3 cases to see
      what the differences might be.
 
-   * nfoGenAIO.c should have nfoGenAIO_read() optimized for the the case
-     of data sets produced by nfoGenAIO_write().
-
    * nfoGenAIO needs an nfoGenAIO_reset() to allow optional change of
      FILE* fp, resetting of the nfoGenAIO_read buffer.  Clearing of any
-     clearing any input-output error/EOF state must be done by the user,
-     however.
-
-   * nfoGenAIO_read() should be factored to perform best in favor of the
-     default format created with nfoGenAIO_write.
+     any input-output error/EOF state must be done by the user, however.
 
    * nfoGenBIO.h needs an nfoGenBIO-Win32.c to deal with opening of a
      temporary file in the current working directory (typically where the
@@ -113,6 +106,9 @@ NOTES AND TODO
    * So the temp creation might need to be optional.  The application can
      be built to always supply the FILE* to use.
 
+   * I can always change TMP in a script.  That would mean having to use a
+     script to run an app using nfoGenBIO though.
+
    * Have to rationalize this with the consumption of BIO files in RNG
      assessments as well.  How the RNG test set will learn of and use the
      appropriate file.
@@ -120,9 +116,22 @@ NOTES AND TODO
    * I wonder if the consumer should specify where the test file should be
      produced.  It's late and I think I will come at this more clear-headed.
 
+   * I wonder if raylib's external/rdrand.h sets RAND_MAX or is there a
+     collision there.  I also wonder why the generator used there is not
+     offered for single rand( )-equivalent calls.
+
+   * I must test the generator used by raylib in rdrand.h.
+
+   * When I typed an attribution to co-pilot line in nfoGenBIO.h, two names
+     of people I don't know were suggested.  I must look into that just for
+     fun.
+
+   * I also need to be clear about copilot-assisted code.
+
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.7 2024-12-14T17:40Z Touch-ups and more on temp-file creation
  0.0.6 2024-12-14T21:23Z Add nfoGenBIO-win32.c, review TODOs
  0.0.5 2025-12-13T05:46Z Elaborate on using a temporary file.
  0.0.4 2025-12-12T01:37Z Manifest nfoGenBIO.h

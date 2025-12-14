@@ -1,4 +1,4 @@
-/* nfoGenBIO-Win32.c 0.0.0          UTF-8                         2025-12-13
+/* nfoGenBIO-Win32.c 0.0.1          UTF-8                         2025-12-13
 ** -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 *
 *                   nfoGenBIO Binary Transfer File Setup
@@ -11,6 +11,9 @@
 *   The intention is accomodation of other platforms by distinctly-suffixed
 *   file names on the same pattern, with compilation and linking done using
 *   the appropriate nfoGenBIO-*.c file.
+*   -----------------------------------------------------------------------
+*   Attribution: This program is copilot assisted.
+*   -----------------------------------------------------------------------
 */
 
 #include <stdint.h>
@@ -26,7 +29,7 @@
         Maybe need L_tmpnam_s and tmpnam_s( ).
           In C11, these are part of an Extended Library.  I need to know if
         that changes for later versions of the ISO C Language Standard.
-        It appears that the changes have been permanent since
+        It appears that the changes have been permanent since at lease C21.
           One problem is I want temporary files to be in the current working
         directory, not the global TMP or TEMP locations.
           The examples on Windows show complete paths into AppData.  That's
@@ -38,7 +41,8 @@
         are pretty awful and also unclear.
 
         There may be some help in the use of <direct.h> and using _chdir.
-        There's also _getcwd.
+        There's also _getcwd.  I might not need a complete <windows.h> include
+        for that.
         */>
 
 
@@ -47,6 +51,7 @@
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
+0.0.1  2025-12-14T17:41Z More thinking outloud. copilot attribution.
 0.0.0  2025-12-13T21:13Z Initial placeholder.
 
                        *** end of nfoGenBIO-Win32.c ***
