@@ -1,4 +1,4 @@
-/* nfoGenBIO-Win32-temps.c 0.0.1    UTF-8                         2025-12-16
+/* nfoGenBIO-Win32-temps.c 0.0.5    UTF-8                         2025-12-16
 ** -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 *
 *                   nfoGenBIO Temporary File Experiments
@@ -36,6 +36,8 @@
 
 #include <stdlib.h>
 
+#include <string.h>
+
 
 
 int main( void )
@@ -45,10 +47,14 @@ int main( void )
        Preference for _mktemp_s is that it generates just the file name
        and not a full path and all of that gunk. */
 
-       fputs ( "[GenTemps] Temporary Filename Generation Experiment 0.0.1\n",
+       fputs ( "[GenTemps] Temporary Filename Generation Experiment 0.0.5\n",
             stdout );
 
-    char tmpname[ ] = "nfoGenBIOXXXXXX";
+    #define TEMPLATE "nfoGenBIOXXXXXX"
+
+/* MAKE FIRST TEMP FILE */
+
+    char tmpname[ ] = TEMPLATE;
 
     errno_t err = _mktemp_s( tmpname, sizeof( tmpname ) );
 
@@ -60,7 +66,30 @@ int main( void )
 
     printf( "           First temporary filename: %s\n", tmpname );
 
-    errno_t err = _mktemp_s( tmpname, sizeof( tmpname ) );
+    /* The template has been modified by this first call to _mktemp_s.
+       If this name is not used, resubmitting the same template will not
+       result in a new name.
+       */
+
+    FILE* temp1;
+    if (fopen_s(&temp1, tmpname, "w" ) != 0 )
+        {  printf( "           Unable to create: %s\n", tmpname);
+           return EXIT_FAILURE;
+           }
+
+    printf( "           %s opened successfully.\n\n", tmpname );
+
+    fputs( "[GenTemps] This is a temporary file created for nfoGenBIO.\n"
+           "           Find where I am created :)!\n",
+           temp1 );
+
+/* MAKE SECOND TEMP FILE */
+
+
+    strcpy_s( tmpname, sizeof( tmpname ), TEMPLATE );
+       /* resetting the template for second use */
+
+    err = _mktemp_s( tmpname, sizeof( tmpname ) );
 
     if ( err != 0 )
          {  printf( "           Second _mktemp_s ERRNO: %d\n", err );
@@ -68,6 +97,23 @@ int main( void )
             }
 
     printf( "           Second temporary filename: %s\n", tmpname );
+
+    FILE* temp2;
+    if (fopen_s(&temp2, tmpname, "w" ) != 0 )
+        {  printf( "           Unable to create: %s\n", tmpname );
+           return EXIT_FAILURE;
+           }
+
+    printf( "           %s opened successfully.\n\n", tmpname );
+
+    fputs( "[GenTemps] This is a temporary file created for nfoGenBIO.\n"
+           "           Find where I am created :)!\n",
+           temp2 );
+
+    /* CLEAN UP */
+
+    fclose( temp1 );
+    fclose( temp2 );
 
     return EXIT_SUCCESS;
     } /* GenTemps */
@@ -106,6 +152,11 @@ int main( void )
 
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+
+   0.0.5  2025-12-16T22:52Z Open and write both temp files.
+   0.0.4  2025-12-16T21:20Z Spell strcpy_s and #include <string.h>.
+   0.0.3  2025-12-16T21:17Z Refresh the template before second use.
+   0.0.2  2025-12-16T21:02Z Eliminated double declaration of err
    0.0.1  2025-12-16T20:49Z Initial experiment with _mktemp_s.
    0.0.0  2025-12-16T18:09Z Initial placeholder.
 

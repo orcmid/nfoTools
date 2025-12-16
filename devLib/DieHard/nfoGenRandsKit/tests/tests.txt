@@ -1,4 +1,4 @@
-tests.txt 0.1.4                     UTF-8                      dh:2025-12-16
+tests.txt 0.1.5                     UTF-8                      dh:2025-12-16
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 <https://github.com/orcmid/nfoTools/blob/master/devLib/DieHard/nfoGenRandsKit/tests/tests.txt>
@@ -30,10 +30,6 @@ MANIFEST
     nfoGenAIO-0.2.1-test1-success-2025-12-03-png
         Output of successful nfoGenAIO-test1
 
-    nfoGenBIO-win32-temps.c
-        Program to exercise the naming, location, and creation of temp files
-        on Win32
-
     test1.txt
         Correct output from test1 used as input to test2
     test2.txt
@@ -48,9 +44,20 @@ MANIFEST
     nfoGenAIO-0.3.0-test2-read-success-2025-12-11-1516.png
        Output of successful nfoGenAIO-test2 with test2.txt input
 
+    mkGenTemps.bat
+        Script for compiling nfoGenBIO-win32-temps.c to GenTemps.exe
+    nfoGenBIO-win32-temps.c
+        Program to exercise the naming, location, and creation of temp files
+        on Win32
+    GenTemps-0.0.5-success-2025-12-16-1441.png
+        Build and successful operation of nfoGenBIO-win32 0.0.5
+    nfoGenBIOa06672-GenTemps-0.0.5-temp1.txt
+    nfoGenBIOb06672-GenTemps-0.0.5-temp2.txt
+       Two files generated in this working folder using GenTemps
+
     VCoptions.opt
         @VCoptions.opt options for CL.exe VC/C++ x64 compiles, used by the
-        mkGenAIO-*.bat scripts
+        mkGen*.bat scripts
 
     .vscode
         folder of configuration information for VS Code
@@ -77,7 +84,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. nfoGenRandsKit Confirmation Tests.  nfoTools file
-   tests.txt version 0.1.4 dated 2025-12-16, available on the Internet as a
+   tests.txt version 0.1.5 dated 2025-12-16, available on the Internet as a
    version of
    <https://github.com/orcmid/nfoTools/blob/master/devLib/DieHard/nfoGenRandsKit/tests/tests.txt>
 
@@ -93,14 +100,9 @@ NOTES AND TODO
      the detecting and handling of defects in the input has not been
      exercised.
 
-   * The use of temp files and the ability to choose their locations is a
-     mystery in the Microsoft Visual Studio documentation of the platform-
-     specific bits.  I want to figure that out for nfoGenBIO-win32.c and
-     I must have some sort of tests to figure it out.  Then I need a general
-     way to explain it with respect to Win32.
-
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.1.5 2025-12-15T23:13Z Complete nfoGenBIO0win32-temps.c GenTemps testing
  0.1.4 2025-12-16T18:13Z Establish nfoGenAIO-win32-temps.c
  0.1.3 2025-12-15T18:28Z Add TODOs about nfoGenBIO-win32.c being able to use
        platform-specific temp files
