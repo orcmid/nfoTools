@@ -1,10 +1,10 @@
-/* nfoGenBIO.h 0.0.2                UTF-8                         2025-12-12
+/* nfoGenBIO.h 0.0.3                UTF-8                         2025-12-16
 ** -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 *
 *                 nfoGenBIO Binary Input/Output Data Files
 *                 ----------------------------------------
 *
-*   nfoGenBIO is a mostly-header library.  Mostprocedures are simple and will
+*   nfoGenBIO is a mostly-header library.  Most procedures are simple and will
 *   likely be expanded inline by optimizing compilers.
 *
 *   nfoGenBIO procedures provide utility input and output of binary data
@@ -12,8 +12,8 @@
 *   of 8-bit bytes.
 *
 *   These binary streams correspond to the preferred format employed in George
-*   Marsaglia's DieHard battery of RNG tests.  Those streams have blocks of
-*   4096 32-bit words.
+*   Marsaglia's DieHard battery of RNG tests.  Those streams are produced and
+*   consumed in blocks of 4096 32-bit words.
 *
 *   IMPORTANT: nfoGenBIO-formatted files are intended for generated data
 *      retained only long enough for processing in DieHard (and other) tests.
@@ -32,34 +32,22 @@
 *         it can be useful to pipe the names of the files.
 */
 
-#define NFOGENBIO_VERSION "nfoGenBIO-0.0.1"
-   /* Version string for this nfoGenBIO module.
+#define NFOGENBIO_VERSION "nfoGenBIO-0.0.2"
+   /* Version string for this nfoGenBIO module.  It is coordinated with the
+    * version in nfoGenBIO-*.c for the platform-specific components.
       */
 
 #include <stdint.h>
+
 #include <stdio.h>
 
-/* XXX: Use L_tmpnam as the size of string to get a generated temporary
-        filename.
-        Following the last read and closing of an input file, a remove
-        operation might be performed.  This should be the case if the name
-        is obtained via piping.  This could be confusing.  Think this through.
-        Maybe need L_tmpnam_s and tmpnam_s( ).
-          In C11, these are part of an Extended Library.  I need to know if
-        that changes for later versions of the ISO C Language Standard.
-          One problem is I want temporary files to be in the current working
-        directory, not the global TMP or TEMP locations.
-          The examples on Windows show complete paths into AppData.  That's
-        undesirable because of file sizes and limited C:\ capacity.
-          On Windows it is possible to fudge the TMP environment variable
-        and then fudge it back to the TEMP value ???
-        */
 
 size_t nfoGenBIO_write(uint32_t *buf, size_t nwords, FILE *fp)
   { /* writes nwords values from buf[0] to buf[nwords-1] out to fp in direct
     *  binary format.
     *
-    * The file *fp must be opened for writing before calling this function.
+    * The file *fp must be opened for binary writing before calling this
+    * function.
     *
     * The return value is the number of words actually written.  It may be
     * less than nwords if an error occurs during writing or if the the space
@@ -106,6 +94,7 @@ size_t nfoGenBIO_read(uint32_t *buf, size_t nwords, FILE *fp);
 
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+0.0.2  2025-12-16T05:30Z More pondering, touching up comments.
 0.0.1  2025-12-12T20:35Z Complete read and write procedures
 0.0.0  2025-12-12T01:27Z Initial draft.
 

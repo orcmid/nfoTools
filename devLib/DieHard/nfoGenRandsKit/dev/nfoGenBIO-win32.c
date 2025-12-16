@@ -1,4 +1,4 @@
-/* nfoGenBIO-Win32.c 0.0.1          UTF-8                         2025-12-13
+/* nfoGenBIO-Win32.c 0.0.3          UTF-8                         2025-12-16
 ** -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 *
 *                   nfoGenBIO Binary Transfer File Setup
@@ -19,10 +19,18 @@
 #include <stdint.h>
 #include <stdio.h>
 
-#include <windows.h>
+#include <io.h>
 
-/* XXX: Provisionally: Use L_tmpnam as the size of string to get a generated
-        temporary filename.
+/* XXX: Provisionally: Use _mktemp_s generated temporary filename using a
+        given basename template "baseXXXXXX", where base is chosen to reflect
+        the application (such as the RNG being tested).  The XXXXXX will be
+        changed in-place to a unique alphanumeric string by _mktemp_s( ).
+
+        The result is a rewrite filename without any path components.
+
+        Examples tend to use 8-character names with no file extension.  That
+        should be acceptable here, but I wonder if it can be done better.
+
         Following the last read and closing of an input file, a remove
         operation might be performed.  This should be the case if the name
         is obtained via piping.  This could be confusing.  Think this through.
@@ -43,14 +51,18 @@
         There may be some help in the use of <direct.h> and using _chdir.
         There's also _getcwd.  I might not need a complete <windows.h> include
         for that.
-        */>
+
+        I'm going to start with simple tests to see what all of this does
+        and now to get control of it, especially with regard to choosing
+        the file locations in some simple way.
+        */
 
 
 
 
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-
+0.0.2  2025-12-16T05:29Z More pondering
 0.0.1  2025-12-14T17:41Z More thinking outloud. copilot attribution.
 0.0.0  2025-12-13T21:13Z Initial placeholder.
 
