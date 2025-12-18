@@ -1,4 +1,4 @@
-tests.txt 0.1.5                     UTF-8                      dh:2025-12-16
+tests.txt 0.1.6                     UTF-8                      dh:2025-12-18
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 <https://github.com/orcmid/nfoTools/blob/master/devLib/DieHard/nfoGenRandsKit/tests/tests.txt>
@@ -49,11 +49,8 @@ MANIFEST
     nfoGenBIO-win32-temps.c
         Program to exercise the naming, location, and creation of temp files
         on Win32
-    GenTemps-0.0.5-success-2025-12-16-1441.png
-        Build and successful operation of nfoGenBIO-win32 0.0.5
-    nfoGenBIOa06672-GenTemps-0.0.5-temp1.txt
-    nfoGenBIOb06672-GenTemps-0.0.5-temp2.txt
-       Two files generated in this working folder using GenTemps
+    GenTemps-0.1.0-success-2025-12-17-1551.png
+        Build and successful operation of nfoGenBIO-win32-temps.c 0.1.0
 
     VCoptions.opt
         @VCoptions.opt options for CL.exe VC/C++ x64 compiles, used by the
@@ -61,6 +58,14 @@ MANIFEST
 
     .vscode
         folder of configuration information for VS Code
+
+    grt/
+        Folder for (usually-transient) temporary files under test
+        This will end up being used for generated RNG test files for their
+        testing, as well as tests of the software.  I'll just have to deal
+        with that.
+
+        NOTE: Test (result) files with no extension are excluded from Git.
 
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
