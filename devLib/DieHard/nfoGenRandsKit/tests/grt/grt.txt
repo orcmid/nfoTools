@@ -1,0 +1,60 @@
+grt.txt 0.0.1                       UTF-8                      dh:2025-12-18
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+<https://github.com/orcmid/nfoTools/blob/master/devLib/DieHard/nfoGenRandsKit/tests/grt/grt.txt>
+
+                       GENERATED RNG TEST TEMPORARY FILES
+                       ==================================
+
+    This folder is designed for receipt of generated RNG-specific test files
+    for temporary usage.  The files are quite large and generated in the
+    testing of individual RNGs.  The files can always be regenerated using
+    the same test-file generation and do not need to be preserved beyond the
+    running of tests on them.
+
+MANIFEST
+
+    grt.txt
+        This description file on tests for proper operation of nfoGenRands
+        customizations and confirmation of output when possible.
+
+    nfoGenBIOa16756.txt
+    nfoGenBIOb16756.txt
+        Test results from GemTemps 0.1.0
+
+        NOTE: Test (result) files with no extension are excluded from Git.
+
+
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+                      Copyright 2025 Dennis E. Hamilton
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+ ATTRIBUTION
+
+   Hamilton, Dennis E. Generated RNG Test Temporary Files.  nfoTools file
+   grt.txt version 0.0.1 dated 2025-12-17, available on the Internet as a
+   version of
+   <https://github.com/orcmid/nfoTools/blob/master/devLib/DieHard/nfoGenRandsKit/tests/grt/grt.txt>
+
+
+
+*---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
+
+ 0.0.0 2025-12-18T00:52Z Simple manifest for RNG Test temp files
+
+
+                         *** end of grt.txt ***

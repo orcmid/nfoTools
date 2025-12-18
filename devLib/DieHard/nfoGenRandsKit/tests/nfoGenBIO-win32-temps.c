@@ -1,4 +1,4 @@
-/* nfoGenBIO-Win32-temps.c 0.0.5    UTF-8                         2025-12-16
+/* nfoGenBIO-Win32-temps.c 0.1.0    UTF-8                         2025-12-17
 ** -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 *
 *                   nfoGenBIO Temporary File Experiments
@@ -20,7 +20,25 @@
 *
 *   NOTE: This exercise is specific to the Windows 10 configuration at
 *         orcmid's personal computer.  Other Windows configurations may
-*         be suitable; that is not being considered here.
+*         be suitable; that is not being considered here.  The solution
+*         in nfoGenBIO-Win32.c shall be portable to other Windows only.
+*
+*   Without decoration, _mktemp_s( ) generates files names based on what
+*   ones are already opened.  This is no problem for nfoGenBIO, for which
+*   multiple files are not opened.  There may be a problem about what ones
+*   exist, so there is a small likelihood of collision with existing files
+*   on an open.  So long as the temporary files are deleted after use,
+*   this should not be a problem.
+*
+*   The default location for _mktemp_s( ) is the current working directory.
+*   This may be good enough.
+*
+*   If the prefix begins with "\\", the root of the current working drive
+*   is used.  Not so great.  But "dir\\.." seems to work fine, putting the
+*   temporary files in a folder beneath the current working directory.
+*
+*   However, the "XXXXXX" must be the end of the template. Anything else
+*   causes failure.
 *
 *   -----------------------------------------------------------------------
 *   Attribution: This program is co-pilot assisted.
@@ -45,14 +63,14 @@ int main( void )
        successive uses of a "template" work.
 
        Preference for _mktemp_s is that it generates just the file name
-       and not a full path and all of that gunk. */
+       and not a full path and all of that gunk, unless in the template */
 
-       fputs ( "[GenTemps] Temporary Filename Generation Experiment 0.0.5\n",
+       fputs ( "[GenTemps] Temporary Filename Generation Experiment 0.1.0\n",
             stdout );
 
-    #define TEMPLATE "nfoGenBIOXXXXXX"
+    #define TEMPLATE "grt\\nfoGenBIOXXXXXX"
 
-/* MAKE FIRST TEMP FILE */
+/* ATTEMPT CONTROLLING DIRECTORY */
 
     char tmpname[ ] = TEMPLATE;
 
@@ -79,9 +97,10 @@ int main( void )
 
     printf( "           %s opened successfully.\n\n", tmpname );
 
-    fputs( "[GenTemps] This is a temporary file created for nfoGenBIO.\n"
-           "           Find where I am created :)!\n",
-           temp1 );
+    fputs( "[GenTemps] This is a temporary file created for nfoGenBIO\n"
+           "           created at ", temp1);
+    fputs( tmpname, temp1);
+    fputs( "\n", temp1);
 
 /* MAKE SECOND TEMP FILE */
 
@@ -106,9 +125,10 @@ int main( void )
 
     printf( "           %s opened successfully.\n\n", tmpname );
 
-    fputs( "[GenTemps] This is a temporary file created for nfoGenBIO.\n"
-           "           Find where I am created :)!\n",
-           temp2 );
+    fputs( "[GenTemps] This is a temporary file created for nfoGenBIO\n"
+           "           created at ", temp2);
+    fputs( tmpname, temp2);
+    fputs( "\n", temp1);
 
     /* CLEAN UP */
 
@@ -118,41 +138,27 @@ int main( void )
     return EXIT_SUCCESS;
     } /* GenTemps */
 
-/* XXX: Following the last read and closing of an input file, a remove
-        operation might be performed.  This should be the case if the name
-        is obtained via piping.  This could be confusing.  Think this through.
-        Maybe need L_tmpnam_s and tmpnam_s( ).
-          In C11, these are part of an Extended Library.  I need to know if
-        that changes for later versions of the ISO C Language Standard.
-        It appears that the changes have been permanent since at lease C21.
-          One problem is I want temporary files to be in the current working
-        directory, not the global TMP or TEMP locations.
-          The examples on Windows show complete paths into AppData.  That's
-        undesirable because of file sizes and limited C:\ capacity.
-          On Windows is it possible to fudge the TMP environment variable
-        and then fudge it back to the TEMP value ???
+/* XXX:
 
-           The descriptions of these for the VC/C++ Windows run-time library
+        The descriptions of these for the VC/C++ Windows run-time library
         are pretty awful and also unclear.
-
-        There may be some help in the use of <direct.h> and using _chdir.
-        There's also _getcwd.  I might not need a complete <windows.h> include
-        for that.
 
         I'm going to start with simple tests to see what all of this does
         and now to get control of it, especially with regard to choosing
         the file locations in some simple way.
 
         Since I may need to use Windows-specific <direct.h> functions, and
-        maybe have to look at settings, I may already be in a state of sin.
+        maybe have to look at settings, Shucks, I already be in a state of sin
+        because I am using <io.h> for _mktemp_s( ).
         */
-
-
 
 
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-
+   0.1.0  2025-12-17T23:29Z The final successful test form.
+   0.0.8  2025-12-17T23:21Z Adding .bin extension to template fails..
+   0.0.7  2025-12-17T23.11Z Confirmed template beginning with "grt\\".
+   0.0.6  2025-12-17T22.58Z Successful try of "\\" beginning a template.
    0.0.5  2025-12-16T22:52Z Open and write both temp files.
    0.0.4  2025-12-16T21:20Z Spell strcpy_s and #include <string.h>.
    0.0.3  2025-12-16T21:17Z Refresh the template before second use.
