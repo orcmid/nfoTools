@@ -1,4 +1,4 @@
-tests.txt 0.1.6                     UTF-8                      dh:2025-12-18
+tests.txt 0.1.6                     UTF-8                      dh:2025-12-19
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 <https://github.com/orcmid/nfoTools/blob/master/devLib/DieHard/nfoGenRandsKit/tests/tests.txt>
@@ -89,7 +89,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. nfoGenRandsKit Confirmation Tests.  nfoTools file
-   tests.txt version 0.1.5 dated 2025-12-16, available on the Internet as a
+   tests.txt version 0.1.6 dated 2025-12-19, available on the Internet as a
    version of
    <https://github.com/orcmid/nfoTools/blob/master/devLib/DieHard/nfoGenRandsKit/tests/tests.txt>
 
@@ -105,9 +105,13 @@ NOTES AND TODO
      the detecting and handling of defects in the input has not been
      exercised.
 
+   * Make a nfoGenBIO-win32-temps.c test to confirm that "/" works in paths
+     as well as "\\".
+
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
- 0.1.5 2025-12-15T23:13Z Complete nfoGenBIO0win32-temps.c GenTemps testing
+ 0.1.6 2025-12-19T05:42Z Add work item on "/" in Win32 path names.
+ 0.1.5 2025-12-15T23:13Z Complete nfoGenBIO-win32-temps.c GenTemps testing
  0.1.4 2025-12-16T18:13Z Establish nfoGenAIO-win32-temps.c
  0.1.3 2025-12-15T18:28Z Add TODOs about nfoGenBIO-win32.c being able to use
        platform-specific temp files
