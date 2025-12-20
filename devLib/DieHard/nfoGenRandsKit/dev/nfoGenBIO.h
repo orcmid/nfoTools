@@ -1,4 +1,4 @@
-/* nfoGenBIO.h 0.0.4                UTF-8                         2025-12-19
+/* nfoGenBIO.h 0.0.5                UTF-8                         2025-12-20
 ** -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 *
 *                 nfoGenBIO Binary Input/Output Data Files
@@ -32,7 +32,7 @@
 *         it can be useful to pipe the names of the files.
 */
 
-#define NFOGENBIO_VERSION "nfoGenBIO-0.0.4"
+#define NFOGENBIO_VERSION "nfoGenBIO-0.0.5"
    /* Version string for this nfoGenBIO module.  It is coordinated with the
     * version in nfoGenBIO-*.c for the platform-specific components.
     */
@@ -42,20 +42,20 @@
 #include <stdio.h>
 
 
-FILE* nfoGenBIO_startOutput( char *template);
+FILE* nfoGenBIO_startOutput( char *template, int templateSize);
     /* Generate a temporary file name based on template, open it for binary
      * writing, and return the FILE* for the opened file. The template string
      * is replaced with the created filename.
      *
      * If template is NULL or the string is in incorrect format, NULL is
-     * returned.
+     * returned.  If templateSize < 7, NULL is also returned.
      *
      * If the generated filename cannot be opened for writing, NULL is also
      * returned. In this case, template has been modified.
 
      * Otherwise, a non-NULL FILE* is returned for use in nfoGenBIO_write()
      * operations.  The file can also be rewound and read.  Perform fclose()
-     * when all writing and any reading, are complete.
+     * when all writing and any reading are complete.
      *
      * The modified template can also be communicated for use in a subsequent
      * file-open operation in the same or different application.
@@ -117,7 +117,8 @@ size_t nfoGenBIO_read(uint32_t *buf, size_t nwords, FILE *fp);
 
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-0.0.4  2025-12-19T22:22Z Cleanup, add SartOutput prototype and description
+0.0.5  2025-12-20T01:56Z Update nfoGenBIO_startOutput( ) prototype, touch up.
+0.0.4  2025-12-19T22:22Z Cleanup, add StartOutput prototype and description
 0.0.3  2025-12-16T05:30Z (skipped, used in error at top of 0.0.2)
 0.0.2  2025-12-16T05:30Z More pondering, touching up comments.
 0.0.1  2025-12-12T20:35Z Complete read and write procedures

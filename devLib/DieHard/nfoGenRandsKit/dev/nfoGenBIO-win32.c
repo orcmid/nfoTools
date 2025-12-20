@@ -1,4 +1,4 @@
-/* nfoGenBIO-Win32.c 0.0.3          UTF-8                         2025-12-16
+/* nfoGenBIO-Win32.c 0.0.3          UTF-8                         2025-12-20
 ** -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 *
 *                   nfoGenBIO Binary Transfer File Setup
@@ -16,52 +16,60 @@
 *   -----------------------------------------------------------------------
 */
 
-#include <stdint.h>
+#include <io.h>
+    /* for Microsoft-specific _mktemp_s() */
+
 #include <stdio.h>
 
-#include <io.h>
 
-/* XXX: Provisionally: Use _mktemp_s generated temporary filename using a
-        given basename template "baseXXXXXX", where base is chosen to reflect
-        the application (such as the RNG being tested).  The XXXXXX will be
-        changed in-place to a unique alphanumeric string by _mktemp_s( ).
+FILE* nfoGenBIO_startOutput( char *template, int templateSize)
+    { /* Generate a temporary file name based on template, open it for binary
+       * writing, and return the FILE* for the opened file. The template
+       * string is replaced with the created filename.
+       *
+       * If template is NULL or the string is in incorrect format, NULL is
+       * returned.
+       *
+       * If the generated filename cannot be opened for writing, NULL is also
+       * returned.
 
-        The result is a rewrite filename without any path components.
+       * When NULL is returned, the value of template is not predictable. It
+       * should be considered mutilated and not usable.
+       *
+       * TODO: Explain template format and usage for use in conjunction with
+       *       nfoGenRands and DieHard tests.
+       */
 
-        Examples tend to use 8-character names with no file extension.  That
-        should be acceptable here, but I wonder if it can be done better.
+       if ( template == NULL || templateSize < 7 )  return NULL;
+            /* template[ ] must be an ASCII string for at least "XXXXXX"
+               including the '\0' terminator
+               */
 
-        Following the last read and closing of an input file, a remove
-        operation might be performed.  This should be the case if the name
-        is obtained via piping.  This could be confusing.  Think this through.
-        Maybe need L_tmpnam_s and tmpnam_s( ).
-          In C11, these are part of an Extended Library.  I need to know if
-        that changes for later versions of the ISO C Language Standard.
-        It appears that the changes have been permanent since at lease C21.
-          One problem is I want temporary files to be in the current working
-        directory, not the global TMP or TEMP locations.
-          The examples on Windows show complete paths into AppData.  That's
-        undesirable because of file sizes and limited C:\ capacity.
-          On Windows is it possible to fudge the TMP environment variable
-        and then fudge it back to the TEMP value ???
+        /* XXX: Review template[ ] to ensure it ends with "XXXXXX"
+                return NULL if there is any infraction.  This is needed
+                becauee _mktemp_s will crash the app if templat[ ]
+                doesn't work.
+                */
 
-           The descriptions of these for the VC/C++ Windows run-time library
-        are pretty awful and also unclear.
+        errno_t err = _mktemp_s( template, templateSize );
 
-        There may be some help in the use of <direct.h> and using _chdir.
-        There's also _getcwd.  I might not need a complete <windows.h> include
-        for that.
+        if ( err != 0 ) return NULL;
 
-        I'm going to start with simple tests to see what all of this does
-        and now to get control of it, especially with regard to choosing
-        the file locations in some simple way.
-        */
+        FILE* temp1;
+        if (fopen_s(&temp1, template, "wb+" ) != 0 ) return NULL;
+
+        return temp1;
+
+        } /* nfoGenBIO_startOutput */
+
+
 
 
 
 
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+0.0.3  2025-12-20T01:50Z Add nfoGenBIO_startOutput( ) implementation.
 0.0.2  2025-12-16T05:29Z More pondering
 0.0.1  2025-12-14T17:41Z More thinking outloud. copilot attribution.
 0.0.0  2025-12-13T21:13Z Initial placeholder.
