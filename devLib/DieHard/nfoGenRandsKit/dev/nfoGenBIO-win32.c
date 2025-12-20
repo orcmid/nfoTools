@@ -1,4 +1,4 @@
-/* nfoGenBIO-Win32.c 0.0.3          UTF-8                         2025-12-20
+/* nfoGenBIO-Win32.c 0.0.4          UTF-8                         2025-12-20
 ** -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 *
 *                   nfoGenBIO Binary Transfer File Setup
@@ -45,17 +45,25 @@ FILE* nfoGenBIO_startOutput( char *template, int templateSize)
                including the '\0' terminator
                */
 
-        /* XXX: Review template[ ] to ensure it ends with "XXXXXX"
-                return NULL if there is any infraction.  This is needed
-                becauee _mktemp_s will crash the app if templat[ ]
-                doesn't work.
-                */
+        /* Guard to ensure final "XXXXXX"
+           */
+        int guardIndex = templateSize;
+        if  (    template[--guardIndex] != `\0`
+              || template[--guardIndex] != 'X'
+              || template[--guardIndex] != 'X'
+              || template[--guardIndex] != 'X'
+              || template[--guardIndex] != 'X'
+              || template[--guardIndex] != 'X'
+              || template[--guardIndex] != 'X'
+              )
+            return NULL;
 
         errno_t err = _mktemp_s( template, templateSize );
 
         if ( err != 0 ) return NULL;
 
         FILE* temp1;
+
         if (fopen_s(&temp1, template, "wb+" ) != 0 ) return NULL;
 
         return temp1;
@@ -69,6 +77,7 @@ FILE* nfoGenBIO_startOutput( char *template, int templateSize)
 
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+0.0.4  2025-12-20T23:37Z Add guard-check on "XXXXXX" ending the template
 0.0.3  2025-12-20T01:50Z Add nfoGenBIO_startOutput( ) implementation.
 0.0.2  2025-12-16T05:29Z More pondering
 0.0.1  2025-12-14T17:41Z More thinking outloud. copilot attribution.
