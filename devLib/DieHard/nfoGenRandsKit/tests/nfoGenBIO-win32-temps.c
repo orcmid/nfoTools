@@ -1,4 +1,4 @@
-/* nfoGenBIO-Win32-temps.c 0.1.0    UTF-8                         2025-12-17
+/* nfoGenBIO-Win32-temps.c 0.1.1    UTF-8                         2025-12-20
 ** -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 *
 *                   nfoGenBIO Temporary File Experiments
@@ -37,8 +37,13 @@
 *   is used.  Not so great.  But "dir\\.." seems to work fine, putting the
 *   temporary files in a folder beneath the current working directory.
 *
-*   However, the "XXXXXX" must be the end of the template. Anything else
-*   causes failure.
+*   The prefix can contain `/`, interchangeable with `\\`, allowing some
+*   platform-independence in the usage, although this is a Windows-specific
+*   implementation.
+*
+*   The template is a string that must contain a six trailing "XXXXXX" without
+*   any extension.  If that pattern is not satisfied, _mktemp_s( ) crashes
+*   out of the program.
 *
 *   -----------------------------------------------------------------------
 *   Attribution: This program is co-pilot assisted.
@@ -65,10 +70,11 @@ int main( void )
        Preference for _mktemp_s is that it generates just the file name
        and not a full path and all of that gunk, unless in the template */
 
-       fputs ( "[GenTemps] Temporary Filename Generation Experiment 0.1.0\n",
+       fputs ( "[GenTemps] Temporary Filename Generation Experiment 0.1.1\n",
             stdout );
 
-    #define TEMPLATE "grt\\nfoGenBIOXXXXXX"
+    #define TEMPLATE "grt/nfoGenBIOXXXXXX"
+            /* Note platform neutral use of `/`*/
 
 /* ATTEMPT CONTROLLING DIRECTORY */
 
@@ -155,6 +161,7 @@ int main( void )
 
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+   0.1.1  2025-12-20T23:09Z Touch up and demonstrate `/` in template.
    0.1.0  2025-12-17T23:29Z The final successful test form.
    0.0.8  2025-12-17T23:21Z Adding .bin extension to template fails..
    0.0.7  2025-12-17T23.11Z Confirmed template beginning with "grt\\".

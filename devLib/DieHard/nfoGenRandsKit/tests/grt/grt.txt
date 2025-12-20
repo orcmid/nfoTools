@@ -1,4 +1,4 @@
-grt.txt 0.0.1                       UTF-8                      dh:2025-12-18
+grt.txt 0.0.2                       UTF-8                      dh:2025-12-20
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 <https://github.com/orcmid/nfoTools/blob/master/devLib/DieHard/nfoGenRandsKit/tests/grt/grt.txt>
@@ -20,7 +20,11 @@ MANIFEST
 
     nfoGenBIOa16756.txt
     nfoGenBIOb16756.txt
-        Test results from GemTemps 0.1.0
+        Test results from GenTemps 0.1.0
+
+    nfoGenBIOa03412
+    nfoGenBIOb03412
+        Test results from GenTemps 0.1.1
 
         NOTE: Test (result) files with no extension are excluded from Git.
 
@@ -46,7 +50,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. Generated RNG Test Temporary Files.  nfoTools file
-   grt.txt version 0.0.1 dated 2025-12-17, available on the Internet as a
+   grt.txt version 0.0.2 dated 2025-12-20, available on the Internet as a
    version of
    <https://github.com/orcmid/nfoTools/blob/master/devLib/DieHard/nfoGenRandsKit/tests/grt/grt.txt>
 
@@ -54,6 +58,7 @@ MANIFEST
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.1 2025-12-20T23:12Z Update with GenTemps 0.1.1 results
  0.0.0 2025-12-18T00:52Z Simple manifest for RNG Test temp files
 
 

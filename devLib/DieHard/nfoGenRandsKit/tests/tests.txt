@@ -51,6 +51,8 @@ MANIFEST
         on Win32
     GenTemps-0.1.0-success-2025-12-17-1551.png
         Build and successful operation of nfoGenBIO-win32-temps.c 0.1.0
+    GenTemps-0.1.1-success-2025-12-20-1515.png
+        Build and successful operation of nfoGenBIO-win32-temps.c 0.1.1
 
     VCoptions.opt
         @VCoptions.opt options for CL.exe VC/C++ x64 compiles, used by the
@@ -89,7 +91,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. nfoGenRandsKit Confirmation Tests.  nfoTools file
-   tests.txt version 0.1.6 dated 2025-12-19, available on the Internet as a
+   tests.txt version 0.1.6 dated 2025-12-20, available on the Internet as a
    version of
    <https://github.com/orcmid/nfoTools/blob/master/devLib/DieHard/nfoGenRandsKit/tests/tests.txt>
 
@@ -110,7 +112,7 @@ NOTES AND TODO
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
- 0.1.6 2025-12-19T05:42Z Add work item on "/" in Win32 path names.
+ 0.1.6 2025-12-20T23:19Z Successful conformation of "/" in Win32 path names.
  0.1.5 2025-12-15T23:13Z Complete nfoGenBIO-win32-temps.c GenTemps testing
  0.1.4 2025-12-16T18:13Z Establish nfoGenAIO-win32-temps.c
  0.1.3 2025-12-15T18:28Z Add TODOs about nfoGenBIO-win32.c being able to use
