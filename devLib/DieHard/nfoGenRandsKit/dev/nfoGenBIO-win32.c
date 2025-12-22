@@ -1,4 +1,4 @@
-/* nfoGenBIO-Win32.c 0.0.4          UTF-8                         2025-12-20
+/* nfoGenBIO-Win32.c 0.0.6          UTF-8                         2025-12-20
 ** -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 *
 *                   nfoGenBIO Binary Transfer File Setup
@@ -19,6 +19,8 @@
 #include <io.h>
     /* for Microsoft-specific _mktemp_s() */
 
+#include "nfoGenBIO.h"
+
 #include <stdio.h>
 
 
@@ -36,8 +38,7 @@ FILE* nfoGenBIO_startOutput( char *template, int templateSize)
        * When NULL is returned, the value of template is not predictable. It
        * should be considered mutilated and not usable.
        *
-       * TODO: Explain template format and usage for use in conjunction with
-       *       nfoGenRands and DieHard tests.
+       * See nfoGenBIO.h for further information.
        */
 
        if ( template == NULL || templateSize < 7 )  return NULL;
@@ -77,6 +78,7 @@ FILE* nfoGenBIO_startOutput( char *template, int templateSize)
 
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+0.0.6  2025-12-22T19:29Z Tie to nfoGenBIO.h
 0.0.4  2025-12-20T23:37Z Add guard-check on "XXXXXX" ending the template
 0.0.3  2025-12-20T01:50Z Add nfoGenBIO_startOutput( ) implementation.
 0.0.2  2025-12-16T05:29Z More pondering

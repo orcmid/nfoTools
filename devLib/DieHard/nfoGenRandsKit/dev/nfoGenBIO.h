@@ -1,4 +1,4 @@
-/* nfoGenBIO.h 0.0.5                UTF-8                         2025-12-20
+/* nfoGenBIO.h 0.0.6                UTF-8                         2025-12-22
 ** -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 *
 *                 nfoGenBIO Binary Input/Output Data Files
@@ -51,17 +51,34 @@ FILE* nfoGenBIO_startOutput( char *template, int templateSize);
      * returned.  If templateSize < 7, NULL is also returned.
      *
      * If the generated filename cannot be opened for writing, NULL is also
-     * returned. In this case, template has been modified.
+     * returned.
 
      * Otherwise, a non-NULL FILE* is returned for use in nfoGenBIO_write()
      * operations.  The file can also be rewound and read.  Perform fclose()
      * when all writing and any reading are complete.
      *
-     * The modified template can also be communicated for use in a subsequent
-     * file-open operation in the same or different application.
+     * Only in the case of successful File Open is the template parameter
+     * successfully modified to the actual filename used. In all other cases
+     * the template[] value is not predictable.
      *
-     * TODO: Explain template format and usage for use in conjunction with
-     *       nfoGenRands and DieHard tests.
+     * A successfully-modified template may be communicated for use in a
+     * subsequent file-system operation in the same or different application.
+     *
+     * TEMPLATE FORMATTING
+     *
+     * The supplied template string must be a legitimate file (relative or
+     * absolute) path and name with no spaces; and it must end with exactly
+     * six 'X' characters and no extension. For example:
+     * "tmp/nfoGenBIOXXXXXX".
+     *
+     * a typical modification of the template string (and used in fpen)
+     * is something like "tmp/nfoGenBIOa04862" consisting of a letter and
+     * five digits in place of the six 'X'.
+     *
+     * A relative path, such as that shown, is relative to the current
+     * working directory.
+     *
+     * Note that '/' is usable as the path separator even on Windows systems.
      */
 
 
@@ -70,7 +87,7 @@ size_t nfoGenBIO_write(uint32_t *buf, size_t nwords, FILE *fp)
      *  binary format.
      *
      * The file *fp must be opened for binary writing before calling this
-     * function.
+     * function.  nfoGenBIO_startOutput() is designed for this purpose.
      *
      * The return value is the number of words actually written.  It may be
      * less than nwords if an error occurs during writing or if the the space
@@ -81,12 +98,12 @@ size_t nfoGenBIO_write(uint32_t *buf, size_t nwords, FILE *fp)
      * Perform fclose(fp) when all writing is complete.
      */
 
-    if (buf == NULL || fp == NULL || nwords == 0)
-         return 0;
+     if (buf == NULL || fp == NULL || nwords == 0)
+          return 0;
 
-    return fwrite(buf, sizeof(uint32_t), nwords, fp);
+     return fwrite(buf, sizeof(uint32_t), nwords, fp);
 
-    }
+     }
 
 
 size_t nfoGenBIO_read(uint32_t *buf, size_t nwords, FILE *fp);
@@ -117,6 +134,8 @@ size_t nfoGenBIO_read(uint32_t *buf, size_t nwords, FILE *fp);
 
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+0.0.6  2025-12-22T19.25Z Touch up and explain template[ ] usage in
+       nfoGenBIO_startOutput( ).
 0.0.5  2025-12-20T01:56Z Update nfoGenBIO_startOutput( ) prototype, touch up.
 0.0.4  2025-12-19T22:22Z Cleanup, add StartOutput prototype and description
 0.0.3  2025-12-16T05:30Z (skipped, used in error at top of 0.0.2)
