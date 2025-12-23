@@ -1,4 +1,4 @@
-/* nfoGenRands.c 0.0.6              UTF-8                         2025-10-26
+/* nfoGenRands.c 0.0.7              UTF-8                         2025-12-23
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 *
 *        PRODUCE 2,867,200 RANDOM NUMBERS WITH A SPECIFIED GENERATOR
@@ -30,6 +30,7 @@
 *   rather than being hard-coded into this file.
 */
 
+#include <stdint.h>
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -39,18 +40,37 @@
    referenced in the program code, below.
    */
 
+
+
 int main(int argc, char *argv[])
 {
-    long b[4096];
+    uint32_t B[4096];
 
-    SEED_THE_RAND();
+/* TODO: Identify ourselves, along with the RNG and its version.
+         Use the RNG NAME to generate a filename template for the
+         "temporary" binary file to be produced.
+
+         We *might* use nfoGenAIO at first for short testing, then
+         use nfoGenBIO for the big job.
+
+         It would be nice to have some command-line control of that,
+         but we may be over-thinking this. Better to have a test
+         program that uses the specified generator but not with this
+         production emphasis perhaps.  We do need to test streams
+         with small volumes somehow. At least enough with small
+         ASCII and binary-ASCII conversions for comparisons.
+
+         The binary-ASCII conversion might also reduce the need for
+         a binary-file viewer/editor.*/
 
     START_GENERATING();
 
+    SEED_THE_RAND();
+
     for (int i=1; i<=700; i++)
       { for (int j=0; j<=4095; j++)
-            b[j] = NEXT_RANDOM_INTEGER();
-        WRITE_BLOCK(b);
+            B[j] = NEXT_RANDOM();
+        WRITE_BLOCK(B);
         }
 
     STOP_GENERATING();
@@ -68,9 +88,9 @@ int main(int argc, char *argv[])
    * Consider base64 output option, which gets 15 longs into 80 characters
      instead of 10 for the ASCII option.
 
-   * The binary file case is difficult because of endianness issues.  If
-     we consider that the output streams are transient and not used cross-
-     platforms, binary file transfers are OK, but not so easy.
+   * The binary file case is difficult because of endianness issues.  We
+     consider the output streams to be transient and not used cross-
+     platform.
 
    * We need to know the performance differences among the formats, both
      for output and for subsequent input.  Input would seem to be more
@@ -78,12 +98,14 @@ int main(int argc, char *argv[])
 
    * We need utilities to go the reverse directions and provide a basis
      for checking the results.  I think the ASCII format is the most easy
-     to work with for that purpose.
+     to work with for that purpose.  That or I need to get my hands on a
+     binary-file viewer/editor.
 
    */
 
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+   0.0.7  2025-12-23T00:03Z Update comments to reflect template status
    0.0.6  2025-10-26T16:57Z More noodling of comments
    0.0.5  2025-10-24T21:49Z Simplify the initial comments
    0.0.4  2025-10-24T20:21Z More TODOs

@@ -1,13 +1,13 @@
-/* combo.h 0.0.5                    UTF-8                         2025-11-05
+/* combo.h 0.0.6                    UTF-8                         2025-12-22
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 *
 *                 MARSAGLIA'S COMBO RANDOM NUMBER GENERATOR
 *                 -----------------------------------------
 *
-*   combo.h is a header-only derivative of George Marsaglia's COMBO
-*   RNG that included in the original DIEHARD software.
+*   combo.h is a header-only derivation of George Marsaglia's COMBO
+*   RNG included in the original DIEHARD software.
 *
-*   It works by combining two separate RNGs such that the combined period
+*   COMBO works by combining two separate RNGs such that the combined period
 *   exceeds 2^60.5.  These are Marsaglia's claims and lightly-edited
 *   description.
 
@@ -33,13 +33,16 @@
 
 #include <stdint.h>
 
-#define NFOGENVERSION "combo-0.0.5"
+#define NFOGENVERSION "combo-0.0.6"
     /* For identification when used for generating RNG test input */
+
+#define NFOGENRNGNAME "COMBO"
+    /* Identifier for test-data streams generated using the COMBO RNG */
 
 uint32_t _comboX, _comboY, _comboZ;
     /* Wonky names for original x, y, z to avoid possible name clashes
        where combo.h might be included.  These are going to be static
-       variables in the program that includes combo.h
+       variables in a program that includes combo.h
        */
 
 void combo_init(uint32_t x, uint32_t y, uint32_t z)
@@ -70,6 +73,8 @@ uint32_t combo_rand()
 
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+   0.0.6  2025-12-22T23:08Z Touchup comments, adding #defines for name and
+          version to supply along with nfoGenCombo.h.
    0.0.5  2025-11-06T00:23Z Touchup, refactor to use uint32_t
    0.0.4  2025-11-04T16:27Z Create free-standing and testable combo.h
    0.0.3  2025-10-30T20:22Z Hand wring about range and unsigned values
