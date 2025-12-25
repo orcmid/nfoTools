@@ -1,4 +1,4 @@
-DieHard.txt 0.1.3                   UTF-8                      dh:2025-10-20
+DieHard.txt 0.1.4                   UTF-8                      dh:2025-12-25
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 <https://github.com/orcmid/nfoTools/blob/master/devLib/DieHard/DieHard.txt>
@@ -72,7 +72,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. Diehard Random-Generator Tests and Reference
-   Materials.  nfoTools file DieHard.txt version 0.1.3 dated 2025-10-25,
+   Materials.  nfoTools file DieHard.txt version 0.1.4 dated 2025-12-25,
    available on the Internet as a version of
    <https://github.com/orcmid/nfoTools/blob/master/devLib/DieHarder/DieHarder.txt>
 
@@ -80,9 +80,19 @@ NOTES AND TODO
 
    * Assess for factoring out for development of individual tests.
 
+   * I need to develop two-way conversions between ASCII uint32_t streams and
+     binary 4-byte 32-bit word streams.  I need them to verify input-output
+     of streams.  This will include an nfoAsc2Bin an nfoBin2Asc (maybe), and
+     also, nfoBIO-more (or -head, or unlikely nfoBIO-less) and nfoBIO-tail but
+     I want control on movement back and forth, forth and back.  I'm uncertain
+     how this can happen nicely without a text window.
+
+   * KISS - get what I need mostly, don't embellish until necessary.
+
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.1.4 2024-12-25T22:22Z Fuss about file-more, file-head, and file-tail
  0.1.3 2025-10-25T15:10Z Simplify description of diehard-fortran/
  0.1.2 2025-10-20R17:27Z Move diehard.doc.pdf to diehard-fortran
  0.1.1 2025-10-20T03:33Z Add nfoGenRandKit/
