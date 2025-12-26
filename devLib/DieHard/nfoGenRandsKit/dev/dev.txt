@@ -1,4 +1,4 @@
-dev.txt 0.0.8                       UTF-8                     dh:2025-12-23
+dev.txt 0.1.0                       UTF-8                     dh:2025-12-26
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 <https://github.com/orcmid/nfoTools/blob/master/devLib/DieHard/nfoGenRandsKit/dev/dev.txt>
@@ -36,23 +36,14 @@ MANIFEST
     nfoGenBIO-Win32.c
         Win32 platform-specific implementations of some nfoGenBIO.h functions
 
-    nfoGenRands.c
-        Program to produce 2,867,200 Random Numbers with a Specified
-        Generator.  The generator inclusion is accomplished with a
-        customization of nfoGenRands.h.
+    nfoGenCombo.c
+        Generator of test files for the Marsaglia COMBO RNG.  This is an
+        exemplar of the typical generator.
 
-    nfoGenTemplate.h
-        "Template" header file for incorporating an RNG in a manner for
-        generating sets of random number via nfoGenRands.c for diehard-style
-        testing.
-
-    combo.h
-        Header-only file for the Marsaglia COMBO RNG
-    nfoGenCombo.h
-        Header file for customizing nfoGenCombo.c to create COMBO test stream.
-
-
-
+    nfoGenRNG-template.c
+        "Template" program file for incorporating an RNG and generating
+        sets of random numbers for diehard-style testing, as exemplified by
+        nfoGenCombo.c.
 
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
@@ -76,7 +67,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. nfoGenRandsKit Development.  nfoTools file dev.txt
-   version 0.0.8 dated 2025-12-23,available on the Internet as a version of
+   version 0.1.0 dated 2025-12-26,available on the Internet as a version of
    <https://github.com/orcmid/nfoTools/blob/master/devLib/DieHard/nfoGenRandsKit/tests/tests.txt>
 
 NOTES AND TODO
@@ -134,9 +125,15 @@ NOTES AND TODO
    * I wonder if I can select the header file as part of the command-line
      or options when making the code to create a particular RNG test stream.
 
+   * Clean up these items based on the refined approach to this.
+
+   * I need nfoGenBIO-more.c and nfoGenBIO-last.c as hex-displays that I can
+     navigate all sizes of binary file, maybe in a kind of dump format.
+
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.1.0 2025-12-26T17:00Z Restructure and update notes
  0.0.8 2025-12-23T00:14Z More touch-ups and wondering
  0.0.7 2025-12-14T17:40Z Touch-ups and more on temp-file creation
  0.0.6 2025-12-14T21:23Z Add nfoGenBIO-win32.c, review TODOs
