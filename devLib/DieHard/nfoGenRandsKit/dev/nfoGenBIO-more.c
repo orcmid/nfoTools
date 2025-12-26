@@ -1,4 +1,4 @@
-/* nfoGenBIO-more.c 0.0.1           UTF-8                         2025-12-26
+/* nfoGenBIO-more.c 0.0.2           UTF-8                         2025-12-26
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 *
 *              nfoGenBIO-more: MORE UTILITY FOR BINARY I/O FILES
@@ -15,43 +15,53 @@
 *    Attribution: This program is copilot assisted and scientist reviewed.
 *   -----------------------------------------------------------------------
 */
-#define MORE_VERSION "nfoGenBIO-more-0.0.0"
+#define MORE_VERSION "nfoGenBIO-more-0.0.2"
 
 #include  <stdio.h>
 #include  <stdint.h>
 #include  <stdlib.h>
 
-#include  "nfoGenAIO.h"
+#include  "nfoGenBIO.h"
 
-#define test2words 4096
+#define wordsChunk (16*8)
+    /* The number of uint32 words that are converted to 16 lines of 8 words
+       each. The blocks of 4096 words used for DieHard will take 32 chunks
+       each.  Chunk byte offsets will always be multiples of 512 (0x200)*/
+
+#define bytesChunk (wordsChunk*4)
+    /* This is needed for chunk-offset positioning of the input and for
+       identification of chunk lines in the output. */
 
 int main( int argc, char )
 
 {
-    uint32_t  test2[ test2words+9 ] = { 0 }; /* protection buffer*/
+    uint32_t chunk[ wordsChunk+9 ] = { 0 }; /* with protection buffer*/
+         /* One buffer for presenting 16 lines of 8 words each*/
 
-    /* XXX: We need a different buffer size corresponding to what goes nice
-            on a 24-line display.  That will be the chunk size. I'm thinking
-            about doing 8 words per line in a kind of dump format with
-            spaces between the words.  That gives room for addresses but
-            not for any ASCII representation.  I need to work in nice powers
-            of two for the words per line and lines per screen.  So 16 lines
-            looks like the chunk size.  16 lines * 64 bytes = 256 bytes.
-            Nice number.
+    /* Choosing a chunk size corresponding to what goes nice on a 24-line
+       80-column display with room for offset numbers but not any kind of
+       ASCII representation.
+       */
 
-       XXX: We need to deal with cases where the last chunk is not full and
-            it is not any multiple of 8 bytes.
-            */
-
-    fputs("\n[more] " MORE_VERSION " some-thing, something\n",
+    fputs("\n[more] " MORE_VERSION " Viewer for binary data-file chunks.\n",
           stdout );
-    /* XXX: The input filename needs to be known befure we can report the
-            input, so this output is needed but needs to be simpler.
-            */
 
-/* XXX: We need to provide the help display or get the name of the input
+    /* XXX: We need to provide the help display or get the name of the input
         file from the command line.
         */
+
+    if ( argc < 1)
+         {  /* Provide Help Information */}
+            fputs( "\n       USAGE: nfoGenBIO-more inputfile"
+                   "\n              SPACE or ENTER to advance one chunk,"
+                   "\n              BACKSPACE to go back one chunk,"
+                   "\n              ^S and ^Q to start and stop scrolling "
+                                   "chunks,"
+                   "\n              ^C, or ^D to quit\n\n",
+                   stdout );
+
+
+
     int wordsRead = nfoGenAIO_read( test2, test2words, stdin );
 
     if ( !wordsRead )
@@ -99,6 +109,8 @@ int main( int argc, char )
 
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 *
+
+* 0.0.2  2025-12-26T21:02Z Start fleshing out main program structure.
 * 0.0.1  2025-12-26T18:39Z Add noodling comments and a bit of structure.
 * 0.0.0  2025-12-26T18:10Z Grab nfoGenAIO-test2.c 0.1.1 to pillage for more.
 *

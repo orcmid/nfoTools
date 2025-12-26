@@ -1,4 +1,4 @@
-dev.txt 0.1.0                       UTF-8                     dh:2025-12-26
+dev.txt 0.1.1                       UTF-8                     dh:2025-12-26
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 <https://github.com/orcmid/nfoTools/blob/master/devLib/DieHard/nfoGenRandsKit/dev/dev.txt>
@@ -35,6 +35,9 @@ MANIFEST
 
     nfoGenBIO-Win32.c
         Win32 platform-specific implementations of some nfoGenBIO.h functions
+
+    nfoGenBIO-more.c
+        Program to display binary files in 16-line 8-word console chunks
 
     nfoGenCombo.c
         Generator of test files for the Marsaglia COMBO RNG.  This is an
@@ -133,6 +136,7 @@ NOTES AND TODO
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.1.1 2025-12-25T21:00Z Start on nfoGenBIO-more-c
  0.1.0 2025-12-26T17:00Z Restructure and update notes
  0.0.8 2025-12-23T00:14Z More touch-ups and wondering
  0.0.7 2025-12-14T17:40Z Touch-ups and more on temp-file creation
