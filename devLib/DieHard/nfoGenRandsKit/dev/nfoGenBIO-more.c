@@ -1,4 +1,4 @@
-/* nfoGenBIO-more.c 0.0.2           UTF-8                         2025-12-26
+/* nfoGenBIO-more.c 0.0.3           UTF-8                         2025-12-26
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 *
 *              nfoGenBIO-more: MORE UTILITY FOR BINARY I/O FILES
