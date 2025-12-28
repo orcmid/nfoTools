@@ -1,4 +1,4 @@
-/* nfoGenBIO-more.c 0.0.3           UTF-8                         2025-12-26
+/* nfoGenBIO-more.c 0.0.3           UTF-8                         2025-12-28
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 *
 *              nfoGenBIO-more: MORE UTILITY FOR BINARY I/O FILES
@@ -15,12 +15,15 @@
 *    Attribution: This program is copilot assisted and scientist reviewed.
 *   -----------------------------------------------------------------------
 */
-#define MORE_VERSION "nfoGenBIO-more-0.0.2"
+#define MORE_VERSION "nfoGenBIO-more-0.0.3"
 
-#include  <stdio.h>
+#include  <stdbool.h>
 #include  <stdint.h>
+#include  <stdio.h>
 #include  <stdlib.h>
+#include  <string.h>
 
+#include  "nfoGenAIO.h"
 #include  "nfoGenBIO.h"
 
 #define wordsChunk (16*8)
@@ -32,7 +35,8 @@
     /* This is needed for chunk-offset positioning of the input and for
        identification of chunk lines in the output. */
 
-int main( int argc, char )
+
+int main( int argc, char *argv[] )
 
 {
     uint32_t chunk[ wordsChunk+9 ] = { 0 }; /* with protection buffer*/
@@ -47,26 +51,65 @@ int main( int argc, char )
           stdout );
 
     /* XXX: We need to provide the help display or get the name of the input
-        file from the command line.
+            file from the command line.
+            We might want to see if stdin is a pipe when no filename is given.
+            This will take some testing to see if binary data can be piped
+            reliably.
         */
 
-    if ( argc < 1)
-         {  /* Provide Help Information */}
-            fputs( "\n       USAGE: nfoGenBIO-more inputfile"
+    if ( argc < 2)
+         {  /* Provide Help Information when no input file is specified */}
+            fputs( "\n       USAGE: nfoGenBIO-more [inputfile]"
                    "\n              SPACE or ENTER to advance one chunk,"
                    "\n              BACKSPACE to go back one chunk,"
                    "\n              ^S and ^Q to start and stop scrolling "
                                    "chunks,"
                    "\n              ^C, or ^D to quit\n\n",
-                   stdout );
+                   stderr )
+            exit( EXIT_SUCCESS );
+            }
+
+    /* Assume we have a valid filename for input
+       XXX: This is where we need to be able to check for stdin being
+            piped, just as with the regular more utility.
+            */
+
+    FILE* fp = nfoGenBIO_startInput( argv[1], strlen_s( argv[1],
+                                                        FILENAME_MAX  )
+                                     );
+
+    if ( fp == NULL )
+         { fputs( "\n\n       FAILURE: Cannot open input file.\n", stderr );
+           exit( EXIT_FAILURE );
+            }
+
+    /* SETUP TO READ THE FILE */
+
+    u32int_t fileOffset = 0; /* byte offset of next chunk */
+
+    do { /* Run through the chunks*/
+         size_t wordsRead = nfoGenBIO_read( chunk, wordsChunk, fp );
+
+         if ( !wordsRead )
+              { /* No (more) data - report status */
+
+                if ( fileOffset )
+                     { /* there had been input */
+                          if (feof( fp ))
+                               {  /* report how far we got */
+                                  fprintf( stderr,
+                                           "\n        %d words read up to "
+                                           "byte offset 0x%08X.\n\n",
+                                           fileOffset/4, fileOffset-1 );
+                                  exit( EXIT_SUCCESS );
+                                  }
+                         if (ferror)
+                         {
+                            /* code */
+                         }
 
 
-
-    int wordsRead = nfoGenAIO_read( test2, test2words, stdin );
-
-    if ( !wordsRead )
-         { fputs( "\n\n        NO WORDS WERE RETURNED.\n", stderr );
-           if ( feof( stdin ) )
+                 )
                 fputs( "        FAILURE: EOF on read.\n", stderr );
            if ( ferror( stdin ) )
                 fputs( "        FAILURE: ERROR on read.\n", stderr );
@@ -110,6 +153,8 @@ int main( int argc, char )
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 *
 
+* 0.0.3  2025-12-28T20:41Z Start fleshing command-line handling and finding
+*        the input file.
 * 0.0.2  2025-12-26T21:02Z Start fleshing out main program structure.
 * 0.0.1  2025-12-26T18:39Z Add noodling comments and a bit of structure.
 * 0.0.0  2025-12-26T18:10Z Grab nfoGenAIO-test2.c 0.1.1 to pillage for more.
