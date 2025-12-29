@@ -1,4 +1,4 @@
-/* nfoGenBIO-Win32.c 0.0.6          UTF-8                         2025-12-20
+/* nfoGenBIO-Win32.c 0.1.1          UTF-8                         2025-12-29
 ** -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 *
 *                   nfoGenBIO Binary Transfer File Setup
@@ -21,7 +21,20 @@
 
 #include "nfoGenBIO.h"
 
+#include <stdbool.h>
 #include <stdio.h>
+
+bool isGenBIO_terminal( FILE *fp )
+    { /* Returns true if the given FILE* is associated with a terminal device
+       * (console, terminal window, etc.) rather than a disk file or pipe.
+       *    Note that stdin and stdout may be associated with terminal devices
+       * or with files or pipes, depending on how the program is run.
+       */
+
+        if ( fp == NULL ) return false;
+        if (_fileno( fp ) <0) return false;
+        return (_isatty( _fileno(fp )) != 0 );
+        }
 
 
 FILE* nfoGenBIO_startOutput( char *template, int templateSize)
@@ -78,6 +91,7 @@ FILE* nfoGenBIO_startOutput( char *template, int templateSize)
 
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+0.1.1  2025-12-29T20:18Z Add isGenBIO_terminal( ) implementation.
 0.0.6  2025-12-22T19:29Z Tie to nfoGenBIO.h
 0.0.4  2025-12-20T23:37Z Add guard-check on "XXXXXX" ending the template
 0.0.3  2025-12-20T01:50Z Add nfoGenBIO_startOutput( ) implementation.
