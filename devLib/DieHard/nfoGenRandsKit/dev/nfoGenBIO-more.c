@@ -1,4 +1,4 @@
-/* nfoGenBIO-more.c 0.0.3           UTF-8                         2025-12-28
+/* nfoGenBIO-more.c 0.0.4           UTF-8                         2025-12-29
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 *
 *              nfoGenBIO-more: MORE UTILITY FOR BINARY I/O FILES
@@ -15,7 +15,7 @@
 *    Attribution: This program is copilot assisted and scientist reviewed.
 *   -----------------------------------------------------------------------
 */
-#define MORE_VERSION "nfoGenBIO-more-0.0.3"
+#define MORE_VERSION "nfoGenBIO-more-0.0.4"
 
 #include  <stdbool.h>
 #include  <stdint.h>
@@ -57,11 +57,15 @@ int main( int argc, char *argv[] )
             reliably.
         */
 
+    /* XXX: Expand this to allow for /* and possible source as stated */
     if ( argc < 2)
          {  /* Provide Help Information when no input file is specified */}
-            fputs( "\n       USAGE: nfoGenBIO-more [inputfile]"
-                   "\n              SPACE or ENTER to advance one chunk,"
-                   "\n              BACKSPACE to go back one chunk,"
+            fputs( "\n       USAGE: nfoGenBIO-more [/? | source]"
+                   "\n              where [source] is the filename of a binary"
+                   "\n              file in DieHard acceptable format."
+                   "\n              If omitted, stdin is used (piped input)."
+                   "\n              SPACE or ENTER to advance 16 lines,"
+                   "\n              BACKSPACE to go back 16 lines,"
                    "\n              ^S and ^Q to start and stop scrolling "
                                    "chunks,"
                    "\n              ^C, or ^D to quit\n\n",
@@ -71,7 +75,7 @@ int main( int argc, char *argv[] )
 
     /* Assume we have a valid filename for input
        XXX: This is where we need to be able to check for stdin being
-            piped, just as with the regular more utility.
+            piped, just as with the regular "more" utility.
             */
 
     FILE* fp = nfoGenBIO_startInput( argv[1], strlen_s( argv[1],
@@ -109,7 +113,7 @@ int main( int argc, char *argv[] )
                          }
 
 
-                 )
+                 )  }
                 fputs( "        FAILURE: EOF on read.\n", stderr );
            if ( ferror( stdin ) )
                 fputs( "        FAILURE: ERROR on read.\n", stderr );
@@ -152,7 +156,7 @@ int main( int argc, char *argv[] )
 
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 *
-
+*(0.0.4  2025-12-29T19:30Z Fix help message and add stdin piping note.)
 * 0.0.3  2025-12-28T20:41Z Start fleshing command-line handling and finding
 *        the input file.
 * 0.0.2  2025-12-26T21:02Z Start fleshing out main program structure.
