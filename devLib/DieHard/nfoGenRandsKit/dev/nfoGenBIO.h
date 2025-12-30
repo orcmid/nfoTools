@@ -1,4 +1,4 @@
-/* nfoGenBIO.h 0.1.1                UTF-8                         2025-12-29
+/* nfoGenBIO.h 0.1.2                UTF-8                         2025-12-30
 ** -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 *
 *                 nfoGenBIO Binary Input/Output Data Files
@@ -38,7 +38,7 @@
 *   -----------------------------------------------------------------------
 */
 
-#define NFOGENBIO_VERSION "nfoGenBIO-0.1.1"
+#define NFOGENBIO_VERSION "nfoGenBIO-0.1.2"
    /* Version string for this nfoGenBIO module.  It is coordinated with the
     * version in nfoGenBIO-*.c for the platform-specific components.
     */
@@ -201,6 +201,7 @@ size_t nfoGenBIO_read(uint32_t *buf, size_t nwords, FILE *fp);
 
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+0.1.2  2025-12-30T21:10Z Reflect isGenBIO-win32.c update
 0.1.1  2025-12-29T20:07Z Add isGenBIO_terminal( ) and consider redirections.
 0.1.0  2025-12-26T23:56Z Complete nfo nfoGenBIO_startInput( ) along with
        nfoGen_startOutputdescription to include templateSize parameter.
