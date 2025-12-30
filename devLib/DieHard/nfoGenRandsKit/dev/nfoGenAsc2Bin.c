@@ -1,4 +1,4 @@
-/* nfoGenAsc2Bin.c 0.0.0            UTF-8                         2025-12-28
+/* nfoGenAsc2Bin.c 0.0.1            UTF-8                         2025-12-30
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 *
 *              nfoGenAsc2Bin: Convert nfoGenAIO to nfoGenBIO Files
@@ -11,7 +11,7 @@
 *   testing purposes.  This converter is also useful in creating test files
 *   for binary input to other utilities and tests.
 *
-*   This program is derived from the Fortran program provided with George
+*   This program is inspired by the Fortran program provided with George
 *   Marsaglia's Asc2Bin utility in the original 1996-01-26 DieHard release.
 *
 *   -----------------------------------------------------------------------
@@ -35,13 +35,36 @@ int main( int argc, char *argv[] )
      /* The buffer for 32-bit words in typical DieHard blocks */
 
    fputs( "[Asc2Bin] " ASC2BIN_VERSION
-          " Converting DieHard AIO file to BIO file\n\n",
+          " Converting DieHard AIO file to BIO file\n",
           stderr);
 
 
    } /* main */
 
+/* XXX: We don't want all of this description here.  We do want an usage
+        similar to that for copying files:
+          nfGenAsc2Bin [/? | [AOO-source [BOO-dest] ]
 
+        When there is no BOO-dest, and stdout is a terminal, no conversion
+        occurs.  I could generate a temporary file, but don't have good
+        information for naming it.
+
+        When there is no AOO-source, and stdin is a terminal, no conversion
+        occurs.
+
+        This is still not the best interface.  I think I need to reverse
+        things and have the output be required more than the input because
+        a binary form is more likely to be needed as a file.
+
+        Detecting redirection/piping sort of interferes with this.  The
+        question is how to explain it in a clean way.
+
+        I could have both required and point out that redirection and
+        piping counts.  This is probably the best way, but it depends on
+        whether BIO works reliably and that's going to take some serious
+        testing.
+
+        */
 /* Scraps of Original Fortran code being salvaged:
 
        character*15 ascfile,binfile
@@ -65,31 +88,7 @@ int main( int argc, char *argv[] )
       print*,'      '
       print*,'  You must first create the ascii file.  To do that,'
              print*,'  To continue, hit space ret'
-             read 852,dum
-      print*,'  Since DIEHARD expects BIG files, you will get few'
-      print*,'  results from a file of a mere 5000 integers.  You are'
-      print*,'  presumably creating a file of random numbers to test,'
-      print*,'  and you need about 2.9 million for DIEHARD.  This may'
-      print*,'  be done with a double loop.  A (Fortran) program with'
-      print*,'  this structure would do it:'
-      print*,'             integer*4 m(4096)      '
-      print*,'             open(1,file=''ascfile'') '
-      print*,'             do 2 i=1,700           '
-      print*,'                do 3 j=1,4096       '
-      print*,'      3         m(j)=NEXTRANDOM32BIT     '
-      print*,'      2      write(1,21)            '
-      print*,'      21     format(10z8)           '
-      print*,'             end                    '
-      print*,'  OK, I assume you have created your ascii file. '
-      print*,'  Now enter the name of that file (<=15 characters):'
-      read 818, ascfile
-       open(1,file=ascfile)
-818   format(a15)
-      print*,'  Next, enter the name of your binary file:'
-      read 818, binfile
-        open(2,file=binfile,form='unformatted',access='direct',
-     & recl=16384)
-       print*,'   Please wait...........'
+
          jk=0
               do 2 i=1,700
                  read(1,21) m
@@ -104,6 +103,7 @@ int main( int argc, char *argv[] )
 */ /* end of scraps */
 
 /*
+   0.0.1 2025-12-30T21:40Z More XXX and pondering on usage
    0.0.0 2025-12-28T20:32Z Skeleton with scraps of original Fortran
 
                    *** end of nfoGenAsc2Bin.c ***
