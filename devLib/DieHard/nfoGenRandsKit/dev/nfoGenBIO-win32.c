@@ -1,4 +1,4 @@
-/* nfoGenBIO-Win32.c 0.1.2          UTF-8                         2025-12-30
+/* nfoGenBIO-Win32.c 0.1.3          UTF-8                         2026-01-02
 ** -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 *
 *                   nfoGenBIO Binary Transfer File Setup
@@ -64,7 +64,7 @@ FILE* nfoGenBIO_startOutput( char *template, int templateSize)
         /* Guard to ensure final "XXXXXX"
            */
         int guardIndex = templateSize;
-        if  (    template[--guardIndex] != `\0`
+        if  (    template[--guardIndex] != '\0'
               || template[--guardIndex] != 'X'
               || template[--guardIndex] != 'X'
               || template[--guardIndex] != 'X'
@@ -93,6 +93,7 @@ FILE* nfoGenBIO_startOutput( char *template, int templateSize)
 
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+0.1.3  2026-01-02T21L42Z Correct `\0` to '\0'
 0.1.2  2025-12-30T21:05Z Touch-up
 0.1.1  2025-12-29T20:18Z Add isGenBIO_terminal( ) implementation.
 0.0.6  2025-12-22T19:29Z Tie to nfoGenBIO.h

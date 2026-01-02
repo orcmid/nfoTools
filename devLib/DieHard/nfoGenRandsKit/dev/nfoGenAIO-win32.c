@@ -1,4 +1,4 @@
-/* nfoGenAIO-Win32.c 0.4.0          UTF-8                         2026-02-01
+/* nfoGenAIO-Win32.c 0.4.1          UTF-8                         2026-02-01
 ** -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 *
 *                   nfoGenAIO ASCII Transfer File Setup
@@ -65,7 +65,7 @@ FILE* nfoGenAIO_startOutput( char *template, int templateSize)
         /* Guard to ensure final "XXXXXX"
            */
         int guardIndex = templateSize;
-        if  (    template[--guardIndex] != `\0`
+        if  (    template[--guardIndex] != '\0'
               || template[--guardIndex] != 'X'
               || template[--guardIndex] != 'X'
               || template[--guardIndex] != 'X'
@@ -90,6 +90,7 @@ FILE* nfoGenAIO_startOutput( char *template, int templateSize)
 
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+0.4.1  2026-01-02T21:37Z Fix `/0` to be '/0'
 0.4.0  2026-01-02T20:46Z Synchronize version with nfoGenAIO.h
 0.1.0  2026-01-02T20:39Z Transpose from nfoGenBIO-Win32.c
 
