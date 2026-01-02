@@ -1,4 +1,4 @@
-/* nfoGenAIO.h 0.3.0                UTF-8                         2025-12-05
+/* nfoGenAIO.h 0.4.0                UTF-8                         2026-01-02
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 *
 *                 nfoGenAIO ASCII Input/Output Data Files
@@ -22,14 +22,64 @@
 *   other format variations that may be present.
 */
 
-#define NFOGENAIO_VERSION "nfoGenAIO-0.3.0"
+#define NFOGENAIO_VERSION "nfoGenAIO-0.4.0"
    /* Version string for nfoGenAIO module.  This is updated whenever
       nfoGenAIO.c and nfoGenAIO.h are changed in any way.  The versions
       are now synchronized between the two files.
       */
-
+#include <stdbool.h>
 #include <stdint.h>
 #include <stdio.h>
+#include <string.h>
+
+bool isGenAIO_terminal( FILE *fp );
+   /* Returns true if the given FILE* is associated with a terminal device
+    * (console, terminal window, etc.) rather than a disk file or pipe.
+    *    Note that stdin and stdout may be associated with terminal devices
+    * or with files or pipes, depending on how the program is run.
+     */
+
+FILE* nfoGenAIO_startOutput( char *template, int templateSize);
+    /* Generate a temporary file name based on template, open it for ASCII
+     * writing, and return the FILE* for the opened file. The template string
+     * is replaced with the created filename.
+     *
+     * templateSize is the size of the template[] string, including the
+     * '\0' terminator.
+     *
+     * If template is NULL or the string is in incorrect format, NULL is
+     * returned.  If templateSize < 7, NULL is also returned.
+     *
+     * If the generated filename cannot be opened for writing, NULL is also
+     * returned.
+
+     * Otherwise, a non-NULL FILE* is returned for use in nfoGenAIO_write()
+     * operations.  The file can also be rewound and read.  Perform fclose()
+     * when all writing and any reading are complete.
+     *
+     * Only in the case of successful File Open is the template parameter
+     * successfully modified to the actual filename used. In all other cases
+     * the template[] value is not predictable.
+     *
+     * A successfully-modified template may be communicated for use in a
+     * subsequent file-system operation in the same or different application.
+     *
+     * TEMPLATE FORMATTING
+     *
+     * The supplied template string must be a legitimate file (relative or
+     * absolute) path and name with no spaces; and it must end with exactly
+     * six 'X' characters and no extension. For example:
+     * "tmp/nfoGenBIOXXXXXX".
+     *
+     * a typical modification of the template string (and usable in fopen)
+     * is something like "tmp/nfoGenAIOa04862" consisting of a letter and
+     * five digits in place of the six 'X'.
+     *
+     * A relative path, such as that shown, is relative to the current
+     * working directory.
+     *
+     * Note that '/' is usable as the path separator even on Windows systems.
+     */
 
 
 int nfoGenAIO_write(uint32_t *buf, int nwords, FILE *fp);
@@ -101,6 +151,7 @@ int nfoGenAIO_read(uint32_t *buf, int nwords, FILE *fp);
 
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+0.4.0  2026-01-02T20:57Z Add isGenAIO_terminal() and nfoGenAIO_startOutput()
 0.3.0  2025-12-05T03:01Z nfoGenAIO-test2 successful run and visual check
 0.2.4  2025-12-05T02:32Z Move NFOGENAIO_MAX_LINE definition to nfoGenAIO.c
 0.2.3  2025-12-05T00:31Z Align nfoGenAIO.h and nfoGenAIO.c version numbers
