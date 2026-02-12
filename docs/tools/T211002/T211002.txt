@@ -1,4 +1,4 @@
-T211002.txt 0.0.3                   UTF-8                       dh:2021-11-19
+T211002.txt 0.0.4                   UTF-8                       dh:2026-02-01
 ----|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
@@ -68,11 +68,13 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. T211002: Visual Build Tools.  nfoTools project text
-   file T211002.txt version 0.0.3 dated 2021-11-19, available on the Internet
+   file T211002.txt version 0.0.4 dated 2026-02-01, available on the Internet
    as a version of
    <https://orcmid.github.io/nfoTools/tools/T211002/T211002.txt>
 
 TODO
+
+ * REWORK TO USE VS Build Tools 2026
 
  * Do Progressive Disclosure, starting with install
 
@@ -117,6 +119,7 @@ TODO
 
   - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+ 0.0.4 2026-02-01T23:05Z Alert about VS2026 now available
  0.0.3 2021-11-19T18:14Z Reflect completion of full-draft index.md
  0.0.2 2021-11-12T17:54Z TODO Musings
  0.0.1 2021-10-31T18:04Z Word-smithing
