@@ -1,4 +1,4 @@
-<!-- index.md 0.0.23                UTF-8                          2023-12-28
+<!-- index.md 0.0.24                UTF-8                          2026-04-23
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                VCRAYAPP: VC/C++ COMMAND-LINE RAYLIB APP DEVKIT
@@ -25,11 +25,15 @@
          <a href="index.html" target="_top">index.html</a>&gt;</code></b>
       <br />
       <small><small>
-        0.0.23 2023-12-28T20:45Z<!-- MAINTAIN THIS MANUALLY -->
+        0.0.24 2024-04-23T18:58Z<!-- MAINTAIN THIS MANUALLY -->
       </small></small>
       </td>
   </tr>
 </table>
+
+| WARNING |
+| **VCrayApp 0.1.0 cannot be used with rayLib version 6.0 and later**      |
+| Adjustment for the breaking changes in version 6.0 will require an 0.2.0 |
 
 VCrayApp is a project-folder organization that is useful for creating
 Microsoft Windows programs using the
@@ -178,7 +182,7 @@ tips in the available materials.
 | [D211101c](c/) | 2022-08-21 | placeholder | VCrayApp Verification/Deployment Lifecycle |
 | [D211101f](f/) | 2023-04-07 | 0.0.9 2023-07-14 | VCrayApp FAILCODE Messages |
 |                       |            |                  |     |
-| [D211101e](e/) | 2023-04-10 | 0.0.4 2023-07-14 | VCrayApp 0.1.0 (beta) |
+| [D211101e](e/) | 2023-04-10 | 0.0.5 2026-04-23 | VCrayApp 0.1.0 (beta) |
 | [D211101d](D211101d/) | 2022-10-26 | 0.0.11 2023-07-14 | VCrayApp 0.0.0 (alpha) |
 
 ## 4. Development
@@ -237,6 +241,7 @@ from time to time.
 </table>
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.24 2026-04-23T18:58Z Report raylib 6.0 breaking VCrayApp 0.1.0
      0.0.23 2023-12-28T20:45Z Switch to hybrid format
      0.0.22 2023-07-14T23:36Z Touch-up
      0.0.21 2023-05-17T21:43Z Reflect D211101d touch-up

@@ -1,4 +1,4 @@
-<!-- index.md 0.0.4                 UTF-8                          2023-07-14
+<!-- index.md 0.0.5                 UTF-8                          2026-04-23
      ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                        VCRAYAPP 0.1.0 RELEASE (BETA)
@@ -6,7 +6,7 @@
 
 # ***D211101e** [VCrayApp 0.1.0 Release (beta)](.)*
 
-| ***[nfoTools](../../../)*** | [dev](../../)[>D211101](../)[>e](.) | [index.html](index.html) ***0.0.4 2023-07-14*** |
+| ***[nfoTools](../../../)*** | [dev](../../)[>D211101](../)[>e](.) | [index.html](index.html) ***0.0.5 2026-04-53*** |
 | :--                |       :-:          | --: |
 | ![nfotools](../../../images/nfoWorks-2014-06-02-1702-LogoSmall.png) | [Work-in-Progress](D211101e.txt) | ![Hard Hat Area](../../../images/hardhat-logo.gif) |
 |              |                     |           |
@@ -19,6 +19,10 @@
 |   | **VCrayApp 0.1.0 Zip Package** | [VCrayApp-0.1.0.zip](VCrayApp-0.1.0.zip) |
 |   | **VCrayApp 0.1.0 Digital Signature** | [VCrayApp-0.1.0.zip.asc](VCrayApp-0.1.0.zip.asc) |
 |   | **VCrayApp 0.1.0 Digital Hash Value** | [VCrayApp-0.1.0.zip.sha256](VCrayApp-0.1.0.zip.sha256) |
+
+| WARNING |
+| **VCrayApp 0.1.0 cannot be used with rayLib version 6.0 and later**      |
+| Adjustment for the breaking changes in version 6.0 will require an 0.2.0 |
 
 This is a beta release.  It is provided at this point in VCrayApp development
 to obtain confirmation and feedback prior to declaration of a 1.0.0 stable
@@ -63,6 +67,7 @@ from time to time.
 
 <!-- ----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+     0.0.5 2026-04-23T18:53Z Warning about raylib 6.0 breaking VCrayApp
      0.0.4 2023-07-14T22:30Z Touch-up
      0.0.3 2023-05-18T17:42Z Remarks on upgrading VCrayApp-0.0.0 projects
      0.0.2 2023-05-09T03:41Z Release candidate
