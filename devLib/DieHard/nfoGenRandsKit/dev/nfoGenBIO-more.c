@@ -1,4 +1,4 @@
-/* nfoGenBIO-more.c 0.0.4           UTF-8                         2025-12-29
+/* nfoGenBIO-more.c 0.0.5           UTF-8                         2026-06-17
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 *
 *              nfoGenBIO-more: MORE UTILITY FOR BINARY I/O FILES
@@ -57,7 +57,9 @@ int main( int argc, char *argv[] )
             reliably.
         */
 
-    /* XXX: Expand this to allow for /* and possible source as stated */
+    /* XXX: Expand this to allow for /? and possible source as stated */
+    /* XXX: Also, this needs more elaboration and should probably be done
+            in a better place, perhaps a simple internal procedure */
     if ( argc < 2)
          {  /* Provide Help Information when no input file is specified */}
             fputs( "\n       USAGE: nfoGenBIO-more [/? | source]"
@@ -152,11 +154,12 @@ int main( int argc, char *argv[] )
             written, wordsRead );
     return EXIT_FAILURE;
 
-    } /* nfoGenAIO-test2.c */
+    } /* main nfoGenBIO-more.c */
 
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 *
-*(0.0.4  2025-12-29T19:30Z Fix help message and add stdin piping note.)
+* 0.0.5  2026-06-17T19:23Z Clean up comments, small touch-up
+* 0.0.4  2025-12-29T19:30Z Fix help message and add stdin piping note.
 * 0.0.3  2025-12-28T20:41Z Start fleshing command-line handling and finding
 *        the input file.
 * 0.0.2  2025-12-26T21:02Z Start fleshing out main program structure.
