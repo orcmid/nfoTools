@@ -1,4 +1,4 @@
-diehard-fortran.txt 0.0.5           UTF-8                      dh:2025-12-24
+diehard-fortran.txt 0.0.6           UTF-8                      dh:2026-06-17
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 <https://github.com/orcmid/nfoTools/blob/master/devLib/DieHard/diehard-fortran/diehard-fortran.txt>
@@ -19,8 +19,9 @@ MANIFEST
         random numbers in hex format to the raw binary file form required as
         input to diehard (and dieharder).  This format does not work for
         interchange because of issues around endian-ness and other differences
-        in number formats on different platforms. On nfoTools, this form will
-        always be for transient files in generations and tests of them.
+        in number formats on different platforms. On nfoTools, this raw (BIO) 
+        form will always be for transient files between generators and tests 
+        of them.
 
     diehard.doc
       This is the original description for the MS DOS executables in the
@@ -91,7 +92,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. Original diehard FORTRAN 77 Programs Preservation.
-   nfoTools file diehard-fortran.txt version 0.0.5 dated 2025-12-24, available
+   nfoTools file diehard-fortran.txt version 0.0.6 dated 2026-06-17, available
    on the Internet as a version of
    <https://github.com/orcmid/nfoTools/blob/master/devLib/DieHard/diehard-fortran/diehard-fortran.txt>
 
@@ -110,6 +111,8 @@ NOTES AND TODO
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 
+ 0.0.6 2027-06-17T21:27Z touch-up while I attempt to recover exactly what it
+       is I am attempting to do here.
  0.0.5 2025-12-24T21:14Z Add note on subroutine dependencies in diequick
  0.0.4 2025-10-25T15:17Z Touch-ups
  0.0.3 2025-10-20T21:22Z Complete manifest descriptions of the current files
