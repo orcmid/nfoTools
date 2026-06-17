@@ -1,4 +1,4 @@
-dev.txt 0.2.0                       UTF-8                     dh:2026-01-02
+dev.txt 0.2.1                       UTF-8                     dh:2026-06-17
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 <https://github.com/orcmid/nfoTools/blob/master/devLib/DieHard/nfoGenRandsKit/dev/dev.txt>
@@ -6,7 +6,25 @@ dev.txt 0.2.0                       UTF-8                     dh:2026-01-02
                          NFOGENRANDSKIT DEVELOPMENT
                          ==========================
 
+   The DieHard and DieHarder tests of random number generators work on files
+   of generated 32-bit (4 byte, 8hex) numerals.  nfoGenRandsKit is a set of
+   files for generating those files, given the code for a random-number
+   generator to be exercised.
 
+   Two formats are established for generated test files.  There is a text-file
+   form (called AIO) here, consisting of hex-coded 32-bit numerals, with up
+   to 10 consecutively in a single line of text.  With DieHard, these were
+   typically produced in large quantities of 4096-numeral blocks.  The 
+   nfoGenAIO procedures are more flexible while honoring the original scheme.
+
+   The binary file format (called BIO) is more cumbersome in that the files,
+   while the actual ones consumed by the original DieHard, are more difficult
+   to inspect.
+
+   DieHard provided a utility program for conversion from AIO-style to
+   BIO-style files.  There will be a counterpart here, along with the
+   viewers, nfoGenBIO-more and nfoGenBIO-less, having similar functions to
+   the traditional more and less command-line utilities. 
 
 MANIFEST
 
@@ -57,7 +75,7 @@ MANIFEST
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
-                      Copyright 2025 Dennis E. Hamilton
+                  Copyright 2025-2026 Dennis E. Hamilton
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -145,6 +163,7 @@ NOTES AND TODO
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.2.1 2026-06-17T19:07Z Add synopsis
  0.2.0 2026-01-02T21:12Z Add nfoGenAIO-win32.c and update headers, TODOs
  0.1.4 2025-12-29T05:15Z Add TODOs on _isatty and allowing redirections
  0.1.3 2025-12-28T20:36Z Start nfoGenAsc2Bin.c
