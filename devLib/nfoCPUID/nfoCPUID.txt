@@ -1,4 +1,4 @@
-nfoCPUID.txt 0.0.3                  UTF-8                      dh:2025-11-02
+nfoCPUID.txt 0.0.4                  UTF-8                      dh:2026-06-17
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
     <https://github.com/orcmid/nfoTools/blob/master/devLib/nfoCPUID/CPUID.txt>
@@ -58,6 +58,19 @@ MANIFEST
 
 NOTES AND TODO
 
+  * It's not clear whether there has been any changes to CPUID with regard
+    to the identifiable features since 2025 when I checked some of this with
+    Astraendo2, OrcmidsLair (A more-recent Surface Laptop Studio)m and now.
+    Astraendo3.  It is unclear whether the C++ on Microsoft Learn has 
+    changed (or should have).
+
+  * The output from the C++ is unpleasant.  There needs to be a better way
+    to sight-scan for supported/unsupported.  I think a first column with 
+    "*" or a Space would be more useful.  I also need a way to know if the
+    number of features found and total checked varies.  Something more useful.
+    MUCH MOR USEFUL.  It is nice that they are checked in alphabetical order
+    though.
+
   * From <https://benlevinson.com/projects/systemInfo> we get that the
     Hardware cpuid instruction (in assembler) returns 4 32-bit words from
     registers.
@@ -88,7 +101,7 @@ NOTES AND TODO
 
   * My interest is in how to have run-time detection and switching to use of
     special instructions and, if not, simulate them.  This might not be very
-    effective in gthe simulation case - an alternative approach at a higher
+    effective in the simulation case - an alternative approach at a higher
     level may be required.
 
   * The general idea, however, is to have external pointers for certain
@@ -116,6 +129,7 @@ NOTES AND TODO
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.4 2026-06-17T22:08Z Manage TODOs, consider improvements
  0.0.3 2025-11-02T19:22Z Expanded Notes on how this might be usable
  0.0.2 2025-10-31T00:48Z Expanded TODOs
  0.0.1 2025-10-30T23:01Z Touch up, adding dev/ and tests/ sub-folders
