@@ -1,4 +1,4 @@
-/* nfoGenBIO-more.c 0.0.5           UTF-8                         2026-06-17
+/* nfoGenBIO-more.c 0.0.6           UTF-8                         2026-10-29
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 *
 *              nfoGenBIO-more: MORE UTILITY FOR BINARY I/O FILES
@@ -11,6 +11,12 @@
 *   The output is written to stdout.  It does not assume anything about
 *   console/terminal formatting beyond unadorned command shell output,
 *   although a CUA version would be nice.
+*
+*   nfoGenBIO-more is based on the *nix "more" utility, designed to mimic
+*   the basic approach without any requirement for options beyond a "help"
+*   (/?) option.  However, it is more like a hex dump than a text crawl.  The
+*   output is shown in 8-hex (32 bit) blocks reflecting the application
+*   in random-number and hash development.
 *   -----------------------------------------------------------------------
 *    Attribution: This program is copilot assisted and scientist reviewed.
 *   -----------------------------------------------------------------------
@@ -34,6 +40,20 @@
 #define bytesChunk (wordsChunk*4)
     /* This is needed for chunk-offset positioning of the input and for
        identification of chunk lines in the output. */
+
+void usage()
+{ /* Explain the usage */
+     fputs( "\n       USAGE: nfoGenBIO-more [/? | source]"
+     "\n              where [source] is the filename of a binary"
+     "\n              file in DieHard acceptable format."
+     "\n              If omitted, stdin is used (piped input)."
+     "\n              SPACE or ENTER to advance 16 lines,"
+     "\n              BACKSPACE to go back 16 lines,"
+     "\n              ^S and ^Q to start and stop scrolling "
+                     "chunks,"
+     "\n              ^C, or ^D to quit\n\n",
+     stderr )
+     }
 
 
 int main( int argc, char *argv[] )
@@ -60,20 +80,10 @@ int main( int argc, char *argv[] )
     /* XXX: Expand this to allow for /? and possible source as stated */
     /* XXX: Also, this needs more elaboration and should probably be done
             in a better place, perhaps a simple internal procedure */
-    if ( argc < 2)
-         {  /* Provide Help Information when no input file is specified */}
-            fputs( "\n       USAGE: nfoGenBIO-more [/? | source]"
-                   "\n              where [source] is the filename of a binary"
-                   "\n              file in DieHard acceptable format."
-                   "\n              If omitted, stdin is used (piped input)."
-                   "\n              SPACE or ENTER to advance 16 lines,"
-                   "\n              BACKSPACE to go back 16 lines,"
-                   "\n              ^S and ^Q to start and stop scrolling "
-                                   "chunks,"
-                   "\n              ^C, or ^D to quit\n\n",
-                   stderr )
-            exit( EXIT_SUCCESS );
-            }
+    if ( argc < 2) 
+         { usage();
+           exit( EXIT_SUCCESS );
+           }
 
     /* Assume we have a valid filename for input
        XXX: This is where we need to be able to check for stdin being
@@ -158,6 +168,9 @@ int main( int argc, char *argv[] )
 
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 *
+* 0.0.6  2026-10-29T20:45Z Review and add something about options plus the
+*        available keyboard actions.  I am rather disconnected from this
+*        now and need to work my way back into this.  It's difficult now.
 * 0.0.5  2026-06-17T19:23Z Clean up comments, small touch-up
 * 0.0.4  2025-12-29T19:30Z Fix help message and add stdin piping note.
 * 0.0.3  2025-12-28T20:41Z Start fleshing command-line handling and finding
