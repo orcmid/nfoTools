@@ -1,4 +1,4 @@
-nfoFlip.txt 0.0.3                   UTF-8                         2024-10-10
+nfoFlip.txt 0.0.4                   UTF-8                         2026-11-01
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
                            nfoWare/nfoWorks nfoTools
@@ -45,7 +45,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. nfoFlip: Transposed-CB_FLIP Development Materials.
-   Text file nfoFlip.txt version 0.0.3 dated 2024-10-13, availabe on the
+   Text file nfoFlip.txt version 0.0.4 dated 2026-11-01, availabe on the
    Internet as a version of
    <https://github.com/orcmid/nfoTools/devLib/DEK/nfoFlip/nfoFlip.txt>
 
@@ -55,6 +55,7 @@ TODO
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.0.4 2026-11-01T17:02Z Correcting dates and UTC on this page
  0.0.3 2025-10-13T23:39Z Relocate to devLib/DEK
  0.0.2 2025-10-10T23:02Z Correct title and touch-up a little
  0.0.1 2025-10-10T23:39Z Transform into the VCrayApp model
