@@ -1,4 +1,4 @@
-DieHard.txt 0.1.4                   UTF-8                      dh:2025-12-25
+DieHard.txt 0.1.5                   UTF-8                      dh:2026-11-01
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 <https://github.com/orcmid/nfoTools/blob/master/devLib/DieHard/DieHard.txt>
@@ -72,7 +72,7 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. Diehard Random-Generator Tests and Reference
-   Materials.  nfoTools file DieHard.txt version 0.1.4 dated 2025-12-25,
+   Materials.  nfoTools file DieHard.txt version 0.1.5 dated 2026-11-01,
    available on the Internet as a version of
    <https://github.com/orcmid/nfoTools/blob/master/devLib/DieHarder/DieHarder.txt>
 
@@ -92,7 +92,8 @@ NOTES AND TODO
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
- 0.1.4 2024-12-25T22:22Z Fuss about file-more, file-head, and file-tail
+ 0.1.5 2026-11-01T17:11Z Clean up date confusions, whatever that's about
+ 0.1.4 2025-12-25T22:22Z Fuss about file-more, file-head, and file-tail
  0.1.3 2025-10-25T15:10Z Simplify description of diehard-fortran/
  0.1.2 2025-10-20R17:27Z Move diehard.doc.pdf to diehard-fortran
  0.1.1 2025-10-20T03:33Z Add nfoGenRandKit/
