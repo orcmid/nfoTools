@@ -1,4 +1,4 @@
-/* nfoGenBIO-more.c 0.0.6           UTF-8                         2026-10-29
+/* nfoGenBIO-more.c 0.0.7           UTF-8                         2026-11-06
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 *
 *              nfoGenBIO-more: MORE UTILITY FOR BINARY I/O FILES
@@ -20,6 +20,29 @@
 *   -----------------------------------------------------------------------
 *    Attribution: This program is copilot assisted and scientist reviewed.
 *   -----------------------------------------------------------------------
+*
+*   FIXME: Writing 80-column output of 10 8-byte hex words per line is 
+*          messy.  There is no room for the address offset on the lines,
+*          so it must be specified separately from the hex words themselves.
+*          We could use dump format, with separate columns for offsets and
+*          the hex words, but it makes the output longer.  Also, showing the
+*          ASCII representation alongside the hex words is unnecessary.  This
+*          is really about pure binary files.
+*
+*          It seems to me that we want a clean, columnar display of blocks.
+*          But dropping from 8 words per line makes the obvious choice be
+*          4 words per line, which fits nicely within 80 columns with room
+*          for the offset numbers.
+*
+*          There also needs to be a way of determining the size of file
+*          positions as byte offsets.  That or we simply have to limit the
+*          size of file that we can handle with nfoGenBIO if there is no
+*          reliable mechanism for determining that.
+*
+*          It is the <io.h> standard file of Visual Studio build tools that
+*          defines a number of capabilities including i64 positions.  It is
+*          unclear whether those should be used or we can finess our way
+*          around this.  It is going to be whether tell() works well enough.
 */
 #define MORE_VERSION "nfoGenBIO-more-0.0.4"
 
@@ -168,6 +191,8 @@ int main( int argc, char *argv[] )
 
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 *
+* 0.0.7  2026-11-06T22:05Z More notes on dealing with <io.h> and large file
+*        sizes - ruminations only so far - need a test file.
 * 0.0.6  2026-10-29T20:45Z Review and add something about options plus the
 *        available keyboard actions.  I am rather disconnected from this
 *        now and need to work my way back into this.  It's difficult now.
