@@ -1,0 +1,78 @@
+VCshowDefs2> 1.0.0 Check for documented pre-processor macros
+            that might be predefined in this compile.
+
+  Required ISO C11 Definitions:
+                __DATE__ ="Nov  7 2026"
+                __FILE__ ="VCshowDefs2.c"
+                __LINE__ =51
+                __STDC__ undefined
+         __STDC_HOSTED__ =1
+        __STDC_VERSION__ undefined
+                __TIME__ ="12:43:12"
+
+  Conditionally-definable ISO C11 Definitions:
+  Related to Unicode Support:
+      __STDC_ISO_10646__ undefined
+ __STDC_MB_MIGHT_NEQ_W__ undefined
+         __STDC_UTF_16__ undefined
+         __STDC_UTF_32__ undefined
+  Related to supported features:
+     __STDC_ANALYZABLE__ undefined
+        __STDC_IEC_559__ undefined
+__STDC_IEC_599_COMPLEX__ undefined
+       __STDC_LIB_EXT1__ undefined
+     __STDC_NO_ATOMICS__ undefined
+     __STDC_NO_COMPLEX__ undefined
+     __STDC_NO_THREADS__ undefined
+         __STDC_NO_VLA__ undefined
+
+  Only when compiled as C++:
+             __cplusplus undefined
+              _MSVC_LANG undefined
+
+  Supported (VC++) reflection support:
+             __COUNTER__ =0
+               __FSTREXP is defined
+            __FUNCTION__ =__FSTREXP __FUNCTION__ 
+           __FUNCDNAME__ =__FSTREXP __FUNCDNAME__ 
+             __FUNCSIG__ =__FSTREXP __FUNCSIG__ 
+           __TIMESTAMP__ ="Sat Nov  7 12:35:28 2026"
+
+  VC++ MS-Specific Macros:
+                _ATL_VER undefined
+          _CHAR_UNSIGNED undefined
+             _CPPLIB_VER undefined
+                _CPPRTTI undefined
+              _CPPUNWIND undefined
+                  _DEBUG undefined
+                    _DLL undefined
+                _M_ALPHA undefined
+                _M_AMD64 =100
+                 _M_IA64 undefined
+                 _M_IX86 undefined
+                 _M_MPPC undefined
+               _M_MRX000 undefined
+                  _M_PPC undefined
+                _MANAGED undefined
+                _MFC_VER undefined
+         _MSC_EXTENSIONS =1
+                _MSC_VER =1951
+   __MSVC_RUNTIME_CHECKS undefined
+                     _MT =1
+ _NATIVE_WCHAR_T_DEFINED undefined
+        _WCHAR_T_DEFINED is defined
+                  _WIN32 =1
+                  _WIN64 =1
+
+  And some favorites when compiling Windows code:
+            _INC_WINDOWS undefined
+                    _MAC undefined
+              RC_INVOKED undefined
+     WIN32_LEAN_AND_MEAN undefined
+               _WIN32NLS undefined
+                _WINDEF_ undefined
+               _WINDOWS_ undefined
+             __WINDOWS__ undefined
+                  WINVER undefined
+                   _X64_ undefined
+                   _X86_ undefined
