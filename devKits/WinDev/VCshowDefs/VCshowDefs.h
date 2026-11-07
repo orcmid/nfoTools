@@ -1,4 +1,4 @@
-/* VCshowDefs.h 1.0.0               UTF-8                         2026-11-07
+/* VCshowDefs.h 1.0.1               UTF-8                         2026-11-07
  * -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
  *
  *             SHOW PRESENCE OF VISUAL C/C++ PREPROCESSOR DEFINES
@@ -56,7 +56,9 @@ static char *tv; /* pointer to the token value string, used globally */
 
              See the VCShowDefs.c application to see how preprocessor
              definitions are arranged. to see how to add and vary the pre-
-             processor definitions to check for.
+             processor definitions to check for.  This use of a separate
+             VCshowDefs.h header to accomplish the same results is 
+             demonstrated in the VCshowDefs2.c program.
           
              */
 
@@ -68,6 +70,7 @@ static char *tv; /* pointer to the token value string, used globally */
 
 
 /*
+ 1.0.1  2026-11-07T20:32Z Point out usage in VCshowDefs2.c
  1.0.0  2026-11-07T04:26Z Extraction from VCshowDefs.c 1.2.1
  */
 
