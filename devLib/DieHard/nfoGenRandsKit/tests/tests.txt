@@ -1,4 +1,4 @@
-tests.txt 0.1.7                     UTF-8                      dh:2026-11-07
+tests.txt 0.1.8                     UTF-8                      dh:2026-11-07
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 <https://github.com/orcmid/nfoTools/blob/master/devLib/DieHard/nfoGenRandsKit/tests/tests.txt>
@@ -61,6 +61,12 @@ MANIFEST
         @VCoptions.opt options for CL.exe VC/C++ x64 compiles, used by the
         mkGen*.bat scripts
 
+    VCshowDefs.h
+        VCshowDefs pre-processor definitions for checking Win32 <io.h>
+        for for correct handling of nfoGenBIO potentially large files for
+        handling via nfoGenBIO-less/-more utilities.  Used in the
+        nfoGenBIO-win32-io-check.c confirmations of x64 cases.
+
     .vscode
         folder of configuration information for VS Code
 
@@ -115,6 +121,7 @@ NOTES AND TODO
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.1.8 2026-11-07T21:13Z Add VCshowDefs.h for -io-check usage.
  0.1.7 2026-11-07T16:28Z Add nfoGenBIO-win32-io-check.c
  0.1.6 2025-12-20T23:19Z Successful conformation of "/" in Win32 path names.
  0.1.5 2025-12-15T23:13Z Complete nfoGenBIO-win32-temps.c GenTemps testing
