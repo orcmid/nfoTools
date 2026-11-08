@@ -1,4 +1,4 @@
-/* nfoGenBIO-less.c 0.0.0           UTF-8                         2026-10-29
+/* nfoGenBIO-less.c 0.0.1           UTF-8                         2026-11-08
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 *
 *              nfoGenBIO-less: LESS UTILITY FOR BINARY I/O FILES
@@ -24,6 +24,24 @@
 *   0.0.0 WARNING: This placeholder is derived from the nfoGenBIO-more utility
 *         0.0.6 AND HAS NOT BEEN TRANSFORMED IN ANY SIGNIFICANT MANNER BELOW
 *         THIS WARNING.  THIS IS A PLACEHOLDER FOR FURTHER CUSTOMIZATION.
+*
+* XXX: Based on the description for Linux, the fundamental difference between
+*      less and more is where the presentation starts.  Here is one set of
+*      commands for less:
+*
+*      Spacebar: Scroll down one screen.
+*      b: Scroll up one screen.
+*      Enter: Move down one line.
+*      y: Move up one line.
+*      g: Go to the start of the file.
+*      G: Go to the end of the file.
+*      10G: Go to the 10th line.
+*      Ctrl+F: Scroll forward full screen.
+*      Ctrl+B: Scroll backward full screen.
+*
+*    and see <https://github.com/gwsw/less>, especially
+*    <https://github.com/gwsw/less/blob/master/less.hlp.
+*    I have no desire to be so comprehensive.  
 */
 #define MORE_VERSION "nfoGenBIO-less-0.0.0"
 
@@ -37,13 +55,13 @@
 #include  "nfoGenBIO.h"
 
 #define wordsChunk (16*8)
-    /* The number of uint32 words that are converted to 16 lines of 8 words
-       each. The blocks of 4096 words used for DieHard will take 32 chunks
-       each.  Chunk byte offsets will always be multiples of 512 (0x200)*/
+/* The number of uint32 words that are converted to 16 lines of 8 words
+   each. The blocks of 4096 words used for DieHard will take 32 chunks
+   each.  Chunk byte offsets will always be multiples of 512 (0x200)*/
 
 #define bytesChunk (wordsChunk*4)
-    /* This is needed for chunk-offset positioning of the input and for
-       identification of chunk lines in the output. */
+/* This is needed for chunk-offset positioning of the input and for
+   identification of chunk lines in the output. */
 
 void usage()
 { /* Explain the usage */
@@ -172,6 +190,7 @@ int main( int argc, char *argv[] )
 
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 *
+* 0.0.1  2026-11-08T17:03Z Gather some information on Unix less command usage
 * 0.0.0  2026-10-29T20:43Z Initial placeholder version copied from
 *        nfoGenBIO-more.c 0.0.6
 *
