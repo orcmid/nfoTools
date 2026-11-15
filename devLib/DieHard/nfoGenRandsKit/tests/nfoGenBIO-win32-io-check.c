@@ -1,4 +1,4 @@
-/* nfoGenBIO-Win32-io-check.c 0.0.6 UTF-8                         2026-11-11
+/* nfoGenBIO-Win32-io-check.c 0.0.9 UTF-8                         2026-11-15
 ** -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 *
 *                nfoGenBIO Win32 Binary File Handling Checks
@@ -43,7 +43,7 @@ void showSize(char x[], size_t sz, char sp[])
    int main(void)
 
    {
-           fputs("[io-check] 0.0.6 Determine <io.h> behavior for nfoGenBIO"
+           fputs("[io-check] 0.0.9 Determine <io.h> behavior for nfoGenBIO"
                  " usage\n\n",
                  stdout);
 
@@ -52,6 +52,11 @@ void showSize(char x[], size_t sz, char sp[])
 
            SHOW(_finddata_t, "                 ");
            SHOW(_finddatai64_t, "              ");
+           SHOW(__finddata64_t, "              ");
+           SHOW(_USE_32BIT_TIME_T, "           ");
+/* XXX           showSize("sizeof(__finddata64_t)",
+                sizeof(__finddata64_t), "      ");
+                */
            SHOW(_fsize_t, "                    ");
            showSize("sizeof(_fsize_t)",
                 sizeof(_fsize_t), "            ");
@@ -72,10 +77,20 @@ void showSize(char x[], size_t sz, char sp[])
 
     /* XXX:
 
-            The description of large/native files for the Win32 x64 Windows run-time library are pretty awful and also unclear.
+            The standard functions for binary I/O in the C11 Standard are in
+            section 7.21.8 Direct input/output functions.  These are all based
+            on files being read/written in chunks of some size_t size. The
+            reading/writing is as if the chunks are sequential char[] 
+            sequences as a kind of union. There is no intention to use these
+            files across platforms, so endian-ness and other
+            platform-specific details do not need to be considered.
 
-            I'm starting with very simple skeletal tests to confirm compilation
-            and essential behavior.
+            The description of large/native files for the Win32 x64 Windows
+            run-time library are pretty awful and also unclear.  I might be
+            able to avoid them.
+
+            I'm starting with very simple skeletal tests to confirm
+            compilation and essential behavior.
 
             There is also information on Stack Overflow, such as
             <https://stackoverflow.com/questions/63101309/is-there-a-way-to-get-size-of-a-file-on-windows-using-c>
@@ -84,6 +99,11 @@ void showSize(char x[], size_t sz, char sp[])
 
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+    
+    0.0.9  2026-11-15T18:23Z More information on direct I/O functions
+    0.0.8  2026-11-14T21:18Z Add confirmation on _USE_32BIT_TIME_T.
+    0.0.7  2026-11-14T21:00Z Show __finddata64_t but is truly undefined in
+           io.h?
     0.0.6  2026-11-11T19:51Z Try showSize for sizeof(type) expressions 
     0.0.5  2026-11-11T19:05Z  sizeof(type) for the types in SHOW macros
     0.0.4  2026-11-11T18:16Z Updated version to examine <io.h> definitions
