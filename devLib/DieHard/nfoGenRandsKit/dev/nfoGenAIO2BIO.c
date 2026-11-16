@@ -1,7 +1,7 @@
-/* nfoGenAsc2Bin.c 0.0.1            UTF-8                         2025-12-30
+/* nfoGenAIO2BIO.c 0.0.3            UTF-8                         2026-11-16
 /* -|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 *
-*              nfoGenAsc2Bin: Convert nfoGenAIO to nfoGenBIO Files
+*              nfoGenAIO2BIO: Convert nfoGenAIO to nfoGenBIO Files
 *              ---------------------------------------------------
 *
 *   This utility is part of the nfoGenRandKits devLib utilities for working
@@ -19,7 +19,7 @@
 *   -----------------------------------------------------------------------
 */
 
-#define ASC2BIN_VERSION "nfoGenAsc2Bin-0.0.0"
+#define ASC2BIN_VERSION "nfoGenAIO2BIO-0.0.3"
 
 #include  <stdbool.h>
 #include  <stdint.h>
@@ -34,8 +34,8 @@ int main( int argc, char *argv[] )
 {  uint32_t m[4096] ;
      /* The buffer for 32-bit words in typical DieHard blocks */
 
-   fputs( "[Asc2Bin] " ASC2BIN_VERSION
-          " Converting DieHard AIO file to BIO file\n",
+   fputs( "[AIO2BIO] " ASC2BIN_VERSION
+          " Converting DieHard AIO files to BIO files\n",
           stderr);
 
 
@@ -43,13 +43,13 @@ int main( int argc, char *argv[] )
 
 /* XXX: We don't want all of this description here.  We do want an usage
         similar to that for copying files:
-          nfGenAsc2Bin [/? | [AOO-source [BOO-dest] ]
+          nfGenAsc2Bin [/? | [AIO-source [BIO-dest] ]
 
-        When there is no BOO-dest, and stdout is a terminal, no conversion
+        When there is no BIO-dest, and stdout is a terminal, no conversion
         occurs.  I could generate a temporary file, but don't have good
         information for naming it.
 
-        When there is no AOO-source, and stdin is a terminal, no conversion
+        When there is no AIO-source, and stdin is a terminal, no conversion
         occurs.
 
         This is still not the best interface.  I think I need to reverse
@@ -64,8 +64,17 @@ int main( int argc, char *argv[] )
         whether BIO works reliably and that's going to take some serious
         testing.
 
+        In the original asc2bin.f, the program reads exactly 700 blocks of 
+        4096 32-bit integers each from the ASCII file.  The ASCII format is
+        for 10 32-bit (8 hex-character) integers per line.  Output is to
+        (FORTRAN unformatted) binary files of 4096 32-bit integers per block.
+        The ASCII file equivalent is 41 lines per block, with only 6 integers on the last line for each block.
+
+        The documentation is very skimpy about all of these expectations for
+        files to be correctly formatted and structured.
         */
 /* Scraps of Original Fortran code being salvaged:
+
 
        character*15 ascfile,binfile
       print*,'  This program reads an ascii file of 32-bit integers'
@@ -103,8 +112,9 @@ int main( int argc, char *argv[] )
 */ /* end of scraps */
 
 /*
-   0.0.1 2025-12-30T21:40Z More XXX and pondering on usage
+0.0.3 2026-11-16T20:21Z Narrow in on the 700 x 4096 fixed pattern.   
+0.0.1 2025-12-30T21:40Z More XXX and pondering on usage
    0.0.0 2025-12-28T20:32Z Skeleton with scraps of original Fortran
 
-                   *** end of nfoGenAsc2Bin.c ***
+              *** end of nfoGenAIO2BIO.c ***
    */
