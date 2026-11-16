@@ -1,4 +1,4 @@
-nfoGenRandsKit.txt 0.1.1                 UTF-8                  dh:2026-06-17
+nfoGenRandsKit.txt 0.1.2                 UTF-8                  dh:2026-11-16
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
 <https://github.com/orcmid/nfoTools/blob/master/devLib/DieHard/nfoGenRandsKit/nfoGenRandsKit.txt>
@@ -70,8 +70,8 @@ MANIFEST
  ATTRIBUTION
 
    Hamilton, Dennis E. Kit for generating diehard-acceptable test files.
-   Materials.  nfoTools file nfoGenRandsKit.txt version 0.1.1 dated
-   2026-06-17,available on the Internet as a version of
+   Materials.  nfoTools file nfoGenRandsKit.txt version 0.1.2 dated
+   2026-11-16,available on the Internet as a version of
    <https://github.com/orcmid/nfoTools/blob/master/devLib/DieHard/nfoGenRandsKit/nfoGenRandsKit.txt>
 
 NOTES AND TODO
@@ -98,9 +98,18 @@ NOTES AND TODO
      worthy of consideration.  It would break compatibility with original
      diehard, and dieharder.
 
+   * I am over-thinking BIO operations and I need to narrow down to ones that
+     simply satisfy DieHard operations.  I may find sufficient clues in the
+     Asc2Bin utility, which I should convert here first.
+
+   * I am also not going to use this scheme for customizing generators.  I am
+     going to make them more generally, modifying any working ones to adjust
+     to new RNGs.
+
 
 *---|----1----|----2----|----3----|----4----|----5----|----6----|----7----|--*
 
+ 0.1.2 2026-11-16T18:50Z Prepare to adjust the course of this activity
  0.1.1 2026-06-17T18:39Z touch-up on review
  0.1.0 2025-11-26T00:13Z Add description of the basic scheme for generators
  0.0.2 2025-10-25T15:24Z Touch-ups, more Notes
